@@ -1,0 +1,2786 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Скоринг закупок",
+    "description": "AI Procurement Copilot: оценка закупок ЕИС по параметрам поставщика.",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api/auth/register": {
+      "post": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Register",
+        "operationId": "register_api_auth_register_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserOut"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/auth/login": {
+      "post": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Login",
+        "operationId": "login_api_auth_login_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserOut"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/auth/logout": {
+      "post": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Logout",
+        "operationId": "logout_api_auth_logout_post",
+        "responses": {
+          "204": {
+            "description": "Successful Response"
+          }
+        }
+      }
+    },
+    "/api/auth/me": {
+      "get": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Me",
+        "operationId": "me_api_auth_me_get",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserOut"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/procurements/upload": {
+      "post": {
+        "tags": [
+          "procurements"
+        ],
+        "summary": "Upload",
+        "description": "Принимает файлы и сразу возвращает task_id; разбор — в фоне.",
+        "operationId": "upload_api_procurements_upload_post",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_upload_api_procurements_upload_post"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskCreated"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "413": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Request Entity Too Large"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/procurements": {
+      "get": {
+        "tags": [
+          "procurements"
+        ],
+        "summary": "List Procurements",
+        "operationId": "list_procurements_api_procurements_get",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProcurementSummary"
+                  },
+                  "title": "Response List Procurements Api Procurements Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/procurements/{procurement_id}": {
+      "get": {
+        "tags": [
+          "procurements"
+        ],
+        "summary": "Get Procurement",
+        "operationId": "get_procurement_api_procurements__procurement_id__get",
+        "parameters": [
+          {
+            "name": "procurement_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Procurement Id"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcurementDetail"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/scoring-profiles/catalog": {
+      "get": {
+        "tags": [
+          "scoring-profiles"
+        ],
+        "summary": "Catalog",
+        "description": "Поля для «Добавить правило», справочник регионов, доступность разбора текстом.",
+        "operationId": "catalog_api_scoring_profiles_catalog_get",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FieldCatalogOut"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/scoring-profiles/active": {
+      "get": {
+        "tags": [
+          "scoring-profiles"
+        ],
+        "summary": "Get Active",
+        "operationId": "get_active_api_scoring_profiles_active_get",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ScoringProfileOut"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "scoring-profiles"
+        ],
+        "summary": "Save Active",
+        "operationId": "save_active_api_scoring_profiles_active_put",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaveProfileRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SaveProfileResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Unprocessable Entity"
+          }
+        }
+      }
+    },
+    "/api/scoring-profiles/parse": {
+      "post": {
+        "tags": [
+          "scoring-profiles"
+        ],
+        "summary": "Parse Text",
+        "description": "Текст → черновик правил. Результат — в TaskOut.result (ParseProfileResult).",
+        "operationId": "parse_text_api_scoring_profiles_parse_post",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParseProfileRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskCreated"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/organizations/{inn}": {
+      "get": {
+        "tags": [
+          "organizations"
+        ],
+        "summary": "Get Organization",
+        "description": "Из кэша или офлайн-профиля сразу; иначе 202 + task_id (запрос в ЕГРЮЛ в фоне).\n\nПосле завершения задачи egrul_lookup данные лежат в TaskOut.result.",
+        "operationId": "get_organization_api_organizations__inn__get",
+        "parameters": [
+          {
+            "name": "inn",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Inn"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CustomerProfileOut"
+                }
+              }
+            }
+          },
+          "202": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskCreated"
+                }
+              }
+            },
+            "description": "Accepted"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/score": {
+      "post": {
+        "tags": [
+          "score"
+        ],
+        "summary": "Rescore",
+        "description": "Пересчёт по активному профилю без повторного парсинга и запросов в ЕГРЮЛ.",
+        "operationId": "rescore_api_score_post",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ScoreRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskCreated"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/results": {
+      "get": {
+        "tags": [
+          "results"
+        ],
+        "summary": "List Results",
+        "description": "Все закупки пользователя с оценкой по активному профилю, по убыванию оценки.",
+        "operationId": "list_results_api_results_get",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ResultRow"
+                  },
+                  "title": "Response List Results Api Results Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/tasks/{task_id}": {
+      "get": {
+        "tags": [
+          "tasks"
+        ],
+        "summary": "Get Task",
+        "operationId": "get_task_api_tasks__task_id__get",
+        "parameters": [
+          {
+            "name": "task_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Task Id"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskOut"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Body_upload_api_procurements_upload_post": {
+        "properties": {
+          "files": {
+            "items": {
+              "type": "string",
+              "contentMediaType": "application/octet-stream"
+            },
+            "type": "array",
+            "title": "Files"
+          }
+        },
+        "type": "object",
+        "required": [
+          "files"
+        ],
+        "title": "Body_upload_api_procurements_upload_post"
+      },
+      "CustomerProfileOut": {
+        "properties": {
+          "inn": {
+            "type": "string",
+            "pattern": "^\\d{10}(\\d{2})?$",
+            "title": "Inn"
+          },
+          "ogrn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ogrn"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "org_type": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/OrgType"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "status": {
+            "$ref": "#/components/schemas/CustomerStatus",
+            "default": "unknown"
+          },
+          "registration_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Registration Date"
+          },
+          "liquidation_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Liquidation Date"
+          },
+          "okved_main": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Okved Main"
+          },
+          "okved_main_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Okved Main Name"
+          },
+          "address": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Address"
+          },
+          "region": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Region"
+          },
+          "unreliable_flags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Unreliable Flags"
+          },
+          "fetched_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Fetched At"
+          },
+          "source": {
+            "$ref": "#/components/schemas/CustomerSource"
+          }
+        },
+        "type": "object",
+        "required": [
+          "inn",
+          "name",
+          "fetched_at",
+          "source"
+        ],
+        "title": "CustomerProfileOut"
+      },
+      "CustomerSource": {
+        "type": "string",
+        "enum": [
+          "dadata",
+          "cache",
+          "stale_cache",
+          "offline"
+        ],
+        "title": "CustomerSource"
+      },
+      "CustomerStatus": {
+        "type": "string",
+        "enum": [
+          "active",
+          "reorganizing",
+          "liquidating",
+          "liquidated",
+          "bankrupt",
+          "unknown"
+        ],
+        "title": "CustomerStatus"
+      },
+      "ErrorCode": {
+        "type": "string",
+        "enum": [
+          "UNSUPPORTED_FORMAT",
+          "NOT_A_NOTICE",
+          "MISSING_REQUIRED_FIELD",
+          "CUSTOMER_NOT_FOUND",
+          "EGRUL_UNAVAILABLE",
+          "LLM_UNAVAILABLE",
+          "FILE_TOO_LARGE",
+          "TOO_MANY_FILES",
+          "NO_FILES",
+          "NO_ACTIVE_PROFILE",
+          "INVALID_PROFILE",
+          "LLM_PARSE_FAILED",
+          "EMAIL_TAKEN",
+          "INVALID_CREDENTIALS",
+          "NOT_AUTHENTICATED",
+          "NOT_FOUND",
+          "VALIDATION_ERROR",
+          "HTTP_ERROR",
+          "INTERNAL_ERROR"
+        ],
+        "title": "ErrorCode"
+      },
+      "ErrorInfo": {
+        "properties": {
+          "code": {
+            "$ref": "#/components/schemas/ErrorCode"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message",
+            "description": "Текст для пользователя, на русском"
+          },
+          "details": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Details"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "title": "ErrorInfo"
+      },
+      "ErrorResponse": {
+        "properties": {
+          "error": {
+            "$ref": "#/components/schemas/ErrorInfo"
+          }
+        },
+        "type": "object",
+        "required": [
+          "error"
+        ],
+        "title": "ErrorResponse"
+      },
+      "FieldCatalogOut": {
+        "properties": {
+          "fields": {
+            "items": {
+              "$ref": "#/components/schemas/FieldSpec"
+            },
+            "type": "array",
+            "title": "Fields"
+          },
+          "regions": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Regions"
+          },
+          "llm_enabled": {
+            "type": "boolean",
+            "title": "Llm Enabled",
+            "description": "false → кнопку «Разобрать» скрыть"
+          }
+        },
+        "type": "object",
+        "required": [
+          "fields",
+          "regions",
+          "llm_enabled"
+        ],
+        "title": "FieldCatalogOut"
+      },
+      "FieldSpec": {
+        "properties": {
+          "field": {
+            "type": "string",
+            "title": "Field"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label",
+            "description": "Человеческое название для интерфейса"
+          },
+          "group": {
+            "$ref": "#/components/schemas/RuleGroup"
+          },
+          "type": {
+            "$ref": "#/components/schemas/FieldType"
+          },
+          "unit": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Unit"
+          },
+          "operators": {
+            "items": {
+              "$ref": "#/components/schemas/Operator"
+            },
+            "type": "array",
+            "title": "Operators"
+          },
+          "options": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Options",
+            "description": "Допустимые значения enum"
+          }
+        },
+        "type": "object",
+        "required": [
+          "field",
+          "label",
+          "group",
+          "type",
+          "operators"
+        ],
+        "title": "FieldSpec"
+      },
+      "FieldType": {
+        "type": "string",
+        "enum": [
+          "number",
+          "money",
+          "enum",
+          "list",
+          "text",
+          "bool"
+        ],
+        "title": "FieldType"
+      },
+      "FileStatus": {
+        "type": "string",
+        "enum": [
+          "pending",
+          "ok",
+          "error"
+        ],
+        "title": "FileStatus"
+      },
+      "GroupScore": {
+        "properties": {
+          "group": {
+            "$ref": "#/components/schemas/RuleGroup"
+          },
+          "score": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Score",
+            "description": "0–100; None — группа исключена (нет правил)"
+          },
+          "weight": {
+            "type": "number",
+            "title": "Weight",
+            "description": "Вес из профиля"
+          },
+          "effective_weight": {
+            "type": "number",
+            "title": "Effective Weight",
+            "description": "Вес после перераспределения, сумма = 1"
+          },
+          "low_data": {
+            "type": "boolean",
+            "title": "Low Data",
+            "description": "Пропущено > 50% веса группы"
+          }
+        },
+        "type": "object",
+        "required": [
+          "group",
+          "score",
+          "weight",
+          "effective_weight",
+          "low_data"
+        ],
+        "title": "GroupScore"
+      },
+      "GroupWeights": {
+        "properties": {
+          "procurement": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Procurement",
+            "default": 0.4
+          },
+          "fit": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Fit",
+            "default": 0.35
+          },
+          "customer": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Customer",
+            "default": 0.25
+          }
+        },
+        "type": "object",
+        "title": "GroupWeights"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "JsonValue": {},
+      "JustificationSource": {
+        "type": "string",
+        "enum": [
+          "template",
+          "llm"
+        ],
+        "title": "JustificationSource"
+      },
+      "Law": {
+        "type": "string",
+        "enum": [
+          "44",
+          "223",
+          "615",
+          "94",
+          "other"
+        ],
+        "title": "Law"
+      },
+      "LoginRequest": {
+        "properties": {
+          "email": {
+            "type": "string",
+            "format": "email",
+            "title": "Email"
+          },
+          "password": {
+            "type": "string",
+            "title": "Password"
+          }
+        },
+        "type": "object",
+        "required": [
+          "email",
+          "password"
+        ],
+        "title": "LoginRequest"
+      },
+      "Method": {
+        "type": "string",
+        "enum": [
+          "auction",
+          "contest",
+          "quotation",
+          "proposals",
+          "single",
+          "other"
+        ],
+        "title": "Method"
+      },
+      "Operator": {
+        "type": "string",
+        "enum": [
+          "between",
+          "gte",
+          "lte",
+          "in",
+          "not_in",
+          "any_in",
+          "none_in",
+          "prefix_in",
+          "is_false",
+          "semantic_match",
+          "contains_any"
+        ],
+        "title": "Operator"
+      },
+      "OrgType": {
+        "type": "string",
+        "enum": [
+          "legal",
+          "individual"
+        ],
+        "title": "OrgType"
+      },
+      "ParseProfileRequest": {
+        "properties": {
+          "text": {
+            "type": "string",
+            "maxLength": 5000,
+            "minLength": 3,
+            "title": "Text"
+          }
+        },
+        "type": "object",
+        "required": [
+          "text"
+        ],
+        "title": "ParseProfileRequest"
+      },
+      "ProcurementData": {
+        "properties": {
+          "reg_number": {
+            "type": "string",
+            "pattern": "^\\d+(-\\d+)?$",
+            "title": "Reg Number",
+            "description": "Реестровый номер; для многолотовых — <номер>-<лот>"
+          },
+          "lot_number": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lot Number"
+          },
+          "law": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Law"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subject": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Subject"
+          },
+          "nmck": {
+            "type": "number",
+            "title": "Nmck"
+          },
+          "currency": {
+            "type": "string",
+            "title": "Currency",
+            "default": "RUB"
+          },
+          "method": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Method"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "method_raw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Method Raw"
+          },
+          "customer_inn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Customer Inn"
+          },
+          "customer_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Customer Name"
+          },
+          "region": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Region"
+          },
+          "delivery_place": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Delivery Place"
+          },
+          "published_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Published At"
+          },
+          "application_deadline": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Application Deadline"
+          },
+          "delivery_term_text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Delivery Term Text"
+          },
+          "delivery_days": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Delivery Days"
+          },
+          "okpd2_codes": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Okpd2 Codes"
+          },
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/ProcurementItem"
+            },
+            "type": "array",
+            "title": "Items"
+          },
+          "bid_security": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Bid Security"
+          },
+          "bid_security_pct": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Bid Security Pct"
+          },
+          "contract_security": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Contract Security"
+          },
+          "contract_security_pct": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Contract Security Pct"
+          },
+          "restrictions": {
+            "items": {
+              "$ref": "#/components/schemas/Restriction"
+            },
+            "type": "array",
+            "title": "Restrictions"
+          },
+          "source_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Url"
+          },
+          "parsed_by": {
+            "type": "string",
+            "title": "Parsed By",
+            "description": "adapter:<имя> | universal | llm | json"
+          }
+        },
+        "type": "object",
+        "required": [
+          "reg_number",
+          "subject",
+          "nmck",
+          "parsed_by"
+        ],
+        "title": "ProcurementData",
+        "description": "Один лот извещения. Выход парсера (роль 2) и формат JSON-файла на входе."
+      },
+      "ProcurementDetail": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "data": {
+            "$ref": "#/components/schemas/ProcurementData"
+          },
+          "customer": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/CustomerProfileOut"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "customer_error": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Customer Error",
+            "description": "CUSTOMER_NOT_FOUND / EGRUL_UNAVAILABLE, если данных нет"
+          },
+          "score": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ScoreResultOut"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "data",
+          "customer",
+          "score",
+          "created_at",
+          "updated_at"
+        ],
+        "title": "ProcurementDetail",
+        "description": "Карточка закупки: все поля, заказчик, оценка по активному профилю."
+      },
+      "ProcurementItem": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "quantity": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Quantity"
+          },
+          "unit": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Unit"
+          },
+          "price": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Price"
+          },
+          "okpd2": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Okpd2"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "title": "ProcurementItem"
+      },
+      "ProcurementSummary": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "reg_number": {
+            "type": "string",
+            "title": "Reg Number"
+          },
+          "law": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Law"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subject": {
+            "type": "string",
+            "title": "Subject"
+          },
+          "nmck": {
+            "type": "number",
+            "title": "Nmck"
+          },
+          "currency": {
+            "type": "string",
+            "title": "Currency"
+          },
+          "method": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Method"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "method_raw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Method Raw"
+          },
+          "customer_inn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Customer Inn"
+          },
+          "customer_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Customer Name"
+          },
+          "region": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Region"
+          },
+          "application_deadline": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Application Deadline"
+          },
+          "parsed_by": {
+            "type": "string",
+            "title": "Parsed By"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "reg_number",
+          "law",
+          "subject",
+          "nmck",
+          "currency",
+          "method",
+          "method_raw",
+          "customer_inn",
+          "customer_name",
+          "region",
+          "application_deadline",
+          "parsed_by",
+          "updated_at"
+        ],
+        "title": "ProcurementSummary",
+        "description": "Строка списка закупок."
+      },
+      "Recommendation": {
+        "type": "string",
+        "enum": [
+          "participate",
+          "consider",
+          "skip"
+        ],
+        "title": "Recommendation"
+      },
+      "RegisterRequest": {
+        "properties": {
+          "email": {
+            "type": "string",
+            "format": "email",
+            "title": "Email"
+          },
+          "password": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 8,
+            "title": "Password"
+          }
+        },
+        "type": "object",
+        "required": [
+          "email",
+          "password"
+        ],
+        "title": "RegisterRequest"
+      },
+      "Restriction": {
+        "type": "string",
+        "enum": [
+          "smp_only",
+          "national_regime",
+          "prefs_uis",
+          "prefs_disabled",
+          "other"
+        ],
+        "title": "Restriction"
+      },
+      "ResultRow": {
+        "properties": {
+          "procurement_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Procurement Id"
+          },
+          "reg_number": {
+            "type": "string",
+            "title": "Reg Number"
+          },
+          "subject": {
+            "type": "string",
+            "title": "Subject"
+          },
+          "customer_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Customer Name"
+          },
+          "nmck": {
+            "type": "number",
+            "title": "Nmck"
+          },
+          "currency": {
+            "type": "string",
+            "title": "Currency"
+          },
+          "region": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Region"
+          },
+          "law": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Law"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "application_deadline": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Application Deadline"
+          },
+          "total": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Total"
+          },
+          "recommendation": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Recommendation"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "incomplete": {
+            "type": "boolean",
+            "title": "Incomplete"
+          },
+          "has_stop_factor": {
+            "type": "boolean",
+            "title": "Has Stop Factor"
+          }
+        },
+        "type": "object",
+        "required": [
+          "procurement_id",
+          "reg_number",
+          "subject",
+          "customer_name",
+          "nmck",
+          "currency",
+          "region",
+          "law",
+          "application_deadline",
+          "total",
+          "recommendation",
+          "incomplete",
+          "has_stop_factor"
+        ],
+        "title": "ResultRow",
+        "description": "Строка таблицы «Результаты»."
+      },
+      "RuleGroup": {
+        "type": "string",
+        "enum": [
+          "procurement",
+          "fit",
+          "customer"
+        ],
+        "title": "RuleGroup"
+      },
+      "RuleKind": {
+        "type": "string",
+        "enum": [
+          "stop",
+          "weighted"
+        ],
+        "title": "RuleKind"
+      },
+      "RuleOutcome": {
+        "properties": {
+          "rule_id": {
+            "type": "string",
+            "title": "Rule Id"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "group": {
+            "$ref": "#/components/schemas/RuleGroup"
+          },
+          "kind": {
+            "$ref": "#/components/schemas/RuleKind"
+          },
+          "field": {
+            "type": "string",
+            "title": "Field"
+          },
+          "operator": {
+            "$ref": "#/components/schemas/Operator"
+          },
+          "field_value": {
+            "$ref": "#/components/schemas/JsonValue",
+            "description": "Значение поля закупки или заказчика"
+          },
+          "status": {
+            "$ref": "#/components/schemas/RuleStatus"
+          },
+          "triggered": {
+            "type": "boolean",
+            "title": "Triggered",
+            "description": "Для стоп-фактора: сработал",
+            "default": false
+          },
+          "partial_score": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Partial Score",
+            "description": "s ∈ [0; 1]"
+          },
+          "contribution": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Contribution",
+            "description": "Вклад в итог в баллах"
+          },
+          "lost": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lost",
+            "description": "Потеря баллов относительно s = 1"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text",
+            "description": "Фраза обоснования по шаблону"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rule_id",
+          "label",
+          "group",
+          "kind",
+          "field",
+          "operator",
+          "field_value",
+          "status",
+          "text"
+        ],
+        "title": "RuleOutcome"
+      },
+      "RuleStatus": {
+        "type": "string",
+        "enum": [
+          "applied",
+          "no_data",
+          "disabled"
+        ],
+        "title": "RuleStatus"
+      },
+      "SaveProfileRequest": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "default": "Мой профиль"
+          },
+          "company_description": {
+            "type": "string",
+            "title": "Company Description",
+            "default": ""
+          },
+          "source_text": {
+            "type": "string",
+            "title": "Source Text",
+            "default": ""
+          },
+          "group_weights": {
+            "$ref": "#/components/schemas/GroupWeights"
+          },
+          "thresholds": {
+            "$ref": "#/components/schemas/Thresholds"
+          },
+          "rules": {
+            "items": {
+              "$ref": "#/components/schemas/ScoringRule-Input"
+            },
+            "type": "array",
+            "title": "Rules"
+          },
+          "rescore": {
+            "type": "boolean",
+            "title": "Rescore",
+            "description": "«Сохранить и пересчитать»",
+            "default": false
+          }
+        },
+        "type": "object",
+        "title": "SaveProfileRequest"
+      },
+      "SaveProfileResponse": {
+        "properties": {
+          "profile": {
+            "$ref": "#/components/schemas/ScoringProfileOut"
+          },
+          "task_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Task Id",
+            "description": "Задача пересчёта, если rescore=true"
+          }
+        },
+        "type": "object",
+        "required": [
+          "profile"
+        ],
+        "title": "SaveProfileResponse"
+      },
+      "ScoreRequest": {
+        "properties": {
+          "procurement_ids": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Procurement Ids",
+            "description": "None — пересчитать все закупки пользователя"
+          }
+        },
+        "type": "object",
+        "title": "ScoreRequest"
+      },
+      "ScoreResultOut": {
+        "properties": {
+          "total": {
+            "type": "integer",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Total"
+          },
+          "recommendation": {
+            "$ref": "#/components/schemas/Recommendation"
+          },
+          "incomplete": {
+            "type": "boolean",
+            "title": "Incomplete",
+            "description": "Хотя бы одна группа «мало данных»"
+          },
+          "stop_factors": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Stop Factors",
+            "description": "rule_id сработавших"
+          },
+          "groups": {
+            "items": {
+              "$ref": "#/components/schemas/GroupScore"
+            },
+            "type": "array",
+            "title": "Groups"
+          },
+          "rules": {
+            "items": {
+              "$ref": "#/components/schemas/RuleOutcome"
+            },
+            "type": "array",
+            "title": "Rules"
+          },
+          "justification": {
+            "type": "string",
+            "title": "Justification"
+          },
+          "justification_source": {
+            "$ref": "#/components/schemas/JustificationSource",
+            "default": "template"
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "procurement_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Procurement Id"
+          },
+          "profile_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Profile Id"
+          },
+          "computed_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Computed At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "total",
+          "recommendation",
+          "incomplete",
+          "groups",
+          "rules",
+          "justification",
+          "id",
+          "procurement_id",
+          "profile_id",
+          "computed_at"
+        ],
+        "title": "ScoreResultOut"
+      },
+      "ScoringProfileOut": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "default": "Мой профиль"
+          },
+          "company_description": {
+            "type": "string",
+            "title": "Company Description",
+            "default": ""
+          },
+          "source_text": {
+            "type": "string",
+            "title": "Source Text",
+            "default": ""
+          },
+          "group_weights": {
+            "$ref": "#/components/schemas/GroupWeights"
+          },
+          "thresholds": {
+            "$ref": "#/components/schemas/Thresholds"
+          },
+          "rules": {
+            "items": {
+              "$ref": "#/components/schemas/ScoringRule-Output"
+            },
+            "type": "array",
+            "title": "Rules"
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "is_active": {
+            "type": "boolean",
+            "title": "Is Active"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "is_active",
+          "updated_at"
+        ],
+        "title": "ScoringProfileOut"
+      },
+      "ScoringRule-Input": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 1,
+            "title": "Id"
+          },
+          "group": {
+            "$ref": "#/components/schemas/RuleGroup"
+          },
+          "kind": {
+            "$ref": "#/components/schemas/RuleKind"
+          },
+          "field": {
+            "type": "string",
+            "title": "Field"
+          },
+          "operator": {
+            "$ref": "#/components/schemas/Operator"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              },
+              {
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "type": "array"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Value"
+          },
+          "weight": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "enum": [
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Weight",
+            "description": "1/2/3 = низкая/средняя/высокая; у стоп-факторов нет"
+          },
+          "soft_margin": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Soft Margin"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "enabled": {
+            "type": "boolean",
+            "title": "Enabled",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "group",
+          "kind",
+          "field",
+          "operator",
+          "label"
+        ],
+        "title": "ScoringRule"
+      },
+      "ScoringRule-Output": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 1,
+            "title": "Id"
+          },
+          "group": {
+            "$ref": "#/components/schemas/RuleGroup"
+          },
+          "kind": {
+            "$ref": "#/components/schemas/RuleKind"
+          },
+          "field": {
+            "type": "string",
+            "title": "Field"
+          },
+          "operator": {
+            "$ref": "#/components/schemas/Operator"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Value"
+          },
+          "weight": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "enum": [
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Weight",
+            "description": "1/2/3 = низкая/средняя/высокая; у стоп-факторов нет"
+          },
+          "soft_margin": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Soft Margin"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "enabled": {
+            "type": "boolean",
+            "title": "Enabled",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "group",
+          "kind",
+          "field",
+          "operator",
+          "label"
+        ],
+        "title": "ScoringRule"
+      },
+      "TaskCreated": {
+        "properties": {
+          "task_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Task Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "task_id"
+        ],
+        "title": "TaskCreated"
+      },
+      "TaskFileOut": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "filename": {
+            "type": "string",
+            "title": "Filename"
+          },
+          "status": {
+            "$ref": "#/components/schemas/FileStatus"
+          },
+          "error": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ErrorInfo"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/ErrorInfo"
+            },
+            "type": "array",
+            "title": "Warnings",
+            "description": "Например CUSTOMER_NOT_FOUND при статусе ok"
+          },
+          "procurement_ids": {
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "type": "array",
+            "title": "Procurement Ids",
+            "description": "По одной на лот"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "filename",
+          "status"
+        ],
+        "title": "TaskFileOut"
+      },
+      "TaskKind": {
+        "type": "string",
+        "enum": [
+          "upload",
+          "rescore",
+          "parse_profile",
+          "egrul_lookup"
+        ],
+        "title": "TaskKind"
+      },
+      "TaskOut": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "kind": {
+            "$ref": "#/components/schemas/TaskKind"
+          },
+          "status": {
+            "$ref": "#/components/schemas/TaskStatus"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total",
+            "description": "M в «Обработано N из M»"
+          },
+          "processed": {
+            "type": "integer",
+            "title": "Processed",
+            "description": "N"
+          },
+          "files": {
+            "items": {
+              "$ref": "#/components/schemas/TaskFileOut"
+            },
+            "type": "array",
+            "title": "Files"
+          },
+          "result": {
+            "$ref": "#/components/schemas/JsonValue",
+            "description": "parse_profile → ParseProfileResult, egrul_lookup → CustomerProfileOut"
+          },
+          "error": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ErrorInfo"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "finished_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Finished At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "status",
+          "total",
+          "processed",
+          "created_at"
+        ],
+        "title": "TaskOut"
+      },
+      "TaskStatus": {
+        "type": "string",
+        "enum": [
+          "queued",
+          "processing",
+          "done",
+          "partial",
+          "failed"
+        ],
+        "title": "TaskStatus"
+      },
+      "Thresholds": {
+        "properties": {
+          "participate": {
+            "type": "integer",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Participate",
+            "default": 70
+          },
+          "consider": {
+            "type": "integer",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Consider",
+            "default": 40
+          }
+        },
+        "type": "object",
+        "title": "Thresholds"
+      },
+      "UserOut": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "email": {
+            "type": "string",
+            "title": "Email"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "email",
+          "created_at"
+        ],
+        "title": "UserOut"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}
