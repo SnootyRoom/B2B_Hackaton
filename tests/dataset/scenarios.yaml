@@ -1,0 +1,62 @@
+# Тестовые сценарии для скоринга закупок (Роль 5)
+profiles:
+  profile_a_stroy:
+    text: >
+      Мы опытная строительная компания из Московской области "СтройРегион-Инвест".
+      Специализация: строительство школ, детсадов, административных зданий,
+      кровельные и восстановительные работы. Есть СРО, собственная техника, 120 сотрудников.
+      Годовая выручка 350 млн руб. Интересны конкурсы и аукционы на строительные работы
+      от 5 до 50 млн руб.
+
+  profile_b_newbie:
+    text: >
+      Мы маленькая компания "Вектор" из Тверской области. Специализация: поставка
+      канцтоваров, мелкий ремонт офисов. 4 сотрудника, годовая выручка 12 млн руб.
+      Опыт в госзакупках 1.5 года, 3 контракта. Нет СРО на строительство.
+      Интересны небольшие запросы котировок до 2 млн руб.
+
+scenarios:
+  - id: s001
+    file: tests/dataset/procurements/0338200009826000713.xml
+    lot: null
+    profile: profile_a_stroy
+    expected_recommendation: skip
+    expected_score: [0, 30]
+    expected_stop_factor: null
+    rationale: "Медицинские реагенты — не профиль строительной компании"
+
+  - id: s002
+    file: tests/dataset/procurements/0102200001626002273.xml
+    lot: null
+    profile: profile_a_stroy
+    expected_recommendation: participate
+    expected_score: [60, 85]
+    expected_stop_factor: null
+    rationale: "Прямая специализация (кровля и восстановительные работы), НМЦК 16.9 млн подходит"
+
+  - id: s003
+    file: tests/dataset/procurements/0122200002526003798.xml
+    lot: null
+    profile: profile_b_newbie
+    expected_recommendation: consider
+    expected_score: [40, 70]
+    expected_stop_factor: null
+    rationale: "Маленький запрос котировок (0.8 млн), подходит по размеру"
+
+  - id: s004
+    file: tests/dataset/procurements/32616481510.xml
+    lot: null
+    profile: profile_a_stroy
+    expected_recommendation: consider
+    expected_score: [40, 65]
+    expected_stop_factor: null
+    rationale: "Строймонтаж — профиль компании, но 223-ФЗ и удалённый регион"
+
+  - id: s005
+    file: tests/dataset/procurements/0820500000826005362.xml
+    lot: null
+    profile: profile_b_newbie
+    expected_recommendation: skip
+    expected_score: [0, 20]
+    expected_stop_factor: null
+    rationale: "Сумма 47.6 млн в 4 раза превышает годовую выручку компании"
