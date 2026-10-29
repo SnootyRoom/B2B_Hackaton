@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns4:Purchase xmlns:ns4="http://zakupki.gov.ru/epz/order/2023" xmlns:ns11="http://zakupki.gov.ru/common/2023">
+    <ns11:regNumber>0820500000826005362</ns11:regNumber>
+    <ns11:purchaseNumber>0820500000826005362</ns11:purchaseNumber>
+    <ns11:purchaseObjectInfo>Выполнение работ по развитию аппаратно-программного комплекса «Безопасный город», в том числе поставка и установка камер видеонаблюдения, системы хранения данных, сервера</ns11:purchaseObjectInfo>
+    <ns11:initialPrice>47643379.00</ns11:initialPrice>
+    <ns11:currencyCode>RUB</ns11:currencyCode>
+    <ns11:law>44-ФЗ</ns11:law>
+    <ns11:customer>
+        <ns11:organizationName>КРАЕВОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "ЦЕНТР ГОСУДАРСТВЕННЫХ ЗАКУПОК ПРИМОРСКОГО КРАЯ"</ns11:organizationName>
+        <ns11:inn>2540254652</ns11:inn>
+        <ns11:regionCode>25</ns11:regionCode>
+    </ns11:customer>
+    <ns11:lots>
+        <ns11:lot>
+            <ns11:lotNumber>1</ns11:lotNumber>
+            <ns11:lotName>Выполнение работ по развитию аппаратно-программного комплекса «Безопасный город»</ns11:lotName>
+            <ns11:lotItems>
+                <ns11:item>Система хранения данных – 1 шт.</ns11:item>
+                <ns11:item>Сервер – 1 шт.</ns11:item>
+                <ns11:item>Камера видеонаблюдения купольная управляемая (ТИП1) - 12 шт.</ns11:item>
+                <ns11:item>Камера видеонаблюдения цилиндрическая стационарная (ТИП2) - 3 шт.</ns11:item>
+            </ns11:lotItems>
+        </ns11:lot>
+    </ns11:lots>
+</ns4:Purchase>
