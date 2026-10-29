@@ -11,6 +11,7 @@ from app.core.errors import AppError, not_found
 from app.core.security import decode_access_token
 from app.models import ScoringProfile, User
 from app.schemas.common import ErrorCode
+from app.schemas.scoring import ScoringProfileData
 from app.scoring.defaults import default_profile
 
 DB = Annotated[Session, Depends(get_db)]
@@ -46,7 +47,10 @@ def get_active_profile(db: Session, user_id: uuid.UUID) -> ScoringProfile:
         .order_by(ScoringProfile.updated_at.desc())
     ).first()
     if profile is None:
-        data = default_profile()
+        # Профиль по умолчанию от движка → в формат контракта (лишние поля отбрасываются)
+        data = ScoringProfileData.model_validate(
+            default_profile().model_dump(mode="json", exclude_none=True)
+        )
         profile = ScoringProfile(
             owner_id=user_id,
             is_active=True,

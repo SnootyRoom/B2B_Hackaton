@@ -155,3 +155,46 @@ def test_organization_lookup_goes_to_queue(client: TestClient) -> None:
     task = client.get(f"/api/tasks/{r.json()['task_id']}").json()
     assert task["kind"] == "egrul_lookup"
     assert task["error"]["code"] == "EGRUL_UNAVAILABLE"
+
+
+def test_engine_bridge_scores_with_real_engine() -> None:
+    from datetime import date, timedelta
+    from decimal import Decimal
+
+    from app.models import utcnow
+    from app.schemas.customer import CustomerData, CustomerStatus
+    from app.schemas.procurement import ProcurementData
+    from app.schemas.scoring import ScoringProfileData, ScoringRule
+    from app.scoring.defaults import default_profile
+    from app.tasks.pipeline import run_engine
+
+    profile = ScoringProfileData.model_validate(
+        default_profile().model_dump(mode="json", exclude_none=True)
+    )
+    profile.rules.append(
+        ScoringRule.model_validate(
+            {"id": "r_nmck", "group": "procurement", "kind": "weighted", "field": "nmck",
+             "operator": "between", "value": [1000000, 10000000], "weight": 3, "label": "НМЦК"}
+        )
+    )  # fmt: skip
+    data = ProcurementData(
+        reg_number="1",
+        subject="Ремонт",
+        nmck=Decimal(4200000),
+        application_deadline=utcnow() + timedelta(days=10),
+        parsed_by="json",
+    )
+    ok = CustomerData(
+        inn="7017000000",
+        name="ОК",
+        status=CustomerStatus.active,
+        registration_date=date(2010, 1, 1),
+    )
+    r = run_engine(data, ok, profile, None)
+    assert r.total == 100 and r.recommendation == "participate"
+    assert {x.rule_id: x.field for x in r.rules}["r_nmck"] == "nmck"
+
+    bad = ok.model_copy(update={"status": CustomerStatus.liquidating})
+    r = run_engine(data, bad, profile, None)
+    assert r.total == 0 and r.recommendation == "skip"
+    assert r.stop_factors == ["stop_customer_status"]
