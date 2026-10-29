@@ -1,0 +1,17 @@
+# Формат тестового сценария (роль 5). Размечать ДО запуска системы.
+profiles:
+  it_tomsk:
+    text: >
+      Мы IT-компания из Томска, разрабатываем и сопровождаем ПО. Интересны аукционы
+      и запросы котировок в Томской и Новосибирской областях от 500 тыс. до 15 млн,
+      обеспечение контракта не больше 10%, не меньше 5 дней на подачу заявки.
+
+scenarios:
+  - id: s001
+    file: tests/dataset/procurements/0365000000000000001.xml   # пример пути
+    lot: null                      # номер лота, если в файле их несколько
+    profile: it_tomsk
+    expected_recommendation: participate   # participate | consider | skip
+    expected_score: [70, 90]               # допустимый диапазон
+    expected_stop_factor: null             # например customer_liquidating
+    rationale: Предмет — сопровождение ПО, Томская область, НМЦК 4,2 млн.
