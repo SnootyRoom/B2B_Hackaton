@@ -65,6 +65,20 @@ def _partial(
     return 1.0 if boolean_holds(op, x, rule.value) else 0.0
 
 
+def subject_mismatch(results: list[RuleOutcome]) -> list[str]:
+    """rule_id правил «предмет похож на…», если все проверенные дали 0 — предмет совсем не тот."""
+    semantic = [
+        r
+        for r in results
+        if r.operator == Operator.semantic_match
+        and r.kind == RuleKind.weighted
+        and r.status == RuleStatus.applied
+    ]
+    if semantic and all((r.partial_score or 0.0) == 0.0 for r in semantic):
+        return [r.rule_id for r in semantic]
+    return []
+
+
 def recommend(
     total: int, stopped: bool, no_data: bool, profile: ScoringProfileData
 ) -> Recommendation:
@@ -169,6 +183,12 @@ def score(
     no_data = included_w == 0
     total = 0 if stopped or no_data else _round(total_f)
 
+    # Предмет совсем не похож на деятельность компании — хорошая цена не вытягивает
+    # закупку в «Рассмотреть»: итог не выше порога «Пропустить».
+    mismatch = subject_mismatch(results)
+    if mismatch and not stopped:
+        total = min(total, max(profile.thresholds.consider - 1, 0))
+
     result = ScoreResultData(
         total=total,
         recommendation=recommend(total, stopped, no_data, profile),
@@ -178,5 +198,5 @@ def score(
         rules=results,
         justification="",
     )
-    result.justification = build_justification(result, no_data=no_data)
+    result.justification = build_justification(result, no_data=no_data, mismatch=mismatch)
     return result

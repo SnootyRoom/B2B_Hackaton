@@ -12,6 +12,7 @@ from app.schemas.scoring import (
     RuleKind,
     ScoringProfileData,
     ScoringRule,
+    Thresholds,
 )
 from app.schemas.scoring import RuleGroup as Group
 from app.scoring import default_profile, extract_fields, score, with_defaults
@@ -275,3 +276,47 @@ def test_invalid_rule(field: str, op: Operator, value: object) -> None:
 def test_zero_group_weights_invalid() -> None:
     with pytest.raises(ValidationError):
         GroupWeights(procurement=0, fit=0, customer=0)
+
+
+# --- ограничитель «предмет совсем не тот» ----------------------------------
+
+SUBJECT_PROFILE = ScoringProfileData(
+    rules=[
+        rule("subj", "subject", Operator.semantic_match, "канцтовары"),
+        rule("price", "nmck", Operator.lte, 2_000_000),
+    ]
+)
+
+
+def test_subject_mismatch_caps_total_below_consider() -> None:
+    # цена подходит (100), предмет нет (0): без ограничителя было бы 53% «Рассмотреть»
+    r = score(SUBJECT_PROFILE, {"subject": "масло и сыр", "nmck": 820_000.0}, lambda a, b: 0.5)
+    assert r.total == 39
+    assert r.recommendation == Recommendation.skip
+    assert "не соответствует деятельности компании [subj]" in r.justification
+
+
+def test_partial_subject_match_is_not_capped() -> None:
+    r = score(
+        SUBJECT_PROFILE,
+        {"subject": "картриджи", "nmck": 820_000.0},
+        lambda a, b: 0.88,  # между порогами 0,86 и 0,90 → частичный балл
+        SemanticThresholds(0.86, 0.90),
+    )
+    assert r.total > 39
+    assert "ограничена" not in r.justification
+
+
+def test_no_subject_rule_or_no_data_is_not_capped() -> None:
+    price_only = ScoringProfileData(rules=[rule("price", "nmck", Operator.lte, 2_000_000)])
+    assert score(price_only, {"nmck": 820_000.0}).total == 100
+    # модели эмбеддингов нет → «нет данных», а не «не похож»
+    assert score(SUBJECT_PROFILE, {"subject": "масло", "nmck": 820_000.0}).total == 100
+
+
+def test_cap_follows_profile_threshold() -> None:
+    prof = SUBJECT_PROFILE.model_copy(
+        update={"thresholds": Thresholds(participate=80, consider=50)}
+    )
+    r = score(prof, {"subject": "масло", "nmck": 820_000.0}, lambda a, b: 0.5)
+    assert r.total == 49
