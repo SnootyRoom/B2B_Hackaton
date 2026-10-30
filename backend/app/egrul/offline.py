@@ -1,7 +1,10 @@
 """Офлайн-профили `data/customers/<inn>.json` для тестового набора и демо.
 
-Формат файла — сохранённый ответ DaData: весь ответ `{"suggestions": [...]}` или одна
-подсказка `{"value": ..., "data": {...}}`.
+Два формата файла:
+- сохранённый ответ DaData: весь ответ `{"suggestions": [...]}` или одна подсказка
+  `{"value": ..., "data": {...}}`;
+- готовый профиль по схеме `CustomerData` (`app/schemas/customer.py`) — для заказчиков,
+  которых нет в DaData или которые заданы вручную: `{"inn", "name", "status", ...}`.
 """
 
 import json
@@ -28,7 +31,13 @@ def load(inn: str) -> tuple[CustomerData, dict[str, Any]] | None:
             raw = raw["suggestions"][0]
         if not isinstance(raw, dict):
             raise ValueError("ожидался объект")
-        return party_to_customer(raw), raw
+        if "data" in raw:
+            return party_to_customer(raw), raw
+        # Незнакомые поля — ошибка, а не тихий пропуск: иначе статус молча станет unknown
+        unknown = set(raw) - set(CustomerData.model_fields)
+        if unknown:
+            raise ValueError(f"незнакомые поля {sorted(unknown)}")
+        return CustomerData.model_validate(raw), raw
     except (OSError, ValueError, LookupError, ValidationError) as e:
         log.warning("offline profile %s is broken: %s", path.name, e)
         return None
