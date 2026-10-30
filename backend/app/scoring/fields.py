@@ -100,7 +100,8 @@ def extract_fields(
         "bid_security_pct": _pct(procurement, "bid_security", nmck),
         "contract_security_pct": _pct(procurement, "contract_security", nmck),
         "restrictions": _str_list(_get(procurement, "restrictions")),
-        "okpd2_codes": _str_list(_get(procurement, "okpd2_codes")),
+        # пустой список от парсера = кодов в документе нет, а не «коды не совпали»
+        "okpd2_codes": _str_list(_get(procurement, "okpd2_codes")) or None,
         "subject": subject_text(procurement) or None,
         "customer.status": s(_get(customer, "status")),
         "customer.age_years": age_years,
