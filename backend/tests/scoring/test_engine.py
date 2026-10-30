@@ -241,6 +241,7 @@ def test_justification_mentions_values_and_rules() -> None:
     )
     r = score(prof, extract_fields(procurement(), GOOD_CUSTOMER, NOW))
     assert "4,2 млн ₽" in r.justification
+    assert "НМЦК 4,2 млн ₽" in r.justification  # аббревиатура не портится
     assert "[nmck]" in r.justification and "[sec]" in r.justification
 
 
