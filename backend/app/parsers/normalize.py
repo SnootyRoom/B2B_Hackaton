@@ -182,15 +182,19 @@ def normalize_method(raw: str | None) -> Method | None:
     return Method.other
 
 
+# В 44-ФЗ ограничения часто записаны только ссылкой на статью: ч. 3 ст. 30 — закупка у СМП
+# и СОНКО, ст. 28 — УИС, ст. 29 — организации инвалидов, ст. 14 — национальный режим.
 _RESTRICTIONS: list[tuple[str, Restriction]] = [
     (
-        r"мал\w+ (и средн\w+ )?предпринимательств|\bсмп\b|социально ориентированн",
+        r"мал\w+ (и средн\w+ )?предпринимательств|\bсмп\b|социально ориентированн"
+        r"|ч\.\s*3\s+ст\.\s*30\b",
         Restriction.smp_only,
     ),
-    (r"уголовно-исполнительн", Restriction.prefs_uis),
-    (r"инвалид", Restriction.prefs_disabled),
+    (r"уголовно-исполнительн|ст(\.|ать\w+)\s*28\b", Restriction.prefs_uis),
+    (r"инвалид|ст(\.|ать\w+)\s*29\b", Restriction.prefs_disabled),
     (
-        r"иностранн|национальн\w+ режим|запрет на допуск|ограничени\w+ допуска",
+        r"иностранн|национальн\w+ режим|запрет на допуск|ограничени\w+ допуска"
+        r"|ст(\.|ать\w+)\s*14\b",
         Restriction.national_regime,
     ),
 ]
@@ -219,7 +223,7 @@ def normalize_okpd2(value: str | None) -> str | None:
 _DAYS_RE = re.compile(
     r"(\d{1,4})\s*(?:\(\s*[а-яё\s-]+\)\s*)?(календарн\w*|рабоч\w*)?\s*(?:дн|ден|сут)", re.I
 )
-_UNTIL_DATE_RE = re.compile(r"(?:по|до)\s+(\d{2}\.\d{2}\.\d{4})")
+_UNTIL_DATE_RE = re.compile(r"(?:по|до|не позднее)\s+(\d{2}\.\d{2}\.\d{4})")
 
 
 def delivery_days(text: str | None, published_at: datetime | None) -> int | None:
@@ -244,12 +248,25 @@ def delivery_days(text: str | None, published_at: datetime | None) -> int | None
     return None
 
 
+def percent(value: str | None) -> Decimal | None:
+    """«10.0», «5% от начальной (максимальной) цены» → процент; сумма без знака % → None."""
+    if not value:
+        return None
+    m = re.search(r"(\d+(?:[.,]\d+)?)\s*%", value)
+    number = money(m.group(1)) if m else money(value)
+    return number if number is not None and number <= 100 else None
+
+
 def security_amount(
     amount: Decimal | None, pct: Decimal | None, nmck: Decimal
 ) -> tuple[Decimal | None, Decimal | None]:
-    """Обеспечение: процент → рубли от НМЦК и наоборот; исходный процент сохраняется."""
-    if amount is None and pct is not None:
+    """Обеспечение в рублях и процентах НМЦК.
+
+    Процент главнее суммы: в совместных закупках сумма в документе — доля одного заказчика,
+    а процент общий. Нет процента → считается по сумме.
+    """
+    if pct is not None:
         amount = (nmck * pct / 100).quantize(Decimal("0.01"))
-    if pct is None and amount is not None and nmck:
+    elif amount is not None and nmck:
         pct = (amount / nmck * 100).quantize(Decimal("0.01"))
     return amount, pct
