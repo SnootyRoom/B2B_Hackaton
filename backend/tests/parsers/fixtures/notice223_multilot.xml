@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:purchaseNoticeAE xmlns:ns2="http://zakupki.gov.ru/223fz/purchase/1" xmlns="http://zakupki.gov.ru/223fz/types/1">
+  <ns2:header><guid>a1</guid><createDateTime>2026-10-21T12:00:00</createDateTime></ns2:header>
+  <ns2:body>
+    <ns2:item>
+      <ns2:guid>b2</ns2:guid>
+      <ns2:purchaseNoticeAEData>
+        <guid>c3</guid>
+        <urlEIS>https://zakupki.gov.ru/epz/order/notice/notice223/common-info.html?noticeInfoId=1</urlEIS>
+        <registrationNumber>32616481510</registrationNumber>
+        <name>Выполнение строительно-монтажных работ</name>
+        <customer>
+          <mainInfo>
+            <fullName>АКЦИОНЕРНОЕ ОБЩЕСТВО "СТРОЙЗАКАЗЧИК"</fullName>
+            <inn>7736050003</inn>
+            <kpp>772801001</kpp>
+            <legalAddress>660049, Красноярский край, г Красноярск, ул Мира, д. 10</legalAddress>
+          </mainInfo>
+        </customer>
+        <purchaseMethodCode>4001</purchaseMethodCode>
+        <purchaseCodeName>Аукцион в электронной форме</purchaseCodeName>
+        <publicationDateTime>2026-10-21T12:00:00</publicationDateTime>
+        <submissionCloseDateTime>2026-11-12T10:00:00</submissionCloseDateTime>
+        <lots>
+          <lot>
+            <guid>l1</guid>
+            <ordinalNumber>1</ordinalNumber>
+            <lotData>
+              <subject>Монтаж кровли склада</subject>
+              <currency><code>RUB</code></currency>
+              <initialSum>12500000.50</initialSum>
+              <deliveryPlace><address>Красноярский край, г Ачинск</address></deliveryPlace>
+              <forSmallOrMiddle>true</forSmallOrMiddle>
+              <lotItems>
+                <lotItem>
+                  <ordinalNumber>1</ordinalNumber>
+                  <okpd2><code>43.91.19.110</code><name>Работы кровельные</name></okpd2>
+                  <okei><code>055</code><name>Квадратный метр</name></okei>
+                  <qty>1500</qty>
+                </lotItem>
+              </lotItems>
+            </lotData>
+          </lot>
+          <lot>
+            <guid>l2</guid>
+            <ordinalNumber>2</ordinalNumber>
+            <lotData>
+              <subject>Ремонт фасада</subject>
+              <currency><code>RUB</code></currency>
+              <initialSum>3 000 000,00</initialSum>
+              <forSmallOrMiddle>false</forSmallOrMiddle>
+              <lotItems>
+                <lotItem>
+                  <ordinalNumber>1</ordinalNumber>
+                  <okpd2><code>43.39.19.190</code><name>Работы завершающие</name></okpd2>
+                  <qty>1</qty>
+                </lotItem>
+              </lotItems>
+            </lotData>
+          </lot>
+        </lots>
+      </ns2:purchaseNoticeAEData>
+    </ns2:item>
+  </ns2:body>
+</ns2:purchaseNoticeAE>

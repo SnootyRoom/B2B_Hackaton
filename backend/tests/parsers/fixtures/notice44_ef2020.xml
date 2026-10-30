@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns7:epNotificationEF2020 xmlns:ns7="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns5="http://zakupki.gov.ru/oos/common/1" xmlns:ns4="http://zakupki.gov.ru/oos/base/1" schemeVersion="16.0">
+  <ns7:id>12345678</ns7:id>
+  <ns7:commonInfo>
+    <ns7:purchaseNumber>0365200000026000123</ns7:purchaseNumber>
+    <ns7:docNumber>№0365200000026000123</ns7:docNumber>
+    <ns7:publishDTInEIS>2026-10-20T10:15:00+07:00</ns7:publishDTInEIS>
+    <ns7:href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0365200000026000123</ns7:href>
+    <ns7:placingWay><ns4:code>EAP20</ns4:code><ns4:name>Электронный аукцион</ns4:name></ns7:placingWay>
+    <ns7:purchaseObjectInfo>Оказание услуг по сопровождению  программного обеспечения</ns7:purchaseObjectInfo>
+  </ns7:commonInfo>
+  <ns7:purchaseResponsibleInfo>
+    <ns5:responsibleOrgInfo>
+      <ns5:regNum>03652000000</ns5:regNum>
+      <ns5:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "ЦЕНТР ИНФОРМАТИЗАЦИИ"</ns5:fullName>
+      <ns5:INN>7707083893</ns5:INN>
+      <ns5:KPP>701701001</ns5:KPP>
+      <ns5:postAddress>Российская Федерация, 634050, Томская обл, г Томск, пр-кт Ленина, д.36</ns5:postAddress>
+      <ns5:factAddress>Российская Федерация, 634050, Томская обл, г Томск, пр-кт Ленина, д.36</ns5:factAddress>
+    </ns5:responsibleOrgInfo>
+    <ns5:responsibleRole>CU</ns5:responsibleRole>
+  </ns7:purchaseResponsibleInfo>
+  <ns7:notificationInfo>
+    <ns5:procedureInfo>
+      <ns5:collectingInfo>
+        <ns5:startDT>2026-10-20T10:15:00+07:00</ns5:startDT>
+        <ns5:endDT>2026-11-05T09:00:00+07:00</ns5:endDT>
+      </ns5:collectingInfo>
+    </ns5:procedureInfo>
+    <ns5:contractConditionsInfo>
+      <ns5:maxPriceInfo>
+        <ns5:maxPrice>4200000.00</ns5:maxPrice>
+        <ns5:currency><ns4:code>RUB</ns4:code><ns4:name>Российский рубль</ns4:name></ns5:currency>
+      </ns5:maxPriceInfo>
+    </ns5:contractConditionsInfo>
+    <ns5:customerRequirementsInfo>
+      <ns5:customerRequirementInfo>
+        <ns5:customer>
+          <ns4:regNum>03652000000</ns4:regNum>
+          <ns4:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "ЦЕНТР ИНФОРМАТИЗАЦИИ"</ns4:fullName>
+        </ns5:customer>
+        <ns5:applicationGuarantee><ns5:amount>42000.00</ns5:amount><ns5:part>1.00</ns5:part></ns5:applicationGuarantee>
+        <ns5:contractGuarantee><ns5:part>10</ns5:part></ns5:contractGuarantee>
+        <ns5:contractConditionsInfo>
+          <ns5:deliveryPlacesInfo>
+            <ns5:deliveryPlaceInfo>
+              <ns5:GARInfo><ns5:GARAddress>Российская Федерация, Томская обл, г.о. город Томск, г Томск, ул Фрунзе, д.103</ns5:GARAddress></ns5:GARInfo>
+            </ns5:deliveryPlaceInfo>
+          </ns5:deliveryPlacesInfo>
+          <ns5:deliveryTerm>В течение 30 календарных дней с даты заключения контракта</ns5:deliveryTerm>
+        </ns5:contractConditionsInfo>
+      </ns5:customerRequirementInfo>
+    </ns5:customerRequirementsInfo>
+    <ns5:purchaseObjectsInfo>
+      <ns5:notDrugPurchaseObjectsInfo>
+        <ns4:purchaseObject>
+          <ns4:OKPD2><ns4:OKPDCode>62.02.30.000</ns4:OKPDCode><ns4:OKPDName>Услуги по технической поддержке ИТ</ns4:OKPDName></ns4:OKPD2>
+          <ns4:name>Сопровождение информационной системы</ns4:name>
+          <ns4:OKEI><ns4:code>876</ns4:code><ns4:nationalCode>УСЛ ЕД</ns4:nationalCode><ns4:name>Условная единица</ns4:name></ns4:OKEI>
+          <ns4:price>2100000.00</ns4:price>
+          <ns4:quantity><ns4:value>2</ns4:value></ns4:quantity>
+          <ns4:sum>4200000.00</ns4:sum>
+        </ns4:purchaseObject>
+        <ns4:purchaseObject>
+          <ns4:KTRU><ns4:code>62.01.11.000-00000002</ns4:code><ns4:name>Разработка ПО</ns4:name></ns4:KTRU>
+          <ns4:name>Доработка модулей</ns4:name>
+          <ns4:quantity><ns4:value>1</ns4:value></ns4:quantity>
+        </ns4:purchaseObject>
+      </ns5:notDrugPurchaseObjectsInfo>
+    </ns5:purchaseObjectsInfo>
+    <ns5:preferensesInfo>
+      <ns5:preferenseInfo>
+        <ns5:preferenseRequirementInfo>
+          <ns4:shortName>МП20</ns4:shortName>
+          <ns4:name>Ограничение участия в определении поставщика, установленное в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ (участниками закупки могут быть только субъекты малого предпринимательства, социально ориентированные некоммерческие организации)</ns4:name>
+        </ns5:preferenseRequirementInfo>
+      </ns5:preferenseInfo>
+    </ns5:preferensesInfo>
+  </ns7:notificationInfo>
+</ns7:epNotificationEF2020>

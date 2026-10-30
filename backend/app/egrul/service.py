@@ -7,13 +7,19 @@
 - `get_cached(db, inn) -> CustomerProfileOut | None` — без сети, для API.
 """
 
+import logging
 from dataclasses import dataclass
 
+from pydantic import ValidationError
 from sqlalchemy.orm import Session
 
-from app.models import CustomerProfile
+from app.egrul import cache, dadata, offline
+from app.models import utcnow
+from app.parsers.normalize import inn_is_valid
 from app.schemas.common import ErrorCode
-from app.schemas.customer import CustomerProfileOut
+from app.schemas.customer import CustomerProfileOut, CustomerSource
+
+log = logging.getLogger(__name__)
 
 
 @dataclass
@@ -23,14 +29,70 @@ class CustomerLookup:
 
 
 def get_cached(db: Session, inn: str) -> CustomerProfileOut | None:
-    # TODO(роль 2): офлайн-профиль data/customers/<inn>.json, если в кэше нет.
-    row = db.get(CustomerProfile, inn)
-    return CustomerProfileOut.model_validate(row) if row else None
+    row = cache.get(db, inn)
+    if row is not None:
+        return cache.to_out(row)
+    found = offline.load(inn)
+    if found is None:
+        return None
+    data, _ = found
+    return CustomerProfileOut(
+        **data.model_dump(), fetched_at=utcnow(), source=CustomerSource.offline
+    )
+
+
+def _from_offline(db: Session, inn: str) -> CustomerProfileOut | None:
+    found = offline.load(inn)
+    if found is None:
+        return None
+    data, raw = found
+    if data.inn != inn:
+        log.warning("offline profile %s.json contains INN %s", inn, data.inn)
+        return None
+    return cache.to_out(cache.save(db, data, CustomerSource.offline, raw))
+
+
+def _lookup(db: Session, inn: str) -> CustomerLookup:
+    if not inn_is_valid(inn):
+        return CustomerLookup(None, ErrorCode.CUSTOMER_NOT_FOUND)
+
+    row = cache.get(db, inn)
+    if row is not None and cache.is_fresh(row):
+        return CustomerLookup(cache.to_out(row, CustomerSource.cache))
+
+    not_found = False
+    try:
+        suggestion = dadata.find_party(inn)
+    except dadata.DadataUnavailable:
+        suggestion = None
+    else:
+        not_found = suggestion is None
+    if suggestion is not None:
+        try:
+            data = dadata.party_to_customer(suggestion)
+        except ValidationError as e:
+            log.warning("dadata: unexpected response for %s: %s", inn, e)
+        else:
+            saved = cache.save(db, data, CustomerSource.dadata, suggestion)
+            return CustomerLookup(cache.to_out(saved, CustomerSource.dadata))
+
+    if row is not None and row.source == CustomerSource.dadata:
+        return CustomerLookup(cache.to_out(row, CustomerSource.stale_cache))
+    profile = _from_offline(db, inn)
+    if profile is not None:
+        return CustomerLookup(profile)
+    if row is not None:
+        return CustomerLookup(cache.to_out(row))
+    return CustomerLookup(
+        None, ErrorCode.CUSTOMER_NOT_FOUND if not_found else ErrorCode.EGRUL_UNAVAILABLE
+    )
 
 
 def lookup(db: Session, inn: str) -> CustomerLookup:
-    # TODO(роль 2): проверка контрольной суммы, TTL кэша, DaData, офлайн-профили.
-    cached = get_cached(db, inn)
-    if cached is not None:
-        return CustomerLookup(cached)
-    return CustomerLookup(None, ErrorCode.EGRUL_UNAVAILABLE)
+    try:
+        # Точка сохранения: сбой кэша не должен откатить закупку, которую пишет конвейер
+        with db.begin_nested():
+            return _lookup(db, inn)
+    except Exception:
+        log.exception("egrul lookup failed for %s", inn)
+        return CustomerLookup(None, ErrorCode.EGRUL_UNAVAILABLE)
