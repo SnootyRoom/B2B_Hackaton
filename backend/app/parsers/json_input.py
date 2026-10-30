@@ -20,6 +20,9 @@ def parse_json(content: bytes) -> list[ProcurementData]:
             raise not_a_notice()
         item.setdefault("parsed_by", "json")
         missing = [k for k in REQUIRED_LABELS if item.get(k) in (None, "")]
+        # Как в XML: нет ни одного обязательного поля — это не закупка (например, профиль заказчика)
+        if len(missing) == len(REQUIRED_LABELS):
+            raise not_a_notice()
         if missing:
             raise missing_fields(missing)
         try:

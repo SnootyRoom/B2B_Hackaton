@@ -96,6 +96,9 @@ def test_unknown_format_goes_to_universal() -> None:
         ("empty.xml", b"", ErrorCode.UNSUPPORTED_FORMAT),
         ("doc.pdf", b"%PDF-1.4", ErrorCode.UNSUPPORTED_FORMAT),
         ("other.xml", b"<root><a>1</a></root>", ErrorCode.NOT_A_NOTICE),
+        # файл заказчика по ошибке загружен как закупка
+        ("0275066119.json", b'{"inn": "0275066119", "name": "OOO"}', ErrorCode.NOT_A_NOTICE),
+        ("no_price.json", b'{"reg_number": "1", "subject": "x"}', ErrorCode.MISSING_REQUIRED_FIELD),
     ],
 )
 def test_errors(name: str, content: bytes, code: ErrorCode) -> None:
