@@ -12,7 +12,6 @@ from typing import Any
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.core.config import get_settings
 from app.egrul import service as egrul
 from app.embeddings import service as embeddings
 from app.llm.client import LLMError, parse_profile_text
@@ -24,7 +23,6 @@ from app.schemas.procurement import ProcurementData
 from app.schemas.score import ScoreResultData
 from app.schemas.scoring import ScoringProfileData
 from app.schemas.task import FileStatus, TaskStatus
-from app.scoring import types as scoring_types
 from app.scoring.engine import score
 from app.scoring.fields import extract_fields
 
@@ -76,27 +74,12 @@ def run_engine(
     profile_data: ScoringProfileData,
     vec: list[float] | None,
 ) -> ScoreResultData:
-    """Мост между контрактами (app.schemas) и типами движка роли 3 (app.scoring.types)."""
-    s = get_settings()
-    engine_profile = scoring_types.ScoringProfileData.model_validate(
-        {
-            **profile_data.model_dump(mode="json", exclude_none=True),
-            "semantic": {"c0": s.semantic_c0, "c1": s.semantic_c1},
-        }
-    )
-    result = score(
-        engine_profile,
+    """Оценка закупки движком роли 3; эмбеддинг закупки посчитан при загрузке."""
+    return score(
+        profile_data,
         extract_fields(data, customer, utcnow()),
         similarity=lambda _text, query: embeddings.similarity(vec, query),
     )
-    rules = {r.id: r for r in profile_data.rules}
-    out = result.model_dump(mode="json")
-    for r in out["rules"]:
-        rule = rules[r["rule_id"]]
-        r["field"] = rule.field
-        r["operator"] = rule.operator
-        r["partial_score"] = r.pop("partial")
-    return ScoreResultData.model_validate(out)
 
 
 def score_procurement(

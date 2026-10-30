@@ -1,6 +1,5 @@
-"""Значения полей каталога из Procurement и CustomerProfile.
+"""Значения полей каталога из ProcurementData и CustomerData (или словарей с теми же полями).
 
-Пока нет контрактов роли 1, вход — словари с полями из аналитики (или объекты с атрибутами).
 None = «нет данных».
 """
 
@@ -45,8 +44,12 @@ def _dt(x: object) -> datetime | None:
     return None
 
 
-def _pct(part: object, nmck: float | None) -> float | None:
-    p = _num(part)
+def _pct(procurement: object, name: str, nmck: float | None) -> float | None:
+    """Процент из документа, если парсер его сохранил, иначе сумма / НМЦК."""
+    pct = _num(_get(procurement, f"{name}_pct"))
+    if pct is not None:
+        return pct
+    p = _num(_get(procurement, name))
     if p is None or not nmck:
         return None
     return p / nmck * 100
@@ -94,8 +97,8 @@ def extract_fields(
         "region": s(_get(procurement, "region")) or s(_get(customer, "region")),
         "days_to_deadline": days_to_deadline,
         "delivery_days": _num(_get(procurement, "delivery_days")),
-        "bid_security_pct": _pct(_get(procurement, "bid_security"), nmck),
-        "contract_security_pct": _pct(_get(procurement, "contract_security"), nmck),
+        "bid_security_pct": _pct(procurement, "bid_security", nmck),
+        "contract_security_pct": _pct(procurement, "contract_security", nmck),
         "restrictions": _str_list(_get(procurement, "restrictions")),
         "okpd2_codes": _str_list(_get(procurement, "okpd2_codes")),
         "subject": subject_text(procurement) or None,

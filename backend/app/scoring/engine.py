@@ -1,26 +1,31 @@
 """Детерминированный движок скоринга (аналитика, «Движок скоринга»).
 
 Порядок: стоп-факторы → частичные баллы правил → баллы групп → итог. LLM не участвует.
+Вход и выход — общие контракты app.schemas.scoring / app.schemas.score.
 """
 
 import math
 from collections.abc import Callable
 
-from app.scoring.catalog import NUMERIC_OPERATORS, Group, Operator
-from app.scoring.fields import FieldValue
-from app.scoring.justification import build_justification
-from app.scoring.operators import boolean_holds, numeric_score, semantic_score
-from app.scoring.templates import rule_text
-from app.scoring.types import (
-    GroupResult,
+from app.core.config import get_settings
+from app.schemas.score import (
+    GroupScore,
     Recommendation,
-    RuleKind,
-    RuleResult,
+    RuleOutcome,
     RuleStatus,
     ScoreResultData,
-    ScoringProfileData,
-    ScoringRule,
 )
+from app.schemas.scoring import Operator, RuleGroup, RuleKind, ScoringProfileData, ScoringRule
+from app.scoring.fields import FieldValue
+from app.scoring.justification import build_justification
+from app.scoring.operators import (
+    NUMERIC_OPERATORS,
+    SemanticThresholds,
+    boolean_holds,
+    numeric_score,
+    semantic_score,
+)
+from app.scoring.templates import rule_text
 
 # (текст закупки, описание из правила) → косинусная близость; None — посчитать не удалось
 Similarity = Callable[[str, str], float | None]
@@ -32,8 +37,16 @@ def _round(x: float) -> int:
     return math.floor(x + 0.5)
 
 
+def semantic_thresholds() -> SemanticThresholds:
+    s = get_settings()
+    return SemanticThresholds(c0=s.semantic_c0, c1=s.semantic_c1)
+
+
 def _partial(
-    rule: ScoringRule, x: FieldValue, profile: ScoringProfileData, similarity: Similarity | None
+    rule: ScoringRule,
+    x: FieldValue,
+    similarity: Similarity | None,
+    semantic: SemanticThresholds,
 ) -> float | None:
     """s ∈ [0; 1] или None, если данных нет."""
     if x is None:
@@ -43,18 +56,23 @@ def _partial(
         if similarity is None or not isinstance(x, str):
             return None
         c = similarity(x, str(rule.value))
-        return None if c is None else semantic_score(c, profile.semantic)
+        return None if c is None else semantic_score(c, semantic)
     if op in NUMERIC_OPERATORS:
         if not isinstance(x, int | float) or isinstance(x, bool):
             return None
-        margin = 0.0 if rule.kind == RuleKind.stop else rule.soft_margin
+        margin = 0.0 if rule.kind == RuleKind.stop else (rule.soft_margin or 0.0)
         return numeric_score(op, float(x), rule.value, margin)
     return 1.0 if boolean_holds(op, x, rule.value) else 0.0
 
 
-def recommend(total: int, stopped: bool, profile: ScoringProfileData) -> Recommendation:
+def recommend(
+    total: int, stopped: bool, no_data: bool, profile: ScoringProfileData
+) -> Recommendation:
     if stopped:
         return Recommendation.skip
+    if no_data:
+        # ни одно правило не проверено — решение за человеком, закупку не теряем
+        return Recommendation.consider
     if total >= profile.thresholds.participate:
         return Recommendation.participate
     if total >= profile.thresholds.consider:
@@ -66,22 +84,27 @@ def score(
     profile: ScoringProfileData,
     fields: dict[str, FieldValue],
     similarity: Similarity | None = None,
+    semantic: SemanticThresholds | None = None,
 ) -> ScoreResultData:
-    results: list[RuleResult] = []
+    semantic = semantic or semantic_thresholds()
+    results: list[RuleOutcome] = []
     stop_ids: list[str] = []
 
     for rule in profile.rules:
         x = fields.get(rule.field)
-        res = RuleResult(
+        res = RuleOutcome(
             rule_id=rule.id,
+            label=rule.label,
             group=rule.group,
             kind=rule.kind,
-            label=rule.label,
-            status=RuleStatus.disabled,
+            field=rule.field,
+            operator=rule.operator,
             field_value=x,
+            status=RuleStatus.disabled,
+            text="",
         )
         if rule.enabled:
-            s = _partial(rule, x, profile, similarity)
+            s = _partial(rule, x, similarity, semantic)
             if s is None:
                 res.status = RuleStatus.no_data
             else:
@@ -91,38 +114,41 @@ def score(
                     if res.triggered:
                         stop_ids.append(rule.id)
                 else:
-                    res.partial = s
+                    res.partial_score = s
+        res.text = rule_text(rule, res, x)
         results.append(res)
 
-    rules_by_id = {r.id: r for r in profile.rules}
+    weights = {r.id: r.weight or 0 for r in profile.rules}
 
     # Баллы групп
-    raw: dict[Group, tuple[float, float, bool]] = {}  # group → (G_g, Σw применённых, low_data)
-    for g in Group:
+    raw: dict[RuleGroup, tuple[float, float, bool]] = {}  # → (G_g, Σw применённых, low_data)
+    for g in RuleGroup:
         weighted = [
             r
             for r in results
             if r.group == g and r.kind == RuleKind.weighted and r.status != RuleStatus.disabled
         ]
-        total_w = sum(rules_by_id[r.rule_id].weight or 0 for r in weighted)
+        total_w = sum(weights[r.rule_id] for r in weighted)
         applied = [r for r in weighted if r.status == RuleStatus.applied]
-        applied_w = sum(rules_by_id[r.rule_id].weight or 0 for r in applied)
-        skipped_w = total_w - applied_w
-        low_data = total_w > 0 and skipped_w > LOW_DATA_SHARE * total_w
+        applied_w = sum(weights[r.rule_id] for r in applied)
+        low_data = total_w > 0 and total_w - applied_w > LOW_DATA_SHARE * total_w
         if applied_w > 0:
-            num = sum((rules_by_id[r.rule_id].weight or 0) * (r.partial or 0.0) for r in applied)
+            num = sum(weights[r.rule_id] * (r.partial_score or 0.0) for r in applied)
             raw[g] = (100 * num / applied_w, applied_w, low_data)
         else:
             raw[g] = (math.nan, 0.0, low_data)
 
-    included_w = sum(profile.group_weights.of(g) for g, (_, aw, _) in raw.items() if aw > 0)
-    groups: list[GroupResult] = []
+    def group_weight(g: RuleGroup) -> float:
+        return float(getattr(profile.group_weights, g.value))
+
+    included_w = sum(group_weight(g) for g, (_, aw, _) in raw.items() if aw > 0)
+    groups: list[GroupScore] = []
     total_f = 0.0
     for g, (gs, aw, low) in raw.items():
-        w = profile.group_weights.of(g)
+        w = group_weight(g)
         eff = w / included_w if aw > 0 and included_w > 0 else 0.0
         groups.append(
-            GroupResult(
+            GroupScore(
                 group=g,
                 score=None if aw == 0 else round(gs, 2),
                 weight=w,
@@ -135,24 +161,22 @@ def score(
         total_f += eff * gs
         for r in results:
             if r.group == g and r.kind == RuleKind.weighted and r.status == RuleStatus.applied:
-                share = eff * (rules_by_id[r.rule_id].weight or 0) / aw * 100
-                r.contribution = round(share * (r.partial or 0.0), 2)
-                r.lost = round(share * (1 - (r.partial or 0.0)), 2)
+                share = eff * weights[r.rule_id] / aw * 100
+                r.contribution = round(share * (r.partial_score or 0.0), 2)
+                r.lost = round(share * (1 - (r.partial_score or 0.0)), 2)
 
     stopped = bool(stop_ids)
-    total = 0 if stopped else _round(total_f)
-    incomplete = any(gr.low_data for gr in groups) or included_w == 0
-
-    for r in results:
-        r.text = rule_text(rules_by_id[r.rule_id], r)
+    no_data = included_w == 0
+    total = 0 if stopped or no_data else _round(total_f)
 
     result = ScoreResultData(
         total=total,
-        recommendation=recommend(total, stopped, profile),
-        incomplete=incomplete,
+        recommendation=recommend(total, stopped, no_data, profile),
+        incomplete=no_data or any(gr.low_data for gr in groups),
         stop_factors=stop_ids,
         groups=groups,
         rules=results,
+        justification="",
     )
-    result.justification = build_justification(result)
+    result.justification = build_justification(result, no_data=no_data)
     return result

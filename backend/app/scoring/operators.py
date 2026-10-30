@@ -1,8 +1,19 @@
 """Частичные баллы правил s ∈ [0; 1] (аналитика, «Частичный балл правила»)."""
 
-from app.scoring.catalog import Operator
+from dataclasses import dataclass
+
+from app.schemas.scoring import Operator, RuleValue
 from app.scoring.fields import FieldValue
-from app.scoring.types import RuleValue, SemanticThresholds
+
+NUMERIC_OPERATORS = frozenset({Operator.gte, Operator.lte, Operator.between})
+
+
+@dataclass(frozen=True)
+class SemanticThresholds:
+    """Пороги semantic_match: s = 0 при c ≤ c0, 1 при c ≥ c1. Значения — из настроек."""
+
+    c0: float = 0.55
+    c1: float = 0.80
 
 
 def _norm(x: str) -> str:
@@ -27,6 +38,12 @@ def _lte(x: float, v: float, m: float) -> float:
     return (hi - x) / (hi - v)
 
 
+def as_number(value: RuleValue) -> float:
+    if isinstance(value, list | str | bool) or value is None:
+        raise ValueError("Ожидалось число")
+    return float(value)
+
+
 def as_pair(value: RuleValue) -> tuple[float, float]:
     if not isinstance(value, list) or len(value) != 2:
         raise ValueError("Ожидался диапазон из двух чисел")
@@ -35,9 +52,9 @@ def as_pair(value: RuleValue) -> tuple[float, float]:
 
 def numeric_score(op: Operator, x: float, value: RuleValue, margin: float) -> float:
     if op == Operator.gte:
-        return _gte(x, float(value), margin)  # type: ignore[arg-type]
+        return _gte(x, as_number(value), margin)
     if op == Operator.lte:
-        return _lte(x, float(value), margin)  # type: ignore[arg-type]
+        return _lte(x, as_number(value), margin)
     a, b = as_pair(value)
     if x < a:
         return _gte(x, a, margin)
@@ -64,7 +81,7 @@ def boolean_holds(op: Operator, x: FieldValue, value: RuleValue) -> bool:
         return hit if op == Operator.any_in else not hit
     if op == Operator.prefix_in:
         codes = x if isinstance(x, list) else []
-        return any(c.strip().startswith(p.strip()) for c in codes for p in map(str, value or []))  # type: ignore[arg-type]
+        return any(c.strip().startswith(p) for c in codes for p in vals)
     if op == Operator.contains_any:
         text = _norm(x) if isinstance(x, str) else ""
         return any(v and v in text for v in vals)

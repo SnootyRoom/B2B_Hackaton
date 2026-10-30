@@ -21,6 +21,7 @@ class Settings(BaseSettings):
     llm_base_url: str = ""
     llm_api_key: str = ""
     llm_model: str = ""
+    llm_folder_id: str = ""  # YandexGPT: каталог Yandex Cloud
 
     dadata_api_key: str = ""
     egrul_cache_ttl_days: int = 7
@@ -35,15 +36,16 @@ class Settings(BaseSettings):
     demo_dir: Path = Path("/repo/data/demo")
 
     # Пороги semantic_match: калибруются ролью 3, в коде не хардкодятся
-    semantic_c0: float = 0.55
-    semantic_c1: float = 0.80
+    # e5 даёт близость 0,79–0,84 даже несвязанным текстам, совпадения — 0,87–0,91
+    semantic_c0: float = 0.82
+    semantic_c1: float = 0.87
 
     # Тесты: выполнять задачи Celery синхронно, без брокера
     celery_eager: bool = False
 
     @property
     def llm_enabled(self) -> bool:
-        return bool(self.llm_api_key and self.llm_model)
+        return bool(self.llm_base_url and self.llm_api_key and self.llm_model)
 
 
 @lru_cache

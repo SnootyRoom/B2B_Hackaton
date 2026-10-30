@@ -1,21 +1,28 @@
 """Правила по умолчанию (аналитика, «Правила по умолчанию»). Добавляются в каждый профиль."""
 
-from app.scoring.catalog import Group, Operator
-from app.scoring.types import RuleKind, ScoringProfileData, ScoringRule
+from decimal import Decimal
+
+from app.schemas.scoring import (
+    Operator,
+    RuleGroup,
+    RuleKind,
+    ScoringProfileData,
+    ScoringRule,
+)
 
 DEFAULT_RULES: list[ScoringRule] = [
     ScoringRule(
         id="stop_deadline",
-        group=Group.procurement,
+        group=RuleGroup.procurement,
         kind=RuleKind.stop,
         field="days_to_deadline",
         operator=Operator.lte,
-        value=0,
+        value=Decimal(0),
         label="Приём заявок завершён",
     ),
     ScoringRule(
         id="stop_customer_status",
-        group=Group.customer,
+        group=RuleGroup.customer,
         kind=RuleKind.stop,
         field="customer.status",
         operator=Operator.in_,
@@ -24,7 +31,7 @@ DEFAULT_RULES: list[ScoringRule] = [
     ),
     ScoringRule(
         id="customer_active",
-        group=Group.customer,
+        group=RuleGroup.customer,
         kind=RuleKind.weighted,
         field="customer.status",
         operator=Operator.in_,
@@ -34,7 +41,7 @@ DEFAULT_RULES: list[ScoringRule] = [
     ),
     ScoringRule(
         id="customer_reliable",
-        group=Group.customer,
+        group=RuleGroup.customer,
         kind=RuleKind.weighted,
         field="customer.has_unreliable_flags",
         operator=Operator.is_false,
@@ -43,11 +50,11 @@ DEFAULT_RULES: list[ScoringRule] = [
     ),
     ScoringRule(
         id="customer_age",
-        group=Group.customer,
+        group=RuleGroup.customer,
         kind=RuleKind.weighted,
         field="customer.age_years",
         operator=Operator.gte,
-        value=3,
+        value=Decimal(3),
         weight=2,
         soft_margin=0.67,
         label="Заказчик работает не меньше 3 лет",
