@@ -1,0 +1,106 @@
+/* Шрифты: Golos Text — основной (создан для российских госсервисов), Unbounded — цифры и заголовки,
+   JetBrains Mono — реестровые номера. Строка @import со шрифтами должна идти первой. */
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@500;700&family=JetBrains+Mono:wght@500&display=swap');
+@import 'tailwindcss';
+
+/* Цвета в фирменной красно-белой гамме B2B-РТС. В классах: bg-brand, text-good, bg-mid-soft, font-display и т. д. */
+@theme {
+  --color-brand: #d6202f; /* фирменный красный — только точечно: логотип, активная вкладка, штамп */
+  --color-brand-dark: #b01824;
+  --color-brand-soft: #fde8ea;
+  --color-ink: #1d1f27; /* основной графитовый текст */
+  --color-ink-soft: #3a3d49;
+  --color-muted: #6b6f7b;
+  --color-line: #e6e1e1;
+  --color-canvas: #f7f5f5; /* фон страницы — почти белый, с тёплым оттенком */
+  --color-track: #f0ecec; /* подложка шкал и плашек */
+  --color-brand-tint: #fbf3f3; /* очень светлый красный: шапка таблицы, подложки */
+  --color-good: #1f7a4d;
+  --color-good-soft: #e3f1e8;
+  --color-mid: #8a5800;
+  --color-mid-bar: #c98a12;
+  --color-mid-soft: #fbf0d6;
+  --color-bad: #b4232c;
+  --color-bad-soft: #fbe5e4;
+  --color-bad-hatch: #f2b8b8;
+  --font-sans: 'Golos Text', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-display: Unbounded, 'Golos Text', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+body {
+  @apply bg-canvas text-ink antialiased;
+  font-size: 15px;
+}
+
+/* Общие «кирпичики», чтобы не повторять длинные списки классов (в Tailwind 4 — через @utility) */
+@utility card {
+  @apply rounded-2xl bg-white p-4 shadow-[0_1px_0_rgba(29,31,39,0.04),0_8px_20px_-12px_rgba(29,31,39,0.18)] sm:p-5;
+}
+/* Штриховка «недобранных» баллов на шкале оценки */
+@utility hatch {
+  background: repeating-linear-gradient(135deg, var(--color-bad-hatch) 0 3px, var(--color-bad-soft) 3px 6px);
+}
+@utility btn {
+  @apply inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-xl border border-transparent px-4 py-2.5 font-semibold transition-[background-color,transform,box-shadow] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-45 disabled:active:scale-100;
+}
+/* Главная кнопка — фирменная красная */
+@utility btn-primary {
+  @apply btn bg-brand text-white shadow-[0_8px_18px_-8px_rgba(214,32,47,0.55)] hover:bg-brand-dark;
+}
+@utility btn-ghost {
+  @apply btn border-line bg-white text-ink hover:border-brand/40 hover:text-brand-dark;
+}
+@utility btn-sm {
+  @apply min-h-9 rounded-lg px-3 py-1.5 text-sm;
+}
+@utility input {
+  @apply max-w-full min-w-0 rounded-xl border border-line bg-white px-3.5 py-2.5 outline-none transition-shadow focus:border-brand/50 focus:ring-4 focus:ring-brand/10;
+}
+@utility label {
+  @apply mb-1.5 block text-sm font-semibold;
+}
+@utility chip {
+  @apply cursor-pointer rounded-full border border-line bg-white px-3 py-1 text-sm hover:bg-canvas;
+}
+@utility chip-on {
+  @apply border-brand bg-brand font-semibold text-white hover:bg-brand;
+}
+/* Заглушка-«скелетон», пока данные грузятся */
+@utility skeleton {
+  @apply animate-pulse rounded-2xl bg-track;
+}
+/* Плавное появление снизу вверх; задержку задаём через style={{ animationDelay }} */
+@utility animate-rise {
+  animation: rise 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Кто отключил анимации в системе — тому без них */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+input[type='range'] {
+  accent-color: var(--color-brand);
+}

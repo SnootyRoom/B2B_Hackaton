@@ -1,24 +1,25 @@
-import { StrictMode, useEffect, useState } from "react";
-import { createRoot } from "react-dom/client";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import App from './App';
+import './index.css';
 
-// Заглушка роли 1: проверяет связку фронт → nginx → API. Экраны делает роль 4.
-function App() {
-  const [status, setStatus] = useState("Проверяем связь с сервером…");
-  useEffect(() => {
-    fetch("/api/auth/me", { credentials: "include" })
-      .then((r) => setStatus(r.status === 401 ? "Сервер доступен, войдите в систему" : `Ответ сервера: ${r.status}`))
-      .catch(() => setStatus("Сервер недоступен"));
-  }, []);
-  return (
-    <main style={{ fontFamily: "system-ui", padding: 16 }}>
-      <h1>Скоринг закупок</h1>
-      <p>{status}</p>
-    </main>
-  );
-}
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: { retry: 1, refetchOnWindowFocus: false },
+  },
+});
 
-createRoot(document.getElementById("root")!).render(
+const root = document.getElementById('root');
+if (!root) throw new Error('Нет элемента #root');
+
+createRoot(root).render(
   <StrictMode>
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </QueryClientProvider>
   </StrictMode>,
 );
