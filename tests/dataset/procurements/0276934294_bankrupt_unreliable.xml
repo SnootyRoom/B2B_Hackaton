@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns4:Purchase xmlns:ns4="http://zakupki.gov.ru/epz/order/2023" xmlns:ns11="http://zakupki.gov.ru/common/2023">
+    <ns11:regNumber>027693429400001</ns11:regNumber>
+    <ns11:purchaseNumber>027693429400001</ns11:purchaseNumber>
+    <ns11:purchaseObjectInfo>Строительно-монтажные работы</ns11:purchaseObjectInfo>
+    <ns11:initialPrice>3500000.00</ns11:initialPrice>
+    <ns11:currencyCode>RUB</ns11:currencyCode>
+    <ns11:law>44-ФЗ</ns11:law>
+    <ns11:customer>
+        <ns11:organizationName>ООО "ВИ-СТРОЙМОНТАЖ"</ns11:organizationName>
+        <ns11:inn>0276934294</ns11:inn>
+        <ns11:regionCode>02</ns11:regionCode>
+    </ns11:customer>
+    <ns11:lots>
+        <ns11:lot>
+            <ns11:lotNumber>1</ns11:lotNumber>
+            <ns11:lotName>Строительно-монтажные работы</ns11:lotName>
+        </ns11:lot>
+    </ns11:lots>
+</ns4:Purchase>
