@@ -21,7 +21,10 @@ MAX_MISSING = 3
 
 
 def _lc(s: str) -> str:
-    return s[:1].lower() + s[1:] if s else s
+    """Первую букву — строчной, но аббревиатуры («НМЦК», «ОКПД2») не трогаем."""
+    if len(s) > 1 and s[1].isupper():
+        return s
+    return s[:1].lower() + s[1:]
 
 
 def build_justification(r: ScoreResultData, no_data: bool = False) -> str:
