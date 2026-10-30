@@ -24,10 +24,11 @@
 
 ## LLM
 
-- Доступ через ProxyAPI (OpenAI-совместимый). Базовый URL и точные идентификаторы моделей — в личном кабинете ProxyAPI.
-- **GPT-6 Luna** — самая быстрая и экономичная модель линейки GPT-6 (выпущена 22.09.2026), около $0,10 / $0,50 за 1 млн входных / выходных токенов, поддерживает строгий JSON по схеме.
-- **Claude Haiku 5.5** — быстрая модель Anthropic.
-- Выбор между ними — по прогону `tests/evaluate.py`; итоговый идентификатор обязательно указывается в README.
+- **YandexGPT Pro** через OpenAI-совместимый API Yandex AI Studio: базовый URL `https://ai.api.cloud.yandex.net/v1`, эндпоинт `/chat/completions`.
+- Для запросов нужны API-ключ (секретная часть) и идентификатор каталога Yandex Cloud. Модель адресуется как `gpt://<каталог>/<модель>`.
+- `LLM_MODEL=yandexgpt/latest` — алиас, на конец октября 2026 это YandexGPT Pro 5. Явные модели: `yandexgpt-5.1` (Pro 5.1), `yandexgpt-5-pro` (Pro 5). Актуальный список: https://aistudio.yandex.ru/docs/ru/ai-studio/concepts/generation/models
+- Если провайдер не принял `response_format` с JSON-схемой, клиент повторяет запрос с `json_object` и кладёт схему в инструкцию; ответ всё равно проверяется Pydantic.
+- Итоговый идентификатор модели обязательно указывается в README.
 
 ## Эмбеддинги
 

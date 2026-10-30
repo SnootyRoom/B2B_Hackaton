@@ -4,7 +4,7 @@ import uuid
 from app.core.db import SessionLocal
 from app.models import Task, utcnow
 from app.schemas.common import ErrorCode
-from app.schemas.task import TaskKind, TaskStatus
+from app.schemas.task import FileStatus, TaskKind, TaskStatus
 from app.tasks import pipeline
 from app.tasks.celery_app import celery_app
 
@@ -30,6 +30,10 @@ def run_task(task_id: str) -> None:
             log.warning("task %s not found", task_id)
             return
         task.status = TaskStatus.processing
+        # Повторная доставка после падения воркера: считаем заново, иначе N превысит M
+        task.processed = 0
+        for f in task.files:
+            f.status, f.error, f.warnings = FileStatus.pending, None, []
         db.commit()
         log.info("task %s: start %s", task_id, task.kind)
         try:

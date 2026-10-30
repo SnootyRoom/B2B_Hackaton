@@ -244,3 +244,15 @@ def test_string_lists_of_digits_stay_strings(client: TestClient) -> None:
     saved = {x["id"]: x["value"] for x in r.json()["profile"]["rules"]}
     assert saved["r_law"] == ["44", "223"]
     assert saved["r_okpd"] == ["62", "63.11"]
+
+
+def test_redelivered_task_restarts_progress(client: TestClient) -> None:
+    from app.tasks.jobs import run_task
+
+    first = _upload(client, ("a.json", json.dumps(_notice()).encode()), ("b.json", b"{bad"))
+    run_task(first["id"])
+
+    task = client.get(f"/api/tasks/{first['id']}").json()
+    assert task["processed"] == task["total"] == 2
+    assert task["status"] == "partial"
+    assert [f["status"] for f in task["files"]] == ["ok", "error"]
