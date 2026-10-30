@@ -41,6 +41,11 @@ def _model() -> "SentenceTransformer | None":
         return None
 
 
+def preload() -> None:
+    """Загрузить модель заранее, при старте воркера."""
+    _model()
+
+
 def _encode(text: str) -> list[float] | None:
     model = _model()
     if model is None:

@@ -54,3 +54,10 @@ def test_no_model_gives_none(fake: FakeEncoder, monkeypatch: pytest.MonkeyPatch)
     service._query_vec.cache_clear()
     assert service.embed_passage("кровля") is None
     assert service.query_vector("кровля") is None
+
+
+def test_preload_loads_model_once(monkeypatch: pytest.MonkeyPatch) -> None:
+    calls: list[int] = []
+    monkeypatch.setattr(service, "_model", lambda: calls.append(1))
+    service.preload()
+    assert calls == [1]
