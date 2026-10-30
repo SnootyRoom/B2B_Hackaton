@@ -3,16 +3,22 @@
 Контракт для конвейера:
 - `embed_passage(text) -> list[float] | None` — вектор текста закупки (префикс `passage: `),
   хранится в `procurements.embedding`.
-- `similarity(passage_vec, query) -> float | None` — косинусная близость к тексту правила
-  (префикс `query: `). None — модель недоступна.
+- `similarity_in_db(db, procurement_id, query) -> float | None` — косинусная близость вектора
+  закупки к тексту правила (префикс `query: `). Считает PostgreSQL: оператор pgvector `<=>`.
+  None — у закупки нет вектора или модель недоступна.
 
 Модель скачивается в образ при сборке; без неё правила semantic_match получают «нет данных».
-Векторы нормированы, поэтому косинусная близость = скалярное произведение.
 """
 
 import logging
+import uuid
 from functools import lru_cache
 from typing import TYPE_CHECKING
+
+from sqlalchemy import select
+from sqlalchemy.orm import Session
+
+from app.models import Procurement
 
 if TYPE_CHECKING:
     from sentence_transformers import SentenceTransformer
@@ -54,10 +60,20 @@ def _query_vec(query: str) -> tuple[float, ...] | None:
     return tuple(vec) if vec is not None else None
 
 
-def similarity(passage_vec: list[float] | None, query: str) -> float | None:
-    if passage_vec is None or not query.strip():
+def query_vector(query: str) -> list[float] | None:
+    """Вектор текста правила; одинаковые тексты считаются один раз."""
+    if not query.strip():
         return None
     q = _query_vec(query)
-    if q is None or len(q) != len(passage_vec):
+    return list(q) if q is not None else None
+
+
+def similarity_in_db(db: Session, procurement_id: uuid.UUID, query: str) -> float | None:
+    q = query_vector(query)
+    if q is None:
         return None
-    return sum(a * b for a, b in zip(passage_vec, q, strict=True))
+    # cosine_distance — оператор pgvector <=>; близость = 1 − расстояние
+    distance = db.scalar(
+        select(Procurement.embedding.cosine_distance(q)).where(Procurement.id == procurement_id)
+    )
+    return None if distance is None else 1.0 - float(distance)

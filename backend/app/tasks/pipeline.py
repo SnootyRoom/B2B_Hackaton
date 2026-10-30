@@ -23,7 +23,7 @@ from app.schemas.procurement import ProcurementData
 from app.schemas.score import ScoreResultData
 from app.schemas.scoring import ScoringProfileData
 from app.schemas.task import FileStatus, TaskStatus
-from app.scoring.engine import score
+from app.scoring.engine import Similarity, score
 from app.scoring.fields import extract_fields
 
 log = logging.getLogger(__name__)
@@ -72,14 +72,10 @@ def run_engine(
     data: ProcurementData,
     customer: CustomerData | None,
     profile_data: ScoringProfileData,
-    vec: list[float] | None,
+    similarity: Similarity | None,
 ) -> ScoreResultData:
-    """Оценка закупки движком роли 3; эмбеддинг закупки посчитан при загрузке."""
-    return score(
-        profile_data,
-        extract_fields(data, customer, utcnow()),
-        similarity=lambda _text, query: embeddings.similarity(vec, query),
-    )
+    """Оценка закупки движком роли 3."""
+    return score(profile_data, extract_fields(data, customer, utcnow()), similarity)
 
 
 def score_procurement(
@@ -87,8 +83,13 @@ def score_procurement(
 ) -> None:
     """Оценка одной закупки по профилю; результат сохраняется (upsert)."""
     data = ProcurementData.model_validate(p.data)
-    vec = list(p.embedding) if p.embedding is not None else None
-    result = run_engine(data, _customer_data(db, p.customer_inn), profile_data, vec)
+    # близость к тексту правила считает pgvector по сохранённому вектору закупки
+    result = run_engine(
+        data,
+        _customer_data(db, p.customer_inn),
+        profile_data,
+        lambda _text, query: embeddings.similarity_in_db(db, p.id, query),
+    )
     row = db.scalar(
         select(ScoreResult).where(
             ScoreResult.procurement_id == p.id, ScoreResult.profile_id == profile.id

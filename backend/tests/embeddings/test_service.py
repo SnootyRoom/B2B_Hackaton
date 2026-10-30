@@ -32,26 +32,25 @@ def fake(monkeypatch: pytest.MonkeyPatch) -> Iterator[FakeEncoder]:
     service._query_vec.cache_clear()
 
 
-def test_prefixes_and_similarity(fake: FakeEncoder) -> None:
-    vec = service.embed_passage("Ремонт   кровли школы")
-    assert fake.calls[0] == "passage: Ремонт кровли школы"
-    close = service.similarity(vec, "строительство и кровельные работы")
-    far = service.similarity(vec, "разработка программного обеспечения")
-    assert fake.calls[1].startswith("query: ")
-    assert close is not None and far is not None and close > far
+def test_passage_and_query_prefixes(fake: FakeEncoder) -> None:
+    service.embed_passage("Ремонт   кровли школы")
+    service.query_vector("строительство и кровельные работы")
+    assert fake.calls == [
+        "passage: Ремонт кровли школы",
+        "query: строительство и кровельные работы",
+    ]
 
 
 def test_query_vectors_are_cached(fake: FakeEncoder) -> None:
-    vec = service.embed_passage("кровля")
-    service.similarity(vec, "кровельные работы")
-    service.similarity(vec, "кровельные работы")
-    assert len(fake.calls) == 2
+    service.query_vector("кровельные работы")
+    service.query_vector("кровельные работы")
+    assert len(fake.calls) == 1
 
 
-def test_no_model_or_vector_gives_none(fake: FakeEncoder, monkeypatch: pytest.MonkeyPatch) -> None:
-    assert service.similarity(None, "что угодно") is None
+def test_no_model_gives_none(fake: FakeEncoder, monkeypatch: pytest.MonkeyPatch) -> None:
     assert service.embed_passage("   ") is None
+    assert service.query_vector("  ") is None
     monkeypatch.setattr(service, "_model", lambda: None)
     service._query_vec.cache_clear()
     assert service.embed_passage("кровля") is None
-    assert service.similarity([1.0, 0.0, 0.0], "кровля") is None
+    assert service.query_vector("кровля") is None
