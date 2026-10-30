@@ -66,16 +66,19 @@ def _partial(
 
 
 def subject_mismatch(results: list[RuleOutcome]) -> list[str]:
-    """rule_id правил «предмет похож на…», если все проверенные дали 0 — предмет совсем не тот."""
-    semantic = [
+    """Предмет совсем не тот: в группе «Соответствие» проверено сравнение по смыслу и все
+    проверенные правила группы дали 0. Совпавший код ОКПД2 или ключевое слово снимают ограничение.
+    Возвращает rule_id правил группы для ссылки в обосновании."""
+    fit = [
         r
         for r in results
-        if r.operator == Operator.semantic_match
+        if r.group == RuleGroup.fit
         and r.kind == RuleKind.weighted
         and r.status == RuleStatus.applied
     ]
-    if semantic and all((r.partial_score or 0.0) == 0.0 for r in semantic):
-        return [r.rule_id for r in semantic]
+    has_semantic = any(r.operator == Operator.semantic_match for r in fit)
+    if has_semantic and all((r.partial_score or 0.0) == 0.0 for r in fit):
+        return [r.rule_id for r in fit]
     return []
 
 

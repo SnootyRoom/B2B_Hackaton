@@ -320,3 +320,16 @@ def test_cap_follows_profile_threshold() -> None:
     )
     r = score(prof, {"subject": "масло", "nmck": 820_000.0}, lambda a, b: 0.5)
     assert r.total == 49
+
+
+def test_matching_okpd2_lifts_subject_cap() -> None:
+    prof = ScoringProfileData(
+        rules=[
+            *SUBJECT_PROFILE.rules,
+            rule("okpd", "okpd2_codes", Operator.prefix_in, ["62"]),
+        ]
+    )
+    fields = {"subject": "сопровождение СЭД", "nmck": 820_000.0, "okpd2_codes": ["62.02.30.000"]}
+    r = score(prof, fields, lambda a, b: 0.5)  # смысл не совпал, но код ОКПД2 — да
+    assert r.total > 39
+    assert "ограничена" not in r.justification
