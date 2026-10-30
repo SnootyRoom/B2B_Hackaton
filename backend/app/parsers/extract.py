@@ -19,6 +19,7 @@ from app.parsers.normalize import (
     normalize_region,
     normalize_restrictions,
     parse_datetime,
+    percent,
     security_amount,
 )
 from app.parsers.xmltree import Element, all_texts, first, nodes
@@ -42,6 +43,7 @@ class Spec:
     customer_inn: Paths = ()
     customer_name: Paths = ()
     customer_address: Paths = ()
+    region: Paths = ()  # субъект РФ отдельным полем, если он есть в схеме
     delivery_place: Paths = ()
     published_at: Paths = ()
     application_deadline: Paths = ()
@@ -128,10 +130,10 @@ def build_lot(
     method_raw = clean_text(get(spec.method_raw))
 
     bid, bid_pct = security_amount(
-        money(get(spec.bid_security)), money(get(spec.bid_security_pct)), nmck
+        money(get(spec.bid_security)), percent(get(spec.bid_security_pct)), nmck
     )
     contract, contract_pct = security_amount(
-        money(get(spec.contract_security)), money(get(spec.contract_security_pct)), nmck
+        money(get(spec.contract_security)), percent(get(spec.contract_security_pct)), nmck
     )
 
     restrictions = normalize_restrictions(all_texts(lot, spec.restrictions))
@@ -145,7 +147,11 @@ def build_lot(
         if norm and norm not in okpd2:
             okpd2.append(norm)
 
-    region = normalize_region(delivery_place) or normalize_region(get(spec.customer_address))
+    region = (
+        normalize_region(get(spec.region))
+        or normalize_region(delivery_place)
+        or normalize_region(get(spec.customer_address))
+    )
 
     return ProcurementData(
         reg_number=f"{reg}-{lot_number}" if lot_number else reg,

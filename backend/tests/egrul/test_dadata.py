@@ -123,3 +123,44 @@ def test_no_key_is_unavailable(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr(get_settings(), "dadata_api_key", "")
     with pytest.raises(dadata.DadataUnavailable):
         dadata.find_party(INN)
+
+
+def test_offline_customer_data_format(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(get_settings(), "customers_dir", tmp_path)
+    (tmp_path / "5410787285.json").write_text(
+        json.dumps(
+            {
+                "inn": "5410787285",
+                "name": 'ООО "НЕОН"',
+                "status": "liquidated",
+                "liquidation_date": "2022-04-15",
+                "unreliable_flags": ["Недостоверные сведения об организации"],
+            }
+        )
+    )
+    found = offline.load("5410787285")
+    assert found is not None
+    c = found[0]
+    assert c.status == "liquidated" and c.liquidation_date == date(2022, 4, 15)
+    assert c.unreliable_flags == ["Недостоверные сведения об организации"]
+
+
+def test_offline_unknown_fields_rejected(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Формат без наших полей не должен молча превратиться в статус unknown."""
+    monkeypatch.setattr(get_settings(), "customers_dir", tmp_path)
+    (tmp_path / "0275066119.json").write_text(
+        json.dumps({"inn": "0275066119", "name": "ООО", "egrul_status": "БАНКРОТ"})
+    )
+    assert offline.load("0275066119") is None
+
+
+REPO_CUSTOMERS = Path(__file__).parents[3] / "data" / "customers"
+
+
+@pytest.mark.skipif(not REPO_CUSTOMERS.is_dir(), reason="нет data/customers")
+@pytest.mark.parametrize("path", sorted(REPO_CUSTOMERS.glob("*.json")), ids=lambda p: p.name)
+def test_repo_offline_profiles_load(path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(get_settings(), "customers_dir", REPO_CUSTOMERS)
+    found = offline.load(path.stem)
+    assert found is not None and found[0].inn == path.stem
+    assert found[0].status != "unknown"

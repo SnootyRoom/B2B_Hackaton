@@ -13,7 +13,14 @@ NAME = "eis223"
 SPEC = Spec(
     reg_number=("registrationnumber", ".//registrationnumber"),
     subject=("lotdata/subject", "subject", "name"),
-    nmck=("lotdata/initialsum", "initialsum", ".//initialsum", ".//lotdata/startprice"),
+    nmck=(
+        "lotdata/initialsum",
+        "lotdata/maxcontractprice",
+        "initialsum",
+        ".//initialsum",
+        ".//maxcontractprice",
+        ".//lotdata/startprice",
+    ),
     currency=("lotdata/currency/code", "currency/code", ".//currency/code"),
     method_raw=("purchasecodename", ".//purchasecodename", ".//purchasemethodname"),
     customer_inn=("customer/maininfo/inn", ".//customer//inn", ".//placer//inn"),
@@ -23,6 +30,7 @@ SPEC = Spec(
         "customer/maininfo/postaladdress",
         ".//customer//legaladdress",
     ),
+    region=("lotdata/deliveryplace/region", ".//deliveryplace/region"),
     delivery_place=(
         "lotdata/deliveryplace/address",
         "lotdata/deliveryplace/region",
@@ -32,6 +40,8 @@ SPEC = Spec(
     published_at=("publicationdatetime", ".//publicationdatetime", "createdatetime"),
     application_deadline=("submissionclosedatetime", ".//submissionclosedatetime"),
     delivery_term=(".//deliveryterm",),
+    bid_security_pct=("lotdata/applicationsupplyinfo/sum",),
+    contract_security_pct=("lotdata/completingsupplyinfo/sum",),
     smp_flag=("lotdata/forsmallormiddle", ".//forsmallormiddle"),
     url=("urleis", ".//urleis"),
     items=(".//lotitem",),
