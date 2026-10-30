@@ -13,7 +13,7 @@ def _notice(reg_number: str = "0365000000000000001", **extra: Any) -> dict[str, 
         "subject": "Сопровождение программного обеспечения",
         "nmck": 4200000,
         "method": "auction",
-        "customer_inn": "7017000000",
+        "customer_inn": "7017000019",
         "region": "Томская область",
         **extra,
     }
@@ -150,7 +150,7 @@ def test_parse_without_llm_key(client: TestClient) -> None:
 
 
 def test_organization_lookup_goes_to_queue(client: TestClient) -> None:
-    r = client.get("/api/organizations/7017000000")
+    r = client.get("/api/organizations/7017000019")
     assert r.status_code == 202
     task = client.get(f"/api/tasks/{r.json()['task_id']}").json()
     assert task["kind"] == "egrul_lookup"
@@ -185,7 +185,7 @@ def test_engine_bridge_scores_with_real_engine() -> None:
         parsed_by="json",
     )
     ok = CustomerData(
-        inn="7017000000",
+        inn="7017000019",
         name="ОК",
         status=CustomerStatus.active,
         registration_date=date(2010, 1, 1),

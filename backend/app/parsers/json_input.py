@@ -4,38 +4,28 @@ import json
 
 from pydantic import ValidationError
 
-from app.schemas.common import ErrorCode
+from app.parsers.errors import REQUIRED_LABELS, missing_fields, not_a_notice, unsupported_format
 from app.schemas.procurement import ProcurementData
-
-_LABELS = {"reg_number": "реестровый номер", "subject": "предмет закупки", "nmck": "НМЦК"}
 
 
 def parse_json(content: bytes) -> list[ProcurementData]:
-    from app.parsers.registry import ParseError
-
     try:
         raw = json.loads(content)
     except (UnicodeDecodeError, json.JSONDecodeError) as e:
-        raise ParseError(ErrorCode.UNSUPPORTED_FORMAT, "Файл не похож на выгрузку из ЕИС") from e
+        raise unsupported_format() from e
     items = raw if isinstance(raw, list) else [raw]
     result = []
     for item in items:
         if not isinstance(item, dict):
-            raise ParseError(ErrorCode.NOT_A_NOTICE, "Это не извещение о закупке")
+            raise not_a_notice()
         item.setdefault("parsed_by", "json")
-        missing = [_LABELS[k] for k in _LABELS if item.get(k) in (None, "")]
+        missing = [k for k in REQUIRED_LABELS if item.get(k) in (None, "")]
         if missing:
-            raise ParseError(
-                ErrorCode.MISSING_REQUIRED_FIELD,
-                f"В файле не найдено: {', '.join(missing)}",
-                {"fields": missing},
-            )
+            raise missing_fields(missing)
         try:
             result.append(ProcurementData.model_validate(item))
         except ValidationError as e:
-            raise ParseError(
-                ErrorCode.UNSUPPORTED_FORMAT,
-                "Файл не похож на выгрузку из ЕИС",
-                {"errors": e.errors(include_url=False, include_context=False)},
-            ) from e
+            err = unsupported_format()
+            err.details = {"errors": e.errors(include_url=False, include_context=False)}
+            raise err from e
     return result
