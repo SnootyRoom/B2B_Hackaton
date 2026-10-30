@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns4:Purchase xmlns:ns4="http://zakupki.gov.ru/epz/order/2023"
+              xmlns:ns11="http://zakupki.gov.ru/common/2023">
+    <ns11:regNumber>32616504786</ns11:regNumber>
+    <ns11:purchaseNumber>32616504786</ns11:purchaseNumber>
+    <ns11:purchaseObjectInfo>ОКПД2 27.11.43 Поставка комплектных трансформаторных подстанций для нужд ПАО «Камчатскэнерго» (Лот № 8500-ТПИР ОТМ-2027-КамчЭн)</ns11:purchaseObjectInfo>
+    <ns11:initialPrice>108661529.29</ns11:initialPrice>
+    <ns11:currencyCode>RUB</ns11:currencyCode>
+    <ns11:law>223-ФЗ</ns11:law>
+    <ns11:customer>
+        <ns11:organizationName>ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО ЭНЕРГЕТИКИ И ЭЛЕКТРИФИКАЦИИ "КАМЧАТСКЭНЕРГО"</ns11:organizationName>
+        <ns11:inn>4100000668</ns11:inn>
+        <ns11:regionCode>41</ns11:regionCode>
+    </ns11:customer>
+    <ns11:lots>
+        <ns11:lot>
+            <ns11:lotNumber>1</ns11:lotNumber>
+            <ns11:lotName>Поставка комплектных трансформаторных подстанций</ns11:lotName>
+        </ns11:lot>
+    </ns11:lots>
+</ns4:Purchase>

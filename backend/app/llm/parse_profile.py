@@ -1,20 +1,30 @@
 """Текст параметров → черновик правил (POST /scoring-profiles/parse).
 
 LLM только предлагает правила; каждое проверяется теми же валидаторами, что и при сохранении.
-При ошибке — один повтор с текстом ошибки, затем ProfileParseError с понятным сообщением.
+При ошибке — один повтор с текстом ошибки, затем LLMError с понятным сообщением.
 """
 
 import json
 
-from pydantic import BaseModel, Field, ValidationError
+from pydantic import ValidationError
 
-from app.llm.client import JsonObject, LLMClient, LLMUnavailable, load_prompt
-from app.scoring.catalog import CATALOG_VERSION, FIELD_CATALOG
+from app.llm.client import (
+    JsonObject,
+    LLMBadAnswer,
+    LLMClient,
+    LLMError,
+    LLMUnavailable,
+    Prompt,
+    load_prompt,
+)
+from app.parsers.regions import REGIONS
+from app.schemas.common import ErrorCode
+from app.schemas.scoring import FIELD_CATALOG, ParseProfileResult, ScoringRule
 from app.scoring.defaults import with_defaults
 from app.scoring.templates import ENUM_LABELS
-from app.scoring.types import ScoringRule
 
 PARSE_ERROR_MESSAGE = "Не удалось разобрать текст, задайте правила вручную"
+UNAVAILABLE_MESSAGE = "Разбор текста временно недоступен, задайте правила вручную"
 
 _VALUE_SCHEMA: JsonObject = {
     "anyOf": [
@@ -53,33 +63,26 @@ RESPONSE_SCHEMA: JsonObject = {
 }
 
 
-class ProfileParseError(Exception):
-    def __init__(self, message: str = PARSE_ERROR_MESSAGE) -> None:
-        super().__init__(message)
-        self.message = message
-
-
-class ParsedProfile(BaseModel):
-    rules: list[ScoringRule]
-    company_description: str = ""
-    unparsed: list[str] = Field(default_factory=list)
-
-
 def catalog_description() -> str:
     """Каталог полей и допустимые значения для промпта."""
-    lines = [f"Каталог полей (версия {CATALOG_VERSION}):"]
+    lines = ["Каталог полей:"]
     for spec in FIELD_CATALOG.values():
         ops = ", ".join(sorted(spec.operators))
-        line = f"- {spec.name} ({spec.label}; тип {spec.type}; группа {spec.group}): операторы {ops}"
-        if spec.name in ENUM_LABELS:
-            vals = ", ".join(f"{k} = {v}" for k, v in ENUM_LABELS[spec.name].items())
+        line = f"- {spec.field} ({spec.label}; тип {spec.type}; группа {spec.group})"
+        if spec.unit:
+            line += f", единица {spec.unit}"
+        line += f": операторы {ops}"
+        if spec.options:
+            labels = ENUM_LABELS.get(spec.field, {})
+            vals = ", ".join(f"{o} = {labels.get(o, o)}" for o in spec.options)
             line += f"; значения: {vals}"
         lines.append(line)
+    lines.append("\nДопустимые регионы (для region и customer.region): " + "; ".join(REGIONS))
     return "\n".join(lines)
 
 
-def _to_profile(data: JsonObject) -> tuple[ParsedProfile | None, list[str]]:
-    """Ответ модели → правила. Возвращает профиль (или None) и список ошибок."""
+def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
+    """Ответ модели → правила. Возвращает результат (или None) и список ошибок."""
     raw_rules = data.get("rules")
     if not isinstance(raw_rules, list):
         return None, ["Поле rules должно быть списком"]
@@ -91,6 +94,14 @@ def _to_profile(data: JsonObject) -> tuple[ParsedProfile | None, list[str]]:
             errors.append(f"Правило {i}: не объект")
             continue
         spec = FIELD_CATALOG.get(str(raw.get("field")))
+        if spec and spec.field in ("region", "customer.region"):
+            value = raw.get("value")
+            bad = [r for r in value if r not in REGIONS] if isinstance(value, list) else []
+            if bad:
+                errors.append(
+                    f"Правило {i}: регионов нет в справочнике: {', '.join(map(str, bad))}"
+                )
+                continue
         try:
             rules.append(
                 ScoringRule.model_validate(
@@ -107,24 +118,37 @@ def _to_profile(data: JsonObject) -> tuple[ParsedProfile | None, list[str]]:
             errors.append(f"Правило {i} ({raw.get('label', '')}): {msgs}")
 
     unparsed = data.get("unparsed")
-    profile = ParsedProfile(
+    result = ParseProfileResult(
         rules=with_defaults(rules),
         company_description=str(data.get("company_description") or ""),
         unparsed=[str(x) for x in unparsed] if isinstance(unparsed, list) else [],
     )
-    return profile, errors
+    return result, errors
 
 
-def parse_profile_text(text: str, client: LLMClient) -> ParsedProfile:
+def _ask(
+    client: LLMClient,
+    prompt: Prompt,
+    user_message: str,
+    retry: list[dict[str, str]] | None = None,
+) -> tuple[ParseProfileResult | None, list[str], JsonObject | None]:
+    try:
+        data = client.complete_json(prompt, user_message, RESPONSE_SCHEMA, extra_messages=retry)
+    except LLMBadAnswer:
+        return None, ["Ответ должен быть JSON-объектом по схеме"], None
+    result, errors = _to_result(data)
+    return result, errors, data
+
+
+def parse_text(text: str, client: LLMClient) -> ParseProfileResult:
     if not text.strip():
-        raise ProfileParseError("Опишите, какие закупки вам интересны")
+        raise LLMError(ErrorCode.LLM_PARSE_FAILED, "Опишите, какие закупки вам интересны")
     prompt = load_prompt("parse_profile")
     user_message = f"{catalog_description()}\n\nТекст пользователя:\n{text.strip()}"
 
     try:
-        data = client.complete_json(prompt, user_message, RESPONSE_SCHEMA)
-        profile, errors = _to_profile(data)
-        if errors or profile is None:
+        result, errors, data = _ask(client, prompt, user_message)
+        if errors or result is None:
             retry = [
                 {"role": "assistant", "content": json.dumps(data, ensure_ascii=False)},
                 {
@@ -132,13 +156,12 @@ def parse_profile_text(text: str, client: LLMClient) -> ParsedProfile:
                     "content": "Исправь ошибки и верни JSON целиком заново:\n" + "\n".join(errors),
                 },
             ]
-            data = client.complete_json(prompt, user_message, RESPONSE_SCHEMA, extra_messages=retry)
-            profile, errors = _to_profile(data)
+            result, errors, _ = _ask(client, prompt, user_message, retry)
     except LLMUnavailable as e:
-        raise ProfileParseError() from e
+        raise LLMError(ErrorCode.LLM_UNAVAILABLE, UNAVAILABLE_MESSAGE) from e
 
-    if profile is None:
-        raise ProfileParseError()
+    if result is None:
+        raise LLMError(ErrorCode.LLM_PARSE_FAILED, PARSE_ERROR_MESSAGE)
     # правила, которые и после повтора не прошли проверку, отдаём пользователю как неразобранные
-    profile.unparsed.extend(errors)
-    return profile
+    result.unparsed.extend(errors)
+    return result

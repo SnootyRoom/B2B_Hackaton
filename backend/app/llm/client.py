@@ -1,10 +1,12 @@
-"""Единственная точка доступа к LLM по OpenAI-совместимому протоколу (YandexGPT, ProxyAPI).
+"""Единственная точка доступа к LLM (роль 3), OpenAI-совместимый протокол (YandexGPT).
 
-Нет LLM_API_KEY → client.enabled = False, вызывающий код работает без LLM.
-Любая ошибка провайдера → LLMUnavailable, обработку она не роняет.
+Контракт для конвейера:
+- `parse_profile_text(db, text) -> ParseProfileResult`; ошибки — `LLMError` с кодом
+  LLM_UNAVAILABLE (нет ключа / провайдер не ответил) или LLM_PARSE_FAILED.
 
+Нет ключа → client.enabled = False, система работает без LLM.
 YandexGPT: LLM_BASE_URL=https://ai.api.cloud.yandex.net/v1, LLM_FOLDER_ID=<каталог>,
-LLM_MODEL=yandexgpt-lite/latest — превращается в gpt://<каталог>/yandexgpt-lite/latest.
+LLM_MODEL=yandexgpt/latest — превращается в gpt://<каталог>/yandexgpt/latest.
 """
 
 import hashlib
@@ -16,6 +18,12 @@ from pathlib import Path
 from typing import Protocol
 
 import httpx
+from sqlalchemy.orm import Session
+
+from app.core.config import get_settings
+from app.models import LLMCache as LLMCacheRow
+from app.schemas.common import ErrorCode
+from app.schemas.scoring import ParseProfileResult
 
 log = logging.getLogger(__name__)
 
@@ -25,8 +33,19 @@ DEFAULT_TIMEOUT_S = 20.0
 JsonObject = dict[str, object]
 
 
+class LLMError(Exception):
+    def __init__(self, code: ErrorCode, message: str):
+        super().__init__(message)
+        self.code = code
+        self.message = message
+
+
 class LLMUnavailable(Exception):
-    """Нет ключа, провайдер не ответил или ответ не JSON."""
+    """Нет ключа или провайдер не ответил."""
+
+
+class LLMBadAnswer(Exception):
+    """Провайдер ответил, но не JSON-объектом."""
 
 
 class LLMCache(Protocol):
@@ -35,7 +54,7 @@ class LLMCache(Protocol):
 
 
 class MemoryCache:
-    """Кэш в памяти процесса. Роль 1 подменит его кэшем в Postgres."""
+    """Кэш в памяти процесса — для скриптов и тестов."""
 
     def __init__(self) -> None:
         self._data: dict[str, JsonObject] = {}
@@ -45,6 +64,22 @@ class MemoryCache:
 
     def set(self, key: str, value: JsonObject) -> None:
         self._data[key] = value
+
+
+class DbCache:
+    """Кэш в таблице llm_cache. Коммит делает вызывающий код."""
+
+    def __init__(self, db: Session, model: str) -> None:
+        self._db = db
+        self._model = model
+
+    def get(self, key: str) -> JsonObject | None:
+        row = self._db.get(LLMCacheRow, key)
+        return row.response if row is not None and isinstance(row.response, dict) else None
+
+    def set(self, key: str, value: JsonObject) -> None:
+        self._db.merge(LLMCacheRow(key=key, model=self._model, response=value))
+        self._db.flush()
 
 
 @dataclass(frozen=True)
@@ -102,6 +137,7 @@ class LLMClient:
 
     @classmethod
     def from_env(cls, cache: LLMCache | None = None) -> "LLMClient":
+        """Из переменных окружения — для скриптов вне приложения."""
         return cls(
             os.environ.get("LLM_BASE_URL"),
             os.environ.get("LLM_API_KEY"),
@@ -110,12 +146,22 @@ class LLMClient:
             cache=cache,
         )
 
+    @classmethod
+    def from_settings(cls, db: Session | None = None) -> "LLMClient":
+        s = get_settings()
+        client = cls(s.llm_base_url, s.llm_api_key, s.llm_model, folder_id=s.llm_folder_id)
+        if db is not None:
+            client._cache = DbCache(db, client.model)
+        return client
+
     @property
     def enabled(self) -> bool:
         return bool(self.base_url and self._api_key and self.model)
 
     def cache_key(self, prompt: Prompt, messages: list[dict[str, str]]) -> str:
-        payload = json.dumps([self.model, prompt.name, prompt.version, messages], ensure_ascii=False, sort_keys=True)
+        payload = json.dumps(
+            [self.model, prompt.name, prompt.version, messages], ensure_ascii=False, sort_keys=True
+        )
         return hashlib.sha256(payload.encode()).hexdigest()
 
     def complete_json(
@@ -160,18 +206,35 @@ class LLMClient:
                     # провайдер не принял JSON-схему → просим просто JSON, схему кладём в инструкцию
                     log.info("LLM %s: json_schema не поддержан, повтор с json_object", self.model)
                     body["response_format"] = {"type": "json_object"}
-                    schema_hint = "\n\nОтвет — JSON по схеме:\n" + json.dumps(schema, ensure_ascii=False)
-                    body["messages"] = [{**messages[0], "content": messages[0]["content"] + schema_hint}, *messages[1:]]
+                    hint = "\n\nОтвет — JSON по схеме:\n" + json.dumps(schema, ensure_ascii=False)
+                    body["messages"] = [
+                        {**messages[0], "content": messages[0]["content"] + hint},
+                        *messages[1:],
+                    ]
                     resp = http.post(url, headers=headers, json=body)
             resp.raise_for_status()
-            content = resp.json()["choices"][0]["message"]["content"]
-            data = _extract_json(str(content))
-        except (httpx.HTTPError, KeyError, IndexError, TypeError, ValueError) as e:
-            # ключ в лог не попадает: логируем только тип ошибки и модель
+        except httpx.HTTPError as e:
+            # ключ в лог не попадает: логируем только тип ошибки, модель и ответ провайдера
             log.warning("LLM %s: %s", self.model, type(e).__name__)
             if isinstance(e, httpx.HTTPStatusError):
                 log.warning("LLM ответ %s: %s", e.response.status_code, e.response.text[:500])
-            raise LLMUnavailable(str(type(e).__name__)) from e
+            raise LLMUnavailable(type(e).__name__) from e
+        try:
+            content = resp.json()["choices"][0]["message"]["content"]
+            data = _extract_json(str(content))
+        except (KeyError, IndexError, TypeError, ValueError) as e:
+            log.warning("LLM %s: ответ не JSON (%s)", self.model, type(e).__name__)
+            raise LLMBadAnswer(type(e).__name__) from e
 
         self._cache.set(key, data)
         return data
+
+
+def parse_profile_text(db: Session, text: str) -> ParseProfileResult:
+    """Текст параметров → черновик правил. Вызывается из фоновой задачи."""
+    from app.llm.parse_profile import parse_text
+
+    client = LLMClient.from_settings(db)
+    if not client.enabled:
+        raise LLMError(ErrorCode.LLM_UNAVAILABLE, "Разбор текста недоступен")
+    return parse_text(text, client)

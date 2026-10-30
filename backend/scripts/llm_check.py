@@ -13,14 +13,15 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from app.llm.client import LLMClient
-from app.llm.parse_profile import ProfileParseError, parse_profile_text
+from app.llm.client import LLMClient, LLMError
+from app.llm.parse_profile import parse_text
 from app.scoring.defaults import DEFAULT_RULE_IDS
 
 EXAMPLE = (
-    "Мы IT-компания из Томска, разрабатываем и сопровождаем ПО. Интересны аукционы и запросы котировок "
-    "в Томской и Новосибирской областях от 500 тыс. до 15 млн, обеспечение контракта не больше 10%, "
-    "не меньше 5 дней на подачу заявки. Хотим крупные и надёжные закупки."
+    "Мы IT-компания из Томска, разрабатываем и сопровождаем ПО. Интересны аукционы "
+    "и запросы котировок в Томской и Новосибирской областях от 500 тыс. до 15 млн, "
+    "обеспечение контракта не больше 10%, не меньше 5 дней на подачу заявки. "
+    "Хотим крупные и надёжные закупки."
 )
 
 
@@ -49,8 +50,8 @@ def main() -> int:
     print(f"Текст: {text}\n")
     started = time.perf_counter()
     try:
-        profile = parse_profile_text(text, client)
-    except ProfileParseError as e:
+        profile = parse_text(text, client)
+    except LLMError as e:
         print(f"Ошибка: {e.message} (подробности в логе выше)")
         return 1
 

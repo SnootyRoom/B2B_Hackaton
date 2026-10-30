@@ -4,25 +4,25 @@ from decimal import Decimal
 import pytest
 from pydantic import ValidationError
 
-from app.scoring import default_profile, extract_fields, score, with_defaults
-from app.scoring.catalog import Group, Operator
-from app.scoring.operators import numeric_score, semantic_score
-from app.scoring.types import (
+from app.schemas.score import Recommendation, RuleStatus
+from app.schemas.scoring import (
+    FIELD_CATALOG,
     GroupWeights,
-    Recommendation,
+    Operator,
     RuleKind,
-    RuleStatus,
     ScoringProfileData,
     ScoringRule,
-    SemanticThresholds,
 )
+from app.schemas.scoring import RuleGroup as Group
+from app.scoring import default_profile, extract_fields, score, with_defaults
+from app.scoring.operators import SemanticThresholds, numeric_score, semantic_score
 
 NOW = datetime(2026, 10, 29, 12, tzinfo=UTC)
 
 
-def rule(id: str, field: str, op: Operator, value: object, weight: int = 3, **kw: object) -> ScoringRule:
-    from app.scoring.catalog import FIELD_CATALOG
-
+def rule(
+    id: str, field: str, op: Operator, value: object, weight: int = 3, **kw: object
+) -> ScoringRule:
     return ScoringRule(
         id=id,
         group=FIELD_CATALOG[field].group,
@@ -91,7 +91,13 @@ def test_semantic_linear() -> None:
 
 def test_analytics_example_78() -> None:
     # закупка 80, соответствие 60, заказчик 100 при 0,40 / 0,35 / 0,25 → 78 → «Участвовать»
-    fields = {"nmck": 5.0, "region": "A", "okpd2_codes": ["62.01"], "subject": "x", "customer.status": "active"}
+    fields = {
+        "nmck": 5.0,
+        "region": "A",
+        "okpd2_codes": ["62.01"],
+        "subject": "x",
+        "customer.status": "active",
+    }
     prof = ScoringProfileData(
         rules=[
             rule("p1", "nmck", Operator.gte, 1, weight=3),  # 1
@@ -106,7 +112,7 @@ def test_analytics_example_78() -> None:
     assert [g.score for g in r.groups] == [80, 60, 100]
     assert r.total == 78
     assert r.recommendation == Recommendation.participate
-    assert sum(x.contribution for x in r.rules) == pytest.approx(78, abs=0.01)
+    assert sum(x.contribution or 0 for x in r.rules) == pytest.approx(78, abs=0.01)
 
 
 def test_stop_factor_zeroes_total() -> None:
@@ -165,11 +171,50 @@ def test_disabled_rule_ignored() -> None:
 
 
 def test_semantic_uses_similarity_and_missing_provider_is_no_data() -> None:
-    prof = ScoringProfileData(rules=[rule("s", "subject", Operator.semantic_match, "разработка ПО")])
-    r = score(prof, {"subject": "сопровождение ПО"}, similarity=lambda a, b: 0.675)
+    prof = ScoringProfileData(
+        rules=[rule("s", "subject", Operator.semantic_match, "разработка ПО")]
+    )
+    r = score(
+        prof,
+        {"subject": "сопровождение ПО"},
+        similarity=lambda a, b: 0.675,
+        semantic=SemanticThresholds(0.55, 0.80),
+    )
     assert r.total == 50
     r2 = score(prof, {"subject": "сопровождение ПО"})
     assert r2.rules[0].status == RuleStatus.no_data
+
+
+def test_no_data_at_all_means_consider_incomplete() -> None:
+    # профиль по умолчанию, а данных о заказчике нет: ни одно правило не проверено
+    r = score(default_profile(), extract_fields(procurement(), None, NOW))
+    assert r.recommendation == Recommendation.consider
+    assert r.incomplete and r.total == 0
+    assert all(g.score is None for g in r.groups)
+    assert "проверьте закупку вручную" in r.justification
+    assert "оценка 0%" not in r.justification
+
+
+def test_stop_factor_wins_over_no_data() -> None:
+    p = procurement(application_deadline=NOW - timedelta(days=1))
+    r = score(default_profile(), extract_fields(p, None, NOW))
+    assert r.recommendation == Recommendation.skip
+    assert r.stop_factors == ["stop_deadline"]
+
+
+def test_digit_codes_stay_strings() -> None:
+    r = ScoringRule.model_validate(
+        {"id": "o", "group": "fit", "kind": "weighted", "field": "okpd2_codes",
+         "operator": "prefix_in", "value": ["62", "63.11"], "weight": 2, "label": "ОКПД2"}
+    )  # fmt: skip
+    assert r.value == ["62", "63.11"]
+    res = score(ScoringProfileData(rules=[r]), {"okpd2_codes": ["62.01.11.000"]})
+    assert res.rules[0].partial_score == 1
+
+
+def test_given_security_pct_is_preferred() -> None:
+    f = extract_fields(procurement(contract_security_pct=Decimal(7)), None, NOW)
+    assert f["contract_security_pct"] == 7
 
 
 def test_deterministic() -> None:

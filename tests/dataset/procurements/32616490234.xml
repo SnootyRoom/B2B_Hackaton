@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns4:Purchase xmlns:ns4="http://zakupki.gov.ru/epz/order/2023"
+              xmlns:ns11="http://zakupki.gov.ru/common/2023">
+    <ns11:regNumber>32616490234</ns11:regNumber>
+    <ns11:purchaseNumber>32616490234</ns11:purchaseNumber>
+    <ns11:purchaseObjectInfo>Поставка посуды лабораторной для нужд филиала ФБУЗ "Центр гигиены и эпидемиологии в Камчатском крае в Елизовском, Усть-Большерецком, Соболевском муниципальных округах и городе Вилючинске"</ns11:purchaseObjectInfo>
+    <ns11:initialPrice>1600134.41</ns11:initialPrice>
+    <ns11:currencyCode>RUB</ns11:currencyCode>
+    <ns11:law>223-ФЗ</ns11:law>
+    <ns11:customer>
+        <ns11:organizationName>ФЕДЕРАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ЦЕНТР ГИГИЕНЫ И ЭПИДЕМИОЛОГИИ В КАМЧАТСКОМ КРАЕ"</ns11:organizationName>
+        <ns11:inn>4101100055</ns11:inn>
+        <ns11:regionCode>41</ns11:regionCode>
+    </ns11:customer>
+    <ns11:lots>
+        <ns11:lot>
+            <ns11:lotNumber>1</ns11:lotNumber>
+            <ns11:lotName>Поставка посуды лабораторной</ns11:lotName>
+        </ns11:lot>
+    </ns11:lots>
+</ns4:Purchase>

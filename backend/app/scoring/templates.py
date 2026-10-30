@@ -1,9 +1,16 @@
 """Шаблонные фразы обоснования по каждому оператору и форматирование значений."""
 
-from app.scoring.catalog import FIELD_CATALOG, FieldType, Operator
+from app.schemas.score import RuleOutcome, RuleStatus
+from app.schemas.scoring import (
+    FIELD_CATALOG,
+    FieldType,
+    Operator,
+    RuleKind,
+    RuleValue,
+    ScoringRule,
+)
 from app.scoring.fields import FieldValue
 from app.scoring.operators import as_pair
-from app.scoring.types import RuleKind, RuleResult, RuleStatus, RuleValue, ScoringRule
 
 ENUM_LABELS: dict[str, dict[str, str]] = {
     "method": {
@@ -14,7 +21,13 @@ ENUM_LABELS: dict[str, dict[str, str]] = {
         "single": "закупка у единственного поставщика",
         "other": "иной способ",
     },
-    "law": {"44": "44-ФЗ", "223": "223-ФЗ", "615": "ПП РФ № 615", "94": "94-ФЗ", "other": "иной порядок"},
+    "law": {
+        "44": "44-ФЗ",
+        "223": "223-ФЗ",
+        "615": "ПП РФ № 615",
+        "94": "94-ФЗ",
+        "other": "иной порядок",
+    },
     "customer.status": {
         "active": "действующая",
         "reorganizing": "в процессе реорганизации",
@@ -59,27 +72,33 @@ def fmt_money(x: float) -> str:
     return f"{_num(x, 2)} ₽"
 
 
+def _fmt_number(unit: str | None, v: float) -> str:
+    if unit == "% НМЦК":
+        return f"{_num(v)}%"
+    if unit == "дн.":
+        n = int(v)
+        return f"{n} {_plural(n, 'день', 'дня', 'дней')}"
+    if unit == "лет":
+        word = _plural(v, "год", "года", "лет") if v == int(v) else "года"
+        return f"{_num(v)} {word}"
+    return _num(v, 2)
+
+
 def fmt_value(field: str, x: object) -> str:
     spec = FIELD_CATALOG[field]
     if isinstance(x, list):
         return ", ".join(fmt_value(field, i) for i in x)
     if x is None:
         return "нет данных"
-    t = spec.type
-    if t == FieldType.money and isinstance(x, int | float):
-        return fmt_money(float(x))
-    if t == FieldType.percent and isinstance(x, int | float):
-        return f"{_num(float(x))}%"
-    if t == FieldType.days and isinstance(x, int | float):
-        n = int(x)
-        return f"{n} {_plural(n, 'день', 'дня', 'дней')}"
-    if t == FieldType.years and isinstance(x, int | float):
-        v = float(x)
-        word = _plural(v, "год", "года", "лет") if v == int(v) else "года"
-        return f"{_num(v)} {word}"
-    if t == FieldType.bool:
+    if spec.type == FieldType.bool:
         return "есть" if x else "нет"
-    return ENUM_LABELS.get(field, {}).get(str(x), str(x))
+    if not isinstance(x, str):
+        try:
+            v = float(x)  # type: ignore[arg-type]
+        except (TypeError, ValueError):
+            return str(x)
+        return fmt_money(v) if spec.type == FieldType.money else _fmt_number(spec.unit, v)
+    return ENUM_LABELS.get(field, {}).get(x, x)
 
 
 def _range(field: str, value: RuleValue) -> str:
@@ -102,7 +121,9 @@ def _weighted_text(rule: ScoringRule, x: FieldValue, s: float) -> str:
             return f"{name} {xv} — {side} вашего диапазона {_range(f, v)}{part}"
         case Operator.gte:
             return (
-                f"{name} {xv} — не меньше {fmt_value(f, v)}" if ok else f"{name} {xv} — меньше {fmt_value(f, v)}{part}"
+                f"{name} {xv} — не меньше {fmt_value(f, v)}"
+                if ok
+                else f"{name} {xv} — меньше {fmt_value(f, v)}{part}"
             )
         case Operator.lte:
             return (
@@ -118,13 +139,23 @@ def _weighted_text(rule: ScoringRule, x: FieldValue, s: float) -> str:
                 else f"{name}: {xv} — не входит в выбранные ({vals})"
             )
         case Operator.not_in:
-            return f"{name}: {xv} — не из исключённых" if ok else f"{name}: {xv} — в списке исключённых"
+            return (
+                f"{name}: {xv} — не из исключённых"
+                if ok
+                else f"{name}: {xv} — в списке исключённых"
+            )
         case Operator.any_in:
             return (
-                f"{name}: есть {fmt_value(f, v)}" if ok else f"{name}: нет ни одного из выбранных ({fmt_value(f, v)})"
+                f"{name}: есть {fmt_value(f, v)}"
+                if ok
+                else f"{name}: нет ни одного из выбранных ({fmt_value(f, v)})"
             )
         case Operator.none_in:
-            return f"{name}: нет нежелательных ({fmt_value(f, v)})" if ok else f"{name}: есть нежелательные — {xv}"
+            return (
+                f"{name}: нет нежелательных ({fmt_value(f, v)})"
+                if ok
+                else f"{name}: есть нежелательные — {xv}"
+            )
         case Operator.prefix_in:
             return (
                 f"Коды ОКПД2 {xv} совпадают с вашими ({fmt_value(f, v)})"
@@ -148,7 +179,7 @@ def _weighted_text(rule: ScoringRule, x: FieldValue, s: float) -> str:
     return rule.label
 
 
-def rule_text(rule: ScoringRule, res: RuleResult) -> str:
+def rule_text(rule: ScoringRule, res: RuleOutcome, x: FieldValue) -> str:
     if res.status == RuleStatus.disabled:
         return f"{rule.label} — правило отключено"
     if res.status == RuleStatus.no_data:
@@ -157,6 +188,6 @@ def rule_text(rule: ScoringRule, res: RuleResult) -> str:
         if not res.triggered:
             return f"{rule.label} — не выявлено"
         if FIELD_CATALOG[rule.field].type == FieldType.enum:
-            return f"{rule.label}: {fmt_value(rule.field, res.field_value)}"
+            return f"{rule.label}: {fmt_value(rule.field, x)}"
         return rule.label
-    return _weighted_text(rule, res.field_value, res.partial or 0.0)  # type: ignore[arg-type]
+    return _weighted_text(rule, x, res.partial_score or 0.0)
