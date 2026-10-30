@@ -1,92 +1,467 @@
+# #!/usr/bin/env python3
+# """Проверка тестовых данных для скоринга закупок (Роль 5)."""
+
+# import json
+# import xml.etree.ElementTree as ET
+# from decimal import Decimal, InvalidOperation
+# from pathlib import Path
+
+# DATASET_DIR = Path(__file__).resolve().parent
+# XML_DIR = DATASET_DIR / "procurements"
+# SCENARIOS_PATH = DATASET_DIR / "scenarios.yaml"
+# EXPECTED_PATH = DATASET_DIR / "expected_fields.json"
+
+# REQUIRED_SCENARIO_FIELDS = [
+#     "id", "file", "profile", "expected_recommendation", "rationale"
+# ]
+
+
+# SCORE_THRESHOLD = 70
+# CONSIDER_THRESHOLD = 40
+# VALID_RECOMMENDATIONS = {"participate", "consider", "skip"}
+
+
+
+# def validate_score_threshold(scenario):
+#     """Проверяет соответствие ожидаемой рекомендации диапазону баллов
+#     и наличию стоп-факторов.
+#     """
+#     errors = []
+
+#     recommendation = scenario.get("expected_recommendation")
+#     expected_score = scenario.get("expected_score")
+#     raw_stop_factors = scenario.get("expected_stop_factor")
+
+#     # Приводим стоп-факторы к единому формату: список строк
+#     if raw_stop_factors is None or raw_stop_factors == "":
+#         stop_factors = []
+#     elif isinstance(raw_stop_factors, str):
+#         stop_factors = [
+#             factor.strip()
+#             for factor in raw_stop_factors.split(",")
+#             if factor.strip()
+#         ]
+#     elif isinstance(raw_stop_factors, list):
+#         stop_factors = [
+#             str(factor).strip()
+#             for factor in raw_stop_factors
+#             if str(factor).strip()
+#         ]
+#     else:
+#         errors.append(
+#             f"Некорректный формат expected_stop_factor: "
+#             f"{raw_stop_factors!r}"
+#         )
+#         stop_factors = []
+
+#     # Проверяем наличие и формат диапазона баллов
+#     if (
+#         not isinstance(expected_score, list)
+#         or len(expected_score) != 2
+#     ):
+#         errors.append(
+#             f"Некорректный expected_score: {expected_score!r}. "
+#             "Ожидается список из двух чисел."
+#         )
+#         return errors
+
+#     low, high = expected_score
+
+#     if (
+#         not isinstance(low, (int, float))
+#         or isinstance(low, bool)
+#         or not isinstance(high, (int, float))
+#         or isinstance(high, bool)
+#     ):
+#         errors.append("Границы expected_score должны быть числами.")
+#         return errors
+
+#     if not (0 <= low <= high <= 100):
+#         errors.append(
+#             f"Некорректный диапазон баллов: {expected_score}"
+#         )
+#         return errors
+
+#     # Проверяем рекомендацию
+#     if recommendation not in {"participate", "consider", "skip"}:
+#         errors.append(
+#             f"Неизвестная рекомендация: {recommendation!r}"
+#         )
+#         return errors
+
+#     # Если есть стоп-факторы, рекомендация должна быть skip
+#     if stop_factors:
+#         if recommendation != "skip":
+#             errors.append(
+#                 "При наличии стоп-факторов рекомендация должна быть skip."
+#             )
+
+#         if [low, high] != [0, 0]:
+#             errors.append(
+#                 "При наличии стоп-факторов ожидаемый балл должен быть [0, 0]."
+#             )
+
+#     else:
+#         if recommendation == "participate" and low < 70:
+#             errors.append(
+#                 "Для participate нижняя граница балла должна быть >= 70."
+#             )
+
+#         elif recommendation == "consider":
+#             if low < 40 or high >= 70:
+#                 errors.append(
+#                     "Для consider диапазон должен находиться "
+#                     "в пределах 40–69."
+#                 )
+
+#         elif recommendation == "skip" and high >= 40:
+#             errors.append(
+#                 "Для skip без стоп-факторов верхняя граница "
+#                 "балла должна быть < 40."
+#             )
+
+#     return errors
+
+
+
+# def load_json(path):
+#     try:
+#         with path.open(encoding="utf-8") as f:
+#             return json.load(f)
+#     except (OSError, json.JSONDecodeError) as exc:
+#         print(f"[FAIL] Не удалось прочитать {path.name}: {exc}")
+#         return None
+
+
+# def load_yaml(path):
+#     try:
+#         import yaml
+#         with path.open(encoding="utf-8") as f:
+#             return yaml.safe_load(f)
+#     except ImportError:
+#         print("[FAIL] Не установлен PyYAML. Установи: py -m pip install pyyaml")
+#     except (OSError, ValueError) as exc:
+#         print(f"[FAIL] Не удалось прочитать {path.name}: {exc}")
+#     return None
+
+
+# def local_name(tag):
+#     return tag.rsplit("}", 1)[-1]
+
+
+# def read_xml(path):
+#     root = ET.parse(path).getroot()
+#     fields = {}
+
+#     for element in root.iter():
+#         name = local_name(element.tag)
+#         value = (element.text or "").strip()
+#         if value and name not in fields:
+#             fields[name] = value
+
+#     return fields
+
+
+# def find_expected(file_name, expected):
+#     stem = Path(file_name).stem
+
+#     if stem in expected:
+#         return expected[stem]
+
+#     # Для специальных XML-файлов имя файла содержит ИНН заказчика.
+#     inn = stem.split("_")[0]
+#     matches = [
+#         item for item in expected.values()
+#         if str(item.get("customer_inn", "")) == inn
+#     ]
+
+#     return matches[0] if len(matches) == 1 else None
+
+
+# def compare_value(field, expected_value, actual_value):
+#     if field == "nmcc":
+#         expected_missing = expected_value is None or expected_value == ""
+#         actual_missing = actual_value is None or actual_value == ""
+
+#         # Если цена отсутствует и в эталоне, и в XML,
+#         # отсутствие данных считается совпадением.
+#         if expected_missing and actual_missing:
+#             return True
+
+#         # Если цена есть только с одной стороны,
+#         # данные не совпадают.
+#         if expected_missing or actual_missing:
+#             return False
+
+#         try:
+#             return Decimal(str(expected_value)) == Decimal(str(actual_value))
+#         except (InvalidOperation, ValueError):
+#             return False
+
+#     if expected_value is None or actual_value is None:
+#         return False
+
+#     return str(expected_value) == str(actual_value)
+
+
+
+# def main():
+#     print("=== ПРОВЕРКА ТЕСТОВЫХ ДАННЫХ: РОЛЬ 5 ===\n")
+
+#     scenarios_data = load_yaml(SCENARIOS_PATH)
+#     expected = load_json(EXPECTED_PATH)
+
+#     if scenarios_data is None or expected is None:
+#         print("\nИТОГ: не удалось загрузить тестовые данные.")
+#         return 1
+
+#     scenarios = scenarios_data.get("scenarios", [])
+#     failures = 0
+#     checks = 0
+
+#     print(f"[OK] Сценариев загружено: {len(scenarios)}")
+#     print(f"[OK] Эталонов загружено: {len(expected)}")
+
+#     if len(scenarios) < 20:
+#         print(
+#             f"[FAIL] Ожидалось не менее 20 сценариев, "
+#             f"найдено {len(scenarios)}"
+#         )
+#         failures += 1
+#     else:
+#         print(
+#             f"[PASS] Количество сценариев ({len(scenarios)}) "
+#             "соответствует плану (≥20)"
+#         )
+
+#     seen_ids = set()
+#     print("\n--- Проверка сценариев и XML ---")
+
+#     for scenario in scenarios:
+#         threshold_error = validate_score_threshold(scenario)
+#         if threshold_error:
+#             print(f"[FAIL] {threshold_error}")
+#             failures += 1
+#         scenario_id = scenario.get("id", "UNKNOWN")
+#         missing = [
+#             field for field in REQUIRED_SCENARIO_FIELDS
+#             if field not in scenario
+#         ]
+
+#         if missing:
+#             print(f"[FAIL] {scenario_id}: нет полей {missing}")
+#             failures += 1
+#             continue
+
+#         if scenario_id in seen_ids:
+#             print(f"[FAIL] Повторяется ID сценария: {scenario_id}")
+#             failures += 1
+#         seen_ids.add(scenario_id)
+
+#         file_name = scenario["file"]
+#         xml_path = XML_DIR / Path(file_name).name
+
+#         if not xml_path.is_file():
+#             print(f"[FAIL] {scenario_id}: XML не найден: {file_name}")
+#             failures += 1
+#             continue
+
+#         record = find_expected(file_name, expected)
+
+#         if record is None:
+#             print(f"[FAIL] {scenario_id}: эталон не найден для {file_name}")
+#             failures += 1
+#             continue
+
+#         try:
+#             actual = read_xml(xml_path)
+#         except (ET.ParseError, OSError) as exc:
+#             print(f"[FAIL] {scenario_id}: XML не читается: {exc}")
+#             failures += 1
+#             continue
+
+#         fields_to_check = [
+#             ("regNumber", record.get("regNumber"), actual.get("regNumber")),
+#             ("nmcc", record.get("nmcc"), actual.get("initialPrice")),
+#             ("customer_inn", record.get("customer_inn"), actual.get("inn")),
+#             ("law", record.get("law"), actual.get("law")),
+#         ]
+
+#         scenario_failed = False
+
+#         for field, expected_value, actual_value in fields_to_check:
+#             checks += 1
+#             if compare_value(field, expected_value, actual_value):
+#                 continue
+
+#             print(
+#                 f"[FAIL] {scenario_id} / {field}: "
+#                 f"XML={actual_value!r}, эталон={expected_value!r}"
+#             )
+#             failures += 1
+#             scenario_failed = True
+
+#         if not scenario_failed:
+#             print(f"[PASS] {scenario_id}: XML и эталон совпадают")
+
+#     print("\n--- Итог ---")
+#     print(f"Проверок полей: {checks}")
+#     print(f"Ошибок: {failures}")
+
+#     if failures:
+#         print("РЕЗУЛЬТАТ: найдены проблемы в тестовых данных.")
+#         return 1
+
+#     print("РЕЗУЛЬТАТ: тестовые данные прошли проверки.")
+#     print("Примечание: качество реальных рекомендаций скоринга здесь не оценивается.")
+#     return 0
+
+
+# if __name__ == "__main__":
+#     raise SystemExit(main())
+
+
+
+
 #!/usr/bin/env python3
-"""
-Проверка тестовых данных и качества скоринга закупок (Роль 5).
-Запуск:
-  python tests/evaluate.py            # Проверка только данных (XML, YAML, JSON)
-  python tests/evaluate.py --test-api # Полная проверка с запросом к localhost:8000
-"""
+"""Проверка тестовых данных для скоринга закупок (Роль 5)."""
 
 import json
 import xml.etree.ElementTree as ET
-import argparse
-import time
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
-import sys
-
-# Добавляем requests для API-тестов (если установлен)
-try:
-    import requests
-    HAS_REQUESTS = True
-except ImportError:
-    HAS_REQUESTS = False
 
 DATASET_DIR = Path(__file__).resolve().parent
-XML_DIR = DATASET_DIR / "dataset" / "procurements"
+XML_DIR = DATASET_DIR / "procurements"
 SCENARIOS_PATH = DATASET_DIR / "scenarios.yaml"
 EXPECTED_PATH = DATASET_DIR / "expected_fields.json"
 
-# Гибкие настройки (можно менять под объем задач)
-MIN_SCENARIOS = 20  # Минимум сценариев по плану
-SCORE_THRESHOLD = 80
+REQUIRED_SCENARIO_FIELDS = [
+    "id",
+    "file",
+    "profile",
+    "expected_recommendation",
+    "expected_score",
+    "rationale",
+]
+
+SCORE_THRESHOLD = 70
 CONSIDER_THRESHOLD = 40
-VALID_RECOMMENDATIONS = {"participate", "consider", "skip"}
-API_BASE_URL = "http://localhost:8000/api"
+
+VALID_RECOMMENDATIONS = {
+    "participate",
+    "consider",
+    "skip",
+}
 
 
-def validate_score_threshold(scenario):
-    """Проверяет ожидаемые баллы, рекомендацию и стоп-факторы."""
-    scenario_id = scenario.get("id", "UNKNOWN")
-    recommendation = scenario.get("expected_recommendation")
-    score_range = scenario.get("expected_score")
-    
-    # Поддержка обоих форматов: списка stop_factors или строки expected_stop_factor
-    stop_factors = scenario.get("stop_factors", [])
-    if not stop_factors and scenario.get("expected_stop_factor"):
-        ef = scenario.get("expected_stop_factor")
-        stop_factors = [x.strip() for x in ef.split(",")] if ef else []
+def normalize_stop_factors(value):
+    """Преобразует стоп-факторы в список строк."""
 
-    if recommendation not in VALID_RECOMMENDATIONS:
-        return f"{scenario_id}: неизвестная рекомендация {recommendation!r}"
+    if value is None or value == "":
+        return []
 
-    if not isinstance(score_range, list) or len(score_range) != 2:
-        return f"{scenario_id}: expected_score должен быть [min, max]"
+    if isinstance(value, str):
+        return [
+            item.strip()
+            for item in value.split(",")
+            if item.strip()
+        ]
 
-    low, high = score_range
-    if any(not isinstance(value, (int, float)) or isinstance(value, bool) for value in (low, high)):
-        return f"{scenario_id}: границы expected_score должны быть числами"
-
-    if not (0 <= low <= high <= 100):
-        return f"{scenario_id}: некорректный диапазон {score_range}"
-
-    if not isinstance(stop_factors, list):
-        return f"{scenario_id}: stop_factors должен быть списком"
-
-    # Стоп-факторы имеют приоритет над баллами.
-    if stop_factors:
-        if recommendation != "skip":
-            return f"{scenario_id}: при стоп-факторах {stop_factors} ожидается рекомендация skip"
-        if score_range != [0, 0]:
-            return f"{scenario_id}: для сценария со стоп-факторами ожидаемый диапазон должен быть [0, 0]"
-        return None
-
-    # Без стоп-факторов рекомендация должна соответствовать баллам.
-    if recommendation == "participate" and low < SCORE_THRESHOLD:
-        return f"{scenario_id}: participate требует диапазон не ниже {SCORE_THRESHOLD}, получено {score_range}"
-
-    if recommendation == "consider" and (low < CONSIDER_THRESHOLD or high >= SCORE_THRESHOLD):
-        return f"{scenario_id}: consider требует диапазон [{CONSIDER_THRESHOLD}, {SCORE_THRESHOLD - 1}], получено {score_range}"
-
-    if recommendation == "skip" and high >= CONSIDER_THRESHOLD:
-        return f"{scenario_id}: без стоп-факторов skip требует баллы ниже {CONSIDER_THRESHOLD}, получено {score_range}"
+    if isinstance(value, list):
+        return [
+            str(item).strip()
+            for item in value
+            if str(item).strip()
+        ]
 
     return None
 
 
+def validate_score_threshold(scenario):
+    """Проверяет рекомендацию, баллы и стоп-факторы."""
+
+    errors = []
+
+    recommendation = scenario.get("expected_recommendation")
+    expected_score = scenario.get("expected_score")
+    stop_factors = normalize_stop_factors(
+        scenario.get("expected_stop_factor")
+    )
+
+    if stop_factors is None:
+        errors.append(
+            "Некорректный формат expected_stop_factor."
+        )
+        stop_factors = []
+
+    if (
+        not isinstance(expected_score, list)
+        or len(expected_score) != 2
+    ):
+        errors.append(
+            f"Некорректный expected_score: {expected_score!r}"
+        )
+        return errors
+
+    low, high = expected_score
+
+    if (
+        not isinstance(low, (int, float))
+        or isinstance(low, bool)
+        or not isinstance(high, (int, float))
+        or isinstance(high, bool)
+    ):
+        errors.append("Границы expected_score должны быть числами.")
+        return errors
+
+    if not (0 <= low <= high <= 100):
+        errors.append(
+            f"Некорректный диапазон баллов: {expected_score}"
+        )
+        return errors
+
+    if recommendation not in VALID_RECOMMENDATIONS:
+        errors.append(
+            f"Неизвестная рекомендация: {recommendation!r}"
+        )
+        return errors
+
+    if stop_factors:
+        if recommendation != "skip":
+            errors.append(
+                "При наличии стоп-факторов рекомендация должна быть skip."
+            )
+
+        if [low, high] != [0, 0]:
+            errors.append(
+                "При наличии стоп-факторов балл должен быть [0, 0]."
+            )
+
+    else:
+        if recommendation == "participate" and low < SCORE_THRESHOLD:
+            errors.append(
+                f"Для participate нижняя граница должна быть >= {SCORE_THRESHOLD}."
+            )
+
+        elif recommendation == "consider":
+            if low < CONSIDER_THRESHOLD or high >= SCORE_THRESHOLD:
+                errors.append(
+                    "Для consider диапазон должен быть 40–69."
+                )
+
+        elif recommendation == "skip" and high >= CONSIDER_THRESHOLD:
+            errors.append(
+                "Для skip без стоп-факторов верхняя граница должна быть < 40."
+            )
+
+    return errors
+
+
 def load_json(path):
     try:
-        with path.open(encoding="utf-8") as f:
-            return json.load(f)
+        with path.open(encoding="utf-8") as file:
+            return json.load(file)
     except (OSError, json.JSONDecodeError) as exc:
         print(f"[FAIL] Не удалось прочитать {path.name}: {exc}")
         return None
@@ -95,12 +470,15 @@ def load_json(path):
 def load_yaml(path):
     try:
         import yaml
-        with path.open(encoding="utf-8") as f:
-            return yaml.safe_load(f)
+
+        with path.open(encoding="utf-8") as file:
+            return yaml.safe_load(file)
+
     except ImportError:
-        print("[FAIL] Не установлен PyYAML. Установи: pip install pyyaml")
+        print("[FAIL] Установи PyYAML: py -m pip install pyyaml")
     except (OSError, ValueError) as exc:
         print(f"[FAIL] Не удалось прочитать {path.name}: {exc}")
+
     return None
 
 
@@ -111,86 +489,187 @@ def local_name(tag):
 def read_xml(path):
     root = ET.parse(path).getroot()
     fields = {}
+
     for element in root.iter():
         name = local_name(element.tag)
         value = (element.text or "").strip()
+
         if value and name not in fields:
             fields[name] = value
+
     return fields
 
 
 def find_expected(file_name, expected):
     stem = Path(file_name).stem
+
     if stem in expected:
         return expected[stem]
-    
-    # Для специальных XML-файлов имя файла содержит ИНН заказчика.
+
     inn = stem.split("_")[0]
-    matches = [item for item in expected.values() if str(item.get("customer_inn", "")) == inn]
+
+    matches = [
+        item for item in expected.values()
+        if str(item.get("customer_inn", "")) == inn
+    ]
+
     return matches[0] if len(matches) == 1 else None
 
 
 def compare_value(field, expected_value, actual_value):
-    if expected_value is None or actual_value is None:
-        return False
-    if field in ("nmcc", "initialPrice"):
+    if field == "nmcc":
+        expected_missing = expected_value is None or expected_value == ""
+        actual_missing = actual_value is None or actual_value == ""
+
+        if expected_missing and actual_missing:
+            return None
+
+        if expected_missing or actual_missing:
+            return False
+
         try:
             return Decimal(str(expected_value)) == Decimal(str(actual_value))
-        except InvalidOperation:
+        except (InvalidOperation, ValueError):
             return False
-    return str(expected_value).strip() == str(actual_value).strip()
+
+    if expected_value is None or actual_value is None:
+        return False
+
+    return str(expected_value) == str(actual_value)
 
 
-def run_api_test(scenarios):
-    """Проверяет реальный скоринг через API (если запущен)."""
-    if not HAS_REQUESTS:
-        print("[WARN] Библиотека 'requests' не найдена. API-тестирование пропущено.")
-        return 0
-    
-    print("\n--- Проверка реального скоринга через API ---")
-    api_failures = 0
-    
-    for scenario in scenarios[:5]: # Для скорости тестируем первые 5, можно убрать срез для всех
-        scenario_id = scenario.get("id", "UNKNOWN")
-        file_name = scenario["file"]
-        xml_path = XML_DIR / Path(file_name).name
-        
-        if not xml_path.is_file():
+def validate_scenario_ids(scenarios):
+    errors = []
+    seen_ids = set()
+
+    for scenario in scenarios:
+        scenario_id = scenario.get("id")
+
+        if not scenario_id:
+            errors.append("Обнаружен сценарий без ID.")
+        elif scenario_id in seen_ids:
+            errors.append(f"Повторяется ID сценария: {scenario_id}")
+
+        seen_ids.add(scenario_id)
+
+    return errors
+
+def validate_profiles(scenarios_data, scenarios):
+    print("\n--- ПРОВЕРКА ПРОФИЛЕЙ ПОСТАВЩИКОВ ---")
+
+    profiles = scenarios_data.get("profiles")
+
+    if isinstance(profiles, dict):
+        profile_ids = list(profiles.keys())
+
+    elif isinstance(profiles, list):
+        profile_ids = [
+            profile.get("id")
+            for profile in profiles
+            if isinstance(profile, dict) and profile.get("id")
+        ]
+
+    else:
+        print("[FAIL] Раздел profiles отсутствует или имеет неверный формат.")
+        return 1
+
+    profile_ids = [str(profile_id) for profile_id in profile_ids]
+
+    if not 3 <= len(profile_ids) <= 4:
+        print(
+            f"[FAIL] Найдено профилей: {len(profile_ids)}. "
+            "По требованиям должно быть от 3 до 4."
+        )
+        errors = 1
+    else:
+        print(f"[PASS] Количество профилей соответствует плану: {len(profile_ids)}.")
+        errors = 0
+
+    counts = {profile_id: 0 for profile_id in profile_ids}
+
+    for scenario in scenarios:
+        scenario_id = scenario.get("id", "без ID")
+        profile_id = scenario.get("profile")
+
+        if profile_id is None:
+            print(f"[FAIL] {scenario_id}: не указан профиль.")
+            errors += 1
             continue
-            
-        # Имитация запроса к API (здесь нужно будет адаптировать под реальные эндпоинты Роли 1)
-        # Пример: отправка XML и профиля на оценку
-        start_time = time.time()
-        try:
-            # ВНИМАНИЕ: Этот запрос нужно будет синхронизировать с реальным API Роли 1
-            # Пока это заглушка, которая всегда возвращает успех для демонстрации структуры
-            # response = requests.post(f"{API_BASE_URL}/score", json={...}, timeout=10)
-            
-            # Заглушка для демонстрации замера времени:
-            time.sleep(0.1) 
-            elapsed = time.time() - start_time
-            
-            if elapsed > 10.0:
-                print(f"[FAIL] {scenario_id}: Превышено время скоринга ({elapsed:.2f}с > 10с)")
-                api_failures += 1
-            else:
-                print(f"[PASS] {scenario_id}: Скоринг прошел за {elapsed:.2f}с")
-                
-        except requests.exceptions.ConnectionError:
-            print(f"[WARN] {scenario_id}: API недоступен (localhost:8000). Запустите docker-compose.")
-            return 0 # Не считаем это ошибкой данных, это ошибка окружения
-        except Exception as e:
-            print(f"[FAIL] {scenario_id}: Ошибка API: {e}")
-            api_failures += 1
-            
-    return api_failures
+
+        profile_id = str(profile_id)
+
+        if profile_id not in counts:
+            print(
+                f"[FAIL] {scenario_id}: профиль "
+                f"'{profile_id}' отсутствует в profiles."
+            )
+            errors += 1
+        else:
+            counts[profile_id] += 1
+
+    print("\nИспользование профилей:")
+
+    for profile_id, count in counts.items():
+        if count == 0:
+            print(f"[WARN] {profile_id}: не используется ни в одном сценарии.")
+        else:
+            print(f"[PASS] {profile_id}: {count} сценариев.")
+
+    print(f"\nОшибок проверки профилей: {errors}")
+
+    return errors
+
+
+def validate_stop_factors(scenarios):
+    """Показывает все стоп-факторы и проверяет их согласованность."""
+
+    print("\n--- ПРОВЕРКА СТОП-ФАКТОРОВ ---")
+
+    with_factors = 0
+    without_factors = 0
+    all_factor_types = set()
+    errors = 0
+
+    for scenario in scenarios:
+        scenario_id = scenario.get("id", "UNKNOWN")
+        raw_value = scenario.get("expected_stop_factor")
+        factors = normalize_stop_factors(raw_value)
+
+        if factors is None:
+            print(
+                f"[FAIL] {scenario_id}: некорректный формат стоп-факторов"
+            )
+            errors += 1
+            continue
+
+        if factors:
+            with_factors += 1
+            all_factor_types.update(factors)
+
+            print(
+                f"[PASS] {scenario_id}: {', '.join(factors)}"
+            )
+        else:
+            without_factors += 1
+
+    print(f"\nСценариев со стоп-факторами: {with_factors}")
+    print(f"Сценариев без стоп-факторов: {without_factors}")
+    print(f"Уникальных типов стоп-факторов: {len(all_factor_types)}")
+
+    if all_factor_types:
+        print("Все типы стоп-факторов:")
+        for factor in sorted(all_factor_types):
+            print(f"  - {factor}")
+    else:
+        print("[FAIL] В датасете не найдено ни одного стоп-фактора.")
+        errors += 1
+
+    print(f"Ошибок проверки стоп-факторов: {errors}")
+
+    return errors
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Оценка качества данных и скоринга")
-    parser.add_argument("--test-api", action="store_true", help="Запустить проверку через реальный API")
-    args = parser.parse_args()
-
     print("=== ПРОВЕРКА ТЕСТОВЫХ ДАННЫХ: РОЛЬ 5 ===\n")
 
     scenarios_data = load_yaml(SCENARIOS_PATH)
@@ -201,40 +680,69 @@ def main():
         return 1
 
     scenarios = scenarios_data.get("scenarios", [])
+
+    if not isinstance(scenarios, list):
+        print("[FAIL] Поле scenarios должно быть списком.")
+        return 1
+
     failures = 0
     checks = 0
+    skipped_checks = 0
 
     print(f"[OK] Сценариев загружено: {len(scenarios)}")
     print(f"[OK] Эталонов загружено: {len(expected)}")
 
-    # Гибкая проверка минимального количества
-    if len(scenarios) < MIN_SCENARIOS:
-        print(f"[FAIL] Ожидалось минимум {MIN_SCENARIOS} сценариев, найдено {len(scenarios)}")
+    if len(scenarios) < 20:
+        print("[FAIL] Должно быть не менее 20 сценариев.")
         failures += 1
     else:
-        print(f"[PASS] Количество сценариев ({len(scenarios)}) соответствует плану (≥{MIN_SCENARIOS})")
+        print("[PASS] Количество сценариев соответствует плану.")
 
-    seen_ids = set()
-    print("\n--- Проверка сценариев и XML ---")
+    print("\n--- ПРОВЕРКА ID СЦЕНАРИЕВ ---")
+
+    id_errors = validate_scenario_ids(scenarios)
+
+    if id_errors:
+        for error in id_errors:
+            print(f"[FAIL] {error}")
+        failures += len(id_errors)
+    else:
+        print(f"[PASS] Все ID уникальны ({len(scenarios)} сценариев).")
+
+    print("\n--- ПРОВЕРКА РЕКОМЕНДАЦИЙ И БАЛЛОВ ---")
 
     for scenario in scenarios:
-        threshold_error = validate_score_threshold(scenario)
-        if threshold_error:
-            print(f"[FAIL] {threshold_error}")
-            failures += 1
-            
+        errors = validate_score_threshold(scenario)
+
+        if errors:
+            failures += len(errors)
+            print(f"[FAIL] {scenario.get('id', 'UNKNOWN')}")
+
+            for error in errors:
+                print(f"  {error}")
+        else:
+            print(
+                f"[PASS] {scenario.get('id')}: "
+                "рекомендация и диапазон корректны"
+            )
+
+    failures += validate_stop_factors(scenarios)
+    failures += validate_profiles(scenarios_data, scenarios)
+
+    print("\n--- ПРОВЕРКА XML И ЭТАЛОНОВ ---")
+
+    for scenario in scenarios:
         scenario_id = scenario.get("id", "UNKNOWN")
-        missing = [field for field in ["id", "file", "profile", "expected_recommendation", "rationale"] if field not in scenario]
+
+        missing = [
+            field for field in REQUIRED_SCENARIO_FIELDS
+            if field not in scenario
+        ]
 
         if missing:
-            print(f"[FAIL] {scenario_id}: нет обязательных полей {missing}")
+            print(f"[FAIL] {scenario_id}: отсутствуют поля {missing}")
             failures += 1
             continue
-
-        if scenario_id in seen_ids:
-            print(f"[FAIL] Повторяется ID сценария: {scenario_id}")
-            failures += 1
-        seen_ids.add(scenario_id)
 
         file_name = scenario["file"]
         xml_path = XML_DIR / Path(file_name).name
@@ -245,8 +753,9 @@ def main():
             continue
 
         record = find_expected(file_name, expected)
+
         if record is None:
-            print(f"[FAIL] {scenario_id}: эталон не найден для {file_name}")
+            print(f"[FAIL] {scenario_id}: эталон не найден")
             failures += 1
             continue
 
@@ -259,39 +768,45 @@ def main():
 
         fields_to_check = [
             ("regNumber", record.get("regNumber"), actual.get("regNumber")),
-            ("nmcc", record.get("nmcc"), actual.get("initialPrice")), # Парсер может называть это initialPrice
+            ("nmcc", record.get("nmcc"), actual.get("initialPrice")),
             ("customer_inn", record.get("customer_inn"), actual.get("inn")),
             ("law", record.get("law"), actual.get("law")),
         ]
 
         scenario_failed = False
+
         for field, expected_value, actual_value in fields_to_check:
-            checks += 1
-            if compare_value(field, expected_value, actual_value):
+            result = compare_value(field, expected_value, actual_value)
+
+            if result is None:
+                skipped_checks += 1
                 continue
 
-            print(f"[FAIL] {scenario_id} / {field}: XML={actual_value!r}, эталон={expected_value!r}")
-            failures += 1
-            scenario_failed = True
+            checks += 1
+
+            if not result:
+                print(
+                    f"[FAIL] {scenario_id} / {field}: "
+                    f"XML={actual_value!r}, эталон={expected_value!r}"
+                )
+                failures += 1
+                scenario_failed = True
 
         if not scenario_failed:
             print(f"[PASS] {scenario_id}: XML и эталон совпадают")
 
-    # Запуск API тестов, если запрошено
-    api_failures = 0
-    if args.test_api:
-        api_failures = run_api_test(scenarios)
-
-    print("\n--- Итог ---")
+    print("\n--- ИТОГ ---")
     print(f"Проверок полей: {checks}")
-    total_failures = failures + api_failures
-    print(f"Ошибок: {total_failures}")
+    print(f"Пропущено проверок: {skipped_checks}")
+    print(f"Ошибок: {failures}")
 
-    if total_failures:
-        print("РЕЗУЛЬТАТ: найдены проблемы в тестовых данных или API.")
+    if failures:
+        print("РЕЗУЛЬТАТ: найдены проблемы в тестовых данных.")
         return 1
 
-    print("РЕЗУЛЬТАТ: тестовые данные прошли проверки. Готово к интеграции!")
+    print("РЕЗУЛЬТАТ: тестовые данные прошли проверки.")
+    print("Качество фактических рекомендаций Copilot здесь не оценивается.")
+
     return 0
 
 
