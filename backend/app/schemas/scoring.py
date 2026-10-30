@@ -184,7 +184,8 @@ FIELD_CATALOG: dict[str, FieldSpec] = {
     ]
 }
 
-RuleValue = Money | bool | str | list[Money] | list[str] | None
+# Порядок важен: иначе коды вроде ["62"] и ["44"] прочитаются как числа
+RuleValue = list[str] | list[Money] | str | Money | bool | None
 
 
 class ScoringRule(BaseModel):
@@ -193,7 +194,7 @@ class ScoringRule(BaseModel):
     kind: RuleKind
     field: str
     operator: Operator
-    value: RuleValue = None
+    value: RuleValue = Field(default=None, union_mode="left_to_right")
     weight: Literal[1, 2, 3] | None = Field(
         default=None, description="1/2/3 = низкая/средняя/высокая; у стоп-факторов нет"
     )

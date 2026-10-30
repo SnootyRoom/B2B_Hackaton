@@ -7,9 +7,10 @@ export const qk = {
   me: ['me'] as const,
   profile: ['profile'] as const,
   results: (f: object) => ['results', f] as const,
-  procurement: (id: number) => ['procurement', id] as const,
+  procurement: (id: string) => ['procurement', id] as const,
   task: (id: string) => ['task', id] as const,
   uploads: ['uploads'] as const,
+  catalog: ['catalog'] as const,
 };
 
 /** Текущий пользователь. null — не вошёл. */

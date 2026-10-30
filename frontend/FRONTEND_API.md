@@ -1,65 +1,36 @@
-# Что фронтенд ждёт от API — для тимлида (роль 1)
+# Как фронтенд работает с API
 
-Адреса — из `CLAUDE.md`, поля — из `docs/analytics.md`. Типы целиком: `src/api/types.ts`.
-Когда схемы и OpenAPI будут в `main`, роль 4 сверяет `types.ts` с ними и правит в том же PR.
+Источник правды — бэкенд: схемы `backend/app/schemas/`, выгрузка `docs/openapi.json`.
+`src/api/types.ts` повторяет их. Меняется схема — меняем типы в том же PR.
 
-## Совпадает с CLAUDE.md
+## Что важно помнить
 
-| Экран | Запрос | Что ждём в ответ |
-| --- | --- | --- |
-| Вход | `POST /auth/login`, `POST /auth/register` `{email, password}` | `User` + httpOnly-cookie |
-| Шапка | `GET /auth/me` (401 → экран входа), `POST /auth/logout` | `User` |
-| Параметры | `GET /scoring-profiles/active` (**404, если профиля ещё нет** → первый вход ведёт на «Параметры») | `ScoringProfile` |
-| Параметры | `PUT /scoring-profiles/active` | `ScoringProfile` |
-| Параметры | `POST /scoring-profiles/parse` `{text}` | `{rules, company_description, unparsed}` |
-| «Сохранить и пересчитать» | `POST /score` `{}` | `{task_id}` |
-| Загрузка | `POST /procurements/upload`, multipart, поле `files` (много) | `{task_id}` |
-| Прогресс | `GET /tasks/{id}`, опрос раз в 1,5 с | `Task` (ниже) |
-| Результаты | `GET /results?recommendation=&region=&nmck_min=&nmck_max=&law=&hide_expired=true` | `ResultRow[]` или `{items: ResultRow[]}` |
-| Экспорт | `GET /results/export?format=csv\|json&…те же фильтры` + `deadline_from`, `deadline_to` (ГГГГ-ММ-ДД, окончание подачи с/по — на экране этот фильтр работает в браузере, в выгрузке его желательно учесть) | файл (ставим ссылку, браузер скачивает с cookie) |
-| Карточка | `GET /procurements/{id}` | `{procurement, customer, customer_error, score}` |
+- `id` всех записей — UUID-строка. Деньги — число. Даты — ISO 8601 в UTC.
+- Ошибки — `{"error": {"code", "message", "details"}}`, `message` показываем как есть.
+- Всё тяжёлое идёт через задачу: ответ `202 {task_id}`, дальше опрос `GET /tasks/{id}`.
+- Разбор текста (`POST /scoring-profiles/parse`) тоже задача: правила лежат в `Task.result`.
+  Ожидание спрятано в `api.parseProfileText`.
+- Сохранение профиля (`PUT /scoring-profiles/active`) возвращает `{profile, task_id}`;
+  с `rescore: true` оно же запускает пересчёт.
+- Признак LLM — `llm_enabled` в `GET /scoring-profiles/catalog`: `false` → кнопку «Составить правила» не показываем.
+- Новому пользователю профиль создаётся сам, `404` на него не бывает. Шаг 1 на стартовой странице
+  считается пройденным, когда в профиле есть критерии не только о заказчике.
 
-Ошибки — `{"error": {"code", "message", "details"}}`. `message` показываем пользователю как есть,
-если его нет — берём текст по `code` из таблицы аналитики (`src/lib/catalog.ts`, `ERROR_TEXT`).
+## Оценка закупки
 
-## Нужно согласовать (в CLAUDE.md этого нет)
+- `rules[].status`: `applied` / `no_data` / `disabled`. Выключенные правила в разборе не показываем.
+- `rules[].text` — готовая фраза для показа, `field_value` — сырое значение.
+- Максимум правила = `contribution + lost` (`maxContribution` в `lib/rules.ts`).
+- `groups[].effective_weight` — вес после перераспределения, `weight` — из профиля.
+- `stop_factors` — список `rule_id`; сами причины — в `rules[]` с `triggered: true`.
+- `justification` — строка со ссылками `[rule_id]`, источник — `justification_source`.
 
-1. **Признак LLM.** Без ключа кнопка «Разобрать» должна скрываться. Предлагаю `GET /auth/me` →
-   `{"id", "email", "features": {"llm": false}}`. Нет поля — считаем, что LLM есть.
-2. **«Загрузить пример» (P1):** `POST /procurements/upload-demo` → `{task_id}`, берёт файлы из `data/demo/`.
-3. **Ручной ИНН (P1):** `PUT /procurements/{id}/customer-inn` `{inn}` → `{task_id}` (ЕГРЮЛ + пересчёт одной закупки).
-4. **Поле `enabled` у правила** — переключатель «включено» из аналитики. Выключенное правило хранится, но не считается.
-6. **Короткая причина в строке результатов:** `ResultRow.reason` — одна фраза («Цена выше лимита 15 млн»),
-   показывается на билете закупки. Нет поля — билет просто без причины. Проще всего взять главный минус
-   из обоснования (роль 3).
-5. **Правила заказчика по умолчанию** приходят от бэкенда (в ответе `parse` и в новом профиле). Фронт их сам не придумывает
-   (CLAUDE.md: правила только в `defaults.py`).
-7. **История загрузок (вкладка «История»):** `GET /tasks?kind=upload` → список задач загрузки, новые сверху.
-   У задачи нужны `created_at` (когда загружено) и желательно `summary: {participate, consider, skip}` —
-   сколько закупок из загрузки в каждой рекомендации. Нет `summary` — карточка просто без полоски.
-8. **Закупки одной загрузки:** `GET /results?task_id=<id>` — фильтр результатов по загрузке (кнопка «Открыть закупки» в истории).
+## Что считается в браузере
 
-## Форматы, которые важны фронту
+Фильтры, поиск и сортировка результатов, а также экспорт CSV/JSON (`lib/export.ts`): `GET /results`
+отдаёт полный список. Закупки одной загрузки берутся из `procurement_ids` её файлов.
 
-- `Task.files[]`: `{name, status: pending|ok|error, error: {code, message}|null, warnings: [{code, message}], procurement_ids: number[]}`.
-  `CUSTOMER_NOT_FOUND` и `EGRUL_UNAVAILABLE` — это `warnings` при `status: ok`. По `procurement_ids` из файла делаем ссылку «Открыть».
-- `ScoreResult.rules[]`: `{rule_id, group, kind, label, field_value_text, partial_score, contribution, max_contribution, no_data, triggered}`.
-  `field_value_text` — значение уже человеческим текстом («4 200 000 ₽», «Томская область»): так фронту не нужно знать каждое поле.
-  `contribution` — Δr из аналитики, `max_contribution` — сколько правило могло дать при s = 1.
-- `ScoreResult.groups[]`: `{group, score|null, weight, low_data}` — `weight` после перераспределения (0–1), `score: null` — группа исключена.
-- `justification.text` — ссылки на правила в квадратных скобках `[rule_id]`; фронт превращает их в номера и подсвечивает правило.
-- Деньги (`nmck`, `bid_security`, `price`) — строкой Decimal, например `"4200000.00"`. Даты — ISO 8601 в UTC.
+## Пока только в демо-режиме (P1)
 
-## docker-compose
-
-```yaml
-  frontend:
-    build: ./frontend
-    ports:
-      - "3000:80"
-    depends_on:
-      - backend
-```
-
-nginx в контейнере пересылает `/api/` на `http://backend:8000` (имя сервиса `backend`, как в CLAUDE.md).
-Фронт и API на одном адресе — cookie входа работает без настройки CORS.
+На бэкенде нет: загрузки `.zip`, `POST /procurements/upload-demo` («Попробовать на примере»),
+`PUT /procurements/{id}/customer-inn` (ручной ИНН). Кнопки показываются при `VITE_USE_MOCK=true`.

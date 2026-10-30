@@ -92,8 +92,6 @@ function UploadCard({ task: t, index }: { task: Task; index: number }) {
   const lots = t.files.filter((f) => f.status === 'ok').reduce((a, f) => a + f.procurement_ids.length, 0);
   const errors = t.files.filter((f) => f.status === 'error').length;
   const running = t.status === 'queued' || t.status === 'processing';
-  const s = t.summary;
-  const total = s ? s.participate + s.consider + s.skip : 0;
 
   return (
     <article className="card animate-rise flex flex-col gap-4 sm:flex-row sm:items-center sm:p-6" style={{ animationDelay: `${index * 50}ms` }}>
@@ -113,26 +111,6 @@ function UploadCard({ task: t, index }: { task: Task; index: number }) {
             </span>
           )}
         </div>
-        {s && total > 0 && (
-          <>
-            <div className="flex h-2 gap-[2px] overflow-hidden rounded-full" aria-hidden>
-              {s.participate > 0 && <div className="bg-good" style={{ flex: s.participate }} />}
-              {s.consider > 0 && <div className="bg-mid-bar" style={{ flex: s.consider }} />}
-              {s.skip > 0 && <div className="bg-bad" style={{ flex: s.skip }} />}
-            </div>
-            <div className="flex flex-wrap gap-x-4 text-[13px] text-muted">
-              <span>
-                <b className="text-good">{s.participate}</b> участвовать
-              </span>
-              <span>
-                <b className="text-mid">{s.consider}</b> рассмотреть
-              </span>
-              <span>
-                <b className="text-bad">{s.skip}</b> пропустить
-              </span>
-            </div>
-          </>
-        )}
       </div>
 
       <div className="flex shrink-0 flex-wrap gap-2 sm:flex-col">

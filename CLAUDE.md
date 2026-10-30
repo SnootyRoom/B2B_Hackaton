@@ -211,11 +211,13 @@ POST /procurements/fetch           # [P2] реестровые номера → 
 GET  /procurements   GET /procurements/{id}
 GET  /organizations/{inn}
 POST /scoring-profiles/parse       # текст → черновик правил (LLM)
-GET/PUT /scoring-profiles/active   # P0: один профиль на пользователя
+GET/PUT /scoring-profiles/active   # P0: один профиль на пользователя; PUT с rescore=true → task_id
+GET  /scoring-profiles/catalog    # поля правил, регионы, llm_enabled
 GET/POST /scoring-profiles         # [P1] несколько профилей, POST /scoring-profiles/{id}/activate
 POST /score                        # пересчёт по профилю → task_id
 GET  /results                      # P0
 GET  /results/export?format=csv|json  # [P1]
+GET  /tasks?kind=upload            # история задач, новые сверху
 GET  /tasks/{id}                   # статус: queued / processing / done / partial / failed
 ```
 

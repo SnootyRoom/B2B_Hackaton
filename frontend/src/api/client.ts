@@ -55,7 +55,7 @@ interface RequestOptions {
   query?: Record<string, string | number | boolean | undefined>;
 }
 
-export function buildUrl(path: string, query?: RequestOptions['query']): string {
+function buildUrl(path: string, query?: RequestOptions['query']): string {
   const params = new URLSearchParams();
   Object.entries(query ?? {}).forEach(([k, v]) => {
     if (v !== undefined && v !== '' && v !== false) params.set(k, String(v));

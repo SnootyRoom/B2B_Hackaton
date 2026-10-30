@@ -1,7 +1,7 @@
 import { useRef, useState, type DragEvent } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useMutation } from '@tanstack/react-query';
-import { api } from '../api';
+import { api, USE_MOCK } from '../api';
 import type { TaskFile } from '../api/types';
 import { ACCEPTED_EXT, UPLOAD_LIMITS, errorText } from '../lib/catalog';
 import { formatDate, formatFileSize, plural } from '../lib/format';
@@ -14,9 +14,8 @@ const MB = 1024 * 1024;
 /** Проверка до отправки — чтобы не ждать ответа сервера на заведомо неподходящий файл */
 function checkFile(f: File): string | null {
   const name = f.name.toLowerCase();
-  if (!ACCEPTED_EXT.some((ext) => name.endsWith(ext))) return 'Подходят только файлы .xml, .json и .zip';
-  const limit = name.endsWith('.zip') ? UPLOAD_LIMITS.archiveMb : UPLOAD_LIMITS.fileMb;
-  if (f.size > limit * MB) return `Файл больше ${limit} МБ`;
+  if (!ACCEPTED_EXT.some((ext) => name.endsWith(ext))) return 'Подходят только файлы .xml и .json';
+  if (f.size > UPLOAD_LIMITS.fileMb * MB) return `Файл больше ${UPLOAD_LIMITS.fileMb} МБ`;
   return null;
 }
 
@@ -120,13 +119,13 @@ export default function UploadPage() {
         <span className="font-display text-xl font-bold">{dragOver ? 'Отпускайте' : 'Перетащите файлы сюда'}</span>
         <span className="text-muted">или нажмите, чтобы выбрать на компьютере</span>
         <span className="mt-3 flex flex-wrap justify-center gap-1.5 text-xs text-muted">
-          {['.xml', '.json', '.zip'].map((x) => (
+          {ACCEPTED_EXT.map((x) => (
             <span key={x} className="rounded-md bg-brand-soft px-2 py-0.5 font-mono text-brand-dark">
               {x}
             </span>
           ))}
           <span className="px-1 py-0.5">
-            файл до {UPLOAD_LIMITS.fileMb} МБ · архив до {UPLOAD_LIMITS.archiveMb} МБ · до {UPLOAD_LIMITS.maxFiles} файлов
+            файл до {UPLOAD_LIMITS.fileMb} МБ · до {UPLOAD_LIMITS.maxFiles} файлов
           </span>
         </span>
         <input
@@ -182,12 +181,14 @@ export default function UploadPage() {
       {start.isError && <Alert>{start.error.message}</Alert>}
 
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <button type="button" className="btn-ghost" disabled={start.isPending} onClick={() => start.mutate('demo')}>
-          Попробовать на примере
-        </button>
+        {USE_MOCK && (
+          <button type="button" className="btn-ghost" disabled={start.isPending} onClick={() => start.mutate('demo')}>
+            Попробовать на примере
+          </button>
+        )}
         <button
           type="button"
-          className="btn-primary"
+          className="btn-primary ml-auto"
           disabled={good.length === 0 || tooMany || start.isPending}
           onClick={() => start.mutate(good)}
         >
@@ -198,9 +199,11 @@ export default function UploadPage() {
               : 'Оценить'}
         </button>
       </div>
-      <p className="text-sm text-muted">
-        Нет своих файлов? «Попробовать на примере» добавит несколько готовых извещений, чтобы посмотреть, как всё работает.
-      </p>
+      {USE_MOCK && (
+        <p className="text-sm text-muted">
+          Нет своих файлов? «Попробовать на примере» добавит несколько готовых извещений, чтобы посмотреть, как всё работает.
+        </p>
+      )}
     </div>
   );
 }
@@ -269,7 +272,7 @@ function TaskView({ taskId, onReset }: { taskId: string; onReset: () => void }) 
           <h2 className="mb-2 font-semibold">Файлы</h2>
           <ul className="divide-y divide-line">
             {t.files.map((f, i) => (
-              <FileRow key={f.name + i} file={f} index={i} />
+              <FileRow key={f.id} file={f} index={i} />
             ))}
           </ul>
         </section>
@@ -298,7 +301,7 @@ function FileRow({ file, index }: { file: TaskFile; index: number }) {
           {v.icon}
         </span>
         <div className="min-w-0 flex-1">
-          <div className="truncate">{file.name}</div>
+          <div className="truncate">{file.filename}</div>
           {file.status !== 'pending' && file.error && <div className="text-sm text-bad">{errorText(file.error.code, file.error.message)}</div>}
           {file.status !== 'pending' && file.warnings.map((w) => (
             <div key={w.code} className="text-sm text-mid">
@@ -317,13 +320,13 @@ function FileRow({ file, index }: { file: TaskFile; index: number }) {
           </Link>
         )}
       </div>
-      {notFound && file.status === 'ok' && file.procurement_ids[0] !== undefined && <ManualInn procurementId={file.procurement_ids[0]} />}
+      {USE_MOCK && notFound && file.status === 'ok' && file.procurement_ids[0] !== undefined && <ManualInn procurementId={file.procurement_ids[0]} />}
     </li>
   );
 }
 
 /** Ручной ввод ИНН, если заказчик не найден в ЕГРЮЛ */
-function ManualInn({ procurementId }: { procurementId: number }) {
+function ManualInn({ procurementId }: { procurementId: string }) {
   const [inn, setInn] = useState('');
   const [taskId, setTaskId] = useState<string | null>(null);
   const send = useMutation({

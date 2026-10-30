@@ -1,5 +1,4 @@
-// Типы данных API. Написаны по docs/analytics.md и CLAUDE.md.
-// Когда тимлид выложит OpenAPI в main — сверить с ним (или сгенерировать: npx openapi-typescript).
+// Типы данных API. Источник правды — схемы бэкенда (backend/app/schemas, docs/openapi.json).
 
 export type Law = '44' | '223' | '615' | '94' | 'other';
 export type Method = 'auction' | 'contest' | 'quotation' | 'proposals' | 'single' | 'other';
@@ -24,15 +23,14 @@ export type Operator =
   | 'semantic_match'
   | 'contains_any';
 
-/** Деньги приходят строкой (Decimal на бэкенде), но принимаем и число. */
-export type Money = string | number;
+/** Деньги в JSON — число (внутри бэкенда Decimal). */
+export type Money = number;
 
 // ---------- Пользователь ----------
 export interface User {
-  id: number;
+  id: string;
   email: string;
-  /** Предложение для тимлида: признаки включённых функций. Если поля нет — считаем, что LLM есть. */
-  features?: { llm: boolean };
+  created_at: string;
 }
 
 // ---------- Закупка ----------
@@ -41,11 +39,12 @@ export interface ProcurementItem {
   quantity: Money | null;
   unit: string | null;
   price: Money | null;
+  okpd2?: string | null;
 }
 
 export interface Procurement {
-  id: number;
   reg_number: string;
+  lot_number?: number | null;
   law: Law | null;
   subject: string;
   nmck: Money;
@@ -63,7 +62,9 @@ export interface Procurement {
   okpd2_codes: string[];
   items: ProcurementItem[];
   bid_security: Money | null;
+  bid_security_pct?: number | null;
   contract_security: Money | null;
+  contract_security_pct?: number | null;
   restrictions: Restriction[];
   source_url: string | null;
   parsed_by: string;
@@ -73,16 +74,17 @@ export interface Procurement {
 export interface CustomerProfile {
   inn: string;
   ogrn: string | null;
-  name: string | null;
+  name: string;
   org_type: 'legal' | 'individual' | null;
   status: CustomerStatus;
   registration_date: string | null;
   liquidation_date: string | null;
   okved_main: string | null;
+  okved_main_name?: string | null;
   address: string | null;
   region: string | null;
   unreliable_flags: string[];
-  fetched_at: string | null;
+  fetched_at: string;
   source: CustomerSource;
 }
 
@@ -116,7 +118,9 @@ export interface Thresholds {
 }
 
 export interface ScoringProfile {
-  id: number;
+  id: string;
+  is_active: boolean;
+  updated_at: string;
   name: string;
   company_description: string;
   source_text: string;
@@ -125,7 +129,19 @@ export interface ScoringProfile {
   rules: ScoringRule[];
 }
 
-export type ScoringProfileInput = Omit<ScoringProfile, 'id'>;
+export type ScoringProfileInput = Omit<ScoringProfile, 'id' | 'is_active' | 'updated_at'>;
+
+export interface SaveProfileResponse {
+  profile: ScoringProfile;
+  /** Задача пересчёта, если сохраняли с rescore */
+  task_id: string | null;
+}
+
+/** GET /scoring-profiles/catalog; фронту нужен признак LLM */
+export interface FieldCatalog {
+  regions: string[];
+  llm_enabled: boolean;
+}
 
 export interface ParseResult {
   rules: ScoringRule[];
@@ -134,57 +150,65 @@ export interface ParseResult {
 }
 
 // ---------- Оценка ----------
+export type RuleStatus = 'applied' | 'no_data' | 'disabled';
+
 export interface RuleResult {
   rule_id: string;
+  label: string;
   group: Group;
   kind: RuleKind;
-  label: string;
-  /** Значение поля закупки/заказчика, уже готовое для показа («4 200 000 ₽», «Томская область») */
-  field_value_text: string | null;
-  /** Частичный балл 0–1; null — «нет данных» */
-  partial_score: number | null;
-  /** Вклад в итог в баллах (может быть отрицательным = потеря относительно максимума); null — нет данных */
-  contribution: number | null;
-  /** Сколько баллов правило могло дать максимум */
-  max_contribution: number | null;
-  no_data: boolean;
+  field: string;
+  operator: Operator;
+  /** Значение поля как есть; для показа — готовая фраза `text` */
+  field_value: unknown;
+  status: RuleStatus;
   /** Для стоп-факторов: сработал ли */
   triggered: boolean;
+  /** Частичный балл 0–1 */
+  partial_score: number | null;
+  /** Вклад в итог в баллах */
+  contribution: number | null;
+  /** Сколько баллов недобрано относительно максимума */
+  lost: number | null;
+  /** Фраза обоснования по правилу */
+  text: string;
 }
 
 export interface GroupResult {
   group: Group;
   /** 0–100; null — группа исключена (нет применимых правил) */
   score: number | null;
-  /** Вес группы после перераспределения, 0–1 */
+  /** Вес из профиля */
   weight: number;
+  /** Вес после перераспределения, сумма по группам = 1 */
+  effective_weight: number;
   low_data: boolean;
 }
 
-export interface StopFactor {
-  rule_id: string;
-  label: string;
-  message: string;
-}
-
 export interface ScoreResult {
+  id: string;
+  procurement_id: string;
+  profile_id: string;
   total: number;
   recommendation: Recommendation;
   incomplete: boolean;
   groups: GroupResult[];
-  stop_factors: StopFactor[];
+  /** rule_id сработавших стоп-факторов */
+  stop_factors: string[];
   rules: RuleResult[];
-  justification: { text: string; source: 'template' | 'llm' };
-  calculated_at: string;
+  justification: string;
+  justification_source: 'template' | 'llm';
+  computed_at: string;
 }
 
-/** Строка таблицы результатов (GET /results) */
+/** Строка таблицы результатов (GET /results). Закупки без оценки слой API отбрасывает. */
 export interface ResultRow {
-  procurement_id: number;
+  procurement_id: string;
   reg_number: string;
   subject: string;
   customer_name: string | null;
   nmck: Money;
+  currency: string;
   region: string | null;
   law: Law | null;
   application_deadline: string | null;
@@ -192,17 +216,18 @@ export interface ResultRow {
   recommendation: Recommendation;
   incomplete: boolean;
   has_stop_factor: boolean;
-  /** Согласовать с ролью 3: главная причина оценки одной фразой («Цена выше лимита 15 млн») для билета */
-  reason?: string | null;
 }
 
 /** Карточка закупки (GET /procurements/{id}) */
 export interface ProcurementDetail {
-  procurement: Procurement;
+  id: string;
+  data: Procurement;
   customer: CustomerProfile | null;
   /** Почему нет данных о заказчике: CUSTOMER_NOT_FOUND / EGRUL_UNAVAILABLE */
   customer_error: ErrorCode | null;
   score: ScoreResult | null;
+  created_at: string;
+  updated_at: string;
 }
 
 // ---------- Фоновые задачи ----------
@@ -229,42 +254,39 @@ export interface ApiErrorBody {
 }
 
 export interface TaskFile {
-  name: string;
+  id: string;
+  filename: string;
   status: 'pending' | 'ok' | 'error';
   error: ApiErrorBody | null;
   /** Предупреждения при статусе ok: CUSTOMER_NOT_FOUND, EGRUL_UNAVAILABLE */
   warnings: ApiErrorBody[];
   /** Закупки (лоты), созданные из файла */
-  procurement_ids: number[];
+  procurement_ids: string[];
 }
 
 export interface Task {
   id: string;
-  kind: 'upload' | 'score';
+  kind: 'upload' | 'rescore' | 'parse_profile' | 'egrul_lookup';
   status: TaskStatus;
   total: number;
   processed: number;
   files: TaskFile[];
-  /** Когда создана задача (ISO, UTC) — для истории загрузок */
+  /** parse_profile → ParseResult */
+  result: unknown;
+  error: ApiErrorBody | null;
   created_at: string;
-  /** Согласовать: сколько закупок из загрузки в каждой рекомендации (для истории) */
-  summary?: { participate: number; consider: number; skip: number };
+  finished_at: string | null;
 }
 
 export interface TaskCreated {
   task_id: string;
 }
 
+/** Фильтры таблицы результатов; применяются в браузере */
 export interface ResultsFilters {
-  recommendation?: Recommendation;
   region?: string;
   nmck_min?: number;
   nmck_max?: number;
   law?: Law;
   hide_expired?: boolean;
-  /** Окончание подачи заявок с/по, ГГГГ-ММ-ДД (на экране фильтруется в браузере, серверу передаётся только для выгрузки) */
-  deadline_from?: string;
-  deadline_to?: string;
-  /** Показать только закупки из одной загрузки (история) */
-  upload_id?: string;
 }

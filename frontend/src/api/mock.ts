@@ -11,23 +11,25 @@ import {
   MOCK_PROCUREMENTS,
   MOCK_SIMILARITY,
   PARSED_RULES,
+  type MockProcurement,
 } from './mockData';
 import type {
   CustomerProfile,
   Group,
   GroupResult,
-  Procurement,
   ProcurementDetail,
   ResultRow,
   RuleResult,
   ScoreResult,
   ScoringProfile,
+  ScoringProfileInput,
   ScoringRule,
   Task,
   TaskFile,
+  User,
 } from './types';
 import { CUSTOMER_STATUS_LABEL, METHOD_LABEL, RECOMMENDATION, RESTRICTION_LABEL } from '../lib/catalog';
-import { formatMoney, formatNumber, isPast, toNumber, yearsSince } from '../lib/format';
+import { formatMoney, formatNumber, toNumber, yearsSince } from '../lib/format';
 
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const DEMO_EMAIL = 'demo@example.com';
@@ -35,7 +37,7 @@ const EMPTY_EMAIL = 'new@example.com';
 
 // ---------- Состояние «сервера» в памяти ----------
 interface State {
-  user: { id: number; email: string } | null;
+  user: User | null;
   profile: ScoringProfile | null;
   procurementIds: number[];
   manualInn: Record<number, string>;
@@ -57,7 +59,7 @@ function seedHistory() {
     ];
     const errors = files.filter((f) => f.status === 'error').length;
     state.tasks[id] = {
-      task: { id, kind: 'upload', status: errors ? 'partial' : 'done', total: files.length, processed: files.length, files, created_at },
+      task: { id, kind: 'upload', status: errors ? 'partial' : 'done', total: files.length, processed: files.length, files, result: null, error: null, created_at, finished_at: created_at },
       startedAt: Date.parse(created_at),
     };
   };
@@ -84,15 +86,19 @@ function writeSession(email: string | null) {
 }
 
 function signIn(email: string) {
-  state.user = { id: 1, email };
+  state.user = { id: '1', email, created_at: new Date().toISOString() };
   writeSession(email);
   // Для наглядности любой вход сразу получает готовый профиль и набор закупок с разными оценками.
   // Чтобы проверить путь «с нуля» (пустой аккаунт), войдите как new@example.com.
   if (email !== EMPTY_EMAIL && !state.profile) {
-    state.profile = { id: 1, ...structuredClone(DEMO_PROFILE) };
+    state.profile = mockProfile(DEMO_PROFILE);
     state.procurementIds = MOCK_PROCUREMENTS.map((p) => p.id);
     seedHistory();
   }
+}
+
+function mockProfile(p: ScoringProfileInput): ScoringProfile {
+  return { id: '1', is_active: true, updated_at: new Date().toISOString(), ...structuredClone(p) };
 }
 
 const restored = readSession();
@@ -103,14 +109,14 @@ function requireUser() {
 }
 
 // ---------- Мини-движок по формулам аналитики ----------
-function customerOf(p: Procurement): CustomerProfile | null {
+function customerOf(p: MockProcurement): CustomerProfile | null {
   const inn = state.manualInn[p.id] ?? p.customer_inn;
   return inn ? (MOCK_CUSTOMERS[inn] ?? null) : null;
 }
 
 type FieldValue = number | string | boolean | string[] | null;
 
-function fieldValue(p: Procurement, c: CustomerProfile | null, field: string): FieldValue {
+function fieldValue(p: MockProcurement, c: CustomerProfile | null, field: string): FieldValue {
   const nmck = toNumber(p.nmck) ?? 0;
   switch (field) {
     case 'nmck':
@@ -154,7 +160,7 @@ function fieldValue(p: Procurement, c: CustomerProfile | null, field: string): F
   }
 }
 
-function valueText(field: string, v: FieldValue, p: Procurement): string | null {
+function valueText(field: string, v: FieldValue, p: MockProcurement): string | null {
   if (v === null) return null;
   switch (field) {
     case 'nmck':
@@ -189,7 +195,7 @@ const gteScore = (x: number, v: number, m: number) => (x >= v ? 1 : m > 0 ? Math
 const lteScore = (x: number, v: number, m: number) => (x <= v ? 1 : m > 0 ? Math.max(0, 1 - (x - v) / (v * m)) : 0);
 
 /** Частичный балл 0–1 или null, если данных нет */
-function partial(rule: ScoringRule, x: FieldValue, p: Procurement): number | null {
+function partial(rule: ScoringRule, x: FieldValue, p: MockProcurement): number | null {
   if (x === null) return null;
   const m = rule.soft_margin ?? 0;
   const v = rule.value;
@@ -225,17 +231,27 @@ function partial(rule: ScoringRule, x: FieldValue, p: Procurement): number | nul
   }
 }
 
-function score(p: Procurement, profile: ScoringProfile): ScoreResult {
+function score(p: MockProcurement, profile: ScoringProfile): ScoreResult {
   const c = customerOf(p);
   const rules = profile.rules.filter((r) => r.enabled);
   const results: RuleResult[] = [];
-  const stopFactors: ScoreResult['stop_factors'] = [];
+  const stopFactors: string[] = [];
+  const base = (r: ScoringRule, x: FieldValue) => ({
+    rule_id: r.id,
+    label: r.label,
+    group: r.group,
+    kind: r.kind,
+    field: r.field,
+    operator: r.operator,
+    field_value: x,
+    text: valueText(r.field, x, p) ?? '',
+  });
 
   for (const r of rules.filter((r) => r.kind === 'stop')) {
     const x = fieldValue(p, c, r.field);
     const triggered = partial(r, x, p) === 1;
-    if (triggered) stopFactors.push({ rule_id: r.id, label: r.label, message: `${r.label}: ${valueText(r.field, x, p)}` });
-    results.push({ rule_id: r.id, group: r.group, kind: 'stop', label: r.label, field_value_text: valueText(r.field, x, p), partial_score: null, contribution: null, max_contribution: null, no_data: x === null, triggered });
+    if (triggered) stopFactors.push(r.id);
+    results.push({ ...base(r, x), status: x === null ? 'no_data' : 'applied', triggered, partial_score: null, contribution: null, lost: null });
   }
 
   const groups: Group[] = ['procurement', 'fit', 'customer'];
@@ -262,16 +278,17 @@ function score(p: Procurement, profile: ScoringProfile): ScoreResult {
     total += W * (x.score ?? 0);
     x.items.forEach(({ r, s, x: val }) => {
       const w = r.weight ?? 1;
+      const max = s === null || x.sumW === 0 ? null : (W * w * 100) / x.sumW;
       results.push({
-        rule_id: r.id, group: r.group, kind: 'weighted', label: r.label,
-        field_value_text: valueText(r.field, val, p),
+        ...base(r, val),
+        status: s === null ? 'no_data' : 'applied',
+        triggered: false,
         partial_score: s,
-        contribution: s === null || x.sumW === 0 ? null : (W * w * s * 100) / x.sumW,
-        max_contribution: s === null || x.sumW === 0 ? null : (W * w * 100) / x.sumW,
-        no_data: s === null, triggered: false,
+        contribution: max === null ? null : max * (s ?? 0),
+        lost: max === null ? null : max * (1 - (s ?? 0)),
       });
     });
-    return { group: x.g, score: x.score === null ? null : Math.round(x.score), weight: W, low_data: x.lowData };
+    return { group: x.g, score: x.score === null ? null : Math.round(x.score), weight: profile.group_weights[x.g], effective_weight: W, low_data: x.lowData };
   });
 
   total = stopFactors.length ? 0 : Math.round(total);
@@ -281,32 +298,31 @@ function score(p: Procurement, profile: ScoringProfile): ScoreResult {
 
   // Шаблонное обоснование: вывод → стоп → плюсы → минусы → нет данных
   const ref = (r: RuleResult) => `[${r.rule_id}]`;
-  const weighted = results.filter((r) => r.kind === 'weighted' && !r.no_data);
+  const weighted = results.filter((r) => r.kind === 'weighted' && r.status === 'applied');
   const pros = [...weighted].filter((r) => (r.partial_score ?? 0) > 0.5).sort((a, b) => (b.contribution ?? 0) - (a.contribution ?? 0)).slice(0, 3);
-  const cons = [...weighted].filter((r) => (r.partial_score ?? 0) < 1).sort((a, b) => ((b.max_contribution ?? 0) - (b.contribution ?? 0)) - ((a.max_contribution ?? 0) - (a.contribution ?? 0))).slice(0, 2);
-  const missing = results.filter((r) => r.no_data && r.kind === 'weighted');
+  const cons = [...weighted].filter((r) => (r.partial_score ?? 0) < 1).sort((a, b) => (b.lost ?? 0) - (a.lost ?? 0)).slice(0, 2);
+  const missing = results.filter((r) => r.status === 'no_data' && r.kind === 'weighted');
   const parts = [`Рекомендация: ${RECOMMENDATION[recommendation].label.toLowerCase()}, оценка ${total} из 100.`];
-  const firstStop = stopFactors[0];
-  if (firstStop) parts.push(`Сработал стоп-фактор: ${firstStop.message}.`);
-  if (pros.length) parts.push('Плюсы: ' + pros.map((r) => `${r.label} — ${r.field_value_text} ${ref(r)}`).join('; ') + '.');
-  if (cons.length) parts.push('Минусы: ' + cons.map((r) => `${r.label} — ${r.field_value_text} ${ref(r)}`).join('; ') + '.');
+  const firstStop = results.find((r) => r.triggered);
+  if (firstStop) parts.push(`Сработал стоп-фактор: ${firstStop.label}: ${firstStop.text}.`);
+  if (pros.length) parts.push('Плюсы: ' + pros.map((r) => `${r.label} — ${r.text} ${ref(r)}`).join('; ') + '.');
+  if (cons.length) parts.push('Минусы: ' + cons.map((r) => `${r.label} — ${r.text} ${ref(r)}`).join('; ') + '.');
   if (missing.length) parts.push('Нет данных: ' + missing.map((r) => `${r.label} ${ref(r)}`).join('; ') + '.');
 
-  return { total, recommendation, incomplete, groups: groupResults, stop_factors: stopFactors, rules: results, justification: { text: parts.join(' '), source: 'template' }, calculated_at: new Date().toISOString() };
-}
-
-/** Главная причина одной фразой (в реальной системе её должен присылать бэкенд — поле reason) */
-function shortReason(s: ScoreResult): string {
-  const stop = s.stop_factors[0];
-  if (stop) return stop.label;
-  const weighted = s.rules.filter((r) => r.kind === 'weighted' && !r.no_data && r.max_contribution);
-  const worst = [...weighted].sort(
-    (a, b) => (b.max_contribution! - (b.contribution ?? 0)) - (a.max_contribution! - (a.contribution ?? 0)),
-  )[0];
-  if (worst && (worst.max_contribution ?? 0) - (worst.contribution ?? 0) > 3)
-    return `Не совпало — ${worst.label}`;
-  if (s.incomplete) return 'Не хватает данных о заказчике';
-  return 'Совпали все ваши условия';
+  return {
+    id: String(p.id),
+    procurement_id: String(p.id),
+    profile_id: profile.id,
+    total,
+    recommendation,
+    incomplete,
+    groups: groupResults,
+    stop_factors: stopFactors,
+    rules: results,
+    justification: parts.join(' '),
+    justification_source: 'template',
+    computed_at: new Date().toISOString(),
+  };
 }
 
 function procurementById(id: number) {
@@ -319,7 +335,7 @@ function procurementById(id: number) {
 function startTask(kind: Task['kind'], files: TaskFile[], onDone: () => void): string {
   const id = 't' + Date.now();
   state.tasks[id] = {
-    task: { id, kind, status: 'queued', total: files.length, processed: 0, files, created_at: new Date().toISOString() },
+    task: { id, kind, status: 'queued', total: files.length, processed: 0, files, result: null, error: null, created_at: new Date().toISOString(), finished_at: null },
     startedAt: Date.now(),
   };
   const tick = setInterval(() => {
@@ -330,7 +346,7 @@ function startTask(kind: Task['kind'], files: TaskFile[], onDone: () => void): s
     const f = t.files[t.processed];
     if (f && f.status === 'pending') f.status = f.error ? 'error' : 'ok';
     t.processed = Math.min(t.total, t.processed + 1);
-    if (f?.status === 'ok') f.procurement_ids.forEach((pid) => state.procurementIds.includes(pid) || state.procurementIds.push(pid));
+    if (f?.status === 'ok') f.procurement_ids.map(Number).forEach((pid) => state.procurementIds.includes(pid) || state.procurementIds.push(pid));
     if (t.processed >= t.total) {
       clearInterval(tick);
       const errors = t.files.filter((x) => x.status === 'error').length;
@@ -345,7 +361,7 @@ function fileFor(name: string, procurementId: number | null, error?: TaskFile['e
   const p = procurementId ? MOCK_PROCUREMENTS.find((x) => x.id === procurementId) : undefined;
   const warnings: TaskFile['warnings'] =
     p && !customerOf(p) ? [{ code: 'CUSTOMER_NOT_FOUND', message: 'Заказчик не найден в ЕГРЮЛ' }] : [];
-  return { name, status: 'pending', error: error ?? null, warnings, procurement_ids: procurementId ? [procurementId] : [] };
+  return { id: name, filename: name, status: 'pending', error: error ?? null, warnings, procurement_ids: procurementId ? [String(procurementId)] : [] };
 }
 
 // ---------- Реализация API ----------
@@ -353,7 +369,7 @@ export const mockApi: Api = {
   async me() {
     await wait(150);
     requireUser();
-    return { ...state.user!, features: { llm: true } };
+    return { ...state.user! };
   },
   async login(email, password) {
     await wait(400);
@@ -361,14 +377,14 @@ export const mockApi: Api = {
       throw new ApiError(401, { code: 'INVALID_CREDENTIALS', message: 'Неверная почта или пароль' });
     if (password.length < 1) throw new ApiError(400, { code: 'VALIDATION_ERROR', message: 'Введите пароль' });
     signIn(email);
-    return { ...state.user!, features: { llm: true } };
+    return { ...state.user! };
   },
   async register(email, password) {
     await wait(400);
     if (password.length < 8)
       throw new ApiError(400, { code: 'VALIDATION_ERROR', message: 'Пароль должен быть не короче 8 символов' });
     signIn(email);
-    return { ...state.user!, features: { llm: true } };
+    return { ...state.user! };
   },
   async logout() {
     await wait(100);
@@ -382,11 +398,18 @@ export const mockApi: Api = {
     if (!state.profile) throw new ApiError(404, { code: 'NOT_FOUND', message: 'Профиль ещё не создан' });
     return structuredClone(state.profile);
   },
-  async saveActiveProfile(p) {
+  async saveActiveProfile(p, rescore) {
     await wait(300);
     requireUser();
-    state.profile = { id: 1, ...structuredClone(p) };
-    return structuredClone(state.profile);
+    state.profile = mockProfile(p);
+    const task_id = rescore
+      ? startTask('rescore', state.procurementIds.map((id) => fileFor(MOCK_PROCUREMENTS.find((x) => x.id === id)!.reg_number, id)), () => {})
+      : null;
+    return { profile: structuredClone(state.profile), task_id };
+  },
+  async getCatalog() {
+    await wait(100);
+    return { regions: [], llm_enabled: true };
   },
   async parseProfileText(text) {
     await wait(1200);
@@ -399,12 +422,6 @@ export const mockApi: Api = {
       company_description: 'IT-компания: разработка и сопровождение программного обеспечения.',
       unparsed,
     };
-  },
-  async rescore() {
-    await wait(200);
-    requireUser();
-    const files = state.procurementIds.map((id) => fileFor(MOCK_PROCUREMENTS.find((p) => p.id === id)!.reg_number, id));
-    return { task_id: startTask('score', files, () => {}) };
   },
 
   async upload(files) {
@@ -435,27 +452,18 @@ export const mockApi: Api = {
     requireUser();
     if (!/^\d{10}$|^\d{12}$/.test(inn))
       throw new ApiError(400, { code: 'VALIDATION_ERROR', message: 'ИНН — это 10 цифр для организации или 12 для ИП' });
-    state.manualInn[procurementId] = inn;
-    const p = procurementById(procurementId);
-    return { task_id: startTask('score', [fileFor(p.reg_number, p.id)], () => {}) };
+    state.manualInn[Number(procurementId)] = inn;
+    const p = procurementById(Number(procurementId));
+    return { task_id: startTask('rescore', [fileFor(p.reg_number, p.id)], () => {}) };
   },
   async listUploads() {
     await wait(200);
     requireUser();
-    const profile = state.profile;
     return Object.values(state.tasks)
       .map((e) => e.task)
       .filter((t) => t.kind === 'upload')
       .sort((a, b) => Date.parse(b.created_at) - Date.parse(a.created_at))
-      .map((t) => {
-        const summary = { participate: 0, consider: 0, skip: 0 };
-        if (profile)
-          t.files
-            .filter((f) => f.status === 'ok')
-            .flatMap((f) => f.procurement_ids)
-            .forEach((pid) => summary[score(MOCK_PROCUREMENTS.find((p) => p.id === pid)!, profile).recommendation]++);
-        return { ...structuredClone(t), summary };
-      });
+      .map((t) => structuredClone(t));
   },
   async getTask(id) {
     await wait(100);
@@ -465,7 +473,7 @@ export const mockApi: Api = {
     return structuredClone(entry.task);
   },
 
-  async getResults(f) {
+  async getResults() {
     await wait(250);
     requireUser();
     const profile = state.profile;
@@ -474,41 +482,24 @@ export const mockApi: Api = {
       .map((id) => MOCK_PROCUREMENTS.find((p) => p.id === id)!)
       .map((p): ResultRow => {
         const s = score(p, profile);
-        return { procurement_id: p.id, reg_number: p.reg_number, subject: p.subject, customer_name: customerOf(p)?.name ?? p.customer_name, nmck: p.nmck, region: p.region, law: p.law, application_deadline: p.application_deadline, total: s.total, recommendation: s.recommendation, incomplete: s.incomplete, has_stop_factor: s.stop_factors.length > 0, reason: shortReason(s) };
-      })
-      .filter((r) => !f.recommendation || r.recommendation === f.recommendation)
-      .filter((r) => !f.region || r.region === f.region)
-      .filter((r) => !f.law || r.law === f.law)
-      .filter((r) => f.nmck_min === undefined || (toNumber(r.nmck) ?? 0) >= f.nmck_min)
-      .filter((r) => f.nmck_max === undefined || (toNumber(r.nmck) ?? 0) <= f.nmck_max)
-      .filter((r) => !f.hide_expired || !isPast(r.application_deadline))
-      .filter((r) => {
-        if (!f.upload_id) return true;
-        const t = state.tasks[f.upload_id]?.task;
-        return Boolean(t?.files.some((x) => x.status === 'ok' && x.procurement_ids.includes(r.procurement_id)));
+        return { procurement_id: String(p.id), reg_number: p.reg_number, subject: p.subject, customer_name: customerOf(p)?.name ?? p.customer_name, nmck: p.nmck, currency: p.currency ?? 'RUB', region: p.region, law: p.law, application_deadline: p.application_deadline, total: s.total, recommendation: s.recommendation, incomplete: s.incomplete, has_stop_factor: s.stop_factors.length > 0 };
       });
   },
-  exportUrl: () => '#',
   async getProcurement(id): Promise<ProcurementDetail> {
     await wait(250);
     requireUser();
-    const p = procurementById(id);
+    const p = procurementById(Number(id));
     const c = customerOf(p);
+    const now = new Date().toISOString();
     return {
-      procurement: { ...structuredClone(p), customer_inn: state.manualInn[p.id] ?? p.customer_inn },
+      id,
+      data: { ...structuredClone(p), customer_inn: state.manualInn[p.id] ?? p.customer_inn },
       customer: c ? structuredClone(c) : null,
       customer_error: c ? null : 'CUSTOMER_NOT_FOUND',
       score: state.profile ? score(p, state.profile) : null,
+      created_at: now,
+      updated_at: now,
     };
   },
 };
-
-/** Для экспорта в демо-режиме: собрать файл в браузере */
-export async function mockExport(format: 'csv' | 'json', rows: ResultRow[]): Promise<Blob> {
-  if (format === 'json') return new Blob([JSON.stringify(rows, null, 2)], { type: 'application/json' });
-  const head = ['Реестровый номер', 'Предмет', 'Заказчик', 'НМЦК', 'Регион', 'Окончание подачи', 'Оценка', 'Рекомендация'];
-  const lines = rows.map((r) => [r.reg_number, r.subject, r.customer_name ?? '', String(r.nmck), r.region ?? '', r.application_deadline ?? '', String(r.total), RECOMMENDATION[r.recommendation].label]);
-  const csv = [head, ...lines].map((l) => l.map((v) => `"${v.replace(/"/g, '""')}"`).join(';')).join('\n');
-  return new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8' });
-}
 

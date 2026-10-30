@@ -16,7 +16,8 @@ from app.scoring.catalog import (
     Operator,
 )
 
-RuleValue = float | str | list[float] | list[str] | None
+# Порядок важен: иначе коды вроде ["62"] и ["44"] прочитаются как числа
+RuleValue = list[str] | list[float] | str | float | None
 
 
 class RuleKind(StrEnum):
@@ -36,7 +37,7 @@ class ScoringRule(BaseModel):
     kind: RuleKind
     field: str
     operator: Operator
-    value: RuleValue = None
+    value: RuleValue = Field(default=None, union_mode="left_to_right")
     weight: int | None = Field(default=None, ge=1, le=3)
     soft_margin: float = Field(default=0.0, ge=0.0, le=1.0)
     label: str

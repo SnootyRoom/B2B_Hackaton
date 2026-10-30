@@ -1,15 +1,15 @@
 import { describe, expect, it } from 'vitest';
 import { formatContribution, formatDate, formatMoney, formatMoneyShort, plural, yearsSince } from './format';
 
-const clean = (s: string) => s.replace(/ /g, ' ');
+const clean = (s: string) => s.replace(/\u00a0/g, ' ');
 
 describe('суммы (CLAUDE.md: «4 200 000 ₽», в таблице «4,2 млн ₽»)', () => {
   it('полная сумма с разделителями разрядов', () => {
-    expect(clean(formatMoney('4200000.00'))).toBe('4 200 000 ₽');
+    expect(clean(formatMoney(4200000))).toBe('4 200 000 ₽');
     expect(clean(formatMoney(1234.5))).toBe('1 234,5 ₽');
   });
   it('короткая сумма для таблицы', () => {
-    expect(clean(formatMoneyShort('4200000'))).toBe('4,2 млн ₽');
+    expect(clean(formatMoneyShort(4200000))).toBe('4,2 млн ₽');
     expect(clean(formatMoneyShort(680000))).toBe('680 тыс. ₽');
     expect(clean(formatMoneyShort(18500000))).toBe('18,5 млн ₽');
     expect(clean(formatMoneyShort(1250000000))).toBe('1,25 млрд ₽');

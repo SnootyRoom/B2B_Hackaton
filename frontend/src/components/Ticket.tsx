@@ -42,7 +42,6 @@ export default function Ticket({ row, notchClass, index = 0 }: { row: ResultRow;
         </div>
         <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[13px]">
           <span className={`rounded-md px-2 py-0.5 font-semibold ${DEADLINE_TONE[dl.tone]}`}>{dl.text}</span>
-          {row.reason && <span className="text-muted">{row.reason}</span>}
           {row.incomplete && <span className="text-muted">· оценка неполная</span>}
         </div>
       </div>

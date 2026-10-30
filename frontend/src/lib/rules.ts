@@ -1,7 +1,7 @@
 // Работа с правилами в интерфейсе: человеческая формулировка, новое правило, проверки.
 // Сами баллы считает бэкенд (роль 3) — фронтенд оценку не вычисляет.
 
-import type { Operator, RuleValue, ScoringProfileInput, ScoringRule } from '../api/types';
+import type { Operator, RuleResult, RuleValue, ScoringProfileInput, ScoringRule } from '../api/types';
 import { FIELD_BY_KEY, type FieldDef } from './catalog';
 import { formatMoney, formatNumber, plural } from './format';
 
@@ -152,3 +152,9 @@ export function validateProfile(p: ScoringProfileInput): string[] {
 }
 
 export const WEIGHT_LABEL: Record<1 | 2 | 3, string> = { 1: 'низкая', 2: 'средняя', 3: 'высокая' };
+
+/** Правило не вошло в расчёт: нет данных или выключено */
+export const isNoData = (r: RuleResult) => r.status !== 'applied';
+
+/** Сколько баллов правило могло дать при полном совпадении */
+export const maxContribution = (r: RuleResult) => (r.contribution ?? 0) + (r.lost ?? 0);

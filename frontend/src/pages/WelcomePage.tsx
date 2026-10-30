@@ -16,9 +16,10 @@ const GROUP_TEXT: Record<string, string> = {
 
 export default function WelcomePage() {
   const profile = useProfile();
-  const results = useQuery({ queryKey: qk.results({}), queryFn: () => api.getResults({}) });
+  const results = useQuery({ queryKey: qk.results({}), queryFn: () => api.getResults() });
 
-  const hasProfile = Boolean(profile.data);
+  // Профиль по умолчанию создаётся сам и содержит только правила заказчика
+  const hasProfile = Boolean(profile.data?.rules.some((r) => r.kind === 'weighted' && r.group !== 'customer'));
   const rows = results.data ?? [];
   const hasResults = rows.length > 0;
   const participate = rows.filter((r) => r.recommendation === 'participate').length;
@@ -41,7 +42,7 @@ export default function WelcomePage() {
     {
       n: 2,
       title: 'Загрузите закупки',
-      text: 'Файлы извещений из ЕИС (.xml, .json или .zip). Можно сразу много.',
+      text: 'Файлы извещений из ЕИС (.xml или .json). Можно сразу много.',
       to: '/upload',
       done: hasResults,
     },

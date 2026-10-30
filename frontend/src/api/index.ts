@@ -1,16 +1,18 @@
 // Все обращения к API — только через этот объект.
-// Адреса — из CLAUDE.md (раздел «API»). Пометка «согласовать» — адреса, которых пока нет в CLAUDE.md.
+// Адреса и ответы — по контракту бэкенда (docs/openapi.json).
 //
-// VITE_USE_MOCK=true — работаем на демо-данных без бэкенда (по умолчанию в `npm run dev`,
-// пока контракты не в main). В Docker собирается с VITE_USE_MOCK=false.
+// VITE_USE_MOCK=true — работаем на демо-данных без бэкенда (по умолчанию в `npm run dev`).
+// В Docker собирается с VITE_USE_MOCK=false.
 
-import { buildUrl, request } from './client';
+import { ApiError, request } from './client';
 import { mockApi } from './mock';
 import type {
+  FieldCatalog,
   ParseResult,
   ProcurementDetail,
+  Recommendation,
   ResultRow,
-  ResultsFilters,
+  SaveProfileResponse,
   ScoringProfile,
   ScoringProfileInput,
   Task,
@@ -28,36 +30,46 @@ export interface Api {
 
   /** 404 → профиля ещё нет (первый вход) */
   getActiveProfile(): Promise<ScoringProfile>;
-  saveActiveProfile(p: ScoringProfileInput): Promise<ScoringProfile>;
+  /** rescore=true — сразу пересчитать все закупки, в ответе task_id */
+  saveActiveProfile(p: ScoringProfileInput, rescore: boolean): Promise<SaveProfileResponse>;
+  getCatalog(): Promise<FieldCatalog>;
   parseProfileText(text: string): Promise<ParseResult>;
-  /** Пересчитать все закупки по активному профилю */
-  rescore(): Promise<TaskCreated>;
 
   upload(files: File[]): Promise<TaskCreated>;
-  /** P1, согласовать: загрузить демо-набор из data/demo */
+  /** P1, на бэкенде пока нет: только в демо-режиме */
   uploadDemo(): Promise<TaskCreated>;
-  /** P1, согласовать: ручной ИНН заказчика для закупки → пересчёт */
-  setCustomerInn(procurementId: number, inn: string): Promise<TaskCreated>;
+  /** P1, на бэкенде пока нет: только в демо-режиме */
+  setCustomerInn(procurementId: string, inn: string): Promise<TaskCreated>;
   getTask(id: string): Promise<Task>;
-  /** Согласовать: история загрузок пользователя, новые сверху (GET /tasks?kind=upload) */
+  /** История загрузок, новые сверху */
   listUploads(): Promise<Task[]>;
 
-  getResults(filters: ResultsFilters): Promise<ResultRow[]>;
-  exportUrl(format: 'csv' | 'json', filters: ResultsFilters): string;
-  getProcurement(id: number): Promise<ProcurementDetail>;
+  getResults(): Promise<ResultRow[]>;
+  getProcurement(id: string): Promise<ProcurementDetail>;
 }
 
-const filtersQuery = (f: ResultsFilters) => ({
-  recommendation: f.recommendation,
-  region: f.region,
-  nmck_min: f.nmck_min,
-  nmck_max: f.nmck_max,
-  law: f.law,
-  hide_expired: f.hide_expired,
-  deadline_from: f.deadline_from,
-  deadline_to: f.deadline_to,
-  task_id: f.upload_id,
-});
+const PARSE_POLL_MS = 1000;
+const PARSE_TIMEOUT_MS = 60_000;
+
+/** Разбор текста идёт в очереди: ставим задачу и ждём результат в Task.result */
+async function parseViaTask(text: string): Promise<ParseResult> {
+  const { task_id } = await request<TaskCreated>('/scoring-profiles/parse', { method: 'POST', json: { text } });
+  const deadline = Date.now() + PARSE_TIMEOUT_MS;
+  while (Date.now() < deadline) {
+    const t = await realApi.getTask(task_id);
+    if (t.status === 'done') return t.result as ParseResult;
+    if (t.status === 'failed' || t.status === 'partial') {
+      throw new ApiError(200, t.error ?? { code: 'LLM_PARSE_FAILED', message: '' });
+    }
+    await new Promise((r) => setTimeout(r, PARSE_POLL_MS));
+  }
+  throw new ApiError(200, { code: 'LLM_PARSE_FAILED', message: '' });
+}
+
+type RawResultRow = Omit<ResultRow, 'total' | 'recommendation'> & {
+  total: number | null;
+  recommendation: Recommendation | null;
+};
 
 const realApi: Api = {
   me: () => request<User>('/auth/me'),
@@ -66,9 +78,10 @@ const realApi: Api = {
   logout: () => request<void>('/auth/logout', { method: 'POST' }),
 
   getActiveProfile: () => request<ScoringProfile>('/scoring-profiles/active'),
-  saveActiveProfile: (p) => request<ScoringProfile>('/scoring-profiles/active', { method: 'PUT', json: p }),
-  parseProfileText: (text) => request<ParseResult>('/scoring-profiles/parse', { method: 'POST', json: { text } }),
-  rescore: () => request<TaskCreated>('/score', { method: 'POST', json: {} }),
+  saveActiveProfile: (p, rescore) =>
+    request<SaveProfileResponse>('/scoring-profiles/active', { method: 'PUT', json: { ...p, rescore } }),
+  getCatalog: () => request<FieldCatalog>('/scoring-profiles/catalog'),
+  parseProfileText: parseViaTask,
 
   upload: (files) => {
     const form = new FormData();
@@ -79,17 +92,12 @@ const realApi: Api = {
   setCustomerInn: (id, inn) =>
     request<TaskCreated>(`/procurements/${id}/customer-inn`, { method: 'PUT', json: { inn } }),
   getTask: (id) => request<Task>(`/tasks/${id}`),
-  listUploads: async () => {
-    const r = await request<Task[] | { items: Task[] }>('/tasks', { query: { kind: 'upload' } });
-    return Array.isArray(r) ? r : r.items;
-  },
+  listUploads: () => request<Task[]>('/tasks', { query: { kind: 'upload' } }),
 
-  getResults: async (f) => {
-    // Принимаем и массив, и {items: [...]} — что решит тимлид
-    const r = await request<ResultRow[] | { items: ResultRow[] }>('/results', { query: filtersQuery(f) });
-    return Array.isArray(r) ? r : r.items;
+  getResults: async () => {
+    const rows = await request<RawResultRow[]>('/results');
+    return rows.filter((r): r is ResultRow => r.total !== null && r.recommendation !== null);
   },
-  exportUrl: (format, f) => buildUrl('/results/export', { format, ...filtersQuery(f) }),
   getProcurement: (id) => request<ProcurementDetail>(`/procurements/${id}`),
 };
 

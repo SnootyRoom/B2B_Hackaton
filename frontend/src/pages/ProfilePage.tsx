@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { api } from '../api';
 import type { Group, GroupWeights, ScoringProfileInput, ScoringRule } from '../api/types';
 import { FIELDS, GROUPS } from '../lib/catalog';
-import { qk, useMe, useProfile } from '../lib/hooks';
+import { qk, useProfile } from '../lib/hooks';
 import { newRule, validateProfile } from '../lib/rules';
 import RuleCard from '../components/RuleCard';
 import { Alert, Loading } from '../components/ui';
@@ -24,10 +24,10 @@ const PLACEHOLDER = 'Например: ' + EXAMPLE;
 
 export default function ProfilePage() {
   const profile = useProfile();
-  const me = useMe();
   const qc = useQueryClient();
   const navigate = useNavigate();
-  const llmEnabled = me.data?.features?.llm !== false;
+  const catalog = useQuery({ queryKey: qk.catalog, queryFn: () => api.getCatalog(), staleTime: Infinity });
+  const llmEnabled = catalog.data?.llm_enabled === true;
 
   const [draft, setDraft] = useState<ScoringProfileInput | null>(null);
   const [unparsed, setUnparsed] = useState<string[]>([]);
@@ -37,9 +37,19 @@ export default function ProfilePage() {
   // Черновик заполняется один раз, когда профиль загрузился
   useEffect(() => {
     if (draft === null && !profile.isPending && !profile.isError) {
-      const { id: _id, ...rest } = profile.data ?? { id: 0, ...EMPTY };
-      void _id;
-      setDraft(rest);
+      const p = profile.data;
+      setDraft(
+        p
+          ? {
+              name: p.name,
+              company_description: p.company_description,
+              source_text: p.source_text,
+              group_weights: p.group_weights,
+              thresholds: p.thresholds,
+              rules: p.rules,
+            }
+          : EMPTY,
+      );
     }
   }, [draft, profile.isPending, profile.isError, profile.data]);
 
@@ -54,9 +64,9 @@ export default function ProfilePage() {
 
   const save = useMutation({
     mutationFn: async ({ rescore }: { rescore: boolean }) => {
-      const saved = await api.saveActiveProfile(draft!);
+      const { profile: saved, task_id } = await api.saveActiveProfile(draft!, rescore);
       qc.setQueryData(qk.profile, saved);
-      return rescore ? (await api.rescore()).task_id : null;
+      return task_id;
     },
     onSuccess: (taskId) => {
       setNotice(null);

@@ -3,7 +3,7 @@ import type { ScoringRule } from '../api/types';
 import { describeRule, newRule, validateProfile, validateRule } from './rules';
 import { FIELDS } from './catalog';
 
-const clean = (s: string) => s.replace(/ /g, ' ');
+const clean = (s: string) => s.replace(/\u00a0/g, ' ');
 
 const rule = (patch: Partial<ScoringRule>): ScoringRule => ({ ...newRule('nmck'), ...patch });
 

@@ -198,3 +198,49 @@ def test_engine_bridge_scores_with_real_engine() -> None:
     r = run_engine(data, bad, profile, None)
     assert r.total == 0 and r.recommendation == "skip"
     assert r.stop_factors == ["stop_customer_status"]
+
+
+def test_list_upload_tasks(client: TestClient) -> None:
+    first = _upload(client, ("a.json", json.dumps(_notice()).encode()))
+    second = _upload(client, ("b.json", json.dumps(_notice("2")).encode()))
+    client.post("/api/score", json={})
+
+    tasks = client.get("/api/tasks", params={"kind": "upload"}).json()
+    assert [t["id"] for t in tasks] == [second["id"], first["id"]]
+    assert tasks[0]["files"][0]["filename"] == "b.json"
+
+    other = make_client("other@example.com")
+    assert other.get("/api/tasks").json() == []
+
+
+def test_string_lists_of_digits_stay_strings(client: TestClient) -> None:
+    _upload(client, ("a.json", json.dumps(_notice()).encode()))
+    profile = client.get("/api/scoring-profiles/active").json()
+    profile["rules"] += [
+        {
+            "id": "r_law",
+            "group": "procurement",
+            "kind": "weighted",
+            "field": "law",
+            "operator": "in",
+            "value": ["44", "223"],
+            "weight": 2,
+            "label": "Закон",
+        },
+        {
+            "id": "r_okpd",
+            "group": "fit",
+            "kind": "weighted",
+            "field": "okpd2_codes",
+            "operator": "prefix_in",
+            "value": ["62", "63.11"],
+            "weight": 2,
+            "label": "ОКПД2",
+        },
+    ]
+    r = client.put("/api/scoring-profiles/active", json={**profile, "rescore": True})
+    assert r.status_code == 200, r.text
+    assert client.get(f"/api/tasks/{r.json()['task_id']}").json()["status"] == "done"
+    saved = {x["id"]: x["value"] for x in r.json()["profile"]["rules"]}
+    assert saved["r_law"] == ["44", "223"]
+    assert saved["r_okpd"] == ["62", "63.11"]

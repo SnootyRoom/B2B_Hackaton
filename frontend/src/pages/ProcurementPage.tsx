@@ -26,18 +26,19 @@ import {
   yearsSince,
 } from '../lib/format';
 import { qk, useProfile } from '../lib/hooks';
+import { isNoData, maxContribution } from '../lib/rules';
 import { Alert, Loading, toneOf } from '../components/ui';
 import Breadcrumbs from '../components/Breadcrumbs';
 
 export default function ProcurementPage() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const pid = Number(id);
-  const q = useQuery({ queryKey: qk.procurement(pid), queryFn: () => api.getProcurement(pid), enabled: Number.isFinite(pid) });
+  const pid = id ?? '';
+  const q = useQuery({ queryKey: qk.procurement(pid), queryFn: () => api.getProcurement(pid), enabled: Boolean(id) });
   const profile = useProfile();
   const [hovered, setHovered] = useState<string | null>(null);
   // Порядок «как в таблице результатов» (лучшие сверху) — для кнопок «предыдущая / следующая»
-  const all = useQuery({ queryKey: qk.results({}), queryFn: () => api.getResults({}) });
+  const all = useQuery({ queryKey: qk.results({}), queryFn: () => api.getResults() });
   const order = useMemo(() => [...(all.data ?? [])].sort((a, b) => b.total - a.total), [all.data]);
 
   if (q.isPending) return <Loading text="Загружаем закупку…" />;
@@ -52,7 +53,7 @@ export default function ProcurementPage() {
     );
   }
 
-  const { procurement: p, customer, customer_error, score } = q.data;
+  const { data: p, customer, customer_error, score } = q.data;
   const thresholds = profile.data?.thresholds ?? { participate: 70, consider: 40 };
 
   return (
@@ -72,11 +73,13 @@ export default function ProcurementPage() {
           <div>
             <h2 className="font-bold text-bad">Участвовать не рекомендуется</h2>
             <ul className="mt-1 flex flex-col gap-0.5">
-              {score.stop_factors.map((s) => (
-                <li key={s.rule_id} className="text-bad">
-                  {s.message}
-                </li>
-              ))}
+              {score.rules
+                .filter((r) => r.triggered)
+                .map((r) => (
+                  <li key={r.rule_id} className="text-bad">
+                    {r.text}
+                  </li>
+                ))}
             </ul>
           </div>
         </section>
@@ -105,7 +108,7 @@ export default function ProcurementPage() {
 const shorten = (s: string, n = 48) => (s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s);
 
 /** «← Предыдущая · 3 из 11 · Следующая →» — листать закупки, не возвращаясь к таблице */
-function PrevNext({ order, current, onBack }: { order: { procurement_id: number }[]; current: number; onBack: () => void }) {
+function PrevNext({ order, current, onBack }: { order: { procurement_id: string }[]; current: string; onBack: () => void }) {
   const i = order.findIndex((r) => r.procurement_id === current);
   if (i < 0) return null;
   const prev = order[i - 1];
@@ -209,10 +212,10 @@ function Breakdown({
   hovered: string | null;
   thresholds: { participate: number; consider: number };
 }) {
-  const weighted = score.rules.filter((r) => r.kind === 'weighted');
+  const weighted = score.rules.filter((r) => r.kind === 'weighted' && r.status !== 'disabled');
   const numbers = useRuleNumbers(score);
   // Сумма максимумов применимых правил — обычно 100; на неё нормируем шкалу
-  const scale = weighted.reduce((s, r) => s + (r.no_data ? 0 : (r.max_contribution ?? 0)), 0) || 100;
+  const scale = weighted.reduce((s, r) => s + (isNoData(r) ? 0 : maxContribution(r)), 0) || 100;
   let offset = 0;
   const tone = toneOf(score.recommendation);
 
@@ -240,7 +243,7 @@ function Breakdown({
         const rules = weighted.filter((r) => r.group === g.key);
         if (rules.length === 0) return null;
         const got = rules.reduce((s, r) => s + (r.contribution ?? 0), 0);
-        const max = rules.reduce((s, r) => s + (r.no_data ? 0 : (r.max_contribution ?? 0)), 0);
+        const max = rules.reduce((s, r) => s + (isNoData(r) ? 0 : maxContribution(r)), 0);
         return (
           <div key={g.key} className="flex flex-col gap-1">
             <div className="flex flex-wrap items-center justify-between gap-2 border-b border-track pt-2 pb-1.5">
@@ -251,14 +254,14 @@ function Breakdown({
                 )}
                 {group?.score === null
                   ? 'не учитывается'
-                  : `вес ${Math.round((group?.weight ?? 0) * 100)}% · получено ${Math.round(got)} из ${Math.round(max)}`}
+                  : `вес ${Math.round((group?.effective_weight ?? 0) * 100)}% · получено ${Math.round(got)} из ${Math.round(max)}`}
               </span>
             </div>
             {rules.map((r) => {
               const left = (offset / scale) * 100;
-              const maxW = r.no_data ? 0 : ((r.max_contribution ?? 0) / scale) * 100;
-              const gotW = r.no_data ? 0 : ((r.contribution ?? 0) / scale) * 100;
-              if (!r.no_data) offset += r.max_contribution ?? 0;
+              const maxW = isNoData(r) ? 0 : (maxContribution(r) / scale) * 100;
+              const gotW = isNoData(r) ? 0 : ((r.contribution ?? 0) / scale) * 100;
+              if (!isNoData(r)) offset += maxContribution(r);
               return (
                 <div
                   key={r.rule_id}
@@ -274,12 +277,12 @@ function Breakdown({
                   <div className="min-w-0">
                     <div className="text-sm font-semibold">{r.label}</div>
                     <div className="text-[13px] text-muted">
-                      {r.no_data ? 'нет данных — правило не учтено' : (r.field_value_text ?? '—')}
+                      {isNoData(r) ? 'нет данных — правило не учтено' : r.text}
                     </div>
                   </div>
                   {/* Шкала: на телефоне уходит на отдельную строку под текстом */}
                   <div className="relative col-span-3 col-start-1 h-3 rounded-[3px] bg-canvas sm:col-span-1 sm:col-start-auto" aria-hidden>
-                    {!r.no_data && (
+                    {!isNoData(r) && (
                       <>
                         <div className="hatch absolute inset-y-0 rounded-[3px]" style={{ left: `${left}%`, width: `${maxW}%` }} />
                         <div className="absolute inset-y-0 rounded-[3px] bg-ink" style={{ left: `${left}%`, width: `${gotW}%` }} />
@@ -328,8 +331,8 @@ function Threshold({ at, label, className }: { at: number; label: string; classN
 }
 
 function Points({ r }: { r: RuleResult }) {
-  if (r.no_data || r.contribution === null) return <span className="text-right text-[13px] text-muted">—</span>;
-  const max = r.max_contribution ?? 0;
+  if (isNoData(r) || r.contribution === null) return <span className="text-right text-[13px] text-muted">—</span>;
+  const max = maxContribution(r);
   const color = r.contribution <= 0.05 ? 'text-bad' : r.contribution < max - 0.05 ? 'text-mid' : 'text-ink';
   return (
     <div className="text-right tabular-nums">
@@ -356,7 +359,7 @@ function Short({ score, setHovered }: { score: ScoreResult; setHovered: (id: str
   const numbers = useRuleNumbers(score);
   const parts: ReactNode[] = [];
   const re = /\[([\w.-]+)\]/g;
-  const text = score.justification.text;
+  const text = score.justification;
   let last = 0;
   let m: RegExpExecArray | null;
   while ((m = re.exec(text))) {
@@ -387,7 +390,7 @@ function Short({ score, setHovered }: { score: ScoreResult; setHovered: (id: str
     <section className="rounded-2xl bg-brand p-5 text-white shadow-[0_14px_30px_-14px_rgba(214,32,47,0.6)] sm:p-6">
       <h2 className="mb-2.5 text-[17px] font-bold">Коротко</h2>
       <p className="leading-relaxed">{parts}</p>
-      {score.justification.source === 'llm' && (
+      {score.justification_source === 'llm' && (
         <p className="mt-3 text-xs text-white/80">Текст составлен ИИ по уже посчитанной оценке — сама оценка от него не зависит.</p>
       )}
     </section>
@@ -503,7 +506,7 @@ function ProcurementBlock({ p }: { p: Procurement }) {
           </a>
         )}
         <span className="text-xs text-muted" title="Каким способом система прочитала файл">
-          Прочитано: {p.parsed_by.startsWith('adapter') ? 'по известному формату' : p.parsed_by === 'universal' ? 'универсальным способом' : 'с помощью ИИ'}
+          Прочитано: {p.parsed_by.startsWith('adapter') ? 'по известному формату' : p.parsed_by === 'universal' ? 'универсальным способом' : p.parsed_by === 'llm' ? 'с помощью ИИ' : 'из файла JSON'}
         </span>
       </div>
     </section>

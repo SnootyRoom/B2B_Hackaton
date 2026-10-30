@@ -5,9 +5,8 @@ import type { Money } from '../api/types';
 const NBSP = ' ';
 
 export function toNumber(value: Money | null | undefined): number | null {
-  if (value === null || value === undefined || value === '') return null;
-  const n = typeof value === 'number' ? value : Number(String(value).replace(/\s/g, '').replace(',', '.'));
-  return Number.isFinite(n) ? n : null;
+  if (value === null || value === undefined) return null;
+  return Number.isFinite(value) ? value : null;
 }
 
 /** Целые разряды через пробел: 4200000 → «4 200 000» */

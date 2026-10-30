@@ -184,4 +184,4 @@ export function errorText(code: ErrorCode, message?: string | null): string {
 
 /** Лимиты загрузки (NFR-4, .env.example) */
 export const UPLOAD_LIMITS = { fileMb: 20, archiveMb: 100, maxFiles: 500 };
-export const ACCEPTED_EXT = ['.xml', '.json', '.zip'];
+export const ACCEPTED_EXT = ['.xml', '.json'];

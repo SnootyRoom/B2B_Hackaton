@@ -4,11 +4,11 @@
 import { useMemo, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
-import { api, USE_MOCK } from '../api';
-import { mockExport } from '../api/mock';
+import { api } from '../api';
+import { buildExport } from '../lib/export';
 import type { Law, Recommendation, ResultRow, ResultsFilters } from '../api/types';
 import { LAW_LABEL, RECOMMENDATION } from '../lib/catalog';
-import { deadlineInfo, formatDate, formatMoneyShort, plural, toNumber } from '../lib/format';
+import { deadlineInfo, formatDate, formatMoneyShort, isPast, plural, toNumber } from '../lib/format';
 import { qk, taskIsRunning, useTask } from '../lib/hooks';
 import { Alert, EmptyState, ProgressBar, ResultsSkeleton, toneOf } from '../components/ui';
 import Ticket from '../components/Ticket';
@@ -80,8 +80,8 @@ export default function ResultsPage() {
   const upload = uploads.data?.find((t) => t.id === uploadId);
   const task = useTask(rescoreTask);
 
-  // Фильтры, которые применяет сервер; рекомендацию и поиск — здесь, чтобы счётчики были по всей выборке
-  const [filters, setFilters] = useState<Omit<ResultsFilters, 'recommendation'>>({});
+  // Все фильтры применяются в браузере: сервер отдаёт полный список
+  const [filters, setFilters] = useState<ResultsFilters>({});
   const [rec, setRec] = useState<Recommendation | null>(null);
   const [query, setQuery] = useState('');
   const [sort, setSort] = useState<Sort>({ key: 'total', dir: 'desc' });
@@ -90,16 +90,25 @@ export default function ResultsPage() {
   const [deadlineFrom, setDeadlineFrom] = useState('');
   const [deadlineTo, setDeadlineTo] = useState('');
 
-  const serverFilters = useMemo(() => ({ ...filters, upload_id: uploadId ?? undefined }), [filters, uploadId]);
-  const results = useQuery({ queryKey: qk.results(serverFilters), queryFn: () => api.getResults(serverFilters) });
-  // Полный список — для итогов наверху и списка регионов
-  const all = useQuery({ queryKey: qk.results({}), queryFn: () => api.getResults({}) });
+  const all = useQuery({ queryKey: qk.results({}), queryFn: () => api.getResults() });
+  const results = all;
+  // Закупки одной загрузки берём из её файлов
+  const uploadIds = useMemo(
+    () => (uploadId ? new Set(upload?.files.flatMap((f) => f.procurement_ids) ?? []) : null),
+    [uploadId, upload],
+  );
 
   const searched = useMemo(() => {
     const q = query.trim().toLowerCase();
     const from = deadlineFrom ? new Date(deadlineFrom + 'T00:00:00').getTime() : -Infinity;
     const to = deadlineTo ? new Date(deadlineTo + 'T23:59:59').getTime() : Infinity;
     return (results.data ?? [])
+      .filter((r) => !uploadIds || uploadIds.has(r.procurement_id))
+      .filter((r) => !filters.region || r.region === filters.region)
+      .filter((r) => !filters.law || r.law === filters.law)
+      .filter((r) => filters.nmck_min === undefined || r.nmck >= filters.nmck_min)
+      .filter((r) => filters.nmck_max === undefined || r.nmck <= filters.nmck_max)
+      .filter((r) => !filters.hide_expired || !isPast(r.application_deadline))
       .filter((r) => !q || [r.subject, r.customer_name, r.reg_number].some((v) => v?.toLowerCase().includes(q)))
       .filter((r) => {
         if (!deadlineFrom && !deadlineTo) return true;
@@ -107,7 +116,7 @@ export default function ResultsPage() {
         const t = new Date(r.application_deadline).getTime();
         return t >= from && t <= to;
       });
-  }, [results.data, query, deadlineFrom, deadlineTo]);
+  }, [results.data, uploadIds, filters, query, deadlineFrom, deadlineTo]);
 
   const counts = useMemo(() => {
     const c = { all: searched.length, participate: 0, consider: 0, skip: 0 };
@@ -143,17 +152,8 @@ export default function ResultsPage() {
     );
   }
 
-  async function exportAs(format: 'csv' | 'json') {
-    if (!USE_MOCK) {
-      window.location.href = api.exportUrl(format, {
-        ...filters,
-        recommendation: rec ?? undefined,
-        deadline_from: deadlineFrom || undefined,
-        deadline_to: deadlineTo || undefined,
-      });
-      return;
-    }
-    const blob = await mockExport(format, shown);
+  function exportAs(format: 'csv' | 'json') {
+    const blob = buildExport(format, shown);
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
     a.download = `закупки.${format}`;
@@ -484,7 +484,6 @@ export default function ResultsPage() {
                         </div>
                         <div className="mt-0.5 flex flex-wrap gap-x-2 text-xs text-muted">
                           <span className="font-mono">№ {r.reg_number}</span>
-                          {r.reason && <span>· {r.reason}</span>}
                         </div>
                       </td>
                       <td className="max-w-[240px] px-3 py-3.5">

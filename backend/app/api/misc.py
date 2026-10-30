@@ -97,6 +97,17 @@ def list_results(db: DB, user: CurrentUser) -> list[ResultRow]:
     ]
 
 
+@tasks.get("", response_model=list[TaskOut])
+def list_tasks(
+    db: DB, user: CurrentUser, kind: TaskKind | None = None, limit: int = 100
+) -> list[Task]:
+    """Задачи пользователя, новые сверху. История загрузок: ?kind=upload."""
+    query = select(Task).options(selectinload(Task.files)).where(Task.owner_id == user.id)
+    if kind is not None:
+        query = query.where(Task.kind == kind)
+    return list(db.scalars(query.order_by(Task.created_at.desc()).limit(min(limit, 500))))
+
+
 @tasks.get("/{task_id}", response_model=TaskOut)
 def get_task(task_id: uuid.UUID, db: DB, user: CurrentUser) -> Task:
     task = db.scalar(
