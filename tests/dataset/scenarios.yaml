@@ -37,7 +37,7 @@ scenarios:
     profile: profile_a_construction_company
     expected_recommendation: skip
     expected_score: [0, 30]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Медицинские реагенты — не профиль строительной компании"
 
   - id: s002
@@ -46,7 +46,7 @@ scenarios:
     profile: profile_a_construction_company
     expected_recommendation: participate
     expected_score: [80, 85]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Прямая специализация (кровля и восстановительные работы), НМЦК 16.9 млн подходит"
 
   - id: s003
@@ -55,7 +55,7 @@ scenarios:
     profile: profile_b_office_supplies
     expected_recommendation: consider
     expected_score: [40, 70]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Маленький запрос котировок (0.8 млн), подходит по размеру"
 
   - id: s004
@@ -64,7 +64,7 @@ scenarios:
     profile: profile_a_construction_company
     expected_recommendation: consider
     expected_score: [40, 65]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Строймонтаж — профиль компании, но 223-ФЗ и удалённый регион"
 
   - id: s005
@@ -73,7 +73,7 @@ scenarios:
     profile: profile_b_office_supplies
     expected_recommendation: skip
     expected_score: [0, 20]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Сумма 47.6 млн в 4 раза превышает годовую выручку компании"
 
   - id: s006
@@ -82,7 +82,7 @@ scenarios:
     profile: profile_a_construction_company
     expected_recommendation: skip
     expected_score: [0, 0]
-    expected_stop_factor: customer_bankrupt
+    stop_factors: ["customer_bankrupt"]
     rationale: "Заказчик находится в стадии банкротства (конкурсное производство). Участие невозможно, независимо от профиля поставщика."
 
   - id: s007
@@ -91,7 +91,7 @@ scenarios:
     profile: profile_a_construction_company
     expected_recommendation: skip
     expected_score: [0, 0]
-    expected_stop_factor: customer_bankrupt,unreliable_flags
+    stop_factors: ["customer_bankrupt,unreliable_flags"]
     rationale: "Двойной стоп-фактор: заказчик банкрот, плюс сведения в ЕГРЮЛ недостоверны."
 
   - id: s008
@@ -100,7 +100,7 @@ scenarios:
     profile: profile_a_construction_company
     expected_recommendation: skip
     expected_score: [0, 0]
-    expected_stop_factor: customer_liquidated
+    stop_factors: ["customer_liquidated"]
     rationale: "Юридическое лицо ликвидировано 23.10.2026. Закупка недействительна."
 
   - id: s009
@@ -109,7 +109,7 @@ scenarios:
     profile: profile_d_it
     expected_recommendation: participate
     expected_score: [70, 90]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Профильная закупка серверов, СХД и работ по монтажу и настройке. НМЦК 35,66 млн руб. Входит в диапазон компании от 5 до 100 млн руб."
 
   - id: s010
@@ -118,7 +118,7 @@ scenarios:
     profile: profile_b_office_supplies
     expected_recommendation: consider
     expected_score: [40, 60]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Многолотовая закупка. Лот 1 (молочная продукция). Не основной профиль, но теоретически возможно как смежная поставка для офисной кухни."
 
   - id: s011
@@ -127,7 +127,7 @@ scenarios:
     profile: profile_a_construction_company
     expected_recommendation: skip
     expected_score: [0, 10]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Многолотовая закупка. Лот 2 (мясная продукция). Абсолютно не профиль строительной компании."
 
   - id: s012
@@ -136,16 +136,16 @@ scenarios:
     profile: profile_d_it
     expected_recommendation: skip
     expected_score: [0, 10]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Многолотовая закупка. Лот 3 (рыбная продукция). Абсолютно не профиль IT-интегратора."
 
   - id: s013
     file: tests/dataset/procurements/32616316483.xml
     lot: 4
-    profile: profile_c_medical
+    profile: c_medical_suppliers
     expected_recommendation: skip
     expected_score: [0, 20]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Многолотовая закупка. Лот 4 (овощи и фрукты). Не профиль поставщика медицинского оборудования."
 
   - id: s014
@@ -154,7 +154,7 @@ scenarios:
     profile: profile_b_office_supplies
     expected_recommendation: participate
     expected_score: [70, 85]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Многолотовая закупка. Лот 5 (бакалейная продукция). Чай, кофе, сахар, крупы — типичный ассортимент для снабжения офисов."
 
   - id: s015
@@ -163,7 +163,7 @@ scenarios:
     profile: profile_b_office_supplies
     expected_recommendation: participate
     expected_score: [70, 85]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Многолотовая закупка. Лот 6 (хлеб и хлебобулочные изделия). Подходит для маленькой компании как регулярная мелкая поставка в офисы."
 
   - id: s016
@@ -172,7 +172,7 @@ scenarios:
     profile: profile_b_office_supplies
     expected_recommendation: consider
     expected_score: [50, 70]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Многолотовая закупка. Лот 7 (консервация). Может рассматриваться как сопутствующий товар для офисных запасов."
 
   - id: s017
@@ -181,7 +181,7 @@ scenarios:
     profile: profile_b_office_supplies
     expected_recommendation: participate
     expected_score: [75, 90]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Многолотовая закупка. Лот 8 (кондитерские изделия). Печенье, конфеты и сладости — стандартная позиция для офисного снабжения."
 
   - id: s018
@@ -190,5 +190,42 @@ scenarios:
     profile: profile_a_construction_company
     expected_recommendation: skip
     expected_score: [0, 10]
-    expected_stop_factor: null
+    stop_factors: []
     rationale: "Многолотовая закупка. Лот 9 (яйцо куриное). Абсолютно не профиль строительной компании."
+
+  - id: s019
+    file: tests/dataset/procurements/32616481017.xml
+    lot: null
+    profile: profile_d_it
+    expected_recommendation: participate
+    expected_score: [80, 95]
+    stop_factors: []
+    rationale: "Прямая специализация IT-интегратора (серверное оборудование). Бюджет 38,3 млн руб. входит в рабочий диапазон компании (5–100 млн). Крупный надежный заказчик (ППК «Роскадастр»), стоп-факторов нет."
+  
+  - id: s020
+    file: tests/dataset/procurements/32616500007.xml
+    lot: 1
+    profile: profile_a_construction_company
+    expected_recommendation: consider
+    expected_score: [40, 70]
+    stop_factors: []
+    rationale: "Закупка по 223-ФЗ. Лот 1 — стальные материалы. Материалы потенциально применимы в строительных работах, но для окончательной оценки необходимо проверить номенклатуру, объём, требования к поставщику и условия доставки."
+
+  - id: s021
+    file: tests/dataset/procurements/32616500007.xml
+    lot: 2
+    profile: profile_a_construction_company
+    expected_recommendation: consider
+    expected_score: [40, 70]
+    stop_factors: []
+    rationale: "Закупка по 223-ФЗ. Лот 2 — стальные материалы. Проверяется отдельно от лота 1: необходимо убедиться, что система использует данные именно выбранного лота и не смешивает их с соседним лотом."
+  
+  - id: s022
+    file: tests/dataset/procurements/32616512954.xml
+    lot: 1
+    profile: profile_a_construction_company
+    expected_recommendation: consider
+    expected_score: [40, 70]
+    expected_stop_factor: null
+    rationale: "Закупка по 223-ФЗ на поставку стального листа стоимостью 2 431 888 рублей. Металлопрокат может использоваться в строительных и монтажных работах компании. Требуется проверить марку стали, размеры, объём партии, требования к качеству и условия доставки."
+
