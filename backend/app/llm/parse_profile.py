@@ -17,6 +17,7 @@ from app.llm.client import (
     Prompt,
     load_prompt,
 )
+from app.llm.okpd2 import OKPD2_CATEGORIES, codes_for
 from app.parsers.regions import REGIONS
 from app.schemas.common import ErrorCode
 from app.schemas.scoring import FIELD_CATALOG, ParseProfileResult, ScoringRule
@@ -24,6 +25,24 @@ from app.scoring.defaults import with_defaults
 from app.scoring.templates import ENUM_LABELS
 
 STOP_FIELDS = frozenset({"law", "method", "region"})
+
+# Город федерального значения и область вокруг него — для поставщика один регион
+PAIRED_REGIONS = {
+    "Москва": "Московская область",
+    "Московская область": "Москва",
+    "Санкт-Петербург": "Ленинградская область",
+    "Ленинградская область": "Санкт-Петербург",
+}
+
+
+def with_paired_regions(rules: list[ScoringRule]) -> None:
+    """Дополняет правила о регионе парным регионом: «Московская область» → + «Москва»."""
+    for rule in rules:
+        if rule.field == "region" and rule.kind == "weighted" and isinstance(rule.value, list):
+            values = [str(v) for v in rule.value]
+            extra = [PAIRED_REGIONS[v] for v in values if v in PAIRED_REGIONS]
+            rule.value = list(dict.fromkeys([*values, *extra]))
+
 
 PARSE_ERROR_MESSAGE = "Не удалось разобрать текст, задайте правила вручную"
 UNAVAILABLE_MESSAGE = "Разбор текста временно недоступен, задайте правила вручную"
@@ -41,7 +60,7 @@ _VALUE_SCHEMA: JsonObject = {
 RESPONSE_SCHEMA: JsonObject = {
     "type": "object",
     "additionalProperties": False,
-    "required": ["rules", "company_description", "unparsed"],
+    "required": ["rules", "okpd2_categories", "company_description", "unparsed"],
     "properties": {
         "rules": {
             "type": "array",
@@ -68,6 +87,10 @@ RESPONSE_SCHEMA: JsonObject = {
                 },
             },
         },
+        "okpd2_categories": {
+            "type": "array",
+            "items": {"type": "string", "enum": list(OKPD2_CATEGORIES)},
+        },
         "company_description": {"type": "string"},
         "unparsed": {"type": "array", "items": {"type": "string"}},
     },
@@ -89,7 +112,33 @@ def catalog_description() -> str:
             line += f"; значения: {vals}"
         lines.append(line)
     lines.append("\nДопустимые регионы (для region и customer.region): " + "; ".join(REGIONS))
+    lines.append("\nКатегории ОКПД2 (для okpd2_categories):")
+    lines.extend(f"- {name}" for name in OKPD2_CATEGORIES)
     return "\n".join(lines)
+
+
+def okpd2_rule(categories: list[object], rules: list[ScoringRule]) -> ScoringRule | None:
+    """Правило «коды ОКПД2 профиля» по выбранным категориям; коды, названные пользователем,
+    уже стоят в его правиле — добавляем к нему. Код точнее смысла, поэтому важность 3."""
+    names = [str(c) for c in categories if c in OKPD2_CATEGORIES]
+    codes = codes_for(names)
+    if not codes:
+        return None
+    own = next((r for r in rules if r.field == "okpd2_codes"), None)
+    if own is not None:
+        user_codes = [str(c) for c in own.value] if isinstance(own.value, list) else []
+        own.value = list(dict.fromkeys([*user_codes, *codes]))
+        return None
+    return ScoringRule(
+        id="r_okpd",
+        group=FIELD_CATALOG["okpd2_codes"].group,
+        kind="weighted",
+        field="okpd2_codes",
+        operator="prefix_in",
+        value=codes,
+        weight=3,
+        label="Коды ОКПД2: " + "; ".join(names),
+    )
 
 
 def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
@@ -130,6 +179,12 @@ def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
         except ValidationError as e:
             msgs = "; ".join(str(err["msg"]) for err in e.errors())
             errors.append(f"Правило {i} ({raw.get('label', '')}): {msgs}")
+
+    with_paired_regions(rules)
+    categories = data.get("okpd2_categories")
+    okpd_rule = okpd2_rule(categories if isinstance(categories, list) else [], rules)
+    if okpd_rule is not None:
+        rules.append(okpd_rule)
 
     unparsed = data.get("unparsed")
     result = ParseProfileResult(

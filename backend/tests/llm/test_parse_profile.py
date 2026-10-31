@@ -130,7 +130,7 @@ def test_no_key_means_disabled() -> None:
 
 
 def test_prompt_has_version() -> None:
-    assert load_prompt("parse_profile").version == "4"
+    assert load_prompt("parse_profile").version == "6"
 
 
 def test_yandex_folder_builds_model_uri_and_header() -> None:
@@ -196,3 +196,48 @@ def test_stop_only_for_hard_conditions() -> None:
     rule = {**GOOD_ANSWER["rules"][0], "kind": "stop"}  # type: ignore[index, dict-item]
     client, _ = fake_llm([{**GOOD_ANSWER, "rules": [rule]}])
     assert parse_text("текст", client).rules[0].kind == "weighted"
+
+
+def test_okpd2_categories_expand_to_all_codes() -> None:
+    answer = {**GOOD_ANSWER, "okpd2_categories": ["мебель, в том числе медицинская и лабораторная"]}
+    client, reqs = fake_llm([answer])
+    rules = parse_text("Производим мебель", client).rules
+    okpd = next(r for r in rules if r.field == "okpd2_codes")
+    assert okpd.value == ["31", "32.50.30"] and okpd.weight == 3
+    assert "Категории ОКПД2" in reqs[0]["messages"][1]["content"]  # type: ignore[index]
+
+
+def test_user_codes_are_merged_with_categories() -> None:
+    own = {
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": ["62.01"],
+        "weight": 3,
+        "soft_margin": 0,
+        "label": "ОКПД2 62.01",
+    }
+    answer = {**GOOD_ANSWER, "rules": [own], "okpd2_categories": ["оборудование видеонаблюдения"]}
+    client, _ = fake_llm([answer])
+    rules = [r for r in parse_text("текст", client).rules if r.field == "okpd2_codes"]
+    assert len(rules) == 1 and rules[0].value == ["62.01", "26.40", "26.70"]
+
+
+def test_unknown_category_is_ignored() -> None:
+    client, _ = fake_llm([{**GOOD_ANSWER, "okpd2_categories": ["космос"]}])
+    assert not any(r.field == "okpd2_codes" for r in parse_text("текст", client).rules)
+
+
+def test_paired_regions_are_added() -> None:
+    region = {
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": ["Московская область"],
+        "weight": 2,
+        "soft_margin": 0,
+        "label": "Свой регион",
+    }
+    client, _ = fake_llm([{**GOOD_ANSWER, "rules": [region]}])
+    rule = next(r for r in parse_text("текст", client).rules if r.field == "region")
+    assert rule.value == ["Московская область", "Москва"]
