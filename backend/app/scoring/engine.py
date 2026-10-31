@@ -108,6 +108,17 @@ def subject_mismatch(
     return []
 
 
+def okpd2_misses(results: list[RuleOutcome]) -> list[str]:
+    """Правила по кодам ОКПД2, которые не совпали, когда предмет проверен и по смыслу.
+    Их штраф смягчается (важность okpd2_miss_weight): кода деятельности компании может не быть
+    в справочнике категорий, и тогда неверный код один уводил бы закупку в «Пропустить».
+    Без сравнения по смыслу код остаётся обычным правилом."""
+    fit = _applied(results, RuleGroup.fit)
+    if not any(r.operator == Operator.semantic_match for r in fit):
+        return []
+    return [r.rule_id for r in fit if r.field == "okpd2_codes" and (r.partial_score or 0.0) == 0.0]
+
+
 def failed_conditions(results: list[RuleOutcome]) -> list[str]:
     """Явные условия профиля о закупке и заказчике, которые не выполнены совсем (балл 0):
     чужой регион, другой способ, сумма за пределами допуска. С ними — не выше «Рассмотреть»."""
@@ -203,7 +214,10 @@ def score(
         res.text = rule_text(rule, res, x)
         results.append(res)
 
-    weights = {r.id: r.weight or 0 for r in profile.rules}
+    weights: dict[str, float] = {r.id: r.weight or 0 for r in profile.rules}
+    miss_weight = get_settings().okpd2_miss_weight
+    for rule_id in okpd2_misses(results):
+        weights[rule_id] = min(weights[rule_id], miss_weight)
 
     # Баллы групп
     raw: dict[RuleGroup, tuple[float, float, bool]] = {}  # → (G_g, Σw применённых, low_data)

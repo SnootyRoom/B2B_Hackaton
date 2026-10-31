@@ -414,7 +414,29 @@ def test_very_close_meaning_lifts_subject_cap() -> None:
 
 
 def test_close_but_not_very_close_meaning_keeps_cap() -> None:
-    # смежный предмет: смысл похож (полный балл при 0,86), но не очень близок — ограничение остаётся
+    # смежный предмет: смысл похож лишь частично, код не совпал — ограничение остаётся
     fields = {"subject": "уборка помещений", "okpd2_codes": ["96.01.12"], "nmck": 500_000.0}
-    r = score(WRONG_CODE_PROFILE, fields, lambda a, b: 0.87, SemanticThresholds(0.82, 0.86))
+    r = score(WRONG_CODE_PROFILE, fields, lambda a, b: 0.85, SemanticThresholds(0.82, 0.86))
     assert r.recommendation == Recommendation.skip
+
+
+def test_code_miss_is_softened_when_meaning_matches() -> None:
+    # смысл совпал (0,87 — полный балл, но ниже 0,88), код не совпал: штраф кода смягчён до 2,
+    # балл соответствия 50 — не «предмет не тот»
+    fields = {"subject": "услуги прачечной", "okpd2_codes": ["96.01.12"], "nmck": 500_000.0}
+    r = score(WRONG_CODE_PROFILE, fields, lambda a, b: 0.87, SemanticThresholds(0.82, 0.86))
+    assert r.recommendation != Recommendation.skip
+    fit = next(g for g in r.groups if g.group == Group.fit)
+    assert fit.score == 50
+
+
+def test_code_miss_without_semantic_rule_counts_fully() -> None:
+    prof = ScoringProfileData(
+        rules=[
+            rule("okpd", "okpd2_codes", Operator.prefix_in, ["81.2"]),
+            rule("price", "nmck", Operator.lte, 2_000_000),
+        ]
+    )
+    r = score(prof, {"okpd2_codes": ["96.01.12"], "nmck": 500_000.0})
+    fit = next(g for g in r.groups if g.group == Group.fit)
+    assert fit.score == 0 and r.total == 53

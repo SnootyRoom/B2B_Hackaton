@@ -7962,5 +7962,6031 @@
         "enabled": true
       }
     ]
+  },
+  "q01_coal|v10|1fd180138d": {
+    "text": "ООО «КузбассУгольСбыт» из Кемеровской области. Поставляем каменный и бурый уголь, дрова и топливные брикеты для котельных школ, больниц и ЖКХ. Интересны аукционы и запросы котировок от 200 тыс. до 30 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "поставка каменного и бурого угля, дров и топливных брикетов для котельных школ, больниц и ЖКХ",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поставляем каменный и бурый уголь, дрова и топливные брикеты",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы и запросы котировок",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          200000.0,
+          30000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 200 тыс. до 30 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Кемеровская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Кемеровская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "05",
+          "02.20"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: уголь, дрова и твёрдое топливо",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q02_video|v10|eb15372d6f": {
+    "text": "ООО «БашВидеоСервис» из Республики Башкортостан. Монтируем и обслуживаем системы видеонаблюдения, контроля и управления доступом (СКУД), домофоны. Интересны аукционы и запросы котировок от 100 тыс. до 15 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "монтаж и обслуживание систем видеонаблюдения, систем контроля и управления доступом (СКУД), домофонов",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Монтаж и обслуживание систем видеонаблюдения, СКУД, домофонов",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы и запросы котировок",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          15000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 15 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Республика Башкортостан"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Республика Башкортостан",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "26.40",
+          "26.70",
+          "43.21",
+          "42.22"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: оборудование видеонаблюдения; электромонтажные работы и электроснабжение",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q03_school|v10|386f3c78ab": {
+    "text": "Компания «Школьный мир» из Москвы. Поставляем (без ремонта и обслуживания) учебное оборудование для школ и детских садов: учебно-наглядные пособия, оборудование кабинетов физики, химии и биологии, цифровые лаборатории, наборы по робототехнике, оснащение центров «Точка роста». Работаем по всей России, регион не важен. Интересны аукционы от 300 тыс. до 30 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "учебное оборудование для школ и детских садов: учебно-наглядные пособия, оборудование кабинетов физики, химии и биологии, цифровые лаборатории, наборы по робототехнике, оснащение центров 'Точка роста'",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поставляем учебное оборудование для школ и детских садов",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          300000.0,
+          30000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 300 тыс. до 30 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "58.11",
+          "58.14",
+          "26.20.16",
+          "26.20.18",
+          "28.23",
+          "26.40",
+          "26.70"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: книги, учебники и учебные пособия; оргтехника, принтеры, картриджи и расходные материалы к ним; оборудование видеонаблюдения",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q04_toys|v10|d528700864": {
+    "text": "ООО «Игрушкин» из Нижегородской области. Поставляем игрушки, развивающие и настольные игры, конструкторы, игровое оборудование и наборы для детских садов (монтажом площадок не занимаемся). Участвуем только в закупках по 44-ФЗ, интересны аукционы и запросы котировок от 50 тыс. до 5 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "Игрушки, развивающие и настольные игры, конструкторы, игровое оборудование и наборы для детских садов",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Игрушки, развивающие и настольные игры, конструкторы, игровое оборудование и наборы для детских садов",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Нижегородская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Нижегородская область",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "law",
+        "operator": "in",
+        "value": [
+          "223",
+          "615",
+          "94",
+          "other"
+        ],
+        "weight": null,
+        "soft_margin": 0.0,
+        "label": "Только 44-ФЗ",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы и запросы котировок",
+        "enabled": true
+      },
+      {
+        "id": "r5",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          50000.0,
+          5000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 50 тыс. до 5 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "32.30",
+          "32.40"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: спортивный инвентарь, игровое и спортивное оборудование",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q05_animals|v10|d4a5f56430": {
+    "text": "ООО «ДругЗверь» из Свердловской области. Отлавливаем, содержим в приюте, вакцинируем и стерилизуем животных без владельцев по заказам муниципалитетов. Работаем только в Свердловской области. Интересны закупки от 50 тыс. до 5 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "отлов, содержание в приюте, вакцинация, стерилизация животных без владельцев",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Отлов, содержание в приюте, вакцинация и стерилизация животных без владельцев",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          50000.0,
+          5000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 50 тыс. до 5 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Свердловская область"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Свердловская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "75"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: ветеринарные услуги",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q06_events|v10|ef48bee5f6": {
+    "text": "Event-агентство «Праздник на Неве» из Санкт-Петербурга. Организуем и проводим под ключ праздники, концерты, фестивали, конференции, форумы, выставки и городские мероприятия. Интересны конкурсы, аукционы и запросы предложений от 200 тыс. до 20 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "организация и проведение под ключ праздников, концертов, фестивалей, конференций, форумов, выставок и городских мероприятий",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Организация и проведение праздников, концертов, фестивалей, конференций, форумов, выставок и городских мероприятий",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "contest",
+          "auction",
+          "proposals"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Конкурсы, аукционы и запросы предложений",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          200000.0,
+          20000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 200 тыс. до 20 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Санкт-Петербург",
+          "Ленинградская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Санкт-Петербург и Ленинградская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "82.30"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: организация мероприятий, конференций и выставок",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q07_legal|v10|cadc4b96b1": {
+    "text": "Юридическая фирма «Право и Порядок». Оказываем юридические услуги: представительство в судах и арбитраже, претензионно-исковая работа, правовая экспертиза документов, сопровождение банкротства. Работаем дистанционно по всей России. Интересны закупки от 50 тыс. до 5 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "представительство в судах и арбитраже, претензионно-исковая работа, правовая экспертиза документов, сопровождение банкротства",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Юридические услуги",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          50000.0,
+          5000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 50 тыс. до 5 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "69"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: юридические и бухгалтерские услуги, аудит",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q08_appraisal|v10|d62b578d6c": {
+    "text": "Оценочная компания «ЭкспертОценка». Определяем рыночную стоимость недвижимости, земельных участков, транспорта, права аренды и бизнеса, оцениваем ущерб. Работаем по всей России. Интересны закупки от 20 тыс. до 3 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "Определение рыночной стоимости недвижимости, земельных участков, транспорта, права аренды и бизнеса, оценка ущерба",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Оценка недвижимости, земельных участков, транспорта, права аренды и бизнеса, оценка ущерба",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          20000.0,
+          3000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 20 тыс. до 3 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q09_cadastral|v10|0b17779bf5": {
+    "text": "Кадастровый центр «ТатГеоПлан» из Республики Татарстан. Выполняем кадастровые работы: межевание земельных участков, технические планы зданий и сооружений, комплексные кадастровые работы, топографическую съёмку. Работаем только по 44-ФЗ; интересны закупки от 50 тыс. до 10 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "межевание земельных участков, технические планы зданий и сооружений, комплексные кадастровые работы, топографическая съёмка",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Кадастровые работы",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          50000.0,
+          10000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 50 тыс. до 10 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "law",
+        "operator": "in",
+        "value": [
+          "223",
+          "615",
+          "94",
+          "other"
+        ],
+        "weight": null,
+        "soft_margin": 0.0,
+        "label": "Только 44-ФЗ",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Республика Татарстан"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Республика Татарстан",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q10_metrology|v10|a141473087": {
+    "text": "ООО «ПермьМетрология» из Пермского края. Поверяем и калибруем средства измерений: весы, манометры, счётчики, медицинские и лабораторные приборы; аттестуем испытательное оборудование. Сами приборы не продаём. Интересны запросы котировок и аукционы от 30 тыс. до 3 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "поверка и калибровка весов, манометров, счётчиков, медицинских и лабораторных приборов; аттестация испытательного оборудования",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поверка и калибровка средств измерений",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Запросы котировок и аукционы",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          30000.0,
+          3000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 30 тыс. до 3 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Пермский край"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Пермский край",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "26.51"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: измерительные приборы и лабораторное оборудование",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q11_travel|v10|616675f374": {
+    "text": "Агентство деловых поездок «ТрэвелСервис» из Москвы. Организуем служебные командировки: бронируем и оформляем авиа- и железнодорожные билеты, гостиницы, трансферы. Работаем по всей России. Интересны закупки от 100 тыс. до 20 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "бронирование и оформление авиа- и железнодорожных билетов, гостиниц, трансферов",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Организация служебных командировок: бронирование и оформление авиа- и железнодорожных билетов, гостиниц, трансферов",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          20000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 20 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "55",
+          "49.3",
+          "49.4"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: услуги гостиниц и проживания; перевозка грузов и пассажиров",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q12_media|v10|8889cb4eda": {
+    "text": "Медиахолдинг «Южный Урал Медиа» из Челябинской области — телеканал, радио и студия видеопроизводства. Освещаем деятельность органов власти в СМИ, изготавливаем и размещаем видеоролики и телесюжеты, ведём социальные сети учреждений. Интересны закупки от 100 тыс. до 10 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "освещение деятельности органов власти в СМИ, изготовление и размещение видеороликов и телесюжетов, ведение социальных сетей учреждений",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Деятельность медиахолдинга: освещение деятельности органов власти в СМИ, изготовление и размещение видеороликов и телесюжетов, ведение социальных сетей учреждений",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          10000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 10 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Челябинская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Челябинская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "18.1",
+          "58.1",
+          "17.23",
+          "73"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: полиграфия и печатная продукция (бланки, буклеты, печать); рекламные и маркетинговые услуги",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q13_kitchen|v10|60a29f511d": {
+    "text": "ООО «ПодмосковьеПищеМаш» из Московской области. Поставляем и монтируем технологическое оборудование для пищеблоков и столовых: плиты, пароконвектоматы, холодильные шкафы, посудомоечные машины, а также кухонную посуду и инвентарь. Ремонтом и обслуживанием оборудования не занимаемся. Интересны аукционы от 100 тыс. до 15 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "поставка и монтаж плит, пароконвектоматов, холодильных шкафов, посудомоечных машин, кухонная посуда и инвентарь",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Технологическое оборудование для пищеблоков и столовых",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          15000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 15 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Московская область",
+          "Москва"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Московская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "26.40",
+          "26.70",
+          "27.33",
+          "27.40",
+          "17.22",
+          "22.22",
+          "23.41",
+          "25.99.1",
+          "32.91"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: оборудование видеонаблюдения; электротовары, светильники, лампы; хозяйственные товары и инвентарь (посуда, туалетная бумага, мешки, инвентарь для уборки)",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q14_meters|v10|6758d865a6": {
+    "text": "ООО «ДонУчёт» из Ростовской области. Поставляем и устанавливаем приборы учёта воды, тепла, газа и электроэнергии, монтируем узлы учёта тепловой энергии и автоматизированные системы учёта (АСКУЭ). Поверкой и обслуживанием не занимаемся. Интересны аукционы и запросы котировок от 50 тыс. до 10 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "поставка и установка приборов учёта воды, тепла, газа, электроэнергии, монтаж узлов учёта тепловой энергии и автоматизированных систем учёта (АСКУЭ)",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поставка и установка приборов учёта воды, тепла, газа, электроэнергии, монтаж узлов учёта тепловой энергии и АСКУЭ",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы и запросы котировок",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          50000.0,
+          10000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 50 тыс. до 10 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Ростовская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Ростовская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "43.22",
+          "28.25",
+          "28.14"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: отопление, водопровод, вентиляция и кондиционирование: оборудование и монтаж",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "q15_music|v10|431b0cc0ff": {
+    "text": "Магазин «Камертон» из Москвы. Поставляем музыкальные инструменты (фортепиано, баяны, народные, духовые и ударные), звуковое и световое сценическое оборудование для школ искусств и домов культуры. Интересны аукционы от 100 тыс. до 10 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "музыкальные инструменты (фортепиано, баяны, народные, духовые и ударные), звуковое и световое сценическое оборудование",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поставляем музыкальные инструменты (фортепиано, баяны, народные, духовые и ударные), звуковое и световое сценическое оборудование",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          10000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 10 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Москва",
+          "Московская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Москва",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p01_fuel|v10|c72630c84a": {
+    "text": "ООО «УралНефтеСнаб» из Свердловской области. Поставляем бензин и дизельное топливо через сеть АЗС по топливным картам, а также моторные масла. Интересны аукционы и запросы котировок от 300 тыс. до 30 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "поставка бензина, дизельного топлива и моторных масел",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поставка бензина, дизельного топлива и моторных масел",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы и запросы котировок",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          300000.0,
+          30000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 300 тыс. до 30 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Свердловская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Свердловская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "19.20"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: топливо, бензин, дизельное топливо",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p02_bakery|v10|d680a27629": {
+    "text": "Хлебозавод «Казанский каравай» из Республики Татарстан. Производим и поставляем хлеб, хлебобулочные и кондитерские изделия в школы, детсады и больницы. Интересны закупки от 100 тыс. до 10 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "производство и поставка хлеба, хлебобулочных и кондитерских изделий",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Производство и поставка хлеба, хлебобулочных и кондитерских изделий",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          10000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 10 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Республика Татарстан"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Республика Татарстан",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "10",
+          "01",
+          "10.71",
+          "10.72",
+          "10.82"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: продукты питания, в том числе овощи, фрукты и сельхозпродукция; хлеб, хлебобулочные и кондитерские изделия",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p03_catering|v10|83c369801a": {
+    "text": "Комбинат питания «Столичный» из Москвы. Организуем горячее питание в школах, детских садах и больницах, оказываем услуги общественного питания. Работаем только по 44-ФЗ. Интересны конкурсы и аукционы от 1 до 100 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "Организация горячего питания в школах, детских садах и больницах, услуги общественного питания",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Организация горячего питания в школах, детских садах и больницах, услуги общественного питания",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "law",
+        "operator": "in",
+        "value": [
+          "223",
+          "615",
+          "94",
+          "other"
+        ],
+        "weight": null,
+        "soft_margin": 0.0,
+        "label": "Только 44-ФЗ",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "contest",
+          "auction"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Конкурсы и аукционы",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          1000000.0,
+          100000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 1 до 100 млн ₽",
+        "enabled": true
+      },
+      {
+        "id": "r5",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Москва",
+          "Московская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Москва",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "56"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: организация питания, услуги общественного питания",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p04_waste|v10|4fbf00f132": {
+    "text": "ООО «ЭкоВывоз» из Московской области. Вывозим и утилизируем отходы: строительный мусор, крупногабаритные отходы, медицинские отходы классов Б и В, отходы I–IV классов опасности. Интересны закупки от 200 тыс. до 20 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "вывозим и утилизируем отходы: строительный мусор, крупногабаритные отходы, медицинские отходы классов Б и В, отходы I–IV классов опасности",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Вывоз и утилизация отходов",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          200000.0,
+          20000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 200 тыс. до 20 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Москва",
+          "Московская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Московская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "38.1",
+          "38.2"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: сбор и вывоз отходов, утилизация",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p05_bus|v10|c02a697c5c": {
+    "text": "Транспортная компания «КубаньТрансАвто» из Краснодарского края. Оказываем услуги по перевозке пассажиров автобусами, организованной перевозке детей, аренде транспорта с водителем. Интересны закупки от 300 тыс. до 30 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "перевозка пассажиров автобусами, организованная перевозка детей, аренда транспорта с водителем",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Услуги по перевозке пассажиров автобусами, организованной перевозке детей, аренде транспорта с водителем",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          300000.0,
+          30000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 300 тыс. до 30 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Краснодарский край"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Краснодарский край",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "49.3",
+          "49.4"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: перевозка грузов и пассажиров",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p06_print|v10|726fc9550a": {
+    "text": "Типография «Невский печатный двор» из Санкт-Петербурга. Печатаем бланки, журналы, книги, буклеты, календари, полиграфическую и рекламную продукцию. Интересны закупки от 100 тыс. до 5 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "печать бланков, журналов, книг, буклетов, календарей, полиграфической и рекламной продукции",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Полиграфия и печать",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          5000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 5 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Санкт-Петербург",
+          "Ленинградская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Санкт-Петербург и Ленинградская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "18.1",
+          "58.1",
+          "17.23",
+          "58.11",
+          "58.14"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: полиграфия и печатная продукция (бланки, буклеты, печать); книги, учебники и учебные пособия",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p07_telecom|v10|263fe48a69": {
+    "text": "Оператор связи «СибТелеком» из Новосибирской области. Предоставляем доступ к сети Интернет, услуги телефонной связи, каналы связи и IP-телефонию для организаций. Интересны закупки от 100 тыс. до 20 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "предоставление доступа к сети Интернет, услуги телефонной связи, каналы связи и IP-телефония для организаций",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Услуги связи и интернет",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          20000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 20 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Новосибирская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Новосибирская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "61"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: услуги связи и интернета",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p08_computers|v10|8e95db0900": {
+    "text": "ООО «ТехноОфис» из Москвы. Поставляем компьютеры, ноутбуки, мониторы, МФУ, принтеры и расходные материалы к оргтехнике (картриджи). Интересны аукционы и запросы котировок от 200 тыс. до 30 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "поставка компьютеров, ноутбуков, мониторов, МФУ, принтеров и расходных материалов к оргтехнике (картриджи)",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поставка компьютеров, ноутбуков, мониторов, МФУ, принтеров и расходных материалов к оргтехнике",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы и запросы котировок",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          200000.0,
+          30000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 200 тыс. до 30 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Москва",
+          "Московская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Москва и Московская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "26.20.16",
+          "26.20.18",
+          "28.23",
+          "26.20"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: оргтехника, принтеры, картриджи и расходные материалы к ним; компьютеры, серверы, системы хранения данных",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p09_cars|v10|abc55b042e": {
+    "text": "Автосалон «БашАвто» из Республики Башкортостан. Поставляем новые легковые автомобили, микроавтобусы, грузовые автомобили и спецтехнику. Интересны аукционы от 1 до 100 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "поставка новых легковых автомобилей, микроавтобусов, грузовых автомобилей и спецтехники",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поставляем новые легковые автомобили, микроавтобусы, грузовые автомобили и спецтехнику",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Республика Башкортостан"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Республика Башкортостан",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          1000000.0,
+          100000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 1 до 100 млн ₽",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "29.1",
+          "28.92"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: автомобили и спецтехника",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p10_autorepair|v10|c759c2a313": {
+    "text": "Автосервис «Техцентр-М» из Москвы. Выполняем техническое обслуживание и ремонт легковых и грузовых автомобилей, шиномонтаж, кузовной ремонт. Интересны закупки от 100 тыс. до 10 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "техническое обслуживание и ремонт легковых и грузовых автомобилей, шиномонтаж, кузовной ремонт",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Техническое обслуживание и ремонт легковых и грузовых автомобилей, шиномонтаж, кузовной ремонт",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          10000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 10 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Москва",
+          "Московская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Москва",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "33.1",
+          "29.1",
+          "28.92"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: ремонт и техническое обслуживание оборудования; автомобили и спецтехника",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p11_electric|v10|e6f2864799": {
+    "text": "ООО «ЧелябЭлектроСнаб» из Челябинской области. Поставляем кабельно-проводниковую продукцию, светильники, лампы, электроустановочные изделия и электротехническое оборудование. Интересны аукционы и запросы котировок от 100 тыс. до 15 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "поставка кабельно-проводниковой продукции, светильников, ламп, электроустановочных изделий и электротехнического оборудования",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поставляем кабельно-проводниковую продукцию, светильники, лампы, электроустановочные изделия и электротехническое оборудование",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы и запросы котировок",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          15000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 15 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Челябинская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Челябинская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "27.33",
+          "27.40",
+          "26.30"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: электротовары, светильники, лампы; сетевое и телекоммуникационное оборудование",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p12_hvac|v10|2cc71e2f6c": {
+    "text": "Монтажная компания «НижегородТеплоМонтаж» из Нижегородской области. Выполняем монтаж и ремонт систем отопления, вентиляции, кондиционирования, водоснабжения и канализации, ремонт ИТП. Интересны конкурсы и аукционы от 1 до 50 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "монтаж и ремонт систем отопления, вентиляции, кондиционирования, водоснабжения, канализации, ремонт ИТП",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Монтаж и ремонт систем отопления, вентиляции, кондиционирования, водоснабжения и канализации",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "contest",
+          "auction"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Конкурсы и аукционы",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          1000000.0,
+          50000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 1 до 50 млн ₽",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Нижегородская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Нижегородская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "43.22",
+          "28.25",
+          "28.14"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: отопление, водопровод, вентиляция и кондиционирование: оборудование и монтаж",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p13_lifts|v10|3fcbfc7952": {
+    "text": "ООО «ЛифтСервис-Нева» из Санкт-Петербурга. Техническое обслуживание, ремонт, замена и модернизация лифтов, подъёмников и эскалаторов. Интересны закупки от 200 тыс. до 50 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "Техническое обслуживание, ремонт, замена и модернизация лифтов, подъёмников и эскалаторов",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Техническое обслуживание, ремонт, замена и модернизация лифтов, подъёмников и эскалаторов",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          200000.0,
+          50000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 200 тыс. до 50 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Санкт-Петербург",
+          "Ленинградская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Санкт-Петербург и Ленинградская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "28.22.16",
+          "43.29.11",
+          "33.12.15"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: лифты: поставка, монтаж и обслуживание",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p14_medrepair|v10|6bff1a2d37": {
+    "text": "Сервисная компания «МедТехСервис» из Москвы. Техническое обслуживание и ремонт медицинского оборудования: рентгеновского, ультразвукового, лабораторного, стоматологического. Интересны закупки от 200 тыс. до 30 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "техническое обслуживание и ремонт медицинского оборудования: рентгеновского, ультразвукового, лабораторного, стоматологического",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Техническое обслуживание и ремонт медицинского оборудования",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          200000.0,
+          30000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 200 тыс. до 30 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Москва",
+          "Московская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Москва и Московская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "26.60",
+          "32.50",
+          "33.1"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: медицинское и диагностическое оборудование; ремонт и техническое обслуживание оборудования",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p15_household|v10|79b2ebe4eb": {
+    "text": "ООО «ВолгаХимСнаб» из Самарской области. Поставляем моющие и чистящие средства, дезинфицирующие средства, бумажную продукцию для санузлов (туалетная бумага, полотенца) и хозяйственные товары. Интересны аукционы и запросы котировок от 100 тыс. до 10 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "моющие и чистящие средства, дезинфицирующие средства, бумажная продукция для санузлов (туалетная бумага, полотенца), хозяйственные товары",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Моющие и чистящие средства, дезинфицирующие средства, бумажная продукция для санузлов, хозяйственные товары",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы и запросы котировок",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          10000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 10 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Самарская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Самарская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "20.41",
+          "20.20.14",
+          "17.22",
+          "22.22",
+          "23.41",
+          "25.99.1",
+          "32.91"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: бытовая химия, моющие, чистящие и дезинфицирующие средства; хозяйственные товары и инвентарь (посуда, туалетная бумага, мешки, инвентарь для уборки)",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p16_books|v10|7fc7f56737": {
+    "text": "Издательство-дистрибьютор «Просвещение-Книга». Поставляем учебники, учебные пособия, художественную и методическую литературу в школы и библиотеки по всей России. Интересны закупки от 100 тыс. до 20 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "поставка учебников, учебных пособий, художественной и методической литературы",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поставка учебников, учебных пособий, художественной и методической литературы",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          20000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 20 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "58.11",
+          "58.14"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: книги, учебники и учебные пособия",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p17_training|v10|0e0fac5988": {
+    "text": "Учебный центр «ПрофСтандарт». Проводим обучение по охране труда, пожарной безопасности, первой помощи, курсы повышения квалификации и профессиональной переподготовки — очно и дистанционно, по всей России. Интересны закупки от 50 тыс. до 5 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "обучение по охране труда, пожарной безопасности, первой помощи, курсы повышения квалификации и профессиональной переподготовки",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Образовательные услуги по охране труда, пожарной безопасности, первой помощи, курсы повышения квалификации и профессиональной переподготовки",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          50000.0,
+          5000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 50 тыс. до 5 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "85"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: образовательные услуги, обучение персонала",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p18_insurance|v10|cdd4321621": {
+    "text": "Страховая компания «Гарант-Полис». Оказываем услуги ОСАГО, КАСКО, страхования имущества и добровольного медицинского страхования сотрудников по всей России. Интересны закупки от 50 тыс. до 30 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "Услуги ОСАГО, КАСКО, страхования имущества и добровольного медицинского страхования",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Услуги ОСАГО, КАСКО, страхования имущества и добровольного медицинского страхования",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          50000.0,
+          30000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 50 тыс. до 30 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p19_audit|v10|0bf83c1b0c": {
+    "text": "Аудиторская фирма «ФинКонтроль». Проводим обязательный аудит бухгалтерской (финансовой) отчётности, оказываем консультационные и бухгалтерские услуги по всей России. Интересны закупки от 50 тыс. до 5 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "обязательный аудит бухгалтерской (финансовой) отчётности, консультационные и бухгалтерские услуги",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Аудит бухгалтерской (финансовой) отчётности, консультационные и бухгалтерские услуги",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          50000.0,
+          5000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 50 тыс. до 5 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "69",
+          "70.22"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: юридические и бухгалтерские услуги, аудит; консультационные услуги в области управления",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p20_design|v10|5623bae44c": {
+    "text": "Проектный институт «МосГражданПроект» из Москвы. Разрабатываем проектную и рабочую документацию на строительство и капитальный ремонт, выполняем инженерные изыскания. Интересны конкурсы от 1 до 50 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "разработка проектной и рабочей документации на строительство и капитальный ремонт, выполнение инженерных изысканий",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Разработка проектной и рабочей документации на строительство и капитальный ремонт, инженерные изыскания",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "contest"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Конкурсы",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          1000000.0,
+          50000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 1 до 50 млн ₽",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Москва",
+          "Московская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Москва",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "71.1",
+          "41",
+          "43"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: проектирование и инженерные изыскания; строительство зданий (школ, детсадов, административных, жилых); ремонт, отделка, кровельные, монтажные и прочие строительные работы",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p21_firesafety|v10|4b9810142b": {
+    "text": "ООО «ПожСервис» из Москвы. Техническое обслуживание и ремонт автоматической пожарной сигнализации, систем оповещения и управления эвакуацией, пожаротушения; огнезащитная обработка. Интересны аукционы и запросы котировок от 100 тыс. до 20 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "техническое обслуживание и ремонт автоматической пожарной сигнализации, систем оповещения и управления эвакуацией, пожаротушения; огнезащитная обработка",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Техническое обслуживание и ремонт автоматической пожарной сигнализации, систем оповещения и управления эвакуацией, пожаротушения; огнезащитная обработка",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы и запросы котировок",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          20000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 20 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Москва",
+          "Московская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Москва и Московская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "80.20",
+          "43.21",
+          "33.13",
+          "28.29.22",
+          "33.12"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: монтаж и обслуживание охранной и пожарной сигнализации; огнетушители и обслуживание систем пожаротушения",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p22_medservices|v10|f24310dd99": {
+    "text": "Медицинский центр «ЗдоровьеПлюс» из Республики Татарстан. Проводим предварительные и периодические медицинские осмотры, предрейсовые осмотры водителей, лабораторные исследования. Работаем только по 44-ФЗ. Интересны закупки от 100 тыс. до 10 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "предварительные и периодические медицинские осмотры, предрейсовые осмотры водителей, лабораторные исследования",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Медицинские осмотры и лабораторные исследования",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          10000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 10 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "law",
+        "operator": "in",
+        "value": [
+          "223",
+          "615",
+          "94",
+          "other"
+        ],
+        "weight": null,
+        "soft_margin": 0.0,
+        "label": "Только 44-ФЗ",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Республика Татарстан"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Республика Татарстан",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "86",
+          "21.20.23",
+          "20.59.52"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: медицинские услуги, медицинские осмотры; лабораторные и диагностические реагенты, химические реактивы",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p23_sport|v10|dffd20df96": {
+    "text": "ООО «СпортЛайн» из Москвы. Поставляем спортивный инвентарь и оборудование: тренажёры, мячи, гимнастическое и туристическое снаряжение, спортивную форму. Интересны аукционы от 100 тыс. до 20 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "поставка спортивного инвентаря и оборудования: тренажёры, мячи, гимнастическое и туристическое снаряжение, спортивная форма",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Спортивный инвентарь и оборудование",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          20000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 20 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Москва",
+          "Московская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Москва и Московская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "32.30",
+          "32.40"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: спортивный инвентарь, игровое и спортивное оборудование",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p24_water|v10|38befa10f0": {
+    "text": "ООО «Родник» из Москвы. Поставляем питьевую бутилированную воду в бутылях 19 л, кулеры и помпы, обслуживаем кулеры. Интересны запросы котировок и аукционы от 50 тыс. до 5 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "питьевая бутилированная вода в бутылях 19 л, кулеры, помпы, обслуживание кулеров",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поставляем питьевую бутилированную воду в бутылях 19 л, кулеры и помпы, обслуживаем кулеры",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "quotation",
+          "auction"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Запросы котировок и аукционы",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          50000.0,
+          5000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 50 тыс. до 5 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Москва",
+          "Московская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Москва",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "11.07",
+          "36.00.1",
+          "27.5"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: питьевая и бутилированная вода, напитки; бытовая техника",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p25_landscaping|v10|4cfffacafb": {
+    "text": "Ландшафтная компания «Зелёный город» из Москвы. Выполняем озеленение, посадку деревьев и кустарников, уход за зелёными насаждениями, устройство газонов и цветников, благоустройство территорий. Интересны конкурсы и аукционы от 500 тыс. до 50 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "озеленение, посадка деревьев и кустарников, уход за зелёными насаждениями, устройство газонов и цветников, благоустройство территорий",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Озеленение и благоустройство территорий",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "contest",
+          "auction"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Конкурсы и аукционы",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          500000.0,
+          50000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 500 тыс. до 50 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Москва",
+          "Московская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Москва",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "81.30",
+          "01.30"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: озеленение и благоустройство территорий",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p26_pest|v10|cdd27a421c": {
+    "text": "ООО «ДонДезСервис» из Ростовской области. Проводим дезинсекцию, дератизацию, дезинфекцию помещений, акарицидную обработку территорий от клещей. Интересны закупки от 50 тыс. до 5 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "дезинфекция, дератизация, дезинсекция помещений, акарицидная обработка территорий",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Дезинфекция, дератизация, дезинсекция помещений, акарицидная обработка территорий",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          50000.0,
+          5000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 50 тыс. до 5 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Ростовская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Ростовская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "81.29.11"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: дезинфекция, дезинсекция и дератизация",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p27_autoparts|v10|542b8cc28c": {
+    "text": "ООО «СибАвтоДеталь» из Красноярского края. Поставляем запасные части к автомобилям и спецтехнике, шины, аккумуляторы, автомасла. Интересны аукционы и запросы котировок от 100 тыс. до 10 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "запасные части к автомобилям и спецтехнике, шины, аккумуляторы, автомасла",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поставляем запасные части к автомобилям и спецтехнике, шины, аккумуляторы, автомасла",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы и запросы котировок",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          10000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 10 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Красноярский край"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Красноярский край",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "29.1",
+          "28.92",
+          "22.11",
+          "29.3",
+          "45.3"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: автомобили и спецтехника; шины и автомобильные запчасти",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p28_laundry|v10|a409eb4330": {
+    "text": "Прачечная «ЧистоБельё» из Москвы. Оказываем услуги стирки, глажения и дезинфекции белья, химчистки спецодежды для больниц и учреждений. Интересны закупки от 100 тыс. до 20 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "Услуги стирки, глажения и дезинфекции белья, химчистки спецодежды для больниц и учреждений",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Услуги стирки, глажения и дезинфекции белья, химчистки спецодежды",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          20000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 20 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Москва",
+          "Московская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Москва",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "96.01"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: услуги прачечной, стирка белья, химчистка",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p29_buildmat|v10|dcb6b0d38f": {
+    "text": "ООО «УралСтройМатериалы» из Свердловской области. Поставляем строительные материалы: цемент, сухие смеси, кирпич, металлопрокат, пиломатериалы, кровельные материалы. Интересны аукционы и запросы котировок от 100 тыс. до 20 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "поставка строительных материалов: цемент, сухие смеси, кирпич, металлопрокат, пиломатериалы, кровельные материалы",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Строительные материалы",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы и запросы котировок",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          20000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 20 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Свердловская область"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Свердловская область",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "16.10",
+          "16.2",
+          "22.23",
+          "23.3",
+          "23.5",
+          "23.6",
+          "23.9",
+          "24.1",
+          "24.2",
+          "24.3",
+          "25.1"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: строительные материалы (лесоматериалы, цемент, кирпич, отделочные материалы); металлопрокат, трубы и металлоконструкции",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
+  },
+  "p30_vegetables|v10|5bad3d8507": {
+    "text": "КФХ «Кубанские овощи» из Краснодарского края. Выращиваем и поставляем овощи и фрукты: картофель, капусту, морковь, лук, яблоки — в школы, детсады и больницы. Интересны аукционы и запросы котировок от 100 тыс. до 10 млн руб.\n",
+    "rules": [
+      {
+        "id": "r1",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "выращивание и поставка овощей и фруктов: картофель, капуста, морковь, лук, яблоки",
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Поставляем овощи и фрукты: картофель, капусту, морковь, лук, яблоки",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "method",
+        "operator": "in",
+        "value": [
+          "auction",
+          "quotation"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Аукционы и запросы котировок",
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          100000.0,
+          10000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 100 тыс. до 10 млн руб.",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Краснодарский край"
+        ],
+        "weight": 2,
+        "soft_margin": 0.0,
+        "label": "Краснодарский край",
+        "enabled": true
+      },
+      {
+        "id": "r_okpd",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "10",
+          "01"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Коды ОКПД2: продукты питания, в том числе овощи, фрукты и сельхозпродукция",
+        "enabled": true
+      },
+      {
+        "id": "stop_deadline",
+        "group": "procurement",
+        "kind": "stop",
+        "field": "days_to_deadline",
+        "operator": "lte",
+        "value": 0.0,
+        "weight": null,
+        "soft_margin": null,
+        "label": "Приём заявок завершён",
+        "enabled": true
+      },
+      {
+        "id": "stop_customer_status",
+        "group": "customer",
+        "kind": "stop",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "liquidating",
+          "liquidated",
+          "bankrupt"
+        ],
+        "weight": null,
+        "soft_margin": null,
+        "label": "Заказчик ликвидируется, ликвидирован или банкрот",
+        "enabled": true
+      },
+      {
+        "id": "customer_active",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.status",
+        "operator": "in",
+        "value": [
+          "active"
+        ],
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Заказчик действующий",
+        "enabled": true
+      },
+      {
+        "id": "customer_reliable",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.has_unreliable_flags",
+        "operator": "is_false",
+        "value": null,
+        "weight": 3,
+        "soft_margin": null,
+        "label": "Нет отметок о недостоверности сведений",
+        "enabled": true
+      },
+      {
+        "id": "customer_age",
+        "group": "customer",
+        "kind": "weighted",
+        "field": "customer.age_years",
+        "operator": "gte",
+        "value": 3.0,
+        "weight": 2,
+        "soft_margin": 0.67,
+        "label": "Заказчик работает не меньше 3 лет",
+        "enabled": true
+      }
+    ]
   }
 }
