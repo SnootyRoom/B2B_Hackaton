@@ -131,7 +131,7 @@ def test_no_key_means_disabled() -> None:
 
 
 def test_prompt_has_version() -> None:
-    assert load_prompt("parse_profile").version == "5"
+    assert load_prompt("parse_profile").version == "6"
 
 
 def test_yandex_folder_builds_model_uri_and_header() -> None:
@@ -226,3 +226,30 @@ def test_strict_region_becomes_not_in_stop_and_soft_stays_weighted() -> None:
     assert rules["region"].operator == Operator.not_in
     assert rules["region"].value == ["Томская область"]
     assert rules["method"].kind == RuleKind.weighted
+
+
+def _region_and_okpd2(home: bool, codes: list[str]) -> dict[str, object]:
+    region = {"field": "region", "operator": "in", "value": ["Томская область"], "weight": 3,
+              "soft_margin": 0, "label": "Свой регион: Томская область", "strict": False,
+              "home_region": home}  # fmt: skip
+    okpd2 = {"field": "okpd2_codes", "operator": "prefix_in", "value": codes, "weight": 3,
+             "soft_margin": 0, "label": "ОКПД2", "strict": False, "home_region": False}  # fmt: skip
+    return {**GOOD_ANSWER, "rules": [region, okpd2]}
+
+
+def test_home_region_dropped_for_remote_services() -> None:
+    # разработка ПО из Томска: сопровождение СЭД в Краснодаре — не чужой регион
+    client, _ = fake_llm([_region_and_okpd2(True, ["62.01", "62.02"])])
+    rules = parse_text("Мы IT-компания из Томска, разрабатываем ПО", client).rules
+    assert not any(r.field == "region" for r in rules)
+
+
+def test_home_region_kept_for_onsite_work_and_named_region_kept() -> None:
+    answer = _region_and_okpd2(True, ["62.01", "26.20"])
+    answer["rules"][0]["weight"] = 2  # type: ignore[index]
+    client, _ = fake_llm([answer])
+    rules = parse_text("Поставляем серверы и пишем ПО, мы из Томска", client).rules
+    assert next(r for r in rules if r.field == "region").weight == 3
+    client, _ = fake_llm([_region_and_okpd2(False, ["62.01"])])
+    rules = parse_text("Разрабатываем ПО, интересна Томская область", client).rules
+    assert any(r.field == "region" for r in rules)

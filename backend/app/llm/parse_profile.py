@@ -17,7 +17,7 @@ from app.llm.client import (
     Prompt,
     load_prompt,
 )
-from app.llm.okpd2 import OKPD2_BUNDLES, OKPD2_CLASSES, OKPD2_GROUPS
+from app.llm.okpd2 import OKPD2_BUNDLES, OKPD2_CLASSES, OKPD2_GROUPS, OKPD2_REMOTE
 from app.parsers.regions import REGIONS
 from app.schemas.common import ErrorCode
 from app.schemas.scoring import (
@@ -62,6 +62,7 @@ RESPONSE_SCHEMA: JsonObject = {
                     "soft_margin",
                     "label",
                     "strict",
+                    "home_region",
                 ],
                 "properties": {
                     "field": {"type": "string", "enum": sorted(FIELD_CATALOG)},
@@ -71,6 +72,7 @@ RESPONSE_SCHEMA: JsonObject = {
                     "soft_margin": {"type": "number"},
                     "label": {"type": "string"},
                     "strict": {"type": "boolean"},
+                    "home_region": {"type": "boolean"},
                 },
             },
         },
@@ -156,6 +158,19 @@ def _strict_stop(raw: JsonObject, spec: FieldSpec) -> JsonObject | None:
     }
 
 
+def _without_remote_home_region(rules: list[ScoringRule], home: set[str]) -> list[ScoringRule]:
+    """Свой регион убирается, если все коды ОКПД2 профиля — удалённые услуги (ПО, консалтинг)."""
+    codes = [
+        str(c)
+        for r in rules
+        if r.field == "okpd2_codes" and isinstance(r.value, list)
+        for c in r.value
+    ]
+    if not home or not codes or not all(c.startswith(OKPD2_REMOTE) for c in codes):
+        return rules
+    return [r for r in rules if r.id not in home]
+
+
 def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
     """Ответ модели → правила. Возвращает результат (или None) и список ошибок."""
     raw_rules = data.get("rules")
@@ -163,6 +178,7 @@ def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
         return None, ["Поле rules должно быть списком"]
 
     rules: list[ScoringRule] = []
+    home: set[str] = set()  # id правил «Свой регион», выведенных из местонахождения компании
     errors: list[str] = []
     for i, raw in enumerate(raw_rules, start=1):
         if not isinstance(raw, dict):
@@ -192,7 +208,14 @@ def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
                 )
                 continue
         rule = {**raw, "kind": RuleKind.weighted.value}
-        if spec:
+        is_home = (
+            rule.pop("home_region", None) is True and spec is not None and spec.field == "region"
+        )
+        if is_home:
+            # свой регион — мягкое, но важное условие: чужой регион → не выше «Рассмотреть»;
+            # жёстким (стоп-фактором) он не бывает
+            rule["weight"] = 3
+        elif spec:
             rule = _strict_stop(rule, spec) or rule
         rule.pop("strict", None)
         try:
@@ -201,13 +224,15 @@ def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
                     {**rule, "id": f"r{i}", "group": spec.group if spec else "procurement"}
                 )
             )
+            if is_home:
+                home.add(f"r{i}")
         except ValidationError as e:
             msgs = "; ".join(str(err["msg"]) for err in e.errors())
             errors.append(f"Правило {i} ({raw.get('label', '')}): {msgs}")
 
     unparsed = data.get("unparsed")
     result = ParseProfileResult(
-        rules=with_defaults(rules),
+        rules=with_defaults(_without_remote_home_region(rules, home)),
         company_description=str(data.get("company_description") or ""),
         unparsed=[str(x) for x in unparsed] if isinstance(unparsed, list) else [],
     )
