@@ -1,52 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <ns4:Purchase xmlns:ns4="http://zakupki.gov.ru/epz/order/2023" xmlns:ns11="http://zakupki.gov.ru/common/2023">
-<ns11:regNumber>32616316483</ns11:regNumber>
-<ns11:purchaseNumber>32616316483</ns11:purchaseNumber>
-<ns11:purchaseObjectInfo>Поставка продуктов питания: молочная продукция, мясная продукция, рыбная продукция, овощи и фрукты, бакалея, хлеб, консервация, кондитерские изделия и яйца</ns11:purchaseObjectInfo>
-<ns11:initialPrice></ns11:initialPrice>
-<ns11:currencyCode>RUB</ns11:currencyCode>
-<ns11:law>223-ФЗ</ns11:law>
-<ns11:customer>
-<ns11:organizationName>Муниципальное бюджетное дошкольное образовательное учреждение - детский сад компенсирующего вида № 266</ns11:organizationName>
-<ns11:inn>6660124275</ns11:inn>
-<ns11:regionCode>66</ns11:regionCode>
-</ns11:customer>
-<ns11:lots>
-<ns11:lot>
-<ns11:lotNumber>1</ns11:lotNumber>
-<ns11:lotName>Молочная продукция</ns11:lotName>
-</ns11:lot>
-<ns11:lot>
-<ns11:lotNumber>2</ns11:lotNumber>
-<ns11:lotName>Мясная продукция</ns11:lotName>
-</ns11:lot>
-<ns11:lot>
-<ns11:lotNumber>3</ns11:lotNumber>
-<ns11:lotName>Рыбная продукция</ns11:lotName>
-</ns11:lot>
-<ns11:lot>
-<ns11:lotNumber>4</ns11:lotNumber>
-<ns11:lotName>Овощи и фрукты</ns11:lotName>
-</ns11:lot>
-<ns11:lot>
-<ns11:lotNumber>5</ns11:lotNumber>
-<ns11:lotName>Бакалейная продукция</ns11:lotName>
-</ns11:lot>
-<ns11:lot>
-<ns11:lotNumber>6</ns11:lotNumber>
-<ns11:lotName>Хлеб и хлебобулочные изделия</ns11:lotName>
-</ns11:lot>
-<ns11:lot>
-<ns11:lotNumber>7</ns11:lotNumber>
-<ns11:lotName>Консервация</ns11:lotName>
-</ns11:lot>
-<ns11:lot>
-<ns11:lotNumber>8</ns11:lotNumber>
-<ns11:lotName>Кондитерские изделия</ns11:lotName>
-</ns11:lot>
-<ns11:lot>
-<ns11:lotNumber>9</ns11:lotNumber>
-<ns11:lotName>Яйцо куриное</ns11:lotName>
-</ns11:lot>
-</ns11:lots>
-</ns4:Purchase>
+<ns4:purchaseNotice
+    xmlns:ns4="http://zakupki.gov.ru/epz/order/2023"
+    xmlns:ns11="http://zakupki.gov.ru/common/2023">
+
+    <ns4:purchaseNoticeData>
+        <ns11:registrationNumber>32616316483</ns11:registrationNumber>
+
+        <ns11:purchaseObjectInfo>Поставка продуктов питания: молочная продукция, мясная продукция, рыбная продукция, овощи и фрукты, бакалея, хлеб, консервация, кондитерские изделия и яйца</ns11:purchaseObjectInfo>
+
+        <ns11:law>223-ФЗ</ns11:law>
+
+        <ns11:customer>
+            <ns11:mainInfo>
+                <ns11:inn>6660124275</ns11:inn>
+                <ns11:fullName>Муниципальное бюджетное дошкольное образовательное учреждение - детский сад компенсирующего вида № 266</ns11:fullName>
+            </ns11:mainInfo>
+        </ns11:customer>
+
+        <ns11:lots>
+            <ns11:lot>
+                <ns11:ordinalNumber>1</ns11:ordinalNumber>
+                <ns11:lotData>
+                    <ns11:subject>Молочная продукция</ns11:subject>
+                    <ns11:initialSum>371000.00</ns11:initialSum>
+                </ns11:lotData>
+            </ns11:lot>
+
+            <ns11:lot>
+                <ns11:ordinalNumber>2</ns11:ordinalNumber>
+                <ns11:lotData>
+                    <ns11:subject>Мясная продукция</ns11:subject>
+                    <ns11:initialSum>387931.30</ns11:initialSum>
+                </ns11:lotData>
+            </ns11:lot>
+
+            <ns11:lot>
+                <ns11:ordinalNumber>3</ns11:ordinalNumber>
+                <ns11:lotData>
+                    <ns11:subject>Рыбная продукция</ns11:subject>
+                    <ns11:initialSum>191284.00</ns11:initialSum>
+                </ns11:lotData>
+            </ns11:lot>
+
+            <ns11:lot>
+                <ns11:ordinalNumber>4</ns11:ordinalNumber>
+                <ns11:lotData>
+                    <ns11:subject>Овощи и фрукты</ns11:subject>
+                    <ns11:initialSum>175109.50</ns11:initialSum>
+                </ns11:lotData>
+            </ns11:lot>
+
+            <ns11:lot>
+                <ns11:ordinalNumber>5</ns11:ordinalNumber>
+                <ns11:lotData>
+                    <ns11:subject>Бакалейная продукция</ns11:subject>
+                    <ns11:initialSum>123474.50</ns11:initialSum>
+                </ns11:lotData>
+            </ns11:lot>
+
+            <ns11:lot>
+                <ns11:ordinalNumber>6</ns11:ordinalNumber>
+                <ns11:lotData>
+                    <ns11:subject>Хлеб и хлебобулочные изделия</ns11:subject>
+                    <ns11:initialSum>78235.00</ns11:initialSum>
+                </ns11:lotData>
+            </ns11:lot>
+
+            <ns11:lot>
+                <ns11:ordinalNumber>7</ns11:ordinalNumber>
+                <ns11:lotData>
+                    <ns11:subject>Консервация</ns11:subject>
+                    <ns11:initialSum>82182.41</ns11:initialSum>
+                </ns11:lotData>
+            </ns11:lot>
+
+            <ns11:lot>
+                <ns11:ordinalNumber>8</ns11:ordinalNumber>
+                <ns11:lotData>
+                    <ns11:subject>Кондитерские изделия</ns11:subject>
+                    <ns11:initialSum>75383.00</ns11:initialSum>
+                </ns11:lotData>
+            </ns11:lot>
+
+            <ns11:lot>
+                <ns11:ordinalNumber>9</ns11:ordinalNumber>
+                <ns11:lotData>
+                    <ns11:subject>Яйцо куриное</ns11:subject>
+                    <ns11:initialSum>41702.40</ns11:initialSum>
+                </ns11:lotData>
+            </ns11:lot>
+        </ns11:lots>
+    </ns4:purchaseNoticeData>
+</ns4:purchaseNotice>

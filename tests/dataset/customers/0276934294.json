@@ -1,10 +1,10 @@
 {
   "inn": "0276934294",
   "name": "ООО \"ВИ-СТРОЙМОНТАЖ\"",
-  "egrul_status": "БАНКРОТ",
-  "egrul_details": "Конкурсное производство",
-  "unreliable_flags": true,
-  "unreliable_reason": "Сведения о юридическом адресе недостоверны",
-  "source": "DaData",
-  "cached_at": "2026-10-30T10:00:00Z"
+  "org_type": "legal",
+  "status": "bankrupt",
+  "region": "Республика Башкортостан",
+  "unreliable_flags": [
+    "Недостоверный адрес"
+  ]
 }
