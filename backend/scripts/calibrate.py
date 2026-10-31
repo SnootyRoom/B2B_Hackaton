@@ -36,8 +36,11 @@ REPO = next(
 )
 # до импорта app: настройки читаются при импорте и кэшируются
 os.environ.setdefault("CUSTOMERS_DIR", str(REPO / "data" / "customers"))
-# полный справочник ОКПД2 — из проекта: в папке с чужими сценариями (CALIBRATE_REPO) его нет
-os.environ.setdefault("OKPD2_CSV", str(Path(__file__).resolve().parents[2] / "data" / "okpd2.csv"))
+# полный справочник ОКПД2 — из проекта: в папке с чужими сценариями (CALIBRATE_REPO) его нет;
+# в контейнере проекта рядом нет, там работает путь из настроек (/repo/data/okpd2.csv)
+_OKPD2_CSV = Path(__file__).resolve().parents[2] / "data" / "okpd2.csv"
+if _OKPD2_CSV.exists():
+    os.environ.setdefault("OKPD2_CSV", str(_OKPD2_CSV))
 
 from app.egrul import offline
 from app.embeddings import service as embeddings
