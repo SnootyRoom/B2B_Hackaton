@@ -130,7 +130,7 @@ def test_no_key_means_disabled() -> None:
 
 
 def test_prompt_has_version() -> None:
-    assert load_prompt("parse_profile").version == "3"
+    assert load_prompt("parse_profile").version == "4"
 
 
 def test_yandex_folder_builds_model_uri_and_header() -> None:
@@ -174,3 +174,25 @@ def test_unknown_region_is_retried() -> None:
     client, reqs = fake_llm([{**GOOD_ANSWER, "rules": [bad_region]}, GOOD_ANSWER])
     parse_text("текст", client)
     assert "справочнике" in reqs[1]["messages"][-1]["content"]  # type: ignore[index]
+
+
+def test_only_44fz_becomes_stop_factor() -> None:
+    stop = {
+        "kind": "stop",
+        "field": "law",
+        "operator": "in",
+        "value": ["223", "615", "94", "other"],
+        "weight": 3,
+        "soft_margin": 0,
+        "label": "Не 44-ФЗ",
+    }
+    client, _ = fake_llm([{**GOOD_ANSWER, "rules": [stop]}])
+    rule = parse_text("Работаем только по 44-ФЗ", client).rules[0]
+    assert rule.kind == "stop" and rule.weight is None
+
+
+def test_stop_only_for_hard_conditions() -> None:
+    # стоп по сумме или предмету модель предлагать не должна — превращаем в обычное правило
+    rule = {**GOOD_ANSWER["rules"][0], "kind": "stop"}  # type: ignore[index, dict-item]
+    client, _ = fake_llm([{**GOOD_ANSWER, "rules": [rule]}])
+    assert parse_text("текст", client).rules[0].kind == "weighted"

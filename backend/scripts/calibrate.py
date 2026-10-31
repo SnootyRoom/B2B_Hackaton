@@ -11,6 +11,7 @@
 """
 
 import argparse
+import hashlib
 import json
 import logging
 import os
@@ -22,18 +23,23 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-# корень репозитория: рядом со скриптом локально, /repo в контейнере (монтирует docker-compose)
+# корень репозитория: CALIBRATE_REPO (например, копия чужой ветки), рядом со скриптом
+# локально или /repo в контейнере (монтирует docker-compose)
 REPO = next(
     p
-    for p in (Path(__file__).resolve().parents[2], Path("/repo"))
-    if (p / "tests" / "dataset").is_dir()
+    for p in (
+        Path(os.environ.get("CALIBRATE_REPO", "")),
+        Path(__file__).resolve().parents[2],
+        Path("/repo"),
+    )
+    if os.fspath(p) != "." and (p / "tests" / "dataset").is_dir()
 )
 # до импорта app: настройки читаются при импорте и кэшируются
 os.environ.setdefault("CUSTOMERS_DIR", str(REPO / "data" / "customers"))
 
 from app.egrul import offline
 from app.embeddings import service as embeddings
-from app.llm.client import LLMClient
+from app.llm.client import LLMClient, load_prompt
 from app.llm.parse_profile import parse_text
 from app.parsers.registry import ParseError, parse_file
 from app.schemas.customer import CustomerData
@@ -86,14 +92,19 @@ def profile_rules(profiles: dict[str, str], cache_path: Path) -> dict[str, Scori
         json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {}
     )
     client = LLMClient.from_env()
+    version = load_prompt("parse_profile").version
     out: dict[str, ScoringProfileData] = {}
     for name, text in profiles.items():
-        if name not in cached or cached[name].get("text") != text:
+        # ключ — профиль + версия промпта + текст: разные файлы сценариев не мешают друг другу,
+        # новая версия промпта разбирается заново
+        digest = hashlib.sha256(" ".join(text.split()).encode()).hexdigest()[:10]
+        key = f"{name}|v{version}|{digest}"
+        if key not in cached:
             if not client.enabled:
                 raise SystemExit(f"Нет правил для {name} в {cache_path} и не настроен LLM")
             parsed = parse_text(text, client)
-            cached[name] = {"text": text, "rules": parsed.model_dump(mode="json")["rules"]}
-        out[name] = ScoringProfileData.model_validate({"rules": cached[name]["rules"]})
+            cached[key] = {"text": text, "rules": parsed.model_dump(mode="json")["rules"]}
+        out[name] = ScoringProfileData.model_validate({"rules": cached[key]["rules"]})
     cache_path.write_text(json.dumps(cached, ensure_ascii=False, indent=2), encoding="utf-8")
     return out
 
@@ -112,10 +123,15 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--rules", type=Path, default=Path(__file__).with_name("calibrate_rules.json"))
     ap.add_argument(
+        "--scenarios",
+        default="scenarios.yaml",
+        help="файл сценариев в tests/dataset (например scenarios_holdout.yaml)",
+    )
+    ap.add_argument(
         "--now",
-        default="published",
-        help="момент расчёта: published — дата публикации извещения (закупки в наборе уже "
-        "закрыты, иначе срабатывает стоп «приём заявок завершён»), или дата ISO",
+        help="момент расчёта: дата ISO или published — дата публикации извещения. По умолчанию "
+        "as_of из файла сценариев, иначе published (закупки в наборе уже закрыты, иначе "
+        "срабатывает стоп «приём заявок завершён»)",
     )
     ap.add_argument("-v", "--verbose", action="store_true", help="правила по каждой закупке")
     ap.add_argument(
@@ -134,11 +150,13 @@ def main() -> int:
         help="брать настоящие XML ЕИС из этой папки вместо самодельных (по умолчанию data/samples)",
     )
     args = ap.parse_args()
-    load_env(REPO / ".env")
+    load_env(Path(__file__).resolve().parents[2] / ".env")  # ключи — из .env проекта
 
-    spec = yaml.safe_load((DATASET / "scenarios.yaml").read_text(encoding="utf-8"))
+    spec = yaml.safe_load((DATASET / args.scenarios).read_text(encoding="utf-8"))
     profiles = profile_rules({k: v["text"] for k, v in spec["profiles"].items()}, args.rules)
-    fixed_now = None if args.now == "published" else datetime.fromisoformat(args.now)
+    now = args.now or str(spec.get("as_of") or "published")
+    fixed_now = None if now == "published" else datetime.fromisoformat(now).replace(tzinfo=UTC)
+    print(f"Сценарии: {args.scenarios}, момент оценки: {now}")
     if args.weights:
         w = dict(
             zip(

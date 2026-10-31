@@ -23,6 +23,8 @@ from app.schemas.scoring import FIELD_CATALOG, ParseProfileResult, ScoringRule
 from app.scoring.defaults import with_defaults
 from app.scoring.templates import ENUM_LABELS
 
+STOP_FIELDS = frozenset({"law", "method", "region"})
+
 PARSE_ERROR_MESSAGE = "Не удалось разобрать текст, задайте правила вручную"
 UNAVAILABLE_MESSAGE = "Разбор текста временно недоступен, задайте правила вручную"
 
@@ -46,8 +48,17 @@ RESPONSE_SCHEMA: JsonObject = {
             "items": {
                 "type": "object",
                 "additionalProperties": False,
-                "required": ["field", "operator", "value", "weight", "soft_margin", "label"],
+                "required": [
+                    "kind",
+                    "field",
+                    "operator",
+                    "value",
+                    "weight",
+                    "soft_margin",
+                    "label",
+                ],
                 "properties": {
+                    "kind": {"type": "string", "enum": ["weighted", "stop"]},
                     "field": {"type": "string", "enum": sorted(FIELD_CATALOG)},
                     "operator": {"type": "string"},
                     "value": _VALUE_SCHEMA,
@@ -102,6 +113,9 @@ def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
                     f"Правило {i}: регионов нет в справочнике: {', '.join(map(str, bad))}"
                 )
                 continue
+        # стоп-фактор — только жёсткое условие «только …» по закону, способу или региону
+        field = spec.field if spec else ""
+        kind = "stop" if raw.get("kind") == "stop" and field in STOP_FIELDS else "weighted"
         try:
             rules.append(
                 ScoringRule.model_validate(
@@ -109,7 +123,7 @@ def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
                         **raw,
                         "id": f"r{i}",
                         "group": spec.group if spec else "procurement",
-                        "kind": "weighted",
+                        "kind": kind,
                     }
                 )
             )

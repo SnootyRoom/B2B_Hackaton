@@ -36,9 +36,12 @@ class Settings(BaseSettings):
     demo_dir: Path = Path("/repo/data/demo")
 
     # Пороги semantic_match: калибруются ролью 3, в коде не хардкодятся
-    # e5 сжимает близость в 0,78–0,89; пороги подобраны scripts/calibrate.py по tests/dataset
-    semantic_c0: float = 0.86
-    semantic_c1: float = 0.90
+    # e5 сжимает близость в 0,78–0,89; пороги подобраны scripts/calibrate.py
+    # на tests/dataset/scenarios_draft.yaml (проверка — scenarios_holdout.yaml)
+    semantic_c0: float = 0.82
+    semantic_c1: float = 0.86
+    # Балл группы «Соответствие» ниже этого — предмет не тот, итог не выше «Пропустить»
+    fit_min: float = 50.0
 
     # Тесты: выполнять задачи Celery синхронно, без брокера
     celery_eager: bool = False

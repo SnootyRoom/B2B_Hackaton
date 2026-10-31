@@ -28,10 +28,14 @@ def _lc(s: str) -> str:
 
 
 def build_justification(
-    r: ScoreResultData, no_data: bool = False, mismatch: list[str] | None = None
+    r: ScoreResultData,
+    no_data: bool = False,
+    mismatch: list[str] | None = None,
+    failed: list[str] | None = None,
 ) -> str:
     """no_data — не удалось применить ни одного взвешенного правила;
-    mismatch — правила о предмете, по которым закупка совсем не подходит (итог ограничен)."""
+    mismatch — правила о предмете, по которым закупка не подходит (итог не выше «Пропустить»);
+    failed — невыполненные условия профиля (итог не выше «Рассмотреть»)."""
     rules = {x.rule_id: x for x in r.rules}
     missing = [
         x for x in r.rules if x.kind == RuleKind.weighted and x.status == RuleStatus.no_data
@@ -64,6 +68,9 @@ def build_justification(
             f"Предмет закупки не соответствует деятельности компании {refs}, "
             "поэтому оценка ограничена, даже если остальные условия подходят."
         )
+    elif failed and r.recommendation == Recommendation.consider:
+        labels = "; ".join(f"{_lc(rules[i].label)} [{i}]" for i in failed)
+        parts.append(f"Не выполнено условие профиля: {labels} — поэтому «Рассмотреть».")
 
     weighted = [
         x for x in r.rules if x.kind == RuleKind.weighted and x.status == RuleStatus.applied

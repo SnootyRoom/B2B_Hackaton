@@ -111,8 +111,10 @@ def test_analytics_example_78() -> None:
     )
     r = score(prof, fields)
     assert [g.score for g in r.groups] == [80, 60, 100]
-    assert r.total == 78
-    assert r.recommendation == Recommendation.participate
+    # формула даёт 78, но регион (p3) не выполнен → не выше «Рассмотреть»
+    assert r.total == 69
+    assert r.recommendation == Recommendation.consider
+    assert "не выполнено условие профиля: p3 [p3]" in r.justification.lower()
     assert sum(x.contribution or 0 for x in r.rules) == pytest.approx(78, abs=0.01)
 
 
@@ -333,3 +335,33 @@ def test_matching_okpd2_lifts_subject_cap() -> None:
     r = score(prof, fields, lambda a, b: 0.5)  # смысл не совпал, но код ОКПД2 — да
     assert r.total > 39
     assert "ограничена" not in r.justification
+
+
+def test_all_conditions_met_gives_participate() -> None:
+    prof = ScoringProfileData(
+        rules=[
+            rule("subj", "subject", Operator.semantic_match, "канцтовары"),
+            rule("price", "nmck", Operator.lte, 2_000_000),
+            rule("reg", "region", Operator.in_, ["Тверская область"], weight=2),
+        ]
+    )
+    fields = {"subject": "бумага", "nmck": 150_000.0, "region": "Тверская область"}
+    assert score(prof, fields, lambda a, b: 0.95).recommendation == Recommendation.participate
+    # всё подходит, кроме региона → «Рассмотреть»
+    other = {**fields, "region": "Курская область"}
+    r = score(prof, other, lambda a, b: 0.95)
+    assert r.recommendation == Recommendation.consider and r.total == 69
+
+
+def test_low_fit_score_counts_as_mismatch() -> None:
+    prof = ScoringProfileData(
+        rules=[
+            rule("subj", "subject", Operator.semantic_match, "медизделия"),
+            rule("okpd", "okpd2_codes", Operator.prefix_in, ["32.50"]),
+            rule("price", "nmck", Operator.lte, 30_000_000),
+        ]
+    )
+    # смысл частично (0,5), код ОКПД2 не совпал → соответствие 25 из 100 < 50 → «Пропустить»
+    fields = {"subject": "клининг", "okpd2_codes": ["81.21.10"], "nmck": 5_600_000.0}
+    r = score(prof, fields, lambda a, b: 0.84, SemanticThresholds(0.82, 0.86))
+    assert r.recommendation == Recommendation.skip

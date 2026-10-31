@@ -65,21 +65,33 @@ def _partial(
     return 1.0 if boolean_holds(op, x, rule.value) else 0.0
 
 
-def subject_mismatch(results: list[RuleOutcome]) -> list[str]:
-    """Предмет совсем не тот: в группе «Соответствие» проверено сравнение по смыслу и все
-    проверенные правила группы дали 0. Совпавший код ОКПД2 или ключевое слово снимают ограничение.
-    Возвращает rule_id правил группы для ссылки в обосновании."""
-    fit = [
+def _applied(results: list[RuleOutcome], *groups: RuleGroup) -> list[RuleOutcome]:
+    return [
         r
         for r in results
-        if r.group == RuleGroup.fit
-        and r.kind == RuleKind.weighted
-        and r.status == RuleStatus.applied
+        if r.group in groups and r.kind == RuleKind.weighted and r.status == RuleStatus.applied
     ]
+
+
+def subject_mismatch(
+    results: list[RuleOutcome], groups: list[GroupScore], fit_min: float
+) -> list[str]:
+    """Предмет не тот: проверено сравнение по смыслу, а балл группы «Соответствие» ниже fit_min.
+    Совпавший код ОКПД2 поднимает балл группы и снимает ограничение.
+    Возвращает rule_id правил группы для ссылки в обосновании."""
+    fit = _applied(results, RuleGroup.fit)
+    fit_score = next((g.score for g in groups if g.group == RuleGroup.fit), None)
     has_semantic = any(r.operator == Operator.semantic_match for r in fit)
-    if has_semantic and all((r.partial_score or 0.0) == 0.0 for r in fit):
+    if has_semantic and fit_score is not None and fit_score < fit_min:
         return [r.rule_id for r in fit]
     return []
+
+
+def failed_conditions(results: list[RuleOutcome]) -> list[str]:
+    """Явные условия профиля о закупке и заказчике, которые не выполнены совсем (балл 0):
+    чужой регион, другой способ, сумма за пределами допуска. С ними — не выше «Рассмотреть»."""
+    applied = _applied(results, RuleGroup.procurement, RuleGroup.customer)
+    return [r.rule_id for r in applied if (r.partial_score or 0.0) == 0.0]
 
 
 def recommend(
@@ -102,8 +114,10 @@ def score(
     fields: dict[str, FieldValue],
     similarity: Similarity | None = None,
     semantic: SemanticThresholds | None = None,
+    fit_min: float | None = None,
 ) -> ScoreResultData:
     semantic = semantic or semantic_thresholds()
+    fit_min = get_settings().fit_min if fit_min is None else fit_min
     results: list[RuleOutcome] = []
     stop_ids: list[str] = []
 
@@ -188,9 +202,13 @@ def score(
 
     # Предмет совсем не похож на деятельность компании — хорошая цена не вытягивает
     # закупку в «Рассмотреть»: итог не выше порога «Пропустить».
-    mismatch = subject_mismatch(results)
+    mismatch = subject_mismatch(results, groups, fit_min)
+    failed = [] if mismatch else failed_conditions(results)
     if mismatch and not stopped:
         total = min(total, max(profile.thresholds.consider - 1, 0))
+    # «Участвовать» — только если выполнены все явные условия профиля
+    elif failed and not stopped and not no_data:
+        total = min(total, max(profile.thresholds.participate - 1, 0))
 
     result = ScoreResultData(
         total=total,
@@ -201,5 +219,7 @@ def score(
         rules=results,
         justification="",
     )
-    result.justification = build_justification(result, no_data=no_data, mismatch=mismatch)
+    result.justification = build_justification(
+        result, no_data=no_data, mismatch=mismatch, failed=failed
+    )
     return result
