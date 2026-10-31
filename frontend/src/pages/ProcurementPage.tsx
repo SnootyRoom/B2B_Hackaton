@@ -354,42 +354,88 @@ function useRuleNumbers(score: ScoreResult) {
   }, [score.rules]);
 }
 
+/** Разделы шаблонного обоснования (scoring/justification.py) и как их показываем */
+const SHORT_SECTIONS: Record<string, { title: string; mark: string }> = {
+  'Стоп-фактор': { title: 'Стоп-фактор', mark: '✕' },
+  'Оценка ограничена': { title: 'Почему не выше', mark: '!' },
+  Плюсы: { title: 'Плюсы', mark: '+' },
+  Минусы: { title: 'Минусы', mark: '−' },
+  'Не хватает данных': { title: 'Не хватает данных', mark: '?' },
+};
+const SECTION_RE = new RegExp(`(?:^|\\.\\s+)(${Object.keys(SHORT_SECTIONS).join('|')}):\\s*`, 'g');
+
+/** «Рекомендация: …. Плюсы: a; b. Минусы: c.» → вводная фраза и разделы со списками пунктов */
+function splitJustification(text: string) {
+  const matches = [...text.matchAll(SECTION_RE)];
+  const lead = (matches.length ? text.slice(0, matches[0]!.index) : text).replace(/^Рекомендация:\s*/, '');
+  const sections = matches.map((m, i) => {
+    const body = text.slice(m.index + m[0].length, matches[i + 1]?.index ?? text.length).replace(/\.\s*$/, '');
+    const items = body.split(/;\s+/).map((s) => s.charAt(0).toUpperCase() + s.slice(1));
+    return { key: m[1]!, items };
+  });
+  return { lead: lead.trim().replace(/\.$/, ''), sections };
+}
+
 /** Тёмная карточка «Коротко»: обоснование, где [rule_id] превращается в номер правила */
 function Short({ score, setHovered }: { score: ScoreResult; setHovered: (id: string | null) => void }) {
   const numbers = useRuleNumbers(score);
-  const parts: ReactNode[] = [];
-  const re = /\[([\w.-]+)\]/g;
-  const text = score.justification;
-  let last = 0;
-  let m: RegExpExecArray | null;
-  while ((m = re.exec(text))) {
-    const ruleId = m[1]!;
-    parts.push(text.slice(last, m.index));
-    if (numbers[ruleId]) {
-      parts.push(
-        <button
-          key={m.index}
-          type="button"
-          onMouseEnter={() => setHovered(ruleId)}
-          onMouseLeave={() => setHovered(null)}
-          onFocus={() => setHovered(ruleId)}
-          onBlur={() => setHovered(null)}
-          onClick={() => document.getElementById(`res-${ruleId}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
-          className="mx-0.5 inline-grid h-5 min-w-5 place-items-center rounded-full bg-white/25 px-1.5 align-text-top text-xs font-bold text-white hover:bg-white hover:text-brand"
-          title="Показать правило"
-        >
-          {numbers[ruleId]}
-        </button>,
-      );
+  const withRefs = (text: string) => {
+    const parts: ReactNode[] = [];
+    const re = /\[([\w.-]+)\]/g;
+    let last = 0;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(text))) {
+      const ruleId = m[1]!;
+      parts.push(text.slice(last, m.index).replace(/\s+$/, ' '));
+      if (numbers[ruleId]) {
+        parts.push(
+          <button
+            key={m.index}
+            type="button"
+            onMouseEnter={() => setHovered(ruleId)}
+            onMouseLeave={() => setHovered(null)}
+            onFocus={() => setHovered(ruleId)}
+            onBlur={() => setHovered(null)}
+            onClick={() => document.getElementById(`res-${ruleId}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+            className="mx-0.5 inline-grid h-5 min-w-5 place-items-center rounded-full bg-white/25 px-1.5 align-text-top text-xs font-bold text-white hover:bg-white hover:text-brand"
+            title="Показать правило"
+          >
+            {numbers[ruleId]}
+          </button>,
+        );
+      }
+      last = m.index + m[0].length;
     }
-    last = m.index + m[0].length;
-  }
-  parts.push(text.slice(last));
+    parts.push(text.slice(last));
+    return parts;
+  };
+  const { lead, sections } = splitJustification(score.justification);
 
   return (
     <section className="rounded-2xl bg-brand p-5 text-white shadow-[0_14px_30px_-14px_rgba(214,32,47,0.6)] sm:p-6">
       <h2 className="mb-2.5 text-[17px] font-bold">Коротко</h2>
-      <p className="leading-relaxed">{parts}</p>
+      {sections.length === 0 ? (
+        <p className="leading-relaxed">{withRefs(score.justification)}</p>
+      ) : (
+        <div className="space-y-4">
+          {lead && <p className="font-semibold leading-snug">{withRefs(lead.charAt(0).toUpperCase() + lead.slice(1))}</p>}
+          {sections.map(({ key, items }) => (
+            <div key={key}>
+              <h3 className="mb-1.5 text-xs font-bold uppercase tracking-wide text-white/75">{SHORT_SECTIONS[key]!.title}</h3>
+              <ul className="space-y-1.5">
+                {items.map((item, i) => (
+                  <li key={i} className="flex gap-2 leading-snug">
+                    <span aria-hidden className="mt-px grid h-5 w-5 shrink-0 place-items-center rounded-full bg-white/20 text-xs font-bold">
+                      {SHORT_SECTIONS[key]!.mark}
+                    </span>
+                    <span className="min-w-0">{withRefs(item)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
       {score.justification_source === 'llm' && (
         <p className="mt-3 text-xs text-white/80">Текст составлен ИИ по уже посчитанной оценке — сама оценка от него не зависит.</p>
       )}
