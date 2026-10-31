@@ -45,7 +45,11 @@ class LLMUnavailable(Exception):
 
 
 class LLMBadAnswer(Exception):
-    """Провайдер ответил, но не JSON-объектом."""
+    """Провайдер ответил, но не JSON-объектом. content — текст ответа (может быть оборван)."""
+
+    def __init__(self, reason: str, content: str = "") -> None:
+        super().__init__(reason)
+        self.content = content
 
 
 class LLMCache(Protocol):
@@ -219,12 +223,13 @@ class LLMClient:
             if isinstance(e, httpx.HTTPStatusError):
                 log.warning("LLM ответ %s: %s", e.response.status_code, e.response.text[:500])
             raise LLMUnavailable(type(e).__name__) from e
+        content = ""
         try:
-            content = resp.json()["choices"][0]["message"]["content"]
-            data = _extract_json(str(content))
+            content = str(resp.json()["choices"][0]["message"]["content"])
+            data = _extract_json(content)
         except (KeyError, IndexError, TypeError, ValueError) as e:
             log.warning("LLM %s: ответ не JSON (%s)", self.model, type(e).__name__)
-            raise LLMBadAnswer(type(e).__name__) from e
+            raise LLMBadAnswer(type(e).__name__, content) from e
 
         self._cache.set(key, data)
         return data

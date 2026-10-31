@@ -4,11 +4,14 @@ LLM только предлагает правила; каждое провер�
 При ошибке — один повтор с текстом ошибки, затем LLMError с понятным сообщением.
 """
 
+import contextlib
 import json
 import re
 
 from pydantic import ValidationError
 
+from app.core.config import get_settings
+from app.embeddings import service as embeddings
 from app.llm.client import (
     JsonObject,
     LLMBadAnswer,
@@ -114,6 +117,10 @@ def only_to_stop(raw: JsonObject, spec: FieldSpec) -> JsonObject:
     return {**raw, "operator": Operator.in_, "value": others}
 
 
+# Версия проверок ответа в коде (категории ОКПД2, спасение оборванного ответа). Меняется вместе
+# с ними: по ней scripts/calibrate.py понимает, что кэшированные правила надо разобрать заново
+RULES_VERSION = "2"
+
 PARSE_ERROR_MESSAGE = "Не удалось разобрать текст, задайте правила вручную"
 UNAVAILABLE_MESSAGE = "Разбор текста временно недоступен, задайте правила вручную"
 
@@ -187,10 +194,39 @@ def catalog_description() -> str:
     return "\n".join(lines)
 
 
-def okpd2_rule(categories: list[object], rules: list[ScoringRule]) -> ScoringRule | None:
+def _closeness(a: str, b: str) -> float | None:
+    """Косинусная близость двух коротких текстов (e5, оба как запрос); None — модели нет."""
+    va, vb = embeddings.query_vector(a), embeddings.query_vector(b)
+    if va is None or vb is None:
+        return None
+    return sum(x * y for x, y in zip(va, vb, strict=True))
+
+
+def fitting_categories(names: list[str], activities: list[str]) -> list[str]:
+    """Категории ОКПД2, близкие по смыслу к деятельности компании. Модель иногда берёт соседнюю
+    категорию, когда своей нет в справочнике (кухонное оборудование → видеонаблюдение); неверный
+    код хуже никакого. Без модели эмбеддингов или описания деятельности категории не проверяются."""
+    threshold = get_settings().okpd2_category_min
+    kept = []
+    for name in names:
+        found = [c for a in activities if (c := _closeness(name, a)) is not None]
+        if not found or max(found) >= threshold:
+            kept.append(name)
+    return kept
+
+
+def okpd2_rule(
+    categories: list[object], rules: list[ScoringRule], description: str = ""
+) -> ScoringRule | None:
     """Правило «коды ОКПД2 профиля» по выбранным категориям; коды, названные пользователем,
     уже стоят в его правиле — добавляем к нему. Код точнее смысла, поэтому важность 3."""
     names = [str(c) for c in categories if c in OKPD2_CATEGORIES]
+    activities = [
+        str(r.value)
+        for r in rules
+        if r.field == "subject" and r.operator == Operator.semantic_match and r.value
+    ] or ([description] if description.strip() else [])
+    names = fitting_categories(names, activities)
     codes = codes_for(names)
     if not codes:
         return None
@@ -267,7 +303,8 @@ def _to_result(data: JsonObject, text: str) -> tuple[ParseProfileResult | None, 
     rules = without_needless_regions(rules, text)
     with_paired_regions(rules)
     categories = data.get("okpd2_categories")
-    okpd_rule = okpd2_rule(categories if isinstance(categories, list) else [], rules)
+    description = str(data.get("company_description") or "")
+    okpd_rule = okpd2_rule(categories if isinstance(categories, list) else [], rules, description)
     if okpd_rule is not None:
         rules.append(okpd_rule)
 
@@ -280,19 +317,59 @@ def _to_result(data: JsonObject, text: str) -> tuple[ParseProfileResult | None, 
     return result, errors
 
 
+BROKEN_ANSWER_HINT = (
+    "\n\nВажно: ответ должен быть одним коротким JSON-объектом по схеме. Каждое условие — "
+    "одно правило, без повторов; label — несколько слов."
+)
+SALVAGED_NOTE = "Ответ ИИ оборвался: проверьте, все ли условия из текста попали в правила"
+
+
+def salvage(content: str) -> JsonObject | None:
+    """Целые правила из оборванного ответа: модель иногда зацикливается и обрывается на середине.
+    Повторы одного и того же правила убираются. None — ни одного целого правила нет."""
+    head = re.search(r'"rules"\s*:\s*\[', content)
+    if head is None:
+        return None
+    decoder = json.JSONDecoder()
+    rules: list[object] = []
+    seen: set[str] = set()
+    pos = head.end()
+    while True:
+        while pos < len(content) and content[pos] in " \t\r\n,":
+            pos += 1
+        try:
+            item, pos = decoder.raw_decode(content, pos)
+        except ValueError:
+            break
+        key = json.dumps(item, ensure_ascii=False, sort_keys=True)
+        if isinstance(item, dict) and key not in seen:
+            seen.add(key)
+            rules.append(item)
+    if not rules:
+        return None
+    data: JsonObject = {"rules": rules}
+    for field in ("okpd2_categories", "company_description"):
+        m = re.search(rf'"{field}"\s*:\s*', content[pos:])
+        if m is not None:
+            with contextlib.suppress(ValueError):
+                data[field] = decoder.raw_decode(content, pos + m.end())[0]
+    return data
+
+
 def _ask(
     client: LLMClient,
     prompt: Prompt,
     user_message: str,
     text: str,
     retry: list[dict[str, str]] | None = None,
-) -> tuple[ParseProfileResult | None, list[str], JsonObject | None]:
+) -> tuple[ParseProfileResult | None, list[str], JsonObject | None, str]:
+    """Результат, ошибки, ответ модели и — если ответ не JSON — его текст для salvage."""
     try:
         data = client.complete_json(prompt, user_message, RESPONSE_SCHEMA, extra_messages=retry)
-    except LLMBadAnswer:
-        return None, ["Ответ должен быть JSON-объектом по схеме"], None
+    except LLMBadAnswer as e:
+        return None, ["Ответ должен быть JSON-объектом по схеме"], None, e.content
     result, errors = _to_result(data, text)
-    return result, errors, data
+    return result, errors, data, ""
 
 
 def parse_text(text: str, client: LLMClient) -> ParseProfileResult:
@@ -302,8 +379,19 @@ def parse_text(text: str, client: LLMClient) -> ParseProfileResult:
     user_message = f"{catalog_description()}\n\nТекст пользователя:\n{text.strip()}"
 
     try:
-        result, errors, data = _ask(client, prompt, user_message, text)
-        if errors or result is None:
+        result, errors, data, broken = _ask(client, prompt, user_message, text)
+        if result is None and data is None:
+            # ответ оборвался или не JSON: показывать его модели бесполезно — при temperature 0
+            # она повторит то же самое; просим заново с напоминанием отвечать коротко
+            result, errors, _, broken_again = _ask(
+                client, prompt, user_message + BROKEN_ANSWER_HINT, text
+            )
+            if result is None:
+                salvaged = salvage(broken_again) or salvage(broken)
+                if salvaged is not None:
+                    result, errors = _to_result(salvaged, text)
+                    errors.append(SALVAGED_NOTE)
+        elif errors or result is None:
             retry = [
                 {"role": "assistant", "content": json.dumps(data, ensure_ascii=False)},
                 {
@@ -311,7 +399,7 @@ def parse_text(text: str, client: LLMClient) -> ParseProfileResult:
                     "content": "Исправь ошибки и верни JSON целиком заново:\n" + "\n".join(errors),
                 },
             ]
-            result, errors, _ = _ask(client, prompt, user_message, text, retry)
+            result, errors, _, _ = _ask(client, prompt, user_message, text, retry)
     except LLMUnavailable as e:
         raise LLMError(ErrorCode.LLM_UNAVAILABLE, UNAVAILABLE_MESSAGE) from e
 

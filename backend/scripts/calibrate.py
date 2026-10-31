@@ -39,8 +39,8 @@ os.environ.setdefault("CUSTOMERS_DIR", str(REPO / "data" / "customers"))
 
 from app.egrul import offline
 from app.embeddings import service as embeddings
-from app.llm.client import LLMClient, load_prompt
-from app.llm.parse_profile import parse_text
+from app.llm.client import LLMClient, LLMError, load_prompt
+from app.llm.parse_profile import RULES_VERSION, parse_text
 from app.parsers.registry import ParseError, parse_file
 from app.schemas.customer import CustomerData
 from app.schemas.procurement import ProcurementData
@@ -88,6 +88,8 @@ def notice_path(file: str, samples: Path | None) -> Path:
 
 
 def profile_rules(profiles: dict[str, str], cache_path: Path) -> dict[str, ScoringProfileData]:
+    """Правила профилей. Профиль, который LLM не смог разобрать, в ответ не попадает:
+    его сценарии засчитываются как ошибки (в продукте пользователь задал бы правила вручную)."""
     cached: dict[str, dict[str, object]] = (
         json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {}
     )
@@ -96,16 +98,22 @@ def profile_rules(profiles: dict[str, str], cache_path: Path) -> dict[str, Scori
     out: dict[str, ScoringProfileData] = {}
     for name, text in profiles.items():
         # ключ — профиль + версия промпта + текст: разные файлы сценариев не мешают друг другу,
-        # новая версия промпта разбирается заново
+        # новая версия промпта или проверок в коде разбирается заново
         digest = hashlib.sha256(" ".join(text.split()).encode()).hexdigest()[:10]
-        key = f"{name}|v{version}|{digest}"
+        key = f"{name}|v{version}.{RULES_VERSION}|{digest}"
         if key not in cached:
             if not client.enabled:
                 raise SystemExit(f"Нет правил для {name} в {cache_path} и не настроен LLM")
-            parsed = parse_text(text, client)
+            try:
+                parsed = parse_text(text, client)
+            except LLMError:
+                continue
             cached[key] = {"text": text, "rules": parsed.model_dump(mode="json")["rules"]}
+            # сразу на диск: сбой на следующем профиле не теряет уже разобранные
+            cache_path.write_text(
+                json.dumps(cached, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
         out[name] = ScoringProfileData.model_validate({"rules": cached[key]["rules"]})
-    cache_path.write_text(json.dumps(cached, ensure_ascii=False, indent=2), encoding="utf-8")
     return out
 
 
@@ -154,6 +162,7 @@ def main() -> int:
 
     spec = yaml.safe_load((DATASET / args.scenarios).read_text(encoding="utf-8"))
     profiles = profile_rules({k: v["text"] for k, v in spec["profiles"].items()}, args.rules)
+    unparsed = len(spec["profiles"]) - len(profiles)
     now = args.now or str(spec.get("as_of") or "published")
     fixed_now = None if now == "published" else datetime.fromisoformat(now).replace(tzinfo=UTC)
     print(f"Сценарии: {args.scenarios}, момент оценки: {now}")
@@ -170,6 +179,9 @@ def main() -> int:
     semantic = SemanticThresholds(args.c0 or base.c0, args.c1 or base.c1)
     print(f"Пороги semantic_match: c0={semantic.c0}, c1={semantic.c1}")
 
+    # модель эмбеддингов загружается при первом вызове; в сервисе она уже загружена в воркере,
+    # поэтому в замер времени оценки загрузка не входит
+    similarity("прогрев", "прогрев")
     rec_ok = range_ok = total = 0
     times: list[float] = []
     for sc in spec["scenarios"]:
@@ -182,6 +194,11 @@ def main() -> int:
                 print(f"{sc['id']:5} {path.stem[:22]:22} пропуск: {e.code}")
             continue
         lot = lots[0] if sc.get("lot") is None else lots[int(sc["lot"]) - 1]
+        if sc["profile"] not in profiles:
+            total += 1  # профиль не разобран — сценарий засчитан как ошибка
+            if not args.quiet:
+                print(f"{sc['id']:5} {path.stem[:22]:22} профиль не разобран LLM ✗")
+            continue
         t0 = time.perf_counter()
         r = score(
             profiles[sc["profile"]],
@@ -217,7 +234,9 @@ def main() -> int:
         f"\nСценариев оценено: {total} из {len(spec['scenarios'])}\n"
         f"Точность рекомендации: {rec_ok}/{total} = {rec_ok / total:.0%} (цель ≥ 80%)\n"
         f"Попадание в диапазон:  {range_ok}/{total} = {range_ok / total:.0%} (цель ≥ 70%)\n"
-        f"Время оценки: макс {max(times) * 1000:.0f} мс"
+        f"Время оценки: макс {max(times, default=0) * 1000:.0f} мс\n"
+        f"Профилей не разобрано LLM: {unparsed} из {len(spec['profiles'])} "
+        "(их сценарии засчитаны как ошибки)"
     )
     if args.samples:
         print("* — настоящее извещение ЕИС из --samples")

@@ -3,8 +3,9 @@ import json
 import httpx
 import pytest
 
+from app.llm import parse_profile
 from app.llm.client import LLMClient, LLMError, LLMUnavailable, load_prompt
-from app.llm.parse_profile import invented_money, parse_text, text_numbers
+from app.llm.parse_profile import SALVAGED_NOTE, invented_money, parse_text, salvage, text_numbers
 from app.parsers.regions import REGIONS
 from app.schemas.common import ErrorCode
 from app.scoring.defaults import DEFAULT_RULE_IDS
@@ -51,6 +52,12 @@ BAD_RULE = {
     "soft_margin": 0.2,
     "label": "Перепутанный диапазон",
 }
+
+
+@pytest.fixture(autouse=True)
+def no_embeddings(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Модель эмбеддингов в тестах не грузим: категории ОКПД2 по смыслу не проверяются."""
+    monkeypatch.setattr(parse_profile, "_closeness", lambda a, b: None)
 
 
 def fake_llm(answers: list[object]) -> tuple[LLMClient, list[dict[str, object]]]:
@@ -346,3 +353,34 @@ def test_only_on_other_field_is_ordinary_rule() -> None:
     rule = {**GOOD_ANSWER["rules"][0], "kind": "only"}  # type: ignore[dict-item]
     client, _ = fake_llm([{**GOOD_ANSWER, "rules": [rule]}])
     assert parse_text(TEXT, client).rules[0].kind == "weighted"
+
+
+def test_category_far_from_activity_is_dropped(monkeypatch: pytest.MonkeyPatch) -> None:
+    near = "программное обеспечение и IT-услуги"
+    far = "оборудование видеонаблюдения"
+    monkeypatch.setattr(parse_profile, "_closeness", lambda a, b: 0.92 if a == near else 0.80)
+    client, _ = fake_llm([{**GOOD_ANSWER, "okpd2_categories": [near, far]}])
+    okpd = next(r for r in parse_text(TEXT, client).rules if r.field == "okpd2_codes")
+    assert far not in okpd.label and near in okpd.label
+
+
+def test_broken_answer_is_asked_again_without_showing_it() -> None:
+    client, reqs = fake_llm(["это не json", GOOD_ANSWER])
+    assert parse_text(TEXT, client).rules[0].field == "nmck"
+    messages = reqs[1]["messages"]
+    assert [m["role"] for m in messages] == ["system", "user"]  # type: ignore[index,union-attr]
+    assert "коротким JSON" in messages[1]["content"]  # type: ignore[index]
+
+
+def test_cut_answer_keeps_whole_rules() -> None:
+    rule = json.dumps(GOOD_ANSWER["rules"][0], ensure_ascii=False)  # type: ignore[index]
+    cut = '{"rules": [' + rule + ", " + rule + ', {"field": "method", "lab'
+    client, _ = fake_llm([cut, cut])
+    p = parse_text(TEXT, client)
+    assert [r.id for r in p.rules if r.field == "nmck"] == ["r1"]  # повтор убран
+    assert SALVAGED_NOTE in p.unparsed
+
+
+def test_salvage_without_whole_rules_gives_none() -> None:
+    assert salvage('{"rules": [{"field": "nm') is None
+    assert salvage("не json") is None
