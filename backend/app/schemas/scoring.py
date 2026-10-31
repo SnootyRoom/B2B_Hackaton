@@ -257,6 +257,12 @@ class GroupWeights(BaseModel):
 class Thresholds(BaseModel):
     participate: int = Field(default=70, ge=0, le=100)
     consider: int = Field(default=40, ge=0, le=100)
+    fit_min: int = Field(
+        default=50,
+        ge=0,
+        le=100,
+        description="Соответствие предмета ниже — оценка не выше «Пропустить»",
+    )
 
     @model_validator(mode="after")
     def _check(self) -> Self:

@@ -1,5 +1,6 @@
 """Частичные баллы правил s ∈ [0; 1] (аналитика, «Частичный балл правила»)."""
 
+from collections.abc import Mapping
 from dataclasses import dataclass
 
 from app.schemas.scoring import Operator, RuleValue
@@ -61,6 +62,27 @@ def numeric_score(op: Operator, x: float, value: RuleValue, margin: float) -> fl
     if x > b:
         return _lte(x, b, margin)
     return 1.0
+
+
+def prefix_share(
+    x: FieldValue, value: RuleValue, shares: Mapping[str, float] | None = None
+) -> float | None:
+    """Доля закупки с кодами, начинающимися с одного из префиксов; нет кодов → None.
+
+    shares — доли стоимости по кодам (fields.okpd2_shares); без них — доля кодов.
+    Для взвешенного правила: одна случайно совпавшая позиция из 14 — это не профильная закупка.
+    """
+    codes = [c.strip() for c in x] if isinstance(x, list) else []
+    if not codes:
+        return None
+    prefixes = [_norm(str(v)) for v in value] if isinstance(value, list) else []
+
+    def hit(c: str) -> bool:
+        return any(c.startswith(p) for p in prefixes)
+
+    if shares:
+        return min(1.0, sum(v for c, v in shares.items() if hit(c)))
+    return sum(hit(c) for c in codes) / len(codes)
 
 
 def semantic_score(similarity: float, t: SemanticThresholds) -> float:

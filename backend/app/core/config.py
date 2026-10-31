@@ -36,9 +36,10 @@ class Settings(BaseSettings):
     demo_dir: Path = Path("/repo/data/demo")
 
     # Пороги semantic_match: калибруются ролью 3, в коде не хардкодятся
-    # e5 сжимает близость в 0,78–0,89; пороги подобраны scripts/calibrate.py по tests/dataset
-    semantic_c0: float = 0.86
-    semantic_c1: float = 0.90
+    # e5 сжимает близость в 0,78–0,89; пороги подобраны по tests/dataset (scenarios.yaml и
+    # scenarios_draft.yaml). Предмет решают ОКПД2 и смысл вместе, поэтому порог ниже прежних 0,86
+    semantic_c0: float = 0.82
+    semantic_c1: float = 0.88
 
     # Тесты: выполнять задачи Celery синхронно, без брокера
     celery_eager: bool = False

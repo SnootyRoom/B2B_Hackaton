@@ -17,9 +17,17 @@ from app.llm.client import (
     Prompt,
     load_prompt,
 )
+from app.llm.okpd2 import OKPD2_BUNDLES, OKPD2_CLASSES, OKPD2_GROUPS
 from app.parsers.regions import REGIONS
 from app.schemas.common import ErrorCode
-from app.schemas.scoring import FIELD_CATALOG, ParseProfileResult, ScoringRule
+from app.schemas.scoring import (
+    FIELD_CATALOG,
+    FieldSpec,
+    Operator,
+    ParseProfileResult,
+    RuleKind,
+    ScoringRule,
+)
 from app.scoring.defaults import with_defaults
 from app.scoring.templates import ENUM_LABELS
 
@@ -46,7 +54,15 @@ RESPONSE_SCHEMA: JsonObject = {
             "items": {
                 "type": "object",
                 "additionalProperties": False,
-                "required": ["field", "operator", "value", "weight", "soft_margin", "label"],
+                "required": [
+                    "field",
+                    "operator",
+                    "value",
+                    "weight",
+                    "soft_margin",
+                    "label",
+                    "strict",
+                ],
                 "properties": {
                     "field": {"type": "string", "enum": sorted(FIELD_CATALOG)},
                     "operator": {"type": "string"},
@@ -54,6 +70,7 @@ RESPONSE_SCHEMA: JsonObject = {
                     "weight": {"type": "integer", "enum": [1, 2, 3]},
                     "soft_margin": {"type": "number"},
                     "label": {"type": "string"},
+                    "strict": {"type": "boolean"},
                 },
             },
         },
@@ -78,7 +95,65 @@ def catalog_description() -> str:
             line += f"; значения: {vals}"
         lines.append(line)
     lines.append("\nДопустимые регионы (для region и customer.region): " + "; ".join(REGIONS))
+    lines.append("\nКлассы ОКПД2 (для okpd2_codes):")
+    lines.extend(f"- {code} {name}" for code, name in OKPD2_CLASSES.items())
+    lines.append("\nЧастые группы ОКПД2 (уточнение класса):")
+    lines.extend(f"- {code} {name}" for code, name in OKPD2_GROUPS.items())
+    lines.append("\nНаборы кодов ОКПД2 для частых видов деятельности (бери набор целиком):")
+    lines.extend(f"- {name}: {codes}" for name, codes in OKPD2_BUNDLES.items())
     return "\n".join(lines)
+
+
+# Субъекты, которые для поставщика — один рынок: компания из Подмосковья работает и в Москве
+_REGION_PAIRS = [
+    ("Москва", "Московская область"),
+    ("Санкт-Петербург", "Ленинградская область"),
+    ("Севастополь", "Республика Крым"),
+]
+
+
+def _with_pairs(regions: list[str]) -> list[str]:
+    out = list(regions)
+    for a, b in _REGION_PAIRS:
+        for x, y in ((a, b), (b, a)):
+            if x in out and y not in out:
+                out.append(y)
+    return out
+
+
+# Поля, по которым условие «только …» становится стоп-фактором
+_STRICT_FIELDS = ("law", "method", "region")
+
+
+def _strict_stop(raw: JsonObject, spec: FieldSpec) -> JsonObject | None:
+    """«Работаем только по 44-ФЗ» → стоп-фактор «закупка не по 44-ФЗ»; None — не превращается.
+
+    Взвешенное правило снимает за чужой закон 10–12 баллов, а поставщик в такой закупке
+    участвовать не будет.
+    """
+    value = raw.get("value")
+    if (
+        raw.get("strict") is not True
+        or spec.field not in _STRICT_FIELDS
+        or raw.get("operator") != Operator.in_.value
+        or not isinstance(value, list)
+    ):
+        return None
+    if Operator.not_in in spec.operators:
+        op, other = Operator.not_in, list(value)
+    else:
+        op, other = Operator.in_, [o for o in spec.options or [] if o not in value]
+    if not other:
+        return None
+    return {
+        **raw,
+        "kind": RuleKind.stop.value,
+        "operator": op.value,
+        "value": other,
+        "weight": None,
+        "soft_margin": None,
+        "label": f"Нарушено условие «{raw.get('label', '')}»",
+    }
 
 
 def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
@@ -102,15 +177,28 @@ def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
                     f"Правило {i}: регионов нет в справочнике: {', '.join(map(str, bad))}"
                 )
                 continue
+            if isinstance(value, list):
+                raw = {**raw, "value": _with_pairs([str(r) for r in value])}
+        if spec and spec.field == "okpd2_codes":
+            value = raw.get("value")
+            bad = (
+                [c for c in value if str(c)[:2] not in OKPD2_CLASSES]
+                if isinstance(value, list)
+                else []
+            )
+            if bad:
+                errors.append(
+                    f"Правило {i}: кодов нет среди классов ОКПД2: {', '.join(map(str, bad))}"
+                )
+                continue
+        rule = {**raw, "kind": RuleKind.weighted.value}
+        if spec:
+            rule = _strict_stop(rule, spec) or rule
+        rule.pop("strict", None)
         try:
             rules.append(
                 ScoringRule.model_validate(
-                    {
-                        **raw,
-                        "id": f"r{i}",
-                        "group": spec.group if spec else "procurement",
-                        "kind": "weighted",
-                    }
+                    {**rule, "id": f"r{i}", "group": spec.group if spec else "procurement"}
                 )
             )
         except ValidationError as e:

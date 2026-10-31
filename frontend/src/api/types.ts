@@ -115,6 +115,8 @@ export interface GroupWeights {
 export interface Thresholds {
   participate: number;
   consider: number;
+  /** Соответствие предмета ниже — оценка не выше «Пропустить»; по умолчанию 50 */
+  fit_min?: number;
 }
 
 export interface ScoringProfile {

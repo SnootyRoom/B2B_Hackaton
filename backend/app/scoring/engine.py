@@ -5,7 +5,7 @@
 """
 
 import math
-from collections.abc import Callable
+from collections.abc import Callable, Mapping
 
 from app.core.config import get_settings
 from app.schemas.score import (
@@ -23,6 +23,7 @@ from app.scoring.operators import (
     SemanticThresholds,
     boolean_holds,
     numeric_score,
+    prefix_share,
     semantic_score,
 )
 from app.scoring.templates import rule_text
@@ -31,6 +32,8 @@ from app.scoring.templates import rule_text
 Similarity = Callable[[str, str], float | None]
 
 LOW_DATA_SHARE = 0.5
+# Важность «высокая»: невыполненное условие закупки с таким весом не даёт рекомендации «Участвовать»
+IMPORTANT_WEIGHT = 3
 
 
 def _round(x: float) -> int:
@@ -47,8 +50,9 @@ def _partial(
     x: FieldValue,
     similarity: Similarity | None,
     semantic: SemanticThresholds,
+    shares: FieldValue = None,
 ) -> float | None:
-    """s ∈ [0; 1] или None, если данных нет."""
+    """s ∈ [0; 1] или None, если данных нет; shares — доли стоимости по кодам ОКПД2."""
     if x is None:
         return None
     op = rule.operator
@@ -57,12 +61,68 @@ def _partial(
             return None
         c = similarity(x, str(rule.value))
         return None if c is None else semantic_score(c, semantic)
+    if op == Operator.prefix_in and rule.kind == RuleKind.weighted:
+        return prefix_share(x, rule.value, shares if isinstance(shares, dict) else None)
     if op in NUMERIC_OPERATORS:
         if not isinstance(x, int | float) or isinstance(x, bool):
             return None
         margin = 0.0 if rule.kind == RuleKind.stop else (rule.soft_margin or 0.0)
         return numeric_score(op, float(x), rule.value, margin)
     return 1.0 if boolean_holds(op, x, rule.value) else 0.0
+
+
+def _limit(
+    profile: ScoringProfileData,
+    groups: list[GroupScore],
+    results: list[RuleOutcome],
+    weights: Mapping[str, int],
+    total: int,
+) -> tuple[int, str] | None:
+    """Потолок итога и его причина (аналитика, «Ограничения итога») или None.
+
+    Средневзвешенная оценка не умеет «вето»: непрофильная закупка с подходящей суммой и
+    надёжным заказчиком набирает 65, а одно невыполненное важное условие снимает лишь 8–12
+    баллов. Поэтому: соответствие предмета ниже fit_min → не выше «Пропустить»; не выполнено
+    условие закупки высокой важности → не выше «Рассмотреть». Вклады правил при этом не
+    пересчитываются: их сумма может быть больше итога.
+    """
+    t = profile.thresholds
+    fit = next(g for g in groups if g.group == RuleGroup.fit)
+    # Смысловая близость одна профильный предмет от непрофильного не отличает: без кодов ОКПД2
+    # или ключевых слов закупку не отсекаем, чтобы не потерять подходящую
+    exact = any(
+        r.group == RuleGroup.fit
+        and r.kind == RuleKind.weighted
+        and r.status == RuleStatus.applied
+        and r.operator != Operator.semantic_match
+        for r in results
+    )
+    if (
+        exact
+        and fit.score is not None
+        and fit.effective_weight > 0
+        and fit.score < t.fit_min
+        and total >= t.consider
+    ):
+        return max(t.consider - 1, 0), (
+            f"предмет закупки не соответствует профилю — соответствие {fit.score:.0f} из 100, "
+            f"порог {t.fit_min}"
+        )
+    if total >= t.participate:
+        weak = [
+            r
+            for r in results
+            if r.group == RuleGroup.procurement
+            and r.kind == RuleKind.weighted
+            and r.status == RuleStatus.applied
+            and weights[r.rule_id] == IMPORTANT_WEIGHT
+            and (r.partial_score or 0.0) < 1.0
+        ]
+        if weak:
+            return max(t.participate - 1, 0), "не выполнено важное условие — " + "; ".join(
+                f"{r.text} [{r.rule_id}]" for r in weak
+            )
+    return None
 
 
 def recommend(
@@ -104,7 +164,7 @@ def score(
             text="",
         )
         if rule.enabled:
-            s = _partial(rule, x, similarity, semantic)
+            s = _partial(rule, x, similarity, semantic, fields.get("okpd2_shares"))
             if s is None:
                 res.status = RuleStatus.no_data
             else:
@@ -168,6 +228,9 @@ def score(
     stopped = bool(stop_ids)
     no_data = included_w == 0
     total = 0 if stopped or no_data else _round(total_f)
+    limit = None if stopped or no_data else _limit(profile, groups, results, weights, total)
+    if limit is not None:
+        total = min(total, limit[0])
 
     result = ScoreResultData(
         total=total,
@@ -178,5 +241,7 @@ def score(
         rules=results,
         justification="",
     )
-    result.justification = build_justification(result, no_data=no_data)
+    result.justification = build_justification(
+        result, no_data=no_data, limit=limit[1] if limit else None
+    )
     return result

@@ -6,6 +6,7 @@
 
 Запуск из папки backend:
     .venv/Scripts/python scripts/calibrate.py            # правила из scripts/calibrate_rules.json
+    .venv/Scripts/python scripts/calibrate.py --scenarios ../tests/dataset/scenarios_draft.yaml
     .venv/Scripts/python scripts/calibrate.py --c0 0.85 --c1 0.9 -q   # попробовать другие пороги
 """
 
@@ -22,6 +23,8 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from app.core.config import get_settings
+from app.egrul import offline
 from app.embeddings import service as embeddings
 from app.llm.client import LLMClient
 from app.llm.parse_profile import parse_text
@@ -58,8 +61,12 @@ def load_env(path: Path) -> None:
 
 
 def load_customer(inn: str | None) -> CustomerData | None:
+    """Офлайн-профиль из data/customers (как в системе), иначе старый формат роли 5."""
     if not inn:
         return None
+    found = offline.load(inn)
+    if found is not None:
+        return found[0]
     path = DATASET / "customers" / f"{inn}.json"
     if not path.is_file():
         return None
@@ -104,7 +111,10 @@ def main() -> int:
     logging.basicConfig(level=logging.WARNING)
     ap = argparse.ArgumentParser()
     ap.add_argument("--rules", type=Path, default=Path(__file__).with_name("calibrate_rules.json"))
-    ap.add_argument("--now", default="2026-10-31T00:00:00+00:00", help="момент расчёта")
+    ap.add_argument(
+        "--scenarios", type=Path, default=DATASET / "scenarios.yaml", help="файл сценариев"
+    )
+    ap.add_argument("--now", help="момент расчёта; по умолчанию as_of из файла или 2026-10-31")
     ap.add_argument("-v", "--verbose", action="store_true", help="правила по каждой закупке")
     ap.add_argument(
         "--c0", type=float, help="порог semantic_match: 0 баллов (по умолчанию из настроек)"
@@ -117,9 +127,11 @@ def main() -> int:
     args = ap.parse_args()
     load_env(REPO / ".env")
 
-    spec = yaml.safe_load((DATASET / "scenarios.yaml").read_text(encoding="utf-8"))
+    get_settings().customers_dir = REPO / "data" / "customers"
+    spec = yaml.safe_load(args.scenarios.read_text(encoding="utf-8"))
     profiles = profile_rules({k: v["text"] for k, v in spec["profiles"].items()}, args.rules)
-    now = datetime.fromisoformat(args.now).astimezone(UTC)
+    as_of = args.now or (f"{spec['as_of']}T00:00:00+03:00" if spec.get("as_of") else None)
+    now = datetime.fromisoformat(as_of or "2026-10-31T00:00:00+00:00").astimezone(UTC)
     if args.weights:
         w = dict(
             zip(

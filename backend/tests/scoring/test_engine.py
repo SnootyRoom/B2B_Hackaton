@@ -115,6 +115,90 @@ def test_analytics_example_78() -> None:
     assert sum(x.contribution or 0 for x in r.rules) == pytest.approx(78, abs=0.01)
 
 
+def test_okpd2_weighted_rule_is_share_of_codes() -> None:
+    # одна случайно совпавшая позиция из четырёх — не профильная закупка
+    prof = ScoringProfileData(
+        rules=[rule("f1", "okpd2_codes", Operator.prefix_in, ["20.59"], weight=3)]
+    )
+    codes = ["22.29.25.000", "17.23.13.199", "32.99.12.110", "20.59.59.900"]
+    r = score(prof, {"okpd2_codes": codes})
+    assert r.rules[0].partial_score == pytest.approx(0.25)
+    assert "частично" in r.rules[0].text
+
+
+def test_okpd2_share_by_cost_when_items_priced() -> None:
+    # капремонт на 41 млн ₽ и светильники на 2 млн ₽: профильная закупка, хотя код у 1 из 2 позиций
+    prof = ScoringProfileData(
+        rules=[rule("f1", "okpd2_codes", Operator.prefix_in, ["41.20"], weight=3)]
+    )
+    procurement = {
+        "subject": "Капитальный ремонт здания",
+        "nmck": 43_000_000,
+        "okpd2_codes": ["41.20.40.000", "27.40.25.123"],
+        "items": [
+            {"name": "Капремонт", "okpd2": "41.20.40.000", "price": 41_000_000, "quantity": 1},
+            {"name": "Светильник", "okpd2": "27.40.25.123", "price": 1000, "quantity": 2000},
+        ],
+    }
+    r = score(prof, extract_fields(procurement, None, NOW))
+    assert r.rules[0].partial_score == pytest.approx(41 / 43)
+    # цена известна у одной позиции из трёх → доля кодов закупки (1 из 2)
+    procurement["items"][1]["price"] = None  # type: ignore[index]
+    procurement["items"].append(  # type: ignore[attr-defined]
+        {"name": "Огнетушитель", "okpd2": "28.29.22.110", "price": None, "quantity": 1}
+    )
+    r = score(prof, extract_fields(procurement, None, NOW))
+    assert r.rules[0].partial_score == pytest.approx(0.5)
+
+
+def _limit_profile(region_weight: int) -> ScoringProfileData:
+    return ScoringProfileData(
+        rules=[
+            rule("p1", "nmck", Operator.gte, 1, weight=3),
+            rule("p2", "region", Operator.in_, ["Томская область"], weight=region_weight),
+            rule("f1", "okpd2_codes", Operator.prefix_in, ["62"], weight=3),
+            rule("c1", "customer.status", Operator.in_, ["active"]),
+        ]
+    )
+
+
+def test_subject_mismatch_caps_to_skip() -> None:
+    # сумма, регион и заказчик подходят (без ограничения было бы 65), но предмет чужой
+    fields = {"nmck": 5.0, "region": "Томская область", "okpd2_codes": ["10.51"],
+              "customer.status": "active"}  # fmt: skip
+    r = score(_limit_profile(3), fields)
+    assert r.total == 39
+    assert r.recommendation == Recommendation.skip
+    assert "Оценка ограничена: предмет закупки не соответствует профилю" in r.justification
+
+
+def test_semantic_only_mismatch_does_not_cap() -> None:
+    # без кодов ОКПД2 и ключевых слов предмет не отсекаем: близость e5 одна ненадёжна
+    prof = ScoringProfileData(
+        rules=[
+            rule("p1", "nmck", Operator.gte, 1, weight=3),
+            rule("f1", "subject", Operator.semantic_match, "разработка ПО", weight=3),
+            rule("c1", "customer.status", Operator.in_, ["active"]),
+        ]
+    )
+    fields = {"nmck": 5.0, "subject": "Поставка молока", "customer.status": "active"}
+    r = score(prof, fields, similarity=lambda _t, _q: 0.0)
+    assert r.total == 65
+    assert "Оценка ограничена" not in r.justification
+
+
+def test_failed_important_condition_caps_to_consider() -> None:
+    fields = {"nmck": 5.0, "region": "Москва", "okpd2_codes": ["62.01"],
+              "customer.status": "active"}  # fmt: skip
+    r = score(_limit_profile(3), fields)
+    assert r.total == 69
+    assert r.recommendation == Recommendation.consider
+    assert "не выполнено важное условие" in r.justification and "[p2]" in r.justification
+    # то же условие средней важности оценку не ограничивает
+    r2 = score(_limit_profile(2), fields)
+    assert r2.recommendation == Recommendation.participate and r2.total > 69
+
+
 def test_stop_factor_zeroes_total() -> None:
     p = procurement(application_deadline=NOW - timedelta(hours=1))
     r = score(default_profile(), extract_fields(p, GOOD_CUSTOMER, NOW))

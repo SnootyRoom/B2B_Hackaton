@@ -157,11 +157,11 @@ def _weighted_text(rule: ScoringRule, x: FieldValue, s: float) -> str:
                 else f"{name}: есть нежелательные — {xv}"
             )
         case Operator.prefix_in:
-            return (
-                f"Коды ОКПД2 {xv} совпадают с вашими ({fmt_value(f, v)})"
-                if ok
-                else f"Коды ОКПД2 {xv} не совпадают с вашими ({fmt_value(f, v)})"
-            )
+            if ok:
+                return f"Коды ОКПД2 {xv} совпадают с вашими ({fmt_value(f, v)})"
+            if s > 0:
+                return f"Коды ОКПД2 {xv} совпадают с вашими ({fmt_value(f, v)}) частично"
+            return f"Коды ОКПД2 {xv} не совпадают с вашими ({fmt_value(f, v)})"
         case Operator.contains_any:
             return (
                 f"Предмет закупки содержит ключевые слова ({fmt_value(f, v)})"

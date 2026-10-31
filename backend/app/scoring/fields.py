@@ -7,7 +7,8 @@ from collections.abc import Mapping
 from datetime import UTC, date, datetime
 from decimal import Decimal
 
-FieldValue = float | str | list[str] | bool | None
+# dict — служебное поле okpd2_shares, в каталоге правил его нет
+FieldValue = float | str | list[str] | bool | dict[str, float] | None
 
 
 def _get(obj: object, name: str) -> object:
@@ -73,6 +74,32 @@ def subject_text(procurement: object) -> str:
     return ". ".join(p.strip() for p in parts if p and p.strip())
 
 
+def okpd2_shares(procurement: object) -> dict[str, float] | None:
+    """Доля стоимости позиций по кодам ОКПД2; None — цена известна меньше чем у половины позиций.
+
+    Капремонт на 41 млн ₽ со светильниками и огнетушителем на 2 млн ₽ — профильная закупка,
+    хотя профильный код у одной позиции из пяти.
+    """
+    cost: dict[str, float] = {}
+    coded = priced = 0
+    for item in _get(procurement, "items") or []:  # type: ignore[attr-defined]
+        code = _get(item, "okpd2")
+        if not code:
+            continue
+        coded += 1
+        price = _num(_get(item, "price"))
+        if not price or price <= 0:
+            continue
+        priced += 1
+        qty = _num(_get(item, "quantity"))
+        key = str(code).strip()
+        cost[key] = cost.get(key, 0.0) + price * (qty if qty and qty > 0 else 1.0)
+    total = sum(cost.values())
+    if total <= 0 or priced * 2 < coded:
+        return None
+    return {c: v / total for c, v in cost.items()}
+
+
 def extract_fields(
     procurement: object, customer: object | None, now: datetime
 ) -> dict[str, FieldValue]:
@@ -102,6 +129,7 @@ def extract_fields(
         "restrictions": _str_list(_get(procurement, "restrictions")),
         # пустой список от парсера = кодов в документе нет, а не «коды не совпали»
         "okpd2_codes": _str_list(_get(procurement, "okpd2_codes")) or None,
+        "okpd2_shares": okpd2_shares(procurement),
         "subject": subject_text(procurement) or None,
         "customer.status": s(_get(customer, "status")),
         "customer.age_years": age_years,

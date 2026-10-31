@@ -6,6 +6,21 @@
         "id": "r1",
         "group": "procurement",
         "kind": "weighted",
+        "field": "nmck",
+        "operator": "between",
+        "value": [
+          5000000.0,
+          50000000.0
+        ],
+        "weight": 3,
+        "soft_margin": 0.2,
+        "label": "НМЦК от 5 до 50 млн ₽",
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
         "field": "method",
         "operator": "in",
         "value": [
@@ -18,30 +33,45 @@
         "enabled": true
       },
       {
-        "id": "r2",
+        "id": "r3",
         "group": "procurement",
         "kind": "weighted",
-        "field": "nmck",
-        "operator": "between",
+        "field": "region",
+        "operator": "in",
         "value": [
-          5000000.0,
-          50000000.0
+          "Московская область",
+          "Москва"
         ],
-        "weight": 2,
-        "soft_margin": 0.2,
-        "label": "НМЦК от 5 до 50 млн ₽",
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Московская область",
         "enabled": true
       },
       {
-        "id": "r3",
+        "id": "r4",
         "group": "fit",
         "kind": "weighted",
         "field": "subject",
         "operator": "semantic_match",
-        "value": "Строительство школ, детсадов, административных зданий, кровельные и восстановительные работы",
+        "value": "строительство школ, детсадов, административных зданий, кровельные и восстановительные работы",
         "weight": 3,
         "soft_margin": 0.0,
         "label": "Строительство школ, детсадов, административных зданий, кровельные и восстановительные работы",
+        "enabled": true
+      },
+      {
+        "id": "r5",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "41",
+          "43"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Коды ОКПД2 для строительных работ",
         "enabled": true
       },
       {
@@ -117,14 +147,14 @@
     "rules": [
       {
         "id": "r1",
-        "group": "fit",
+        "group": "procurement",
         "kind": "weighted",
-        "field": "subject",
-        "operator": "semantic_match",
-        "value": "Поставка канцтоваров, мелкий ремонт офисов",
+        "field": "nmck",
+        "operator": "lte",
+        "value": 2000000.0,
         "weight": 3,
-        "soft_margin": 0.0,
-        "label": "Поставка канцтоваров, мелкий ремонт офисов",
+        "soft_margin": 0.2,
+        "label": "НМЦК до 2 млн ₽",
         "enabled": true
       },
       {
@@ -136,21 +166,55 @@
         "value": [
           "quotation"
         ],
-        "weight": 2,
+        "weight": 3,
         "soft_margin": 0.0,
-        "label": "Запрос котировок",
+        "label": "Запросы котировок",
         "enabled": true
       },
       {
         "id": "r3",
         "group": "procurement",
         "kind": "weighted",
-        "field": "nmck",
-        "operator": "lte",
-        "value": 2000000.0,
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Тверская область"
+        ],
         "weight": 3,
-        "soft_margin": 0.2,
-        "label": "НМЦК до 2 млн ₽",
+        "soft_margin": 0.0,
+        "label": "Тверская область",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "subject",
+        "operator": "semantic_match",
+        "value": "поставка канцтоваров, мелкий ремонт офисов",
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Поставка канцтоваров, мелкий ремонт офисов",
+        "enabled": true
+      },
+      {
+        "id": "r5",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "17.12",
+          "17.23",
+          "20.52",
+          "22.29",
+          "25.99",
+          "32.99",
+          "43.99"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Коды ОКПД2 для канцтоваров и мелкого ремонта",
         "enabled": true
       },
       {
@@ -236,33 +300,66 @@
         ],
         "weight": 3,
         "soft_margin": 0.2,
-        "label": "НМЦК от 500 тыс. до 30 млн руб.",
+        "label": "НМЦК от 500 тыс. до 30 млн ₽",
         "enabled": true
       },
       {
         "id": "r2",
         "group": "procurement",
-        "kind": "weighted",
+        "kind": "stop",
         "field": "law",
         "operator": "in",
         "value": [
-          "44"
+          "223",
+          "615",
+          "94",
+          "other"
         ],
-        "weight": 3,
-        "soft_margin": 0.0,
-        "label": "По 44-ФЗ",
+        "weight": null,
+        "soft_margin": null,
+        "label": "Нарушено условие «44-ФЗ»",
         "enabled": true
       },
       {
         "id": "r3",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Камчатский край"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Камчатский край",
+        "enabled": true
+      },
+      {
+        "id": "r4",
         "group": "fit",
         "kind": "weighted",
         "field": "subject",
         "operator": "semantic_match",
-        "value": "Поставка медицинского оборудования, лабораторных реагентов и расходных материалов",
+        "value": "поставка медицинского оборудования, лабораторных реагентов и расходных материалов для государственных больниц",
         "weight": 3,
         "soft_margin": 0.0,
-        "label": "Поставка медицинского оборудования, лабораторных реагентов и расходных материалов",
+        "label": "Поставка медицинского оборудования, лабораторных реагентов и расходных материалов для государственных больниц",
+        "enabled": true
+      },
+      {
+        "id": "r5",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "21.20",
+          "20.59",
+          "32.50"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Коды ОКПД2: 21.20, 20.59, 32.50",
         "enabled": true
       },
       {
@@ -353,14 +450,46 @@
       },
       {
         "id": "r2",
+        "group": "procurement",
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": [
+          "Приморский край"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Приморский край",
+        "enabled": true
+      },
+      {
+        "id": "r3",
         "group": "fit",
         "kind": "weighted",
         "field": "subject",
         "operator": "semantic_match",
-        "value": "Комплексная поставка и монтаж IT-инфраструктуры, включая серверное оборудование, системы хранения данных (СХД), прокладку ВОЛС и монтаж камер видеонаблюдения",
+        "value": "Комплексная поставка и монтаж IT-инфраструктуры, включая серверное оборудование, системы хранения данных (СХД), прокладка ВОЛС и монтаж камер видеонаблюдения, пусконаладка оборудования в ЦОД",
         "weight": 3,
         "soft_margin": 0.0,
-        "label": "Комплексная поставка и монтаж IT-инфраструктуры, включая серверное оборудование, системы хранения данных (СХД), прокладку ВОЛС и монтаж камер видеонаблюдения",
+        "label": "Комплексная поставка и монтаж IT-инфраструктуры, включая серверное оборудование, системы хранения данных (СХД), прокладку ВОЛС и монтаж камер видеонаблюдения, пусконаладка оборудования в ЦОД",
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "group": "fit",
+        "kind": "weighted",
+        "field": "okpd2_codes",
+        "operator": "prefix_in",
+        "value": [
+          "26.20",
+          "26.30",
+          "26.70",
+          "43.21",
+          "42.22"
+        ],
+        "weight": 3,
+        "soft_margin": 0.0,
+        "label": "Коды ОКПД2: 26.20, 26.30, 26.70, 43.21, 42.22",
         "enabled": true
       },
       {
