@@ -39,13 +39,14 @@ os.environ.setdefault("CUSTOMERS_DIR", str(REPO / "data" / "customers"))
 
 from app.egrul import offline
 from app.embeddings import service as embeddings
-from app.llm.client import LLMClient, load_prompt
+from app.llm.client import LLMClient, LLMError, load_prompt
 from app.llm.parse_profile import parse_text
 from app.parsers.registry import ParseError, parse_file
 from app.schemas.customer import CustomerData
 from app.schemas.procurement import ProcurementData
 from app.schemas.scoring import ScoringProfileData
 from app.scoring import extract_fields, score
+from app.scoring.defaults import default_profile
 from app.scoring.engine import semantic_thresholds
 from app.scoring.operators import SemanticThresholds
 
@@ -93,19 +94,30 @@ def profile_rules(profiles: dict[str, str], cache_path: Path) -> dict[str, Scori
     )
     client = LLMClient.from_env()
     version = load_prompt("parse_profile").version
+    pick_version = load_prompt("okpd2_pick").version
     out: dict[str, ScoringProfileData] = {}
+    failed = 0
     for name, text in profiles.items():
-        # ключ — профиль + версия промпта + текст: разные файлы сценариев не мешают друг другу,
-        # новая версия промпта разбирается заново
+        # ключ — профиль + версии промптов + текст: разные файлы сценариев не мешают друг другу,
+        # новая версия любого промпта разбирается заново
         digest = hashlib.sha256(" ".join(text.split()).encode()).hexdigest()[:10]
-        key = f"{name}|v{version}|{digest}"
+        key = f"{name}|v{version}|okpd2-v{pick_version}|{digest}"
         if key not in cached:
             if not client.enabled:
                 raise SystemExit(f"Нет правил для {name} в {cache_path} и не настроен LLM")
-            parsed = parse_text(text, client)
+            try:
+                parsed = parse_text(text, client)
+            except LLMError:
+                # профиль не разобрался и после повтора: считаем по правилам по умолчанию,
+                # как пользователь без своих правил; в кэш не пишем — в следующий раз заново
+                failed += 1
+                out[name] = default_profile()
+                continue
             cached[key] = {"text": text, "rules": parsed.model_dump(mode="json")["rules"]}
         out[name] = ScoringProfileData.model_validate({"rules": cached[key]["rules"]})
     cache_path.write_text(json.dumps(cached, ensure_ascii=False, indent=2), encoding="utf-8")
+    if failed:
+        print(f"Не разобрано профилей: {failed} (оценены по правилам по умолчанию)")
     return out
 
 

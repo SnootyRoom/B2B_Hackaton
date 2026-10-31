@@ -41,6 +41,13 @@ docker-compose up --build
 (URI `gpt://<каталог>/yandexgpt/latest`). Окончательная версия фиксируется после проверки
 на тестовых сценариях.
 
+**Справочник ОКПД2:** `data/okpd2.csv` (`code;name`, ОК 034-2014 от класса до вида `XX.XX.XX`,
+5654 кода, по дереву classifikators.ru) и индекс векторов `data/okpd2.npy` рядом. Коды профиля
+подбираются по нему: кандидаты по смыслу (e5) → выбор LLM (`backend/app/llm/okpd2_search.py`,
+промпт `okpd2_pick.md`). Индекс пересобирается после замены CSV:
+`docker-compose run --rm -v ./data:/out -e OKPD2_CSV=/out/okpd2.csv backend python scripts/build_okpd2_index.py`.
+Без справочника или модели коды берутся из ручных категорий `backend/app/llm/okpd2.py`.
+
 ## Как устроена обработка
 
 1. `POST /api/procurements/upload` сохраняет файлы и сразу отвечает `202 {"task_id"}` —
