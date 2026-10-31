@@ -1,0 +1,1635 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44429750</id>
+    <externalId>565b73dd-3bb8-4f06-b692-3bd27a7e8c9b45</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0343200029826000242</purchaseNumber>
+        <docNumber>№0343200029826000242</docNumber>
+        <plannedPublishDate>2026-10-30+05:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T10:39:37.675+05:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0343200029826000242</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_EETP</ns2:code>
+            <ns2:name>РОСЭЛТОРГ (АО«ЕЭТП»)</ns2:name>
+            <ns2:url>http://roseltorg.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Реагенты диагностические и расходные материалы для КДЛ (Реагенты к анализатору Сапфир)</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03432000298</regNum>
+            <consRegistryNum>372X7536</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "КУРГАНСКИЙ ОБЛАСТНОЙ ПЕРИНАТАЛЬНЫЙ ЦЕНТР"</fullName>
+            <shortName>ГБУ "ПЕРИНАТАЛЬНЫЙ ЦЕНТР"</shortName>
+            <postAddress>Российская Федерация, 640014, Курганская обл, Курган г, ул. Карбышева, 39</postAddress>
+            <factAddress>Российская Федерация, 640014, Курганская обл, Курган г, Карбышева, Карбышева ул, Д. 39</factAddress>
+            <INN>4501170427</INN>
+            <KPP>450101001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 640014, Курганская обл, Курган г, ул. Карбышева, 39</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 640014, Курганская обл, Курган г, Карбышева, Карбышева ул, Д. 39</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Загузина</ns3:lastName>
+                <ns3:firstName>Екатерина</ns3:firstName>
+                <ns3:middleName>Ивановна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>kurgan-perinatal-torg@mail.ru</contactEMail>
+            <contactPhone>8-3522-437336</contactPhone>
+            <contactFax>7-3522-437329</contactFax>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0343200029826000242</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B51063E7CF68049C866E6BBF4CA</ns3:publishedContentId>
+            <ns3:fileName>НМЦК_Общая-аспартатаминотрансфераза-ИВД--набор--ферментный-спектрофотометрический-анализ.xlsx</ns3:fileName>
+            <ns3:fileSize>23477</ns3:fileSize>
+            <ns3:docDescription>Обоснование начальной (максимальной) цены контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-30T08:38:30+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B51063E7CF68049C866E6BBF4CA</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B51007570619CD7B9AD5CA07A0F</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта.docx</ns3:fileName>
+            <ns3:fileSize>48415</ns3:fileSize>
+            <ns3:docDescription>Проект контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-30T08:38:30+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B51007570619CD7B9AD5CA07A0F</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B5104567CC18C2DED6391EA04CC</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки.docx</ns3:fileName>
+            <ns3:fileSize>24579</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки (Техническое задание)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T08:38:30+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B5104567CC18C2DED6391EA04CC</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B51028F7D3A96A89E11179D4FEB</ns3:publishedContentId>
+            <ns3:fileName>Требования к заявке-Преимущество.docx</ns3:fileName>
+            <ns3:fileSize>46550</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию и составу заявки на участие в аукционе</ns3:docDescription>
+            <ns3:docDate>2026-10-30T08:38:30+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B51028F7D3A96A89E11179D4FEB</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-30T10:39:37+05:00</startDT>
+                <endDT>2026-11-09T10:00:00+05:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+05:00</biddingDate>
+            <summarizingDate>2026-11-10+05:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>923815.20</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+            <standardContractNumber>1400700000523001</standardContractNumber>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03432000298</ns2:regNum>
+                    <ns2:consRegistryNum>372X7536</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "КУРГАНСКИЙ ОБЛАСТНОЙ ПЕРИНАТАЛЬНЫЙ ЦЕНТР"</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <amount>46190.76</amount>
+                    <account>
+                        <ns3:bik>045004108</ns3:bik>
+                        <ns3:settlementAccount>03224643370000004300</ns3:settlementAccount>
+                        <ns3:personalAccount>20014X75360</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 СибГУ Банка России//УФК по Курганской области, г Курган</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810445370000108</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Порядок предоставления обеспечения исполнения контракта, требования к такому обеспечению (условия обеспечения исполнения контракта) в соответствии с Приложением 4 к Извещению о проведении электронного аукциона «Проект контракта»</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>923815.20</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262450117042745010100100090200000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>24501170427450101001</customerCode>
+                        <purchaseNumber>0009</purchaseNumber>
+                        <purchaseOrderNumber>020</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603432000298001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603432000298001000009</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>923815.20</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>923815.20</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22519451</sid>
+                                <externalSid>b5f8a519-a852-46be-8430-8cb7bcbe1630</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>923815.20</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>923815.20</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>923815.20</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>923815.20</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>923815.20</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62453852</ns3:sid>
+                            <ns3:externalSid>6554896b-e7dc-486a-82a7-4cc2e726fa11</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>4075a02a-12f8-42dc-bf3e-95d0f67f3b46</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Курганская, г.о. город Курган, г. Курган, ул. Карбышева, д. 39</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>аптека</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226198818</ns3:sid>
+                    <ns3:externalSid>fd89d0a3-bd97-4efe-90c8-4bb93e82cc09</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00001106</ns2:code>
+                        <ns2:name>Общая аспартатаминотрансфераза ИВД, набор, ферментный спектрофотометрический анализ</ns2:name>
+                        <ns2:versionId>179802</ns2:versionId>
+                        <ns2:versionNumber>3</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884899</ns3:sid>
+                                <ns3:externalSid>df58a5f9-fb3c-430b-b084-ec5f2cc531e1</ns3:externalSid>
+                                <ns3:code>f3786f67-c</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525763</ns3:sid>
+                                        <ns3:externalSid>28a11a94-5e9c-4229-b68c-e840c34731ac</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884900</ns3:sid>
+                                <ns3:externalSid>d34497fe-3a72-4077-be7a-26b80571163a</ns3:externalSid>
+                                <ns3:code>cd784657-d</ns3:code>
+                                <ns3:name>Количество выполняемых исследований</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525764</ns3:sid>
+                                        <ns3:externalSid>af34a5c3-062c-4557-992d-06ce72571a9f</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>1200</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884897</ns3:sid>
+                                <ns3:externalSid>a0ed477b-db42-40d5-a742-2d1ae9c24fcf</ns3:externalSid>
+                                <ns3:name>Набор реагентов, совместимый с анализатором Сапфир 400 Премиум</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525761</ns3:sid>
+                                        <ns3:externalSid>2ff72d69-cf25-42f0-bfbd-c3609a9b12bb</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884898</ns3:sid>
+                                <ns3:externalSid>a98f4e1b-7d19-45a2-a018-b50fcf55200b</ns3:externalSid>
+                                <ns3:name>Набор реагентов и других связанных с ними материалов, предназначенный для количественного определения общей аминотрансферазы (АСТ) (aspartate aminotransferase (AST)) в клиническом образце методом ферментного спектрофотометрического анализа</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525762</ns3:sid>
+                                        <ns3:externalSid>ebdea929-f6d5-4942-b268-4284e2d14985</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>-</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Общая аспартатаминотрансфераза ИВД, набор, ферментный спектрофотометрический анализ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>5220.60</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>52206.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226198819</ns3:sid>
+                    <ns3:externalSid>e7fbf387-2670-4bdc-a461-692c622ef0bc</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00000956</ns2:code>
+                        <ns2:name>Аланинаминотрансфераза (АЛТ) ИВД, набор, ферментный спектрофотометрический анализ</ns2:name>
+                        <ns2:versionId>347742</ns2:versionId>
+                        <ns2:versionNumber>3</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884903</ns3:sid>
+                                <ns3:externalSid>4af8d4e1-8866-42ed-80ea-c5760226e806</ns3:externalSid>
+                                <ns3:code>f3786f67-c</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525767</ns3:sid>
+                                        <ns3:externalSid>02ac4562-3046-4a73-8bac-3c24ee30a557</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884904</ns3:sid>
+                                <ns3:externalSid>8ac236d8-9e77-487c-ad2b-764e426993d7</ns3:externalSid>
+                                <ns3:code>cd784657-d</ns3:code>
+                                <ns3:name>Количество выполняемых исследований</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525768</ns3:sid>
+                                        <ns3:externalSid>fb929fb1-b549-4565-89bc-10bf3aa26ae3</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1100</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>1200</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884901</ns3:sid>
+                                <ns3:externalSid>2c0b3eb4-f6ae-4f04-8592-b09be91bc358</ns3:externalSid>
+                                <ns3:name>Набор реагентов, совместимый с анализатором Сапфир 400 Премиум</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525765</ns3:sid>
+                                        <ns3:externalSid>c8dea1f8-aabd-4669-8420-23949cda18d2</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884902</ns3:sid>
+                                <ns3:externalSid>a3485c88-496e-4757-b346-4b956287e79e</ns3:externalSid>
+                                <ns3:name>Набор реагентов и других связанных с ними материалов, предназначенный для количественного определения аланинаминотрансферазы (АЛТ) (alanine aminotransferase (ALT)) в клиническом образце методом ферментного спектрофотометрического анализа</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525766</ns3:sid>
+                                        <ns3:externalSid>e69b3c73-f7ce-4a48-b71d-7ac7fa12e330</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>-</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Аланинаминотрансфераза (АЛТ) ИВД, набор, ферментный спектрофотометрический анализ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4325.20</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>43252.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226198820</ns3:sid>
+                    <ns3:externalSid>65b679be-71f7-4203-bf62-efa67e193325</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00001189</ns2:code>
+                        <ns2:name>Общая лактатдегидрогеназа ИВД, набор, ферментный спектрофотометрический анализ</ns2:name>
+                        <ns2:versionId>44211</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884907</ns3:sid>
+                                <ns3:externalSid>fddcd008-190e-475e-8902-9d9e179ee69b</ns3:externalSid>
+                                <ns3:code>f3786f67-c</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525771</ns3:sid>
+                                        <ns3:externalSid>065c3657-ff44-4529-9448-69690b2da2fa</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа и ручной постановки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884908</ns3:sid>
+                                <ns3:externalSid>c7347c90-03d1-443d-8dd1-07c461176144</ns3:externalSid>
+                                <ns3:code>cd784657-d</ns3:code>
+                                <ns3:name>Количество выполняемых тестов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525772</ns3:sid>
+                                        <ns3:externalSid>85984a24-3221-4bb2-8c1f-651fbf915ca1</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>500</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884905</ns3:sid>
+                                <ns3:externalSid>5fcd8ce4-ec28-4e30-bede-7d8d3aaf3d60</ns3:externalSid>
+                                <ns3:name>Набор реагентов, совместимый с анализатором Сапфир 400 Премиум</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525769</ns3:sid>
+                                        <ns3:externalSid>1dad263a-387a-4b9c-bf91-d83f17e4f4aa</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884906</ns3:sid>
+                                <ns3:externalSid>62acb248-b4d5-42b9-988b-439e324411bd</ns3:externalSid>
+                                <ns3:name>Набор реагентов и других связанных с ними материалов, предназначенный для количественного определения общей лактатдегидрогеназы (ЛДГ) (total lactate dehydrogenase, LDH) в клиническом образце с использованием метода ферментного спектрофотометрического анализа</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525770</ns3:sid>
+                                        <ns3:externalSid>54f93a28-38cd-4d7b-b2d1-b09848c771d1</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>-</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Общая лактатдегидрогеназа ИВД, набор, ферментный спектрофотометрический анализ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>6241.40</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>13.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>81138.20</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226198821</ns3:sid>
+                    <ns3:externalSid>305d539d-dce6-4f43-a58d-a9505bb2de19</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00011134</ns2:code>
+                        <ns2:name>Креатинин ИВД, набор, спектрофотометрический анализ</ns2:name>
+                        <ns2:versionId>163195</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884911</ns3:sid>
+                                <ns3:externalSid>7eeda5bf-1636-48d0-956d-916d690614f0</ns3:externalSid>
+                                <ns3:code>f3786f67-c</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525775</ns3:sid>
+                                        <ns3:externalSid>022a00be-612b-4e48-b45d-b581a14a96b0</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа и ручной постановки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884912</ns3:sid>
+                                <ns3:externalSid>59e5efb0-0c6e-4e8c-a965-46c62d8c348b</ns3:externalSid>
+                                <ns3:code>1d7022a3-c</ns3:code>
+                                <ns3:name>Объём реагента</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525776</ns3:sid>
+                                        <ns3:externalSid>a815c67e-0922-4cd7-bfe5-2abdd31511a8</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>250</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884909</ns3:sid>
+                                <ns3:externalSid>10e11ba0-4ca9-42cd-86e2-22f17d281bc8</ns3:externalSid>
+                                <ns3:name>Набор реагентов, совместимый с анализатором Сапфир 400 Премиум</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525773</ns3:sid>
+                                        <ns3:externalSid>6ac1f120-4d90-45cc-a4fe-b9202169fb2a</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884910</ns3:sid>
+                                <ns3:externalSid>b88dac9b-1e16-42cb-b7e1-af143f40bd70</ns3:externalSid>
+                                <ns3:name>Набор реагентов и других связанных с ними материалов, предназначенный для количественного определения креатинина (creatinine) в клиническом образце методом спектрофотометрического анализа</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525774</ns3:sid>
+                                        <ns3:externalSid>3c0dffc6-9982-43ea-8756-a0f9065f3196</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>-</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Креатинин ИВД, набор, спектрофотометрический анализ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7043.30</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>26.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>183125.80</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226198822</ns3:sid>
+                    <ns3:externalSid>9e232325-8020-491d-9c82-4e10d3247393</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00000776</ns2:code>
+                        <ns2:name>Мочевина/азот мочевины ИВД, набор, ферментный спектрофотометрический анализ</ns2:name>
+                        <ns2:versionId>405581</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884915</ns3:sid>
+                                <ns3:externalSid>54d94c8a-4b0e-44a6-a8c6-045374c60d15</ns3:externalSid>
+                                <ns3:code>f3786f67-c</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525779</ns3:sid>
+                                        <ns3:externalSid>dceaf095-850b-4557-b005-80de194f369a</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884916</ns3:sid>
+                                <ns3:externalSid>8753df46-94e7-4e3d-852a-1f375d18f8f1</ns3:externalSid>
+                                <ns3:code>cd784657-d</ns3:code>
+                                <ns3:name>Количество выполняемых исследований</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525780</ns3:sid>
+                                        <ns3:externalSid>757d70b2-2fab-4780-8daa-526744f01e09</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>900</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>1000</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884913</ns3:sid>
+                                <ns3:externalSid>69ab3dc5-c8c3-4ad6-8b36-a51528c815dd</ns3:externalSid>
+                                <ns3:name>Набор реагентов, совместимый с анализатором Сапфир 400 Премиум</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525777</ns3:sid>
+                                        <ns3:externalSid>0ef9372f-2819-484a-8e75-fa6ba05c0ab0</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884914</ns3:sid>
+                                <ns3:externalSid>cb80ab0f-ddec-4293-bd22-fb13c016a344</ns3:externalSid>
+                                <ns3:name>Набор реагентов и других связанных с ними материалов, предназначенный для качественного и/или количественного определения мочевины/азота мочевины в крови (blood urea nitrogen (BUN)) и/или в других биологических жидкостях в клиническом образце методом ферментного спектрофотометрического анализа</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525778</ns3:sid>
+                                        <ns3:externalSid>7da87707-7aab-44e7-9646-7f1d35aa694a</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>-</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Мочевина/азот мочевины ИВД, набор, ферментный спектрофотометрический анализ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>6264.50</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>20.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>125290.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226198823</ns3:sid>
+                    <ns3:externalSid>b45b8b51-1d99-4c55-acdd-bab6f63d197b</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00000191</ns2:code>
+                        <ns2:name>Глюкоза ИВД, набор,  ферментный спектрофотометрический анализ</ns2:name>
+                        <ns2:versionId>43075</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884919</ns3:sid>
+                                <ns3:externalSid>a5a7b5c6-c226-4428-991f-d64e7fa47922</ns3:externalSid>
+                                <ns3:code>f3786f67-c</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525783</ns3:sid>
+                                        <ns3:externalSid>dd52a650-5910-4c20-95bb-46dee39b4f3d</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа и ручной постановки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884920</ns3:sid>
+                                <ns3:externalSid>dbe09125-c140-4094-9f44-ffc06a17ca49</ns3:externalSid>
+                                <ns3:code>cd784657-d</ns3:code>
+                                <ns3:name>Количество выполняемых тестов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525784</ns3:sid>
+                                        <ns3:externalSid>9590ced7-2196-46a4-90be-a9f07b0debff</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1000</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884917</ns3:sid>
+                                <ns3:externalSid>e1656112-4507-48bb-a2e3-810d1bedf481</ns3:externalSid>
+                                <ns3:name>Набор реагентов, совместимый с анализатором Сапфир 400 Премиум</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525781</ns3:sid>
+                                        <ns3:externalSid>2179a0d2-cb95-447a-9984-8a378ea81cc6</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884918</ns3:sid>
+                                <ns3:externalSid>5dc20cf9-fdb3-4dc3-a392-c2f9ce221169</ns3:externalSid>
+                                <ns3:name>Набор реагентов и других связанных с ними материалов, предназначенный для количественного определения глюкозы (glucose) в клиническом образце методом ферментного спектрофотометрического анализа</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525782</ns3:sid>
+                                        <ns3:externalSid>1abac120-606b-46b4-9e53-7866656ba6e2</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>-</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Глюкоза ИВД, набор,  ферментный спектрофотометрический анализ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3095.40</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>13.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>40240.20</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226198824</ns3:sid>
+                    <ns3:externalSid>50d4670b-6b44-42f3-8b54-3379e6b8bc30</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00000303</ns2:code>
+                        <ns2:name>Общий холестерин ИВД, набор, ферментный спектрофотометрический анализ</ns2:name>
+                        <ns2:versionId>43954</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884923</ns3:sid>
+                                <ns3:externalSid>02916761-2060-4cc1-a913-37d20f31a3c7</ns3:externalSid>
+                                <ns3:code>f3786f67-c</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525787</ns3:sid>
+                                        <ns3:externalSid>1a20d579-8bfa-4e66-a0bc-7c35cfc84162</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа и ручной постановки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884924</ns3:sid>
+                                <ns3:externalSid>0e8ede9d-6a27-4108-baea-5f508a23d86d</ns3:externalSid>
+                                <ns3:code>cd784657-d</ns3:code>
+                                <ns3:name>Количество выполняемых тестов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525788</ns3:sid>
+                                        <ns3:externalSid>113b4501-712c-4a43-8d57-9be09e0b353a</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1000</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884921</ns3:sid>
+                                <ns3:externalSid>f223d7ee-9366-4c8c-93a6-9b5758f1c6fe</ns3:externalSid>
+                                <ns3:name>Набор реагентов, совместимый с анализатором Сапфир 400 Премиум</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525785</ns3:sid>
+                                        <ns3:externalSid>cba41f63-a13d-4f25-a2cc-d8f90ecd200b</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884922</ns3:sid>
+                                <ns3:externalSid>cb19cd19-4d50-4d1c-9411-b9010ab8f238</ns3:externalSid>
+                                <ns3:name>Набор реагентов и других связанных с ними материалов, предназначенный для количественного определения общего холестерина (total cholesterol) в клиническом образце методом ферментного спектрофотометрического анализа</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525786</ns3:sid>
+                                        <ns3:externalSid>73969add-84e3-45f6-92e3-c5aa2ded01ba</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>-</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Общий холестерин ИВД, набор, ферментный спектрофотометрический анализ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>11931.70</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>3.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>35795.10</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226198825</ns3:sid>
+                    <ns3:externalSid>81c1fe56-4fad-45c0-87f6-c3b3a2ba1faf</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00000417</ns2:code>
+                        <ns2:name>Конъюгированный (прямой, связанный) билирубин ИВД, набор, спектрофотометрический анализ</ns2:name>
+                        <ns2:versionId>44285</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884927</ns3:sid>
+                                <ns3:externalSid>0b2ca56e-09dd-4273-8751-ae068f504f5d</ns3:externalSid>
+                                <ns3:code>f3786f67-c</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525791</ns3:sid>
+                                        <ns3:externalSid>703221e1-4692-4675-8289-96e1bc20b4a5</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа и ручной постановки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884928</ns3:sid>
+                                <ns3:externalSid>c303f17a-a160-453e-bf81-459f6b5c8e1a</ns3:externalSid>
+                                <ns3:code>cd784657-d</ns3:code>
+                                <ns3:name>Количество выполняемых тестов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525792</ns3:sid>
+                                        <ns3:externalSid>f9103a9b-fc1b-4753-a882-0cb35901421e</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>500</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884925</ns3:sid>
+                                <ns3:externalSid>b5847cf2-5ea8-4d6c-be0a-5dbaf8627e63</ns3:externalSid>
+                                <ns3:name>Набор реагентов, совместимый с анализатором Сапфир 400 Премиум</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525789</ns3:sid>
+                                        <ns3:externalSid>45604c1a-a9dc-415b-b945-cfe576279c28</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884926</ns3:sid>
+                                <ns3:externalSid>6c28f192-09a3-4b9c-b1b8-911b1d5af023</ns3:externalSid>
+                                <ns3:name>Набор реагентов и других связанных с ними материалов, предназначенный для количественного определения конъюгированного (прямого) билирубина (conjugated (direct) bilirubin) в клиническом образце методом спектрофотометрического анализа</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525790</ns3:sid>
+                                        <ns3:externalSid>7b2c88d7-1141-4beb-853b-942cc05995cd</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>-</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Конъюгированный (прямой, связанный) билирубин ИВД, набор, спектрофотометрический анализ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>2387.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>5.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>11935.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226198826</ns3:sid>
+                    <ns3:externalSid>9d74802b-1ff9-4521-9a7c-ee9dc0207f60</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00011532</ns2:code>
+                        <ns2:name>Железо ИВД, набор, спектрофотометрический анализ</ns2:name>
+                        <ns2:versionId>180048</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884931</ns3:sid>
+                                <ns3:externalSid>927b499e-14e0-42c4-b4ab-d9caa8b09627</ns3:externalSid>
+                                <ns3:code>4ae43738-e</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525795</ns3:sid>
+                                        <ns3:externalSid>255568bf-a509-4cd7-b201-1185338feedf</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337884932</ns3:sid>
+                                <ns3:externalSid>dc27f290-6442-4525-9301-a806bfb7c719</ns3:externalSid>
+                                <ns3:code>4f7a95f6-0</ns3:code>
+                                <ns3:name>Объем</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525796</ns3:sid>
+                                        <ns3:externalSid>ca7d5355-365b-4cae-bb5f-1e441836cfbb</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>140</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>155</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884929</ns3:sid>
+                                <ns3:externalSid>6a3b064d-ec10-49b6-ac2f-7c1b4d1c3eef</ns3:externalSid>
+                                <ns3:name>Набор реагентов, совместимый с анализатором Сапфир 400 Премиум</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525793</ns3:sid>
+                                        <ns3:externalSid>d2b7113e-fbc7-4a0b-a6e5-b8cc1e3cd805</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884930</ns3:sid>
+                                <ns3:externalSid>2031aea9-1830-41e3-a48a-85b529148d24</ns3:externalSid>
+                                <ns3:name>Набор реагентов и других связанных с ними материалов, предназначенный для количественного определения железа (iron) в клиническом образце методом спектрофотометрии</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525794</ns3:sid>
+                                        <ns3:externalSid>b68a40b7-01f5-4f96-9b24-8e83691fe0d5</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>-</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Железо ИВД, набор, спектрофотометрический анализ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>13564.10</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>3.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>40692.30</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226198827</ns3:sid>
+                    <ns3:externalSid>dbf56153-9ba0-4856-81b1-811169483d52</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00010158</ns2:code>
+                        <ns2:name>Множественные аналиты клинической химии ИВД, контрольный материал</ns2:name>
+                        <ns2:versionId>174164</ns2:versionId>
+                        <ns2:versionNumber>3</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884933</ns3:sid>
+                                <ns3:externalSid>16f78049-4f16-40d6-95ab-9eeefddd2de4</ns3:externalSid>
+                                <ns3:name>Материал, используемый для подтверждения качества анализа, предназначенный для использования при качественном и/или количественном определении одного или множества аналитов клинической химии (multiple clinical chemistry analytes), которые совместно образуют полноценный биохимический профиль</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525797</ns3:sid>
+                                        <ns3:externalSid>d0550f53-1526-4308-99f7-91eb5864a29a</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884934</ns3:sid>
+                                <ns3:externalSid>958df534-3252-43b1-9c45-d008663c36ea</ns3:externalSid>
+                                <ns3:name>Аттестованные аналиты: альфа-гидроксибутиратдегидрогеназа, глутаматдегидрогеназа, щелочная фосфатаза, аланинаминотрансфераза, аспартатаминотрансфераза, общая амилаза, панкреатическая амилаза, холинэстераза, общая креатинкиназа, гамма-глутамилтрансфераза, общая лактатдегидрогеназа, липаза, альбумин, общий белок, желчные кислоты, общий билирубин, прямой билирубин, креатинин, мочевина, мочевая кислота, глюкоза, лактат, Д-3-гидроксибутират, кальций общий, фосфор неорганический, магний, литий, калий, натрий, хлор, цинк, железо, общая железосвязывающая способность сыворотки, трансферрин, медь, холестерин общий, триглицериды, липопротеины высокой плотности, аролипопротеины А, аполипопротеины В</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525798</ns3:sid>
+                                        <ns3:externalSid>7039f4fa-8230-4880-9ac9-13de17e738c3</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884935</ns3:sid>
+                                <ns3:externalSid>02582a34-195c-46d5-9302-65f174b30184</ns3:externalSid>
+                                <ns3:name>Объем реагента</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525799</ns3:sid>
+                                        <ns3:externalSid>c7c3a7a7-c5d7-4740-9b81-50ba3640c831</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>100</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884936</ns3:sid>
+                                <ns3:externalSid>f9f4b794-c1c0-4a5d-864e-7516fbd801db</ns3:externalSid>
+                                <ns3:name>Уровень концентрации аналитов - норма</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525800</ns3:sid>
+                                        <ns3:externalSid>6a9c664c-b288-438d-829a-a3bd414a2724</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>-</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Множественные аналиты клинической химии ИВД, контрольный материал</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>42863.70</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>3.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>128591.10</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226198828</ns3:sid>
+                    <ns3:externalSid>2151a341-df62-4882-93be-2eac93116cd7</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00010158</ns2:code>
+                        <ns2:name>Множественные аналиты клинической химии ИВД, контрольный материал</ns2:name>
+                        <ns2:versionId>174164</ns2:versionId>
+                        <ns2:versionNumber>3</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884937</ns3:sid>
+                                <ns3:externalSid>c9430e45-d151-4149-890c-680ac74c5d6a</ns3:externalSid>
+                                <ns3:name>Материал, используемый для подтверждения качества анализа, предназначенный для использования при качественном и/или количественном определении одного или множества аналитов клинической химии (multiple clinical chemistry analytes), которые совместно образуют полноценный биохимический профиль</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525801</ns3:sid>
+                                        <ns3:externalSid>bb7e03ee-e6f7-4507-b96a-022f7d69c1bc</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884938</ns3:sid>
+                                <ns3:externalSid>9aad7893-ce38-42a3-9a96-733c632df38d</ns3:externalSid>
+                                <ns3:name>Аттестованные аналиты: альфа-гидроксибутиратдегидрогеназа, глутаматдегидрогеназа, щелочная фосфатаза, аланинаминотрансфераза, аспартатаминотрансфераза, общая амилаза, панкреатическая амилаза, холинэстераза, общая креатинкиназа, гамма-глутамилтрансфераза, общая лактатдегидрогеназа, липаза, альбумин, общий белок, желчные кислоты, общий билирубин, прямой билирубин, креатинин, мочевина, мочевая кислота, глюкоза, лактат, Д-3-гидроксибутират, кальций общий, фосфор неорганический, магний, литий, калий, натрий, хлор, цинк, железо, общая железосвязывающая способность сыворотки, трансферрин, медь, холестерин общий, триглицериды, липопротеины высокой плотности, аролипопротеины А, аполипопротеины В</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525802</ns3:sid>
+                                        <ns3:externalSid>666e2bca-fe74-4c82-a584-c4db42b8a2c6</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884939</ns3:sid>
+                                <ns3:externalSid>5bb4815f-dcda-4f93-abaf-8e33fe8036a6</ns3:externalSid>
+                                <ns3:name>Объем реагента</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525803</ns3:sid>
+                                        <ns3:externalSid>a528d601-5c73-45ec-9380-d6fdeb1b3a79</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>100</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884940</ns3:sid>
+                                <ns3:externalSid>422734c1-7038-4a83-af4d-9591af92f812</ns3:externalSid>
+                                <ns3:name>Уровень концентрации аналитов - патология</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525804</ns3:sid>
+                                        <ns3:externalSid>21191aaf-47db-49c5-b73b-c3ec889ac2d4</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>-</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Множественные аналиты клинической химии ИВД, контрольный материал</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>45421.20</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>3.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>136263.60</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226198829</ns3:sid>
+                    <ns3:externalSid>0a76943c-bc4f-47db-8c51-e992d052c42a</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                        <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884941</ns3:sid>
+                                <ns3:externalSid>459278a0-28dc-4d0f-ac99-996b2a5a6177</ns3:externalSid>
+                                <ns3:name>Многопараметровый калибратор на основе лиофилизированной человеческой сыворотки для калибровки следующих аналитов: холестерин, триглицериды, креатинкиназа, литий, общий белок, медь, цинк, альбумин, щелочная фосфатаза, АЛТ, АСТ, амилаза, амилаза панкреатическая, желчные кислоты, билирубин прямой, билирубин общий, кальций, хлориды, холинэстераза, креатинин, Д-3-гитдроксибутират, гаммаглутамилтрансфераза, глюкоза, альфа-гидроксибутиратдегидрогеназа, железо, лактат, ЛДГ, липаза, магний, неорганический фосфор, калий, натрий, ОЖСС, мочевина, мочевая кислота</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525805</ns3:sid>
+                                        <ns3:externalSid>26bc0b02-1f57-4a17-babf-4e54fcc60b13</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337884942</ns3:sid>
+                                <ns3:externalSid>97f4383a-a66e-4a87-a47b-abf9f892ae13</ns3:externalSid>
+                                <ns3:name>Объем реагента</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436525806</ns3:sid>
+                                        <ns3:externalSid>11685992-fe3f-451a-a55a-f1f9204c9a61</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>100</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Множественные аналиты клинической химии ИВД, калибратор</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>45285.90</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>45285.90</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>923815.20</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

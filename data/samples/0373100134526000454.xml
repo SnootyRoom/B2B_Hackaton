@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44435289</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0373100134526000454</purchaseNumber>
+        <docNumber>№0373100134526000454</docNumber>
+        <plannedPublishDate>2026-10-30+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T13:27:17.122+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0373100134526000454</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств для нужд филиала ФГБУ «Рослесинфорг» «Мослеспроект»</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03731001345</regNum>
+            <consRegistryNum>001Э2265</consRegistryNum>
+            <fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "РОСЛЕСИНФОРГ"</fullName>
+            <shortName>ФГБУ "РОСЛЕСИНФОРГ"</shortName>
+            <postAddress>109316, Москва, г Москва, пр-кт Волгоградский, дом 45, строение 1</postAddress>
+            <factAddress>141280, МОСКОВСКАЯ ОБЛАСТЬ, Г.О. ПУШКИНСКИЙ, Г. ИВАНТЕЕВКА, УЛ. ЗАВОДСКАЯ, Д. 10</factAddress>
+            <INN>7722319952</INN>
+            <KPP>503801001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>109316, Москва, г Москва, пр-кт Волгоградский, дом 45, строение 1</orgPostAddress>
+            <orgFactAddress>141280, МОСКОВСКАЯ ОБЛАСТЬ, Г.О. ПУШКИНСКИЙ, Г. ИВАНТЕЕВКА, УЛ. ЗАВОДСКАЯ, Д. 10</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Орлова</ns3:lastName>
+                <ns3:firstName>Анастасия</ns3:firstName>
+                <ns3:middleName>Александровна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>zakupki_44@roslesinforg.ru</contactEMail>
+            <contactPhone>7-499-6739999-04009</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0373100134526000454</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18C3CF4C47A76B49FEACD82EBBE8C</ns3:publishedContentId>
+            <ns3:fileName>Приложение 2. Обоснование НМЦК (расчет).xlsx</ns3:fileName>
+            <ns3:fileSize>26264</ns3:fileSize>
+            <ns3:docDescription>Приложение 2. Обоснование НМЦК (расчет)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T12:56:07+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18C3CF4C47A76B49FEACD82EBBE8C</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18C3D5AC77EB7A2C5AF33A4DB355E</ns3:publishedContentId>
+            <ns3:fileName>Приложение 3. Проект контракта.doc</ns3:fileName>
+            <ns3:fileSize>252416</ns3:fileSize>
+            <ns3:docDescription>Приложение 3. Проект контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-30T12:56:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18C3D5AC77EB7A2C5AF33A4DB355E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18C3D73887F1185F47878991272DB</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки (филиал).docx</ns3:fileName>
+            <ns3:fileSize>55681</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки (филиал)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T12:56:39+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18C3D73887F1185F47878991272DB</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18C3DC6B47D4E97D112B60FF54368</ns3:publishedContentId>
+            <ns3:fileName>Извещение.docx</ns3:fileName>
+            <ns3:fileSize>51327</ns3:fileSize>
+            <ns3:docDescription>Извещение</ns3:docDescription>
+            <ns3:docDate>2026-10-30T12:57:01+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18C3DC6B47D4E97D112B60FF54368</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18C46E2887681AF633F71F30E2F10</ns3:publishedContentId>
+            <ns3:fileName>Обоснование НМЦК (дополнительно).docx</ns3:fileName>
+            <ns3:fileSize>20954</ns3:fileSize>
+            <ns3:docDescription>Обоснование НМЦК (дополнительно)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T13:06:58+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18C46E2887681AF633F71F30E2F10</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18C4B3C627FB888834F1964DFC193</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 1 к Техническому заданию (описанию объекта закупки).xlsx</ns3:fileName>
+            <ns3:fileSize>1448946</ns3:fileSize>
+            <ns3:docDescription>Приложение № 1 к Техническому заданию (описанию объекта закупки)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T13:11:43+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18C4B3C627FB888834F1964DFC193</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-30T13:27:17+03:00</startDT>
+                <endDT>2026-11-11T09:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-11+03:00</biddingDate>
+            <summarizingDate>2026-11-13+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>910000.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+            <standardContractNumber>1400700000520010</standardContractNumber>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03731001345</ns2:regNum>
+                    <ns2:consRegistryNum>001Э2265</ns2:consRegistryNum>
+                    <ns2:fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "РОСЛЕСИНФОРГ"</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03214643000000017300</ns3:settlementAccount>
+                        <ns3:personalAccount>20736Э22650</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ГУ Банка России по ЦФО//УФК ПО Г. МОСКВЕ, г Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Согласно условиям проекта контракта (приложение 3 к извещению) с учетом статьи 96 Федерального закона от 05.04.2013 № 44-ФЗ по реквизитам, указанным в Инструкции по заполнению заявки на участие в электронном аукционе (раздел III Извещения об электронном аукционе)</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>910000.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>261772231995250380100106700014520244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>45.20</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по техническому обслуживанию и ремонту автотранспортных средств</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>17722319952503801001</customerCode>
+                        <purchaseNumber>0670</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603731001345001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603731001345001000688</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2027-01-11+03:00</ns3:startDate>
+                                <ns3:isNotEarlierConclusionDate>true</ns3:isNotEarlierConclusionDate>
+                                <ns3:endDate>2027-07-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>910000.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>910000.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22529119</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-11+03:00</ns3:startDate>
+                                        <ns3:isNotEarlierConclusionDate>true</ns3:isNotEarlierConclusionDate>
+                                        <ns3:endDate>2027-07-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>910000.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>910000.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>910000.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>910000.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>910000.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62463515</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>b7fc1d20-41d4-44e8-af34-d635f452d74c</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Щербинка, г. Щербинка</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>услуги оказываются на территории сервисного центра/станции технического обслуживания (далее – СЦ/СТО) Исполнителя, находящегося на расстоянии не более 50 (пятидесяти) километров по автомобильным дорогам от местонахождения филиала ФГБУ «Рослесинфорг» «Мослеспроект»: г. Москва, г. Щербинка, ул. Люблинская, д. 3.</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>Гарантийный срок на оказанные услуги с даты подписания документа о приемке составляет:&#13;
+- на новые запасные части, узлы, механизмы и агрегаты, приобретенные и установленные Исполнителем – 12 (двенадцать) месяцев, но не менее срока, установленного заводом-изготовителем;&#13;
+- на Услуги по техническому обслуживанию автомобилей в соответствии с программой обязательного сервисного обслуживания - до очередного технического обслуживания;&#13;
+- на отремонтированные узлы, детали, элементы и агрегаты - 6 (шесть) месяцев, но не менее срока, установленного заводом-изготовителем;&#13;
+- на ремонт двигателя – 12 (двенадцать) месяцев или пробег 20 000 км (что наступит раньше);&#13;
+- на ремонт коробки передач, раздаточной коробки (коробки отбора мощности), ведущих мостов, межосевых дифференциалов, колесных редукторов, передних мостов, рулевого механизма, редуктора заднего моста, сцепления – 12 (двенадцать) месяцев или пробег 20 000 км (что наступит раньше);&#13;
+- на кузовной ремонт – 6 (шесть) месяцев, но не менее срока, установленного заводом-изготовителем.</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226241640</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>45.20.10.000-00000002</ns2:code>
+                        <ns2:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:name>
+                        <ns2:versionId>280800</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338020344</ns3:sid>
+                                <ns3:name>Вид услуг</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436709197</ns3:sid>
+                                        <ns3:qualityDescription>Услуги по контрольно-диагностическим работам (стоимость нормо-часа)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В связи с тем, что код позиции КТРУ не содержит характеристик, необходимых для определения соответствия планируемой к закупке услуги потребностям заказчика, заказчиком принято решение о включении дополнительной информации в сведения о ТРУ.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>45.20.1</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1700.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1700.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226242239</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>45.20.10.000-00000002</ns2:code>
+                        <ns2:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:name>
+                        <ns2:versionId>280800</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338021249</ns3:sid>
+                                <ns3:name>Вид услуг</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436710327</ns3:sid>
+                                        <ns3:qualityDescription>Услуги по регламентным работам (стоимость нормо-часа)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В связи с тем, что код позиции КТРУ не содержит характеристик, необходимых для определения соответствия планируемой к закупке услуги потребностям заказчика, заказчиком принято решение о включении дополнительной информации в сведения о ТРУ.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>45.20.1</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1700.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1700.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226242267</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>45.20.10.000-00000002</ns2:code>
+                        <ns2:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:name>
+                        <ns2:versionId>280800</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338021329</ns3:sid>
+                                <ns3:name>Вид услуг</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436710474</ns3:sid>
+                                        <ns3:qualityDescription>Услуги по разборочно-сборочным работам (стоимость нормо-часа)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В связи с тем, что код позиции КТРУ не содержит характеристик, необходимых для определения соответствия планируемой к закупке услуги потребностям заказчика, заказчиком принято решение о включении дополнительной информации в сведения о ТРУ.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>45.20.1</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1700.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1700.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226242349</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>45.20.10.000-00000002</ns2:code>
+                        <ns2:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:name>
+                        <ns2:versionId>280800</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338021799</ns3:sid>
+                                <ns3:name>Вид услуг</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436711109</ns3:sid>
+                                        <ns3:qualityDescription>Услуги по слесарным работам (стоимость нормо-часа)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В связи с тем, что код позиции КТРУ не содержит характеристик, необходимых для определения соответствия планируемой к закупке услуги потребностям заказчика, заказчиком принято решение о включении дополнительной информации в сведения о ТРУ.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>45.20.1</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1700.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1700.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226242854</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>45.20.10.000-00000002</ns2:code>
+                        <ns2:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:name>
+                        <ns2:versionId>280800</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338024702</ns3:sid>
+                                <ns3:name>Вид услуг</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436714812</ns3:sid>
+                                        <ns3:qualityDescription>Услуги по жестяницко-сварочным работам (стоимость нормо-часа)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В связи с тем, что код позиции КТРУ не содержит характеристик, необходимых для определения соответствия планируемой к закупке услуги потребностям заказчика, заказчиком принято решение о включении дополнительной информации в сведения о ТРУ.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>45.20.1</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1700.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1700.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226242974</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>45.20.10.000-00000002</ns2:code>
+                        <ns2:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:name>
+                        <ns2:versionId>280800</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338025168</ns3:sid>
+                                <ns3:name>Вид услуг</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436715376</ns3:sid>
+                                        <ns3:qualityDescription>Услуги по окрасочным работам (стоимость нормо-часа)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В связи с тем, что код позиции КТРУ не содержит характеристик, необходимых для определения соответствия планируемой к закупке услуги потребностям заказчика, заказчиком принято решение о включении дополнительной информации в сведения о ТРУ.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>45.20.1</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1700.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1700.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226243088</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>45.20.10.000-00000002</ns2:code>
+                        <ns2:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:name>
+                        <ns2:versionId>280800</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338025542</ns3:sid>
+                                <ns3:name>Вид услуг</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436715859</ns3:sid>
+                                        <ns3:qualityDescription>Услуги по прочим работам (стоимость нормо-часа)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В связи с тем, что код позиции КТРУ не содержит характеристик, необходимых для определения соответствия планируемой к закупке услуги потребностям заказчика, заказчиком принято решение о включении дополнительной информации в сведения о ТРУ.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>45.20.1</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1700.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1700.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226243151</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>45.20.10.000-00000002</ns2:code>
+                        <ns2:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:name>
+                        <ns2:versionId>280800</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338026011</ns3:sid>
+                                <ns3:name>Вид услуг</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436716417</ns3:sid>
+                                        <ns3:qualityDescription>Услуги по замене запасных частей/услуги с использованием расходных материалов (включая стоимость запасных частей/расходных материалов)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В связи с тем, что код позиции КТРУ не содержит характеристик, необходимых для определения соответствия планируемой к закупке услуги потребностям заказчика, заказчиком принято решение о включении дополнительной информации в сведения о ТРУ.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>45.20.1</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по техническому обслуживанию и ремонту легковых автомобилей и легких грузовых автотранспортных средств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>89202805.83</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>89202805.83</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:totalSum>89214705.83</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

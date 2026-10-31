@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44405231</id>
+    <externalId>4189a23e-06f3-414b-b075-00d43919e4a7</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0201100003826000756</purchaseNumber>
+        <docNumber>№0201100003826000756</docNumber>
+        <plannedPublishDate>2026-10-28+05:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T14:56:52.205+05:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0201100003826000756</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка транспортных средств (легковых автомобилей с адаптированными органами управления) для социального обеспечения Получателей в 2026 году</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>02011000038</regNum>
+            <consRegistryNum>004Ф0101</consRegistryNum>
+            <fullName>ОТДЕЛЕНИЕ ФОНДА ПЕНСИОННОГО И СОЦИАЛЬНОГО СТРАХОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ ПО РЕСПУБЛИКЕ БАШКОРТОСТАН</fullName>
+            <shortName>ОСФР ПО РЕСПУБЛИКЕ БАШКОРТОСТАН</shortName>
+            <postAddress>450008, Республика Башкортостан, г Уфа, ул Заки Валиди, д. 55</postAddress>
+            <factAddress>450008, Республика Башкортостан, г Уфа, ул Заки Валиди, д. 55</factAddress>
+            <INN>0278055355</INN>
+            <KPP>027401001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>450008, Республика Башкортостан, г Уфа, ул Заки Валиди, д. 55</orgPostAddress>
+            <orgFactAddress>450008, Республика Башкортостан, г Уфа, ул Заки Валиди, д. 55</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Шмарева</ns3:lastName>
+                <ns3:firstName>Зенфира</ns3:firstName>
+                <ns3:middleName>Ильдаровна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>tender@02.sfr.gov.ru</contactEMail>
+            <contactPhone>8-347-2727378</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0201100003826000756</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181DE6A537028A3F64B67535CA1D2</ns3:publishedContentId>
+            <ns3:fileName>3 Приложение № 2 Обоснование НМЦК_Авто.xlsx</ns3:fileName>
+            <ns3:fileSize>15996</ns3:fileSize>
+            <ns3:docDescription>3 Приложение № 2 Обоснование НМЦК_Авто.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:36:44+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181DE6A537028A3F64B67535CA1D2</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181DE6ABF74B6AF1ECB11B5820A50</ns3:publishedContentId>
+            <ns3:fileName>5 Приложение №4 ГК_Авто.doc</ns3:fileName>
+            <ns3:fileSize>399872</ns3:fileSize>
+            <ns3:docDescription>5 Приложение №4 ГК_Авто.doc</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:36:44+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181DE6ABF74B6AF1ECB11B5820A50</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181DE6A1F7922AF076A0C27177B69</ns3:publishedContentId>
+            <ns3:fileName>2 Приложение № 1 Описание объекта_Авто.docx</ns3:fileName>
+            <ns3:fileSize>51169</ns3:fileSize>
+            <ns3:docDescription>2 Приложение № 1 Описание объекта_Авто.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:36:44+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181DE6A1F7922AF076A0C27177B69</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181DE6A8674E88F57D52F4F69CA95</ns3:publishedContentId>
+            <ns3:fileName>4 Приложение № 3 Требования к содержанию, составу заявки.docx</ns3:fileName>
+            <ns3:fileSize>74964</ns3:fileSize>
+            <ns3:docDescription>4 Приложение № 3 Требования к содержанию, составу заявки.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:36:44+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181DE6A8674E88F57D52F4F69CA95</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181DE69EC73069D05316184C5A448</ns3:publishedContentId>
+            <ns3:fileName>1 Извещение_Авто.doc</ns3:fileName>
+            <ns3:fileSize>208384</ns3:fileSize>
+            <ns3:docDescription>1 Извещение_Авто.doc</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:36:44+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181DE69EC73069D05316184C5A448</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T14:56:52+05:00</startDT>
+                <endDT>2026-11-05T08:00:00+05:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-05+05:00</biddingDate>
+            <summarizingDate>2026-11-09+05:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>4952092.02</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>02011000038</ns2:regNum>
+                    <ns2:consRegistryNum>004Ф0101</ns2:consRegistryNum>
+                    <ns2:fullName>ОТДЕЛЕНИЕ ФОНДА ПЕНСИОННОГО И СОЦИАЛЬНОГО СТРАХОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ ПО РЕСПУБЛИКЕ БАШКОРТОСТАН</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>24760.46</amount>
+                    <account>
+                        <ns3:bik>018073401</ns3:bik>
+                        <ns3:settlementAccount>03242643000000060101</ns3:settlementAccount>
+                        <ns3:personalAccount>05014Ф01010</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 6 УГУ Банка России//УФК по Республике Башкортостан, г Уфа</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810045370000067</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>0278055355</INN>
+                            <KPP>027401001</KPP>
+                            <KBK>79711610053060000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>80701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Республики Башкортостан / Городские округа Республики Башкортостан/ / город Уфа / г Уфа</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810045370000067</bankAccount>
+                            <ksNumber>03100643000000010100</ksNumber>
+                            <bik>018073401</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО РЕСПУБЛИКЕ БАШКОРТОСТАН (ОСФР ПО РЕСПУБЛИКЕ БАШКОРТОСТАН)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке предоставляется одним из следующих способов:
+а) путем блокирования денежных средств на банковском счете, открытом таким участником в банке, включенном в перечень, утвержденный Правительством Российской Федерации (далее - специальный счет) для их перевода в случаях, предусмотренных статьей 44 Закона, на счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику, или в соответствующий бюджет бюджетной системы Российской Федерации. Требования к таким банкам, к договору специального счета, к порядку использования имеющегося у участника закупки банковского счета в качестве специального счета устанавливаются Правительством Российской Федерации;
+б) путем предоставления независимой гарантии, соответствующей требованиям статьи 45 Закона. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок.</procedureInfo>
+                    <part>0.5</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>495209.20</amount>
+                    <account>
+                        <ns3:bik>018073401</ns3:bik>
+                        <ns3:settlementAccount>03242643000000060101</ns3:settlementAccount>
+                        <ns3:personalAccount>05014Ф01010</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 6 УГУ Банка России//УФК по Республике Башкортостан, г Уфа</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810045370000067</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям статьи 45 Закона, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Закона участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Закона. Контракт заключается после предоставления участником закупки, с которым заключается контракт, обеспечения исполнения контракта в соответствии Законом. В случае непредоставления участником закупки, с которым заключается контракт, обеспечения исполнения контракта в срок, установленный для заключения контракта, такой участник считается уклонившимся от заключения контракта. В случае, если предложенные в заявке участника закупки цена контракта снижена на двадцать пять и более процентов по отношению к начальной (максимальной) цене контракта, участник закупки, с которым заключается контракт, предоставляет обеспечение исполнения контракта с учетом положений статьи 37 Закона.</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>4952092.02</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>261027805535502740100107740022910323</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>29.10</ns2:OKPDCode>
+                                <ns2:OKPDName>Средства автотранспортные</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>323</ns2:code>
+                                <ns2:name>Приобретение товаров, работ и услуг в пользу граждан в целях их социального обеспечения</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>10278055355027401001</customerCode>
+                        <purchaseNumber>0774</purchaseNumber>
+                        <purchaseOrderNumber>002</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202602011000038001</ns3:plan2020Number>
+                        <ns3:position2020Number>202602011000038001000803</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-25+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>95043248</ns2:code>
+                                    <ns2:name>Бюджет фонда пенсионного и социального страхования Российской Федерации</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>41</ns2:code>
+                                    <ns2:name>бюджет Фонда пенсионного и социального страхования Российской Федерации</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>00000006</ns2:code>
+                                    <ns2:name>Раздел 1. Муниципальные образования субъектов Российской Федерации / Фонд пенсионного и социального страхования Российской Федерации</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>4952092.02</total>
+                                <currentYear>4952092.02</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22476203</sid>
+                                <externalSid>4efde717-e970-45ca-a8ac-4ba2b80a94aa</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-25+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>79710030340939630323</KBK>
+                                        <paymentYearInfo>
+                                            <total>4952092.02</total>
+                                            <currentYear>4952092.02</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62401496</ns3:sid>
+                            <ns3:externalSid>437a7cbc-20ca-4db4-a313-6b376b65f249</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>6f2cbfd8-692a-4ee4-9b16-067210bde3fc</ns3:GARGuid>
+                                <ns3:GARAddress>респ. Башкортостан</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>Передача автомобиля Получателю (либо его представителю на основании надлежащим образом оформленной доверенности) осуществляется в сервисном центре Поставщика или в помещении автомобильного салона соисполнителя на территории г. Уфы Республики Башкортостан и удовлетворяющего требованиям по обеспечению условий доступности для людей с ограниченными возможностями, при предоставлении Получателем (его представителем) паспорта и направления.</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <addInfo>За нарушение требований антимонопольного законодательства Российской Федерации о запрете участия в ограничивающих конкуренцию соглашениях, осуществления ограничивающих конкуренцию согласованных действий предусмотрена административная и уголовная ответственность.</addInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977402</ns3:sid>
+                    <ns3:externalSid>fd4f8ebe-683d-4a2b-999b-34a407ac3fc0</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>29.10.59.390</ns2:OKPDCode>
+                        <ns2:OKPDName>Средства автотранспортные специального назначения прочие, не включенные в другие группировки</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296657</ns3:sid>
+                                <ns3:name>Категория автомобиля</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683985</ns3:sid>
+                                        <ns3:qualityDescription>Ml (автомобили легковые)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296658</ns3:sid>
+                                <ns3:name>Экологический класс</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683986</ns3:sid>
+                                        <ns3:qualityDescription>Не менее 5</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296659</ns3:sid>
+                                <ns3:name>Тип кузова</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683987</ns3:sid>
+                                        <ns3:qualityDescription>Хэтчбек или лифтбек или седан</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296660</ns3:sid>
+                                <ns3:name>Количество дверей</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683988</ns3:sid>
+                                        <ns3:qualityDescription>не менее 4</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296661</ns3:sid>
+                                <ns3:name>Количество мест спереди</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683989</ns3:sid>
+                                        <ns3:qualityDescription>2</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296662</ns3:sid>
+                                <ns3:name>Количество мест сзади</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683990</ns3:sid>
+                                        <ns3:qualityDescription>3</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296663</ns3:sid>
+                                <ns3:name>Колесная формула/ведущие колеса</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683991</ns3:sid>
+                                        <ns3:qualityDescription>4x2/ передние</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296664</ns3:sid>
+                                <ns3:name>Схема компоновки автомобиля</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683992</ns3:sid>
+                                        <ns3:qualityDescription>переднеприводная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296665</ns3:sid>
+                                <ns3:name>Расположение двигателя</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683993</ns3:sid>
+                                        <ns3:qualityDescription>переднее поперечное</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296666</ns3:sid>
+                                <ns3:name>Тип двигателя</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683994</ns3:sid>
+                                        <ns3:qualityDescription>четырехтактный, бензиновый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296667</ns3:sid>
+                                <ns3:name>Тип коробки передач</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683995</ns3:sid>
+                                        <ns3:qualityDescription>Автомат</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296668</ns3:sid>
+                                <ns3:name>Двигатель внутреннего сгорания</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683996</ns3:sid>
+                                        <ns3:qualityDescription>Не менее 1500 и не более 1600 (рабочий объем), см3</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296669</ns3:sid>
+                                <ns3:name>Топливо</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683997</ns3:sid>
+                                        <ns3:qualityDescription>Бензин с октановым числом не менее 92</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>01.29.24.02.03 Легковой автомобиль, с адаптированными органами управления для получателей без правой ноги</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1650697.34</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1650697.34</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>true</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977403</ns3:sid>
+                    <ns3:externalSid>d74742f7-cd45-41ce-bc85-2157c6031e15</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>29.10.59.390</ns2:OKPDCode>
+                        <ns2:OKPDName>Средства автотранспортные специального назначения прочие, не включенные в другие группировки</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296670</ns3:sid>
+                                <ns3:name>Категория автомобиля</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683998</ns3:sid>
+                                        <ns3:qualityDescription>Ml (автомобили легковые)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296671</ns3:sid>
+                                <ns3:name>Экологический класс</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435683999</ns3:sid>
+                                        <ns3:qualityDescription>Не менее 5</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296672</ns3:sid>
+                                <ns3:name>Тип кузова</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435684000</ns3:sid>
+                                        <ns3:qualityDescription>Хэтчбек или лифтбек или седан</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296673</ns3:sid>
+                                <ns3:name>Количество дверей</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435684001</ns3:sid>
+                                        <ns3:qualityDescription>не менее 4</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296674</ns3:sid>
+                                <ns3:name>Количество мест спереди</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435684002</ns3:sid>
+                                        <ns3:qualityDescription>2</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296675</ns3:sid>
+                                <ns3:name>Количество мест сзади</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435684003</ns3:sid>
+                                        <ns3:qualityDescription>3</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296676</ns3:sid>
+                                <ns3:name>Колесная формула/ведущие колеса</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435684004</ns3:sid>
+                                        <ns3:qualityDescription>4x2/ передние</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296677</ns3:sid>
+                                <ns3:name>Схема компоновки автомобиля</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435684005</ns3:sid>
+                                        <ns3:qualityDescription>переднеприводная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296678</ns3:sid>
+                                <ns3:name>Расположение двигателя</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435684006</ns3:sid>
+                                        <ns3:qualityDescription>переднее поперечное</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296679</ns3:sid>
+                                <ns3:name>Тип двигателя</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435684007</ns3:sid>
+                                        <ns3:qualityDescription>четырехтактный, бензиновый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296680</ns3:sid>
+                                <ns3:name>Тип коробки передач</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435684008</ns3:sid>
+                                        <ns3:qualityDescription>Автомат</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296681</ns3:sid>
+                                <ns3:name>Двигатель внутреннего сгорания</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435684009</ns3:sid>
+                                        <ns3:qualityDescription>Не менее 1500 и не более 1600 (рабочий объем), см3</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337296682</ns3:sid>
+                                <ns3:name>Топливо</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435684010</ns3:sid>
+                                        <ns3:qualityDescription>Бензин с октановым числом не менее 92</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>01.29.24.04.03 Легковой автомобиль, с адаптированными органами управления для получателей без обеих ног</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1650697.34</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>3301394.68</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>true</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:totalSum>4952092.02</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEZK2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44415477</id>
+    <externalId>7b936876-17d1-4b25-8800-33600bf4958865</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0361200015026004683</purchaseNumber>
+        <docNumber>№0361200015026004683</docNumber>
+        <plannedPublishDate>2026-10-29+11:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T17:20:27.503+11:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/zk20/view/common-info.html?regNumber=0361200015026004683</href>
+        <placingWay>
+            <ns2:code>ZKP20</ns2:code>
+            <ns2:name>Запрос котировок в электронной форме</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по технической поддержке и обслуживанию государственной информационной системы «автоматизированная информационная система «Предоставление государственных и муниципальных услуг Сахалинской области в электронной форме»</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03612000150</regNum>
+            <consRegistryNum>642J3215</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "ЦЕНТР ГОСУДАРСТВЕННЫХ ЗАКУПОК САХАЛИНСКОЙ ОБЛАСТИ"</fullName>
+            <shortName>ГКУ "ЦЕНТР ГОСУДАРСТВЕННЫХ ЗАКУПОК САХАЛИНСКОЙ ОБЛАСТИ"</shortName>
+            <postAddress>Российская Федерация, 693020, Сахалинская обл, Южно-Сахалинск г, Комсомольская, ДОМ 192-б</postAddress>
+            <factAddress>Российская Федерация, 693007, Сахалинская обл, Южно-Сахалинск г, УЛИЦА КОМСОМОЛЬСКАЯ, ДОМ 192Б</factAddress>
+            <INN>6501220230</INN>
+            <KPP>650101001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>AI</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 693020, Сахалинская обл, Южно-Сахалинск г, Комсомольская, ДОМ 192-б</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 693007, Сахалинская обл, Южно-Сахалинск г, УЛИЦА КОМСОМОЛЬСКАЯ, ДОМ 192Б</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Плотицина</ns3:lastName>
+                <ns3:firstName>Яна</ns3:firstName>
+                <ns3:middleName>Сергеевна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>y.plotitsina@sakhalin.gov.ru</contactEMail>
+            <contactPhone>8-4242-459076</contactPhone>
+            <contactFax>7-4242-459070</contactFax>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0361200015026004683</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1865026B57DB38C4CE5CA1363412D</ns3:publishedContentId>
+            <ns3:fileName>21793 Обоснование НМЦК.xlsx</ns3:fileName>
+            <ns3:fileSize>22275</ns3:fileSize>
+            <ns3:docDescription>Обоснование начальной (максимальной) цены контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-29T09:19:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1865026B57DB38C4CE5CA1363412D</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186501D3A72B6A90F849ADFF2ED0A</ns3:publishedContentId>
+            <ns3:fileName>21793 Проект контракта.docx</ns3:fileName>
+            <ns3:fileSize>52590</ns3:fileSize>
+            <ns3:docDescription>Проект государственного контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-29T09:19:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186501D3A72B6A90F849ADFF2ED0A</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1865019C2741BABBD1DCC389D335D</ns3:publishedContentId>
+            <ns3:fileName>21793 Спецификация заявки на закупку (структурированный вид).xlsx</ns3:fileName>
+            <ns3:fileSize>16061</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-29T09:19:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1865019C2741BABBD1DCC389D335D</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18650241D7B02AB1B0CE4523BF106</ns3:publishedContentId>
+            <ns3:fileName>21793 Дополнительная информация к извещению об осуществлении закупки.docx</ns3:fileName>
+            <ns3:fileSize>53470</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию и составу заявки на участие в запросе котировок</ns3:docDescription>
+            <ns3:docDate>2026-10-29T09:19:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18650241D7B02AB1B0CE4523BF106</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18650206378BC8A69EB29450DEBCD</ns3:publishedContentId>
+            <ns3:fileName>21793 Приложение к ООЗ.docx</ns3:fileName>
+            <ns3:fileSize>149687</ns3:fileSize>
+            <ns3:docDescription>Приложение к описанию объекта закупки (разнарядка)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T09:19:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18650206378BC8A69EB29450DEBCD</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T17:20:27+11:00</startDT>
+                <endDT>2026-11-06T09:00:00+11:00</endDT>
+            </collectingInfo>
+            <summarizingDate>2026-11-10+11:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>2029420.86</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03612000144</ns2:regNum>
+                    <ns2:consRegistryNum>642J0319</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ САХАЛИНСКОЙ ОБЛАСТИ "ЦЕНТР РЕГИОНАЛЬНОЙ ЦИФРОВОЙ ТРАНСФОРМАЦИИ"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>20294.21</amount>
+                    <account>
+                        <ns3:bik>016401800</ns3:bik>
+                        <ns3:settlementAccount>03222643640000006100</ns3:settlementAccount>
+                        <ns3:personalAccount>05019009220</ns3:personalAccount>
+                        <ns3:creditOrgName>ОТДЕЛЕНИЕ ЮЖНО-САХАЛИНСК БАНКА РОССИИ//УФК по Сахалинской области г. Южно-Сахалинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000053</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Порядок внесения денежных средств в качестве обеспечения заявки в соответствии со статьей 44 Закона № 44-ФЗ. 
+Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, предусмотренной статьей 45 Закона № 44-ФЗ. 
+Выбор способа обеспечения осуществляется участником закупки самостоятельно и с учетом особенностей, установленных Постановлением Правительства РФ от 10.04.2023 N 579 «Об особенностях порядка предоставления обеспечения заявок на участие в закупках товаров, работ, услуг для обеспечения государственных или муниципальных нужд участниками таких закупок, являющимися иностранными лицами». Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок.</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>016401800</ns3:bik>
+                        <ns3:settlementAccount>03222643640000006100</ns3:settlementAccount>
+                        <ns3:personalAccount>05019009220</ns3:personalAccount>
+                        <ns3:creditOrgName>ОТДЕЛЕНИЕ ЮЖНО-САХАЛИНСК БАНКА РОССИИ//УФК по Сахалинской области г. Южно-Сахалинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000053</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Обеспечение исполнения контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям статьи 45 Закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, гарантийных обязательств, срок действия независимой гарантии определяются в соответствии с требованиями Закона № 44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. Срок действия независимой гарантии указан в проекте контракта.</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>2029420.86</maxPrice>
+                    </maxPriceInfo>
+                    <IKZInfo>
+                        <purchaseCode>262650123346265010100100860016203244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>62.03</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по управлению компьютерным оборудованием</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>26501233462650101001</customerCode>
+                        <purchaseNumber>0086</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603612000144001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603612000144001000176</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-23+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>61020031</ns2:code>
+                                    <ns2:name>областной бюджет Сахалинской области</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>20</ns2:code>
+                                    <ns2:name>бюджет субъекта Российской Федерации</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>64000000</ns2:code>
+                                    <ns2:name>Муниципальные образования Сахалинской области</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>2029420.86</total>
+                                <currentYear>2029420.86</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22494852</sid>
+                                <externalSid>0acf7c2b-78c4-4a63-a68a-0d07506f55ad</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-23+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>01904101550191078244</KBK>
+                                        <paymentYearInfo>
+                                            <total>2029420.86</total>
+                                            <currentYear>2029420.86</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62425610</ns3:sid>
+                            <ns3:externalSid>55c98e6c-9c10-44ae-8126-2409d094845d</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>aea6280f-4648-460f-b8be-c2bc18923191</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Сахалинская</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>удаленно с использованием инструментов удаленного доступа к виртуальной сети ViPNet № 3220.</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62425611</ns3:sid>
+                            <ns3:externalSid>5b1756a0-5594-4cbd-b2c5-244939e736a5</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>01a98693-67c4-49be-82d5-d5ae55843108</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Сахалинская, г.о. город Южно-Сахалинск, г. Южно-Сахалинск, ул. Комсомольская, д. 125</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>место сдачи результатов оказанных услуг</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>Срок предоставления гарантий качества на услуги по обновлению и доработке информационной системы составляет 12 (двенадцать) месяцев с даты подписания документа о приемке</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226072776</ns3:sid>
+                    <ns3:externalSid>4a783d13-c43d-475e-b98c-a4b2564a69cf</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>62.03.12.130</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по сопровождению компьютерных систем</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337531495</ns3:sid>
+                                <ns3:externalSid>0ebd4662-bc85-4742-87d5-13d492b9eea1</ns3:externalSid>
+                                <ns3:name>Устранение эксплуатационных ошибок Системы</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435996341</ns3:sid>
+                                        <ns3:externalSid>035ff3ac-edbe-4ebe-99bc-4158c6aefe19</ns3:externalSid>
+                                        <ns3:qualityDescription>Устранение ошибок и восстановление работы системы в случае не корректной модификации программных модулей системы Заказчиком.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Устранение эксплуатационных ошибок Системы</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03612000144</ns2:regNum>
+                                <ns2:consRegistryNum>642J0319</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ САХАЛИНСКОЙ ОБЛАСТИ "ЦЕНТР РЕГИОНАЛЬНОЙ ЦИФРОВОЙ ТРАНСФОРМАЦИИ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>50916.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>50916.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226072777</ns3:sid>
+                    <ns3:externalSid>b36d1556-5d5b-4575-b565-c030bec5626e</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>62.03.12.130</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по сопровождению компьютерных систем</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337531496</ns3:sid>
+                                <ns3:externalSid>3d9fe690-14ce-4db1-9409-51b35b61cd4f</ns3:externalSid>
+                                <ns3:name>Новый ФЭС (за ед. сведений)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435996342</ns3:sid>
+                                        <ns3:externalSid>f4f78a41-a699-4cb7-9f03-11bc81326cbc</ns3:externalSid>
+                                        <ns3:qualityDescription>Разработка и установка адаптеров (комплекс программного обеспечения) для взаимодействия с федеральными электронными сервисами единой системы межведомственной электронного взаимодействия (ЕСМЭВ)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Новый ФЭС (за ед. сведений)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03612000144</ns2:regNum>
+                                <ns2:consRegistryNum>642J0319</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ САХАЛИНСКОЙ ОБЛАСТИ "ЦЕНТР РЕГИОНАЛЬНОЙ ЦИФРОВОЙ ТРАНСФОРМАЦИИ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>217716.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>217716.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226072778</ns3:sid>
+                    <ns3:externalSid>ae5672b5-67e7-42f0-8231-90f14c0f96cf</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>62.03.12.130</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по сопровождению компьютерных систем</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337531497</ns3:sid>
+                                <ns3:externalSid>2a1a48cb-63bd-4aed-a45c-f60d01de5d69</ns3:externalSid>
+                                <ns3:name>Новый РЭС (за ед. сведений, исключая межрегиональные)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435996343</ns3:sid>
+                                        <ns3:externalSid>325ce929-d284-40d9-8888-b06535d848b5</ns3:externalSid>
+                                        <ns3:qualityDescription>Разработка и установка адаптера для взаимодействия систем на уровне региона (РОИВ и ОМСУ).</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Новый РЭС (за ед. сведений, исключая межрегиональные)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03612000144</ns2:regNum>
+                                <ns2:consRegistryNum>642J0319</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ САХАЛИНСКОЙ ОБЛАСТИ "ЦЕНТР РЕГИОНАЛЬНОЙ ЦИФРОВОЙ ТРАНСФОРМАЦИИ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>242133.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>242133.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226072779</ns3:sid>
+                    <ns3:externalSid>31aa0c57-ce0b-44e4-8b43-d52e3f72d51c</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>62.03.12.130</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по сопровождению компьютерных систем</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337531498</ns3:sid>
+                                <ns3:externalSid>b74a3b1b-23f5-4112-9d50-1a97d611bbaa</ns3:externalSid>
+                                <ns3:name>Консультация</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435996344</ns3:sid>
+                                        <ns3:externalSid>fab9d213-a2d8-4d37-89c5-3b589943653f</ns3:externalSid>
+                                        <ns3:qualityDescription>Консультационная поддержка в технических вопросах, связанных с направлением развития или сопровождения информационной системы.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Консультация</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>539</ns2:code>
+                        <ns2:nationalCode>ЧЕЛ.Ч</ns2:nationalCode>
+                        <ns2:name>Человеко-час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03612000144</ns2:regNum>
+                                <ns2:consRegistryNum>642J0319</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ САХАЛИНСКОЙ ОБЛАСТИ "ЦЕНТР РЕГИОНАЛЬНОЙ ЦИФРОВОЙ ТРАНСФОРМАЦИИ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>4371.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>4371.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226072780</ns3:sid>
+                    <ns3:externalSid>4b550390-7f32-4a39-a7be-4fcc4b188682</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>62.03.12.130</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по сопровождению компьютерных систем</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337531499</ns3:sid>
+                                <ns3:externalSid>08223362-4fa7-48c1-b593-3673d9844108</ns3:externalSid>
+                                <ns3:name>Прочие доработки, по согласованию сторон</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435996345</ns3:sid>
+                                        <ns3:externalSid>d17667c6-0cd6-45b0-b644-1fa09d180cef</ns3:externalSid>
+                                        <ns3:qualityDescription>Разработка новых функций системы.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Прочие доработки, по согласованию сторон</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>539</ns2:code>
+                        <ns2:nationalCode>ЧЕЛ.Ч</ns2:nationalCode>
+                        <ns2:name>Человеко-час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03612000144</ns2:regNum>
+                                <ns2:consRegistryNum>642J0319</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ САХАЛИНСКОЙ ОБЛАСТИ "ЦЕНТР РЕГИОНАЛЬНОЙ ЦИФРОВОЙ ТРАНСФОРМАЦИИ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>4371.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>4371.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226072781</ns3:sid>
+                    <ns3:externalSid>5daff965-e5fd-41b1-ab9a-799f04110f93</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>62.03.12.130</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по сопровождению компьютерных систем</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337531500</ns3:sid>
+                                <ns3:externalSid>e397c111-73f7-45da-badc-1f3b630c9d83</ns3:externalSid>
+                                <ns3:name>Инженерная поддержка (настройка сервера приложений, cubernetes, бэкапы, настройка ВМ, системного ПО, конфигурирование кластера)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435996346</ns3:sid>
+                                        <ns3:externalSid>6a410b00-5d59-4539-b554-6f94d3e65b68</ns3:externalSid>
+                                        <ns3:qualityDescription>Настройка сервера приложений, настройка микро сервисной архитектуры системы, настройка системы бэкапов, настройка виртуальных машин, настройка системного программного обеспечения, конфигурирование кластерных решений.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Инженерная поддержка (настройка сервера приложений, cubernetes, бэкапы, настройка ВМ, системного ПО, конфигурирование кластера)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>539</ns2:code>
+                        <ns2:nationalCode>ЧЕЛ.Ч</ns2:nationalCode>
+                        <ns2:name>Человеко-час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03612000144</ns2:regNum>
+                                <ns2:consRegistryNum>642J0319</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ САХАЛИНСКОЙ ОБЛАСТИ "ЦЕНТР РЕГИОНАЛЬНОЙ ЦИФРОВОЙ ТРАНСФОРМАЦИИ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>4371.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>4371.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226072782</ns3:sid>
+                    <ns3:externalSid>85334e30-7e54-4343-b765-f275b6f3ee4d</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>62.03.12.130</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по сопровождению компьютерных систем</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337531501</ns3:sid>
+                                <ns3:externalSid>d4bab68d-9c15-4a51-9870-c0a42f5ca6d6</ns3:externalSid>
+                                <ns3:name>Установка кода и пакетов обновлений (за 1 обновление)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435996347</ns3:sid>
+                                        <ns3:externalSid>6ed14c87-e0f7-4c24-9085-7e4cb4450457</ns3:externalSid>
+                                        <ns3:qualityDescription>Установка пакетов (комплекса программного кода) в случае разработки новых модулей системы, которые разрабатываются в соответствии с «прочими доработками».</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Установка кода и пакетов обновлений (за 1 обновление)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03612000144</ns2:regNum>
+                                <ns2:consRegistryNum>642J0319</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ САХАЛИНСКОЙ ОБЛАСТИ "ЦЕНТР РЕГИОНАЛЬНОЙ ЦИФРОВОЙ ТРАНСФОРМАЦИИ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>312083.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>312083.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226072783</ns3:sid>
+                    <ns3:externalSid>770f618a-bbd8-4e2f-8d1f-5851bf7f23f3</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>62.03.12.130</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по сопровождению компьютерных систем</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337531502</ns3:sid>
+                                <ns3:externalSid>1f4433d8-a41f-49f5-977b-9b672855c201</ns3:externalSid>
+                                <ns3:name>Поддержка работоспособности прикладного ПО</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435996348</ns3:sid>
+                                        <ns3:externalSid>0968dd18-155f-407c-82fc-9330d9b3ca0d</ns3:externalSid>
+                                        <ns3:qualityDescription>Установка, обновление версии web-служб или других пакетов, используемых из официальных репозиториев (централизованное хранилище пакетов программного обеспечения для операционной системы) на соответствие актуальной версии во избежание нарушения требований информационной безопасности.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Поддержка работоспособности прикладного ПО</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>539</ns2:code>
+                        <ns2:nationalCode>ЧЕЛ.Ч</ns2:nationalCode>
+                        <ns2:name>Человеко-час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03612000144</ns2:regNum>
+                                <ns2:consRegistryNum>642J0319</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ САХАЛИНСКОЙ ОБЛАСТИ "ЦЕНТР РЕГИОНАЛЬНОЙ ЦИФРОВОЙ ТРАНСФОРМАЦИИ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>4371.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>4371.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>840336.68</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+    </notificationInfo>
+    <printFormFieldsInfo>
+        <is449Features>false</is449Features>
+    </printFormFieldsInfo>
+</ns8:epNotificationEZK2020>

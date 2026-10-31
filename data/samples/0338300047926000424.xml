@@ -1,0 +1,1415 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44328785</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0338300047926000424</purchaseNumber>
+        <docNumber>№0338300047926000424</docNumber>
+        <plannedPublishDate>2026-10-26+12:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-26T14:44:30.666+12:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0338300047926000424</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_EETP</ns2:code>
+            <ns2:name>РОСЭЛТОРГ (АО«ЕЭТП»)</ns2:name>
+            <ns2:url>http://roseltorg.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка реагентов и расходных материалов для клинико-диагностической лаборатории в 2026-2027 годах к автоматическому анализатору коагуляции СХ-6010</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03383000479</regNum>
+            <consRegistryNum>302Щ0145</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ КАМЧАТСКОГО КРАЯ "ЕЛИЗОВСКАЯ РАЙОННАЯ БОЛЬНИЦА"</fullName>
+            <shortName>ГБУЗ КК ЕРБ</shortName>
+            <postAddress>Российская Федерация, 684000, Камчатский край, Елизовский р-н, Елизово г, УЛИЦА ПОГРАНИЧНАЯ, 18</postAddress>
+            <factAddress>Российская Федерация, 684000, Камчатский край, Елизовский р-н, Елизово г, Пограничная ул, Д. 18</factAddress>
+            <INN>4105040135</INN>
+            <KPP>410501001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 684000, Камчатский край, Елизовский р-н, Елизово г, УЛИЦА ПОГРАНИЧНАЯ, 18</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 684000, Камчатский край, Елизовский р-н, Елизово г, Пограничная ул, Д. 18</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Комяков</ns3:lastName>
+                <ns3:firstName>Артём</ns3:firstName>
+                <ns3:middleName>Александрович</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>komyakov-erb@yandex.ru</contactEMail>
+            <contactPhone>7-914-6259920</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0338300047926000424</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A171877F2B74E7AD752052C39F9DE2</ns3:publishedContentId>
+            <ns3:fileName>НМЦК (НМЦЗ).xlsx</ns3:fileName>
+            <ns3:fileSize>22424</ns3:fileSize>
+            <ns3:docDescription>НМЦК (НМЦЗ)</ns3:docDescription>
+            <ns3:docDate>2026-10-25T08:27:47+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A171877F2B74E7AD752052C39F9DE2</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A171851E45794B813892FA26B655F1</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта.docx</ns3:fileName>
+            <ns3:fileSize>98466</ns3:fileSize>
+            <ns3:docDescription>Проект контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-25T08:25:11+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A171851E45794B813892FA26B655F1</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1719CADFB7A158F868FE6FBF1FD04</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки.doc</ns3:fileName>
+            <ns3:fileSize>99328</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-25T08:50:55+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1719CADFB7A158F868FE6FBF1FD04</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1718456FD7F019EA0742B0799356F</ns3:publishedContentId>
+            <ns3:fileName>П2О Требования к заявке участника.docx</ns3:fileName>
+            <ns3:fileSize>101272</ns3:fileSize>
+            <ns3:docDescription>П2О Требования к заявке участника</ns3:docDescription>
+            <ns3:docDate>2026-10-25T08:24:20+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1718456FD7F019EA0742B0799356F</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A171818C607F16955F58041BE4A2BC</ns3:publishedContentId>
+            <ns3:fileName>Уведомление Тромбиновое время ИВД, набор, анализ образования сгустка.pdf</ns3:fileName>
+            <ns3:fileSize>80726</ns3:fileSize>
+            <ns3:docDescription>Уведомление Тромбиновое время ИВД, набор, анализ образования сгустка</ns3:docDescription>
+            <ns3:docDate>2026-10-25T08:21:17+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A171818C607F16955F58041BE4A2BC</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17180CCBD7A8B9D76026BBDBCC3B9</ns3:publishedContentId>
+            <ns3:fileName>Уведомление Антитромбин III (ATIII) ИВД, набор, хромогенный анализ.pdf</ns3:fileName>
+            <ns3:fileSize>81434</ns3:fileSize>
+            <ns3:docDescription>Уведомление Антитромбин III (ATIII) ИВД, набор, хромогенный анализ</ns3:docDescription>
+            <ns3:docDate>2026-10-25T08:20:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17180CCBD7A8B9D76026BBDBCC3B9</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1718104387E0A98BCF6B13EB9C971</ns3:publishedContentId>
+            <ns3:fileName>Уведомление Продукты деградации фибрина (ПДФ) ИВД, реагент.pdf</ns3:fileName>
+            <ns3:fileSize>78507</ns3:fileSize>
+            <ns3:docDescription>Уведомление Продукты деградации фибрина (ПДФ) ИВД, реагент</ns3:docDescription>
+            <ns3:docDate>2026-10-25T08:20:43+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1718104387E0A98BCF6B13EB9C971</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1718090DC7520942AF3EFC0E412ED</ns3:publishedContentId>
+            <ns3:fileName>Уведомление Активированное частичное тромбопластиновое время ИВД, набор, анализ образования сгустка.pdf</ns3:fileName>
+            <ns3:fileSize>80620</ns3:fileSize>
+            <ns3:docDescription>Уведомление Активированное частичное тромбопластиновое время ИВД, набор, анализ образования сгустка</ns3:docDescription>
+            <ns3:docDate>2026-10-25T08:20:13+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1718090DC7520942AF3EFC0E412ED</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17181481E734F939079271B72D0FA</ns3:publishedContentId>
+            <ns3:fileName>Уведомление Протромбиновое время (ПВ) ИВД, набор, анализ образования сгустка.pdf</ns3:fileName>
+            <ns3:fileSize>81025</ns3:fileSize>
+            <ns3:docDescription>Уведомление Протромбиновое время (ПВ) ИВД, набор, анализ образования сгустка</ns3:docDescription>
+            <ns3:docDate>2026-10-25T08:21:00+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17181481E734F939079271B72D0FA</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17181D59E7A9FBB98B1859EA28112</ns3:publishedContentId>
+            <ns3:fileName>Уведомление Фибриноген (фактор I) ИВД, набор, анализ образования сгустка.pdf</ns3:fileName>
+            <ns3:fileSize>81872</ns3:fileSize>
+            <ns3:docDescription>Уведомление Фибриноген (фактор I) ИВД, набор, анализ образования сгустка</ns3:docDescription>
+            <ns3:docDate>2026-10-25T08:21:36+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17181D59E7A9FBB98B1859EA28112</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1718049867BB7BFEE79EE0FEB3286</ns3:publishedContentId>
+            <ns3:fileName>Декларация факта отсутствия на территории Российской Федерации производства.docx</ns3:fileName>
+            <ns3:fileSize>16810</ns3:fileSize>
+            <ns3:docDescription>Декларация факта отсутствия на территории Российской Федерации производства</ns3:docDescription>
+            <ns3:docDate>2026-10-25T08:19:55+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1718049867BB7BFEE79EE0FEB3286</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A171806B1C785CA02EFC8B59ACF668</ns3:publishedContentId>
+            <ns3:fileName>Уведомление D-димер ИВД, набор, нефелометрическийтурбидиметрический анализ.pdf</ns3:fileName>
+            <ns3:fileSize>80280</ns3:fileSize>
+            <ns3:docDescription>Уведомление D-димер ИВД, набор, нефелометрическийтурбидиметрический анализ</ns3:docDescription>
+            <ns3:docDate>2026-10-25T08:20:03+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A171806B1C785CA02EFC8B59ACF668</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-26T14:44:30+12:00</startDT>
+                <endDT>2026-11-03T09:00:00+12:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-03+12:00</biddingDate>
+            <summarizingDate>2026-11-04+12:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>3006100.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+            <standardContractNumber>1400700000523001</standardContractNumber>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03383000479</ns2:regNum>
+                    <ns2:consRegistryNum>302Щ0145</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ КАМЧАТСКОГО КРАЯ "ЕЛИЗОВСКАЯ РАЙОННАЯ БОЛЬНИЦА"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>30061.00</amount>
+                    <account>
+                        <ns3:bik>010507002</ns3:bik>
+                        <ns3:settlementAccount>03224643300000002000</ns3:settlementAccount>
+                        <ns3:personalAccount>802Щ0145000</ns3:personalAccount>
+                        <ns3:receiptCode>
+                            <ns2:code>ОБ</ns2:code>
+                            <ns2:name>Средства, поступившие в рамках обеспечения заявок, исполнения контракта (договора), гарантийных обязательства</ns2:name>
+                        </ns3:receiptCode>
+                        <ns3:creditOrgName>ОКЦ № 1 ДГУ Банка России//УФК по Приморскому краю, г Владивосток</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000012</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>4105040135</INN>
+                            <KPP>410501001</KPP>
+                            <KBK>00011610000000000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>30607101001</ns2:code>
+                                <ns2:name>Муниципальные образования Камчатского края / Муниципальные районы Камчатского края, кроме входящих в состав Корякского округа / Елизовский муниципальный район / Городские поселения Елизовского муниципального района/ / Елизовское / г Елизово</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810945370000031</bankAccount>
+                            <ksNumber>03100643000000013800</ksNumber>
+                            <bik>013002402</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО КАМЧАТСКОМУ КРАЮ (ГБУЗ КК ЕРБ)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке предоставляется одним из следующих способов: а) путем блокирования денежных средств на банковском счете, открытом таким участником в банке, включенном в перечень, утвержденный Правительством Российской Федерации (далее - специальный счет), для их перевода в случаях, предусмотренных настоящей статьей, на счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику, или в соответствующий бюджет бюджетной системы Российской Федерации. Требования к таким банкам, к договору специального счета, к порядку использования имеющегося у участника закупки банковского счета в качестве специального счета устанавливаются Правительством Российской Федерации; б) путем предоставления независимой гарантии, соответствующей требованиям статьи 45 настоящего Федерального закона</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>300610.00</amount>
+                    <account>
+                        <ns3:bik>010507002</ns3:bik>
+                        <ns3:settlementAccount>03224643300000002000</ns3:settlementAccount>
+                        <ns3:personalAccount>802Щ0145000</ns3:personalAccount>
+                        <ns3:receiptCode>
+                            <ns2:code>ОБ</ns2:code>
+                            <ns2:name>Средства, поступившие в рамках обеспечения заявок, исполнения контракта (договора), гарантийных обязательства</ns2:name>
+                        </ns3:receiptCode>
+                        <ns3:creditOrgName>ОКЦ № 1 ДГУ Банка России//УФК по Приморскому краю, г Владивосток</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000012</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>УЗ одновременно с размещением на электронной площадке подписанного проекта контракта, размещает документ, подтверждающий предоставление обеспечения исполнения контракта в соответствии со статьей 96, с учетом положений статьи 37 ФЗ № 44. Исполнение контракта может обеспечиваться предоставлением НГ, соответствующей требованиям статьи 45 ФЗ № 44, постановления Правительства Российской Федерации от 8 ноября 2013 года № 1005, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия НГ определяются в соответствии с требованиями ФЗ № 44 УЗ, с которым заключается контракт, самостоятельно. При этом срок действия НГ должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой НГ, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 ФЗ № 44.Требования обеспечения исполнения контракта не применяются в случае:- заключения контракта с УЗ, который является казенным учреждением;- УЗ, с которым заключается контракт в соответствии с пунктом 1 части 1 статьи 30 ФЗ № 44, до заключения контракта предоставил информацию, содержащуюся в реестре контрактов, заключенных заказчиками, и подтверждающую исполнение таким УЗ (без учета правопреемства) в течение 3 лет до даты подачи заявки на участие в закупке 3 контрактов, исполненных без применения к такому УЗ неустоек (штрафов, пеней), сумма цен которых составляет не менее НМЦК (НМЗЦК), указанной в извещении об осуществлении закупки.</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>3006100.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262410504013541050100101070010000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>24105040135410501001</customerCode>
+                        <purchaseNumber>0107</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603383000479001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603383000479001000093</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-06-01+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>3006100.00</total>
+                                <currentYear>1000000.00</currentYear>
+                                <firstYear>2006100.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22355581</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-06-01+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>3006100.00</total>
+                                        <currentYear>1000000.00</currentYear>
+                                        <firstYear>2006100.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:receiptCode>
+                                                <ns2:code>ЦС</ns2:code>
+                                                <ns2:name>Субсидии на иные цели и на осуществление капитальных вложений в объекты капитального строительства государственной (муниципальной) собственности или приобретение объектов недвижимого имущества в государственную (муниципальную) собственность</ns2:name>
+                                            </ns3:receiptCode>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>153050.00</ns3:total>
+                                                <ns3:currentYear>50000.00</ns3:currentYear>
+                                                <ns3:firstYear>103050.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:receiptCode>
+                                                <ns2:code>ПД</ns2:code>
+                                                <ns2:name>Средства бюджетного (автономного) учреждения от приносящей доход деятельности и иные средства</ns2:name>
+                                            </ns3:receiptCode>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>153050.00</ns3:total>
+                                                <ns3:currentYear>50000.00</ns3:currentYear>
+                                                <ns3:firstYear>103050.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:receiptCode>
+                                                <ns2:code>МС</ns2:code>
+                                                <ns2:name>Средства обязательного медицинского страхования</ns2:name>
+                                            </ns3:receiptCode>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>2700000.00</ns3:total>
+                                                <ns3:currentYear>900000.00</ns3:currentYear>
+                                                <ns3:firstYear>1800000.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>3006100.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62262381</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>937f7c0c-a419-4af7-b45b-0e862e2599a9</ns3:GARGuid>
+                                <ns3:GARAddress>край Камчатский, м.р-н Елизовский, г.п. Елизовское, г. Елизово, ул. Пограничная, д. 18</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyServiceRequirement>В соответствии с Контрактом и документации о закупке</warrantyServiceRequirement>
+                    <manufacturersWarrantyRequirement>В соответствии с разделом 3 описания объекта закупки</manufacturersWarrantyRequirement>
+                    <warrantyTerm>В соответствии с разделом 3 описания объекта закупки</warrantyTerm>
+                </warrantyInfo>
+                <addInfo>Список сокращений: Федеральный закон от 5 апреля 2013 года № 44-ФЗ «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд» – ФЗ № 44, Закон № 44-ФЗ Начальная (максимальная) цена контракта – НМЦК (Начальное максимальное значение цены контракта - НМЗЦК) Независимая гарантия – НГ Участник закупки – УЗ</addInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225381632</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00001009</ns2:code>
+                        <ns2:name>Фибриноген (фактор I) ИВД, набор, анализ образования сгустка</ns2:name>
+                        <ns2:versionId>180890</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>335547688</ns3:sid>
+                                <ns3:code>cd784657-d</ns3:code>
+                                <ns3:name>Количество выполняемых исследований</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951592</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>800</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>335547689</ns3:sid>
+                                <ns3:code>f3786f67-c</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951593</ns3:sid>
+                                        <ns3:qualityDescription>Для анализаторов серии СХ</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335547690</ns3:sid>
+                                <ns3:name>Применение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951594</ns3:sid>
+                                        <ns3:qualityDescription>Для количественного определения концентрации фибриногена (FIB) в цитратной плазме крови человека на анализаторах коагулометрических серии CX</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335547691</ns3:sid>
+                                <ns3:name>Вид метки идентификации реагента</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951595</ns3:sid>
+                                        <ns3:qualityDescription>RFID-метка</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335547692</ns3:sid>
+                                <ns3:name>Реагенты готовы к использованию</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951596</ns3:sid>
+                                        <ns3:qualityDescription>Наличие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335547693</ns3:sid>
+                                <ns3:name>Совместимость с установленным в учреждении заказчика оборудованием</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951597</ns3:sid>
+                                        <ns3:qualityDescription>Совместимость с автоматическим анализатором коагуляции СХ-6010 (РЗН 2024/22196), производства "Шэньчжэнь Майндрэй Био-Медикал Электроникс Ко., Лтд.", Китай</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Соответствуют потребности заказчика&#13;
+2. Для идентификации реагента сканером анализатора, его подключения к анализатору для дальнейшего использования.&#13;
+3. Использование жидких реагентов оптимизирует лабораторный процесс, исключает ошибки, связанные с разведением, не требует временных затрат по подготовке реагента.  &#13;
+4. Реагенты должны быть адаптированы и не требовать перенастройки, перекалибровки и изменения методик, запрограммированных в анализаторе.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Фибриноген (фактор I) ИВД, набор, анализ образования сгустка</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>26100.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>26100.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225381633</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00010019</ns2:code>
+                        <ns2:name>D-димер ИВД, набор, нефелометрический/турбидиметрический анализ	</ns2:name>
+                        <ns2:versionId>186526</ns2:versionId>
+                        <ns2:versionNumber>5</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>335547694</ns3:sid>
+                                <ns3:code>ed5b525f-b</ns3:code>
+                                <ns3:name>Количество выполняемых исследований</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951598</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>300</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>340</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>1</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке диапазон значений характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>335547695</ns3:sid>
+                                <ns3:code>3df35f7f-6</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951599</ns3:sid>
+                                        <ns3:qualityDescription>Для анализаторов серии СХ</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335547696</ns3:sid>
+                                <ns3:name>Применение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951600</ns3:sid>
+                                        <ns3:qualityDescription>Для определения концентрации D-димера (D-D) в цитратной плазме крови человека на анализаторах коагулометрических серии CX</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335547697</ns3:sid>
+                                <ns3:name>Вид метки идентификации реагента</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951601</ns3:sid>
+                                        <ns3:qualityDescription>RFID-метка</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335547698</ns3:sid>
+                                <ns3:name>Реагенты готовы к использованию</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951602</ns3:sid>
+                                        <ns3:qualityDescription>Наличие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335547699</ns3:sid>
+                                <ns3:name>Совместимость с установленным в учреждении заказчика оборудованием</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951603</ns3:sid>
+                                        <ns3:qualityDescription>Совместимость с автоматическим анализатором коагуляции СХ-6010 (РЗН 2024/22196), производства "Шэньчжэнь Майндрэй Био-Медикал Электроникс Ко., Лтд.", Китай</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Соответствуют потребности заказчика&#13;
+2. Для идентификации реагента сканером анализатора, его подключения к анализатору для дальнейшего использования.&#13;
+3. Использование жидких реагентов оптимизирует лабораторный процесс, исключает ошибки, связанные с разведением, не требует временных затрат по подготовке реагента.  &#13;
+4. Реагенты должны быть адаптированы и не требовать перенастройки, перекалибровки и изменения методик, запрограммированных в анализаторе</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>D-димер ИВД, набор, нефелометрический/турбидиметрический анализ	</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>124200.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>124200.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225381634</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00001225</ns2:code>
+                        <ns2:name>Тромбиновое время ИВД, набор, анализ образования сгустка</ns2:name>
+                        <ns2:versionId>187784</ns2:versionId>
+                        <ns2:versionNumber>5</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>335547700</ns3:sid>
+                                <ns3:code>cd784657-d</ns3:code>
+                                <ns3:name>Количество выполняемых исследований</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951604</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>800</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>335547701</ns3:sid>
+                                <ns3:code>f3786f67-c</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951605</ns3:sid>
+                                        <ns3:qualityDescription>Для анализаторов серии СХ</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335547702</ns3:sid>
+                                <ns3:name>Применение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951606</ns3:sid>
+                                        <ns3:qualityDescription>Для количественного определения тромбинового времени (TT) коагулометрическим методом в цитратной плазме крови человека на анализаторах коагулометрических серии CX</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335547703</ns3:sid>
+                                <ns3:name>Вид метки идентификации реагента</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951607</ns3:sid>
+                                        <ns3:qualityDescription>RFID-метка</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335547704</ns3:sid>
+                                <ns3:name>Реагенты готовы к использованию</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951608</ns3:sid>
+                                        <ns3:qualityDescription>Наличие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335547705</ns3:sid>
+                                <ns3:name>Совместимость с установленным в учреждении заказчика оборудованием</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951609</ns3:sid>
+                                        <ns3:qualityDescription>Совместимость с автоматическим анализатором коагуляции СХ-6010 (РЗН 2024/22196), производства "Шэньчжэнь Майндрэй Био-Медикал Электроникс Ко., Лтд.", Китай</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Соответствуют потребности заказчика&#13;
+2. Для идентификации реагента сканером анализатора, его подключения к анализатору для дальнейшего использования.&#13;
+3. Использование жидких реагентов оптимизирует лабораторный процесс, исключает ошибки, связанные с разведением, не требует временных затрат по подготовке реагента.  &#13;
+4. Реагенты должны быть адаптированы и не требовать перенастройки, перекалибровки и изменения методик, запрограммированных в анализаторе</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Тромбиновое время ИВД, набор, анализ образования сгустка</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>16200.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>16200.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225387390</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00001557</ns2:code>
+                        <ns2:name>Активированное частичное тромбопластиновое время ИВД, набор, анализ образования сгустка</ns2:name>
+                        <ns2:versionId>319217</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>335573485</ns3:sid>
+                                <ns3:code>5c69999c-1</ns3:code>
+                                <ns3:name>Максимальное количество выполняемых тестов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951610</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>800</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>335573486</ns3:sid>
+                                <ns3:code>024debd8-9</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951611</ns3:sid>
+                                        <ns3:qualityDescription>Для анализаторов серии СХ</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573487</ns3:sid>
+                                <ns3:name>Применение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951612</ns3:sid>
+                                        <ns3:qualityDescription>Для количественного определения активированного частичного тромбопластинового времени (APTT) коагулометрическим методом в цитратной плазме крови человека на анализаторах коагулометрических серии CX</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573488</ns3:sid>
+                                <ns3:name>Вид метки идентификации реагента</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951613</ns3:sid>
+                                        <ns3:qualityDescription>RFID-метка</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573489</ns3:sid>
+                                <ns3:name>Реагенты готовы к использованию</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951614</ns3:sid>
+                                        <ns3:qualityDescription>Наличие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573490</ns3:sid>
+                                <ns3:name>Совместимость с установленным в учреждении заказчика оборудованием</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951615</ns3:sid>
+                                        <ns3:qualityDescription>Совместимость с автоматическим анализатором коагуляции СХ-6010 (РЗН 2024/22196), производства "Шэньчжэнь Майндрэй Био-Медикал Электроникс Ко., Лтд.", Китай</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Соответствуют потребности заказчика&#13;
+2. Для идентификации реагента сканером анализатора, его подключения к анализатору для дальнейшего использования.&#13;
+3. Использование жидких реагентов оптимизирует лабораторный процесс, исключает ошибки, связанные с разведением, не требует временных затрат по подготовке реагента.  &#13;
+4. Реагенты должны быть адаптированы и не требовать перенастройки, перекалибровки и изменения методик, запрограммированных в анализаторе</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Активированное частичное тромбопластиновое время ИВД, набор, анализ образования сгустка</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>12100.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>12100.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225387391</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00000916</ns2:code>
+                        <ns2:name>Протромбиновое время (ПВ) ИВД, набор, анализ образования сгустка</ns2:name>
+                        <ns2:versionId>186582</ns2:versionId>
+                        <ns2:versionNumber>5</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>335573491</ns3:sid>
+                                <ns3:code>cd784657-d</ns3:code>
+                                <ns3:name>Количество выполняемых исследований</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951616</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>800</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>335573492</ns3:sid>
+                                <ns3:code>f3786f67-c</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951617</ns3:sid>
+                                        <ns3:qualityDescription>Для анализаторов серии СХ</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573493</ns3:sid>
+                                <ns3:name>Применение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951618</ns3:sid>
+                                        <ns3:qualityDescription>Для количественного определения протромбинового времени (РТ) в цитратной плазме крови человека на анализаторах коагулометрических серии CX</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573494</ns3:sid>
+                                <ns3:name>Вид метки идентификации реагента</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951619</ns3:sid>
+                                        <ns3:qualityDescription>RFID-метка</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573495</ns3:sid>
+                                <ns3:name>Реагенты готовы к использованию</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951620</ns3:sid>
+                                        <ns3:qualityDescription>Наличие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573496</ns3:sid>
+                                <ns3:name>Совместимость с установленным в учреждении заказчика оборудованием</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951621</ns3:sid>
+                                        <ns3:qualityDescription>Совместимость с автоматическим анализатором коагуляции СХ-6010 (РЗН 2024/22196), производства "Шэньчжэнь Майндрэй Био-Медикал Электроникс Ко., Лтд.", Китай</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Соответствуют потребности заказчика&#13;
+2. Для идентификации реагента сканером анализатора, его подключения к анализатору для дальнейшего использования.&#13;
+3. Использование жидких реагентов оптимизирует лабораторный процесс, исключает ошибки, связанные с разведением, не требует временных затрат по подготовке реагента.  &#13;
+4. Реагенты должны быть адаптированы и не требовать перенастройки, перекалибровки и изменения методик, запрограммированных в анализаторе</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Протромбиновое время (ПВ) ИВД, набор, анализ образования сгустка</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>14000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>14000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225387392</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00008324</ns2:code>
+                        <ns2:name>Антитромбин III (ATIII) ИВД, набор, хромогенный анализ</ns2:name>
+                        <ns2:versionId>186544</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>335573497</ns3:sid>
+                                <ns3:code>20bf8a6b-e</ns3:code>
+                                <ns3:name>Количество выполняемых исследований</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951622</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>200</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>335573498</ns3:sid>
+                                <ns3:code>ff02469b-2</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951623</ns3:sid>
+                                        <ns3:qualityDescription>Для анализаторов серии СХ</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573499</ns3:sid>
+                                <ns3:name>Применение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951624</ns3:sid>
+                                        <ns3:qualityDescription>Для количественного определения антитромбина III (ATIII) методом хромогенного анализа в цитратной плазме крови человека на анализаторах коагулометрических серии CX</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573500</ns3:sid>
+                                <ns3:name>Вид метки идентификации реагента</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951625</ns3:sid>
+                                        <ns3:qualityDescription>RFID-метка</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573501</ns3:sid>
+                                <ns3:name>Реагенты готовы к использованию</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951626</ns3:sid>
+                                        <ns3:qualityDescription>Наличие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573502</ns3:sid>
+                                <ns3:name>Калибратор в составе набора</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951627</ns3:sid>
+                                        <ns3:qualityDescription>Наличие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573503</ns3:sid>
+                                <ns3:name>Совместимость с установленным в учреждении заказчика оборудованием</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951628</ns3:sid>
+                                        <ns3:qualityDescription>Совместимость с автоматическим анализатором коагуляции СХ-6010 (РЗН 2024/22196), производства "Шэньчжэнь Майндрэй Био-Медикал Электроникс Ко., Лтд.", Китай</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Соответствуют потребности заказчика&#13;
+2. Соответствуют потребности заказчика&#13;
+3. Для идентификации реагента сканером анализатора, его подключения к анализатору для дальнейшего использования.&#13;
+4. Для расчёта концентрации аналита в исследуемом образце для обеспечения точного результата анализа; отсутствует необходимость дополнительных расходов на покупку соответствующего калибратора&#13;
+5. Реагенты должны быть адаптированы и не требовать перенастройки, перекалибровки и изменения методик, запрограммированных в анализаторе.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Антитромбин III (ATIII) ИВД, набор, хромогенный анализ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>27800.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>27800.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225387393</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>21.20.23.111</ns2:OKPDCode>
+                        <ns2:OKPDName>Препараты диагностические</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573504</ns3:sid>
+                                <ns3:name>Применение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951587</ns3:sid>
+                                        <ns3:qualityDescription>Для количественного анализа на продукты деградации фибрина (фибриногена) (FDP) в цитратной плазме крови человека на анализаторах коагулометрических серии CX</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573505</ns3:sid>
+                                <ns3:name>Вид метки идентификации реагента</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951588</ns3:sid>
+                                        <ns3:qualityDescription>RFID-метка</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573506</ns3:sid>
+                                <ns3:name>Реагенты готовы к использованию</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951589</ns3:sid>
+                                        <ns3:qualityDescription>Наличие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573507</ns3:sid>
+                                <ns3:name>Совместимость с установленным в учреждении заказчика оборудованием</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951590</ns3:sid>
+                                        <ns3:qualityDescription>Совместимость с автоматическим анализатором коагуляции СХ-6010 (РЗН 2024/22196), производства "Шэньчжэнь Майндрэй Био-Медикал Электроникс Ко., Лтд.", Китай</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>335573508</ns3:sid>
+                                <ns3:name>Количество выполняемых тестов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433951591</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>300</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Продукты деградации фибрина (ПДФ) ИВД, реагент</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>136600.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>136600.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>357000</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

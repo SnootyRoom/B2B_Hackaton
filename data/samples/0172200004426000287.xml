@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44379984</id>
+    <externalId>6240189</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0172200004426000287</purchaseNumber>
+        <docNumber>№0172200004426000287</docNumber>
+        <plannedPublishDate>2026-10-28+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T15:01:39.435+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0172200004426000287</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_MMVB</ns2:code>
+            <ns2:name>Электронная торговая площадка «Фабрикант»</ns2:name>
+            <ns2:url>https://www.fabrikant.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по техническому обслуживанию автоматических систем пожарной сигнализации, газового и порошкового пожаротушения оповещения о пожаре и управления эвакуацией комплекса зданий Смольного для обеспечения нужд Санкт-Петербурга</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>01722000044</regNum>
+            <consRegistryNum>40200095</consRegistryNum>
+            <fullName>АДМИНИСТРАЦИЯ ГУБЕРНАТОРА САНКТ-ПЕТЕРБУРГА</fullName>
+            <postAddress>191060, Город Санкт-Петербург город федерального значения, Российская Федерация, 191060, Санкт-Петербург, ТЕРРИТОРИЯ СМОЛЬНЫЙ, д. 1, литера Б, 40911000</postAddress>
+            <factAddress>191060, Санкт-Петербург, Смольный проезд, Д. 1 ЛИТЕРА Б, 40911000</factAddress>
+            <INN>7830002078</INN>
+            <KPP>784201001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>191060, Город Санкт-Петербург город федерального значения, Российская Федерация, 191060, Санкт-Петербург, ТЕРРИТОРИЯ СМОЛЬНЫЙ, д. 1, литера Б, 40911000</orgPostAddress>
+            <orgFactAddress>191060, Санкт-Петербург, Смольный проезд, Д. 1 ЛИТЕРА Б, 40911000</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Югай</ns3:lastName>
+                <ns3:firstName>Владимир</ns3:firstName>
+                <ns3:middleName>Михайлович</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>yugay@udel.gov.spb.ru</contactEMail>
+            <contactPhone>7-812-5764373</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0172200004426000287</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1783344EA7375B9C28F06DFE5DB05</ns3:publishedContentId>
+            <ns3:fileName>Обоснование_НМЦК_ТО_пож_сигнал_Смольный_2027[1].docx</ns3:fileName>
+            <ns3:fileSize>46315</ns3:fileSize>
+            <ns3:docDescription>Обоснование начальной (максимальной) цены контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-26T15:56:46+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1783344EA7375B9C28F06DFE5DB05</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A178333A3170618253AF481D6764C7</ns3:publishedContentId>
+            <ns3:fileName>Проект_ГК_ТО_пожарной_сигналзации_Смольный_(2800,_аукц.,_стр.).docx</ns3:fileName>
+            <ns3:fileSize>99574</ns3:fileSize>
+            <ns3:docDescription>Проект контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-26T15:56:46+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A178333A3170618253AF481D6764C7</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A178333D497862865CF652EDE87C6E</ns3:publishedContentId>
+            <ns3:fileName>Приложение_ООЗ_ТО_пож_сигнал_Смольный_2027.doc</ns3:fileName>
+            <ns3:fileSize>306688</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-26T15:56:46+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A178333D497862865CF652EDE87C6E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17833405A72D3B08B6EE90E7B0E6E</ns3:publishedContentId>
+            <ns3:fileName>Приложение_№_3_Требования_к_заявке_Услуги_ЛИЦЕНЗИЯ_+_2571[1].docx</ns3:fileName>
+            <ns3:fileSize>25663</ns3:fileSize>
+            <ns3:docDescription>Требование к содержанию, составу заявки на участие в закупке</ns3:docDescription>
+            <ns3:docDate>2026-10-26T15:56:46+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17833405A72D3B08B6EE90E7B0E6E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1783342BA7671B2797EDA84DC0DB6</ns3:publishedContentId>
+            <ns3:fileName>Приложение_№_4_к_извещению_(СМП)[1].docx</ns3:fileName>
+            <ns3:fileSize>23013</ns3:fileSize>
+            <ns3:docDescription>Дополнительная информация и документы</ns3:docDescription>
+            <ns3:docDate>2026-10-26T15:56:46+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1783342BA7671B2797EDA84DC0DB6</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17848D7BB75AA8C78A9F83765B993</ns3:publishedContentId>
+            <ns3:fileName>Автоматический контроль.pdf</ns3:fileName>
+            <ns3:fileSize>29176</ns3:fileSize>
+            <ns3:docDescription>Уведомление о прохождении контроля</ns3:docDescription>
+            <ns3:docDate>2026-10-26T15:56:46+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17848D7BB75AA8C78A9F83765B993</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T15:01:39+03:00</startDT>
+                <endDT>2026-11-06T10:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-06+03:00</biddingDate>
+            <summarizingDate>2026-11-10+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>2230695.49</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>01722000044</ns2:regNum>
+                    <ns2:consRegistryNum>40200095</ns2:consRegistryNum>
+                    <ns2:fullName>АДМИНИСТРАЦИЯ ГУБЕРНАТОРА САНКТ-ПЕТЕРБУРГА</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>22306.95</amount>
+                    <account>
+                        <ns3:bik>014030106</ns3:bik>
+                        <ns3:settlementAccount>03100643000000017200</ns3:settlementAccount>
+                        <ns3:personalAccount>04722000950</ns3:personalAccount>
+                        <ns3:creditOrgName>Северо-Западное ГУ Банка России//УФК по г. Санкт-Петербургу, г. Санкт-Петербург</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810945370000005</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>7830002078</INN>
+                            <KPP>784201001</KPP>
+                            <KBK>80111610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>40911000</ns2:code>
+                                <ns2:name>Муниципальные образования города федерального значения Санкт-Петербурга / Внутригородские муниципальные образования города федерального значения Санкт-Петербурга (см. также 40 300 000)/ / муниципальный округ Смольнинское</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810945370000005</bankAccount>
+                            <ksNumber>03100643000000017200</ksNumber>
+                            <bik>014030106</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО Г. САНКТ-ПЕТЕРБУРГУ</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке предоставляется в порядке, установленном в соответствии с требованиями статьи 44 ФЗ от 05.04.2013 № 44-ФЗ. Обеспечение заявки на участие в закупке предоставляется одним из следующих способов: а) путем блокирования денежных средств, внесенных участником закупки на банковский счет, открытый таким участником в банке, включенном в перечень, утвержденный Правительством РФ (далее - специальный счет); б) путем предоставления независимой гарантии, соответствующей требованиям статьи 45 Закона. Выбор способа обеспечения осуществляется участником закупки самостоятельно. Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена Евразийского экономического союза, за исключением РФ, или физическими лицами, являющимися гражданами государства - члена Евразийского экономического союза, за исключением РФ вправе предоставить обеспечение заявок в виде денежных средств с учетом особенностей, установленных ПП РФ от 10.04.2023 № 579 «Об особенностях порядка предоставления обеспечения заявок на участие в закупках товаров, работ, услуг для обеспечения государственных или муниципальных нужд участниками таких закупок, являющимися иностранными лицами». Реквизиты счета, на котором в соответствии с законодательством РФ учитываются операции со средствами, поступающими на лицевой счет, открытый в УФК Администрацией Губернатора Санкт-Петербурга, являющемуся главным администратором доходов бюджета, реквизиты счета для перечисления денежных средств в случае, предусмотренном ч. 13 ст. 44 Закона, и в соответствии с ПП РФ от 10.04.2023 № 579 ИНН 7830002078, КПП 784201001, ОКТМО 40911000, Комитет финансов Санкт-Петербурга (Администрация Губернатора Санкт-Петербурга, л/с 04722000950), Банк: ОКЦ №1 Северо-Западного ГУ Банка России//УФК по г. Санкт-Петербургу, г. Санкт-Петербург, БИК 014030106, корреспондентский счет - 40102810945370000005, расчетный счет – 03100643000000017200, КБК 80111610056020000140.</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>014030106</ns3:bik>
+                        <ns3:settlementAccount>03222643400000007200</ns3:settlementAccount>
+                        <ns3:personalAccount>0070000</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 СЗГУ Банка России//УФК по г.Санкт-Петербургу, г Санкт-Петербург</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810945370000005</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>В соответствии с приложением № 4 к извещению о проведении электронного аукциона.</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>2230695.49</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262783000207878420100103310013312244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.12</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>27830002078784201001</customerCode>
+                        <purchaseNumber>0331</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202601722000044001</ns3:plan2020Number>
+                        <ns3:position2020Number>202601722000044001000430</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                <ns3:isNotEarlierConclusionDate>true</ns3:isNotEarlierConclusionDate>
+                                <ns3:endDate>2028-01-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>72020112</ns2:code>
+                                    <ns2:name>Бюджет Санкт-Петербурга</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>20</ns2:code>
+                                    <ns2:name>бюджет субъекта Российской Федерации</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>40000000</ns2:code>
+                                    <ns2:name>Муниципальные образования города федерального значения Санкт-Петербурга</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>2230695.49</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>2167647.01</firstYear>
+                                <secondYear>63048.48</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22435320</sid>
+                                <externalSid>605578</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-07-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-10-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>80101139950000090244</KBK>
+                                        <paymentYearInfo>
+                                            <total>269015.06</total>
+                                            <currentYear>0.00</currentYear>
+                                            <firstYear>269015.06</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                                <financeInfo>
+                                    <total>269015.06</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>269015.06</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22435321</sid>
+                                <externalSid>605579</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-26+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>80101139950000090244</KBK>
+                                        <paymentYearInfo>
+                                            <total>680361.37</total>
+                                            <currentYear>0.00</currentYear>
+                                            <firstYear>680361.37</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                                <financeInfo>
+                                    <total>680361.37</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>680361.37</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22435322</sid>
+                                <externalSid>605580</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-10-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-26+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>80101139950000090244</KBK>
+                                        <paymentYearInfo>
+                                            <total>443103.52</total>
+                                            <currentYear>0.00</currentYear>
+                                            <firstYear>443103.52</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                                <financeInfo>
+                                    <total>443103.52</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>443103.52</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22435323</sid>
+                                <externalSid>605581</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2028-01-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>80101139950000090244</KBK>
+                                        <paymentYearInfo>
+                                            <total>63048.48</total>
+                                            <currentYear>0.00</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>63048.48</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                                <financeInfo>
+                                    <total>63048.48</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>0.00</firstYear>
+                                    <secondYear>63048.48</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22435318</sid>
+                                <externalSid>605576</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:isNotEarlierConclusionDate>true</ns3:isNotEarlierConclusionDate>
+                                        <ns3:endDate>2027-04-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>80101139950000090244</KBK>
+                                        <paymentYearInfo>
+                                            <total>269015.06</total>
+                                            <currentYear>0.00</currentYear>
+                                            <firstYear>269015.06</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                                <financeInfo>
+                                    <total>269015.06</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>269015.06</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22435319</sid>
+                                <externalSid>605577</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-04-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-07-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>80101139950000090244</KBK>
+                                        <paymentYearInfo>
+                                            <total>506152.00</total>
+                                            <currentYear>0.00</currentYear>
+                                            <firstYear>506152.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                                <financeInfo>
+                                    <total>506152.00</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>506152.00</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62356481</ns3:sid>
+                            <ns3:externalSid>2055849</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>d0e5a2de-e2b0-4d88-a016-6d27677f704f</ns3:GARGuid>
+                                <ns3:GARAddress>г. Санкт-Петербург, вн.тер.г. муниципальный округ Смольнинское, пр-д Смольный, д. 1 литера Б</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>Объект с ограниченным допуском, допуск на объект осуществляется строго по пропускам, оформленным на основании документов, удостоверяющих личность, после проверки работников исполнителя Службой охраны по Северо-Западному федеральному округу Федеральной службы охраны Российской Федерации.</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <addInfo>Участник должен соответствовать требованиям Указа Президента Российской Федерации от 3 мая 2022 г. N 252 "О применении ответных специальных экономических мер в связи с недружественными действиями некоторых иностранных государств и международных организаций" (далее - Постановление) с лицами, указанными в перечне, утвержденном Постановлением, а также находящимися под их контролем организациями (далее - лица, находящиеся под санкциями). Участник закупки не может являться лицом, находящимся под санкциями.</addInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748576</ns3:sid>
+                    <ns3:externalSid>23424869</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание системы пожарной сигнализации и пожарной автоматики (СПС): ТО-1 СПС</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4692.28</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>12.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>56307.36</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748577</ns3:sid>
+                    <ns3:externalSid>23424870</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание системы пожарной сигнализации и пожарной автоматики (СПС): ТО-2 СПС</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>32164.85</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>128659.40</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748578</ns3:sid>
+                    <ns3:externalSid>23424871</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание системы пожарной сигнализации и пожарной автоматики (СПС): ТО-3 СПС</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>208125.50</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>416251.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748579</ns3:sid>
+                    <ns3:externalSid>23424872</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание системы пожарной сигнализации и пожарной автоматики (СПС): ТО-4 СПС</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>31534.17</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>31534.17</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748580</ns3:sid>
+                    <ns3:externalSid>23424873</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание автоматической установки газового пожаротушения (АУГПТ): ТО-1 АУГПТ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>28380.75</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>12.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>340569.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748581</ns3:sid>
+                    <ns3:externalSid>23424874</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание автоматической установки газового пожаротушения (АУГПТ): ТО-2 АУГПТ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>15136.40</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>60545.60</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748582</ns3:sid>
+                    <ns3:externalSid>23424875</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание автоматической установки газового пожаротушения (АУГПТ): ТО-3 АУГПТ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>18920.50</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>37841.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748583</ns3:sid>
+                    <ns3:externalSid>23424876</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание автоматической установки газового пожаротушения (АУГПТ): ТО-4 АУГПТ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>403637.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>403637.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748584</ns3:sid>
+                    <ns3:externalSid>23424877</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание автоматической установки порошкового пожаротушения (АУППТ): ТО-1 АУППТ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1892.05</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>12.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>22704.60</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748585</ns3:sid>
+                    <ns3:externalSid>23424878</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание автоматической установки порошкового пожаротушения (АУППТ): ТО-2 АУППТ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3153.42</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>12613.68</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748586</ns3:sid>
+                    <ns3:externalSid>23424879</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание автоматической установки порошкового пожаротушения (АУППТ): ТО-3 АУППТ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>6937.52</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>13875.04</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748587</ns3:sid>
+                    <ns3:externalSid>23424880</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание системы светового оповещения о пожаре (СО): ТО-1 СО</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>28083.40</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>12.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>337000.80</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748588</ns3:sid>
+                    <ns3:externalSid>23424881</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание системы светового оповещения о пожаре (СО): ТО-2 СО</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3817.43</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>15269.72</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748589</ns3:sid>
+                    <ns3:externalSid>23424882</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание системы светового оповещения о пожаре (СО): ТО-3 СО</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3153.42</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>6306.84</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748590</ns3:sid>
+                    <ns3:externalSid>23424883</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Техническое обслуживание системы оповещения о пожаре и управления эвакуацией (СОУЭ): ТО-2 СОУЭ</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>25597.52</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>102390.08</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748591</ns3:sid>
+                    <ns3:externalSid>23424884</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Восстановление работоспособности (ВР): ТО-4 ВР</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>50011.43</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>50011.43</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748592</ns3:sid>
+                    <ns3:externalSid>23424885</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Планово-предупредительный ремонт: замена извещателя пожарного мультисенсорного адресного MTD 533 (Х-line) (в т.ч. извещателя пожарного мультисенсорного адресного MTD 533 (Х-line)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>26887.07</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>3.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>80661.21</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748593</ns3:sid>
+                    <ns3:externalSid>23424886</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Планово-предупредительный ремонт: замена цоколя для извещателя мультисенсорного адресного USB 501-1 (в т.ч. цоколя для извещателя мультисенсорного адресного USB 501-1)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1939.48</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>5.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>9697.40</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748594</ns3:sid>
+                    <ns3:externalSid>23424887</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Планово-предупредительный ремонт: замена кабеля огнестойкого однопроволочного с низким дымо- и газовыделением КПСнг(А)-FRLS 1х2х0,75 (в т.ч. кабеля огнестойкого однопроволочного с низким дымо- и газовыделением КПСнг(А)-FRLS 1х2х0,75)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>50.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>100.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5067.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748595</ns3:sid>
+                    <ns3:externalSid>23424888</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Планово-предупредительный ремонт: замена модуля кольцевого BХ- IМ4 (в т.ч. модуля кольцевого BХ- IМ4 (Х-line)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>36047.83</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>36047.83</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225748596</ns3:sid>
+                    <ns3:externalSid>23424889</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Замена извещателя пожарного ручного адресного МСР 545 (в т.ч. извещателя пожарного ручного адресного МСР 545 (Х-line)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>31852.50</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>63705.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>2230695.49</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU44</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS92BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии с позицией 14 раздела II приложения к ПП РФ от 29.12.2021 № 2571</ns3:name>
+                        <ns3:content>Наличие опыта исполнения участником закупки договора, предусматривающего выполнение работ оказание услуг по техническому обслуживанию зданий, сооружений.
+Цена выполненных работ оказание услуг по договору должна составлять не менее 20 процентов от начальной (максимальной) цены контракта, заключаемого по результатам определения поставщика (подрядчика, исполнителя).
+Информация и документы, подтверждающие соответствие участников закупки дополнительным требованиям:
+1) исполненный договор;
+2) акт выполненных работ оказанных услуг, подтверждающий цену выполненных работ оказанных услуг.</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>наличие действующей лицензии на деятельность по монтажу, техническому обслуживанию и ремонту средств обеспечения пожарной безопасности зданий и сооружений со следующими видами работ:
+- монтаж, техническое обслуживание и ремонт систем пожарной и охранно-пожарной сигнализации и их элементов, включая диспетчеризацию и проведение пусконаладочных работ;
+- монтаж, техническое обслуживание и ремонт систем пожаротушения и их элементов, включая диспетчеризацию и проведение пусконаладочных работ;
+- монтаж, техническое обслуживание и ремонт систем оповещения и эвакуации при пожаре и их элементов, включая диспетчеризацию и проведение пусконаладочных работ, в том числе фотолюминесцентных эвакуационных систем и их элементов.
+Основание установления требования: Постановление Правительства Российской Федерации от 28 июля 2020 г. № 1128 «Об утверждении положения о лицензировании деятельности по монтажу, техническому обслуживанию и ремонту средств обеспечения пожарной безопасности зданий и сооружений».</ns3:content>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

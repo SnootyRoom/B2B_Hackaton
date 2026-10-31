@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44408675</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0711200011026000814</purchaseNumber>
+        <docNumber>№0711200011026000814</docNumber>
+        <plannedPublishDate>2026-10-28+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T16:32:35.712+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0711200011026000814</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_AVK</ns2:code>
+            <ns2:name>АГЗ РТ</ns2:name>
+            <ns2:url>http://etp.zakazrf.ru</ns2:url>
+        </ETP>
+        <article15FeaturesInfo>P4</article15FeaturesInfo>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка расходных материалов для оказания высокотехнологичной медицинской помощи</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>07112000110</regNum>
+            <consRegistryNum>922U4588</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "РЕСПУБЛИКАНСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ РЕСПУБЛИКИ ТАТАРСТАН"</fullName>
+            <shortName>ГАУЗ "РКБ МЗ РТ"</shortName>
+            <postAddress>Российская Федерация, 420064, Татарстан Респ, Казань г, УЛИЦА ОРЕНБУРГСКИЙ ТРАКТ, 138</postAddress>
+            <factAddress>Российская Федерация, 420064, Татарстан Респ, Казань г, УЛИЦА ОРЕНБУРГСКИЙ ТРАКТ, 138</factAddress>
+            <INN>1659013660</INN>
+            <KPP>165901001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 420064, Татарстан Респ, Казань г, УЛИЦА ОРЕНБУРГСКИЙ ТРАКТ, 138</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 420064, Татарстан Респ, Казань г, УЛИЦА ОРЕНБУРГСКИЙ ТРАКТ, 138</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Рябцева</ns3:lastName>
+                <ns3:firstName>Ольга</ns3:firstName>
+                <ns3:middleName>Александровна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>rolca@mail.ru</contactEMail>
+            <contactPhone>7-843-2312037</contactPhone>
+            <contactFax>7-843-2312037</contactFax>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0711200011026000814</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1826F888C713F8B71FCD74B8EE40E</ns3:publishedContentId>
+            <ns3:fileName>Приложение №3.xlsx</ns3:fileName>
+            <ns3:fileSize>12604</ns3:fileSize>
+            <ns3:docDescription>Приложение №3.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:15:15+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1826F888C713F8B71FCD74B8EE40E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1826F88C27666B6E7B74B96E5EEB0</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта.docx</ns3:fileName>
+            <ns3:fileSize>77105</ns3:fileSize>
+            <ns3:docDescription>Проект контракта.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:15:15+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1826F88C27666B6E7B74B96E5EEB0</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1826F88F77177AD0CDCF90D9D01D3</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки.xlsx</ns3:fileName>
+            <ns3:fileSize>105656</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:15:15+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1826F88F77177AD0CDCF90D9D01D3</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1826F8946779B8B1BFF8C97CB5272</ns3:publishedContentId>
+            <ns3:fileName>Требования к содержанию, составу заявки на участие в закупке. Инструкция.docx</ns3:fileName>
+            <ns3:fileSize>32455</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию, составу заявки на участие в закупке. Инструкция.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:15:15+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1826F8946779B8B1BFF8C97CB5272</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1826F89837820B1E2D36574F55567</ns3:publishedContentId>
+            <ns3:fileName>увед-е МПТ_839350.pdf</ns3:fileName>
+            <ns3:fileSize>96489</ns3:fileSize>
+            <ns3:docDescription>увед-е МПТ_839350.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:15:15+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1826F89837820B1E2D36574F55567</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1826F89CA7017851B4B0F5CC366BD</ns3:publishedContentId>
+            <ns3:fileName>увед-е МПТ_839396.pdf</ns3:fileName>
+            <ns3:fileSize>85902</ns3:fileSize>
+            <ns3:docDescription>увед-е МПТ_839396.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:15:15+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1826F89CA7017851B4B0F5CC366BD</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T16:32:35+03:00</startDT>
+                <endDT>2026-11-05T07:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-05+03:00</biddingDate>
+            <summarizingDate>2026-11-09+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>1153385.76</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>07112000110</ns2:regNum>
+                    <ns2:consRegistryNum>922U4588</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "РЕСПУБЛИКАНСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ РЕСПУБЛИКИ ТАТАРСТАН"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>11533.86</amount>
+                    <account>
+                        <ns3:bik>019205400</ns3:bik>
+                        <ns3:settlementAccount>03224643920000001101</ns3:settlementAccount>
+                        <ns3:personalAccount>ЛР007040025-РКБ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 6 ВВГУ Банка России//УФК по Республике Татарстан, г Казань</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810445370000079</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Обеспечение заявки на участие в закупке предоставляется участником закупки в виде денежных средств или независимой гарантии, соответствующей требованиям статьи 45 Закона N 44-ФЗ. Способ обеспечения определяется участником закупки самостоятельно и с учетом особенностей, установленных постановлением Правительства Российской Федерации от 10.04.2023 579 «Об особенностях порядка предоставления обеспечения заявок на участие в закупках товаров, работ, услуг для обеспечения государственных или муниципальных нужд участниками таких закупок, являющимися иностранными лицами». Денежные средства, предназначенные для обеспечения заявок, блокируются на банковском счете, открытом участником в банке, включенном в перечень банков, который установлен Распоряжением Правительства РФ от 13.07.2018 N 1451-р. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок. Участник закупки для подачи заявки выбирает с использованием электронной площадки способ обеспечения заявки путем указания реквизитов специального счета или указания номера реестровой записи из реестра независимых гарантий, размещенного в ЕИС. Предприятия уголовно-исполнительной системы, организации инвалидов, предусмотренные частью 2 статьи 29 Закона N 44-ФЗ, предоставляют обеспечение заявки на участие в закупке в размере одной второй процента начальной (максимальной) цены контракта. Государственные, муниципальные учреждения не предоставляют обеспечение подаваемых ими заявок на участие в закупке.</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>019205400</ns3:bik>
+                        <ns3:settlementAccount>03224643920000001101</ns3:settlementAccount>
+                        <ns3:personalAccount>ЛР007040025-РКБ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 6 ВВГУ Банка России//УФК по Республике Татарстан, г Казань</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810445370000079</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Обеспечение исполнения контракта предоставляется в виде независимой гарантии, соответствующей требованиям ст. 45 Закона N 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются участником закупки, с которым заключается контракт, самостоятельно. Срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, не менее чем на один месяц, в том числе в случае его изменения в соответствии со ст. 95 Закона N 44-ФЗ. Участник закупки, с которым заключается контракт по результатам определения поставщика (подрядчика, исполнителя) в соответствии с пунктом 1 части 1 статьи 30 Закона N 44-ФЗ освобождается от предоставления обеспечения исполнения контракта, в том числе с учетом положений статьи 37 Закона N 44-ФЗ, в случае предоставления таким участником закупки информации, содержащейся в реестре контрактов, заключенных заказчиками, и подтверждающей исполнение таким участником (без учета правопреемства) в течение трех лет до даты подачи заявки на участие в закупке трех контрактов, исполненных без применения к такому участнику неустоек (штрафов, пеней). Такая информация представляется участником закупки до заключения контракта в случаях, установленных Законом №44-ФЗ для предоставления обеспечения исполнения контракта. При этом сумма цен таких контрактов должна составлять не менее начальной (максимальной) цены контракта, указанной в извещении об осуществлении закупки и документации о закупке.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>1153385.76</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262165901366016590100108650013250244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>32.50</ns2:OKPDCode>
+                                <ns2:OKPDName>Инструменты и оборудование медицинские</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>21659013660165901001</customerCode>
+                        <purchaseNumber>0865</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202607112000110003</ns3:plan2020Number>
+                        <ns3:position2020Number>202607112000110003000870</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-30+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>1153385.76</total>
+                                <currentYear>1153385.76</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22482067</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-30+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>1153385.76</total>
+                                        <currentYear>1153385.76</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>1153385.76</ns3:total>
+                                                <ns3:currentYear>1153385.76</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>1153385.76</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62409811</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>53a7f4d0-60c4-43ec-b667-c057aad28d73</ns3:GARGuid>
+                                <ns3:GARAddress>респ. Татарстан, г.о. город Казань, г. Казань, ул. Оренбургский Тракт, зд. 138</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>Республика Татарстан, г Казань, ул Оренбургский тракт, д. 138</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226002905</ns3:sid>
+                    <ns3:externalSid>p-rwpy-de4h-10ek</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.22.190-00005159</ns2:code>
+                        <ns2:name>Кейдж для спондилодеза полимерный, стерильный</ns2:name>
+                        <ns2:versionId>154959</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372283</ns3:sid>
+                                <ns3:name>Описание</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780887</ns3:sid>
+                                        <ns3:qualityDescription>Стерильное изделие, предназначенное для использования при сращивании сегментов позвоночника для лечения анатомических нарушений позвоночника, возникших, как правило, из-за дегенеративного заболевания межпозвонковых дисков (т.е., DDD). Изделие обычно представляет собой небольшого размера полый и/или пористый цилиндр (или другую геометрическую форму) с резьбой или отверстиями, изготавливаемый из нерассасывающегося синтетического полимера (например, полиэфирэфиркетона), который имплантируется между костями или костными трансплантатами позвоночника для обеспечения механической стабильности и достаточного пространства для спондилодеза. Могут прилагаться одноразовые изделия, необходимые для имплантации</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372284</ns3:sid>
+                                <ns3:name>Материал изготовления</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780888</ns3:sid>
+                                        <ns3:qualityDescription>полиэфирэфиркетон</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372285</ns3:sid>
+                                <ns3:name>Маркеры</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780889</ns3:sid>
+                                        <ns3:qualityDescription>Рентгенконтрастные, интегрированы в имплантат</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372286</ns3:sid>
+                                <ns3:name>Материал изготовления маркеров</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780890</ns3:sid>
+                                        <ns3:qualityDescription>тантан</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372287</ns3:sid>
+                                <ns3:name>Показания системы стабилизации позвоночника</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780891</ns3:sid>
+                                        <ns3:qualityDescription>для применения в сочетании с костными аутотрансплантатами у пациентов с поражением диска от L2 до S1</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372288</ns3:sid>
+                                <ns3:name>Метод имплантации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780892</ns3:sid>
+                                        <ns3:qualityDescription>открытой методикой и через миниинвазивный задний доступ, трансфораминально</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372289</ns3:sid>
+                                <ns3:name>Тип имплантата</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780893</ns3:sid>
+                                        <ns3:qualityDescription>контейнерного типа с прямоугольным отверстием в центре для наполнения костным трансплантатом или его синтетическим заменителем</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372290</ns3:sid>
+                                <ns3:name>Форма</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780894</ns3:sid>
+                                        <ns3:qualityDescription>пулевидная, двояковыпуклая</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372291</ns3:sid>
+                                <ns3:name>Поверхность имплантата</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780895</ns3:sid>
+                                        <ns3:qualityDescription>ребристая</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372292</ns3:sid>
+                                <ns3:name>Формы граней имплантата</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780896</ns3:sid>
+                                        <ns3:qualityDescription>закругленные</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372293</ns3:sid>
+                                <ns3:name>Вырезки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780897</ns3:sid>
+                                        <ns3:qualityDescription>две боковые</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372294</ns3:sid>
+                                <ns3:name>Округлые отверстия</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780898</ns3:sid>
+                                        <ns3:qualityDescription>На боковых гранях имплантата</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372295</ns3:sid>
+                                <ns3:name>Размеры имплантата по  высоте с шагом не более 2 мм</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>1</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке диапазон значений характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780899</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>8</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>14</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372296</ns3:sid>
+                                <ns3:name>Размеры имплантата по длине с шагом не более 4 мм</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>1</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке диапазон значений характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780900</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>22</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>36</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372297</ns3:sid>
+                                <ns3:name>Размеры имплантата по ширине</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780901</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>10</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372298</ns3:sid>
+                                <ns3:name>Упаковка</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780902</ns3:sid>
+                                        <ns3:qualityDescription>Стерильная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>указано в прикрепленном файле (описание объекта закупки)</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.22.127</ns2:OKPDCode>
+                            <ns2:OKPDName>Шины и прочие приспособления для лечения переломов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Кейдж для спондилодеза полимерный, стерильный</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>34467.41</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>24.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>827217.84</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226002906</ns3:sid>
+                    <ns3:externalSid>p-momd-yk0p-1qw4</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.22.190-00005126</ns2:code>
+                        <ns2:name>Кейдж для межтелового спондилодеза полимерный</ns2:name>
+                        <ns2:versionId>154961</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372299</ns3:sid>
+                                <ns3:name>Описание</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780903</ns3:sid>
+                                        <ns3:qualityDescription>Изделие, предназначенное для имплантации в пространство межпозвонкового диска, который был частично или полностью удален во время операции, с целью обеспечения спондилодеза между двумя смежными телами позвонков, как правило, при лечении дегенеративного заболевания межпозвонковых дисков. Это полое, пористое, с резьбой и/или отверстиями изделие в виде цилиндра или другой геометрической формы, которое изготавливается из нерассасывающегося синтетического полимера (например, полиэфирэфиркетона), который обеспечивает механическую стабильность и достаточное пространство для терапевтического спинального спондилодеза</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>435780904</ns3:sid>
+                                        <ns3:qualityDescription>как правило, для способствования остеоинтеграции используется костный трансплантат. Могут прилагаться фиксирующие винты и другие изделия, используемые при имплантации</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372300</ns3:sid>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780905</ns3:sid>
+                                        <ns3:qualityDescription>для установки в шейный отдел позвоночника передним доступом</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372301</ns3:sid>
+                                <ns3:name>Материал изготовления</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780906</ns3:sid>
+                                        <ns3:qualityDescription>полиэфирэфиркетон</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372307</ns3:sid>
+                                <ns3:name>Маркеры</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780912</ns3:sid>
+                                        <ns3:qualityDescription>Рентгенконтрастные</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372308</ns3:sid>
+                                <ns3:name>Фиксация</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780913</ns3:sid>
+                                        <ns3:qualityDescription>двухлопастным ротационным механизмом из титанового сплава или металлическими шипами на верхней и нижней поверхности</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372309</ns3:sid>
+                                <ns3:name>Зубчики</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780914</ns3:sid>
+                                        <ns3:qualityDescription>наличие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372310</ns3:sid>
+                                <ns3:name>Длина кейджа</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780915</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>12</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372311</ns3:sid>
+                                <ns3:name>Ширина (глубина) кейджа</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780916</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>14</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372312</ns3:sid>
+                                <ns3:name>Типоразмеры по высоте кейджа (с шагом не менее 1,0)</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>1</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке диапазон значений характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780917</ns3:sid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>9</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337372313</ns3:sid>
+                                <ns3:name>Лордозный угол, градус</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435780918</ns3:sid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>5</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>указано в прикрепленном файле (описание объекта закупки)</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.22.127</ns2:OKPDCode>
+                            <ns2:OKPDName>Шины и прочие приспособления для лечения переломов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Кейдж для межтелового спондилодеза полимерный</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>81541.98</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>326167.92</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>1153385.76</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>отсутствие в предусмотренном Законом о контрактной системе реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации об участнике закупки, в том числе о лицах, членах коллегиального исполнительного органа, лица, исполняющего функции единоличного исполнительного органа управляющего (при наличии), управляющей организации ( при наличии), участников (членов) корпоративного юридического лица, владеющих более, чем 25% акций (долей, паев)корпоративного юридического лица, учредителей унитарного юридического лица(пп"в" п1 ч1 ст43 44-ФЗ).   На поставляемую продукцию в составе заявки предоставляются копии регистрационных удостоверений  и/или выписки из государственного реестра медицинских изделий ИЛИ сведения в отношении каждого предложенного к поставке медицинского изделия (указано в Инструкции –«Требования к содержанию, составу заявки на участие в закупке.»). Согласно ч. 4 ст. 38 ФЗ «Об основах охраны здоровья граждан в Российской Федерации» от 21.11.2011 № 323 на территории Российской Федерации разрешается обращение медицинских изделий, зарегистрированных в порядке, установленном Правительством РФ, уполномоченным им федеральным органом исполнительной власти (медицинское оборудование согласно этой норме относится к медицинским изделиям); «Участник закупки не должен являться юридическим или физическим лицом, в отношении которого применяются специальные экономические меры, предусмотренные подпунктом "а" пункта 2 Указа Президента РФ от 03.05.2022 № 252 "О применении ответных специальных экономических мер в связи с недружественными действиями некоторых иностранных государств и международных организаций", либо являться организацией, находящейся по контролем таких лиц»; участник закупки не является иностранным агентом.</ns3:content>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44365075</id>
+    <externalId>14986543</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0873500002326000899</purchaseNumber>
+        <docNumber>№0873500002326000899</docNumber>
+        <plannedPublishDate>2026-10-23+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-23T15:31:47.261+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0873500002326000899</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_EETP</ns2:code>
+            <ns2:name>РОСЭЛТОРГ (АО«ЕЭТП»)</ns2:name>
+            <ns2:url>http://roseltorg.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка металлопроката для нужд ГБУ "Жилищник района Внуково"</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>08735000023</regNum>
+            <consRegistryNum>452ИИЧ83</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "ДИРЕКЦИЯ ЗАКАЗЧИКА ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И БЛАГОУСТРОЙСТВА ТРОИЦКОГО И НОВОМОСКОВСКОГО АДМИНИСТРАТИВНЫХ ОКРУГОВ"</fullName>
+            <shortName>ГКУ "ДИРЕКЦИЯ ЖКХИБ ТИНАО"</shortName>
+            <postAddress>Российская Федерация, город Москва</postAddress>
+            <factAddress>108814, МОСКВА, П. КОММУНАРКА, ВН.ТЕР.Г. МУНИЦИПАЛЬНЫЙ ОКРУГ КОММУНАРКА, УЛ. СОСЕНСКИЙ СТАН, Дом (Корпус/строение) Д. 4</factAddress>
+            <INN>7751322445</INN>
+            <KPP>775101001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>AI</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, город Москва</orgPostAddress>
+            <orgFactAddress>108814, МОСКВА, П. КОММУНАРКА, ВН.ТЕР.Г. МУНИЦИПАЛЬНЫЙ ОКРУГ КОММУНАРКА, УЛ. СОСЕНСКИЙ СТАН, Дом (Корпус/строение) Д. 4</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Логинова</ns3:lastName>
+                <ns3:firstName>Елена</ns3:firstName>
+                <ns3:middleName>Владимировна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>LoginovaEV14@tinao.mos.ru</contactEMail>
+            <contactPhone>7-916-4149259</contactPhone>
+            <contactFax>.</contactFax>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0873500002326000899</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A168B8CDBB7635A154A20046FE7141</ns3:publishedContentId>
+            <ns3:fileName>РНМЦК.xlsx</ns3:fileName>
+            <ns3:fileSize>14945</ns3:fileSize>
+            <ns3:docDescription>Расчет НМЦК(Д)</ns3:docDescription>
+            <ns3:docDate>2026-10-23T15:25:08+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A168B8CDBB7635A154A20046FE7141</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A168B8CE7373709EA6BE585F7083AB</ns3:publishedContentId>
+            <ns3:fileName>Обоснование НМЦК.pdf</ns3:fileName>
+            <ns3:fileSize>691834</ns3:fileSize>
+            <ns3:docDescription>Обоснование определения НМЦК(Д)</ns3:docDescription>
+            <ns3:docDate>2026-10-23T15:25:08+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A168B8CE7373709EA6BE585F7083AB</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A168B8CEA8730AAAE09F396228C9BF</ns3:publishedContentId>
+            <ns3:fileName>Протокол НМЦК.pdf</ns3:fileName>
+            <ns3:fileSize>673966</ns3:fileSize>
+            <ns3:docDescription>Протокол НМЦК(Д)</ns3:docDescription>
+            <ns3:docDate>2026-10-23T15:25:08+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A168B8CEA8730AAAE09F396228C9BF</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A168B8CED276E888DDCEC07B7749FC</ns3:publishedContentId>
+            <ns3:fileName>Проект_контракта_17281850-1.pdf</ns3:fileName>
+            <ns3:fileSize>112070</ns3:fileSize>
+            <ns3:docDescription>Проект контракта (договора)</ns3:docDescription>
+            <ns3:docDate>2026-10-23T15:25:08+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A168B8CED276E888DDCEC07B7749FC</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A168B8CDE572CB8A23B678AF8F4D20</ns3:publishedContentId>
+            <ns3:fileName>Техническое_задание_17281850-1.pdf</ns3:fileName>
+            <ns3:fileSize>74912</ns3:fileSize>
+            <ns3:docDescription>Техническое задание</ns3:docDescription>
+            <ns3:docDate>2026-10-23T15:25:08+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A168B8CDE572CB8A23B678AF8F4D20</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A168B8CD4E76A185539FD3EC6D042C</ns3:publishedContentId>
+            <ns3:fileName>ElectronicAuction14986543.pdf</ns3:fileName>
+            <ns3:fileSize>116993</ns3:fileSize>
+            <ns3:docDescription>ElectronicAuction14986543.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-23T15:25:08+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A168B8CD4E76A185539FD3EC6D042C</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A168B8CD7E7DE68DB072B0383FD9A7</ns3:publishedContentId>
+            <ns3:fileName>Обоснование КТРУ.docx</ns3:fileName>
+            <ns3:fileSize>16760</ns3:fileSize>
+            <ns3:docDescription>Обоснование характеристик</ns3:docDescription>
+            <ns3:docDate>2026-10-23T15:25:08+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A168B8CD7E7DE68DB072B0383FD9A7</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A168B8CEFC79DF86913E7815DA33E5</ns3:publishedContentId>
+            <ns3:fileName>!! В_помощь_участникам_закупок.pdf</ns3:fileName>
+            <ns3:fileSize>151808</ns3:fileSize>
+            <ns3:docDescription>!! В помощь участникам закупок</ns3:docDescription>
+            <ns3:docDate>2026-10-23T15:25:08+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A168B8CEFC79DF86913E7815DA33E5</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>false</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-23T15:31:47+03:00</startDT>
+                <endDT>2026-11-02T10:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-02+03:00</biddingDate>
+            <summarizingDate>2026-11-05+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>1721900.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03732006240</ns2:regNum>
+                    <ns2:consRegistryNum>45222393</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "ЖИЛИЩНИК РАЙОНА ВНУКОВО"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>17219.00</amount>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03224643450000007300</ns3:settlementAccount>
+                        <ns3:personalAccount>2199242000931209</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ГУ Банка России по ЦФО//УФК ПО Г. МОСКВЕ, г Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>В соответствии с правилами и порядком, определенными оператором электронной торговой площадки</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03224643450000007300</ns3:settlementAccount>
+                        <ns3:personalAccount>2199242000931209</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ГУ Банка России по ЦФО//УФК ПО Г. МОСКВЕ, г Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Контракт заключается после предоставления заказчику обеспечения исполнения контракта. Обеспечение исполнения контракта может быть представлено в виде безотзывной независимой гарантии или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику, в размере обеспечения исполнения контракта, указанном в документации о закупках. Безотзывная независимая гарантия должна соответствовать требованиям, установленным Гражданским кодексом Российской Федерации, а также иным законодательством Российской Федерации.Способ обеспечения исполнения контракта определяется участником закупки, с которым заключается контракт, самостоятельно.Срок внесения обеспечения - до момента заключения контракта».</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>1721900.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262772976060577290100100850010000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>27729760605772901001</customerCode>
+                        <purchaseNumber>0085</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603732006240001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603732006240001000084</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2030-02-15+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>1721900.00</total>
+                                <currentYear>450000.00</currentYear>
+                                <firstYear>450000.00</firstYear>
+                                <secondYear>450000.00</secondYear>
+                                <subsecYears>371900.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22412916</sid>
+                                <externalSid>34873999</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2030-02-15+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>1721900.00</total>
+                                        <currentYear>450000.00</currentYear>
+                                        <firstYear>450000.00</firstYear>
+                                        <secondYear>450000.00</secondYear>
+                                        <subsecYears>371900.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>1721900.00</ns3:total>
+                                                <ns3:currentYear>450000.00</ns3:currentYear>
+                                                <ns3:firstYear>450000.00</ns3:firstYear>
+                                                <ns3:secondYear>450000.00</ns3:secondYear>
+                                                <ns3:subsecYears>371900.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>1721900.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62328082</ns3:sid>
+                            <ns3:externalSid>330521614</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>b39a81e8-0aec-4578-97e0-d8ec6521a38a</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Внуково, ш. Внуковское, д. 2А стр. 1</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62328083</ns3:sid>
+                            <ns3:externalSid>330521615</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>b39a81e8-0aec-4578-97e0-d8ec6521a38a</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Внуково, ш. Внуковское, д. 2А стр. 1</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62328084</ns3:sid>
+                            <ns3:externalSid>330521616</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>b39a81e8-0aec-4578-97e0-d8ec6521a38a</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Внуково, ш. Внуковское, д. 2А стр. 1</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62328085</ns3:sid>
+                            <ns3:externalSid>330521617</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>b39a81e8-0aec-4578-97e0-d8ec6521a38a</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Внуково, ш. Внуковское, д. 2А стр. 1</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>В соответствии с Контрактом и Техническим заданием</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225640793</ns3:sid>
+                    <ns3:externalSid>251078325-1690746959</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>24.33.20.000-00000020</ns2:code>
+                        <ns2:name>Профиль стальной листовой гнутый с трапециевидными гофрами</ns2:name>
+                        <ns2:versionId>165484</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335382</ns3:sid>
+                                <ns3:externalSid>2005502688-1330996097</ns3:externalSid>
+                                <ns3:code>a1c08395-9</ns3:code>
+                                <ns3:name>Монтажная ширина (без учета предельного отклонения)</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409674</ns3:sid>
+                                        <ns3:externalSid>enum-2254014619</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>1150</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335383</ns3:sid>
+                                <ns3:externalSid>2005502686-1330996096</ns3:externalSid>
+                                <ns3:code>b60e6901-c</ns3:code>
+                                <ns3:name>Высота (без учета предельного отклонения)</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409675</ns3:sid>
+                                        <ns3:externalSid>enum-2254014617</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>8</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335384</ns3:sid>
+                                <ns3:externalSid>2005502691-1330996092</ns3:externalSid>
+                                <ns3:code>f8d68ef0-a</ns3:code>
+                                <ns3:name>Тип защитно-декоративного покрытия лицевой стороны</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409676</ns3:sid>
+                                        <ns3:externalSid>enum-2254014622</ns3:externalSid>
+                                        <ns3:qualityDescription>Полимерное</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335385</ns3:sid>
+                                <ns3:externalSid>2005502683-1306677499</ns3:externalSid>
+                                <ns3:code>1e209beb-f</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409677</ns3:sid>
+                                        <ns3:externalSid>enum-2254014614</ns3:externalSid>
+                                        <ns3:qualityDescription>Для стеновых ограждений (С)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335386</ns3:sid>
+                                <ns3:externalSid>2005502684-1330996093</ns3:externalSid>
+                                <ns3:code>5a47d052-0</ns3:code>
+                                <ns3:name>Толщина материала (без учета покрытия)</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409678</ns3:sid>
+                                        <ns3:externalSid>enum-2254014615</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>0.5</ns3:min>
+                                                <ns3:maxMathNotation>less</ns3:maxMathNotation>
+                                                <ns3:max>0.6</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335387</ns3:sid>
+                                <ns3:externalSid>2005502692-1330996091</ns3:externalSid>
+                                <ns3:code>5ddb38a5-5</ns3:code>
+                                <ns3:name>Тип защитно-декоративного покрытия обратной стороны</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409679</ns3:sid>
+                                        <ns3:externalSid>enum-2254014623</ns3:externalSid>
+                                        <ns3:qualityDescription>Полимерное</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335388</ns3:sid>
+                                <ns3:externalSid>2005502690-1330996094</ns3:externalSid>
+                                <ns3:code>7fbcc051-f</ns3:code>
+                                <ns3:name>Форма сечения гофров</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409680</ns3:sid>
+                                        <ns3:externalSid>enum-2254014621</ns3:externalSid>
+                                        <ns3:qualityDescription>Рельефная штамповка на стенках и полках</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335389</ns3:sid>
+                                <ns3:externalSid>2005502689-1330996095</ns3:externalSid>
+                                <ns3:code>448380b7-e</ns3:code>
+                                <ns3:name>Наличие капиллярной канавки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409681</ns3:sid>
+                                        <ns3:externalSid>enum-2254014620</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>24.33.20.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Профили листовые из нелегированной стали</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Профиль стальной листовой гнутый с трапециевидными гофрами</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>625</ns2:code>
+                        <ns2:nationalCode>ЛИСТ</ns2:nationalCode>
+                        <ns2:name>Лист</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732006240</ns2:regNum>
+                                <ns2:consRegistryNum>45222393</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "ЖИЛИЩНИК РАЙОНА ВНУКОВО"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>1300.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1300.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225640794</ns3:sid>
+                    <ns3:externalSid>251078326-1688968358</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>24.10.41.000-00000003</ns2:code>
+                        <ns2:name>Прокат листовой холоднокатаный</ns2:name>
+                        <ns2:versionId>155804</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335394</ns3:sid>
+                                <ns3:externalSid>2005502693-1325903251</ns3:externalSid>
+                                <ns3:code>eaaa92e9-d</ns3:code>
+                                <ns3:name>Характер кромки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409686</ns3:sid>
+                                        <ns3:externalSid>enum-2254014624</ns3:externalSid>
+                                        <ns3:qualityDescription>С обрезной кромкой</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335395</ns3:sid>
+                                <ns3:externalSid>2005502975-1325903254</ns3:externalSid>
+                                <ns3:code>ec13006b-9</ns3:code>
+                                <ns3:name>Толщина проката</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409687</ns3:sid>
+                                        <ns3:externalSid>enum-2254014626</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>5</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335396</ns3:sid>
+                                <ns3:externalSid>2005502976-1327448058</ns3:externalSid>
+                                <ns3:code>a1438903-1</ns3:code>
+                                <ns3:name>Ширина листа</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409688</ns3:sid>
+                                        <ns3:externalSid>enum-2254014627</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>1250</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335397</ns3:sid>
+                                <ns3:externalSid>2005502987-1330996114</ns3:externalSid>
+                                <ns3:code>3c70e7c5-7</ns3:code>
+                                <ns3:name>Точность изготовления по длине</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409689</ns3:sid>
+                                        <ns3:externalSid>enum-2254014638</ns3:externalSid>
+                                        <ns3:qualityDescription>Высокой точности</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335398</ns3:sid>
+                                <ns3:externalSid>2005502985-1325903176</ns3:externalSid>
+                                <ns3:code>8442b651-5</ns3:code>
+                                <ns3:name>Тип плоскостности</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409690</ns3:sid>
+                                        <ns3:externalSid>enum-2254014636</ns3:externalSid>
+                                        <ns3:qualityDescription>Высокой</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335399</ns3:sid>
+                                <ns3:externalSid>2005502988-1330996113</ns3:externalSid>
+                                <ns3:code>e6c77e0d-5</ns3:code>
+                                <ns3:name>Точность изготовления по толщине</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409691</ns3:sid>
+                                        <ns3:externalSid>enum-2254014639</ns3:externalSid>
+                                        <ns3:qualityDescription>Высокой точности</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335400</ns3:sid>
+                                <ns3:externalSid>2005502989-1330996112</ns3:externalSid>
+                                <ns3:code>1675beaf-a</ns3:code>
+                                <ns3:name>Точность изготовления по ширине</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409692</ns3:sid>
+                                        <ns3:externalSid>enum-2254014640</ns3:externalSid>
+                                        <ns3:qualityDescription>Высокой точности</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335401</ns3:sid>
+                                <ns3:externalSid>2005502974-1327448059</ns3:externalSid>
+                                <ns3:code>242e28db-d</ns3:code>
+                                <ns3:name>Длина листа</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409693</ns3:sid>
+                                        <ns3:externalSid>enum-2254014625</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>3000</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336335390</ns3:sid>
+                                <ns3:externalSid>2005502978-1325903266</ns3:externalSid>
+                                <ns3:name>Вид проката</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409682</ns3:sid>
+                                        <ns3:externalSid>enum-2254014629</ns3:externalSid>
+                                        <ns3:qualityDescription>Лист</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336335391</ns3:sid>
+                                <ns3:externalSid>2005502986-1317515668</ns3:externalSid>
+                                <ns3:name>Тип покрытия</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409683</ns3:sid>
+                                        <ns3:externalSid>enum-2254014637</ns3:externalSid>
+                                        <ns3:qualityDescription>Прокат с цинковым покрытием (ГЦ)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336335392</ns3:sid>
+                                <ns3:externalSid>2005502990-1300499074</ns3:externalSid>
+                                <ns3:name>Цвет</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409684</ns3:sid>
+                                        <ns3:externalSid>enum-2254014641</ns3:externalSid>
+                                        <ns3:qualityDescription>Коричневый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336335393</ns3:sid>
+                                <ns3:externalSid>2005502991-1330996092</ns3:externalSid>
+                                <ns3:name>Тип защитно-декоративного покрытия лицевой стороны</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409685</ns3:sid>
+                                        <ns3:externalSid>enum-2254014642</ns3:externalSid>
+                                        <ns3:qualityDescription>Полимерное</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Приложено отдельным файлом</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>24.10.41.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Прокат листовой холоднокатаный из прочих нелегированных сталей, без дополнительной обработки, шириной не менее 600 мм</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Прокат листовой холоднокатаный</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>625</ns2:code>
+                        <ns2:nationalCode>ЛИСТ</ns2:nationalCode>
+                        <ns2:name>Лист</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732006240</ns2:regNum>
+                                <ns2:consRegistryNum>45222393</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "ЖИЛИЩНИК РАЙОНА ВНУКОВО"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>990.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>990.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225640795</ns3:sid>
+                    <ns3:externalSid>251078327-1709623005</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>24.10.60.000-00000009</ns2:code>
+                        <ns2:name>Прокат листовой стальной горячекатаный</ns2:name>
+                        <ns2:versionId>395481</ns2:versionId>
+                        <ns2:versionNumber>9</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335402</ns3:sid>
+                                <ns3:externalSid>2005503000-1328719475</ns3:externalSid>
+                                <ns3:code>7fd3dd58-7</ns3:code>
+                                <ns3:name>Толщина (без учета предельного отклонения)</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409694</ns3:sid>
+                                        <ns3:externalSid>enum-2254014651</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>10</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335403</ns3:sid>
+                                <ns3:externalSid>2005502992-1316264579</ns3:externalSid>
+                                <ns3:code>0d35e4cf-6</ns3:code>
+                                <ns3:name>Вид</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409695</ns3:sid>
+                                        <ns3:externalSid>enum-2254014643</ns3:externalSid>
+                                        <ns3:qualityDescription>Лист</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335404</ns3:sid>
+                                <ns3:externalSid>2005502993-1325903157</ns3:externalSid>
+                                <ns3:code>581d7199-5</ns3:code>
+                                <ns3:name>Материал исполнения товара</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409696</ns3:sid>
+                                        <ns3:externalSid>enum-2254014644</ns3:externalSid>
+                                        <ns3:qualityDescription>Легированная сталь</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335405</ns3:sid>
+                                <ns3:externalSid>2005502995-1327448059</ns3:externalSid>
+                                <ns3:code>e49b2b98-b</ns3:code>
+                                <ns3:name>Длина листа</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409697</ns3:sid>
+                                        <ns3:externalSid>enum-2254014646</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>6000</ns3:min>
+                                                <ns3:maxMathNotation>less</ns3:maxMathNotation>
+                                                <ns3:max>6500</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335406</ns3:sid>
+                                <ns3:externalSid>2005503001-1328719507</ns3:externalSid>
+                                <ns3:code>b7f30fc1-b</ns3:code>
+                                <ns3:name>Ширина (без учета предельного отклонения)</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409698</ns3:sid>
+                                        <ns3:externalSid>enum-2254014652</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1500</ns3:min>
+                                                <ns3:maxMathNotation>less</ns3:maxMathNotation>
+                                                <ns3:max>1600</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335407</ns3:sid>
+                                <ns3:externalSid>2005502996-1328719473</ns3:externalSid>
+                                <ns3:code>0459b2ee-9</ns3:code>
+                                <ns3:name>По наименованию стали</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409699</ns3:sid>
+                                        <ns3:externalSid>enum-2254014647</ns3:externalSid>
+                                        <ns3:qualityDescription>С255</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335408</ns3:sid>
+                                <ns3:externalSid>2005502998-1328719472</ns3:externalSid>
+                                <ns3:code>117a944a-c</ns3:code>
+                                <ns3:name>Тип по плоскостности</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409700</ns3:sid>
+                                        <ns3:externalSid>enum-2254014649</ns3:externalSid>
+                                        <ns3:qualityDescription>Нормальной плоскостности - ПН</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>24.10.35.112</ns2:OKPDCode>
+                            <ns2:OKPDName>Прокат листовой горячекатаный из инструментальных легированных сталей, без дополнительной обработки, толщиной 4 мм и более, шириной не менее 600 мм</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Прокат листовой стальной горячекатаный</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>168</ns2:code>
+                        <ns2:nationalCode>т</ns2:nationalCode>
+                        <ns2:name>Тонна; метрическая тонна (1000 кг)</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732006240</ns2:regNum>
+                                <ns2:consRegistryNum>45222393</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "ЖИЛИЩНИК РАЙОНА ВНУКОВО"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>68395.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>68395.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225640796</ns3:sid>
+                    <ns3:externalSid>251078328-1709623005</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>24.10.60.000-00000009</ns2:code>
+                        <ns2:name>Прокат листовой стальной горячекатаный</ns2:name>
+                        <ns2:versionId>395481</ns2:versionId>
+                        <ns2:versionNumber>9</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335409</ns3:sid>
+                                <ns3:externalSid>2005503003-1325903157</ns3:externalSid>
+                                <ns3:code>581d7199-5</ns3:code>
+                                <ns3:name>Материал исполнения товара</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409701</ns3:sid>
+                                        <ns3:externalSid>enum-2254014654</ns3:externalSid>
+                                        <ns3:qualityDescription>Легированная сталь</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335410</ns3:sid>
+                                <ns3:externalSid>2005503005-1327448059</ns3:externalSid>
+                                <ns3:code>e49b2b98-b</ns3:code>
+                                <ns3:name>Длина листа</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409702</ns3:sid>
+                                        <ns3:externalSid>enum-2254014656</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>6000</ns3:min>
+                                                <ns3:maxMathNotation>less</ns3:maxMathNotation>
+                                                <ns3:max>6500</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335411</ns3:sid>
+                                <ns3:externalSid>2005503010-1328719475</ns3:externalSid>
+                                <ns3:code>7fd3dd58-7</ns3:code>
+                                <ns3:name>Толщина (без учета предельного отклонения)</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409703</ns3:sid>
+                                        <ns3:externalSid>enum-2254014861</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>20</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335412</ns3:sid>
+                                <ns3:externalSid>2005503006-1328719473</ns3:externalSid>
+                                <ns3:code>0459b2ee-9</ns3:code>
+                                <ns3:name>По наименованию стали</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409704</ns3:sid>
+                                        <ns3:externalSid>enum-2254014657</ns3:externalSid>
+                                        <ns3:qualityDescription>С255</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335413</ns3:sid>
+                                <ns3:externalSid>2005503011-1328719507</ns3:externalSid>
+                                <ns3:code>b7f30fc1-b</ns3:code>
+                                <ns3:name>Ширина (без учета предельного отклонения)</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409705</ns3:sid>
+                                        <ns3:externalSid>enum-2254014862</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1500</ns3:min>
+                                                <ns3:maxMathNotation>less</ns3:maxMathNotation>
+                                                <ns3:max>1600</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335414</ns3:sid>
+                                <ns3:externalSid>2005503008-1328719472</ns3:externalSid>
+                                <ns3:code>117a944a-c</ns3:code>
+                                <ns3:name>Тип по плоскостности</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409706</ns3:sid>
+                                        <ns3:externalSid>enum-2254014659</ns3:externalSid>
+                                        <ns3:qualityDescription>Нормальной плоскостности - ПН</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336335415</ns3:sid>
+                                <ns3:externalSid>2005503002-1316264579</ns3:externalSid>
+                                <ns3:code>0d35e4cf-6</ns3:code>
+                                <ns3:name>Вид</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434409707</ns3:sid>
+                                        <ns3:externalSid>enum-2254014653</ns3:externalSid>
+                                        <ns3:qualityDescription>Лист</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>24.10.35.112</ns2:OKPDCode>
+                            <ns2:OKPDName>Прокат листовой горячекатаный из инструментальных легированных сталей, без дополнительной обработки, толщиной 4 мм и более, шириной не менее 600 мм</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Прокат листовой стальной горячекатаный</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>168</ns2:code>
+                        <ns2:nationalCode>т</ns2:nationalCode>
+                        <ns2:name>Тонна; метрическая тонна (1000 кг)</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732006240</ns2:regNum>
+                                <ns2:consRegistryNum>45222393</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "ЖИЛИЩНИК РАЙОНА ВНУКОВО"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>71472.78</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>71472.78</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>142157.78</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:prefValue>100.0</ns3:prefValue>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

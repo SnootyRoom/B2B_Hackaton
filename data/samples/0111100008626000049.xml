@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44375064</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0111100008626000049</purchaseNumber>
+        <docNumber>№0111100008626000049</docNumber>
+        <plannedPublishDate>2026-10-28+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-26T12:48:35.617+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0111100008626000049</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_AVK</ns2:code>
+            <ns2:name>АГЗ РТ</ns2:name>
+            <ns2:url>http://etp.zakazrf.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Услуги по техническому обслуживанию и текущему ремонту системы охранно-пожарной сигнализации, системы пожаротушения и дымоудаления, системы контроля и управления доступом</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>01111000086</regNum>
+            <consRegistryNum>001А5959</consRegistryNum>
+            <fullName>СЛЕДСТВЕННОЕ УПРАВЛЕНИЕ СЛЕДСТВЕННОГО КОМИТЕТА РОССИЙСКОЙ ФЕДЕРАЦИИ ПО РЕСПУБЛИКЕ ТАТАРСТАН</fullName>
+            <shortName>СУ СК РОССИИ ПО РЕСПУБЛИКЕ ТАТАРСТАН</shortName>
+            <postAddress>Российская Федерация, 420015, Татарстан Респ, Казань г, Большая Красная ул, Д. 39</postAddress>
+            <factAddress>Российская Федерация, 420015, Татарстан Респ, Казань г, Большая Красная ул, Д. 39</factAddress>
+            <INN>1655206460</INN>
+            <KPP>165501001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 420015, Татарстан Респ, Казань г, Большая Красная ул, Д. 39</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 420015, Татарстан Респ, Казань г, Большая Красная ул, Д. 39</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Федькова</ns3:lastName>
+                <ns3:firstName>Надежда</ns3:firstName>
+                <ns3:middleName>Георгиевна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>ks@16.sledcom.ru</contactEMail>
+            <contactPhone>7-843-2217429</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0111100008626000049</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1779AF53C78C991210B904C0DCE64</ns3:publishedContentId>
+            <ns3:fileName>2Обоснование НМЦК.doc</ns3:fileName>
+            <ns3:fileSize>152064</ns3:fileSize>
+            <ns3:docDescription>2Обоснование НМЦК</ns3:docDescription>
+            <ns3:docDate>2026-10-26T12:46:46+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1779AF53C78C991210B904C0DCE64</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1779B2380759CB30C943AEA1735FE</ns3:publishedContentId>
+            <ns3:fileName>4Проект гк ОПС.doc</ns3:fileName>
+            <ns3:fileSize>314880</ns3:fileSize>
+            <ns3:docDescription>4Проект гк ОПС</ns3:docDescription>
+            <ns3:docDate>2026-10-26T12:46:58+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1779B2380759CB30C943AEA1735FE</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1779B405971C0A7794E42AF468D19</ns3:publishedContentId>
+            <ns3:fileName>1Описание объекта закупки ОПС.doc</ns3:fileName>
+            <ns3:fileSize>206336</ns3:fileSize>
+            <ns3:docDescription>1Описание объекта закупки ОПС</ns3:docDescription>
+            <ns3:docDate>2026-10-26T12:47:05+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1779B405971C0A7794E42AF468D19</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1779B5AFB7C8892CF9770BA3D2BC7</ns3:publishedContentId>
+            <ns3:fileName>3Требования к содержанию и составу заявки (ОПС).docx</ns3:fileName>
+            <ns3:fileSize>48195</ns3:fileSize>
+            <ns3:docDescription>3Требования к содержанию и составу заявки (ОПС)</ns3:docDescription>
+            <ns3:docDate>2026-10-26T12:47:12+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1779B5AFB7C8892CF9770BA3D2BC7</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-26T12:48:35+03:00</startDT>
+                <endDT>2026-11-05T09:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-05+03:00</biddingDate>
+            <summarizingDate>2026-11-06+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>1300000.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>01111000086</ns2:regNum>
+                    <ns2:consRegistryNum>001А5959</ns2:consRegistryNum>
+                    <ns2:fullName>СЛЕДСТВЕННОЕ УПРАВЛЕНИЕ СЛЕДСТВЕННОГО КОМИТЕТА РОССИЙСКОЙ ФЕДЕРАЦИИ ПО РЕСПУБЛИКЕ ТАТАРСТАН</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>13000.00</amount>
+                    <account>
+                        <ns3:bik>000000000</ns3:bik>
+                        <ns3:settlementAccount>00000000000000000000</ns3:settlementAccount>
+                        <ns3:personalAccount>См. прилагаемые документы</ns3:personalAccount>
+                    </account>
+                    <procedureInfo>Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, соответствующей требованиям статьи 45 Федерального закона №44-ФЗ от 05.04.2013 г. Выбор способа обеспечения осуществляется участником закупки самостоятельно. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок. Внесение денежных средств в качестве обеспечения заявки на участие в закупке производится в порядке статьи 44 Федерального закона №44-ФЗ от 05.04.2013 г. на специальный счет, открытый участником в банке, включенном в перечень, который ведется федеральным органом исполнительной власти по регулированию контрактной системы в сфере закупок и размещается на официальном сайте федерального органа исполнительной власти по регулированию контрактной системы в сфере закупок в информационно-телекоммуникационной сети "Интернет". Для участников закупки, являющихся иностранными лицами, установлены особенности порядка предоставления обеспечения заявок на участие в закупке, в соответствии с Постановлением Правительства РФ от 10.04.2023 № 579.</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>000000000</ns3:bik>
+                        <ns3:settlementAccount>00000000000000000000</ns3:settlementAccount>
+                        <ns3:personalAccount>См. прилагаемые документы</ns3:personalAccount>
+                    </account>
+                    <procedureInfo>Участник закупки, с которым заключается контракт, может предоставить обеспечение исполнения контракта любым из двух способов: 1) внесение денежных средств на счет заказчика. Получатель: следственное управление Следственного комитета Российской Федерации по Республике Татарстан л/с 05111А59590, ИНН 1655206460, КПП 165501001, р/с 03212643000000013233, к/с 40102810745370000024, ОКЦ №1 Волго-Вятского ГУ Банка России // УФК по Нижегородской области г. Нижний Новгород, БИК 012202102, код нормативного акта 0002, 2) предоставление независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ от 05.04.2013 г. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Федерального закона № 44-ФЗ от 05.04.2013 г.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>1300000.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>261165520646016550100100420038020244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>80.20</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги систем обеспечения безопасности</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>11655206460165501001</customerCode>
+                        <purchaseNumber>0042</purchaseNumber>
+                        <purchaseOrderNumber>003</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202601111000086001</ns3:plan2020Number>
+                        <ns3:position2020Number>202601111000086001000117</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-21+03:00</ns3:startDate>
+                                <ns3:endDate>2027-10-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>99010001</ns2:code>
+                                    <ns2:name>Федеральный бюджет</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>10</ns2:code>
+                                    <ns2:name>федеральный бюджет</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>00000001</ns2:code>
+                                    <ns2:name>Раздел 1. Муниципальные образования субъектов Российской Федерации / Федеральный бюджет</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>1300000.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>1300000.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22427928</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-21+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-10-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>41703018890090020244</KBK>
+                                        <paymentYearInfo>
+                                            <total>1300000.00</total>
+                                            <currentYear>0.00</currentYear>
+                                            <firstYear>1300000.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62346578</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>042d8540-9c77-41da-8c5c-d1731a95ecc7</ns3:GARGuid>
+                                <ns3:GARAddress>респ. Татарстан, г.о. город Казань, г. Казань, ул. Большая Красная, д. 39</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г Казань, ул Наки Исанбета, д. 57, г Казань, ул Карла Маркса, д. 45, г Казань, ул Зур Урам, зд. 1А, г Казань, ул Лукина, д. 47А, г Казань, ул Гаяза Исхаки, д. 1, г Казань, ул 25-го Октября, д. 4, г Казань, ул Энергетиков, д. 2/3, г Казань, ул Короленко, д. 105, г Казань, ул Хусаина Мавлютова, д. 19, г Казань, ул Курчатова, д. 10, г Альметьевск, ул 8 Марта, стр. 21А, г Азнакаево, ул Ленина, д. 30, г Арск, ул Галактионова, зд. 3, г Буинск, ул Арефьева, д. 14, г Бугульма, ул Вацлава Воровского, д. 45, с Верхний Услон, ул Чехова, д. 70, с Высокая Гора, ул Центральная, д. 2, г Заинск, ул Казанская, д. 8, г Зеленодольск, ул Рогачева, д. 9, г Елабуга, пр-кт Нефтяников, д. 56, г Лениногорск, ул Морякова, зд. 13А, г Менделеевск, ул Фомина, д. 19, г Агрыз, ул Нариманова, д. 4, г Набережные Челны, пр-кт Сююмбике, зд. 69, г Нурлат, ул Лихачева, д. 13, г Нижнекамск, пр-кт Шинников, д. 40, г Чистополь, ул К.Маркса, д. 87.</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>Исполнитель несет гарантийные обязательства на весь объем оказания услуг в течение 12 (двенадцати) месяцев с момента подписания документа о приемке услуг. Гарантийный срок на оборудование, установленное взамен вышедшего из строя, составляет 12 (двенадцать) месяцев с момента подписания документа о приемке услуг, но не менее срока, установленного заводом-изготовителем оборудования.</warrantyTerm>
+                </warrantyInfo>
+                <addInfo>Реквизиты счета для учета операций со средствами, поступающими заказчику: ИНН 1655206460, КПП 165501001, л/с 05111А59590, р/с 03212643000000013233, к/с 40102810745370000024, ОКЦ №1 Волго-Вятского ГУ Банка России // УФК по Нижегородской области г. Нижний Новгород, БИК 012202102</addInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225714754</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.20.10.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги систем обеспечения безопасности</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Услуги по плановому техническому обслуживанию системы охранно-пожарной сигнализации, системы пожаротушения и дымоудаления, системы контроля и управления доступом</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>6500.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>6500.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225719042</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.20.10.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги систем обеспечения безопасности</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Услуги по внеплановому техническому обслуживанию системы охранно-пожарной сигнализации, системы пожаротушения и дымоудаления, системы контроля и управления доступом</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7500.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>7500.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225719043</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.20.10.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги систем обеспечения безопасности</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Услуги по текущему ремонту системы охранно-пожарной сигнализации, системы пожаротушения и дымоудаления, системы контроля и управления доступом</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>9500.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>9500.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225719044</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.20.10.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги систем обеспечения безопасности</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Замена запасных частей и обслуживаемого оборудования, используемых при оказании услуг</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>491285.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>491285.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>514785</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>- наличие действующей лицензии на осуществление производства работ по монтажу, ремонту и обслуживанию средств обеспечения пожарной безопасности зданий и сооружений, выданной Министерством Российской Федерации по делам гражданской обороны, чрезвычайным ситуациям и ликвидации последствий стихийных бедствий в соответствии с пунктом 15 части 1 статьи 12 Федерального закона  от 04.05.2011 № 99-ФЗ «О лицензировании отдельных видов деятельности» и Положением о лицензировании деятельности по монтажу, техническому обслуживанию и ремонту средств обеспечения пожарной безопасности зданий и сооружений, утвержденным Постановлением Правительства РФ от 28.07.2020 № 1128 (ред. от 13.07.2026)</ns3:content>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

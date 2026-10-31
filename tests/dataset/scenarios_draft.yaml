@@ -1,0 +1,676 @@
+# ЧЕРНОВИК сценариев (роль 2) — проверить и принять роли 5. Основной файл scenarios.yaml не тронут.
+#
+# Дата оценки: 2026-11-01. Сроки подачи у закупок — 02–16.11.2026: оценивать нужно на эту дату,
+# а не на текущую, иначе стоп-фактор «приём заявок завершён» обнулит все сценарии.
+#
+# Разметка — по тексту профиля, без запуска системы:
+#   participate — предмет прямо в специализации и выполнены все явные условия профиля:
+#                 сумма, способ, закон, свой регион (для стройки Москва считается своим вместе с МО);
+#   consider    — предмет в специализации, но не выполнено условие профиля: другой регион
+#                 (регион компании — мягкое условие), сумма за границей не больше чем в 2 раза, другой способ;
+#   skip        — предмет вне профиля, в том числе смежный (сталь для стройки, услуги вместо поставки),
+#                 сумма за границей больше чем в 2 раза, нарушено жёсткое условие (медики — только 44-ФЗ,
+#                 канцтовары — нет СРО на строительство) или сработал стоп-фактор ([0, 0]).
+# Позиция «регион важен мягко, смежное — пропустить» согласована с тимлидом 31.10.2026.
+# Файлы — реальные XML ЕИС в data/samples/; заказчики — data/customers/ (DaData, 31.10.2026).
+# Три сценария со стоп-фактором заказчика используют синтетические файлы роли 5 из tests/dataset/.
+# 31.10.2026: порог суммы записан числом, как в контрольных выборках (больше чем в 2 раза → пропустить);
+# по нему исправлены d033 и d034 (сумма в 3,5 и 3 раза ниже минимума) — были «рассмотреть».
+
+as_of: '2026-11-01'
+profiles:
+  profile_a_construction_company:
+    text: 'Мы опытная строительная компания из Московской области "СтройРегион-Инвест". Специализация: строительство
+      школ, детсадов, административных зданий, кровельные и восстановительные работы. Есть СРО, собственная техника,
+      120 сотрудников. Годовая выручка 350 млн руб. Интересны конкурсы и аукционы на строительные работы от 5 до
+      50 млн руб.
+
+      '
+  profile_b_office_supplies:
+    text: 'Мы маленькая компания "Вектор" из Тверской области. Специализация: поставка канцтоваров, мелкий ремонт
+      офисов. 4 сотрудника, годовая выручка 12 млн руб. Опыт в госзакупках 1.5 года, 3 контракта. Нет СРО на строительство.
+      Интересны небольшие запросы котировок до 2 млн руб.
+
+      '
+  profile_c_medical_suppliers:
+    text: 'Мы компания "МедТехСнаб" из Камчатского края. Специализация: поставка  медицинского оборудования, лабораторных
+      реагентов и расходных материалов  для государственных больниц. Годовая выручка 80 млн руб.  Интересны закупки
+      от 500 тыс. до 30 млн руб. Работаем только по 44-ФЗ.
+
+      '
+  profile_d_it:
+    text: 'Мы IT-интегратор "ПримТех" из Приморского края. Специализация: комплексная поставка  и монтаж IT-инфраструктуры,
+      включая серверное оборудование, системы хранения данных (СХД),  прокладку ВОЛС и монтаж камер видеонаблюдения.
+      Есть опыт пусконаладки оборудования в ЦОД, все необходимые лицензии и допуски СРО. Годовая выручка 150 млн
+      руб. Интересны закупки от 5 млн до 100 млн руб.  Готовы предоставить гарантию на оборудование от 24 месяцев.
+
+      '
+scenarios:
+- id: d001
+  file: data/samples/0348500004626000317.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Текущий ремонт скатной кровли больницы, Московская обл., конкурс, 6,3 млн — кровельные работы, свой
+    регион, способ и сумма в профиле
+- id: d002
+  file: data/samples/0848300048226000439.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Ремонт кровель зданий администрации, Истра (МО), конкурс, 16,2 млн — кровля административных зданий,
+    все условия профиля
+- id: d003
+  file: data/samples/0848300048226000420.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Ремонт внутренних помещений здания ОМВД, Истра (МО), конкурс, 7,5 млн — административное здание, все
+    условия профиля
+- id: d004
+  file: data/samples/0848300048426000461.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Текущий ремонт объекта по ул. Школьная, Видное (МО), конкурс, 45,3 млн — строительные работы, сумма
+    у верхней границы 50 млн
+- id: d005
+  file: data/samples/0373200159626000053.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Ремонт кровли общежития и учебного корпуса, Москва, конкурс, 9,8 млн — кровельные работы, Москва рядом
+    с МО
+- id: d006
+  file: data/samples/0373200159626000052.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Ремонт кровли административного и переходного корпусов, Москва, конкурс, 8,0 млн — кровля административных
+    зданий
+- id: d007
+  file: data/samples/0373200159626000042.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Ремонт кровли учебных корпусов, Москва, конкурс, 8,3 млн — кровельные работы, все условия профиля
+- id: d008
+  file: data/samples/0373200138226000835.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Ремонтно-реставрационные работы кровли объекта культурного наследия, Москва, конкурс, 13,9 млн — кровельные
+    и восстановительные работы
+- id: d009
+  file: data/samples/0136500001126005867.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Текущий ремонт внутренних помещений, Тверская обл., запрос котировок, 0,74 млн — мелкий ремонт офисов,
+    свой регион, способ и сумма в профиле
+- id: d010
+  file: data/samples/0338300047926000429.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Реагенты и расходные материалы для КДЛ, Камчатский край, 44-ФЗ, 8,0 млн — прямая специализация, все
+    условия профиля
+- id: d011
+  file: data/samples/0338200009826000752.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Реагенты для рабочей станции, Камчатская краевая больница, 44-ФЗ, 1,0 млн — реагенты, все условия профиля
+- id: d012
+  file: data/samples/0338300008326000098.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Наборы реагентов для ПЦР-диагностики, Камчатский край, 44-ФЗ, 5,1 млн — реагенты, все условия профиля
+- id: d013
+  file: data/samples/0338200009826000742.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Расходные материалы к анализатору, Камчатский край, 44-ФЗ, 0,71 млн — расходники, сумма в диапазоне
+    от 0,5 млн
+- id: d014
+  file: data/samples/0338300047926000424.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Реагенты и расходные материалы для КДЛ, Камчатский край, 44-ФЗ, 3,0 млн — прямая специализация
+- id: d015
+  file: data/samples/0338200009826000735.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Реагенты для анализатора газов крови, Камчатский край, 44-ФЗ, 2,2 млн — реагенты, все условия профиля
+- id: d016
+  file: data/samples/0338300007526000171.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Наборы реагентов для определения микроальбумина, Камчатский край, 44-ФЗ, 2,9 млн — реагенты
+- id: d017
+  file: data/samples/0338300007826000284.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Реагенты для биохимического анализатора, Камчатский край, 44-ФЗ, 0,61 млн — реагенты, сумма чуть выше
+    нижней границы
+- id: d018
+  file: data/samples/0338200009126000073.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Медицинские изделия (бахилы), Камчатский край, 44-ФЗ, 1,3 млн — расходные материалы для больниц
+- id: d019
+  file: data/samples/0338200008626000454.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Расходные материалы к аппарату ИВЛ, Камчатский край, 44-ФЗ, 1,8 млн — расходники для медоборудования
+- id: d020
+  file: data/samples/0820500000826005362.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: 'Развитие АПК «Безопасный город»: камеры видеонаблюдения, СХД, серверы, Приморский край, 47,6 млн —
+    прямая специализация, все условия профиля'
+- id: d021
+  file: data/samples/0848300016526000466.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Сохранение ОКН (ремонт кровли, консервация), МО, 5,1 млн — профильные работы и регион, но запрос котировок
+    вместо конкурса или аукциона
+- id: d022
+  file: data/samples/32616509080.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Капремонт кровли насосной станции, МО, 223-ФЗ, запрос котировок, 3,0 млн — кровля в своём регионе,
+    но сумма ниже 5 млн и способ вне профиля
+- id: d023
+  file: data/samples/0818500000826007277.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Капремонт кровли спального корпуса, Краснодарский край, аукцион, 8,7 млн — профильные работы, но далёкий
+    регион
+- id: d024
+  file: data/samples/0118300013326001690.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Ремонт кровли детского сада, Краснодарский край, аукцион, 7,0 млн — прямая специализация, но далёкий
+    регион
+- id: d025
+  file: data/samples/0369300290326000054.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Капремонт здания школы, Челябинская обл., аукцион, 5,5 млн — прямая специализация, но далёкий регион
+- id: d026
+  file: data/samples/0340200003326012937.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Капремонт детского сада, Кировская обл., конкурс, 46,1 млн — прямая специализация, но далёкий регион
+- id: d027
+  file: data/samples/0136300043726000114.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Канцтовары, Тверская обл., 0,10 млн — профиль и регион, но аукцион вместо запроса котировок
+- id: d028
+  file: data/samples/0836600003326000489.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Бумага для офисной техники, Тверская обл., 0,23 млн — профиль и регион, но аукцион вместо запроса котировок
+- id: d029
+  file: data/samples/32616521694.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Бумага для офисной техники, Тверская обл., 223-ФЗ, аукцион, 0,09 млн — профиль и регион, но способ
+    вне профиля
+- id: d030
+  file: data/samples/0332200041926000059.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Канцтовары, запрос котировок, 0,15 млн — всё в профиле, кроме региона (Нижегородская обл.)
+- id: d031
+  file: data/samples/0744200000226008917.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Канцтовары, запрос котировок, 0,18 млн — всё в профиле, кроме региона (Курская обл.)
+- id: d032
+  file: data/samples/0833500000226000143.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Канцтовары, запрос котировок, 0,13 млн — всё в профиле, кроме региона (Ивановская обл.); заказчик зарегистрирован
+    2 года назад — правило «возраст ≥ 3 лет» выполняется частично
+- id: d033
+  file: data/samples/0338300004626000299.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Расходные материалы для лабораторной диагностики, Камчатский край, 0,14 млн — профиль и регион, но
+    сумма в 3,5 раза ниже минимума 0,5 млн (больше чем в 2 раза → пропустить); исправлено 31.10.2026
+- id: d034
+  file: data/samples/0338200007626000133.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Медицинское оборудование (алкотестер), Камчатский край, 0,17 млн — профиль и регион, но сумма в
+    3 раза ниже минимума 0,5 млн (больше чем в 2 раза → пропустить); исправлено 31.10.2026
+- id: d035
+  file: data/samples/0131200001026007907.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Медицинское оборудование (хирургическая дрель/пила), Воронежская обл., 8,2 млн — профиль и сумма, но
+    далёкий регион
+- id: d036
+  file: data/samples/0338200008626000455.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Техобслуживание лабораторного оборудования, Камчатский край, 0,52 млн — смежный предмет (услуги, а
+    не поставка)
+- id: d037
+  file: data/samples/0190200000326012517.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка серверного оборудования, ЯНАО, 20,6 млн — профильный предмет и сумма, но далёкий регион
+- id: d038
+  file: data/samples/0373200082126000607.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Серверное оборудование для резервного копирования, Москва, 19,9 млн — профиль и сумма, но далёкий регион
+- id: d039
+  file: data/samples/0801500001126002144.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка серверного оборудования, Башкортостан, 12,5 млн — профиль и сумма, но далёкий регион
+- id: d040
+  file: data/samples/32616497416.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Капремонт волоконно-оптической линии связи, ХМАО, 223-ФЗ, 8,2 млн — ВОЛС в профиле, но далёкий регион
+- id: d041
+  file: data/samples/0848300044526000358.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Уборка и содержание территорий парков, МО — не строительные работы
+- id: d042
+  file: data/samples/0848300049026000993.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Приобретение жилого помещения, МО — покупка квартиры, не строительные работы
+- id: d043
+  file: data/samples/32616419832.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: СМР и пусконаладка трансформаторной подстанции, МО — энергетика, не специализация компании
+- id: d044
+  file: data/samples/0102200001626002273.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 0
+  expected_stop_factor: deadline_passed
+  rationale: Восстановительные работы и устройство кровли школы-интерната, Бурятия, 16,9 млн — профильные работы,
+    но приём заявок завершён 26.10.2026
+- id: d045
+  file: tests/dataset/procurements/5410787285_neon_liquidated_unreliable.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 0
+  expected_stop_factor: customer_liquidated,unreliable_flags
+  rationale: Заказчик ООО «НЕОН» ликвидирован, есть отметки о недостоверности — участие невозможно
+- id: d046
+  file: tests/dataset/procurements/0275066119_bankrupt.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 0
+  expected_stop_factor: customer_bankrupt
+  rationale: Заказчик в банкротстве (конкурсное производство) — участие невозможно
+- id: d047
+  file: data/samples/0848300048226000439.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Ремонт кровель, 16,2 млн, конкурс — строительные работы без СРО и сумма в 8 раз выше лимита 2 млн
+- id: d048
+  file: data/samples/0338300047926000429.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Реагенты для КДЛ, Камчатка, 8,0 млн — не профиль и сумма выше лимита
+- id: d049
+  file: tests/dataset/procurements/0275900246_liquidated.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 0
+  expected_stop_factor: customer_liquidated
+  rationale: Заказчик ликвидирован — участие невозможно
+- id: d050
+  file: data/samples/0138100003126000045.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Очистка территории суда от снега, Камчатский край — не медицина
+- id: d051
+  file: data/samples/0338300007526000179.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Клининг помещений больницы, Камчатский край, 5,6 млн — услуги уборки, не поставка медизделий
+- id: d052
+  file: data/samples/32616490234.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 0
+  expected_stop_factor: deadline_passed
+  rationale: Лабораторная посуда, Камчатский край, 1,6 млн — предмет в профиле, но 223-ФЗ, а компания работает только
+    по 44-ФЗ (и приём заявок уже завершён 30.10.2026)
+- id: d053
+  file: data/samples/0338300007826000288.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Кювета для биохимического анализатора, Камчатский край, 4,7 тыс. ₽ — сумма в 100 раз ниже нижней границы
+    0,5 млн
+- id: d054
+  file: data/samples/0338200009826000713.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 0
+  expected_stop_factor: deadline_passed
+  rationale: Реагенты для анализатора, Камчатская краевая больница, 0,77 млн — всё в профиле, но приём заявок завершён
+    29.10.2026
+- id: d055
+  file: data/samples/0136300043726000114.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Канцтовары, Тверская обл. — не медицина
+- id: d056
+  file: data/samples/0320300038126000005.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Монтаж видеонаблюдения, Приморский край, 0,43 млн — профиль и регион, но сумма в 11 раз ниже нижней
+    границы 5 млн
+- id: d057
+  file: data/samples/0320100025726000106.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Лицензия ПО для видеонаблюдения, Приморский край, 0,35 млн — покупка лицензии, не монтаж инфраструктуры,
+    и сумма много ниже 5 млн
+- id: d058
+  file: data/samples/0134200000126004565.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Техобслуживание медицинского оборудования, Иркутская обл., 60 млн — не IT-инфраструктура
+- id: d059
+  file: data/samples/0338300047926000429.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Реагенты для КДЛ, Камчатский край — не IT
+- id: d060
+  file: data/samples/0848300016526000466.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Сохранение объекта культурного наследия, МО — строительные работы, не IT

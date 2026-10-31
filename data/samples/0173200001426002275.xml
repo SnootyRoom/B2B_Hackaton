@@ -1,0 +1,2620 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44426927</id>
+    <externalId>14991761</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0173200001426002275</purchaseNumber>
+        <docNumber>№0173200001426002275</docNumber>
+        <plannedPublishDate>2026-10-29+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T19:15:56.646+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0173200001426002275</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_EETP</ns2:code>
+            <ns2:name>РОСЭЛТОРГ (АО«ЕЭТП»)</ns2:name>
+            <ns2:url>http://roseltorg.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка питьевой воды (СЗ-В-12-26)</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>01732000014</regNum>
+            <consRegistryNum>452А2295</consRegistryNum>
+            <fullName>ДЕПАРТАМЕНТ ГОРОДА МОСКВЫ ПО КОНКУРЕНТНОЙ ПОЛИТИКЕ</fullName>
+            <shortName>ТЕНДЕРНЫЙ КОМИТЕТ</shortName>
+            <postAddress>105062, г. Москва, ул. Макаренко, д. 4, стр. 1</postAddress>
+            <factAddress>101000, МОСКВА, УЛ МАКАРЕНКО, Дом (Корпус/строение) Д. 4, СТР. 1</factAddress>
+            <INN>7704515009</INN>
+            <KPP>770101001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>RA</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>105062, г. Москва, ул. Макаренко, д. 4, стр. 1</orgPostAddress>
+            <orgFactAddress>101000, МОСКВА, УЛ МАКАРЕНКО, Дом (Корпус/строение) Д. 4, СТР. 1</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Служба</ns3:lastName>
+                <ns3:firstName>Одно</ns3:firstName>
+                <ns3:middleName>окно</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>mostender@mos.ru</contactEMail>
+            <contactPhone>7-495-9579977</contactPhone>
+            <contactFax>-</contactFax>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0173200001426002275</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18866E64B788C86DEC22A2DAEB8EF</ns3:publishedContentId>
+            <ns3:fileName>Расчет_НМЦ_17282683-2.xls</ns3:fileName>
+            <ns3:fileSize>9890</ns3:fileSize>
+            <ns3:docDescription>Расчет НМЦК(Д)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T19:03:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18866E64B788C86DEC22A2DAEB8EF</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18866E8AC722B92C7059DE3F5800D</ns3:publishedContentId>
+            <ns3:fileName>Протокол расчета НМЦК В-12.pdf</ns3:fileName>
+            <ns3:fileSize>95838</ns3:fileSize>
+            <ns3:docDescription>Протокол НМЦК(Д)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T19:03:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18866E8AC722B92C7059DE3F5800D</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18866E75870B99DAE1AA222DCD256</ns3:publishedContentId>
+            <ns3:fileName>Проект_контракта_17259692-1.pdf</ns3:fileName>
+            <ns3:fileSize>117477</ns3:fileSize>
+            <ns3:docDescription>Проект контракта (договора)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T19:03:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18866E75870B99DAE1AA222DCD256</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18866E7EC75719263BC8184757840</ns3:publishedContentId>
+            <ns3:fileName>Проект_контракта_17214053-1.pdf</ns3:fileName>
+            <ns3:fileSize>113676</ns3:fileSize>
+            <ns3:docDescription>Проект контракта (договора)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T19:03:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18866E7EC75719263BC8184757840</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18866E6C87F09B36F1149E40729AE</ns3:publishedContentId>
+            <ns3:fileName>Проект_контракта_17278984-1.pdf</ns3:fileName>
+            <ns3:fileSize>117291</ns3:fileSize>
+            <ns3:docDescription>Проект контракта (договора)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T19:03:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18866E6C87F09B36F1149E40729AE</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18866E5CD766DB8583BA1D47D8597</ns3:publishedContentId>
+            <ns3:fileName>Техническое_задание_17282683-1.pdf</ns3:fileName>
+            <ns3:fileSize>107188</ns3:fileSize>
+            <ns3:docDescription>Техническое задание</ns3:docDescription>
+            <ns3:docDate>2026-10-29T19:03:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18866E5CD766DB8583BA1D47D8597</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18866E5067CAAA8CE375936277518</ns3:publishedContentId>
+            <ns3:fileName>ElectronicAuction14991761.pdf</ns3:fileName>
+            <ns3:fileSize>131565</ns3:fileSize>
+            <ns3:docDescription>ElectronicAuction14991761.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-29T19:03:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18866E5067CAAA8CE375936277518</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18866E97C7C84B1561BBEE3D21D11</ns3:publishedContentId>
+            <ns3:fileName>!! В_помощь_участникам_закупок.pdf</ns3:fileName>
+            <ns3:fileSize>151808</ns3:fileSize>
+            <ns3:docDescription>!! В помощь участникам закупок</ns3:docDescription>
+            <ns3:docDate>2026-10-29T19:03:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18866E97C7C84B1561BBEE3D21D11</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>false</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T19:15:56+03:00</startDT>
+                <endDT>2026-11-06T10:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-06+03:00</biddingDate>
+            <summarizingDate>2026-11-10+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>18689308.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03732000703</ns2:regNum>
+                    <ns2:consRegistryNum>452Р9334</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "МОЙ СЕМЕЙНЫЙ ЦЕНТР "ПРИТЯЖЕНИЕ"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>10476.50</amount>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03224643450000007300</ns3:settlementAccount>
+                        <ns3:personalAccount>2114842000900015</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ГУ Банка России по ЦФО//УФК ПО Г. МОСКВЕ, г Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>7704253064</INN>
+                            <KPP>770101001</KPP>
+                            <KBK>14811610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>45375000</ns2:code>
+                                <ns2:name>Муниципальные образования города Москвы (столицы Российской Федерации города федерального значения) / Внутригородские муниципальные образования в городе Москве (см. также 45 900 000)/ / муниципальный округ Басманный</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810545370000003</bankAccount>
+                            <ksNumber>03100643000000017300</ksNumber>
+                            <bik>004525988</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО Г. МОСКВЕ (ДТСЗН ГОРОДА МОСКВЫ)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>В соответствии с правилами и порядком, определенными оператором электронной торговой площадки</procedureInfo>
+                    <part>0.5</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>104764.95</amount>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03224643450000007300</ns3:settlementAccount>
+                        <ns3:personalAccount>2114842000900015</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ГУ Банка России по ЦФО//УФК ПО Г. МОСКВЕ, г Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Контракт заключается после предоставления заказчику обеспечения исполнения контракта. Обеспечение исполнения контракта может быть представлено в виде безотзывной независимой гарантии или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику, в размере обеспечения исполнения контракта, указанном в документации о закупках. Безотзывная независимая гарантия должна соответствовать требованиям, установленным Гражданским кодексом Российской Федерации, а также иным законодательством Российской Федерации.
+Способ обеспечения исполнения контракта определяется участником закупки, с которым заключается контракт, самостоятельно.
+Срок внесения обеспечения - до момента заключения контракта».</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>2095299.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262772310460777230100100380010000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>27723104607772301001</customerCode>
+                        <purchaseNumber>0038</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603732000703001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603732000703001000038</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                <ns3:endDate>2030-01-18+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>2095299.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>684741.00</firstYear>
+                                <secondYear>705279.00</secondYear>
+                                <subsecYears>705279.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22514430</sid>
+                                <externalSid>34923939</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2028-02-01+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>684741.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>684741.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>684741.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>684741.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>684741.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                                <financeInfo>
+                                    <total>684741.00</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>684741.00</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22514431</sid>
+                                <externalSid>34923938</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2028-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2029-01-11+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>705279.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>705279.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>705279.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>705279.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>705279.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                                <financeInfo>
+                                    <total>705279.00</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>0.00</firstYear>
+                                    <secondYear>705279.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22514432</sid>
+                                <externalSid>34923937</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2029-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2030-01-18+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>705279.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>705279.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>705279.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>705279.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>705279.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                                <financeInfo>
+                                    <total>705279.00</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>0.00</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>705279.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449181</ns3:sid>
+                            <ns3:externalSid>331051244</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>Город Москва, улица Гурьянова, дом 55; город Москва, ул. 3-я Курьяновская, д. 2, г. Москва, Новочеркасский бульвар, д. 53, город Москва, ул. Марьинский парк, д. 41, корпус 2, город Москва, ул. 1-ая Вольская, д. 12, корпус 1, город Москва, ул. Волочаевская, д. 36А.</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449182</ns3:sid>
+                            <ns3:externalSid>331051245</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>24a44981-ac9a-467c-9028-a349b80b4af1</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Печатники, ул. Полбина, д. 26</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449183</ns3:sid>
+                            <ns3:externalSid>331051246</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>Город Москва, улица Гурьянова, дом 55; город Москва, ул. 3-я курьяновская, д. 2, город Москва, Новочеркасский бульвар, д. 53, город Москва, ул. Марьинский парк, д. 41, корпус 2, город Москва, ул. 1-ая Вольская, д. 12, корпус 1, город Москва, ул. Волочаевская, д. 36А.</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449184</ns3:sid>
+                            <ns3:externalSid>331051247</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>24a44981-ac9a-467c-9028-a349b80b4af1</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Печатники, ул. Полбина, д. 26</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449185</ns3:sid>
+                            <ns3:externalSid>331051248</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>Город Москва, улица Гурьянова, дом 55; город Москва, ул. 3-я курьяновская, д. 2, город Москва, Новочеркасский бульвар, д. 53, город Москва, ул. Марьинский парк, д. 41, корпус 2, город Москва, ул. 1-ая Вольская, д. 12, корпус 1, город Москва, ул. Волочаевская, д. 36А.</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449186</ns3:sid>
+                            <ns3:externalSid>331051249</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>24a44981-ac9a-467c-9028-a349b80b4af1</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Печатники, ул. Полбина, д. 26</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>В соответствии с условиями контракта и технического задания.</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03732000274</ns2:regNum>
+                    <ns2:consRegistryNum>452А3741</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ "ГОРОДСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА ИМЕНИ С.С. ЮДИНА ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>81389.00</amount>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03224643450000007300</ns3:settlementAccount>
+                        <ns3:personalAccount>2105441000960514</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ГУ Банка России по ЦФО//УФК ПО Г. МОСКВЕ, г Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>7707089084</INN>
+                            <KPP>770701001</KPP>
+                            <KBK>05411610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>45382000</ns2:code>
+                                <ns2:name>Муниципальные образования города Москвы (столицы Российской Федерации города федерального значения) / Внутригородские муниципальные образования в городе Москве (см. также 45 900 000)/ / муниципальный округ Тверской</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810545370000003</bankAccount>
+                            <ksNumber>03100643000000017300</ksNumber>
+                            <bik>004525988</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО Г. МОСКВЕ</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>В соответствии с правилами и порядком, определенными оператором электронной торговой площадки</procedureInfo>
+                    <part>0.5</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>813890.00</amount>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03224643450000007300</ns3:settlementAccount>
+                        <ns3:personalAccount>2105441000960514</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ГУ Банка России по ЦФО//УФК ПО Г. МОСКВЕ, г Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Контракт заключается после предоставления заказчику обеспечения исполнения контракта. Обеспечение исполнения контракта может быть представлено в виде безотзывной независимой гарантии или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику, в размере обеспечения исполнения контракта, указанном в документации о закупках. Безотзывная независимая гарантия должна соответствовать требованиям, установленным Гражданским кодексом Российской Федерации, а также иным законодательством Российской Федерации.
+Способ обеспечения исполнения контракта определяется участником закупки, с которым заключается контракт, самостоятельно.
+Срок внесения обеспечения - до момента заключения контракта».</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>16277800.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262772407087077240100122990010000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>27724070870772401001</customerCode>
+                        <purchaseNumber>2299</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603732000274001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603732000274001002297</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                <ns3:endDate>2028-02-01+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>16277800.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>16277800.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22514433</sid>
+                                <externalSid>35010632</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2028-02-01+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>16277800.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>16277800.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>16277800.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>16277800.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>16277800.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449187</ns3:sid>
+                            <ns3:externalSid>331843709</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>c0cf1e10-4422-43be-81cf-b12224812be3</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Мещанский, ул. Дурова, д. 26 стр. 2</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449188</ns3:sid>
+                            <ns3:externalSid>331843708</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>dc557629-9fd0-44da-afbf-f48424a5b25c</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Нагатино-Садовники, ул. Академика Миллионщикова, д. 1</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449189</ns3:sid>
+                            <ns3:externalSid>331843707</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>944b3c5c-039b-4acd-af15-01e24d1fbd07</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Донской, ш. Загородное, д. 18А</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449190</ns3:sid>
+                            <ns3:externalSid>331843706</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>e906bf9d-ea9f-44e7-80e3-cfe85e942163</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Нагатино-Садовники, пр-д Коломенский, д. 4</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449191</ns3:sid>
+                            <ns3:externalSid>331843705</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>1b86be74-c084-40d7-9e6c-abccc731f23b</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Басманный, ул. Бауманская, д. 17/1 к. 2</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>В соответствии с документацией</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03732001868</ns2:regNum>
+                    <ns2:consRegistryNum>45200255</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ОБРАЗОВАНИЯ ГОРОДА МОСКВЫ СПОРТИВНАЯ ШКОЛА ОЛИМПИЙСКОГО РЕЗЕРВА "МОСКОВСКАЯ АКАДЕМИЯ ФИГУРНОГО КАТАНИЯ НА КОНЬКАХ" ДЕПАРТАМЕНТА СПОРТА ГОРОДА МОСКВЫ</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>1581.05</amount>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03224643450000007300</ns3:settlementAccount>
+                        <ns3:personalAccount>2178341000450005</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ГУ Банка России по ЦФО//УФК ПО Г. МОСКВЕ, г Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>7708308010</INN>
+                            <KPP>770401001</KPP>
+                            <KBK>78311610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>45383000</ns2:code>
+                                <ns2:name>Муниципальные образования города Москвы (столицы Российской Федерации города федерального значения) / Внутригородские муниципальные образования в городе Москве (см. также 45 900 000)/ / муниципальный округ Хамовники</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810545370000003</bankAccount>
+                            <ksNumber>03100643000000017300</ksNumber>
+                            <bik>004525988</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО Г. МОСКВЕ (МОСКОМСПОРТ)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>В соответствии с правилами и порядком, определенными оператором электронной торговой площадки</procedureInfo>
+                    <part>0.5</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>15810.45</amount>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03224643450000007300</ns3:settlementAccount>
+                        <ns3:personalAccount>2178341000450005</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ГУ Банка России по ЦФО//УФК ПО Г. МОСКВЕ, г Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Контракт заключается после предоставления заказчику обеспечения исполнения контракта. Обеспечение исполнения контракта может быть представлено в виде безотзывной независимой гарантии или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику, в размере обеспечения исполнения контракта, указанном в документации о закупках. Безотзывная независимая гарантия должна соответствовать требованиям, установленным Гражданским кодексом Российской Федерации, а также иным законодательством Российской Федерации.
+Способ обеспечения исполнения контракта определяется участником закупки, с которым заключается контракт, самостоятельно.
+Срок внесения обеспечения - до момента заключения контракта».</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>316209.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262771519683777150100100140010000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>27715196837771501001</customerCode>
+                        <purchaseNumber>0014</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603732001868001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603732001868001000014</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                <ns3:endDate>2028-02-01+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>316209.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>316209.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22514429</sid>
+                                <externalSid>34922065</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2028-02-01+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>316209.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>316209.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>316209.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>316209.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>316209.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449178</ns3:sid>
+                            <ns3:externalSid>331032325</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0141fd3a-709c-47ce-b7b2-9c181e73a5db</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Ясенево, пр-кт Новоясеневский, д. 26</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449179</ns3:sid>
+                            <ns3:externalSid>331032324</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>1e0a35f3-4d4f-49c7-82f0-867ab187f9fa</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Южное Медведково, ул. Заповедная, д. 1</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62449180</ns3:sid>
+                            <ns3:externalSid>331032326</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>1e0a35f3-4d4f-49c7-82f0-867ab187f9fa</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Южное Медведково, ул. Заповедная, д. 1</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>В соответствии с документацией</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226166373</ns3:sid>
+                    <ns3:externalSid>251382300-1718724492</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>11.07.11.000-00000002</ns2:code>
+                        <ns2:name>Вода питьевая упакованная</ns2:name>
+                        <ns2:versionId>354201</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826885</ns3:sid>
+                                <ns3:externalSid>2010536729-1307373790</ns3:externalSid>
+                                <ns3:code>afb385a6-6</ns3:code>
+                                <ns3:name>Объем</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449335</ns3:sid>
+                                        <ns3:externalSid>enum-2260079161</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>18.9</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826886</ns3:sid>
+                                <ns3:externalSid>2010536726-1491673597</ns3:externalSid>
+                                <ns3:code>ce1a6bcf-3</ns3:code>
+                                <ns3:name>Вид воды</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449336</ns3:sid>
+                                        <ns3:externalSid>enum-2260076758</ns3:externalSid>
+                                        <ns3:qualityDescription>Питьевая</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826887</ns3:sid>
+                                <ns3:externalSid>2010536731-1491673594</ns3:externalSid>
+                                <ns3:code>a99f8b88-e</ns3:code>
+                                <ns3:name>Тип воды питьевой по степени газации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449337</ns3:sid>
+                                        <ns3:externalSid>enum-2260079163</ns3:externalSid>
+                                        <ns3:qualityDescription>Негазированная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826888</ns3:sid>
+                                <ns3:externalSid>2010536730-1349647284</ns3:externalSid>
+                                <ns3:code>1f717e43-1</ns3:code>
+                                <ns3:name>Тип воды питьевой</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449338</ns3:sid>
+                                        <ns3:externalSid>enum-2260079162</ns3:externalSid>
+                                        <ns3:qualityDescription>Природная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826881</ns3:sid>
+                                <ns3:externalSid>2010536727-1300322969</ns3:externalSid>
+                                <ns3:name>Вид тары, упаковки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449331</ns3:sid>
+                                        <ns3:externalSid>enum-2260076759</ns3:externalSid>
+                                        <ns3:qualityDescription>Бутыль поликарбонатная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826882</ns3:sid>
+                                <ns3:externalSid>2010536728-1301368182</ns3:externalSid>
+                                <ns3:name>Наличие брендированной этикетки Заказчика</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449332</ns3:sid>
+                                        <ns3:externalSid>enum-2260079160</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826883</ns3:sid>
+                                <ns3:externalSid>2010536879-1367547466</ns3:externalSid>
+                                <ns3:name>Тип тары (бутыли)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449333</ns3:sid>
+                                        <ns3:externalSid>enum-2260079191</ns3:externalSid>
+                                        <ns3:qualityDescription>Возвратная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826884</ns3:sid>
+                                <ns3:externalSid>2010536885-1302141956</ns3:externalSid>
+                                <ns3:name>Вид сопутствующих услуг</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449334</ns3:sid>
+                                        <ns3:externalSid>enum-2260079197</ns3:externalSid>
+                                        <ns3:qualityDescription>Погрузочно-разгрузочные работы, включая подъем поставляемого товара на этаж</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Вид тары, упаковки, тип тары (бутыли): Обусловлена требованием к таре в зависимости от способа потребления воды (через кулер)
+2. Наличие брендированной этикетки Заказчика: У заказчика отсутствует потребность в наличии брендированной упаковки.
+3.Тип тары (бутыли): Обусловлена необходимостью поставки воды в экономически выгодной таре, предназначенной для многоразового хранения и транспортировки.
+4.Вид сопутствующих услуг: Обусловлены отсутствием эксплуатационного и технического персонала Заказчика для выполнения данных работ.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>11.07.11</ns2:OKPDCode>
+                            <ns2:OKPDName>Воды минеральные природные упакованные, воды питьевые упакованные, не содержащие сахара, подсластителей, ароматизаторов и других пищевых веществ</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Вода питьевая упакованная</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732001868</ns2:regNum>
+                                <ns2:consRegistryNum>45200255</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ОБРАЗОВАНИЯ ГОРОДА МОСКВЫ СПОРТИВНАЯ ШКОЛА ОЛИМПИЙСКОГО РЕЗЕРВА "МОСКОВСКАЯ АКАДЕМИЯ ФИГУРНОГО КАТАНИЯ НА КОНЬКАХ" ДЕПАРТАМЕНТА СПОРТА ГОРОДА МОСКВЫ</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>780</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>369.95</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>780.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>288561.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226166374</ns3:sid>
+                    <ns3:externalSid>251382301-1718724491</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>11.07.11.000-00000001</ns2:code>
+                        <ns2:name>Вода питьевая упакованная</ns2:name>
+                        <ns2:versionId>354221</ns2:versionId>
+                        <ns2:versionNumber>3</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826891</ns3:sid>
+                                <ns3:externalSid>2010536905-1491673601</ns3:externalSid>
+                                <ns3:code>889ad8d6-3</ns3:code>
+                                <ns3:name>Тип воды природной минеральной по степени минерализации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449341</ns3:sid>
+                                        <ns3:externalSid>enum-2260079217</ns3:externalSid>
+                                        <ns3:qualityDescription>Пресная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826892</ns3:sid>
+                                <ns3:externalSid>2010536898-1491673600</ns3:externalSid>
+                                <ns3:code>f2b21176-3</ns3:code>
+                                <ns3:name>Тип воды природной минеральной</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449342</ns3:sid>
+                                        <ns3:externalSid>enum-2260079210</ns3:externalSid>
+                                        <ns3:qualityDescription>Столовая</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826893</ns3:sid>
+                                <ns3:externalSid>2010536897-1491673594</ns3:externalSid>
+                                <ns3:code>a99f8b88-e</ns3:code>
+                                <ns3:name>Тип воды питьевой по степени газации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449343</ns3:sid>
+                                        <ns3:externalSid>enum-2260079209</ns3:externalSid>
+                                        <ns3:qualityDescription>Негазированная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826894</ns3:sid>
+                                <ns3:externalSid>2010536896-1307373790</ns3:externalSid>
+                                <ns3:code>afb385a6-6</ns3:code>
+                                <ns3:name>Объем</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449344</ns3:sid>
+                                        <ns3:externalSid>enum-2260079208</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>0.5</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826895</ns3:sid>
+                                <ns3:externalSid>2010536893-1491673597</ns3:externalSid>
+                                <ns3:code>ce1a6bcf-3</ns3:code>
+                                <ns3:name>Вид воды</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449345</ns3:sid>
+                                        <ns3:externalSid>enum-2260079205</ns3:externalSid>
+                                        <ns3:qualityDescription>Природная минеральная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826889</ns3:sid>
+                                <ns3:externalSid>2010536894-1300322969</ns3:externalSid>
+                                <ns3:name>Вид тары, упаковки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449339</ns3:sid>
+                                        <ns3:externalSid>enum-2260079206</ns3:externalSid>
+                                        <ns3:qualityDescription>Бутылка полимерная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826890</ns3:sid>
+                                <ns3:externalSid>2010536895-1301368182</ns3:externalSid>
+                                <ns3:name>Наличие брендированной этикетки Заказчика</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449340</ns3:sid>
+                                        <ns3:externalSid>enum-2260079207</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Вид тары, упаковки: Данная характеристика устанавливается с целью конкретизации материала тары.
+2. Наличие брендированной этикетки Заказчика: У Заказчика отсутствует потребность в наличии брендированной упаковки.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>11.07.11</ns2:OKPDCode>
+                            <ns2:OKPDName>Воды минеральные природные упакованные, воды питьевые упакованные, не содержащие сахара, подсластителей, ароматизаторов и других пищевых веществ</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Вода питьевая упакованная</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732001868</ns2:regNum>
+                                <ns2:consRegistryNum>45200255</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ОБРАЗОВАНИЯ ГОРОДА МОСКВЫ СПОРТИВНАЯ ШКОЛА ОЛИМПИЙСКОГО РЕЗЕРВА "МОСКОВСКАЯ АКАДЕМИЯ ФИГУРНОГО КАТАНИЯ НА КОНЬКАХ" ДЕПАРТАМЕНТА СПОРТА ГОРОДА МОСКВЫ</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>1200</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>23.04</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1200.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>27648.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226166375</ns3:sid>
+                    <ns3:externalSid>251395871-1718724492</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>11.07.11.000-00000002</ns2:code>
+                        <ns2:name>Вода питьевая упакованная</ns2:name>
+                        <ns2:versionId>354201</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826899</ns3:sid>
+                                <ns3:externalSid>2010785410-1307373790</ns3:externalSid>
+                                <ns3:code>afb385a6-6</ns3:code>
+                                <ns3:name>Объем</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449349</ns3:sid>
+                                        <ns3:externalSid>enum-2260369630</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>18.9</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826900</ns3:sid>
+                                <ns3:externalSid>2010785412-1491673594</ns3:externalSid>
+                                <ns3:code>a99f8b88-e</ns3:code>
+                                <ns3:name>Тип воды питьевой по степени газации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449350</ns3:sid>
+                                        <ns3:externalSid>enum-2260369632</ns3:externalSid>
+                                        <ns3:qualityDescription>Негазированная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826901</ns3:sid>
+                                <ns3:externalSid>2010785407-1491673597</ns3:externalSid>
+                                <ns3:code>ce1a6bcf-3</ns3:code>
+                                <ns3:name>Вид воды</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449351</ns3:sid>
+                                        <ns3:externalSid>enum-2260369627</ns3:externalSid>
+                                        <ns3:qualityDescription>Питьевая</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826902</ns3:sid>
+                                <ns3:externalSid>2010785411-1349647284</ns3:externalSid>
+                                <ns3:code>1f717e43-1</ns3:code>
+                                <ns3:name>Тип воды питьевой</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449352</ns3:sid>
+                                        <ns3:externalSid>enum-2260369631</ns3:externalSid>
+                                        <ns3:qualityDescription>Природная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826896</ns3:sid>
+                                <ns3:externalSid>2010785408-1300322969</ns3:externalSid>
+                                <ns3:name>Вид тары, упаковки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449346</ns3:sid>
+                                        <ns3:externalSid>enum-2260369628</ns3:externalSid>
+                                        <ns3:qualityDescription>Бутыль поликарбонатная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826897</ns3:sid>
+                                <ns3:externalSid>2010785409-1301368182</ns3:externalSid>
+                                <ns3:name>Наличие брендированной этикетки Заказчика</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449347</ns3:sid>
+                                        <ns3:externalSid>enum-2260369629</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826898</ns3:sid>
+                                <ns3:externalSid>2010785600-1367547466</ns3:externalSid>
+                                <ns3:name>Тип тары (бутыли)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449348</ns3:sid>
+                                        <ns3:externalSid>enum-2260370160</ns3:externalSid>
+                                        <ns3:qualityDescription>Возвратная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Вид тары, упаковки: Обусловлена требованием к таре в зависимости от способа потребления воды (через кулеры).
+2. Наличие брендированной этикетки Заказчика: У Заказчика отсутствует потребность в наличии брендированной упаковки.
+3.Тип тары (бутыли): Обусловлена необходимостью поставки воды в экономически выгодной таре, предназначенной для многоразового хранения и транспортировки.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>11.07.11</ns2:OKPDCode>
+                            <ns2:OKPDName>Воды минеральные природные упакованные, воды питьевые упакованные, не содержащие сахара, подсластителей, ароматизаторов и других пищевых веществ</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Вода питьевая упакованная</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732000703</ns2:regNum>
+                                <ns2:consRegistryNum>452Р9334</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "МОЙ СЕМЕЙНЫЙ ЦЕНТР "ПРИТЯЖЕНИЕ"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>780</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>369.95</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>780.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>288561.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226166376</ns3:sid>
+                    <ns3:externalSid>251395872-1718724492</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>11.07.11.000-00000002</ns2:code>
+                        <ns2:name>Вода питьевая упакованная</ns2:name>
+                        <ns2:versionId>354201</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826906</ns3:sid>
+                                <ns3:externalSid>2010785618-1349647284</ns3:externalSid>
+                                <ns3:code>1f717e43-1</ns3:code>
+                                <ns3:name>Тип воды питьевой</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449356</ns3:sid>
+                                        <ns3:externalSid>enum-2260370178</ns3:externalSid>
+                                        <ns3:qualityDescription>Природная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826907</ns3:sid>
+                                <ns3:externalSid>2010785617-1307373790</ns3:externalSid>
+                                <ns3:code>afb385a6-6</ns3:code>
+                                <ns3:name>Объем</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449357</ns3:sid>
+                                        <ns3:externalSid>enum-2260370177</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>0.5</ns3:min>
+                                                <ns3:maxMathNotation>less</ns3:maxMathNotation>
+                                                <ns3:max>0.75</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826908</ns3:sid>
+                                <ns3:externalSid>2010785619-1491673594</ns3:externalSid>
+                                <ns3:code>a99f8b88-e</ns3:code>
+                                <ns3:name>Тип воды питьевой по степени газации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449358</ns3:sid>
+                                        <ns3:externalSid>enum-2260370179</ns3:externalSid>
+                                        <ns3:qualityDescription>Негазированная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826909</ns3:sid>
+                                <ns3:externalSid>2010785614-1491673597</ns3:externalSid>
+                                <ns3:code>ce1a6bcf-3</ns3:code>
+                                <ns3:name>Вид воды</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449359</ns3:sid>
+                                        <ns3:externalSid>enum-2260370174</ns3:externalSid>
+                                        <ns3:qualityDescription>Питьевая</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826903</ns3:sid>
+                                <ns3:externalSid>2010785615-1300322969</ns3:externalSid>
+                                <ns3:name>Вид тары, упаковки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449353</ns3:sid>
+                                        <ns3:externalSid>enum-2260370175</ns3:externalSid>
+                                        <ns3:qualityDescription>Бутылка полимерная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826904</ns3:sid>
+                                <ns3:externalSid>2010785616-1301368182</ns3:externalSid>
+                                <ns3:name>Наличие брендированной этикетки Заказчика</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449354</ns3:sid>
+                                        <ns3:externalSid>enum-2260370176</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826905</ns3:sid>
+                                <ns3:externalSid>2010785647-1367547466</ns3:externalSid>
+                                <ns3:name>Тип тары (бутыли)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449355</ns3:sid>
+                                        <ns3:externalSid>enum-2260370207</ns3:externalSid>
+                                        <ns3:qualityDescription>Невозвратная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Вид тары, упаковки: Данная характеристика устанавливается с целью конкретизации материала тары.
+2. Наличие брендированной этикетки Заказчика: У Заказчика отсутствует потребность в наличии брендированной упаковки.
+3. Тип тары (бутыли): Обусловлена необходимостью поставки воды в экономически выгодной таре, предназначенной для удобства использования.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>11.07.11</ns2:OKPDCode>
+                            <ns2:OKPDName>Воды минеральные природные упакованные, воды питьевые упакованные, не содержащие сахара, подсластителей, ароматизаторов и других пищевых веществ</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Вода питьевая упакованная</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732000703</ns2:regNum>
+                                <ns2:consRegistryNum>452Р9334</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "МОЙ СЕМЕЙНЫЙ ЦЕНТР "ПРИТЯЖЕНИЕ"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>18000</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>22.01</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>18000.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>396180.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226166377</ns3:sid>
+                    <ns3:externalSid>251395873-1718724492</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>11.07.11.000-00000002</ns2:code>
+                        <ns2:name>Вода питьевая упакованная</ns2:name>
+                        <ns2:versionId>354201</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826913</ns3:sid>
+                                <ns3:externalSid>2010785661-1491673597</ns3:externalSid>
+                                <ns3:code>ce1a6bcf-3</ns3:code>
+                                <ns3:name>Вид воды</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449363</ns3:sid>
+                                        <ns3:externalSid>enum-2260370221</ns3:externalSid>
+                                        <ns3:qualityDescription>Питьевая</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826914</ns3:sid>
+                                <ns3:externalSid>2010785664-1307373790</ns3:externalSid>
+                                <ns3:code>afb385a6-6</ns3:code>
+                                <ns3:name>Объем</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449364</ns3:sid>
+                                        <ns3:externalSid>enum-2260370224</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>18.9</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826915</ns3:sid>
+                                <ns3:externalSid>2010785666-1491673594</ns3:externalSid>
+                                <ns3:code>a99f8b88-e</ns3:code>
+                                <ns3:name>Тип воды питьевой по степени газации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449365</ns3:sid>
+                                        <ns3:externalSid>enum-2260370226</ns3:externalSid>
+                                        <ns3:qualityDescription>Негазированная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826916</ns3:sid>
+                                <ns3:externalSid>2010785665-1349647284</ns3:externalSid>
+                                <ns3:code>1f717e43-1</ns3:code>
+                                <ns3:name>Тип воды питьевой</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449366</ns3:sid>
+                                        <ns3:externalSid>enum-2260370225</ns3:externalSid>
+                                        <ns3:qualityDescription>Природная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826910</ns3:sid>
+                                <ns3:externalSid>2010785662-1300322969</ns3:externalSid>
+                                <ns3:name>Вид тары, упаковки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449360</ns3:sid>
+                                        <ns3:externalSid>enum-2260370222</ns3:externalSid>
+                                        <ns3:qualityDescription>Бутыль поликарбонатная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826911</ns3:sid>
+                                <ns3:externalSid>2010785663-1301368182</ns3:externalSid>
+                                <ns3:name>Наличие брендированной этикетки Заказчика</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449361</ns3:sid>
+                                        <ns3:externalSid>enum-2260370223</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826912</ns3:sid>
+                                <ns3:externalSid>2010785694-1367547466</ns3:externalSid>
+                                <ns3:name>Тип тары (бутыли)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449362</ns3:sid>
+                                        <ns3:externalSid>enum-2260370254</ns3:externalSid>
+                                        <ns3:qualityDescription>Возвратная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Вид тары, упаковки: Обусловлена требованием к таре в зависимости от способа потребления воды (через кулеры).
+2. Наличие брендированной этикетки Заказчика: У Заказчика отсутствует потребность в наличии брендированной упаковки.
+3. Тип тары (бутыли): Обусловлена необходимостью поставки воды в экономически выгодной таре, предназначенной для многоразового хранения и транспортировки.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>11.07.11</ns2:OKPDCode>
+                            <ns2:OKPDName>Воды минеральные природные упакованные, воды питьевые упакованные, не содержащие сахара, подсластителей, ароматизаторов и других пищевых веществ</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Вода питьевая упакованная</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732000703</ns2:regNum>
+                                <ns2:consRegistryNum>452Р9334</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "МОЙ СЕМЕЙНЫЙ ЦЕНТР "ПРИТЯЖЕНИЕ"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>780</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>381.05</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>780.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>297219.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226166378</ns3:sid>
+                    <ns3:externalSid>251395874-1718724492</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>11.07.11.000-00000002</ns2:code>
+                        <ns2:name>Вода питьевая упакованная</ns2:name>
+                        <ns2:versionId>354201</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826920</ns3:sid>
+                                <ns3:externalSid>2010785712-1349647284</ns3:externalSid>
+                                <ns3:code>1f717e43-1</ns3:code>
+                                <ns3:name>Тип воды питьевой</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449370</ns3:sid>
+                                        <ns3:externalSid>enum-2260370272</ns3:externalSid>
+                                        <ns3:qualityDescription>Природная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826921</ns3:sid>
+                                <ns3:externalSid>2010785708-1491673597</ns3:externalSid>
+                                <ns3:code>ce1a6bcf-3</ns3:code>
+                                <ns3:name>Вид воды</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449371</ns3:sid>
+                                        <ns3:externalSid>enum-2260370268</ns3:externalSid>
+                                        <ns3:qualityDescription>Питьевая</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826922</ns3:sid>
+                                <ns3:externalSid>2010785711-1307373790</ns3:externalSid>
+                                <ns3:code>afb385a6-6</ns3:code>
+                                <ns3:name>Объем</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449372</ns3:sid>
+                                        <ns3:externalSid>enum-2260370271</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>0.5</ns3:min>
+                                                <ns3:maxMathNotation>less</ns3:maxMathNotation>
+                                                <ns3:max>0.75</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826923</ns3:sid>
+                                <ns3:externalSid>2010785713-1491673594</ns3:externalSid>
+                                <ns3:code>a99f8b88-e</ns3:code>
+                                <ns3:name>Тип воды питьевой по степени газации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449373</ns3:sid>
+                                        <ns3:externalSid>enum-2260370273</ns3:externalSid>
+                                        <ns3:qualityDescription>Негазированная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826917</ns3:sid>
+                                <ns3:externalSid>2010785709-1300322969</ns3:externalSid>
+                                <ns3:name>Вид тары, упаковки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449367</ns3:sid>
+                                        <ns3:externalSid>enum-2260370269</ns3:externalSid>
+                                        <ns3:qualityDescription>Бутылка полимерная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826918</ns3:sid>
+                                <ns3:externalSid>2010785710-1301368182</ns3:externalSid>
+                                <ns3:name>Наличие брендированной этикетки Заказчика</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449368</ns3:sid>
+                                        <ns3:externalSid>enum-2260370270</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826919</ns3:sid>
+                                <ns3:externalSid>2010785741-1367547466</ns3:externalSid>
+                                <ns3:name>Тип тары (бутыли)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449369</ns3:sid>
+                                        <ns3:externalSid>enum-2260370301</ns3:externalSid>
+                                        <ns3:qualityDescription>Невозвратная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Вид тары, упаковки: Данная характеристика устанавливается с целью конкретизации материала тары.
+2. Наличие брендированной этикетки Заказчика: У Заказчика отсутствует потребность в наличии брендированной упаковки.
+3. Тип тары (бутыли): Обусловлена необходимостью поставки воды в экономически выгодной таре, предназначенной для удобства использования.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>11.07.11</ns2:OKPDCode>
+                            <ns2:OKPDName>Воды минеральные природные упакованные, воды питьевые упакованные, не содержащие сахара, подсластителей, ароматизаторов и других пищевых веществ</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Вода питьевая упакованная</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732000703</ns2:regNum>
+                                <ns2:consRegistryNum>452Р9334</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "МОЙ СЕМЕЙНЫЙ ЦЕНТР "ПРИТЯЖЕНИЕ"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>18000</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>22.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>18000.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>408060.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226166379</ns3:sid>
+                    <ns3:externalSid>251395875-1718724492</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>11.07.11.000-00000002</ns2:code>
+                        <ns2:name>Вода питьевая упакованная</ns2:name>
+                        <ns2:versionId>354201</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826927</ns3:sid>
+                                <ns3:externalSid>2010785755-1491673597</ns3:externalSid>
+                                <ns3:code>ce1a6bcf-3</ns3:code>
+                                <ns3:name>Вид воды</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449377</ns3:sid>
+                                        <ns3:externalSid>enum-2260370315</ns3:externalSid>
+                                        <ns3:qualityDescription>Питьевая</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826928</ns3:sid>
+                                <ns3:externalSid>2010785759-1349647284</ns3:externalSid>
+                                <ns3:code>1f717e43-1</ns3:code>
+                                <ns3:name>Тип воды питьевой</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449378</ns3:sid>
+                                        <ns3:externalSid>enum-2260370319</ns3:externalSid>
+                                        <ns3:qualityDescription>Природная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826929</ns3:sid>
+                                <ns3:externalSid>2010785758-1307373790</ns3:externalSid>
+                                <ns3:code>afb385a6-6</ns3:code>
+                                <ns3:name>Объем</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449379</ns3:sid>
+                                        <ns3:externalSid>enum-2260370318</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>18.9</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826930</ns3:sid>
+                                <ns3:externalSid>2010785760-1491673594</ns3:externalSid>
+                                <ns3:code>a99f8b88-e</ns3:code>
+                                <ns3:name>Тип воды питьевой по степени газации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449380</ns3:sid>
+                                        <ns3:externalSid>enum-2260370320</ns3:externalSid>
+                                        <ns3:qualityDescription>Негазированная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826924</ns3:sid>
+                                <ns3:externalSid>2010785756-1300322969</ns3:externalSid>
+                                <ns3:name>Вид тары, упаковки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449374</ns3:sid>
+                                        <ns3:externalSid>enum-2260370316</ns3:externalSid>
+                                        <ns3:qualityDescription>Бутыль поликарбонатная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826925</ns3:sid>
+                                <ns3:externalSid>2010785757-1301368182</ns3:externalSid>
+                                <ns3:name>Наличие брендированной этикетки Заказчика</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449375</ns3:sid>
+                                        <ns3:externalSid>enum-2260370317</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826926</ns3:sid>
+                                <ns3:externalSid>2010785788-1367547466</ns3:externalSid>
+                                <ns3:name>Тип тары (бутыли)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449376</ns3:sid>
+                                        <ns3:externalSid>enum-2260370348</ns3:externalSid>
+                                        <ns3:qualityDescription>Возвратная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Вид тары, упаковки: Обусловлена требованием к таре в зависимости от способа потребления воды (через кулеры).
+2. Наличие брендированной этикетки Заказчика: У Заказчика отсутствует потребность в наличии брендированной упаковки.
+3. Тип тары (бутыли): Обусловлена необходимостью поставки воды в экономически выгодной таре, предназначенной для многоразового хранения и транспортировки.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>11.07.11</ns2:OKPDCode>
+                            <ns2:OKPDName>Воды минеральные природные упакованные, воды питьевые упакованные, не содержащие сахара, подсластителей, ароматизаторов и других пищевых веществ</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Вода питьевая упакованная</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732000703</ns2:regNum>
+                                <ns2:consRegistryNum>452Р9334</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "МОЙ СЕМЕЙНЫЙ ЦЕНТР "ПРИТЯЖЕНИЕ"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>780</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>381.05</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>780.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>297219.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226166380</ns3:sid>
+                    <ns3:externalSid>251395876-1718724492</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>11.07.11.000-00000002</ns2:code>
+                        <ns2:name>Вода питьевая упакованная</ns2:name>
+                        <ns2:versionId>354201</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826934</ns3:sid>
+                                <ns3:externalSid>2010785805-1307373790</ns3:externalSid>
+                                <ns3:code>afb385a6-6</ns3:code>
+                                <ns3:name>Объем</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449384</ns3:sid>
+                                        <ns3:externalSid>enum-2260370365</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>0.5</ns3:min>
+                                                <ns3:maxMathNotation>less</ns3:maxMathNotation>
+                                                <ns3:max>0.75</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826935</ns3:sid>
+                                <ns3:externalSid>2010785806-1349647284</ns3:externalSid>
+                                <ns3:code>1f717e43-1</ns3:code>
+                                <ns3:name>Тип воды питьевой</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449385</ns3:sid>
+                                        <ns3:externalSid>enum-2260370366</ns3:externalSid>
+                                        <ns3:qualityDescription>Природная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826936</ns3:sid>
+                                <ns3:externalSid>2010785802-1491673597</ns3:externalSid>
+                                <ns3:code>ce1a6bcf-3</ns3:code>
+                                <ns3:name>Вид воды</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449386</ns3:sid>
+                                        <ns3:externalSid>enum-2260370362</ns3:externalSid>
+                                        <ns3:qualityDescription>Питьевая</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826937</ns3:sid>
+                                <ns3:externalSid>2010785807-1491673594</ns3:externalSid>
+                                <ns3:code>a99f8b88-e</ns3:code>
+                                <ns3:name>Тип воды питьевой по степени газации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449387</ns3:sid>
+                                        <ns3:externalSid>enum-2260370367</ns3:externalSid>
+                                        <ns3:qualityDescription>Негазированная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826931</ns3:sid>
+                                <ns3:externalSid>2010785803-1300322969</ns3:externalSid>
+                                <ns3:name>Вид тары, упаковки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449381</ns3:sid>
+                                        <ns3:externalSid>enum-2260370363</ns3:externalSid>
+                                        <ns3:qualityDescription>Бутылка полимерная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826932</ns3:sid>
+                                <ns3:externalSid>2010785804-1301368182</ns3:externalSid>
+                                <ns3:name>Наличие брендированной этикетки Заказчика</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449382</ns3:sid>
+                                        <ns3:externalSid>enum-2260370364</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826933</ns3:sid>
+                                <ns3:externalSid>2010785835-1367547466</ns3:externalSid>
+                                <ns3:name>Тип тары (бутыли)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449383</ns3:sid>
+                                        <ns3:externalSid>enum-2260370395</ns3:externalSid>
+                                        <ns3:qualityDescription>Невозвратная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Вид тары, упаковки: Данная характеристика устанавливается с целью конкретизации материала тары.
+2. Наличие брендированной этикетки Заказчика: У Заказчика отсутствует потребность в наличии брендированной упаковки.
+3. Тип тары (бутыли): Обусловлена необходимостью поставки воды в экономически выгодной таре, предназначенной для удобства использования.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>11.07.11</ns2:OKPDCode>
+                            <ns2:OKPDName>Воды минеральные природные упакованные, воды питьевые упакованные, не содержащие сахара, подсластителей, ароматизаторов и других пищевых веществ</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Вода питьевая упакованная</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732000703</ns2:regNum>
+                                <ns2:consRegistryNum>452Р9334</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "МОЙ СЕМЕЙНЫЙ ЦЕНТР "ПРИТЯЖЕНИЕ"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>18000</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>22.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>18000.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>408060.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226166381</ns3:sid>
+                    <ns3:externalSid>251904233-1718724492</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>11.07.11.000-00000002</ns2:code>
+                        <ns2:name>Вода питьевая упакованная</ns2:name>
+                        <ns2:versionId>354201</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826942</ns3:sid>
+                                <ns3:externalSid>2020008614-1491673597</ns3:externalSid>
+                                <ns3:code>ce1a6bcf-3</ns3:code>
+                                <ns3:name>Вид воды</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449393</ns3:sid>
+                                        <ns3:externalSid>enum-2272119266</ns3:externalSid>
+                                        <ns3:qualityDescription>Питьевая</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826943</ns3:sid>
+                                <ns3:externalSid>2020008618-1349647284</ns3:externalSid>
+                                <ns3:code>1f717e43-1</ns3:code>
+                                <ns3:name>Тип воды питьевой</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449394</ns3:sid>
+                                        <ns3:externalSid>enum-2272119270</ns3:externalSid>
+                                        <ns3:qualityDescription>Природная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826944</ns3:sid>
+                                <ns3:externalSid>2020008619-1491673594</ns3:externalSid>
+                                <ns3:code>a99f8b88-e</ns3:code>
+                                <ns3:name>Тип воды питьевой по степени газации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449395</ns3:sid>
+                                        <ns3:externalSid>enum-2272119271</ns3:externalSid>
+                                        <ns3:qualityDescription>Негазированная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337826945</ns3:sid>
+                                <ns3:externalSid>2020008617-1307373790</ns3:externalSid>
+                                <ns3:code>afb385a6-6</ns3:code>
+                                <ns3:name>Объем</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449396</ns3:sid>
+                                        <ns3:externalSid>enum-2272119269</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>18.9</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826938</ns3:sid>
+                                <ns3:externalSid>2020008615-1300322969</ns3:externalSid>
+                                <ns3:name>Вид тары, упаковки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449388</ns3:sid>
+                                        <ns3:externalSid>enum-2272119267</ns3:externalSid>
+                                        <ns3:qualityDescription>Бутыль поликарбонатная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826939</ns3:sid>
+                                <ns3:externalSid>2020008616-1301368182</ns3:externalSid>
+                                <ns3:name>Наличие брендированной этикетки Заказчика</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449389</ns3:sid>
+                                        <ns3:externalSid>enum-2272119268</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826940</ns3:sid>
+                                <ns3:externalSid>2020008647-1367547466</ns3:externalSid>
+                                <ns3:name>Тип тары (бутыли)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449390</ns3:sid>
+                                        <ns3:externalSid>enum-2272119299</ns3:externalSid>
+                                        <ns3:qualityDescription>Возвратная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337826941</ns3:sid>
+                                <ns3:externalSid>2020008653-1302141956</ns3:externalSid>
+                                <ns3:name>Вид сопутствующих услуг</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436449391</ns3:sid>
+                                        <ns3:externalSid>enum-2272119306</ns3:externalSid>
+                                        <ns3:qualityDescription>Погрузочно-разгрузочные работы, включая подъем поставляемого товара на этаж</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436449392</ns3:sid>
+                                        <ns3:externalSid>enum-2272119305</ns3:externalSid>
+                                        <ns3:qualityDescription>Расстановка поставляемого товара в помещениях заказчика</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>1. Вид тары, упаковки: Обусловлена требованием к таре в зависимости от способа потребления воды
+(через кулеры). 2. Наличие брендированной этикетки Заказчика: У Заказчика отсутствует потребность в наличии брендированной упаковки. 3.Тип
+тары (бутыли): Обусловлена необходимостью поставки воды в экономически выгодной таре, предназначенной для многоразового хранения и
+транспортировки. 4. Вид сопутствующих услуг: Обусловлены отсутствием эксплуатационного и технического персонала Заказчика для
+выполнения данных работ.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>11.07.11</ns2:OKPDCode>
+                            <ns2:OKPDName>Воды минеральные природные упакованные, воды питьевые упакованные, не содержащие сахара, подсластителей, ароматизаторов и других пищевых веществ</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Вода питьевая упакованная</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732000274</ns2:regNum>
+                                <ns2:consRegistryNum>452А3741</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ "ГОРОДСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА ИМЕНИ С.С. ЮДИНА ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>44000</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>369.95</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>44000.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>16277800.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>18689308.00</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>UG44</ns2:shortName>
+                    <ns2:name>Учреждениям и предприятиям уголовно-исполнительной системы (в соответствии со статьей 28
+            Федерального закона № 44-ФЗ)</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:prefValue>15.0</ns3:prefValue>
+            </preferenseInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>IN44</ns2:shortName>
+                    <ns2:name>Организациям инвалидов в соответствии со ст. 29 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:prefValue>15.0</ns3:prefValue>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU44</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS26BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии с позицией 33 раздела VI приложения к ПП РФ от 29.12.2021 № 2571</ns3:name>
+                        <ns3:content>1) Наличие опыта исполнения участником закупки договора, предусматривающего оказание услуг общественного питания и (или) поставки пищевых продуктов. Цена оказанных услуг и (или) поставленных товаров по договору должна составлять не менее 20 процентов от начальной (максимальной) цены контракта, заключаемого по результатам определения поставщика (подрядчика, исполнителя);
+2) отсутствие у участника закупки, являющегося физическим лицом, либо у руководителя, членов коллегиального исполнительного органа, лица, исполняющего функции единоличного исполнительного органа, главного бухгалтера участника закупки, являющегося юридическим лицом, судимости за преступления, предусмотренные статьей 236 Уголовного кодекса Российской Федерации (за исключением лиц, у которых такая судимость погашена или снята);
+3) непривлечение участника закупки, являющегося физическим лицом, либо руководителя, членов коллегиального исполнительного органа, лица, исполняющего функции единоличного исполнительного органа, главного бухгалтера участника закупки, являющегося юридическим лицом, к административной ответственности за совершение административных правонарушений, предусмотренных статьями 6.3, 6.5 - 6.7, 14.43, 14.44 - 14.46.2 Кодекса Российской Федерации об административных правонарушениях;
+4) отсутствие в предусмотренном Федеральным законом "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд" реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации об участнике закупки, в том числе о лицах, информация о которых содержится в заявке на участие в закупке в соответствии с подпунктом "в" пункта 1 части 1 статьи 43 указанного Федерального закона.Информация и документы, подтверждающие соответствие участников закупки дополнительным требованиям: 1) исполненный договор; 2) акт приемки оказанных услуг и (или) поставленных товаров, подтверждающий цену оказанных услуг и (или) поставленных товаров; 3) справка об отсутствии у участника закупки, являющегося физическим лицом, либо у руководителя, членов коллегиального исполнительного органа, лица, исполняющего функции единоличного исполнительного органа, главного бухгалтера участника закупки, являющегося юридическим лицом, судимости за преступления, предусмотренные статьей 236 Уголовного кодекса Российской Федерации; 4) декларация участника закупки о непривлечении участника закупки, являющегося физическим лицом, либо руководителя, членов коллегиального исполнительного органа, лица, исполняющего функции единоличного исполнительного органа, главного бухгалтера участника закупки, являющегося юридическим лицом, к административной ответственности за совершение административных правонарушений, предусмотренных статьями 6.3, 6.5 - 6.7, 14.43, 14.44 - 14.46.2 Кодекса Российской Федерации об административных правонарушениях</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

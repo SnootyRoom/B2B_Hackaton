@@ -2,7 +2,7 @@
 
 import math
 import re
-from datetime import UTC, datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta, timezone, tzinfo
 from decimal import Decimal, InvalidOperation
 
 from app.parsers.regions import REGIONS
@@ -40,15 +40,28 @@ def money(value: str | None) -> Decimal | None:
     return result if result.is_finite() and result >= 0 else None
 
 
-def parse_datetime(value: str | None) -> datetime | None:
-    """ISO-дата или дата-время ЕИС (в т. ч. `2026-11-10+03:00`, `10.11.2026`) → UTC."""
+def local_tz(msk_offset: str | None) -> tzinfo:
+    """Пояс по сдвигу от московского времени в часах: «4» → МСК+4 (UTC+7). Нет сдвига → МСК."""
+    try:
+        hours = int((msk_offset or "0").strip())
+    except ValueError:
+        return MSK
+    # в России от МСК−1 (Калининград) до МСК+9 (Камчатка)
+    return timezone(timedelta(hours=3 + hours)) if -1 <= hours <= 9 else MSK
+
+
+def parse_datetime(value: str | None, tz: tzinfo = MSK) -> datetime | None:
+    """ISO-дата или дата-время ЕИС (в т. ч. `2026-11-10+03:00`, `10.11.2026`) → UTC.
+
+    Значение без смещения считается временем в поясе `tz`.
+    """
     if not value:
         return None
     s = value.strip()
     m = re.fullmatch(r"(\d{2})\.(\d{2})\.(\d{4})(?:\s+(\d{2}):(\d{2}))?", s)
     if m:
         day, month, year, hh, mm = m.groups()
-        dt = datetime(int(year), int(month), int(day), int(hh or 0), int(mm or 0), tzinfo=MSK)
+        dt = datetime(int(year), int(month), int(day), int(hh or 0), int(mm or 0), tzinfo=tz)
         return dt.astimezone(UTC)
     # xs:date со смещением: 2026-11-10+03:00 / 2026-11-10Z
     m = re.fullmatch(r"(\d{4}-\d{2}-\d{2})(Z|[+-]\d{2}:\d{2})?", s)
@@ -59,7 +72,7 @@ def parse_datetime(value: str | None) -> datetime | None:
     except ValueError:
         return None
     if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=MSK)
+        dt = dt.replace(tzinfo=tz)
     return dt.astimezone(UTC)
 
 

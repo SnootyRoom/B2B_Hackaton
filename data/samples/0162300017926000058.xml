@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44405257</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0162300017926000058</purchaseNumber>
+        <docNumber>№0162300017926000058</docNumber>
+        <plannedPublishDate>2026-10-28+05:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T14:45:04.398+05:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0162300017926000058</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_SBAST</ns2:code>
+            <ns2:name>АО «Сбербанк-АСТ»</ns2:name>
+            <ns2:url>http://www.sberbank-ast.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг в сфере организации мероприятий при осуществлении деятельности по обращению с животными без владельцев на территории муниципального округа Староуткинск</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>01623000179</regNum>
+            <consRegistryNum>653D1799</consRegistryNum>
+            <fullName>АДМИНИСТРАЦИЯ МУНИЦИПАЛЬНОГО ОКРУГА СТАРОУТКИНСК СВЕРДЛОВСКОЙ ОБЛАСТИ</fullName>
+            <shortName>АДМИНИСТРАЦИЯ МО СТАРОУТКИНСК</shortName>
+            <postAddress>Российская Федерация, 623036, Свердловская обл, Шалинский р-н, Староуткинск пгт, Советская ул, Д. 1А</postAddress>
+            <factAddress>Российская Федерация, 623036, Свердловская обл, Шалинский р-н, Староуткинск пгт, Советская ул, Д. 1А</factAddress>
+            <INN>6657001604</INN>
+            <KPP>668401001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>RA</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 623036, Свердловская обл, Шалинский р-н, Староуткинск пгт, Советская ул, Д. 1А</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 623036, Свердловская обл, Шалинский р-н, Староуткинск пгт, Советская ул, Д. 1А</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Зорин</ns3:lastName>
+                <ns3:firstName>Юрий</ns3:firstName>
+                <ns3:middleName>Алексеевич</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>zkh-staroutkinsk@yandex.ru</contactEMail>
+            <contactPhone>7-34358-55143</contactPhone>
+            <contactFax>7-34358-55143</contactFax>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0162300017926000058</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181E2999F7344AFBB16CF483A189D</ns3:publishedContentId>
+            <ns3:fileName>Обоснование цены контракта.docx</ns3:fileName>
+            <ns3:fileSize>19304</ns3:fileSize>
+            <ns3:docDescription>Обоснование цены контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:41:13+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181E2999F7344AFBB16CF483A189D</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181E2AB4F75F5812CEC66C227C32D</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта.docx</ns3:fileName>
+            <ns3:fileSize>143951</ns3:fileSize>
+            <ns3:docDescription>Проект контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:41:18+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181E2AB4F75F5812CEC66C227C32D</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181E2C12C7BA79DC3028F4771DD96</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки.doc</ns3:fileName>
+            <ns3:fileSize>259584</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:41:23+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181E2C12C7BA79DC3028F4771DD96</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181E2D29C7D2C996EA5ADE250A705</ns3:publishedContentId>
+            <ns3:fileName>Требования к содержанию_ составу заявки на участие в закупке (работы,услуги).docx</ns3:fileName>
+            <ns3:fileSize>35611</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию_ составу заявки на участие в закупке (работы,услуги)</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:41:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181E2D29C7D2C996EA5ADE250A705</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T14:45:04+05:00</startDT>
+                <endDT>2026-11-05T08:00:00+05:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-05+05:00</biddingDate>
+            <summarizingDate>2026-11-09+05:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>196141.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+                <interbudgetaryTransfer>false</interbudgetaryTransfer>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>08626000272</ns2:regNum>
+                    <ns2:consRegistryNum>653ИJ2Ч4</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "УПРАВЛЕНИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ ДЕЯТЕЛЬНОСТИ ОРГАНОВ МЕСТНОГО САМОУПРАВЛЕНИЯ"</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>000000000</ns3:bik>
+                        <ns3:settlementAccount>00000000000000000000</ns3:settlementAccount>
+                        <ns3:personalAccount>См. прилагаемые документы</ns3:personalAccount>
+                    </account>
+                    <procedureInfo>В соответствии со статьей 96 Федерального закона от 05.04.2013 N 44-ФЗ "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд"</procedureInfo>
+                    <part>0.5</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>196141.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263668404847166840100100210097500244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>75.00</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги ветеринарные</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>36684048471668401001</customerCode>
+                        <purchaseNumber>0021</purchaseNumber>
+                        <purchaseOrderNumber>009</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202608626000272001</ns3:plan2020Number>
+                        <ns3:position2020Number>202608626000272001000021</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-01-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>62030138</ns2:code>
+                                    <ns2:name>Бюджет муниципального округа Староуткинск</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>30</ns2:code>
+                                    <ns2:name>местный бюджет</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>65527000</ns2:code>
+                                    <ns2:name>Муниципальные образования Свердловской области / Муниципальные округа Свердловской области/ / Староуткинск</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>196141.00</total>
+                                <currentYear>196141.00</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22476239</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-01-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>90104050800542П00244</KBK>
+                                        <paymentYearInfo>
+                                            <total>196141.00</total>
+                                            <currentYear>196141.00</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>57546231</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>6491fb8c-058d-4bff-94d1-868b516009b1</ns3:GARGuid>
+                                <ns3:GARAddress>обл Свердловская, м.о. Староуткинск</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977558</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Возврат животных без владельцев, не проявляющих немотивированной агрессивности, на прежние места их обитания в расчете на 1 животное без владельца при расстоянии транспортировки отловленных животных от места отлова до приюта для животных за 1 выезд от 251 км и выше</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>08626000272</ns2:regNum>
+                                <ns2:consRegistryNum>653ИJ2Ч4</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "УПРАВЛЕНИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ ДЕЯТЕЛЬНОСТИ ОРГАНОВ МЕСТНОГО САМОУПРАВЛЕНИЯ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>1709.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1709.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977559</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Содержание животных без владельцев (лечение, маркирование) в расчете на 1 животное без владельца однократно</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>08626000272</ns2:regNum>
+                                <ns2:consRegistryNum>653ИJ2Ч4</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "УПРАВЛЕНИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ ДЕЯТЕЛЬНОСТИ ОРГАНОВ МЕСТНОГО САМОУПРАВЛЕНИЯ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>586.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>586.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977560</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Транспортировка животных без владельцев в расчете на 1 животное без владельца при расстоянии транспортировки отловленных животных без владельцев от места отлова до приюта для животных за 1 выезд до 150 км</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>08626000272</ns2:regNum>
+                                <ns2:consRegistryNum>653ИJ2Ч4</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "УПРАВЛЕНИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ ДЕЯТЕЛЬНОСТИ ОРГАНОВ МЕСТНОГО САМОУПРАВЛЕНИЯ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>543.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>543.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977561</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Прочие расходы на содержание животных без владельцев в расчете на 1 животное без владельца (кошку) в сутки</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>359</ns2:code>
+                        <ns2:nationalCode>сут; дн</ns2:nationalCode>
+                        <ns2:name>Сутки</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>08626000272</ns2:regNum>
+                                <ns2:consRegistryNum>653ИJ2Ч4</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "УПРАВЛЕНИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ ДЕЯТЕЛЬНОСТИ ОРГАНОВ МЕСТНОГО САМОУПРАВЛЕНИЯ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>123.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>123.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977562</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Возврат животных без владельцев, не проявляющих немотивированной агрессивности, на прежние места их обитания в расчете на 1 животное при расстоянии транспортировки отловленных животных без владельцев от места отлова до приюта для животных за 1 выезд до 150 км</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>08626000272</ns2:regNum>
+                                <ns2:consRegistryNum>653ИJ2Ч4</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "УПРАВЛЕНИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ ДЕЯТЕЛЬНОСТИ ОРГАНОВ МЕСТНОГО САМОУПРАВЛЕНИЯ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>543.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>543.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977563</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Возврат животных без владельцев, не проявляющих немотивированной агрессивности, на прежние места их обитания в расчете на 1 животное без владельца при расстоянии транспортировки отловленных животных без владельцев от места отлова до приюта для животных за 1 выезд от 151 км до 250 км</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>08626000272</ns2:regNum>
+                                <ns2:consRegistryNum>653ИJ2Ч4</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "УПРАВЛЕНИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ ДЕЯТЕЛЬНОСТИ ОРГАНОВ МЕСТНОГО САМОУПРАВЛЕНИЯ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>800.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>800.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977564</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Транспортировка животных без владельцев в расчете на 1 животное без владельца при расстоянии транспортировки отловленных животных без владельцев от места отлова до приюта для животных за 1 выезд от 251 км и выше</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>08626000272</ns2:regNum>
+                                <ns2:consRegistryNum>653ИJ2Ч4</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "УПРАВЛЕНИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ ДЕЯТЕЛЬНОСТИ ОРГАНОВ МЕСТНОГО САМОУПРАВЛЕНИЯ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>1709.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1709.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977565</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Стерилизация животных без владельцев в расчете на 1 животное без владельца</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>08626000272</ns2:regNum>
+                                <ns2:consRegistryNum>653ИJ2Ч4</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "УПРАВЛЕНИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ ДЕЯТЕЛЬНОСТИ ОРГАНОВ МЕСТНОГО САМОУПРАВЛЕНИЯ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>3285.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>3285.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977566</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Прочие расходы на содержание животных без владельцев в расчете на 1 животное без владельца (собаку) в сутки</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>359</ns2:code>
+                        <ns2:nationalCode>сут; дн</ns2:nationalCode>
+                        <ns2:name>Сутки</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>08626000272</ns2:regNum>
+                                <ns2:consRegistryNum>653ИJ2Ч4</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "УПРАВЛЕНИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ ДЕЯТЕЛЬНОСТИ ОРГАНОВ МЕСТНОГО САМОУПРАВЛЕНИЯ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>143.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>143.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977567</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Отлов животных без владельцев в расчете на 1 животное без владельца</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>08626000272</ns2:regNum>
+                                <ns2:consRegistryNum>653ИJ2Ч4</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "УПРАВЛЕНИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ ДЕЯТЕЛЬНОСТИ ОРГАНОВ МЕСТНОГО САМОУПРАВЛЕНИЯ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>483.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>483.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225977568</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Транспортировка животных без владельцев в расчете на 1 животное без владельца при расстоянии транспортировки отловленных животных без владельцев от места отлова до приюта для животных за 1 выезд от 151 км до 250 км</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>08626000272</ns2:regNum>
+                                <ns2:consRegistryNum>653ИJ2Ч4</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "УПРАВЛЕНИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ ДЕЯТЕЛЬНОСТИ ОРГАНОВ МЕСТНОГО САМОУПРАВЛЕНИЯ"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>800.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>800.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>10724</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

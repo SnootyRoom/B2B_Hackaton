@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44441375</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0358300280426000416</purchaseNumber>
+        <docNumber>№0358300280426000416</docNumber>
+        <plannedPublishDate>2026-10-30+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T23:53:33.451+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0358300280426000416</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка лекарственного препарата для медицинского применения (МНН: кислород) для обеспечения нужд ГБУ РО «ГКБ № 20» в г. Ростове-на-Дону в течение 2027 года</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03583002804</regNum>
+            <consRegistryNum>602НИ580</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ РОСТОВСКОЙ ОБЛАСТИ "ГОРОДСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА № 20" В Г. РОСТОВЕ-НА-ДОНУ</fullName>
+            <shortName>ГБУ РО "ГКБ № 20" В Г. РОСТОВЕ-НА-ДОНУ</shortName>
+            <postAddress>Российская Федерация, 344091, Ростовская обл, Ростов-на-Дону г, ПР-КТ КОММУНИСТИЧЕСКИЙ, ЗД. 39</postAddress>
+            <factAddress>Российская Федерация, 344091, Ростовская обл, Ростов-на-Дону г, Коммунистический пр-кт, ЗД. 39</factAddress>
+            <INN>6168000820</INN>
+            <KPP>616801001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 344091, Ростовская обл, Ростов-на-Дону г, ПР-КТ КОММУНИСТИЧЕСКИЙ, ЗД. 39</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 344091, Ростовская обл, Ростов-на-Дону г, Коммунистический пр-кт, ЗД. 39</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Гиренко</ns3:lastName>
+                <ns3:firstName>Дарья</ns3:firstName>
+                <ns3:middleName>Александровна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>gb20@aaanet.ru</contactEMail>
+            <contactPhone>7-863-2719625</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0358300280426000416</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18E9465A97DB0B02795B9584A57D8</ns3:publishedContentId>
+            <ns3:fileName>НМЦК_КИСЛОРОД.xlsx</ns3:fileName>
+            <ns3:fileSize>45856</ns3:fileSize>
+            <ns3:docDescription>НМЦК_КИСЛОРОД</ns3:docDescription>
+            <ns3:docDate>2026-10-30T23:50:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18E9465A97DB0B02795B9584A57D8</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18E94CB47779CA592A9652331B29C</ns3:publishedContentId>
+            <ns3:fileName>2. Проект Контракта.docx</ns3:fileName>
+            <ns3:fileSize>68677</ns3:fileSize>
+            <ns3:docDescription>2. Проект Контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-30T23:51:18+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18E94CB47779CA592A9652331B29C</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18E953E847B79AC6783C29CA6367E</ns3:publishedContentId>
+            <ns3:fileName>3. Описание объекта закупки.doc</ns3:fileName>
+            <ns3:fileSize>84992</ns3:fileSize>
+            <ns3:docDescription>3. Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-30T23:51:47+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18E953E847B79AC6783C29CA6367E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18E95581B7AF29F77931738BCDB76</ns3:publishedContentId>
+            <ns3:fileName>Требования к содержанию, составу заявки на участие в закупке.docx</ns3:fileName>
+            <ns3:fileSize>31970</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию, составу заявки на участие в закупке</ns3:docDescription>
+            <ns3:docDate>2026-10-30T23:51:54+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18E95581B7AF29F77931738BCDB76</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-30T23:53:33+03:00</startDT>
+                <endDT>2026-11-09T10:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+03:00</biddingDate>
+            <summarizingDate>2026-11-11+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>27081600.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03583002804</ns2:regNum>
+                    <ns2:consRegistryNum>602НИ580</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ РОСТОВСКОЙ ОБЛАСТИ "ГОРОДСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА № 20" В Г. РОСТОВЕ-НА-ДОНУ</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>270816.00</amount>
+                    <account>
+                        <ns3:bik>016015102</ns3:bik>
+                        <ns3:settlementAccount>03224643600000005800</ns3:settlementAccount>
+                        <ns3:personalAccount>20806006420</ns3:personalAccount>
+                        <ns3:creditOrgName>Отделение Ростов-на-Дону Банка России// УФК по Ростовской области г. Ростов-на-Дону</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000050</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>6163049814</INN>
+                            <KPP>616601001</KPP>
+                            <KBK>80611610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>60701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Ростовской области / Городские округа Ростовской области/ / город Ростов-на-Дону / г Ростов-на-Дону</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810845370000050</bankAccount>
+                            <ksNumber>03100643000000015800</ksNumber>
+                            <bik>016015102</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО РОСТОВСКОЙ ОБЛАСТИ (МИНЗДРАВ РО)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, соответствующей требованиям ст.45 Закона №44-ФЗ. Выбор способа обеспечения заявки на участие в закупке осуществляется участником закупки самостоятельно. Обеспечение заявки на участие в закупке предоставляется участником закупки в соответствии с требованиями, установленными ст.44 Закона №44-ФЗ. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок. Независимая гарантия должна содержать условие о рассмотрении споров, вытекающих из независимой гарантии, Арбитражным судом Ростовской области. Государственные, муниципальные учреждения не предоставляют обеспечение подаваемых ими заявок на участие в закупке. Реквизиты счета для перечисления денежных средств в случае, предусмотренном частью 13 статьи 44 Закона № 44-ФЗ указаны в Приложении №5 к Извещению. Обеспечение заявки на участие в закупке предоставляется участником в соответствии с требованиями Постановления Правительства РФ от 10 апреля 2023 г. N 579 "Об особенностях порядка предоставления обеспечения заявок на участие в закупках товаров, работ, услуг для обеспечения государственных или муниципальных нужд участниками таких закупок, являющимися иностранными лицами»</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>2708160.00</amount>
+                    <account>
+                        <ns3:bik>016015102</ns3:bik>
+                        <ns3:settlementAccount>03224643600000005800</ns3:settlementAccount>
+                        <ns3:personalAccount>20806006420</ns3:personalAccount>
+                        <ns3:creditOrgName>Отделение Ростов-на-Дону Банка России// УФК по Ростовской области г. Ростов-на-Дону</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000050</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона №44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона №44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Федерального закона №44-ФЗ.В случае, если участником закупки принято решение о предоставлении в качестве обеспечения исполнения контракта независимой гарантии: Независимая гарантия должна быть безотзывной и должна содержать: информацию и документы, предусмотренные частью 2 статьи 45 Федерального закона №44-ФЗ. Если при проведении аукциона участником закупки, с которым заключается контракт, предложена цена контракта, которая на двадцать пять и более процентов ниже начальной (максимальной) цены контракта, контракт заключается только после предоставления таким участником обеспечения исполнения контракта в размере, указанном в статье 37 Закона 44-ФЗ.</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>27081600.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262616800082061680100100370022120244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>21.20</ns2:OKPDCode>
+                                <ns2:OKPDName>Препараты лекарственные и материалы, применяемые в медицинских целях</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>26168000820616801001</customerCode>
+                        <purchaseNumber>0037</purchaseNumber>
+                        <purchaseOrderNumber>002</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603583002804002</ns3:plan2020Number>
+                        <ns3:position2020Number>202603583002804002000038</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                <ns3:isNotEarlierConclusionDate>true</ns3:isNotEarlierConclusionDate>
+                                <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>27081600.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>27081600.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22540284</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:isNotEarlierConclusionDate>true</ns3:isNotEarlierConclusionDate>
+                                        <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>27081600.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>27081600.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>27081600.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>27081600.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>27081600.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62308217</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>8b5fbcb3-4ff9-462d-96ef-be6111779a33</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Ростовская, г.о. город Ростов-на-Дону, г. Ростов-на-Дону, пр-кт Коммунистический, зд. 39</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>Остаточный срок годности не менее 6 месяцев на дату поставки товара</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <drugPurchaseObjectsInfo>
+                <ns3:drugPurchaseObjectInfo>
+                    <ns3:sid>12942785</ns3:sid>
+                    <ns3:objectInfoUsingReferenceInfo>
+                        <ns3:drugsInfo>
+                            <ns3:drugInterchangeInfo>
+                                <ns3:drugInterchangeManualInfo>
+                                    <ns3:isInterchange>true</ns3:isInterchange>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17033179</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>7a8306a4-75b4-11ea-b3fe-87139bcf5c32</ns3:MNNExternalCode>
+                                                <ns3:MNNName>КИСЛОРОД</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.23.190</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты фармацевтические прочие</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.23.190-00006</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>ГАЗ МЕДИЦИНСКИЙ СЖАТЫЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>100%</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>113</ns2:code>
+                                                    <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>м3</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:packagingInfo>
+                                                <ns3:packaging1Quantity>6.24</ns3:packaging1Quantity>
+                                                <ns3:packaging2Quantity>1</ns3:packaging2Quantity>
+                                                <ns3:sumaryPackagingQuantity>6.24</ns3:sumaryPackagingQuantity>
+                                            </ns3:packagingInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>113</ns2:code>
+                                                <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                            <ns3:basicUnit>true</ns3:basicUnit>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:drugQuantity>135408</ns3:drugQuantity>
+                                        <ns3:quantityMultiplier>1.00000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>200</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17033177</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>7a8306a4-75b4-11ea-b3fe-87139bcf5c32</ns3:MNNExternalCode>
+                                                <ns3:MNNName>КИСЛОРОД</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.23.190</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты фармацевтические прочие</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.23.190-00006</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>ГАЗ МЕДИЦИНСКИЙ СЖАТЫЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>100%</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>113</ns2:code>
+                                                    <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>м3</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:packagingInfo>
+                                                <ns3:packaging1Quantity>6.24</ns3:packaging1Quantity>
+                                                <ns3:packaging2Quantity>15</ns3:packaging2Quantity>
+                                                <ns3:sumaryPackagingQuantity>93.6</ns3:sumaryPackagingQuantity>
+                                            </ns3:packagingInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>113</ns2:code>
+                                                <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:drugQuantity>135408</ns3:drugQuantity>
+                                        <ns3:quantityMultiplier>1.00000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>200</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17033178</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>7a8306a4-75b4-11ea-b3fe-87139bcf5c32</ns3:MNNExternalCode>
+                                                <ns3:MNNName>КИСЛОРОД</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.23.190</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты фармацевтические прочие</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.23.190-00006</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>ГАЗ МЕДИЦИНСКИЙ СЖАТЫЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>100%</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>113</ns2:code>
+                                                    <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>м3</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:packagingInfo>
+                                                <ns3:packaging1Quantity>6.24</ns3:packaging1Quantity>
+                                                <ns3:packaging2Quantity>10</ns3:packaging2Quantity>
+                                                <ns3:sumaryPackagingQuantity>62.4</ns3:sumaryPackagingQuantity>
+                                            </ns3:packagingInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>113</ns2:code>
+                                                <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:drugQuantity>135408</ns3:drugQuantity>
+                                        <ns3:quantityMultiplier>1.00000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>200</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17033182</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>7a8306a4-75b4-11ea-b3fe-87139bcf5c32</ns3:MNNExternalCode>
+                                                <ns3:MNNName>КИСЛОРОД</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.23.190</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты фармацевтические прочие</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.23.190-00006</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>ГАЗ МЕДИЦИНСКИЙ СЖАТЫЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>100%</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>113</ns2:code>
+                                                    <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>м3</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:packagingInfo>
+                                                <ns3:packaging1Quantity>6.24</ns3:packaging1Quantity>
+                                                <ns3:packaging2Quantity>45</ns3:packaging2Quantity>
+                                                <ns3:sumaryPackagingQuantity>280.8</ns3:sumaryPackagingQuantity>
+                                            </ns3:packagingInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>113</ns2:code>
+                                                <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:drugQuantity>135408</ns3:drugQuantity>
+                                        <ns3:quantityMultiplier>1.00000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>200</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17033176</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>7a8306a4-75b4-11ea-b3fe-87139bcf5c32</ns3:MNNExternalCode>
+                                                <ns3:MNNName>КИСЛОРОД</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.23.190</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты фармацевтические прочие</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.23.190-00006</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>ГАЗ МЕДИЦИНСКИЙ СЖАТЫЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>100%</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>113</ns2:code>
+                                                    <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>м3</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:packagingInfo>
+                                                <ns3:packaging1Quantity>6.24</ns3:packaging1Quantity>
+                                                <ns3:packaging2Quantity>8</ns3:packaging2Quantity>
+                                                <ns3:sumaryPackagingQuantity>49.92</ns3:sumaryPackagingQuantity>
+                                            </ns3:packagingInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>113</ns2:code>
+                                                <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:drugQuantity>135408</ns3:drugQuantity>
+                                        <ns3:quantityMultiplier>1.00000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>200</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17033180</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>7a8306a4-75b4-11ea-b3fe-87139bcf5c32</ns3:MNNExternalCode>
+                                                <ns3:MNNName>КИСЛОРОД</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.23.190</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты фармацевтические прочие</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.23.190-00006</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>ГАЗ МЕДИЦИНСКИЙ СЖАТЫЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>100%</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>113</ns2:code>
+                                                    <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>м3</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:packagingInfo>
+                                                <ns3:packaging1Quantity>6.24</ns3:packaging1Quantity>
+                                                <ns3:packaging2Quantity>16</ns3:packaging2Quantity>
+                                                <ns3:sumaryPackagingQuantity>99.84</ns3:sumaryPackagingQuantity>
+                                            </ns3:packagingInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>113</ns2:code>
+                                                <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:drugQuantity>135408</ns3:drugQuantity>
+                                        <ns3:quantityMultiplier>1.00000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>200</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17033181</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>7a8306a4-75b4-11ea-b3fe-87139bcf5c32</ns3:MNNExternalCode>
+                                                <ns3:MNNName>КИСЛОРОД</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.23.190</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты фармацевтические прочие</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.23.190-00006</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>ГАЗ МЕДИЦИНСКИЙ СЖАТЫЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>100%</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>113</ns2:code>
+                                                    <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>м3</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:packagingInfo>
+                                                <ns3:packaging1Quantity>6.24</ns3:packaging1Quantity>
+                                                <ns3:packaging2Quantity>12</ns3:packaging2Quantity>
+                                                <ns3:sumaryPackagingQuantity>74.88</ns3:sumaryPackagingQuantity>
+                                            </ns3:packagingInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>113</ns2:code>
+                                                <ns2:name>Кубический метр (м[3*])</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:drugQuantity>135408</ns3:drugQuantity>
+                                        <ns3:quantityMultiplier>1.00000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>200</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                </ns3:drugInterchangeManualInfo>
+                            </ns3:drugInterchangeInfo>
+                        </ns3:drugsInfo>
+                        <ns3:mustSpecifyDrugPackage>
+                            <ns3:specifyDrugPackageReason>.</ns3:specifyDrugPackageReason>
+                        </ns3:mustSpecifyDrugPackage>
+                    </ns3:objectInfoUsingReferenceInfo>
+                    <ns3:name>КИСЛОРОД, ГАЗ МЕДИЦИНСКИЙ СЖАТЫЙ 100%, единица измерения товара: Кубический метр (М3), (м3), количество лекарственных форм в первичной упаковке 6.24, количество потреб. единиц в потребительской упаковке 6.24</ns3:name>
+                    <ns3:isZNVLP>false</ns3:isZNVLP>
+                    <ns3:isNarcotic>false</ns3:isNarcotic>
+                    <ns3:drugQuantityCustomersInfo>
+                        <ns3:drugQuantityCustomerInfo>
+                            <ns3:customer>
+                                <ns2:regNum>03583002804</ns2:regNum>
+                                <ns2:consRegistryNum>602НИ580</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ РОСТОВСКОЙ ОБЛАСТИ "ГОРОДСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА № 20" В Г. РОСТОВЕ-НА-ДОНУ</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>135408</ns3:quantity>
+                        </ns3:drugQuantityCustomerInfo>
+                        <ns3:total>135408</ns3:total>
+                    </ns3:drugQuantityCustomersInfo>
+                    <ns3:pricePerUnit>200.00</ns3:pricePerUnit>
+                    <ns3:positionPrice>27081600.00</ns3:positionPrice>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:drugPurchaseObjectInfo>
+                <ns3:total>27081600.00</ns3:total>
+                <quantityUndefined>false</quantityUndefined>
+            </drugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>наличие действующей лицензии на право осуществления фармацевтической деятельности (оптовая торговля лекарственными средствами для медицинского применения) - (основание: п. 47 ч. 1 ст.12 Федерального закона от 04.05.2011 № 99-ФЗ «О лицензировании отдельных видов деятельности») и/или наличие действующей лицензии на производство лекарственных средств для медицинского применения – (основание п. 16 ч. 1 ст.12 Федерального закона от 04.05.2011 № 99-ФЗ «О лицензировании отдельных видов деятельности)</ns3:content>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ETP44312</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS3BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии c пунктом 4 ПП РФ от 29.12.2021 №2571</ns3:name>
+                        <ns3:content>Наличие у участника закупки опыта  исполнения (с учетом правопреемства)  в течение трех лет  до даты подачи заявки на участие в закупке контракта или договора, заключенного в соответствии с Федеральным законом от 18 июля 2011 года № 223-ФЗ «О закупках товаров, работ, услуг отдельными видами юридических лиц» при условии исполнения таким участником закупки требований об уплате неустоек (штрафов, пеней), предъявленных при исполнении таких контракта, договора. Стоимость исполненных обязательств по таким контракту, договору должна составлять не менее двадцати процентов начальной (максимальной) цены контракта.
+Информация и документы, подтверждающие соответствие участника закупки дополнительному требованию, установленному в соответствии с частью 2.1 ст. 31 Закона о контрактной системе, являются информация и документы, предусмотренные хотя бы одним из следующих подпунктов:
+а) номер реестровой записи в предусмотренном Законом о контрактной системе реестре контрактов, заключенных заказчиками (в случае исполнения участником закупки контракта, информация и документы в отношении которого включены в установленном порядке в такой реестр и размещены на официальном сайте единой информационной системы в информационно-телекоммуникационной сети "Интернет");
+б) выписка из предусмотренного Законом о контрактной системе реестра контрактов, содержащего сведения, составляющие государственную тайну (в случае исполнения участником закупки контракта, информация о котором включена в установленном порядке в такой реестр);
+в) исполненный контракт, заключенный в соответствии с Законом о контрактной системе, или договор, заключенный в соответствии с Федеральным законом "О закупках товаров, работ, услуг отдельными видами юридических лиц", а также акт приемки поставленных товаров, выполненных работ, оказанных услуг, подтверждающий цену поставленных товаров, выполненных работ, оказанных услуг.</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>true</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEZK2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44405525</id>
+    <externalId>krista.63001800.13844072069</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0342300000126001272</purchaseNumber>
+        <docNumber>№0342300000126001272</docNumber>
+        <plannedPublishDate>2026-10-28+04:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T13:56:56.257+04:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/zk20/view/common-info.html?regNumber=0342300000126001272</href>
+        <placingWay>
+            <ns2:code>ZKP20</ns2:code>
+            <ns2:name>Запрос котировок в электронной форме</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_SBAST</ns2:code>
+            <ns2:name>АО «Сбербанк-АСТ»</ns2:name>
+            <ns2:url>http://www.sberbank-ast.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка моющих средств</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03423000001</regNum>
+            <consRegistryNum>36301115</consRegistryNum>
+            <fullName>ДЕПАРТАМЕНТ ФИНАНСОВ АДМИНИСТРАЦИИ ГОРОДСКОГО ОКРУГА САМАРА</fullName>
+            <shortName>ДФ АДМИНИСТРАЦИИ Г.О. САМАРА</shortName>
+            <postAddress>443041, САМАРСКАЯ ОБЛАСТЬ , Г. САМАРА, УЛ. БРАТЬЕВ КОРОСТЕЛЕВЫХ, Д.144</postAddress>
+            <factAddress>443041, САМАРСКАЯ ОБЛАСТЬ , Г. САМАРА, УЛ. БРАТЬЕВ КОРОСТЕЛЕВЫХ, Д.144</factAddress>
+            <INN>6317000378</INN>
+            <KPP>631501001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>RA</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>443041, САМАРСКАЯ ОБЛАСТЬ , Г. САМАРА, УЛ. БРАТЬЕВ КОРОСТЕЛЕВЫХ, Д.144</orgPostAddress>
+            <orgFactAddress>443041, САМАРСКАЯ ОБЛАСТЬ , Г. САМАРА, УЛ. БРАТЬЕВ КОРОСТЕЛЕВЫХ, Д.144</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Зорина</ns3:lastName>
+                <ns3:firstName>Юлия</ns3:firstName>
+                <ns3:middleName>Олеговна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>ZorinaUO@dfsamara.ru</contactEMail>
+            <contactPhone>8-84634-05898</contactPhone>
+            <addInfo>КОНТАКТНАЯ ИНФОРМАЦИЯ:&#13;
+Заказчик : МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДСКОГО ОКРУГА САМАРА "ЦЕНТР ТЕХНИЧЕСКОГО И ХОЗЯЙСТВЕННОГО ОБСЛУЖИВАНИЯ";&#13;
+Контактная информация : Местонахождение: 443110, Самарская область , Г. САМАРА, УЛ. РАДОНЕЖСКАЯ, Д. 9; Телефон: 7-846-3130697; E-mail: mbu.ctho@yandex.ru;&#13;
+&#13;
+Контактное лицо заказчика: Мотыгина Елена Владимировна;&#13;
+Должность: Юрисконсульт;&#13;
+Номер контактного телефона: 8-927-6083715; E-mail: lena.v7@bk.ru;&#13;
+</addInfo>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0342300000126001272</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181EB44A17E9E91CC388B39817155</ns3:publishedContentId>
+            <ns3:fileName>Обоснование НМЦК.pdf.zip</ns3:fileName>
+            <ns3:fileSize>484165</ns3:fileSize>
+            <ns3:docDescription>Обоснование НМЦК.pdf.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:50:55+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181EB44A17E9E91CC388B39817155</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181EB35EA7CBE99B6832D9C10143D</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта.docx</ns3:fileName>
+            <ns3:fileSize>77672</ns3:fileSize>
+            <ns3:docDescription>Проект контракта.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:50:55+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181EB35EA7CBE99B6832D9C10143D</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181EB410074FA864258E95EECDE50</ns3:publishedContentId>
+            <ns3:fileName>Описание обьекта закупки.doc</ns3:fileName>
+            <ns3:fileSize>70656</ns3:fileSize>
+            <ns3:docDescription>Описание обьекта закупки.doc</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:50:55+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181EB410074FA864258E95EECDE50</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181EB50ED71AAB2A3410722D41217</ns3:publishedContentId>
+            <ns3:fileName>Требования к содержанию составу заявки на участие в закупке и инструкция по ее заполнению _2026.doc</ns3:fileName>
+            <ns3:fileSize>110592</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию составу заявки на участие в закупке и инструкция по ее заполнению _2026.doc</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:50:55+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181EB50ED71AAB2A3410722D41217</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181EB48CE7241BAD18D191FFC5068</ns3:publishedContentId>
+            <ns3:fileName>Уведомление.pdf</ns3:fileName>
+            <ns3:fileSize>75192</ns3:fileSize>
+            <ns3:docDescription>Уведомление.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:50:55+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181EB48CE7241BAD18D191FFC5068</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181EB3E2E7CAB89BFA2CB39DFF6FC</ns3:publishedContentId>
+            <ns3:fileName>Декларация об отсутствии товара в реестре РПП.rtf</ns3:fileName>
+            <ns3:fileSize>56123</ns3:fileSize>
+            <ns3:docDescription>Декларация об отсутствии товара в реестре РПП.rtf</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:50:55+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181EB3E2E7CAB89BFA2CB39DFF6FC</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181EB53097B6D855BB838C15D047D</ns3:publishedContentId>
+            <ns3:fileName>Единые и дополнительные требования_2026.doc</ns3:fileName>
+            <ns3:fileSize>77824</ns3:fileSize>
+            <ns3:docDescription>Единые и дополнительные требования_2026.doc</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:50:55+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181EB53097B6D855BB838C15D047D</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181EB6825738E8686DAAAEF3FC515</ns3:publishedContentId>
+            <ns3:fileName>Лист согласования.doc.zip</ns3:fileName>
+            <ns3:fileSize>111887</ns3:fileSize>
+            <ns3:docDescription>Лист согласования.doc.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-28T12:50:55+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181EB6825738E8686DAAAEF3FC515</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T13:56:56+04:00</startDT>
+                <endDT>2026-11-05T08:00:00+04:00</endDT>
+            </collectingInfo>
+            <summarizingDate>2026-11-09+04:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>17500.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03423002391</ns2:regNum>
+                    <ns2:consRegistryNum>36320330</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДСКОГО ОКРУГА САМАРА "ЦЕНТР ТЕХНИЧЕСКОГО И ХОЗЯЙСТВЕННОГО ОБСЛУЖИВАНИЯ"</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>013601205</ns3:bik>
+                        <ns3:settlementAccount>03234643367010004200</ns3:settlementAccount>
+                        <ns3:personalAccount>203010160</ns3:personalAccount>
+                        <ns3:creditOrgName>ОТДЕЛЕНИЕ САМАРА БАНКА РОССИИ//УФК по Самарской области г. Самара</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000036</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>В соответствии с положениями Федерального закона от 05.04.2013 № 44-ФЗ «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд», Постановления Правительства РФ от 08.11.2013 № 1005 «О независимых гарантиях, используемых для целей Федерального закона «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд».</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>17500.00</maxPrice>
+                    </maxPriceInfo>
+                    <IKZInfo>
+                        <purchaseCode>263631709904663160100100550070000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>36317099046631601001</customerCode>
+                        <purchaseNumber>0055</purchaseNumber>
+                        <purchaseOrderNumber>007</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603423002391001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603423002391001000032</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>17500.00</total>
+                                <currentYear>17500.00</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22476829</sid>
+                                <externalSid>13844079058</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>17500.00</total>
+                                        <currentYear>17500.00</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>17500.00</ns3:total>
+                                                <ns3:currentYear>17500.00</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>17500.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62402218</ns3:sid>
+                            <ns3:externalSid>13844078657</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>894f29f4-bdc6-4124-ab9a-312c87832404</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Самарская, г.о. Самара, г. Самара, ул. Вольская, д. 46</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г. Самара, ул. Вольская, д.46</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225983331</ns3:sid>
+                    <ns3:externalSid>13844077859</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.41.32.113-00000002</ns2:code>
+                        <ns2:name>Средство моющее для стекол и зеркал</ns2:name>
+                        <ns2:versionId>186771</ns2:versionId>
+                        <ns2:versionNumber>5</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337302282</ns3:sid>
+                                <ns3:externalSid>13845531867</ns3:externalSid>
+                                <ns3:code>cddc1cf3-b</ns3:code>
+                                <ns3:name>Форма выпуска</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435691476</ns3:sid>
+                                        <ns3:externalSid>13845531867</ns3:externalSid>
+                                        <ns3:qualityDescription>Спрей</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337302283</ns3:sid>
+                                <ns3:externalSid>13845531868</ns3:externalSid>
+                                <ns3:code>0f5c227f-d</ns3:code>
+                                <ns3:name>Средство спиртосодержащее</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435691477</ns3:sid>
+                                        <ns3:externalSid>13845531868</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337302280</ns3:sid>
+                                <ns3:externalSid>13845531869</ns3:externalSid>
+                                <ns3:name>Объем</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435691474</ns3:sid>
+                                        <ns3:externalSid>13845531869</ns3:externalSid>
+                                        <ns3:qualityDescription>не менее 500 миллилитров</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337302281</ns3:sid>
+                                <ns3:externalSid>13845531866</ns3:externalSid>
+                                <ns3:name>Особенности</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435691475</ns3:sid>
+                                        <ns3:externalSid>13845531866</ns3:externalSid>
+                                        <ns3:qualityDescription>не требует смывания</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Особенности: Потребность Заказчика
+Объем: Потребность Заказчика</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>20.41.32.113</ns2:OKPDCode>
+                            <ns2:OKPDName>Средства моющие для окон</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Средство моющее для стекол и зеркал</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>112</ns2:code>
+                        <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                        <ns2:name>Литр; кубический дециметр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03423002391</ns2:regNum>
+                                <ns2:consRegistryNum>36320330</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДСКОГО ОКРУГА САМАРА "ЦЕНТР ТЕХНИЧЕСКОГО И ХОЗЯЙСТВЕННОГО ОБСЛУЖИВАНИЯ"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>250</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>70.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>250.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>17500.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>17500.00</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+    </notificationInfo>
+    <printFormFieldsInfo>
+        <is449Features>false</is449Features>
+    </printFormFieldsInfo>
+</ns8:epNotificationEZK2020>

@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44397119</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0338200008626000454</purchaseNumber>
+        <docNumber>№0338200008626000454</docNumber>
+        <directDT>2026-10-27T15:25:09.465+12:00</directDT>
+        <plannedPublishDate>2026-10-28+12:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T11:30:13.069+12:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0338200008626000454</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_EETP</ns2:code>
+            <ns2:name>РОСЭЛТОРГ (АО«ЕЭТП»)</ns2:name>
+            <ns2:url>http://roseltorg.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка расходных материалов на многофункциональный аппарат ИВЛ Acutronic Fabian HFO, заводской номер AI-00451</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03382000086</regNum>
+            <consRegistryNum>302Ц0981</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ  УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "КАМЧАТСКАЯ КРАЕВАЯ ДЕТСКАЯ БОЛЬНИЦА"</fullName>
+            <shortName>ГБУЗ ККДБ</shortName>
+            <postAddress>Российская Федерация, 683024, Камчатский край, Петропавловск-Камчатский г, Орджоникидзе ул, Д. 7</postAddress>
+            <factAddress>Российская Федерация, 683024, Камчатский край, Петропавловск-Камчатский г, Орджоникидзе ул, Д. 7</factAddress>
+            <INN>4101041963</INN>
+            <KPP>410101001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 683024, Камчатский край, Петропавловск-Камчатский г, Орджоникидзе ул, Д. 7</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 683024, Камчатский край, Петропавловск-Камчатский г, Орджоникидзе ул, Д. 7</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Марченкова</ns3:lastName>
+                <ns3:firstName>Оксана</ns3:firstName>
+                <ns3:middleName>Александровна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>oz@kkdb41.ru</contactEMail>
+            <contactPhone>7-4152-230437</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0338200008626000454</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17B624537797C88A389580A2BA2B8</ns3:publishedContentId>
+            <ns3:fileName>I. Обоснование НМЦК.xlsx</ns3:fileName>
+            <ns3:fileSize>25683</ns3:fileSize>
+            <ns3:docDescription>I. Обоснование НМЦК</ns3:docDescription>
+            <ns3:docDate>2026-10-27T06:23:20+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17B624537797C88A389580A2BA2B8</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17B6263947D67ABDB711E87A24130</ns3:publishedContentId>
+            <ns3:fileName>II. Проект Контракта.docx</ns3:fileName>
+            <ns3:fileSize>107739</ns3:fileSize>
+            <ns3:docDescription>II. Проект Контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-27T06:23:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17B6263947D67ABDB711E87A24130</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17B627B3D787A87C5ED5AC48F31DD</ns3:publishedContentId>
+            <ns3:fileName>III. Описание объекта закупки.docx</ns3:fileName>
+            <ns3:fileSize>37517</ns3:fileSize>
+            <ns3:docDescription>III. Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-27T06:23:34+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17B627B3D787A87C5ED5AC48F31DD</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17B62975C76178E22F4E3DF3C3D53</ns3:publishedContentId>
+            <ns3:fileName>IV.Требование к содержанию, составу заявки.docx</ns3:fileName>
+            <ns3:fileSize>28211</ns3:fileSize>
+            <ns3:docDescription>IV.Требование к содержанию, составу заявки</ns3:docDescription>
+            <ns3:docDate>2026-10-27T06:23:41+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17B62975C76178E22F4E3DF3C3D53</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T11:30:13+12:00</startDT>
+                <endDT>2026-11-05T10:00:00+12:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-05+12:00</biddingDate>
+            <summarizingDate>2026-11-09+12:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>1794983.37</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+            <standardContractNumber>1573000000116002</standardContractNumber>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03382000086</ns2:regNum>
+                    <ns2:consRegistryNum>302Ц0981</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ  УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "КАМЧАТСКАЯ КРАЕВАЯ ДЕТСКАЯ БОЛЬНИЦА"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>17949.83</amount>
+                    <account>
+                        <ns3:bik>010507002</ns3:bik>
+                        <ns3:settlementAccount>03224643300000002000</ns3:settlementAccount>
+                        <ns3:personalAccount>802Ц0981000</ns3:personalAccount>
+                        <ns3:receiptCode>
+                            <ns2:code>ОБ</ns2:code>
+                            <ns2:name>Средства, поступившие в рамках обеспечения заявок, исполнения контракта (договора), гарантийных обязательства</ns2:name>
+                        </ns3:receiptCode>
+                        <ns3:creditOrgName>ОКЦ № 1 ДГУ Банка России//УФК по Приморскому краю, г Владивосток</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000012</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>4100019852</INN>
+                            <KPP>410101001</KPP>
+                            <KBK>81411610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>30701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Камчатского края / Городские округа Камчатского края, кроме входящих в состав Корякского округа/ / Петропавловск-Камчатский / г Петропавловск-Камчатский</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810945370000031</bankAccount>
+                            <ksNumber>03100643000000013800</ksNumber>
+                            <bik>013002402</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО КАМЧАТСКОМУ КРАЮ (МИНЗДРАВ КАМЧАТСКОГО КРАЯ)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, предусмотренной статьей 45 настоящего Федерального закона. Выбор способа обеспечения осуществляется участником закупки самостоятельно. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок.&#13;
+Обеспечение заявки на участие в закупке предоставляется одним из следующих способов:&#13;
+а) путем блокирования денежных средств, внесенных участником закупки на банковский счет, открытый таким участником в банке, включенном в перечень, утвержденный Правительством Российской Федерации (далее - специальный счет). Требования к таким банкам, к договору специального счета, к порядку использования имеющегося у участника закупки банковского счета в качестве специального счета устанавливаются Правительством Российской Федерации;&#13;
+б) путем предоставления независимой гарантии, соответствующей требованиям статьи 45 настоящего Федерального закона.&#13;
+В случае предоставления обеспечения заявки на участие в закупке в виде денежных средств:&#13;
+а) подача заявки на участие в закупке означает согласие участника закупки на блокирование денежных средств, находящихся на его специальном счете, в размере обеспечения заявки на участие в закупке.&#13;
+</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>010507002</ns3:bik>
+                        <ns3:settlementAccount>03224643300000002000</ns3:settlementAccount>
+                        <ns3:personalAccount>802Ц0981000</ns3:personalAccount>
+                        <ns3:receiptCode>
+                            <ns2:code>ОБ</ns2:code>
+                            <ns2:name>Средства, поступившие в рамках обеспечения заявок, исполнения контракта (договора), гарантийных обязательства</ns2:name>
+                        </ns3:receiptCode>
+                        <ns3:creditOrgName>ОКЦ № 1 ДГУ Банка России//УФК по Приморскому краю, г Владивосток</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000012</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Размер обеспечения исполнения Контракта устанавливается в размере 10 % цены контракта а в случае если при проведении аукциона участником закупки - Поставщиком, предложена цена контракта, которая на 25 и более процентов ниже начальной (максимальной) цены контракта, при непредоставлении таким участником информации, подтверждающей его добросовестность на дату подачи заявки в соответствии с частью 3 статьи 37 Федерального Закона от 05.04.2013 № 44-ФЗ «О контрактной системе в сфере закупок товаров, работ, услуг для государственных и муниципальных нужд», контракт заключается после предоставления таким участником обеспечения исполнения контракта в размере, превышающим в полтора раза размер обеспечения исполнения контракта, указанный в извещении об осуществлении закупки от цены заключаемого контракта или предоставление информации, подтверждающей добросовестность такого участника в соответствии с частью 3 статьи 37 Закона о контрактной системе, с одновременным предоставлением таким участником обеспечения исполнения контракта в размере обеспечения исполнения контракта, указанном в извещении о закупке.</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>1794983.37</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262410104196341010100100070830000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>24101041963410101001</customerCode>
+                        <purchaseNumber>0007</purchaseNumber>
+                        <purchaseOrderNumber>083</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603382000086002</ns3:plan2020Number>
+                        <ns3:position2020Number>202603382000086002000011</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-10-30+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>1794983.37</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>1794983.37</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22439411</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-10-30+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>1794983.37</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>1794983.37</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:receiptCode>
+                                                <ns2:code>МС</ns2:code>
+                                                <ns2:name>Средства обязательного медицинского страхования</ns2:name>
+                                            </ns3:receiptCode>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>1794983.37</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>1794983.37</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>1794983.37</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62363460</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>69b77a3d-722c-4f71-84f2-872601bae9cc</ns3:GARGuid>
+                                <ns3:GARAddress>край Камчатский, г.о. Петропавловск-Камчатский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>683024, Камчатский край, г. Петропавловск-Камчатский, ул. Орджоникидзе, 7  ГБУЗ «Камчатская краевая детская больница»  </ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812438</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.21.122-00000003</ns2:code>
+                        <ns2:name>Аппарат вентиляции легких положительным давлением терапевтический</ns2:name>
+                        <ns2:versionId>76451</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813884</ns3:sid>
+                                <ns3:name>Принцип измерения: Термоанемометрический; две независимые температурные пары</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038276</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813885</ns3:sid>
+                                <ns3:name>Конструкция: Рассекатель потока; защитные сетки на входе и выходе; фиксированный измерительный цилиндр; метка положения; возможность визуального контроля измерительных элементов</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038277</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813886</ns3:sid>
+                                <ns3:name>Подключение: 15M–15F</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038278</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813887</ns3:sid>
+                                <ns3:name>Разрешение измерения: 0,1 л/мин</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038279</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813888</ns3:sid>
+                                <ns3:name>Фасовка: 10 шт. в заводской упаковке</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038280</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813889</ns3:sid>
+                                <ns3:name>Совместимость: С аппаратом ИВЛ Acutronic Fabian HFO, заводской номер AI-00451 и кабелем датчика потока, используемым Заказчиком</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038281</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительные характеристики товара установлены в связи с тем, что характеристика, указанная в КТРУ не является исчерпывающей и не позволяет точно определить качественные, функциональные и технические характеристики закупаемого товара, в наибольшей степени удовлетворяющего потребности заказчика, необходимо в описании объекта закупки указать дополнительную информацию исходя из характеристик, которым должен отвечать закупаемый товар</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.21.122</ns2:OKPDCode>
+                            <ns2:OKPDName>Аппараты дыхательные реанимационные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Аппарат вентиляции легких положительным давлением терапевтический</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>12012.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:value>100.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1201200.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812436</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.21.122-00000003</ns2:code>
+                        <ns2:name>Аппарат вентиляции легких положительным давлением терапевтический</ns2:name>
+                        <ns2:versionId>76451</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813875</ns3:sid>
+                                <ns3:name>Конструкция: Двухкомпонентная: эластомерная наружная часть и металлическая вставка; утолщение по окружности для герметизации держателя</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038348</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813876</ns3:sid>
+                                <ns3:name>Размеры: Наружный диаметр 38 мм; наружный диаметр вставки 18 мм; толщина 5 мм</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038349</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813874</ns3:sid>
+                                <ns3:name>Назначение: Разделение потока на выходе от пациента и предотвращение поступления выдыхаемого потока внутрь аппарата ИВЛ</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038347</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813877</ns3:sid>
+                                <ns3:name>Совместимость: Штатная установка и работа с имеющимся у Заказчика аппаратом ИВЛ Acutronic Fabian HFO, заводской номер AI-00451без доработки оборудования</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038350</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительные характеристики товара установлены в связи с тем, что характеристика, указанная в КТРУ не является исчерпывающей и не позволяет точно определить качественные, функциональные и технические характеристики закупаемого товара, в наибольшей степени удовлетворяющего потребности заказчика, необходимо в описании объекта закупки указать дополнительную информацию исходя из характеристик, которым должен отвечать закупаемый товар</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.21.122</ns2:OKPDCode>
+                            <ns2:OKPDName>Аппараты дыхательные реанимационные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Аппарат вентиляции легких положительным давлением терапевтический</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>19456.67</ns3:price>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>19456.67</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812439</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.21.122-00000003</ns2:code>
+                        <ns2:name>Аппарат вентиляции легких положительным давлением терапевтический</ns2:name>
+                        <ns2:versionId>76451</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813890</ns3:sid>
+                                <ns3:name>Назначение: Соединение термоанемометрического датчика потока с аппаратом ИВЛ</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038282</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813892</ns3:sid>
+                                <ns3:name>Разъем со стороны аппарата: 7-контактный спаренный разъем с вращающимся фиксатором положения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038284</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813893</ns3:sid>
+                                <ns3:name>Конструкция: Встроенный фиксатор положения датчика</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038285</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813894</ns3:sid>
+                                <ns3:name>Совместимость: С аппаратом ИВЛ Acutronic Fabian HFO, заводской номер AI-00451 и кабелем датчика потока, используемым Заказчиком</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038286</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813895</ns3:sid>
+                                <ns3:name>Длина: 2 м ± 1 см</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038287</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813891</ns3:sid>
+                                <ns3:name>Разъем со стороны датчика: 4-контактный разъем с меткой установки; расстояние между выходами контактов 2 мм</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038283</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительные характеристики товара установлены в связи с тем, что характеристика, указанная в КТРУ не является исчерпывающей и не позволяет точно определить качественные, функциональные и технические характеристики закупаемого товара, в наибольшей степени удовлетворяющего потребности заказчика, необходимо в описании объекта закупки указать дополнительную информацию исходя из характеристик, которым должен отвечать закупаемый товар</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.21.122</ns2:OKPDCode>
+                            <ns2:OKPDName>Аппараты дыхательные реанимационные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Аппарат вентиляции легких положительным давлением терапевтический</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>86756.67</ns3:price>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>173513.34</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812440</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.21.122-00000003</ns2:code>
+                        <ns2:name>Аппарат вентиляции легких положительным давлением терапевтический</ns2:name>
+                        <ns2:versionId>76451</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813896</ns3:sid>
+                                <ns3:name>Принцип измерения: Термоанемометрический; две независимые температурные пары</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038288</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813897</ns3:sid>
+                                <ns3:name>Конструкция: Рассекатель потока; защитные сетки на входе и выходе; фиксированный измерительный цилиндр; метка положения; возможность визуального контроля измерительных элементов</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038289</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813898</ns3:sid>
+                                <ns3:name>Подключение: 15M–15F</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038290</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813899</ns3:sid>
+                                <ns3:name>Разрешение измерения: 0,1 л/мин</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038291</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813900</ns3:sid>
+                                <ns3:name>Обработка: Допускается автоклавирование при температуре до 134 °C</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038292</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813901</ns3:sid>
+                                <ns3:name>Совместимость: С аппаратом ИВЛ Acutronic Fabian HFO, заводской номер AI-00451 и кабелем датчика потока, используемым Заказчиком</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038293</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительные характеристики товара установлены в связи с тем, что характеристика, указанная в КТРУ не является исчерпывающей и не позволяет точно определить качественные, функциональные и технические характеристики закупаемого товара, в наибольшей степени удовлетворяющего потребности заказчика, необходимо в описании объекта закупки указать дополнительную информацию исходя из характеристик, которым должен отвечать закупаемый товар</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.21.122</ns2:OKPDCode>
+                            <ns2:OKPDName>Аппараты дыхательные реанимационные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Аппарат вентиляции легких положительным давлением терапевтический</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>103693.33</ns3:price>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>207386.66</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812441</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.21.122-00000003</ns2:code>
+                        <ns2:name>Аппарат вентиляции легких положительным давлением терапевтический</ns2:name>
+                        <ns2:versionId>76451</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813904</ns3:sid>
+                                <ns3:name>Фасовка: 10 шт. в заводской упаковке</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038296</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813903</ns3:sid>
+                                <ns3:name>Обработка: Многоразовое изделие, допускающее автоклавирование в соответствии с документацией изготовителя</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038295</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813902</ns3:sid>
+                                <ns3:name>Комплектность: Силиконовая трубка длиной 23 см; Т-образный коннектор с двумя соединениями 15 мм и одним соединением 22 мм с гладкой внутренней поверхностью</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038294</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813905</ns3:sid>
+                                <ns3:name>Совместимость: Для штатного подключения HFO-контура к аппарату ИВЛ Acutronic Fabian HFO, заводской номер AI-00451</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038297</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительные характеристики товара установлены в связи с тем, что характеристика, указанная в КТРУ не является исчерпывающей и не позволяет точно определить качественные, функциональные и технические характеристики закупаемого товара, в наибольшей степени удовлетворяющего потребности заказчика, необходимо в описании объекта закупки указать дополнительную информацию исходя из характеристик, которым должен отвечать закупаемый товар</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.21.122</ns2:OKPDCode>
+                            <ns2:OKPDName>Аппараты дыхательные реанимационные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Аппарат вентиляции легких положительным давлением терапевтический</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>2864.67</ns3:price>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>28646.70</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812437</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.21.122-00000003</ns2:code>
+                        <ns2:name>Аппарат вентиляции легких положительным давлением терапевтический</ns2:name>
+                        <ns2:versionId>76451</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813878</ns3:sid>
+                                <ns3:name>Назначение: Измерение концентрации кислорода в воздушно-кислородной смеси аппарата ИВЛ</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038270</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813882</ns3:sid>
+                                <ns3:name>Конструкция: Защитное уплотнительное кольцо и защитная мембрана катализатора</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038274</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813883</ns3:sid>
+                                <ns3:name>Совместимость: Штатная установка и работа с имеющимся у Заказчика аппаратом ИВЛ Acutronic Fabian HFO, заводской номер AI-00451 без доработки оборудования</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038275</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813879</ns3:sid>
+                                <ns3:name>Диапазон измерения: от 18 до 100 %</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038271</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813880</ns3:sid>
+                                <ns3:name>Тип подключения: Стандарт «204», трехконтактное (3 pin) подключение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038272</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813881</ns3:sid>
+                                <ns3:name>Показатели: Ошибка линейности не более 3 %; время отклика до достижения 90 % конечного значения — не более 12 с; рабочая температура от 0 до +50 °C; ресурс не менее 10 000 часов</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038273</ns3:sid>
+                                        <ns3:qualityDescription>соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительные характеристики товара установлены в связи с тем, что характеристика, указанная в КТРУ не является исчерпывающей и не позволяет точно определить качественные, функциональные и технические характеристики закупаемого товара, в наибольшей степени удовлетворяющего потребности заказчика, необходимо в описании объекта закупки указать дополнительную информацию исходя из характеристик, которым должен отвечать закупаемый товар</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.21.122</ns2:OKPDCode>
+                            <ns2:OKPDName>Аппараты дыхательные реанимационные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Аппарат вентиляции легких положительным давлением терапевтический</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>82390.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>164780.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:totalSum>1794983.37</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

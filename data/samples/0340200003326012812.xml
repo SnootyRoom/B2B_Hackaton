@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44374240</id>
+    <externalId>D5BBF23E-3F6E-4422-AC99-E32BF5F5D23643</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0340200003326012812</purchaseNumber>
+        <docNumber>№0340200003326012812</docNumber>
+        <plannedPublishDate>2026-10-26+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-26T11:33:11.229+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0340200003326012812</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка электротоваров и расходных материалов для электрики</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03402000033</regNum>
+            <consRegistryNum>332D0105</consRegistryNum>
+            <fullName>КИРОВСКОЕ ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "ЦЕНТР ПО ТЕХНИЧЕСКОМУ СОПРОВОЖДЕНИЮ ГОСУДАРСТВЕННЫХ ЗАКУПОК"</fullName>
+            <shortName>КОГКУ  "ЦЕНТР ПО ТЕХНИЧЕСКОМУ СОПРОВОЖДЕНИЮ ГОСУДАРСТВЕННЫХ ЗАКУПОК"</shortName>
+            <postAddress>Российская Федерация, 610001, Кировская обл, Киров г, УЛИЦА КОМСОМОЛЬСКАЯ, 10</postAddress>
+            <factAddress>Российская Федерация, 610001, Кировская обл, Киров г, УЛИЦА КОМСОМОЛЬСКАЯ, 10</factAddress>
+            <INN>4345233451</INN>
+            <KPP>434501001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>AI</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 610001, Кировская обл, Киров г, УЛИЦА КОМСОМОЛЬСКАЯ, 10</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 610001, Кировская обл, Киров г, УЛИЦА КОМСОМОЛЬСКАЯ, 10</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Еремин</ns3:lastName>
+                <ns3:firstName>Дмитрий</ns3:firstName>
+                <ns3:middleName>Анатольевич</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>goszakaz@ako.kirov.ru</contactEMail>
+            <contactPhone>7-8332-272798-9810</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0340200003326012812</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A177522A0C7C72A05562B297BA6329</ns3:publishedContentId>
+            <ns3:fileName>Обоснование цены.xlsx</ns3:fileName>
+            <ns3:fileSize>12016</ns3:fileSize>
+            <ns3:docDescription>Обоснование начальной (максимальной) цены контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-26T11:27:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A177522A0C7C72A05562B297BA6329</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A177522D977449AF3B9525F107BD2A</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта.docx</ns3:fileName>
+            <ns3:fileSize>64641</ns3:fileSize>
+            <ns3:docDescription>Проект государственного контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-26T11:27:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A177522D977449AF3B9525F107BD2A</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A177522BCF73E3B2FA310E155E38F1</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки.xlsx</ns3:fileName>
+            <ns3:fileSize>13652</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-26T11:27:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A177522BCF73E3B2FA310E155E38F1</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17752277C7877B6DEB9C4D636996C</ns3:publishedContentId>
+            <ns3:fileName>Доп информация к извещению.doc</ns3:fileName>
+            <ns3:fileSize>66048</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию и составу заявки на участие в аукционе</ns3:docDescription>
+            <ns3:docDate>2026-10-26T11:27:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17752277C7877B6DEB9C4D636996C</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1775229827794AA18213F270701B4</ns3:publishedContentId>
+            <ns3:fileName>Инструкция по заполнению заявки.doc</ns3:fileName>
+            <ns3:fileSize>157184</ns3:fileSize>
+            <ns3:docDescription>Инструкция</ns3:docDescription>
+            <ns3:docDate>2026-10-26T11:27:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1775229827794AA18213F270701B4</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-26T11:33:11+03:00</startDT>
+                <endDT>2026-11-10T09:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-10+03:00</biddingDate>
+            <summarizingDate>2026-11-12+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>10400.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03403000920</ns2:regNum>
+                    <ns2:consRegistryNum>332Р5958</ns2:consRegistryNum>
+                    <ns2:fullName>КИРОВСКОЕ ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ОПАРИНСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>013304182</ns3:bik>
+                        <ns3:settlementAccount>03224643330000004000</ns3:settlementAccount>
+                        <ns3:personalAccount>05801238501</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 4 ВВГУ Банка России//УФК по Кировской области, г Киров</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810345370000033</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям ст.45 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством РФ учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Закона №44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. Срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на 1 месяц, в т.ч. в случае его изменения в соответствии со ст.95 44-ФЗ.
+В независимую гарантию включается условие об обязанности гаранта уплатить заказчику (бенефициару) денежную сумму по независимой гарантии не позднее 10 рабочих дней со дня, следующего за днем получения гарантом требования заказчика (бенефициара), соответствующего условиям такой независимой гарантии, при отсутствии предусмотренных ГК РФ оснований для отказа в удовлетворении этого требования.
+В случае непредоставления участником закупки, с которым заключается контракт, обеспечения исполнения контракта в срок, установленный для заключения контракта, такой участник считается уклонившимся от заключения контракта.
+В случае, если предложенные в заявке участника закупки цена, сумма цен единиц товара, работы, услуги снижены на 25 и более % по отношению к НМЦК, начальной сумме цен единиц товара, работы, услуги, участник закупки, с которым заключается контракт, предоставляет обеспечение исполнения контракта с учетом положений ст.37 44-ФЗ.
+Участник закупки,с которым заключается контракт по результатам определения поставщика (подрядчика, исполнителя) в соответствии с п.1 ч.1 ст.30 44-ФЗ,освобождается от предоставления обеспечения исполнения контракта, в т.ч. с учетом положений ст.37 Закона в соответствии с порядком, установленным ч.8.1 ст.96 44-ФЗ</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>10400.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262432300040743230100100100170000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>24323000407432301001</customerCode>
+                        <purchaseNumber>0010</purchaseNumber>
+                        <purchaseOrderNumber>017</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603403000920001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603403000920001000011</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>10400.00</total>
+                                <currentYear>10400.00</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22426784</sid>
+                                <externalSid>B00E9EFF-5463-4088-975C-D329A3B55FC3</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>10400.00</total>
+                                        <currentYear>10400.00</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>10400.00</ns3:total>
+                                                <ns3:currentYear>10400.00</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>10400.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62343824</ns3:sid>
+                            <ns3:externalSid>75A18F77-92C7-4DAF-A549-F53FA6F1DBBE</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>a62326c4-aa55-4c18-9765-1d0d585d0be1</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Кировская, м.о. Опаринский, пгт. Опарино, ул. Советская, соор. 12</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>610830</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>В соответствии с п. 5.4. контракта</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225706508</ns3:sid>
+                    <ns3:externalSid>55F1FC38-26CC-4933-9412-E4652229B777</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>27.33.10.000-00000003</ns2:code>
+                        <ns2:name>Изделия электроустановочные</ns2:name>
+                        <ns2:versionId>276158</ns2:versionId>
+                        <ns2:versionNumber>9</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336548947</ns3:sid>
+                                <ns3:externalSid>34E0DAAF-A728-415D-8A01-CC79089B1223</ns3:externalSid>
+                                <ns3:name>Материал корпуса</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434693764</ns3:sid>
+                                        <ns3:externalSid>5287348D-8498-4E41-99EF-66B9F01BFBF2</ns3:externalSid>
+                                        <ns3:qualityDescription>Термостойкий, полимер с высоким диэлектрическими свойствами, устойчив к воспламенению</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336548948</ns3:sid>
+                                <ns3:externalSid>995C5EF8-E707-4972-8567-6CA62788056C</ns3:externalSid>
+                                <ns3:name>Тип зажима</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434693765</ns3:sid>
+                                        <ns3:externalSid>838CA6B7-EA5C-4674-9456-5882F2309A70</ns3:externalSid>
+                                        <ns3:qualityDescription>пружинный (с рычажком или нажимной)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336548949</ns3:sid>
+                                <ns3:externalSid>08DA81CB-068E-402A-A032-F16ABD03D5CC</ns3:externalSid>
+                                <ns3:name>Тип жилы проводника</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434693766</ns3:sid>
+                                        <ns3:externalSid>FB9F9E7D-DA5B-4609-ADD2-D6CE1049CE11</ns3:externalSid>
+                                        <ns3:qualityDescription>медные многожильные</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336548950</ns3:sid>
+                                <ns3:externalSid>C42B0E90-414C-4E5B-A165-12AD9425AC1F</ns3:externalSid>
+                                <ns3:name>Количество подключаемых проводников</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434693767</ns3:sid>
+                                        <ns3:externalSid>08395502-8960-4CDE-8F00-FE448993BD71</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>3</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>требование заказчика</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>27.33.1</ns2:OKPDCode>
+                            <ns2:OKPDName>Изделия электроустановочные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Изделия электроустановочные</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03403000920</ns2:regNum>
+                                <ns2:consRegistryNum>332Р5958</ns2:consRegistryNum>
+                                <ns2:fullName>КИРОВСКОЕ ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ОПАРИНСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>100</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>95.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>100.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>9500.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225706509</ns3:sid>
+                    <ns3:externalSid>76C59A55-8B15-4E3F-9A3E-1CCDD4B1DA4B</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>27.33.10.000-00000003</ns2:code>
+                        <ns2:name>Изделия электроустановочные</ns2:name>
+                        <ns2:versionId>276158</ns2:versionId>
+                        <ns2:versionNumber>9</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336548951</ns3:sid>
+                                <ns3:externalSid>B5AC2DC9-20E9-4073-B61C-34E74D0C85F0</ns3:externalSid>
+                                <ns3:name>Тип цоколя</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434693768</ns3:sid>
+                                        <ns3:externalSid>209C2818-5505-4241-9AC6-36582F6B4112</ns3:externalSid>
+                                        <ns3:qualityDescription>E27</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336548952</ns3:sid>
+                                <ns3:externalSid>F08A70A1-D8D6-4217-AB5B-32A37BD5CC97</ns3:externalSid>
+                                <ns3:name>Материал изделия</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434693769</ns3:sid>
+                                        <ns3:externalSid>0CB3A295-4E63-44D3-8128-52955AF5775E</ns3:externalSid>
+                                        <ns3:qualityDescription>керамика</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>требования заказчика</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>27.33.1</ns2:OKPDCode>
+                            <ns2:OKPDName>Изделия электроустановочные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Изделия электроустановочные</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03403000920</ns2:regNum>
+                                <ns2:consRegistryNum>332Р5958</ns2:consRegistryNum>
+                                <ns2:fullName>КИРОВСКОЕ ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ОПАРИНСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>20</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>45.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>20.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>900.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>10400.00</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

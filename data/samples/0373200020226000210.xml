@@ -1,0 +1,2777 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44440393</id>
+    <externalId>14990911</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0373200020226000210</purchaseNumber>
+        <docNumber>№0373200020226000210</docNumber>
+        <plannedPublishDate>2026-10-30+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T16:31:57.868+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0373200020226000210</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_EETP</ns2:code>
+            <ns2:name>РОСЭЛТОРГ (АО«ЕЭТП»)</ns2:name>
+            <ns2:url>http://roseltorg.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка расходных материалов для анализатора "mindray" (Лот 3)</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03732000202</regNum>
+            <consRegistryNum>452Р8566</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ "ЦЕНТР КРОВИ ИМЕНИ О.К. ГАВРИЛОВА ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ"</fullName>
+            <shortName>ГБУЗ "ЦЕНТР КРОВИ ИМЕНИ О.К. ГАВРИЛОВА ДЗМ"</shortName>
+            <postAddress>125284, город Москва, ул. Поликарпова, дом 14, корпус 1, 2, 3</postAddress>
+            <factAddress>125284, МОСКВА, УЛ. ПОЛИКАРПОВА, Дом (Корпус/строение) Д. 14, К. 1; 2; 3</factAddress>
+            <INN>7714029960</INN>
+            <KPP>771401001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>125284, город Москва, ул. Поликарпова, дом 14, корпус 1, 2, 3</orgPostAddress>
+            <orgFactAddress>125284, МОСКВА, УЛ. ПОЛИКАРПОВА, Дом (Корпус/строение) Д. 14, К. 1; 2; 3</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Менской</ns3:lastName>
+                <ns3:firstName>Даниил</ns3:firstName>
+                <ns3:middleName>Константинович</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>menskoydk@zdrav.mos.ru</contactEMail>
+            <contactPhone>7-495-9461996</contactPhone>
+            <contactFax>пусто</contactFax>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0373200020226000210</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18CFF73B1788A8225E2E27B8CFA29</ns3:publishedContentId>
+            <ns3:fileName>Обоснование.pdf</ns3:fileName>
+            <ns3:fileSize>687388</ns3:fileSize>
+            <ns3:docDescription>Обоснование определения НМЦК(Д)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T16:28:39+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18CFF73B1788A8225E2E27B8CFA29</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18CFF74767A79AA92197DC8DC7B03</ns3:publishedContentId>
+            <ns3:fileName>Протокол.pdf</ns3:fileName>
+            <ns3:fileSize>749919</ns3:fileSize>
+            <ns3:docDescription>Протокол НМЦК(Д)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T16:28:39+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18CFF74767A79AA92197DC8DC7B03</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18CFF778F71998D4D3FD2CD3AC7E1</ns3:publishedContentId>
+            <ns3:fileName>Расчет_НМЦК_(31).xlsx</ns3:fileName>
+            <ns3:fileSize>21110</ns3:fileSize>
+            <ns3:docDescription>Расчет НМЦК(Д)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T16:28:39+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18CFF778F71998D4D3FD2CD3AC7E1</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18CFF753E7BC6BFB7ACBB59D0A47D</ns3:publishedContentId>
+            <ns3:fileName>Проект_контракта_17297360-1.pdf</ns3:fileName>
+            <ns3:fileSize>110569</ns3:fileSize>
+            <ns3:docDescription>Проект контракта (договора)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T16:28:39+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18CFF753E7BC6BFB7ACBB59D0A47D</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18CFF76547260BDF46F8F16A9189F</ns3:publishedContentId>
+            <ns3:fileName>Техническое_задание_17297360-1.pdf</ns3:fileName>
+            <ns3:fileSize>83787</ns3:fileSize>
+            <ns3:docDescription>Техническое задание</ns3:docDescription>
+            <ns3:docDate>2026-10-30T16:28:39+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18CFF76547260BDF46F8F16A9189F</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18CFF73237031AA28831637D8E8D9</ns3:publishedContentId>
+            <ns3:fileName>ElectronicAuction14990911.pdf</ns3:fileName>
+            <ns3:fileSize>118753</ns3:fileSize>
+            <ns3:docDescription>ElectronicAuction14990911.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-30T16:28:39+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18CFF73237031AA28831637D8E8D9</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18CFF78E07D55A22C813448E62859</ns3:publishedContentId>
+            <ns3:fileName>!! В_помощь_участникам_закупок.pdf</ns3:fileName>
+            <ns3:fileSize>151808</ns3:fileSize>
+            <ns3:docDescription>!! В помощь участникам закупок</ns3:docDescription>
+            <ns3:docDate>2026-10-30T16:28:39+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18CFF78E07D55A22C813448E62859</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>false</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-30T16:31:57+03:00</startDT>
+                <endDT>2026-11-09T10:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+03:00</biddingDate>
+            <summarizingDate>2026-11-11+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>1314777.30</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03732000202</ns2:regNum>
+                    <ns2:consRegistryNum>452Р8566</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ "ЦЕНТР КРОВИ ИМЕНИ О.К. ГАВРИЛОВА ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>13147.77</amount>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03224643450000007300</ns3:settlementAccount>
+                        <ns3:personalAccount>2105441000450568</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ГУ Банка России по ЦФО//УФК ПО Г. МОСКВЕ, г Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>7707089084</INN>
+                            <KPP>770701001</KPP>
+                            <KBK>05411610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>45382000</ns2:code>
+                                <ns2:name>Муниципальные образования города Москвы (столицы Российской Федерации города федерального значения) / Внутригородские муниципальные образования в городе Москве (см. также 45 900 000)/ / муниципальный округ Тверской</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810545370000003</bankAccount>
+                            <ksNumber>03100643000000017300</ksNumber>
+                            <bik>004525988</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО Г. МОСКВЕ</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>В соответствии с правилами и порядком, определенными оператором электронной торговой площадки</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03224643450000007300</ns3:settlementAccount>
+                        <ns3:personalAccount>2105441000450568</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ГУ Банка России по ЦФО//УФК ПО Г. МОСКВЕ, г Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Контракт заключается после предоставления заказчику обеспечения исполнения контракта. Обеспечение исполнения контракта может быть представлено в виде безотзывной независимой гарантии или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику, в размере обеспечения исполнения контракта, указанном в документации о закупках. Безотзывная независимая гарантия должна соответствовать требованиям, установленным Гражданским кодексом Российской Федерации, а также иным законодательством Российской Федерации.
+Способ обеспечения исполнения контракта определяется участником закупки, с которым заключается контракт, самостоятельно.
+Срок внесения обеспечения - до момента заключения контракта».</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>1314777.30</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262771402996077140100102540010000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>27714029960771401001</customerCode>
+                        <purchaseNumber>0254</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603732000202001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603732000202001000253</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                <ns3:endDate>2028-02-01+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>1314777.30</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>1314777.30</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22538296</sid>
+                                <externalSid>35014115</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2028-02-01+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>1314777.30</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>1314777.30</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>1314777.30</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>1314777.30</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>1314777.30</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62475753</ns3:sid>
+                            <ns3:externalSid>331879672</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г.Москва, ул.Поликарпова, д.14, стр.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62475754</ns3:sid>
+                            <ns3:externalSid>331879673</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г.Москва, ул.Поликарпова, д.14, стр.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62475755</ns3:sid>
+                            <ns3:externalSid>331879674</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г.Москва, ул.Поликарпова, д.14, стр.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62475756</ns3:sid>
+                            <ns3:externalSid>331879676</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г.Москва, ул.Поликарпова, д.14, стр.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62475757</ns3:sid>
+                            <ns3:externalSid>331879677</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г.Москва, ул.Поликарпова, д.14, стр.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62475758</ns3:sid>
+                            <ns3:externalSid>331879678</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г.Москва, ул.Поликарпова, д.14, стр.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62475759</ns3:sid>
+                            <ns3:externalSid>331879699</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г.Москва, ул.Поликарпова, д.14, стр.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62475760</ns3:sid>
+                            <ns3:externalSid>331879700</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г.Москва, ул.Поликарпова, д.14, стр.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62475761</ns3:sid>
+                            <ns3:externalSid>331879701</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г.Москва, ул.Поликарпова, д.14, стр.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62475762</ns3:sid>
+                            <ns3:externalSid>331879702</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г.Москва, ул.Поликарпова, д.14, стр.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62475763</ns3:sid>
+                            <ns3:externalSid>331879703</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г.Москва, ул.Поликарпова, д.14, стр.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62475764</ns3:sid>
+                            <ns3:externalSid>331879704</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г.Москва, ул.Поликарпова, д.14, стр.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226281322</ns3:sid>
+                    <ns3:externalSid>251930009-1674852194</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00011100</ns2:code>
+                        <ns2:name>Вирус гепатита С общие антитела ИВД, калибратор</ns2:name>
+                        <ns2:versionId>146621</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>338160216</ns3:sid>
+                                <ns3:externalSid>2020465848-1347807016</ns3:externalSid>
+                                <ns3:code>97863a3c-6</ns3:code>
+                                <ns3:name>Объем в одном флаконе</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899227</ns3:sid>
+                                        <ns3:externalSid>enum-2272878043</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>338160217</ns3:sid>
+                                <ns3:externalSid>2020465846-1334184658</ns3:externalSid>
+                                <ns3:code>842255f0-5</ns3:code>
+                                <ns3:name>Количество флаконов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899228</ns3:sid>
+                                        <ns3:externalSid>enum-2272878041</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>2</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>338160218</ns3:sid>
+                                <ns3:externalSid>2020465847-1306677499</ns3:externalSid>
+                                <ns3:code>1fa754cf-b</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899229</ns3:sid>
+                                        <ns3:externalSid>enum-2272878042</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов серии CL</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160213</ns3:sid>
+                                <ns3:externalSid>2020465849-1310348883</ns3:externalSid>
+                                <ns3:name>Каталожный номер</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899224</ns3:sid>
+                                        <ns3:externalSid>enum-2272878044</ns3:externalSid>
+                                        <ns3:qualityDescription>105-005923-00</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160214</ns3:sid>
+                                <ns3:externalSid>2020465850-1353307555</ns3:externalSid>
+                                <ns3:name>Минимальный остаточный срок годности на дату поставки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899225</ns3:sid>
+                                        <ns3:externalSid>ch-2020465850</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>362</ns2:code>
+                                            <ns2:nationalCode>мес</ns2:nationalCode>
+                                            <ns2:name>Месяц</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160215</ns3:sid>
+                                <ns3:externalSid>2020465851-1304148559</ns3:externalSid>
+                                <ns3:name>Область применения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899226</ns3:sid>
+                                        <ns3:externalSid>enum-2272878046</ns3:externalSid>
+                                        <ns3:qualityDescription>Для качественного определения общих антител к вирусу гепатита C в клиническом образце</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>для совместимости с анализатором Заказчика</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Вирус гепатита С общие антитела ИВД, калибратор</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7824.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:trademarkInfo>
+                        <ns3:trademark>mindray</ns3:trademark>
+                    </ns3:trademarkInfo>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>78240.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226281323</ns3:sid>
+                    <ns3:externalSid>251930010-1674852206</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00003250</ns2:code>
+                        <ns2:name>Вирус гепатита С общие антитела ИВД, контрольный материал</ns2:name>
+                        <ns2:versionId>56357</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>338160224</ns3:sid>
+                                <ns3:externalSid>2020465853-1308061704</ns3:externalSid>
+                                <ns3:code>71d57062-4</ns3:code>
+                                <ns3:name>Объем реагента</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899235</ns3:sid>
+                                        <ns3:externalSid>enum-2272878048</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>338160225</ns3:sid>
+                                <ns3:externalSid>2020465852-1306677499</ns3:externalSid>
+                                <ns3:code>dffa3c0e-f</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899236</ns3:sid>
+                                        <ns3:externalSid>enum-2272878047</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа и ручной постановки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160219</ns3:sid>
+                                <ns3:externalSid>2020465854-1310348883</ns3:externalSid>
+                                <ns3:name>Каталожный номер</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899230</ns3:sid>
+                                        <ns3:externalSid>enum-2272878049</ns3:externalSid>
+                                        <ns3:qualityDescription>105-005950-00</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160220</ns3:sid>
+                                <ns3:externalSid>2020465855-1334184218</ns3:externalSid>
+                                <ns3:name>Количество флаконов в упаковке</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899231</ns3:sid>
+                                        <ns3:externalSid>ch-2020465855</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160221</ns3:sid>
+                                <ns3:externalSid>2020465856-1353307555</ns3:externalSid>
+                                <ns3:name>Минимальный остаточный срок годности на дату поставки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899232</ns3:sid>
+                                        <ns3:externalSid>ch-2020465856</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>362</ns2:code>
+                                            <ns2:nationalCode>мес</ns2:nationalCode>
+                                            <ns2:name>Месяц</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160222</ns3:sid>
+                                <ns3:externalSid>2020465857-1323734777</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899233</ns3:sid>
+                                        <ns3:externalSid>enum-2272878052</ns3:externalSid>
+                                        <ns3:qualityDescription>Анализатор серии CL</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160223</ns3:sid>
+                                <ns3:externalSid>2020465858-1304148559</ns3:externalSid>
+                                <ns3:name>Область применения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899234</ns3:sid>
+                                        <ns3:externalSid>enum-2272878053</ns3:externalSid>
+                                        <ns3:qualityDescription>Для использования при качественном определении общих антител к вирусу гепатита C в клиническом образце</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>для совместимости с анализатором Заказчика</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Вирус гепатита С общие антитела ИВД, контрольный материал</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>11301.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:trademarkInfo>
+                        <ns3:trademark>mindray</ns3:trademark>
+                    </ns3:trademarkInfo>
+                    <ns3:quantity>
+                        <ns3:value>15.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>169515.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226281324</ns3:sid>
+                    <ns3:externalSid>251930011-1674852206</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00003250</ns2:code>
+                        <ns2:name>Вирус гепатита С общие антитела ИВД, контрольный материал</ns2:name>
+                        <ns2:versionId>56357</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>338160230</ns3:sid>
+                                <ns3:externalSid>2020465859-1306677499</ns3:externalSid>
+                                <ns3:code>dffa3c0e-f</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899241</ns3:sid>
+                                        <ns3:externalSid>enum-2272878054</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа и ручной постановки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>338160231</ns3:sid>
+                                <ns3:externalSid>2020465860-1308061704</ns3:externalSid>
+                                <ns3:code>71d57062-4</ns3:code>
+                                <ns3:name>Объем реагента</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899242</ns3:sid>
+                                        <ns3:externalSid>enum-2272878055</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160226</ns3:sid>
+                                <ns3:externalSid>2020465862-1334184218</ns3:externalSid>
+                                <ns3:name>Количество флаконов в упаковке</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899237</ns3:sid>
+                                        <ns3:externalSid>ch-2020465862</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160227</ns3:sid>
+                                <ns3:externalSid>2020465863-1353307555</ns3:externalSid>
+                                <ns3:name>Минимальный остаточный срок годности на дату поставки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899238</ns3:sid>
+                                        <ns3:externalSid>ch-2020465863</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>362</ns2:code>
+                                            <ns2:nationalCode>мес</ns2:nationalCode>
+                                            <ns2:name>Месяц</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160228</ns3:sid>
+                                <ns3:externalSid>2020465864-1323734777</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899239</ns3:sid>
+                                        <ns3:externalSid>enum-2272878059</ns3:externalSid>
+                                        <ns3:qualityDescription>Анализатор серии CL</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160229</ns3:sid>
+                                <ns3:externalSid>2020465865-1304148559</ns3:externalSid>
+                                <ns3:name>Область применения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899240</ns3:sid>
+                                        <ns3:externalSid>enum-2272878060</ns3:externalSid>
+                                        <ns3:qualityDescription>Для использования при качественном определении общих антител к вирусу гепатита C в клиническом образце</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>для совместимости с анализатором Заказчика</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Вирус гепатита С общие антитела ИВД, контрольный материал</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>11301.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:trademarkInfo>
+                        <ns3:trademark>mindray</ns3:trademark>
+                    </ns3:trademarkInfo>
+                    <ns3:quantity>
+                        <ns3:value>15.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>169515.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226281325</ns3:sid>
+                    <ns3:externalSid>251930012-1698155533</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>21.20.23.111</ns2:OKPDCode>
+                        <ns2:OKPDName>Препараты диагностические</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160232</ns3:sid>
+                                <ns3:externalSid>2020465866-1304148559</ns3:externalSid>
+                                <ns3:name>Область применения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899243</ns3:sid>
+                                        <ns3:externalSid>enum-2272878061</ns3:externalSid>
+                                        <ns3:qualityDescription>Для использования in vitro в процессе калибровки, используемой для определения поверхностного антигена вируса гепатита В в сыворотке и плазме человека</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160233</ns3:sid>
+                                <ns3:externalSid>2020465867-1310348883</ns3:externalSid>
+                                <ns3:name>Каталожный номер</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899244</ns3:sid>
+                                        <ns3:externalSid>enum-2272878062</ns3:externalSid>
+                                        <ns3:qualityDescription>105-004298-00</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160234</ns3:sid>
+                                <ns3:externalSid>2020465868-1334739485</ns3:externalSid>
+                                <ns3:name>Количество определений</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899245</ns3:sid>
+                                        <ns3:externalSid>ch-2020465868</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160235</ns3:sid>
+                                <ns3:externalSid>2020465870-1334184658</ns3:externalSid>
+                                <ns3:name>Количество флаконов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899246</ns3:sid>
+                                        <ns3:externalSid>ch-2020465870</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160236</ns3:sid>
+                                <ns3:externalSid>2020465871-1319288664</ns3:externalSid>
+                                <ns3:name>Метод исследования</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899247</ns3:sid>
+                                        <ns3:externalSid>enum-2272878066</ns3:externalSid>
+                                        <ns3:qualityDescription>Иммунохемилюминесцентный анализ</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160237</ns3:sid>
+                                <ns3:externalSid>2020465872-1353307555</ns3:externalSid>
+                                <ns3:name>Минимальный остаточный срок годности на дату поставки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899248</ns3:sid>
+                                        <ns3:externalSid>ch-2020465872</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>362</ns2:code>
+                                            <ns2:nationalCode>мес</ns2:nationalCode>
+                                            <ns2:name>Месяц</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160238</ns3:sid>
+                                <ns3:externalSid>2020465873-1300733810</ns3:externalSid>
+                                <ns3:name>Объем флакона</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899249</ns3:sid>
+                                        <ns3:externalSid>ch-2020465873</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160239</ns3:sid>
+                                <ns3:externalSid>2020465894-1323734777</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899250</ns3:sid>
+                                        <ns3:externalSid>enum-2272878069</ns3:externalSid>
+                                        <ns3:qualityDescription>Анализатор серии CL</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Вирус гепатита В поверхностный антиген ИВД, калибратор</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>8313.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:trademarkInfo>
+                        <ns3:trademark>mindray</ns3:trademark>
+                    </ns3:trademarkInfo>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>83130.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226281326</ns3:sid>
+                    <ns3:externalSid>251930013-1675758493</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>21.20.23.111</ns2:OKPDCode>
+                        <ns2:OKPDName>Препараты диагностические</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160240</ns3:sid>
+                                <ns3:externalSid>2020465896-1304148559</ns3:externalSid>
+                                <ns3:name>Область применения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899251</ns3:sid>
+                                        <ns3:externalSid>enum-2272878071</ns3:externalSid>
+                                        <ns3:qualityDescription>Для контроля качества количественного определения поверхностного антигена вируса гепатита B в клиническом образце иммунохемилюминесцентным методом</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160241</ns3:sid>
+                                <ns3:externalSid>2020465898-1334184658</ns3:externalSid>
+                                <ns3:name>Количество флаконов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899252</ns3:sid>
+                                        <ns3:externalSid>ch-2020465898</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160242</ns3:sid>
+                                <ns3:externalSid>2020465899-1353307555</ns3:externalSid>
+                                <ns3:name>Минимальный остаточный срок годности на дату поставки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899253</ns3:sid>
+                                        <ns3:externalSid>ch-2020465899</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>362</ns2:code>
+                                            <ns2:nationalCode>мес</ns2:nationalCode>
+                                            <ns2:name>Месяц</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160243</ns3:sid>
+                                <ns3:externalSid>2020465900-1300733810</ns3:externalSid>
+                                <ns3:name>Объем флакона</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899254</ns3:sid>
+                                        <ns3:externalSid>ch-2020465900</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160244</ns3:sid>
+                                <ns3:externalSid>2020465901-1323734777</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899255</ns3:sid>
+                                        <ns3:externalSid>enum-2272878076</ns3:externalSid>
+                                        <ns3:qualityDescription>Анализатор серии CL</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160245</ns3:sid>
+                                <ns3:externalSid>2020465902-1552711007</ns3:externalSid>
+                                <ns3:name>Тип контрольного образца</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899256</ns3:sid>
+                                        <ns3:externalSid>enum-2272878078</ns3:externalSid>
+                                        <ns3:qualityDescription>Положительный (ПКО)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Вирус гепатита В поверхностный антиген, контрольный материал</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>8405.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:trademarkInfo>
+                        <ns3:trademark>mindray</ns3:trademark>
+                    </ns3:trademarkInfo>
+                    <ns3:quantity>
+                        <ns3:value>15.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>126075.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226281327</ns3:sid>
+                    <ns3:externalSid>251930015-1675758493</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>21.20.23.111</ns2:OKPDCode>
+                        <ns2:OKPDName>Препараты диагностические</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160246</ns3:sid>
+                                <ns3:externalSid>2020465903-1304148559</ns3:externalSid>
+                                <ns3:name>Область применения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899257</ns3:sid>
+                                        <ns3:externalSid>enum-2272878269</ns3:externalSid>
+                                        <ns3:qualityDescription>Для контроля качества количественного определения поверхностного антигена вируса гепатита B в клиническом образце иммунохемилюминесцентным методом</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160247</ns3:sid>
+                                <ns3:externalSid>2020465904-1310348883</ns3:externalSid>
+                                <ns3:name>Каталожный номер</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899258</ns3:sid>
+                                        <ns3:externalSid>enum-2272878271</ns3:externalSid>
+                                        <ns3:qualityDescription>105-005169-00</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160248</ns3:sid>
+                                <ns3:externalSid>2020465905-1334184658</ns3:externalSid>
+                                <ns3:name>Количество флаконов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899259</ns3:sid>
+                                        <ns3:externalSid>ch-2020465905</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160249</ns3:sid>
+                                <ns3:externalSid>2020465906-1353307555</ns3:externalSid>
+                                <ns3:name>Минимальный остаточный срок годности на дату поставки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899260</ns3:sid>
+                                        <ns3:externalSid>ch-2020465906</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>362</ns2:code>
+                                            <ns2:nationalCode>мес</ns2:nationalCode>
+                                            <ns2:name>Месяц</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160250</ns3:sid>
+                                <ns3:externalSid>2020465907-1300733810</ns3:externalSid>
+                                <ns3:name>Объем флакона</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899261</ns3:sid>
+                                        <ns3:externalSid>ch-2020465907</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160251</ns3:sid>
+                                <ns3:externalSid>2020465908-1323734777</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899262</ns3:sid>
+                                        <ns3:externalSid>enum-2272878280</ns3:externalSid>
+                                        <ns3:qualityDescription>Анализатор серии CL</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160252</ns3:sid>
+                                <ns3:externalSid>2020465909-1552711007</ns3:externalSid>
+                                <ns3:name>Тип контрольного образца</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899263</ns3:sid>
+                                        <ns3:externalSid>enum-2272878283</ns3:externalSid>
+                                        <ns3:qualityDescription>Отрицательный (ОКО)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Вирус гепатита В поверхностный антиген, контрольный материал</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>8405.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:trademarkInfo>
+                        <ns3:trademark>mindray</ns3:trademark>
+                    </ns3:trademarkInfo>
+                    <ns3:quantity>
+                        <ns3:value>15.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>126075.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226281328</ns3:sid>
+                    <ns3:externalSid>251930016-1681509156</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.52.195-00000890</ns2:code>
+                        <ns2:name>Treponema pallidum общие антитела ИВД, калибратор</ns2:name>
+                        <ns2:versionId>315839</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>338160255</ns3:sid>
+                                <ns3:externalSid>2020465951-1334184658</ns3:externalSid>
+                                <ns3:code>899eb45a-0</ns3:code>
+                                <ns3:name>Количество флаконов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899266</ns3:sid>
+                                        <ns3:externalSid>enum-2272878295</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>2</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>338160256</ns3:sid>
+                                <ns3:externalSid>2020465949-1306677499</ns3:externalSid>
+                                <ns3:code>980874df-a</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899267</ns3:sid>
+                                        <ns3:externalSid>enum-2272878293</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов серии CL</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>338160257</ns3:sid>
+                                <ns3:externalSid>2020465950-1382242045</ns3:externalSid>
+                                <ns3:code>4f06842d-a</ns3:code>
+                                <ns3:name>Объём флакона</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899268</ns3:sid>
+                                        <ns3:externalSid>enum-2272878294</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>2</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160253</ns3:sid>
+                                <ns3:externalSid>2020465952-1310348883</ns3:externalSid>
+                                <ns3:name>Каталожный номер</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899264</ns3:sid>
+                                        <ns3:externalSid>enum-2272878296</ns3:externalSid>
+                                        <ns3:qualityDescription>105-005922-00</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160254</ns3:sid>
+                                <ns3:externalSid>2020465954-1304148559</ns3:externalSid>
+                                <ns3:name>Область применения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899265</ns3:sid>
+                                        <ns3:externalSid>enum-2272878298</ns3:externalSid>
+                                        <ns3:qualityDescription>Для качественного определения общих антител к бактерии Treponema pallidum</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>для совместимости с анализатором Заказчика</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Treponema pallidum общие антитела ИВД, калибратор</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>11301.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:trademarkInfo>
+                        <ns3:trademark>mindray</ns3:trademark>
+                    </ns3:trademarkInfo>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>113010.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226281329</ns3:sid>
+                    <ns3:externalSid>251930017-1700279072</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00003107</ns2:code>
+                        <ns2:name> Treponema pallidum общие антитела ИВД, контрольный материал</ns2:name>
+                        <ns2:versionId>57152</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>338160267</ns3:sid>
+                                <ns3:externalSid>2020465957-1308061704</ns3:externalSid>
+                                <ns3:code>55f048cf-7</ns3:code>
+                                <ns3:name>Объем реагента</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899278</ns3:sid>
+                                        <ns3:externalSid>enum-2272878301</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160258</ns3:sid>
+                                <ns3:externalSid>2020465956-1306677499</ns3:externalSid>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899269</ns3:sid>
+                                        <ns3:externalSid>enum-2272878300</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа и ручной постановки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160259</ns3:sid>
+                                <ns3:externalSid>2020465958-1310348883</ns3:externalSid>
+                                <ns3:name>Каталожный номер</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899270</ns3:sid>
+                                        <ns3:externalSid>enum-2272878302</ns3:externalSid>
+                                        <ns3:qualityDescription>105-005948-00</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160260</ns3:sid>
+                                <ns3:externalSid>2020465962-1514767570</ns3:externalSid>
+                                <ns3:name>Количество флаконов положительного контрольного образца</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899271</ns3:sid>
+                                        <ns3:externalSid>ch-2020465962</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160261</ns3:sid>
+                                <ns3:externalSid>2020465964-1353307555</ns3:externalSid>
+                                <ns3:name>Минимальный остаточный срок годности на дату поставки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899272</ns3:sid>
+                                        <ns3:externalSid>ch-2020465964</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>362</ns2:code>
+                                            <ns2:nationalCode>мес</ns2:nationalCode>
+                                            <ns2:name>Месяц</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160262</ns3:sid>
+                                <ns3:externalSid>2020465966-1491672956</ns3:externalSid>
+                                <ns3:name>Объем флакона положительного контрольного образца</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899273</ns3:sid>
+                                        <ns3:externalSid>ch-2020465966</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160263</ns3:sid>
+                                <ns3:externalSid>2020465968-1323734777</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899274</ns3:sid>
+                                        <ns3:externalSid>enum-2272878312</ns3:externalSid>
+                                        <ns3:qualityDescription>Анализатор серии CL</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160264</ns3:sid>
+                                <ns3:externalSid>2020465970-1300500466</ns3:externalSid>
+                                <ns3:name>Форма выпуска</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899275</ns3:sid>
+                                        <ns3:externalSid>enum-2272878314</ns3:externalSid>
+                                        <ns3:qualityDescription>Готовый к применению</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160265</ns3:sid>
+                                <ns3:externalSid>2020465971-1304148559</ns3:externalSid>
+                                <ns3:name>Область применения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899276</ns3:sid>
+                                        <ns3:externalSid>enum-2272878315</ns3:externalSid>
+                                        <ns3:qualityDescription>Для использования при качественном определении общих антител к бактерии Treponema pallidum</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160266</ns3:sid>
+                                <ns3:externalSid>2020465972-1300574284</ns3:externalSid>
+                                <ns3:name>Требования к комплектации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899277</ns3:sid>
+                                        <ns3:externalSid>enum-2272878316</ns3:externalSid>
+                                        <ns3:qualityDescription>Сыворотка контрольная положительная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>для совместимости с аппаратом Заказчика</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name> Treponema pallidum общие антитела ИВД, контрольный материал</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7057.11</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:trademarkInfo>
+                        <ns3:trademark>mindray</ns3:trademark>
+                    </ns3:trademarkInfo>
+                    <ns3:quantity>
+                        <ns3:value>15.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>105856.65</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226281330</ns3:sid>
+                    <ns3:externalSid>251930018-1700279072</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>21.20.23.110-00003107</ns2:code>
+                        <ns2:name> Treponema pallidum общие антитела ИВД, контрольный материал</ns2:name>
+                        <ns2:versionId>57152</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>338160276</ns3:sid>
+                                <ns3:externalSid>2020465974-1308061704</ns3:externalSid>
+                                <ns3:code>55f048cf-7</ns3:code>
+                                <ns3:name>Объем реагента</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899287</ns3:sid>
+                                        <ns3:externalSid>enum-2272878318</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160268</ns3:sid>
+                                <ns3:externalSid>2020465973-1306677499</ns3:externalSid>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899279</ns3:sid>
+                                        <ns3:externalSid>enum-2272878317</ns3:externalSid>
+                                        <ns3:qualityDescription>Для анализаторов открытого типа и ручной постановки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160269</ns3:sid>
+                                <ns3:externalSid>2020465978-1584656456</ns3:externalSid>
+                                <ns3:name>Количество флаконов отрицательного контрольного образца</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899280</ns3:sid>
+                                        <ns3:externalSid>ch-2020465978</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160270</ns3:sid>
+                                <ns3:externalSid>2020465981-1353307555</ns3:externalSid>
+                                <ns3:name>Минимальный остаточный срок годности на дату поставки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899281</ns3:sid>
+                                        <ns3:externalSid>ch-2020465981</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>362</ns2:code>
+                                            <ns2:nationalCode>мес</ns2:nationalCode>
+                                            <ns2:name>Месяц</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160271</ns3:sid>
+                                <ns3:externalSid>2020465982-1491672957</ns3:externalSid>
+                                <ns3:name>Объем флакона отрицательного контрольного образца</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899282</ns3:sid>
+                                        <ns3:externalSid>ch-2020465982</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160272</ns3:sid>
+                                <ns3:externalSid>2020465985-1323734777</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899283</ns3:sid>
+                                        <ns3:externalSid>enum-2272878329</ns3:externalSid>
+                                        <ns3:qualityDescription>Анализатор серии CL</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160273</ns3:sid>
+                                <ns3:externalSid>2020465987-1300500466</ns3:externalSid>
+                                <ns3:name>Форма выпуска</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899284</ns3:sid>
+                                        <ns3:externalSid>enum-2272878331</ns3:externalSid>
+                                        <ns3:qualityDescription>Готовый к применению</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160274</ns3:sid>
+                                <ns3:externalSid>2020465988-1304148559</ns3:externalSid>
+                                <ns3:name>Область применения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899285</ns3:sid>
+                                        <ns3:externalSid>enum-2272878332</ns3:externalSid>
+                                        <ns3:qualityDescription>Для использования при качественном определении общих антител к бактерии Treponema pallidum</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160275</ns3:sid>
+                                <ns3:externalSid>2020465989-1300574284</ns3:externalSid>
+                                <ns3:name>Требования к комплектации</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899286</ns3:sid>
+                                        <ns3:externalSid>enum-2272878333</ns3:externalSid>
+                                        <ns3:qualityDescription>Сыворотка контрольная отрицательная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>для совместимости с анализатором Заказчика</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>21.20.23.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Реагенты диагностические</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name> Treponema pallidum общие антитела ИВД, контрольный материал</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7057.11</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:trademarkInfo>
+                        <ns3:trademark>mindray</ns3:trademark>
+                    </ns3:trademarkInfo>
+                    <ns3:quantity>
+                        <ns3:value>15.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>105856.65</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226281331</ns3:sid>
+                    <ns3:externalSid>251930019-1698155528</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>21.20.23.111</ns2:OKPDCode>
+                        <ns2:OKPDName>Препараты диагностические</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160277</ns3:sid>
+                                <ns3:externalSid>2020465990-1304148559</ns3:externalSid>
+                                <ns3:name>Область применения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899288</ns3:sid>
+                                        <ns3:externalSid>enum-2272878334</ns3:externalSid>
+                                        <ns3:qualityDescription>Для качественного определения антител к ядерному антигену вируса гепатита В</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160278</ns3:sid>
+                                <ns3:externalSid>2020465991-1310348883</ns3:externalSid>
+                                <ns3:name>Каталожный номер</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899289</ns3:sid>
+                                        <ns3:externalSid>enum-2272878335</ns3:externalSid>
+                                        <ns3:qualityDescription>105-004302-00</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160279</ns3:sid>
+                                <ns3:externalSid>2020465992-1334739485</ns3:externalSid>
+                                <ns3:name>Количество определений</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899290</ns3:sid>
+                                        <ns3:externalSid>ch-2020465992</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160280</ns3:sid>
+                                <ns3:externalSid>2020465994-1334184658</ns3:externalSid>
+                                <ns3:name>Количество флаконов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899291</ns3:sid>
+                                        <ns3:externalSid>ch-2020465994</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160281</ns3:sid>
+                                <ns3:externalSid>2020465995-1319288664</ns3:externalSid>
+                                <ns3:name>Метод исследования</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899292</ns3:sid>
+                                        <ns3:externalSid>enum-2272878339</ns3:externalSid>
+                                        <ns3:qualityDescription>Иммунохемилюминесцентный анализ</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160282</ns3:sid>
+                                <ns3:externalSid>2020465996-1353307555</ns3:externalSid>
+                                <ns3:name>Минимальный остаточный срок годности на дату поставки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899293</ns3:sid>
+                                        <ns3:externalSid>ch-2020465996</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>362</ns2:code>
+                                            <ns2:nationalCode>мес</ns2:nationalCode>
+                                            <ns2:name>Месяц</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160283</ns3:sid>
+                                <ns3:externalSid>2020465997-1300733810</ns3:externalSid>
+                                <ns3:name>Объем флакона</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899294</ns3:sid>
+                                        <ns3:externalSid>ch-2020465997</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160284</ns3:sid>
+                                <ns3:externalSid>2020465998-1323734777</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899295</ns3:sid>
+                                        <ns3:externalSid>enum-2272878342</ns3:externalSid>
+                                        <ns3:qualityDescription>Анализатор серии CL</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Вирус гепатита В общие антитела к ядерному антигену ИВД, калибратор</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>11273.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:trademarkInfo>
+                        <ns3:trademark>mindray</ns3:trademark>
+                    </ns3:trademarkInfo>
+                    <ns3:quantity>
+                        <ns3:value>8.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>90184.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226281332</ns3:sid>
+                    <ns3:externalSid>251930020-1715729900</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>21.20.23.111</ns2:OKPDCode>
+                        <ns2:OKPDName>Препараты диагностические</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160285</ns3:sid>
+                                <ns3:externalSid>2020465999-1304148559</ns3:externalSid>
+                                <ns3:name>Область применения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899296</ns3:sid>
+                                        <ns3:externalSid>enum-2272878343</ns3:externalSid>
+                                        <ns3:qualityDescription>Для контроля качества определения антител к ядерному антигену вируса гепатита В в клиническом образце</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160286</ns3:sid>
+                                <ns3:externalSid>2020466000-1323734777</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899297</ns3:sid>
+                                        <ns3:externalSid>enum-2272878344</ns3:externalSid>
+                                        <ns3:qualityDescription>Анализатор серии CL</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160287</ns3:sid>
+                                <ns3:externalSid>2020466001-1310348883</ns3:externalSid>
+                                <ns3:name>Каталожный номер</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899298</ns3:sid>
+                                        <ns3:externalSid>enum-2272878345</ns3:externalSid>
+                                        <ns3:qualityDescription>105-005190-00</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160288</ns3:sid>
+                                <ns3:externalSid>2020466002-1334184658</ns3:externalSid>
+                                <ns3:name>Количество флаконов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899299</ns3:sid>
+                                        <ns3:externalSid>ch-2020466002</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160289</ns3:sid>
+                                <ns3:externalSid>2020466003-1319288664</ns3:externalSid>
+                                <ns3:name>Метод исследования</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899300</ns3:sid>
+                                        <ns3:externalSid>enum-2272878347</ns3:externalSid>
+                                        <ns3:qualityDescription>Иммунохемилюминесцентный анализ</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160290</ns3:sid>
+                                <ns3:externalSid>2020466004-1353307555</ns3:externalSid>
+                                <ns3:name>Минимальный остаточный срок годности на дату поставки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899301</ns3:sid>
+                                        <ns3:externalSid>ch-2020466004</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>362</ns2:code>
+                                            <ns2:nationalCode>мес</ns2:nationalCode>
+                                            <ns2:name>Месяц</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160291</ns3:sid>
+                                <ns3:externalSid>2020466005-1334184259</ns3:externalSid>
+                                <ns3:name>Объем одного флакона</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899302</ns3:sid>
+                                        <ns3:externalSid>ch-2020466005</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Вирус гепатита В антитела к ядерному антигену, контрольный материал</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7366.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:trademarkInfo>
+                        <ns3:trademark>mindray</ns3:trademark>
+                    </ns3:trademarkInfo>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>73660.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226281333</ns3:sid>
+                    <ns3:externalSid>251930021-1715729900</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>21.20.23.111</ns2:OKPDCode>
+                        <ns2:OKPDName>Препараты диагностические</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160292</ns3:sid>
+                                <ns3:externalSid>2020466007-1304148559</ns3:externalSid>
+                                <ns3:name>Область применения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899303</ns3:sid>
+                                        <ns3:externalSid>enum-2272878351</ns3:externalSid>
+                                        <ns3:qualityDescription>Для контроля качества определения антител к ядерному антигену вируса гепатита В в клиническом образце</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160293</ns3:sid>
+                                <ns3:externalSid>2020466008-1323734777</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899304</ns3:sid>
+                                        <ns3:externalSid>enum-2272878352</ns3:externalSid>
+                                        <ns3:qualityDescription>Анализатор серии CL</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160294</ns3:sid>
+                                <ns3:externalSid>2020466009-1310348883</ns3:externalSid>
+                                <ns3:name>Каталожный номер</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899305</ns3:sid>
+                                        <ns3:externalSid>enum-2272878353</ns3:externalSid>
+                                        <ns3:qualityDescription>105-005189-00</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160295</ns3:sid>
+                                <ns3:externalSid>2020466010-1334184658</ns3:externalSid>
+                                <ns3:name>Количество флаконов</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899306</ns3:sid>
+                                        <ns3:externalSid>ch-2020466010</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160296</ns3:sid>
+                                <ns3:externalSid>2020466011-1319288664</ns3:externalSid>
+                                <ns3:name>Метод исследования</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899307</ns3:sid>
+                                        <ns3:externalSid>enum-2272878355</ns3:externalSid>
+                                        <ns3:qualityDescription>Иммунохемилюминесцентный анализ</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160297</ns3:sid>
+                                <ns3:externalSid>2020466012-1353307555</ns3:externalSid>
+                                <ns3:name>Минимальный остаточный срок годности на дату поставки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899308</ns3:sid>
+                                        <ns3:externalSid>ch-2020466012</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>362</ns2:code>
+                                            <ns2:nationalCode>мес</ns2:nationalCode>
+                                            <ns2:name>Месяц</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338160298</ns3:sid>
+                                <ns3:externalSid>2020466013-1334184259</ns3:externalSid>
+                                <ns3:name>Объем одного флакона</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436899309</ns3:sid>
+                                        <ns3:externalSid>ch-2020466013</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Вирус гепатита В антитела к ядерному антигену, контрольный материал</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7366.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:trademarkInfo>
+                        <ns3:trademark>mindray</ns3:trademark>
+                    </ns3:trademarkInfo>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>73660.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>1314777.30</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:prefValue>100.0</ns3:prefValue>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

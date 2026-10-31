@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEOK2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44423456</id>
+    <versionNumber>2</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0372100049226000587</purchaseNumber>
+        <docNumber>№ИИ1</docNumber>
+        <directDT>2026-10-28T16:19:51.347+03:00</directDT>
+        <plannedPublishDate>2026-10-29+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T15:02:51.725+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ok20/view/common-info.html?regNumber=0372100049226000587</href>
+        <placingWay>
+            <ns2:code>OKP20</ns2:code>
+            <ns2:name>Открытый конкурс в электронной форме</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по охране зданий и прилегающей территории ФГБУ «РНЦРХТ им. ак. А.М. Гранова» Минздрава России в 2027 году</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03721000492</regNum>
+            <consRegistryNum>001X3059</consRegistryNum>
+            <fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "РОССИЙСКИЙ НАУЧНЫЙ ЦЕНТР РАДИОЛОГИИ И ХИРУРГИЧЕСКИХ ТЕХНОЛОГИЙ ИМЕНИ АКАДЕМИКА А.М. ГРАНОВА" МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ</fullName>
+            <shortName>ФГБУ "РНЦРХТ ИМ. АК. А.М. ГРАНОВА" МИНЗДРАВА РОССИИ</shortName>
+            <postAddress>Российская Федерация, 197758, Санкт-Петербург, Песочный п, УЛ ЛЕНИНГРАДСКАЯ, 70</postAddress>
+            <factAddress>Российская Федерация, 197758, Санкт-Петербург г, Песочный п., Ленинградская ул, Д.70</factAddress>
+            <INN>7821007633</INN>
+            <KPP>784301001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 197758, Санкт-Петербург, Песочный п, УЛ ЛЕНИНГРАДСКАЯ, 70</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 197758, Санкт-Петербург г, Песочный п., Ленинградская ул, Д.70</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Гессель</ns3:lastName>
+                <ns3:firstName>Юрий</ns3:firstName>
+                <ns3:middleName>Михайлович</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>rentgen-spb@bk.ru</contactEMail>
+            <contactPhone>8-812-5966625</contactPhone>
+            <addInfo>Ответственное лицо за размещение закупки Биченкова Е.Н.</addInfo>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0372100049226000587</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1828D75077923A8B70D57FD90FA64</ns3:publishedContentId>
+            <ns3:fileName>НМЦК обоснование метода расчета.docx</ns3:fileName>
+            <ns3:fileSize>19507</ns3:fileSize>
+            <ns3:docDescription>НМЦК обоснование метода расчета</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:47:51+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1828D75077923A8B70D57FD90FA64</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1828CFA947C689B3C95309B89C079</ns3:publishedContentId>
+            <ns3:fileName>НМЦК расчет услуг охраны 2027 методы.xlsx</ns3:fileName>
+            <ns3:fileSize>60536</ns3:fileSize>
+            <ns3:docDescription>НМЦК расчет услуг охраны 2027 методы</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:47:19+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1828CFA947C689B3C95309B89C079</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18293610371ED841EDE70FA00505E</ns3:publishedContentId>
+            <ns3:fileName>2. ПРОЕКТ КОНТРАКТА (1).doc</ns3:fileName>
+            <ns3:fileSize>335872</ns3:fileSize>
+            <ns3:docDescription>2. ПРОЕКТ КОНТРАКТА (1)</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:54:19+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18293610371ED841EDE70FA00505E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1828E093F7C159EF3B9082C5701F7</ns3:publishedContentId>
+            <ns3:fileName>3. ОПИСАНИЕ ОБЪЕКТА ЗАКУПКИ.docx</ns3:fileName>
+            <ns3:fileSize>59019</ns3:fileSize>
+            <ns3:docDescription>3. ОПИСАНИЕ ОБЪЕКТА ЗАКУПКИ</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:48:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1828E093F7C159EF3B9082C5701F7</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1828E2953740D8EDF5CC83123078C</ns3:publishedContentId>
+            <ns3:fileName>5. ТРЕБОВАВНИЯ К СОДЕРЖАНИЮ И СОСТАВУ ЗАЯВКИ (1).docx</ns3:fileName>
+            <ns3:fileSize>37368</ns3:fileSize>
+            <ns3:docDescription>5. ТРЕБОВАВНИЯ К СОДЕРЖАНИЮ И СОСТАВУ ЗАЯВКИ (1)</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:48:37+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1828E2953740D8EDF5CC83123078C</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1828F83B67C8BA75559E6AA0BBB10</ns3:publishedContentId>
+            <ns3:fileName>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ.docx</ns3:fileName>
+            <ns3:fileSize>41645</ns3:fileSize>
+            <ns3:docDescription>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:50:05+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1828F83B67C8BA75559E6AA0BBB10</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1828E7F82733DB6EAAF1FBAB4056E</ns3:publishedContentId>
+            <ns3:fileName>4_ПОРЯДОК_РАССМОТРЕНИЯ_И_ОЦЕНКИ_ЗАЯВОК_НА_УЧАСТИЕ_В_КОНКУРСЕ (1).docx</ns3:fileName>
+            <ns3:fileSize>66587</ns3:fileSize>
+            <ns3:docDescription>4_ПОРЯДОК_РАССМОТРЕНИЯ_И_ОЦЕНКИ_ЗАЯВОК_НА_УЧАСТИЕ_В_КОНКУРСЕ (1)</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:48:59+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1828E7F82733DB6EAAF1FBAB4056E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>OCA</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T13:08:13+03:00</startDT>
+                <endDT>2026-11-16T08:00:00+03:00</endDT>
+            </collectingInfo>
+            <firstPartsDate>2026-11-17+03:00</firstPartsDate>
+            <submissionProcedureDate>2026-11-18+03:00</submissionProcedureDate>
+            <secondPartsDate>2026-11-19+03:00</secondPartsDate>
+            <summarizingDate>2026-11-20+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>42999160.80</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+            <contractMultiInfo>
+                <notProvided>true</notProvided>
+            </contractMultiInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03721000492</ns2:regNum>
+                    <ns2:consRegistryNum>001X3059</ns2:consRegistryNum>
+                    <ns2:fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "РОССИЙСКИЙ НАУЧНЫЙ ЦЕНТР РАДИОЛОГИИ И ХИРУРГИЧЕСКИХ ТЕХНОЛОГИЙ ИМЕНИ АКАДЕМИКА А.М. ГРАНОВА" МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>2149958.04</amount>
+                    <account>
+                        <ns3:bik>012202102</ns3:bik>
+                        <ns3:settlementAccount>03214643000000013225</ns3:settlementAccount>
+                        <ns3:personalAccount>20726X30590</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ВВГУ Банка России//УФК по Нижегородской области, г Нижний Новгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000024</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>В соответствии с положениями 44 ФЗ</procedureInfo>
+                    <part>5.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>4299916.08</amount>
+                    <account>
+                        <ns3:bik>012202102</ns3:bik>
+                        <ns3:settlementAccount>03214643000000013225</ns3:settlementAccount>
+                        <ns3:personalAccount>20726X30590</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ВВГУ Банка России//УФК по Нижегородской области, г Нижний Новгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000024</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>В соответствии с положениями 44 ФЗ</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>42999160.80</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>261782100763378430100100520018010244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>80.10</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги охранных служб, в том числе частных</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>17821007633784301001</customerCode>
+                        <purchaseNumber>0052</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603721000492001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603721000492001000049</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>42999160.80</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>42999160.80</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22401631</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>42999160.80</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>42999160.80</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>42999160.80</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>42999160.80</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>42999160.80</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62315586</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>5363ee4b-de64-4700-b8e4-04b9170a1700</ns3:GARGuid>
+                                <ns3:GARAddress>г. Санкт-Петербург, вн.тер.г. поселок Песочный, ул. Ленинградская, д. 70 литера А</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>Гарантия качества на оказываемые услуги предоставляется на весь срок действия Контракта.</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225626983</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>80.10.12.000-00000002</ns2:code>
+                        <ns2:name>Услуги частной охраны (Выставление поста охраны)</ns2:name>
+                        <ns2:versionId>406761</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336310556</ns3:sid>
+                                <ns3:code>acff5aed-7</ns3:code>
+                                <ns3:name>Наличие оружия у сотрудников охраны</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435823206</ns3:sid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336310555</ns3:sid>
+                                <ns3:code>0fcd0ac6-9</ns3:code>
+                                <ns3:name>Наличие оружия у сотрудников мобильной группы</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435823205</ns3:sid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337405180</ns3:sid>
+                                <ns3:code>2ad07d66-c</ns3:code>
+                                <ns3:name>Виды специальных средств охраны</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435823207</ns3:sid>
+                                        <ns3:qualityDescription>Не используется</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336310554</ns3:sid>
+                                <ns3:code>6b7c898c-3</ns3:code>
+                                <ns3:name>Использование мобильной группы</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435823204</ns3:sid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336310553</ns3:sid>
+                                <ns3:code>27f9212f-9</ns3:code>
+                                <ns3:name>Вид услуги по охране</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435823202</ns3:sid>
+                                        <ns3:qualityDescription>Охрана принадлежащих заказчику на праве собственности или ином законном основании охраняемых объектов, обеспечение пропускного режима на объектах, в отношении которых установлены обязательные для выполнения требования к антитеррористической защищенности</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>435823203</ns3:sid>
+                                        <ns3:qualityDescription>Охрана принадлежащих заказчику на праве собственности или ином законном основании охраняемых объектов, обеспечение внутриобъектового режима на объектах, в отношении которых установлены обязательные для выполнения требования к антитеррористической защищенности</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>80.10.12.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги охраны</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги частной охраны (Выставление поста охраны)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>539</ns2:code>
+                        <ns2:nationalCode>ЧЕЛ.Ч</ns2:nationalCode>
+                        <ns2:name>Человеко-час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>288.74</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>148920.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>42999160.80</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>42999160.80</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <criteriaInfo>
+            <isCertainWorks>false</isCertainWorks>
+            <criterionInfo>
+                <qualitativeCriterionInfo>
+                    <code>QF</code>
+                    <valueInfo>
+                        <value>25.00</value>
+                    </valueInfo>
+                </qualitativeCriterionInfo>
+            </criterionInfo>
+            <criterionInfo>
+                <costCriterionInfo>
+                    <code>CP</code>
+                    <valueInfo>
+                        <value>40.00</value>
+                    </valueInfo>
+                </costCriterionInfo>
+            </criterionInfo>
+            <criterionInfo>
+                <qualitativeCriterionInfo>
+                    <code>QO</code>
+                    <valueInfo>
+                        <value>35.00</value>
+                    </valueInfo>
+                </qualitativeCriterionInfo>
+            </criterionInfo>
+        </criteriaInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU44</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS36BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии с позицией 34 раздела VI приложения к ПП РФ от 29.12.2021 № 2571</ns3:name>
+                        <ns3:content>Наличие опыта исполнения участником закупки договора, предусматривающего оказание услуг по обеспечению охраны объектов (территорий). Цена оказанных услуг должна составлять не менее 20 процентов от начальной (максимальной) цены контракта, заключаемого по результатам определения поставщика (подрядчика, исполнителя). Информация и документы, подтверждающие соответствие участников закупки дополнительным требованиям: 1) исполненный договор; 2) акт приемки оказанных услуг, подтверждающий цену оказанных услуг</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>Требования к наличию лицензии у Исполнителя по данному виду услуг: Участник закупки должен обладать наличием действующей лицензии на осуществление частной охранной деятельности, предусматривающей следующие виды услуг:  охрана принадлежащих заказчику на праве собственности или ином законном основании охраняемых объектов, обеспечение внутриобъектового режима и пропускного режима на объектах, в отношении которых установлены обязательные для выполнения требования к антитеррористической защищенности, за исключением объектов, предусмотренных частью 2 статьи 4 Федерального закона N 427-ФЗ&#13;
+         Или&#13;
+*(в связи с переходным периодом, в Законодательстве)охрана объектов и (или) имущества, а также обеспечение внутриобъектового и пропускного режимов на объектах, в отношении которых установлены обязательные для выполнения требования к антитеррористической защищенности, за исключением объектов, предусмотренных частью третьей статьи 11 Закона от 11.03.1992 N 2487-1.&#13;
+</ns3:content>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TOVNPIVR</ns2:shortName>
+                    <ns2:name>Требование об отсутствии в реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации, включенной в такой реестр в связи отказом поставщика (подрядчика, исполнителя) от исполнения контракта по причине введения в отношении заказчика санкций и (или) мер ограничительного характера</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+            <competitionCh19St48>false</competitionCh19St48>
+        </flags>
+    </notificationInfo>
+    <modificationInfo>
+        <info>Техническая ошибка</info>
+        <reasonInfo>
+            <responsibleDecisionInfo>
+                <decisionDate>2026-10-29+03:00</decisionDate>
+            </responsibleDecisionInfo>
+        </reasonInfo>
+    </modificationInfo>
+</ns8:epNotificationEOK2020>

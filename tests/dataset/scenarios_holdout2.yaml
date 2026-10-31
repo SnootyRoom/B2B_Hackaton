@@ -1,0 +1,1401 @@
+# КОНТРОЛЬНАЯ ВЫБОРКА №2 (роль 2): 120 сценариев, 40 / 41 / 39. Собрана 31.10.2026 после того,
+# как первая (scenarios_holdout.yaml) была использована для настройки. На ней скоринг НЕ настраивался.
+#
+# Дата оценки 2026-11-01 (as_of, 00:00 МСК): оценивать на эту дату, не на текущую.
+# Восемь профилей: четыре организаторов и четыре новых (охрана, лекарства «только 44-ФЗ», разработка ПО
+# «по всей России», спецодежда), которых система не видела ни при настройке, ни в прошлых выборках.
+# Все закупки — реальные извещения ЕИС 2026 года, не пересекаются с data/samples и прошлыми наборами.
+#
+# Разметка — рубрика по тексту профиля, зафиксирована до сбора закупок и до запуска системы:
+#   participate — предмет в специализации, регион свой (у ПО регион не важен), сумма в диапазоне,
+#                 способ и закон подходят;
+#   consider    — предмет в специализации, но одно-два мягких отклонения: чужой регион, сумма за
+#                 границей не больше чем в 2 раза, другой способ;
+#   skip        — предмет вне специализации (в т. ч. смежный: проектирование для стройки, лицензии для
+#                 разработчика ПО, обслуживание вместо поставки), сумма за границей больше чем в 2 раза,
+#                 нарушено «только 44-ФЗ», три мягких отклонения сразу, срок подачи истёк.
+# Предмет определялся ключевыми словами; при просмотре отбора (без запуска системы) исправлены ошибки
+# ключевых слов («цод» внутри «спецодежды», предлог «по» как «ПО»), явные промахи помечены «решение по
+# предмету вручную», сомнительные закупки исключены. Почти одинаковых предметов — не больше двух.
+# Для канцтоваров, IT-интегратора и спецодежды открытых закупок в своём регионе в ЕИС не нашлось:
+# «участвовать» собрано по пяти профилям.
+# После первого прогона (97/120 = 81%) при разборе ошибок найдена одна ошибка разметки: g093 (реагенты
+# для анализатора) — профиль медицины, «рассмотреть», а не «пропустить». Других правок нет.
+
+as_of: '2026-11-01'
+profiles:
+  profile_a_construction_company:
+    text: 'Мы опытная строительная компания из Московской области "СтройРегион-Инвест". Специализация: строительство
+      школ, детсадов, административных зданий, кровельные и восстановительные работы. Есть СРО, собственная техника,
+      120 сотрудников. Годовая выручка 350 млн руб. Интересны конкурсы и аукционы на строительные работы от 5 до
+      50 млн руб.
+
+      '
+  profile_b_office_supplies:
+    text: 'Мы маленькая компания "Вектор" из Тверской области. Специализация: поставка канцтоваров, мелкий ремонт
+      офисов. 4 сотрудника, годовая выручка 12 млн руб. Опыт в госзакупках 1.5 года, 3 контракта. Нет СРО на строительство.
+      Интересны небольшие запросы котировок до 2 млн руб.
+
+      '
+  profile_c_medical_suppliers:
+    text: 'Мы компания "МедТехСнаб" из Камчатского края. Специализация: поставка медицинского оборудования, лабораторных
+      реагентов и расходных материалов для государственных больниц. Годовая выручка 80 млн руб. Интересны закупки
+      от 500 тыс. до 30 млн руб. Работаем только по 44-ФЗ.
+
+      '
+  profile_d_it:
+    text: 'Мы IT-интегратор "ПримТех" из Приморского края. Специализация: комплексная поставка и монтаж IT-инфраструктуры,
+      включая серверное оборудование, системы хранения данных (СХД), прокладку ВОЛС и монтаж камер видеонаблюдения.
+      Есть опыт пусконаладки оборудования в ЦОД, все необходимые лицензии и допуски СРО. Годовая выручка 150 млн
+      руб. Интересны закупки от 5 млн до 100 млн руб. Готовы предоставить гарантию на оборудование от 24 месяцев.
+
+      '
+  profile_i_security:
+    text: 'Частная охранная организация "Щит" из Республики Татарстан. Оказываем услуги физической и пультовой охраны
+      объектов, монтируем и обслуживаем охранно-пожарную сигнализацию. Есть лицензия Росгвардии, 300 сотрудников.
+      Интересны конкурсы и аукционы от 1 до 30 млн руб.
+
+      '
+  profile_j_pharma:
+    text: 'ООО "ДонФарм" из Ростовской области — дистрибьютор лекарственных препаратов. Поставляем лекарственные
+      препараты в больницы и поликлиники. Интересны аукционы от 300 тыс. до 20 млн руб. Работаем только по 44-ФЗ.
+
+      '
+  profile_k_software:
+    text: 'Компания "СибСофт" из Новосибирска. Разрабатываем, внедряем и сопровождаем программное обеспечение и
+      информационные системы, оказываем техническую поддержку пользователей. Работаем с заказчиками по всей России.
+      Интересны закупки от 300 тыс. до 10 млн руб.
+
+      '
+  profile_l_workwear:
+    text: 'ООО "ТекстильПро" из Ивановской области. Шьём и поставляем спецодежду, форменную одежду, средства индивидуальной
+      защиты (перчатки, спецобувь), постельное бельё для больниц. Интересны аукционы и запросы котировок от 200
+      тыс. до 5 млн руб.
+
+      '
+scenarios:
+- id: g001
+  file: data/samples/0373100095226000923.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Выполнение работ по капитальному ремонту фасада и крылец по адресу г. Москва, Рублевское ш; Москва,
+    9,95 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g002
+  file: data/samples/0373200006226001695.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Выполнение работ по внутреннему интерьеру в рамках капитального ремонта помещений ГБУ «ОКЦ; Москва,
+    10,97 млн ₽, конкурс, 44-ФЗ — все условия профиля выполнены
+- id: g003
+  file: data/samples/0373200041526001073.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Выполнение работ по капитальному ремонту в учреждении, подведомственном ДТСЗН г.Москвы (За; Московская
+    область, 16,80 млн ₽, конкурс, 44-ФЗ — все условия профиля выполнены
+- id: g004
+  file: data/samples/0373200041526001078.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Выполнение работ по капитальному ремонту в учреждении, подведомственном ДТСЗН г.Москвы (За; Москва,
+    29,94 млн ₽, конкурс, 44-ФЗ — все условия профиля выполнены
+- id: g005
+  file: data/samples/0848300047226000674.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: 'Выполнение работ по текущему ремонту помещений административного здания по адресу: Московс; Московская
+    область, 12,00 млн ₽, конкурс, 44-ФЗ — все условия профиля выполнены'
+- id: g006
+  file: data/samples/32616480376.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Выполнение работ по капитальному ремонту многофункционального центра предоставления госуда; Москва,
+    49,43 млн ₽, конкурс, 223-ФЗ — все условия профиля выполнены
+- id: g007
+  file: data/samples/32616499436.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Выполнение работ по капитальному ремонту многоквартирного дома; Москва, 32,84 млн ₽, конкурс, 223-ФЗ
+    — все условия профиля выполнены
+- id: g008
+  file: data/samples/0338200007626000132.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка расходного материала к биохимическому анализатору; Камчатский край, 564 тыс. ₽, аукцион, 44-ФЗ
+    — расходный материал для лабораторного анализатора — профиль компании (решение по предмету вручную)
+- id: g009
+  file: data/samples/0338200009826000733.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка расходных материалов для анализатора Easy Stat. Лот №1; Камчатский край, 840 тыс. ₽, аукцион,
+    44-ФЗ — все условия профиля выполнены
+- id: g010
+  file: data/samples/0338200009826000734.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка расходных материалов для анализатора Easy Stat. Лот №2; Камчатский край, 849 тыс. ₽, аукцион,
+    44-ФЗ — все условия профиля выполнены
+- id: g011
+  file: data/samples/0338300003326000175.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка расходного материала для биохимического анализатора серии BS установленного в лаб; Камчатский
+    край, 702 тыс. ₽, запрос котировок, 44-ФЗ — расходный материал для лабораторного анализатора — профиль компании
+    (решение по предмету вручную)
+- id: g012
+  file: data/samples/0338300019626000065.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка медицинского оборудования; Камчатский край, 536 тыс. ₽, запрос котировок, 44-ФЗ — все условия
+    профиля выполнены
+- id: g013
+  file: data/samples/0111100008626000049.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Услуги по техническому обслуживанию и текущему ремонту системы охранно-пожарной сигнализац; Республика
+    Татарстан, 1,30 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g014
+  file: data/samples/0111300036826000037.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Услуги охраны на объектах образовательных учреждений; Республика Татарстан, 3,83 млн ₽, аукцион, 44-ФЗ
+    — все условия профиля выполнены
+- id: g015
+  file: data/samples/0311300098026000047.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по охране территории, объектов ГАУЗ «Клиническая больница №2», по организац; Республика
+    Татарстан, 4,26 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g016
+  file: data/samples/32616523429.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание комплекса услуг по физической охране здания, обеспечения контрольно-пропускного р; Республика
+    Татарстан, 6,43 млн ₽, аукцион, 223-ФЗ — все условия профиля выполнены
+- id: g017
+  file: data/samples/0158200001326001435.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Закупка лекарственных препаратов для обеспечения граждан Российской Федерации, проживающих; Ростовская
+    область, 14,51 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g018
+  file: data/samples/0158200001326001443.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Закупка лекарственных препаратов для обеспечения граждан, имеющих право на получение госуд; Ростовская
+    область, 2,75 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g019
+  file: data/samples/0358100022826000619.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка лекарственного препарата для медицинского применения (МНН-Кислород); Ростовская область, 15,84
+    млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g020
+  file: data/samples/0358200000226001173.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка лекарственных препаратов для медицинского применения; Ростовская область, 1,12 млн ₽, аукцион,
+    44-ФЗ — все условия профиля выполнены
+- id: g021
+  file: data/samples/0358200007026000214.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка лекарственного препарата (МНН Полимиксин В) в 2027 году; Ростовская область, 483 тыс. ₽, аукцион,
+    44-ФЗ — все условия профиля выполнены
+- id: g022
+  file: data/samples/0358200007026000215.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка лекарственного препарата (МНН Инфликсимаб) в 2027 году; Ростовская область, 4,54 млн ₽, аукцион,
+    44-ФЗ — все условия профиля выполнены
+- id: g023
+  file: data/samples/0358200007026000216.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка лекарственного препарата (МНН Адеметионин) в 2027 году; Ростовская область, 950 тыс. ₽, аукцион,
+    44-ФЗ — все условия профиля выполнены
+- id: g024
+  file: data/samples/0358200007026000221.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка лекарственного препарата (МНН Мидостаурин) в 2027 году; Ростовская область, 2,18 млн ₽, аукцион,
+    44-ФЗ — все условия профиля выполнены
+- id: g025
+  file: data/samples/0358300001426000160.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка лекарственных препаратов (Лот СЗЛС Р-1.9) в 2027 году; Ростовская область, 977 тыс. ₽, аукцион,
+    44-ФЗ — все условия профиля выполнены
+- id: g026
+  file: data/samples/0358300079426000750.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Приобретение лекарственных препаратов; Ростовская область, 755 тыс. ₽, аукцион, 44-ФЗ — все условия
+    профиля выполнены
+- id: g027
+  file: data/samples/0358300228826000320.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Закупка лекарственных препаратов; Ростовская область, 422 тыс. ₽, аукцион, 44-ФЗ — все условия профиля
+    выполнены
+- id: g028
+  file: data/samples/0358300280426000411.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка лекарственных препаратов для медицинского применения для обеспечения нужд ГБУ РО ; Ростовская
+    область, 2,92 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g029
+  file: data/samples/0119200000126018839.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: ЭА-№-18516/26 «Оказание услуг по сопровождению государственной информационной системы Крас; Красноярский
+    край, 5,00 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g030
+  file: data/samples/0119200000126018848.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: ЭА-№-18527/26 «Услуги по сопровождению государственной информационной системы «БАРС.Монито; Красноярский
+    край, 1,68 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g031
+  file: data/samples/0128200000126006810.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по техническому сопровождению системного программного обеспечения единой си; Владимирская
+    область, 1,70 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g032
+  file: data/samples/0169300000126001505.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: 26-126647Э Оказание услуг по развитию и информационно-техническому сопровождению муниципал; Челябинская
+    область, 4,75 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g033
+  file: data/samples/0173100001426000025.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по сопровождению государственной информационной системы в сфере защиты прав; Москва,
+    9,90 млн ₽, конкурс, 44-ФЗ — все условия профиля выполнены
+- id: g034
+  file: data/samples/0321300002126000113.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: оказание услуг по сопровождению автоматизированной системы управления «Управление станцией; Ставропольский
+    край, 420 тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g035
+  file: data/samples/0335500001026000046.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по технической поддержке государственной информационной системы Калининград; Калининградская
+    область, 3,00 млн ₽, запрос котировок, 44-ФЗ — все условия профиля выполнены
+- id: g036
+  file: data/samples/0346200018526000071.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: № 26-ЭА-71 Работы по разработке, модернизации и технической поддержке информационных систе; Липецкая
+    область, 1,52 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g037
+  file: data/samples/0361200015026004683.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по технической поддержке и обслуживанию государственной информационной сист; Сахалинская
+    область, 2,03 млн ₽, запрос котировок, 44-ФЗ — все условия профиля выполнены
+- id: g038
+  file: data/samples/0817200000326016681.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по технической поддержке программного обеспечения лабораторной информационн; Алтайский
+    край, 463 тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g039
+  file: data/samples/0817200000326016686.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по технической поддержке программного обеспечения лабораторной информационн; Алтайский
+    край, 516 тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: g040
+  file: data/samples/32616534559.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по технической поддержке и обслуживанию автоматизированной информационной с; Москва,
+    2,77 млн ₽, конкурс, 223-ФЗ — все условия профиля выполнены
+- id: g041
+  file: data/samples/0121200004726001367.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Капитальный ремонт здания МБОУ СОШ 9 с. Розовка; Ставропольский край, 83,71 млн ₽, конкурс, 44-ФЗ —
+    профильно, но сумма немного вне диапазона 5,00 млн–50,00 млн, чужой регион
+- id: g042
+  file: data/samples/0121200004726001382.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Капитальный ремонт здания МОУ СОШ № 10, с. Зелёная Роща; Ставропольский край, 82,83 млн ₽, аукцион,
+    44-ФЗ — профильно, но сумма немного вне диапазона 5,00 млн–50,00 млн, чужой регион
+- id: g043
+  file: data/samples/0124300016626000117.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Выполнение работ по капитальному ремонту здания СП «Детский сад «Сказка» МБОУ «Красноборск; Архангельская
+    область, 59,81 млн ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 5,00 млн–50,00 млн, чужой регион
+- id: g044
+  file: data/samples/0843500000226006267.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: 'Капитальный ремонт здания МБОУ "Гимназия 47" по адресу: г. Курган, ул. Зорге, д. 37; Курганская область,
+    71,56 млн ₽, конкурс, 44-ФЗ — профильно, но сумма немного вне диапазона 5,00 млн–50,00 млн, чужой регион'
+- id: g045
+  file: data/samples/32616521133.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Выполнение работ по ремонту фасада в многоквартирном доме; Москва, 9,48 млн ₽, запрос предложений,
+    223-ФЗ — профильно, но способ вне профиля
+- id: g046
+  file: data/samples/0145300005026000312.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка канцелярских товаров (набор № 2); Ленинградская область, 11 тыс. ₽, запрос котировок, 44-ФЗ
+    — профильно, но чужой регион
+- id: g047
+  file: data/samples/0352100013926000014.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка канцелярских и сопутствующих товаров; Омская область, 28 тыс. ₽, запрос котировок, 44-ФЗ —
+    профильно, но чужой регион
+- id: g048
+  file: data/samples/0362200048626000117.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка канцелярских товаров; Свердловская область, 11 тыс. ₽, запрос котировок, 44-ФЗ — профильно,
+    но чужой регион
+- id: g049
+  file: data/samples/0815500000526013627.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка канцелярских товаров; Чувашская Республика, 2,13 млн ₽, запрос котировок, 44-ФЗ — профильно,
+    но сумма немного вне диапазона 0 тыс.–2,00 млн, чужой регион
+- id: g050
+  file: data/samples/32616533610.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка канцелярских товаров для нужд филиала ППК "Роскадастр" по Воронежской области; Воронежская
+    область, 34 тыс. ₽, запрос котировок, 223-ФЗ — профильно, но чужой регион
+- id: g051
+  file: data/samples/0114500000826002537.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка медицинского расходного материала и изделий медицинского назначения для рентгенэн; Республика
+    Ингушетия, 1,01 млн ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: g052
+  file: data/samples/0338300019626000064.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка медицинского оборудования; Камчатский край, 309 тыс. ₽, запрос котировок, 44-ФЗ — профильно,
+    но сумма немного вне диапазона 500 тыс.–30,00 млн
+- id: g053
+  file: data/samples/0373200020226000210.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка расходных материалов для анализатора "mindray" (Лот 3); Москва, 1,31 млн ₽, аукцион, 44-ФЗ
+    — профильно, но чужой регион
+- id: g054
+  file: data/samples/0826500000926004918.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка медицинских изделий Иглодержатель хирургический, многоразового использования на 2; Белгородская
+    область, 1,43 млн ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: g055
+  file: data/samples/0847500000926002420.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка медицинского изделия (Система рентгеновской компьютерной томографии всего тела), ; Магаданская
+    область, 59,71 млн ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 500 тыс.–30,00 млн, чужой регион
+- id: g056
+  file: data/samples/0148100001926000031.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка системы хранения данных (закупка ИКТ); Московская область, 20,00 млн ₽, запрос котировок,
+    44-ФЗ — профильно, но чужой регион
+- id: g057
+  file: data/samples/0148500001126000033.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка системы хранения данных; Московская область, 24,10 млн ₽, аукцион, 44-ФЗ — профильно, но чужой
+    регион
+- id: g058
+  file: data/samples/0329100007726000037.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка и монтаж системы видеонаблюдения на таможенный пост в ВПП Волгоград (Гумрак) для ; Волгоградская
+    область, 12,32 млн ₽, запрос котировок, 44-ФЗ — профильно, но чужой регион
+- id: g059
+  file: data/samples/0372200060026000026.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Выполнение работ по капитальному ремонту системы видеонаблюдения за сценой и помещениями, ; Санкт-Петербург,
+    17,48 млн ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: g060
+  file: data/samples/32616526411.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка, монтаж и пуско-наладка систем видеонаблюдения на объектах АО «Управление недвижи; Москва,
+    17,54 млн ₽, запрос предложений, 223-ФЗ — профильно, но чужой регион
+- id: g061
+  file: data/samples/0127200000226005849.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по техническому обслуживанию систем пожарной сигнализации, систем оповещени; Брянская
+    область, 734 тыс. ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 1,00 млн–30,00 млн, чужой регион
+- id: g062
+  file: data/samples/0165100003526000041.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг централизованной пультовой охраны с помощью КТС (кнопка тревожной сигнализа; Томская
+    область, 526 тыс. ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 1,00 млн–30,00 млн, чужой регион
+- id: g063
+  file: data/samples/0332100006526000186.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг пультовой охраны при помощи охранно-пожарной сигнализации и кнопки тревожно; Самарская
+    область, 539 тыс. ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 1,00 млн–30,00 млн, чужой регион
+- id: g064
+  file: data/samples/0372100049226000587.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по охране зданий и прилегающей территории ФГБУ «РНЦРХТ им. ак. А.М. Гранова; Санкт-Петербург,
+    43,00 млн ₽, конкурс, 44-ФЗ — профильно, но сумма немного вне диапазона 1,00 млн–30,00 млн, чужой регион
+- id: g065
+  file: data/samples/32616530412.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по обеспечению физической охраны объектов учебных корпусов и общежитий; Иркутская область,
+    41,68 млн ₽, конкурс, 223-ФЗ — профильно, но сумма немного вне диапазона 1,00 млн–30,00 млн, чужой регион
+- id: g066
+  file: data/samples/0131200001026008072.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: 2026-08739**Поставка лекарственного препарата для медицинского применения винпоцетин; Воронежская область,
+    2,01 млн ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: g067
+  file: data/samples/0358300079426000756.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Приобретение лекарственных препаратов; Ростовская область, 333 тыс. ₽, запрос котировок, 44-ФЗ — профильно,
+    но способ вне профиля
+- id: g068
+  file: data/samples/0358300280426000416.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: 'Поставка лекарственного препарата для медицинского применения (МНН: кислород) для обеспече; Ростовская
+    область, 27,08 млн ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 300 тыс.–20,00 млн'
+- id: g069
+  file: data/samples/0373100047426001684.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка лекарственного препарата Гемцитабин для медицинского применения для нужд ФГБУ «НМ; Москва,
+    811 тыс. ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: g070
+  file: data/samples/0873400003926000905.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка лекарственного препарата Мороктоког альфа, лиофилизат для приготовления раствора ; Донецкая
+    Народная Республика, 21,07 млн ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 300 тыс.–20,00
+    млн, чужой регион
+- id: g071
+  file: data/samples/0127200000226005848.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: 'Оказание услуг в области информационных технологий: абонентское обслуживание и сопровожден; Брянская
+    область, 267 тыс. ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 300 тыс.–10,00 млн'
+- id: g072
+  file: data/samples/0162200011826003449.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Выполнение работ по технической поддержке и доработке информационных систем, размещенных в; Свердловская
+    область, 10,50 млн ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 300 тыс.–10,00 млн
+- id: g073
+  file: data/samples/0322200022126000756.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: 'Оказание услуг по сопровождению адаптированного программного обеспечения «1С: Бухгалтерия ; Хабаровский
+    край, 200 тыс. ₽, запрос котировок, 44-ФЗ — профильно, но сумма немного вне диапазона 300 тыс.–10,00 млн'
+- id: g074
+  file: data/samples/0372100001026000516.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по сопровождению и модификации типовых программных продуктов и конфигураций; Санкт-Петербург,
+    206 тыс. ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 300 тыс.–10,00 млн
+- id: g075
+  file: data/samples/0372200113626000063.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: 'Оказание услуг по сопровождению программного продукта «1С: Медицина. Больничная аптека» дл; Санкт-Петербург,
+    167 тыс. ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 300 тыс.–10,00 млн'
+- id: g076
+  file: data/samples/0341200001826000036.xml
+  lot: null
+  profile: profile_l_workwear
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Закупка средств индивидуальной защиты (СИЗ) для нужд ОГБУЗ "Автобаза ДЗКО"; Костромская область, 225
+    тыс. ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: g077
+  file: data/samples/0387200017726000405.xml
+  lot: null
+  profile: profile_l_workwear
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка летней спецодежды; Ханты-Мансийский автономный округ — Югра, 1,12 млн ₽, аукцион, 44-ФЗ —
+    профильно, но чужой регион
+- id: g078
+  file: data/samples/0818500000826007390.xml
+  lot: null
+  profile: profile_l_workwear
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по изготовлению (пошиву) форменной одежды; Краснодарский край, 6,52 млн ₽, запрос котировок,
+    44-ФЗ — профильно, но сумма немного вне диапазона 200 тыс.–5,00 млн, чужой регион
+- id: g079
+  file: data/samples/32616502149.xml
+  lot: null
+  profile: profile_l_workwear
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по изготовлению (пошиву) и поставке форменной одежде для сотрудников Заказч; Тюменская
+    область, 186 тыс. ₽, запрос котировок, 223-ФЗ — профильно, но сумма немного вне диапазона 200 тыс.–5,00 млн,
+    чужой регион
+- id: g080
+  file: data/samples/32616530249.xml
+  lot: null
+  profile: profile_l_workwear
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка спецодежды и спецобуви; Краснодарский край, 346 тыс. ₽, запрос котировок, 223-ФЗ — профильно,
+    но чужой регион
+- id: g081
+  file: data/samples/0133200001726002911.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Выполнение работ по капитальному ремонту системы пожарной сигнализации, системы оповещения; Ивановская
+    область, 5,46 млн ₽, аукцион, 44-ФЗ — капремонт пожарной сигнализации — слаботочные системы, а не здания (решение
+    по предмету вручную)
+- id: g082
+  file: data/samples/0173100003626000009.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по адаптации и сопровождению с использованием установленных у МРИ ФНС Росси; Новосибирская
+    область, 406 тыс. ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g083
+  file: data/samples/0321200006726000013.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 0
+  expected_stop_factor: deadline_passed
+  rationale: Комплект белья постельного; Ставропольский край, 1,10 млн ₽, запрос котировок, 44-ФЗ — приём заявок
+    завершён до 2026-11-01
+- id: g084
+  file: data/samples/32616508562.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Приобретение ультразвуковой системы для офтальмологии; Республика Татарстан, 12,00 млн ₽, аукцион,
+    223-ФЗ — предмет вне специализации
+- id: g085
+  file: data/samples/32616528983.xml
+  lot: null
+  profile: profile_a_construction_company
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по техническому обслуживанию и ремонту систем охранно-пожарной сигнализации; Калужская
+    область, 20,00 млн ₽, аукцион, 223-ФЗ — предмет вне специализации
+- id: g086
+  file: data/samples/0137200001226008327.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка канцелярских товаров прочих; Калужская область, 3,01 млн ₽, аукцион, 44-ФЗ — сумма немного
+    вне диапазона 0 тыс.–2,00 млн, чужой регион, способ вне профиля
+- id: g087
+  file: data/samples/0187300002826000074.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по техническому обслуживанию систем видеонаблюдения и волоконно-оптических ; Ханты-Мансийский
+    автономный округ — Югра, 2,40 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g088
+  file: data/samples/0343100005226000098.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Капитальный ремонт фасадов зданий учебного корпуса № 2 кадастровый № 45:25:070309:388 и № ; Курганская
+    область, 32,66 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g089
+  file: data/samples/0373200027426002233.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Электронный запрос котировок на поставку расходных материалов для анализатора ECL для нужд; Москва,
+    1,46 млн ₽, запрос котировок, 44-ФЗ — предмет вне специализации
+- id: g090
+  file: data/samples/32616521107.xml
+  lot: null
+  profile: profile_b_office_supplies
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка средств индивидуальной защиты для нужд МУП "ЮЖКХ"; Тюменская область, 227 тыс. ₽, иной способ,
+    223-ФЗ — предмет вне специализации
+- id: g091
+  file: data/samples/0119200000126018834.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: ЭА-№-18460/26 «Оказание услуг по техническому обслуживанию автоматической системы пожарной; Красноярский
+    край, 3,60 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g092
+  file: data/samples/0158200001326001433.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Закупка лекарственных препаратов для обеспечения граждан Российской Федерации, проживающих; Ростовская
+    область, 4,28 млн ₽, запрос котировок, 44-ФЗ — предмет вне специализации
+- id: g093
+  file: data/samples/0373100077626000119.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: 'Поставка расходных материалов (реагенты ИВД) для иммунохимического анализатора; Москва, 1,33 млн ₽, запрос котировок, 44-ФЗ — профильно (лабораторные реагенты), но чужой регион; метка исправлена после первого прогона: ключевые слова не распознали реагенты'
+- id: g094
+  file: data/samples/32616526603.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по предоставлению доступа к сети «Интернет» с гарантированной пропускной сп; Ханты-Мансийский
+    автономный округ — Югра, 2,46 млн ₽, запрос котировок, 223-ФЗ — предмет вне специализации
+- id: g095
+  file: data/samples/32616532147.xml
+  lot: null
+  profile: profile_c_medical_suppliers
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Выполнение работ по ремонту медицинских изделий (Магнитно-резонансного томографа Vantage T; Томская
+    область, 1,18 млн ₽, иной способ, 223-ФЗ — компания работает только по 44-ФЗ
+- id: g096
+  file: data/samples/0172200004426000287.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по техническому обслуживанию автоматических систем пожарной сигнализации, г; Санкт-Петербург,
+    2,23 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g097
+  file: data/samples/0372200277526000610.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по комплексному техническому обслуживанию зданий, сооружений, их элементов,; Санкт-Петербург,
+    32,33 млн ₽, конкурс, 44-ФЗ — предмет вне специализации
+- id: g098
+  file: data/samples/0711200011026000814.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка расходных материалов для оказания высокотехнологичной медицинской помощи; Республика Татарстан,
+    1,15 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g099
+  file: data/samples/0869600049826000028.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка спецодежды; Челябинская область, 291 тыс. ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g100
+  file: data/samples/32616479156.xml
+  lot: null
+  profile: profile_d_it
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Выполнение работ по созданию сети волоконно-оптических линий связи по направлению «Сасыр –; Республика
+    Саха (Якутия), 406,00 млн ₽, конкурс, 223-ФЗ — сумма далеко за границами 5,00 млн–100,00 млн
+- id: g101
+  file: data/samples/0111200002426000793.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: поставка, ввод в эксплуатацию медицинских изделий (Кресло-коляска механическая), обучение ; Республика
+    Татарстан, 1,84 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g102
+  file: data/samples/0163200000326005566.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Медицинское изделие (оборудование) -стол операционный универсальный (стол многофункциональ; Смоленская
+    область, 3,87 млн ₽, запрос котировок, 44-ФЗ — предмет вне специализации
+- id: g103
+  file: data/samples/0332100006526000187.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг пультовой охраны при помощи охранно-пожарной сигнализации и кнопки тревожно; Оренбургская
+    область, 317 тыс. ₽, аукцион, 44-ФЗ — сумма далеко за границами 1,00 млн–30,00 млн
+- id: g104
+  file: data/samples/0818500000826007580.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка медицинских изделий (Реагенты для баклаборатории); Краснодарский край, 1,44 млн ₽, аукцион,
+    44-ФЗ — предмет вне специализации
+- id: g105
+  file: data/samples/32616529889.xml
+  lot: null
+  profile: profile_i_security
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по техническому обслуживанию охранно- пожарной и тревожной сигнализации для; Московская
+    область, 896 тыс. ₽, иной способ, 223-ФЗ — сумма немного вне диапазона 1,00 млн–30,00 млн, чужой регион, способ
+    вне профиля
+- id: g106
+  file: data/samples/0131200001026008066.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: 2026-08148*Поставка медицинских изделий (Система внутренней ортопедической фиксации, с пом; Воронежская
+    область, 2,39 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g107
+  file: data/samples/0358200007026000218.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка лекарственного препарата (МНН Ацетилсалициловая кислота) в 2027 году; Ростовская область,
+    66 тыс. ₽, аукцион, 44-ФЗ — сумма далеко за границами 300 тыс.–20,00 млн
+- id: g108
+  file: data/samples/0372100052926000932.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Выполнение работ по постановке на производство и выпуску промышленных партий разработанног; Санкт-Петербург,
+    25,01 млн ₽, аукцион, 44-ФЗ — контрактное производство препарата — не поставка дистрибьютором (решение по предмету
+    вручную)
+- id: g109
+  file: data/samples/0373100047426001687.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка медицинских изделий для нужд ФГБУ "НМХЦ им. Н.И. Пирогова" Минздрава России; Москва, 700 тыс.
+    ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g110
+  file: data/samples/0711200026126000090.xml
+  lot: null
+  profile: profile_j_pharma
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка говядины замороженной; Республика Татарстан, 2,40 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g111
+  file: data/samples/0111200002426000788.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: поставка лекарственных средств (Иксекизумаб) для обеспечения граждан Российской Федерации,; Республика
+    Татарстан, 1,89 млн ₽, запрос котировок, 44-ФЗ — предмет вне специализации
+- id: g112
+  file: data/samples/0322200002826000009.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по сопровождению программных продуктов; Хабаровский край, 100 тыс. ₽, аукцион, 44-ФЗ
+    — сумма далеко за границами 300 тыс.–10,00 млн
+- id: g113
+  file: data/samples/0343200029826000242.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Реагенты диагностические и расходные материалы для КДЛ (Реагенты к анализатору Сапфир); Курганская
+    область, 924 тыс. ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g114
+  file: data/samples/0348300274626000253.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по техническому обслуживанию и ремонту установок водяного и газового пожаро; Московская
+    область, 1,55 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g115
+  file: data/samples/0372200215826000019.xml
+  lot: null
+  profile: profile_k_software
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по адаптации и сопровождению экземпляров Систем КонсультантПлюс на основе с; Санкт-Петербург,
+    510 тыс. ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: g116
+  file: data/samples/0321200032626000348.xml
+  lot: null
+  profile: profile_l_workwear
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка изделий медицинского назначения; Ставропольский край, 1,10 млн ₽, аукцион, 44-ФЗ — предмет
+    вне специализации
+- id: g117
+  file: data/samples/0373100025226000084.xml
+  lot: null
+  profile: profile_l_workwear
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка средств индивидуальной защиты, в рамках оснащения после капитального ремонта ГБПО; Москва,
+    11,24 млн ₽, аукцион, 44-ФЗ — сумма далеко за границами 200 тыс.–5,00 млн
+- id: g118
+  file: data/samples/0373200027426002230.xml
+  lot: null
+  profile: profile_l_workwear
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Электронный запрос котировок на поставку расходных материалов для анализатора ECL для нужд; Москва,
+    1,49 млн ₽, запрос котировок, 44-ФЗ — предмет вне специализации
+- id: g119
+  file: data/samples/0711200001126000097.xml
+  lot: null
+  profile: profile_l_workwear
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по предоставлению во временное пользование специальной форменной одежды на ; Республика
+    Татарстан, 4,70 млн ₽, аукцион, 44-ФЗ — аренда форменной одежды — услуга, а не пошив и поставка (решение по
+    предмету вручную)
+- id: g120
+  file: data/samples/32616524948.xml
+  lot: null
+  profile: profile_l_workwear
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка зимней спецодежды для работников филиала «Аэронавигация Юга» ФГУП «Госкорпорация ; Ростовская
+    область, 7,57 млн ₽, конкурс, 223-ФЗ — сумма немного вне диапазона 200 тыс.–5,00 млн, чужой регион, способ вне
+    профиля

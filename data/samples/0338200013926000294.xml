@@ -1,0 +1,1640 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEZK2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44382603</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0338200013926000294</purchaseNumber>
+        <docNumber>№0338200013926000294</docNumber>
+        <plannedPublishDate>2026-10-28+12:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T11:27:03.708+12:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/zk20/view/common-info.html?regNumber=0338200013926000294</href>
+        <placingWay>
+            <ns2:code>ZKP20</ns2:code>
+            <ns2:name>Запрос котировок в электронной форме</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по бронированию и оформлению билетов в пользу граждан, направляемых воздушным транспортом на лечение за пределы Камчатского края, в целях их социального обеспечения </purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03382000139</regNum>
+            <consRegistryNum>30220388</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "КАМЧАТСКИЙ КРАЕВОЙ ФИНАНСОВО-АНАЛИТИЧЕСКИЙ ЦЕНТР В СФЕРЕ ЗДРАВООХРАНЕНИЯ"</fullName>
+            <shortName>ГКУ КК ФАЦ</shortName>
+            <postAddress>Российская Федерация, 683003, Камчатский край, Петропавловск-Камчатский г, Ленинградская ул, Д. 118</postAddress>
+            <factAddress>Российская Федерация, 683003, Камчатский край, Петропавловск-Камчатский г, Ленинградская ул, Д. 118</factAddress>
+            <INN>4101173350</INN>
+            <KPP>410101001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 683003, Камчатский край, Петропавловск-Камчатский г, Ленинградская ул, Д. 118</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 683003, Камчатский край, Петропавловск-Камчатский г, Ленинградская ул, Д. 118</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Нетребко</ns3:lastName>
+                <ns3:firstName>Софья</ns3:firstName>
+                <ns3:middleName>Владимировна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>fcmz.zakupki@med.kamgov.ru</contactEMail>
+            <contactPhone>7-4152-201398-5182</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0338200013926000294</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17B86471F7C87AFC240776719F5E2</ns3:publishedContentId>
+            <ns3:fileName>НМЦК.xlsx</ns3:fileName>
+            <ns3:fileSize>26990</ns3:fileSize>
+            <ns3:docDescription>НМЦК</ns3:docDescription>
+            <ns3:docDate>2026-10-27T07:02:40+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17B86471F7C87AFC240776719F5E2</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17B87305175EB899301478F64C386</ns3:publishedContentId>
+            <ns3:fileName>2 Проект государственного контракта авиаперевозка все направления (2026).docx</ns3:fileName>
+            <ns3:fileSize>79510</ns3:fileSize>
+            <ns3:docDescription>2 Проект государственного контракта авиаперевозка все направления (2026)</ns3:docDescription>
+            <ns3:docDate>2026-10-27T07:03:39+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17B87305175EB899301478F64C386</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17B873D3C710B9B9CF1DAF7FD48F2</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки.docx</ns3:fileName>
+            <ns3:fileSize>33651</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-27T07:03:43+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17B873D3C710B9B9CF1DAF7FD48F2</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17FADF11B7011BEBA3AE083C454D1</ns3:publishedContentId>
+            <ns3:fileName>4 Требования к содержанию, составу заявки и инструкция по ее заполнению СМП.docx</ns3:fileName>
+            <ns3:fileSize>33665</ns3:fileSize>
+            <ns3:docDescription>4 Требования к содержанию, составу заявки и инструкция по ее заполнению СМП</ns3:docDescription>
+            <ns3:docDate>2026-10-28T02:24:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17FADF11B7011BEBA3AE083C454D1</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T11:27:03+12:00</startDT>
+                <endDT>2026-11-05T10:00:00+12:00</endDT>
+            </collectingInfo>
+            <summarizingDate>2026-11-06+12:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>4106442.74</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03382000139</ns2:regNum>
+                    <ns2:consRegistryNum>30220388</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "КАМЧАТСКИЙ КРАЕВОЙ ФИНАНСОВО-АНАЛИТИЧЕСКИЙ ЦЕНТР В СФЕРЕ ЗДРАВООХРАНЕНИЯ"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>41064.43</amount>
+                    <account>
+                        <ns3:bik>010507002</ns3:bik>
+                        <ns3:settlementAccount>03222643300000002000</ns3:settlementAccount>
+                        <ns3:personalAccount>05220388000</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ДГУ Банка России//УФК по Приморскому краю, г Владивосток</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000012</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>4100019852</INN>
+                            <KPP>410101001</KPP>
+                            <KBK>81411610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>30701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Камчатского края / Городские округа Камчатского края, кроме входящих в состав Корякского округа/ / Петропавловск-Камчатский / г Петропавловск-Камчатский</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810945370000031</bankAccount>
+                            <ksNumber>03100643000000013800</ksNumber>
+                            <bik>013002402</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО КАМЧАТСКОМУ КРАЮ (МИНЗДРАВ КАМЧАТСКОГО КРАЯ)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>В соответствии со ст. 44 Федерального закона от 05.04.2013 N 44-ФЗ. Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, предусмотренной статьей 45 Закона № 44-ФЗ. Выбор способа обеспечения осуществляется участником закупки самостоятельно. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок.</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>4106442.74</maxPrice>
+                    </maxPriceInfo>
+                    <IKZInfo>
+                        <purchaseCode>262410117335041010100100110087911323</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>79.11</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги туристических агентств</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>323</ns2:code>
+                                <ns2:name>Приобретение товаров, работ и услуг в пользу граждан в целях их социального обеспечения</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>24101173350410101001</customerCode>
+                        <purchaseNumber>0011</purchaseNumber>
+                        <purchaseOrderNumber>008</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603382000139002</ns3:plan2020Number>
+                        <ns3:position2020Number>202603382000139002000011</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-11-10+03:00</ns3:startDate>
+                                <ns3:isNotEarlierConclusionDate>true</ns3:isNotEarlierConclusionDate>
+                                <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>38020036</ns2:code>
+                                    <ns2:name>Бюджет Камчатского края</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>20</ns2:code>
+                                    <ns2:name>бюджет субъекта Российской Федерации</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>30000000</ns2:code>
+                                    <ns2:name>Муниципальные образования Камчатского края</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>4106442.74</total>
+                                <currentYear>4106442.74</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22438985</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-11-10+03:00</ns3:startDate>
+                                        <ns3:isNotEarlierConclusionDate>true</ns3:isNotEarlierConclusionDate>
+                                        <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>81409090140610270323</KBK>
+                                        <paymentYearInfo>
+                                            <total>4106442.74</total>
+                                            <currentYear>4106442.74</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62363041</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>69b77a3d-722c-4f71-84f2-872601bae9cc</ns3:GARGuid>
+                                <ns3:GARAddress>край Камчатский, г.о. Петропавловск-Камчатский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>Услуги, предусмотренные Контрактом, оказываются Исполнителем в г. Петропавловск-Камчатский по адресам согласно Приложению №4 «Перечень касс». Исполнитель должен организовать на территории г. Петропавловска-Камчатского не менее 1 пункта продажи авиабилетов (билетной кассы), после заключения государственного контракта в течение одного рабочего дня.</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225810898</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807342</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Новосибирск (прямой) либо Новосибирск – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031014</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет; (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>96890.25</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>96890.25</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225810899</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807343</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Владивосток (не более 1 пересадки) либо Владивосток – Петропавловск – Камчатский (не более 1 пересадки)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031015</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет; (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>127600.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>127600.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225810900</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807344</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Новосибирск (прямой) либо Новосибирск – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031016</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>87790.50</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>87790.50</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225810901</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807345</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Хабаровск (прямой) либо Хабаровск – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031017</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет; (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>42864.75</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>42864.75</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225810902</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807346</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Владивосток (прямой) либо Владивосток – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031018</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет; (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>79101.75</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>79101.75</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225810903</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807347</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Новосибирск (не более 1 пересадки) либо Новосибирск – Петропавловск – Камчатский (не более 1 пересадки)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031019</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет; (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>76300.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>76300.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225810904</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807348</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Владивосток (не более 1 пересадки) либо Владивосток – Петропавловск – Камчатский (не более 1 пересадки)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031020</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет; (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>54353.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>54353.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225810905</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807349</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Хабаровск (прямой) либо Хабаровск – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031021</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>69779.75</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>69779.75</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225810906</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807350</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Новосибирск (не более 1 пересадки) либо Новосибирск – Петропавловск – Камчатский (не более 1 пересадки)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031022</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет; (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>97892.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>97892.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225810907</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807351</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Москва (прямой) либо Москва – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031023</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>184219.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>184219.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225811030</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807921</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Санкт-Петербург (не более 1 пересадки) либо Санкт-Петербург – Петропавловск – Камчатский (не более 1 пересадки)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031024</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет; (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>153222.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>153222.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225811031</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807922</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Владивосток (прямой) либо Владивосток – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031025</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет; (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>70139.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>70139.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225811032</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807923</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Владивосток (прямой) либо Владивосток – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031026</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет; (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>50442.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>50442.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225811033</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807924</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Москва (прямой) либо Москва – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031027</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет (Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>161868.75</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>161868.75</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225811034</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807925</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Владивосток (прямой) либо Владивосток – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031028</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет; (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>57187.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>57187.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225811035</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807926</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Новосибирск (прямой) либо Новосибирск – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031029</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>65044.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>65044.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225811036</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807927</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Новосибирск (не более 1 пересадки) либо Новосибирск – Петропавловск – Камчатский (не более 1 пересадки)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031030</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет; (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>95900.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>95900.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225811037</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807928</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Владивосток (не более 1 пересадки) либо Владивосток – Петропавловск – Камчатский (не более 1 пересадки)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031031</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет; (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>45550.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>45550.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225811038</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807929</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Москва (прямой) либо Москва – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031032</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>40062.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>40062.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225811039</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336807930</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Москва (прямой) либо Москва – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435031033</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет (Комфорт тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>70938.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>70938.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812453</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813942</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Владивосток (не более 1 пересадки) либо Владивосток – Петропавловск – Камчатский (не более 1 пересадки)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038351</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет; (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>111566.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>111566.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812454</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813943</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Санкт-Петербург (не более 1 пересадки) либо Санкт-Петербург – Петропавловск – Камчатский (не более 1 пересадки)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038352</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет; (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>55466.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>55466.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812455</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813944</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Новосибирск (прямой) либо Новосибирск – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038353</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет; (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>77110.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>77110.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812456</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813945</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Москва (прямой) либо Москва – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038354</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>44051.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>44051.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812457</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813946</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Новосибирск (не более 1 пересадки) либо Новосибирск – Петропавловск – Камчатский (не более 1 пересадки)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038355</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет; (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>99294.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>99294.67</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812458</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813947</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Москва (прямой) либо Москва – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038356</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет (Тариф Комфорт)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>75171.50</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>75171.50</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812459</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813948</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Хабаровск (прямой) либо Хабаровск – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038357</ns3:sid>
+                                        <ns3:qualityDescription>пассажир от 2-х до 12-ти лет; (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>61118.50</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>61118.50</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812460</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813949</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Хабаровск (прямой) либо Хабаровск – Петропавловск – Камчатский (прямой)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038358</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>42829.75</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>42829.75</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812461</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813950</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Санкт-Петербург (не более 1 пересадки) либо Санкт-Петербург – Петропавловск – Камчатский (не более 1 пересадки)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038359</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет; (Эконом тариф)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>61457.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>61457.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225812462</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>79.11.11.000-00000001</ns2:code>
+                        <ns2:name>Услуги по бронированию авиабилетов</ns2:name>
+                        <ns2:versionId>84574</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>336813951</ns3:sid>
+                                <ns3:name>Петропавловск-Камчатский – Санкт-Петербург (не более 1 пересадки) либо Санкт-Петербург – Петропавловск – Камчатский (не более 1 пересадки)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435038360</ns3:sid>
+                                        <ns3:qualityDescription>пассажир старше 12-ти лет; (Тариф Бизнес-класс)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В позиции каталога отсутствует описание товара, работы, услуги</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>79.11.11.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по бронированию авиабилетов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по бронированию авиабилетов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>184284.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>184284.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>2539497.85</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+    </notificationInfo>
+    <printFormFieldsInfo>
+        <is449Features>false</is449Features>
+    </printFormFieldsInfo>
+</ns8:epNotificationEZK2020>

@@ -70,6 +70,27 @@ def test_223_multilot_reference() -> None:
     assert second.restrictions == []
 
 
+def test_223_centralized_lot_sums_customer_prices() -> None:
+    """У лота цена 0 — НМЦК складывается из цен заказчиков, равные цены не схлопываются."""
+    customer = (
+        "<lotCustomer><lotCustomerData><initialSum>{}</initialSum></lotCustomerData></lotCustomer>"
+    )
+    xml = (
+        "<purchaseNotice><body><item><purchaseNoticeData>"
+        "<registrationNumber>32600000001</registrationNumber>"
+        "<purchaseCodeName>Тендер</purchaseCodeName>"
+        "<lots><lot><lotData><subject>Аудит</subject><initialSum>0</initialSum></lotData>"
+        "<jointLotData><lotCustomers>"
+        + customer.format("100.50")
+        + customer.format("100.50")
+        + customer.format("0")
+        + "</lotCustomers></jointLotData></lot></lots>"
+        "</purchaseNoticeData></item></body></purchaseNotice>"
+    ).encode()
+    [p] = parse_file(xml, "x.xml")
+    assert p.nmck == Decimal("201.00")
+
+
 def test_unknown_format_goes_to_universal() -> None:
     [p] = _parse("notice615_unknown.xml")
     assert p.parsed_by == "universal"

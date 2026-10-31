@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEOK2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44418950</id>
+    <externalId>14975884</externalId>
+    <versionNumber>4</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0373200017526000526</purchaseNumber>
+        <docNumber>№ИИ3</docNumber>
+        <plannedPublishDate>2026-10-29+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T11:34:46.087+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ok20/view/common-info.html?regNumber=0373200017526000526</href>
+        <placingWay>
+            <ns2:code>OKP20</ns2:code>
+            <ns2:name>Открытый конкурс в электронной форме</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_EETP</ns2:code>
+            <ns2:name>РОСЭЛТОРГ (АО«ЕЭТП»)</ns2:name>
+            <ns2:url>http://roseltorg.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Разработка проектно-сметной документации на приведение в нормативное состояние дворовых территории Северо-Восточного административного округа г. Москвы</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03732000175</regNum>
+            <consRegistryNum>452А2330</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "ДИРЕКЦИЯ ЗАКАЗЧИКА ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА И БЛАГОУСТРОЙСТВА СЕВЕРО-ВОСТОЧНОГО АДМИНИСТРАТИВНОГО ОКРУГА"</fullName>
+            <shortName>ГКУ "ДИРЕКЦИЯ ЖКХИБ СВАО"</shortName>
+            <postAddress>127322, город Москва, ул. Милашенкова, д.14.</postAddress>
+            <factAddress>127322, МОСКВА, УЛ. МИЛАШЕНКОВА, Дом (Корпус/строение) Д. 14</factAddress>
+            <INN>7715695360</INN>
+            <KPP>771501001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>AI</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>127322, город Москва, ул. Милашенкова, д.14.</orgPostAddress>
+            <orgFactAddress>127322, МОСКВА, УЛ. МИЛАШЕНКОВА, Дом (Корпус/строение) Д. 14</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Слюсарев</ns3:lastName>
+                <ns3:firstName>Александр</ns3:firstName>
+                <ns3:middleName>Михайлович</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>zakupkisvao@mail.ru</contactEMail>
+            <contactPhone>7-495-6202000-56508</contactPhone>
+            <contactFax>619-88-21</contactFax>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0373200017526000526</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CAD5BF7D2EB8A844650651341A</ns3:publishedContentId>
+            <ns3:fileName>Расчет НМЦК от 05.10.2026г..xlsx</ns3:fileName>
+            <ns3:fileSize>13083</ns3:fileSize>
+            <ns3:docDescription>Расчет НМЦК(Д)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:33:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CAD5BF7D2EB8A844650651341A</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CAD6627DD1A99FF1C8A5A8D2B8</ns3:publishedContentId>
+            <ns3:fileName>Протокол НМЦК.pdf</ns3:fileName>
+            <ns3:fileSize>163294</ns3:fileSize>
+            <ns3:docDescription>Протокол НМЦК(Д)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:33:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CAD6627DD1A99FF1C8A5A8D2B8</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CAD6EF763B96A515D948E1448E</ns3:publishedContentId>
+            <ns3:fileName>ССР.xlsx</ns3:fileName>
+            <ns3:fileSize>11374</ns3:fileSize>
+            <ns3:docDescription>Расчет НМЦК(Д)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:33:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CAD6EF763B96A515D948E1448E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CAD72B7A3A889290C486DC1835</ns3:publishedContentId>
+            <ns3:fileName>Обоснование (приложение 2 к протоколу НМЦК).pdf</ns3:fileName>
+            <ns3:fileSize>106490</ns3:fileSize>
+            <ns3:docDescription>Обоснование определения НМЦК(Д)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:33:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CAD72B7A3A889290C486DC1835</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CAD79078E9BE266D50FA8C5991</ns3:publishedContentId>
+            <ns3:fileName>Проект_контракта_17261697-1.pdf</ns3:fileName>
+            <ns3:fileSize>106175</ns3:fileSize>
+            <ns3:docDescription>Проект контракта (договора)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:33:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CAD79078E9BE266D50FA8C5991</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CAD62A7A139CE13F52DD4D03E1</ns3:publishedContentId>
+            <ns3:fileName>Приложение 6 к ТЗ.rar</ns3:fileName>
+            <ns3:fileSize>70358</ns3:fileSize>
+            <ns3:docDescription>Приложения к Техническому заданию</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:33:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CAD62A7A139CE13F52DD4D03E1</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CAD5F27DE6B63ABCC435634AE4</ns3:publishedContentId>
+            <ns3:fileName>Техническое_задание_17261697-1.pdf</ns3:fileName>
+            <ns3:fileSize>127301</ns3:fileSize>
+            <ns3:docDescription>Техническое задание</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:33:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CAD5F27DE6B63ABCC435634AE4</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CAD761756BACA9A401AE98878A</ns3:publishedContentId>
+            <ns3:fileName>Приложение 5 к ТЗ Ситпланы.rar</ns3:fileName>
+            <ns3:fileSize>523657</ns3:fileSize>
+            <ns3:docDescription>Приложения к Техническому заданию</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:33:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CAD761756BACA9A401AE98878A</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CAD4A57F7D920045DD724919FA</ns3:publishedContentId>
+            <ns3:fileName>OpenCompetition14990939.pdf</ns3:fileName>
+            <ns3:fileSize>121353</ns3:fileSize>
+            <ns3:docDescription>OpenCompetition14990939.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:33:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CAD4A57F7D920045DD724919FA</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CAD6B97EB0B998779B944A8C8E</ns3:publishedContentId>
+            <ns3:fileName>ПИР.rar</ns3:fileName>
+            <ns3:fileSize>9671523</ns3:fileSize>
+            <ns3:docDescription>Сметная документация (в формате xls, xlsx)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:33:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CAD6B97EB0B998779B944A8C8E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CAD7C378CCACD17DD2AEED3DF6</ns3:publishedContentId>
+            <ns3:fileName>!! В_помощь_участникам_закупок.pdf</ns3:fileName>
+            <ns3:fileSize>151808</ns3:fileSize>
+            <ns3:docDescription>!! В помощь участникам закупок</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:33:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CAD7C378CCACD17DD2AEED3DF6</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CAD53F7AD1A5DEB1B30176984E</ns3:publishedContentId>
+            <ns3:fileName>Критерии_0526.docx</ns3:fileName>
+            <ns3:fileSize>39912</ns3:fileSize>
+            <ns3:docDescription>Порядок оценки заявок по критериям</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:33:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CAD53F7AD1A5DEB1B30176984E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>OCA</ns2:code>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>false</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-07T12:14:22+03:00</startDT>
+                <endDT>2026-11-09T09:00:00+03:00</endDT>
+            </collectingInfo>
+            <secondPartsDate>2026-11-11+03:00</secondPartsDate>
+            <summarizingDate>2026-11-12+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>27451059.82</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+            <contractMultiInfo>
+                <notProvided>true</notProvided>
+            </contractMultiInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03732005547</ns2:regNum>
+                    <ns2:consRegistryNum>45222215</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "АВТОМОБИЛЬНЫЕ ДОРОГИ СЕВЕРО-ВОСТОЧНОГО АДМИНИСТРАТИВНОГО ОКРУГА"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>274510.60</amount>
+                    <account>
+                        <ns3:bik>044525000</ns3:bik>
+                        <ns3:settlementAccount>40302810145254000060</ns3:settlementAccount>
+                        <ns3:personalAccount>2194142000800831</ns3:personalAccount>
+                        <ns3:creditOrgName>ГУ Банка России по ЦФО</ns3:creditOrgName>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>7702149170</INN>
+                            <KPP>770201001</KPP>
+                            <KBK>94111610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>45379000</ns2:code>
+                                <ns2:name>Муниципальные образования города Москвы (столицы Российской Федерации города федерального значения) / Внутригородские муниципальные образования в городе Москве (см. также 45 900 000)/ / муниципальный округ Мещанский</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810545370000003</bankAccount>
+                            <ksNumber>03100643000000017300</ksNumber>
+                            <bik>004525988</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО Г. МОСКВЕ (ПРЕФЕКТУРА СЕВЕРО-ВОСТОЧНОГО АДМИНИСТРАТИВНОГО ОКРУГА ГОРОДА МОСКВЫ)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии. Выбор способа обеспечения заявки на участие в закупке осуществляется участником закупки самостоятельно. Денежные средства, предназначенные для обеспечения заявок, вносятся участниками закупок на специальные счета, открытые ими в банках, перечень которых устанавливается Правительством РФ. Обеспечение заявки возможно путем блокирования денежных средств при наличии на специальном счете участника закупки незаблокированных денежных средств в размере, предусмотренном документацией о закупке. Независимая гарантия, выданная участнику закупки в соответствии с ч. 1 ст. 45 Закона РФ № 44-ФЗ для целей обеспечения заявки на участие в закупке, должна соответствовать требованиям статьи 45 Закона РФ № 44-ФЗ. Срок действия независимой гарантии, предоставленной в качестве обеспечения заявки, должен составлять не менее чем один месяц с даты окончания срока подачи заявок».
+В случае, если при проведении электронных процедур в течение одного квартала календарного года на одной электронной площадке в отношении трех и более заявок одного участника закупки комиссиями по осуществлению закупок приняты решения о несоответствии указанных заявок требованиям, предусмотренным извещением об осуществлении закупки, по основаниям, установленным пунктами 1 - 3, 5 - 9 части 12 статьи 48 настоящего Федерального закона, осуществляется перечисление в соответствующий бюджет бюджетной системы Российской Федерации заблокированных на специальном счете участника закупки денежных средств в размере обеспечения каждой третьей такой заявки или в порядке, предусмотренном частью 15 статьи 44, предъявляется требование об уплате денежной суммы по независимой гарантии.</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>1372552.99</amount>
+                    <account>
+                        <ns3:bik>044525000</ns3:bik>
+                        <ns3:settlementAccount>40302810145254000060</ns3:settlementAccount>
+                        <ns3:personalAccount>2194142000800831</ns3:personalAccount>
+                        <ns3:creditOrgName>ГУ Банка России по ЦФО</ns3:creditOrgName>
+                    </account>
+                    <procedureInfo>Контракт заключается после предоставления заказчику обеспечения исполнения контракта. Обеспечение исполнения контракта может быть представлено в виде безотзывной независимой гарантии или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику, в размере обеспечения исполнения контракта, указанном в документации о закупках. Безотзывная независимая гарантия должна соответствовать требованиям, установленным Гражданским кодексом Российской Федерации, а также иным законодательством Российской Федерации.
+Способ обеспечения исполнения контракта определяется участником закупки, с которым заключается контракт, самостоятельно.
+Срок внесения обеспечения - до момента заключения контракта».</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>27451059.82</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262771770959477150100103690010000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>27717709594771501001</customerCode>
+                        <purchaseNumber>0369</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603732005547001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603732005547001000369</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:relativeTermsInfo>
+                                <ns3:start>1</ns3:start>
+                                <ns3:startDayType>calendar</ns3:startDayType>
+                                <ns3:term>273</ns3:term>
+                                <ns3:termDayType>calendar</ns3:termDayType>
+                            </ns3:relativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>27451059.82</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>27451059.82</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22500598</sid>
+                                <externalSid>34998750</externalSid>
+                                <termsInfo>
+                                    <ns3:relativeTermsInfo>
+                                        <ns3:start>0</ns3:start>
+                                        <ns3:startDayType>calendar</ns3:startDayType>
+                                        <ns3:term>273</ns3:term>
+                                        <ns3:termDayType>calendar</ns3:termDayType>
+                                    </ns3:relativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>27451059.82</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>27451059.82</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>27451059.82</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>27451059.82</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>27451059.82</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62023061</ns3:sid>
+                            <ns3:externalSid>329049406</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>город Москва; СВАО, район Марфино, Ботаническая ул. 33 к. 4, 33 к. 5, Ботаническая ул. 33 к. 6, Ботаническая ул. 33 к. 7, Ботаническая ул. 33 к. 8</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62023062</ns3:sid>
+                            <ns3:externalSid>329049407</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>город Москва; СВАО, район Отрадное, Бестужевых ул. 9А, Бестужевых ул. 12Б, Бестужевых ул. 12Г, Бестужевых ул. 21Б, Бестужевых ул. 21В, Бестужевых ул. 25А</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62023063</ns3:sid>
+                            <ns3:externalSid>329049408</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>город Москва; СВАО, Бутырский район, Добролюбова ул. 29/16</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62023064</ns3:sid>
+                            <ns3:externalSid>329049409</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>город Москва;  СВАО, Бутырский район, Милашенкова ул., д. 7, корп. 1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62023065</ns3:sid>
+                            <ns3:externalSid>329049410</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>город Москва; СВАО, Бутырский район, Фонвизина ул. 14</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62023066</ns3:sid>
+                            <ns3:externalSid>329049411</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>город Москва; СВАО, район Отрадное, cквер по улице Бестужевых от д. 2 до д. 12;</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>В соответствии с Проектом контракт и техническим заданием.</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>224236899</ns3:sid>
+                    <ns3:externalSid>250186649-1642393843</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.12.19.100</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по инженерно-техническому проектированию прочих объектов, кроме объектов культурного наследия</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337623185</ns3:sid>
+                                <ns3:externalSid>2018588587-1315149815</ns3:externalSid>
+                                <ns3:name>Вид территории</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436173632</ns3:sid>
+                                        <ns3:externalSid>enum-2269686310</ns3:externalSid>
+                                        <ns3:qualityDescription>Дворовая территория</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Разработка проектной документации на благоустройство территории</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732005547</ns2:regNum>
+                                <ns2:consRegistryNum>45222215</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "АВТОМОБИЛЬНЫЕ ДОРОГИ СЕВЕРО-ВОСТОЧНОГО АДМИНИСТРАТИВНОГО ОКРУГА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>1</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>1981672.93</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1981672.93</ns3:sum>
+                    <ns3:type>WORK</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224236900</ns3:sid>
+                    <ns3:externalSid>250186650-1642393843</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.12.19.100</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по инженерно-техническому проектированию прочих объектов, кроме объектов культурного наследия</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337623186</ns3:sid>
+                                <ns3:externalSid>2018588589-1315149815</ns3:externalSid>
+                                <ns3:name>Вид территории</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436173633</ns3:sid>
+                                        <ns3:externalSid>enum-2269686312</ns3:externalSid>
+                                        <ns3:qualityDescription>Дворовая территория</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Разработка проектной документации на благоустройство территории</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732005547</ns2:regNum>
+                                <ns2:consRegistryNum>45222215</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "АВТОМОБИЛЬНЫЕ ДОРОГИ СЕВЕРО-ВОСТОЧНОГО АДМИНИСТРАТИВНОГО ОКРУГА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>1</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>1981672.93</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1981672.93</ns3:sum>
+                    <ns3:type>WORK</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224236901</ns3:sid>
+                    <ns3:externalSid>250186651-1642393843</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.12.19.100</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по инженерно-техническому проектированию прочих объектов, кроме объектов культурного наследия</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337623187</ns3:sid>
+                                <ns3:externalSid>2018588591-1315149815</ns3:externalSid>
+                                <ns3:name>Вид территории</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436173634</ns3:sid>
+                                        <ns3:externalSid>enum-2269686314</ns3:externalSid>
+                                        <ns3:qualityDescription>Дворовая территория</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Разработка проектной документации на благоустройство территории</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732005547</ns2:regNum>
+                                <ns2:consRegistryNum>45222215</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "АВТОМОБИЛЬНЫЕ ДОРОГИ СЕВЕРО-ВОСТОЧНОГО АДМИНИСТРАТИВНОГО ОКРУГА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>1</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>7832094.79</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>7832094.79</ns3:sum>
+                    <ns3:type>WORK</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224236896</ns3:sid>
+                    <ns3:externalSid>250186646-1642393843</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.12.19.100</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по инженерно-техническому проектированию прочих объектов, кроме объектов культурного наследия</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337623188</ns3:sid>
+                                <ns3:externalSid>2018588581-1315149815</ns3:externalSid>
+                                <ns3:name>Вид территории</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436173635</ns3:sid>
+                                        <ns3:externalSid>enum-2269686304</ns3:externalSid>
+                                        <ns3:qualityDescription>Дворовая территория</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Разработка проектной документации на благоустройство территории</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732005547</ns2:regNum>
+                                <ns2:consRegistryNum>45222215</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "АВТОМОБИЛЬНЫЕ ДОРОГИ СЕВЕРО-ВОСТОЧНОГО АДМИНИСТРАТИВНОГО ОКРУГА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>1</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>5688900.19</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5688900.19</ns3:sum>
+                    <ns3:type>WORK</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224236897</ns3:sid>
+                    <ns3:externalSid>250186647-1642393843</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.12.19.100</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по инженерно-техническому проектированию прочих объектов, кроме объектов культурного наследия</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337623189</ns3:sid>
+                                <ns3:externalSid>2018588583-1315149815</ns3:externalSid>
+                                <ns3:name>Вид территории</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436173636</ns3:sid>
+                                        <ns3:externalSid>enum-2269686306</ns3:externalSid>
+                                        <ns3:qualityDescription>Дворовая территория</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Разработка проектной документации на благоустройство территории</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732005547</ns2:regNum>
+                                <ns2:consRegistryNum>45222215</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "АВТОМОБИЛЬНЫЕ ДОРОГИ СЕВЕРО-ВОСТОЧНОГО АДМИНИСТРАТИВНОГО ОКРУГА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>1</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>8034382.46</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>8034382.46</ns3:sum>
+                    <ns3:type>WORK</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224236898</ns3:sid>
+                    <ns3:externalSid>250186648-1642393843</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.12.19.100</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по инженерно-техническому проектированию прочих объектов, кроме объектов культурного наследия</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337623190</ns3:sid>
+                                <ns3:externalSid>2018588585-1315149815</ns3:externalSid>
+                                <ns3:name>Вид территории</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436173637</ns3:sid>
+                                        <ns3:externalSid>enum-2269686308</ns3:externalSid>
+                                        <ns3:qualityDescription>Дворовая территория</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Разработка проектной документации на благоустройство территории</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03732005547</ns2:regNum>
+                                <ns2:consRegistryNum>45222215</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ГОРОДА МОСКВЫ "АВТОМОБИЛЬНЫЕ ДОРОГИ СЕВЕРО-ВОСТОЧНОГО АДМИНИСТРАТИВНОГО ОКРУГА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>1</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>1932336.52</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1932336.52</ns3:sum>
+                    <ns3:type>WORK</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>27451059.82</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <criteriaInfo>
+            <criterionInfo>
+                <costCriterionInfo>
+                    <code>CP</code>
+                    <valueInfo>
+                        <value>60.00</value>
+                    </valueInfo>
+                </costCriterionInfo>
+            </criterionInfo>
+            <criterionInfo>
+                <qualitativeCriterionInfo>
+                    <code>QO</code>
+                    <valueInfo>
+                        <value>40.00</value>
+                    </valueInfo>
+                    <indicatorsInfo>
+                        <indicatorInfo>
+                            <sId>6038969</sId>
+                            <qualPurchaseParticipantsInfo>
+                                <ns2:code>3</ns2:code>
+                                <ns2:name>Наличие у участников закупки опыта поставки товара, выполнения работы, оказания услуги, связанного с предметом контракта</ns2:name>
+                            </qualPurchaseParticipantsInfo>
+                            <value>100.0000</value>
+                            <detailIndicatorsInfo>
+                                <detailIndicatorInfo>
+                                    <sId>2788368</sId>
+                                    <indicatorInfo>
+                                        <indicatorDictInfo>
+                                            <ns2:code>1</ns2:code>
+                                            <ns2:name>Общая цена исполненных участником закупки договоров</ns2:name>
+                                        </indicatorDictInfo>
+                                    </indicatorInfo>
+                                    <value>100.0000</value>
+                                    <orderEvalIndicatorsInfo>
+                                        <ns2:code>2</ns2:code>
+                                        <ns2:name>Лучшим является наибольшее значение характеристики объекта закупки</ns2:name>
+                                    </orderEvalIndicatorsInfo>
+                                </detailIndicatorInfo>
+                            </detailIndicatorsInfo>
+                        </indicatorInfo>
+                    </indicatorsInfo>
+                </qualitativeCriterionInfo>
+            </criterionInfo>
+        </criteriaInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ETP44312</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS3BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии c пунктом 4 ПП РФ от 29.12.2021 №2571</ns3:name>
+                        <ns3:content>Наличие у участника закупки опыта  исполнения (с учетом правопреемства)  в течение трех лет  до даты подачи заявки на участие в закупке контракта или договора, заключенного в соответствии с Федеральным законом от 18 июля 2011 года № 223-ФЗ «О закупках товаров, работ, услуг отдельными видами юридических лиц» при условии исполнения таким участником закупки требований об уплате неустоек (штрафов, пеней), предъявленных при исполнении таких контракта, договора. Стоимость исполненных обязательств по таким контракту, договору должна составлять не менее двадцати процентов начальной (максимальной) цены контракта.
+Информация и документы, подтверждающие соответствие участника закупки дополнительному требованию, установленному в соответствии с частью 2.1 ст. 31 Закона о контрактной системе, являются информация и документы, предусмотренные хотя бы одним из следующих подпунктов:
+а) номер реестровой записи в предусмотренном Законом о контрактной системе реестре контрактов, заключенных заказчиками (в случае исполнения участником закупки контракта, информация и документы в отношении которого включены в установленном порядке в такой реестр и размещены на официальном сайте единой информационной системы в информационно-телекоммуникационной сети "Интернет");
+б) выписка из предусмотренного Законом о контрактной системе реестра контрактов, содержащего сведения, составляющие государственную тайну (в случае исполнения участником закупки контракта, информация о котором включена в установленном порядке в такой реестр);
+в) исполненный контракт, заключенный в соответствии с Законом о контрактной системе, или договор, заключенный в соответствии с Федеральным законом "О закупках товаров, работ, услуг отдельными видами юридических лиц", а также акт приемки поставленных товаров, выполненных работ, оказанных услуг, подтверждающий цену поставленных товаров, выполненных работ, оказанных услуг.</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+            <competitionCh19St48>true</competitionCh19St48>
+        </flags>
+    </notificationInfo>
+    <modificationInfo>
+        <info>Внесение изменений</info>
+        <reasonInfo>
+            <responsibleDecisionInfo>
+                <decisionDate>2026-10-29+03:00</decisionDate>
+            </responsibleDecisionInfo>
+        </reasonInfo>
+    </modificationInfo>
+</ns8:epNotificationEOK2020>

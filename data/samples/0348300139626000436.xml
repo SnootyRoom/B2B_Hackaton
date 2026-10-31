@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44406986</id>
+    <externalId>4666685</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0348300139626000436</purchaseNumber>
+        <docNumber>№0348300139626000436</docNumber>
+        <plannedPublishDate>2026-10-28+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T14:16:55.464+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0348300139626000436</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_MMVB</ns2:code>
+            <ns2:name>Электронная торговая площадка «Фабрикант»</ns2:name>
+            <ns2:url>https://www.fabrikant.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка насоса для перекачки жидкостей (канализационной насосной установки)</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03483001396</regNum>
+            <consRegistryNum>462НЛБ65</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ МОСКОВСКОЙ ОБЛАСТИ "ДУБНЕНСКАЯ БОЛЬНИЦА"</fullName>
+            <shortName>ГБУЗ МОСКОВСКОЙ ОБЛАСТИ "ДУБНЕНСКАЯ БОЛЬНИЦА"</shortName>
+            <postAddress>Российская Федерация, 141983, Московская обл, Дубна г, УЛ. КАРЛА МАРКСА, Д. 30</postAddress>
+            <factAddress>Российская Федерация, 141983, Московская обл, Дубна г, УЛ. КАРЛА МАРКСА, Д. 30</factAddress>
+            <INN>5010036291</INN>
+            <KPP>501001001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 141983, Московская обл, Дубна г, УЛ. КАРЛА МАРКСА, Д. 30</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 141983, Московская обл, Дубна г, УЛ. КАРЛА МАРКСА, Д. 30</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Лапаева</ns3:lastName>
+                <ns3:firstName>Валентина</ns3:firstName>
+                <ns3:middleName>  Евгеньевна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>tzrbzakupki@yandex.ru</contactEMail>
+            <contactPhone>7-496-2041053</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0348300139626000436</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1820F57247AAB9A72CE99EB83C725</ns3:publishedContentId>
+            <ns3:fileName>Обоснование НМЦК.zip</ns3:fileName>
+            <ns3:fileSize>130359</ns3:fileSize>
+            <ns3:docDescription>Обоснование НМЦК</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:05:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1820F57247AAB9A72CE99EB83C725</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1820F5AF37887B61D113563E671A1</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта, сост. 28.10.2026.zip</ns3:fileName>
+            <ns3:fileSize>33777</ns3:fileSize>
+            <ns3:docDescription>Проект контракта, сост. 28.10.2026</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:05:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1820F5AF37887B61D113563E671A1</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1820F54207E4CBE731B998880A644</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки.docx</ns3:fileName>
+            <ns3:fileSize>45077</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:05:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1820F54207E4CBE731B998880A644</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1820F561F7CC3A4D71C1FCBFC3DCD</ns3:publishedContentId>
+            <ns3:fileName>Требования+к+составу+заявки.docx</ns3:fileName>
+            <ns3:fileSize>20426</ns3:fileSize>
+            <ns3:docDescription>Требования+к+составу+заявки</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:05:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1820F561F7CC3A4D71C1FCBFC3DCD</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1820F5CE27670931B9E8C8858CDF6</ns3:publishedContentId>
+            <ns3:fileName>Приложение к проекту контракта, сост. 28.10.2026.zip</ns3:fileName>
+            <ns3:fileSize>512201</ns3:fileSize>
+            <ns3:docDescription>Приложение к проекту контракта, сост. 28.10.2026</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:05:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1820F5CE27670931B9E8C8858CDF6</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T14:16:55+03:00</startDT>
+                <endDT>2026-11-05T10:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-05+03:00</biddingDate>
+            <summarizingDate>2026-11-09+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>535999.98</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03483001396</ns2:regNum>
+                    <ns2:consRegistryNum>462НЛБ65</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ МОСКОВСКОЙ ОБЛАСТИ "ДУБНЕНСКАЯ БОЛЬНИЦА"</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>004525987</ns3:bik>
+                        <ns3:settlementAccount>03224643460000004800</ns3:settlementAccount>
+                        <ns3:personalAccount>20825НЛБ650</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ГУ Банка России по ЦФО//УФК ПО МОСКОВСКОЙ ОБЛАСТИ, г Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000004</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Федерального закона № 44-ФЗ.Независимая гарантия должна содержать в том числе указание на то, что споры, возникающие в связи с исполнением обязательств по независимой гарантии, подлежат рассмотрению в Арбитражном суде Московской области.Требования к предоставлению обеспечения исполнения контракта, в том числе с учетом положений статьи 37 Федерального закона № 44-ФЗ, не применяются в случаях: 1) заключения контракта с участником закупки, который является казенным учреждением; 2) осуществления закупки услуги по предоставлению кредита; 3) заключения бюджетным учреждением, государственным, муниципальным унитарными предприятиями контракта, предметом которого является выдача независимой гарантии.Участник закупки, с которым заключается контракт по результатам определения поставщика (подрядчика, исполнителя) в соответствии с пунктом 1 части 1 статьи 30 Федерального закона № 44-ФЗ, освобождается от предоставления обеспечения исполнения контракта, в том числе с учетом положений статьи 37 Федерального закона № 44-ФЗ, в порядке, предусмотренном частью 8.1 статьи 96 Федерального закона № 44-ФЗ.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>535999.98</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263501003629150100100105260012813244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>28.13</ns2:OKPDCode>
+                                <ns2:OKPDName>Насосы и компрессоры прочие</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>35010036291501001001</customerCode>
+                        <purchaseNumber>0526</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603483001396001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603483001396001000506</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>535999.98</total>
+                                <currentYear>535999.98</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22479179</sid>
+                                <externalSid>21e2aa5a-6df0-4fba-a51e-84905b2ba6d9</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>535999.98</total>
+                                        <currentYear>535999.98</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>535999.98</ns3:total>
+                                                <ns3:currentYear>535999.98</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>535999.98</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62405386</ns3:sid>
+                            <ns3:externalSid>28ce7126-b39f-4a17-9a4b-32faafb6fb89</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>819d73c8-9375-4e39-8853-ddf003b42217</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Дубна</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г. Дубна, ул. Карла Маркса, д. 30</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62405387</ns3:sid>
+                            <ns3:externalSid>f2adbf15-1182-40a8-8637-721b5a14be9f</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>70ce2cc9-ded3-492a-9bda-a26dceb3bcd2</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Талдомский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г. Талдом, ул. Победы, д. 19</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyServiceRequirement>-</warrantyServiceRequirement>
+                    <manufacturersWarrantyRequirement>-</manufacturersWarrantyRequirement>
+                    <warrantyTerm>В соответствии с приложением 5 к контракту "Описание объекта закупки (Техническое задание)"</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225989647</ns3:sid>
+                    <ns3:externalSid>917fc126-e232-4c34-a66c-291fa5209aab</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>28.13.10.000-00000001</ns2:code>
+                        <ns2:name>Насосы для перекачки жидкостей; подъемники жидкостей</ns2:name>
+                        <ns2:versionId>240577</ns2:versionId>
+                        <ns2:versionNumber>9</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337333006</ns3:sid>
+                                <ns3:externalSid>c91dd3cd-eece-41cc-a9a4-b84e5a497bda</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435730795</ns3:sid>
+                                        <ns3:externalSid>ed92987a-cb4a-47de-8b57-fbb7de5fb451</ns3:externalSid>
+                                        <ns3:qualityDescription>Канализационная насосная установка</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337333007</ns3:sid>
+                                <ns3:externalSid>296a845b-5e9f-4f2a-b846-f7289a684d46</ns3:externalSid>
+                                <ns3:name>Напряжение</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435730796</ns3:sid>
+                                        <ns3:externalSid>fc3623d0-3aed-424c-abe6-936009a0f5a7</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>222</ns2:code>
+                                            <ns2:nationalCode>В</ns2:nationalCode>
+                                            <ns2:name>Вольт</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>220</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>240</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337333008</ns3:sid>
+                                <ns3:externalSid>d7b6de33-a642-4a62-86f7-7ee8254d345d</ns3:externalSid>
+                                <ns3:name>Боковое подключение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435730797</ns3:sid>
+                                        <ns3:externalSid>5f56dafb-7237-4f07-a993-da58adaf5668</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337333009</ns3:sid>
+                                <ns3:externalSid>a22ecb01-1b40-4737-93ef-e30978aad1f7</ns3:externalSid>
+                                <ns3:name>Максимальный напор</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435730798</ns3:sid>
+                                        <ns3:externalSid>2eb6cf23-b986-47cb-a053-0e41f622548d</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>006</ns2:code>
+                                            <ns2:nationalCode>м</ns2:nationalCode>
+                                            <ns2:name>Метр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>8.5</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337333010</ns3:sid>
+                                <ns3:externalSid>191c16c9-798a-465b-8a1b-af4bd5a6ac8b</ns3:externalSid>
+                                <ns3:name>Мощность</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435730799</ns3:sid>
+                                        <ns3:externalSid>8d18fa13-09f0-4feb-9afa-eb1f8ffe2d24</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>212</ns2:code>
+                                            <ns2:nationalCode>Вт</ns2:nationalCode>
+                                            <ns2:name>Ватт</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>620</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337333011</ns3:sid>
+                                <ns3:externalSid>2bcf1c73-0b2c-45be-be1f-d34ae00d9e46</ns3:externalSid>
+                                <ns3:name>Максимальная температура жидкости</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435730800</ns3:sid>
+                                        <ns3:externalSid>12efab80-1b59-4082-bdfb-65004dd57f62</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>280</ns2:code>
+                                            <ns2:nationalCode>[0*]C</ns2:nationalCode>
+                                            <ns2:name>Градус Цельсия</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>50</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337333012</ns3:sid>
+                                <ns3:externalSid>424c4e40-fa5d-4875-928b-9a3fff679953</ns3:externalSid>
+                                <ns3:name>Производительность, л/мин</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435730801</ns3:sid>
+                                        <ns3:externalSid>d09a5fac-a314-49ef-acb5-a190fff0e292</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>149</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337333013</ns3:sid>
+                                <ns3:externalSid>4409a4fd-f85b-4deb-86bb-cb8e0b94006d</ns3:externalSid>
+                                <ns3:name>Объем бака</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435730802</ns3:sid>
+                                        <ns3:externalSid>c84e386e-7fea-4016-b8a9-d0d4041875b3</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>9</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337333014</ns3:sid>
+                                <ns3:externalSid>15c5f814-01f1-47e9-bc88-8220c61aa538</ns3:externalSid>
+                                <ns3:name>Класс защиты  IP44</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435730803</ns3:sid>
+                                        <ns3:externalSid>1afa9904-0a06-4980-bbae-eee926fa5ed4</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337333015</ns3:sid>
+                                <ns3:externalSid>fd2b6d9d-7289-4fca-bd77-896c247af5e1</ns3:externalSid>
+                                <ns3:name>Вид насоса</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435730804</ns3:sid>
+                                        <ns3:externalSid>2d1ea3b9-87e5-4845-8bd2-ddf6150d657b</ns3:externalSid>
+                                        <ns3:qualityDescription>Поверхностный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337333016</ns3:sid>
+                                <ns3:externalSid>0d2a26c4-2a2f-44ac-ad90-424e52592ccc</ns3:externalSid>
+                                <ns3:name>Нож измельчитель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435730805</ns3:sid>
+                                        <ns3:externalSid>2718eadc-f0a7-4de8-ab7f-2ef1aaf2bc62</ns3:externalSid>
+                                        <ns3:qualityDescription>Наличие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337333017</ns3:sid>
+                                <ns3:externalSid>7d0e78b0-a26c-4d3e-a34b-83dd6787fcc5</ns3:externalSid>
+                                <ns3:name>Материал корпуса</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435730806</ns3:sid>
+                                        <ns3:externalSid>f5fe3ed1-2eae-4d2b-bd22-197377c79627</ns3:externalSid>
+                                        <ns3:qualityDescription>Пластик</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Включение дополнительной информации (функциональных, технических, качественных и эксплуатационных характеристик товара) обусловлено необходимостью конкретизировать характеристики товара в целях обеспечения поставки товара, соответствующего потребностям заказчика. Значение показателей характеристик обусловлено потребностями заказчика.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>28.13.1</ns2:OKPDCode>
+                            <ns2:OKPDName>Насосы для перекачки жидкостей; подъемники жидкостей</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Насосы для перекачки жидкостей; подъемники жидкостей</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>89333.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>535999.98</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>535999.98</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44366508</id>
+    <externalId>4659717</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0348200049726000350</purchaseNumber>
+        <docNumber>№0348200049726000350</docNumber>
+        <plannedPublishDate>2026-10-23+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-23T17:11:05.727+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0348200049726000350</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по откачке и вывозу жидких бытовых отходов</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03482000497</regNum>
+            <consRegistryNum>46220913</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ МОСКОВСКОЙ ОБЛАСТИ "МОСАВТОДОР"</fullName>
+            <shortName>ГБУ МО "МОСАВТОДОР"</shortName>
+            <postAddress>143421, Московская область, г.о. Красногорск, тер. автодорога Балтия, км 26-й, д. 5, стр. 2</postAddress>
+            <factAddress>143421, Московская область, г.о. Красногорск, тер. автодорога Балтия, км 26-й, д. 5, стр. 2</factAddress>
+            <INN>5000001525</INN>
+            <KPP>502401001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>143421, Московская область, г.о. Красногорск, тер. автодорога Балтия, км 26-й, д. 5, стр. 2</orgPostAddress>
+            <orgFactAddress>143421, Московская область, г.о. Красногорск, тер. автодорога Балтия, км 26-й, д. 5, стр. 2</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Баукин</ns3:lastName>
+                <ns3:firstName>Дмитрий</ns3:firstName>
+                <ns3:middleName>  Алексеевич</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>mosavtodor@mosreg.ru</contactEMail>
+            <contactPhone>7-495-2873797</contactPhone>
+            <contactFax>7-495-2873797</contactFax>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0348200049726000350</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1690FD2E577BAAC6D5DC70A8DE979</ns3:publishedContentId>
+            <ns3:fileName>Обоснование НМЦК.zip</ns3:fileName>
+            <ns3:fileSize>130908</ns3:fileSize>
+            <ns3:docDescription>Обоснование НМЦК</ns3:docDescription>
+            <ns3:docDate>2026-10-23T17:04:13+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1690FD2E577BAAC6D5DC70A8DE979</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1690FD88572BBBFF689353E75A5BC</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта, сост. 16.10.2026.zip</ns3:fileName>
+            <ns3:fileSize>32530</ns3:fileSize>
+            <ns3:docDescription>Проект контракта, сост. 16.10.2026</ns3:docDescription>
+            <ns3:docDate>2026-10-23T17:04:13+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1690FD88572BBBFF689353E75A5BC</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1690FDC497734877FC962669A912B</ns3:publishedContentId>
+            <ns3:fileName>Приложение 5 к Контракту (Описание объекта закупки).docx</ns3:fileName>
+            <ns3:fileSize>34735</ns3:fileSize>
+            <ns3:docDescription>Приложение 5 к Контракту (Описание объекта закупки)</ns3:docDescription>
+            <ns3:docDate>2026-10-23T17:04:13+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1690FDC497734877FC962669A912B</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1690FDA557EC8AE75E88B81519EB7</ns3:publishedContentId>
+            <ns3:fileName>Требование к содержанию, составу заявки на участие в закупке закупка №060258-26.docx</ns3:fileName>
+            <ns3:fileSize>23514</ns3:fileSize>
+            <ns3:docDescription>Требование к содержанию, составу заявки на участие в закупке закупка №060258-26</ns3:docDescription>
+            <ns3:docDate>2026-10-23T17:04:13+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1690FDA557EC8AE75E88B81519EB7</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1690FD5D273E9BF4903B6F4C7209A</ns3:publishedContentId>
+            <ns3:fileName>Приложение к проекту контракта, сост. 16.10.2026.zip</ns3:fileName>
+            <ns3:fileSize>495012</ns3:fileSize>
+            <ns3:docDescription>Приложение к проекту контракта, сост. 16.10.2026</ns3:docDescription>
+            <ns3:docDate>2026-10-23T17:04:13+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1690FD5D273E9BF4903B6F4C7209A</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-23T17:11:05+03:00</startDT>
+                <endDT>2026-11-02T11:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-02+03:00</biddingDate>
+            <summarizingDate>2026-11-05+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>4732000.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03482000497</ns2:regNum>
+                    <ns2:consRegistryNum>46220913</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ МОСКОВСКОЙ ОБЛАСТИ "МОСАВТОДОР"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>47320.00</amount>
+                    <account>
+                        <ns3:bik>004525987</ns3:bik>
+                        <ns3:settlementAccount>03224643460000004800</ns3:settlementAccount>
+                        <ns3:personalAccount>20851209130</ns3:personalAccount>
+                        <ns3:creditOrgName>ГУ Банка России по ЦФО//УФК ПО МОСКОВСКОЙ ОБЛАСТИ г.Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000004</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Обеспечение заявки (далее - ОЗ) может предоставляться в виде денежных средств или независимой гарантии (далее - НГ). Выбор способа ОЗ осуществляется участником закупки. ОЗ в виде денежных средств предоставляется путем блокирования денежных средств на банковском счете, открытого участником закупки в банках, перечень которых установлен Правительством РФ (специальный счет). Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена Евразийского экономического союза, за исключением Российской Федерации, или физическими лицами, являющимися гражданами государства - члена Евразийского экономического союза, за исключением Российской Федерации, вправе предоставить ОЗ в виде денежных средств с учетом особенностей, установленных постановлением Правительства РФ от 10.04.2023 № 579. НГ, выданная участнику закупки банком, для целей ОЗ на участие в закупке должна быть безотзывной и соответствовать требованиям ст. 45 Закона № 44-ФЗ, постановления Правительства РФ от 08.11.2013 № 1005. НГ должна содержать условие об обязанности гаранта уплатить заказчику (бенефициару) денежную сумму по НГ не позднее 10 рабочих дней со дня, следующего за днем получения гарантом требования заказчика (бенефициара), соответствующего условиям такой НГ, при отсутствии предусмотренных Гражданским кодексом РФ оснований для отказа в удовлетворении этого требования. Запрещается включение в условия НГ требования о представлении заказчиком гаранту судебных актов, подтверждающих неисполнение принципалом обязательств, обеспечиваемых НГ. Срок действия НГ должен составлять не менее 1 месяца с даты окончания срока подачи заявок. В НГ в качестве бенефициара указывается заказчик, за исключением случая проведения совместного конкурса или аукциона, при котором в качестве бенефициара указывается организатор совместного конкурса или аукциона (Организация, осуществляющая размещение извещения об осуществлении закупки).</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>004525987</ns3:bik>
+                        <ns3:settlementAccount>03224643460000004800</ns3:settlementAccount>
+                        <ns3:personalAccount>20851209130</ns3:personalAccount>
+                        <ns3:creditOrgName>ГУ Банка России по ЦФО//УФК ПО МОСКОВСКОЙ ОБЛАСТИ г.Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000004</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Федерального закона № 44-ФЗ.Независимая гарантия должна содержать в том числе указание на то, что споры, возникающие в связи с исполнением обязательств по независимой гарантии, подлежат рассмотрению в Арбитражном суде Московской области.Требования к предоставлению обеспечения исполнения контракта, в том числе с учетом положений статьи 37 Федерального закона № 44-ФЗ, не применяются в случаях: 1) заключения контракта с участником закупки, который является казенным учреждением; 2) осуществления закупки услуги по предоставлению кредита; 3) заключения бюджетным учреждением, государственным, муниципальным унитарными предприятиями контракта, предметом которого является выдача независимой гарантии.Участник закупки, с которым заключается контракт по результатам определения поставщика (подрядчика, исполнителя) в соответствии с пунктом 1 части 1 статьи 30 Федерального закона № 44-ФЗ, освобождается от предоставления обеспечения исполнения контракта, в том числе с учетом положений статьи 37 Федерального закона № 44-ФЗ, в порядке, предусмотренном частью 8.1 статьи 96 Федерального закона № 44-ФЗ.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>4732000.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262500000152550240100111400013700247</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>37.00</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по водоотведению; шлам сточных вод</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>247</ns2:code>
+                                <ns2:name>Закупка энергетических ресурсов</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>25000001525502401001</customerCode>
+                        <purchaseNumber>1140</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603482000497001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603482000497001001188</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2028-03-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>4732000.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>4732000.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22415052</sid>
+                                <externalSid>1403e6bb-8566-43f8-a6c7-8cffd66507dd</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2028-03-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>4732000.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>4732000.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>247</ns2:code>
+                                                <ns2:name>Закупка энергетических ресурсов</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>4732000.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>4732000.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>4732000.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331376</ns3:sid>
+                            <ns3:externalSid>56333f9c-5169-43e1-a355-d3397bf315e7</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>292ca80f-50ec-4160-b7c8-adeb53774645</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Бронницы</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, г. Бронницы, ул. Льва Толстого, д. 27/1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331377</ns3:sid>
+                            <ns3:externalSid>b4df27b4-4497-4d8d-a83e-9fa66fedbd4f</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>28ae170a-f54c-4ec4-8fcc-920f20871ea3</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Воскресенск</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, п. Хорлово, Промплощадка западная, стр. 6</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331378</ns3:sid>
+                            <ns3:externalSid>619e5459-cdb5-470d-bc4a-bc5ef2b100ac</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>044de8a0-d790-49b3-a3e3-7ee7ea56e79c</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, м.о. Луховицы</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, г. Луховицы, ул. Куйбышева, д. 9Б</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331379</ns3:sid>
+                            <ns3:externalSid>627e4e57-d1b7-4a44-822c-8e2086faef2b</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>213a1aca-5c9e-4b94-a4e0-c5333882cba0</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Балашиха</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, мкр. Купавна, ул. Шоссейная, д. 1А</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331380</ns3:sid>
+                            <ns3:externalSid>64602fb9-2f40-4a5d-96ba-7aeae1453487</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>57e6e3c2-486a-4265-afc6-af1c2d6729dc</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Орехово-Зуевский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, г. Куровское, ул. Дорожная, д. 19</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331381</ns3:sid>
+                            <ns3:externalSid>4d07df74-bce2-4d1a-996c-169d1c4e67e0</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>560e4d42-b5a8-4b34-9462-e8d4f048c964</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Павлово-Посадский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, г. Павловский Посад, "Бор"</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331382</ns3:sid>
+                            <ns3:externalSid>7ccde94c-cfb3-4701-ae18-44b7c1895b6e</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>d77fcba7-6fd9-4e15-a70f-dba0e96a116e</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, м.о. Раменский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, г. Раменское, ул. Нефтегазосъемка, д.15</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331383</ns3:sid>
+                            <ns3:externalSid>e0c50964-94f7-419b-91cf-f4172974c815</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>26580099-b45e-4834-b085-527485d692b7</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, м.о. Рузский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, г. Руза, Красный проезд, д.13</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331384</ns3:sid>
+                            <ns3:externalSid>407537b9-410d-4a70-80d4-d45f3481dd14</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>26149e92-3a76-4bba-b332-1facc35f9311</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Подольск</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, г. Подольск, Домодедовское шоссе, д.1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331385</ns3:sid>
+                            <ns3:externalSid>0877a4ec-7671-4940-b55d-dcf33813b95d</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>5f07f4b6-9b3b-45f2-937f-92a39ffd3128</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, м.о. Серебряные Пруды</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, р.п. Серебряные Пруды, ул. Садофьева, д.13</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331386</ns3:sid>
+                            <ns3:externalSid>48a97936-8dbd-4650-87aa-07a5040b8ddc</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>2e1b7a2a-55de-42be-aacf-6c625cad5ff5</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Люберцы</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, рп. Малаховка, Егорьевское ш., д.3</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331387</ns3:sid>
+                            <ns3:externalSid>4141a4a6-8896-4ce9-b44b-b5356cb02405</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>26580099-b45e-4834-b085-527485d692b7</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, м.о. Рузский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, г. Руза, ул. Социалистическая, д. 87</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331388</ns3:sid>
+                            <ns3:externalSid>799f61ca-353a-41c0-9334-764d84965b29</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>d1954143-4569-4938-b06a-2c51d07b8fe3</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Богородский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, д. Кудиново, АБЗ</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62331389</ns3:sid>
+                            <ns3:externalSid>7d3eeadb-c909-4578-a424-010460079764</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>d1954143-4569-4938-b06a-2c51d07b8fe3</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Богородский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>, г. Ногинск, ул. Выездная, д. 1Б</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <addInfo>КОНТАКТЫ ЗАКАЗЧИКА: Баукин Дмитрий Алексеевич, Начальник Контрактного управления, 7-495-287-37-97
+Электронная почта: mosavtodor@mosreg.ru
+Почтовый адрес: Российская Федерация, 143421, Московская обл, 26 км автодороги Балтия, бизнес-центр "Рига-Ленд", д. 5, стр.2. 
+Место нахождения, адрес: Российская Федерация, 143421, Московская область, г.о. Красногорск, тер. Автодорога Балтия, км 26-й, д. 5, стр. 2, 7-495-287-37-97 mosavtodor@mosreg.ru
+
+За нарушение требований антимонопольного законодательства Российской Федерации о запрете участия в ограничивающих конкуренцию соглашениях, осуществления ограничивающих конкуренцию согласованных действий предусмотрена ответственность в соответствии со ст. 14.32 КоАП РФ и ст. 178 УК РФ.</addInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225654489</ns3:sid>
+                    <ns3:externalSid>5a0068ec-2a54-4c48-a368-81fd3278a4ac</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>37.00.10.000-00000002</ns2:code>
+                        <ns2:name>Услуги по удалению сточных отходов</ns2:name>
+                        <ns2:versionId>279278</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>37.00.1</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по удалению сточных отходов</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по удалению сточных отходов</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>113</ns2:code>
+                        <ns2:nationalCode>м[3*]</ns2:nationalCode>
+                        <ns2:name>Кубический метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1300.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>3640.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>4732000.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>4732000.00</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>Наличие у участника закупки в соответствии с пунктом 30 части 1 статьи 12 Федерального закона от 04.05.2011 № 99-ФЗ "О лицензировании отдельных видов деятельности", Постановлением Правительства РФ от 02.06.2026 N 675 "О лицензировании деятельности по сбору, транспортированию, обработке, утилизации, обезвреживанию, размещению отходов I - IV классов опасности" лицензии на следующий вид деятельности: деятельность по сбору, транспортированию, обработке, утилизации, обезвреживанию, размещению отходов I - IV классов опасности (за исключением случаев, если сбор отходов I - IV классов опасности осуществляется не по месту их обработки, и (или) утилизации, и (или) обезвреживания, и (или) размещения). Наличие лицензии кодов отходов по ФККО в соответствии с приложением №5 к Контракту.</ns3:content>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEZK2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44384087</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0320100025726000106</purchaseNumber>
+        <docNumber>№0320100025726000106</docNumber>
+        <plannedPublishDate>2026-10-28+10:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-27T17:05:07.979+10:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/zk20/view/common-info.html?regNumber=0320100025726000106</href>
+        <placingWay>
+            <ns2:code>ZKP20</ns2:code>
+            <ns2:name>Запрос котировок в электронной форме</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_SBAST</ns2:code>
+            <ns2:name>АО «Сбербанк-АСТ»</ns2:name>
+            <ns2:url>http://www.sberbank-ast.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Лицензия програмного обеспечения для видеонаблюдения</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03201000257</regNum>
+            <consRegistryNum>00144387</consRegistryNum>
+            <fullName>ФЕДЕРАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "ИСПРАВИТЕЛЬНАЯ КОЛОНИЯ № 41 ГЛАВНОГО УПРАВЛЕНИЯ ФЕДЕРАЛЬНОЙ СЛУЖБЫ ИСПОЛНЕНИЯ НАКАЗАНИЙ ПО ПРИМОРСКОМУ КРАЮ"</fullName>
+            <shortName>ФКУ ИК-41 ГУФСИН РОССИИ ПО ПРИМОРСКОМУ КРАЮ</shortName>
+            <postAddress>Российская Федерация, 692526, Приморский край, Уссурийск г, УЛИЦА РАКОВСКАЯ, ДОМ 95</postAddress>
+            <factAddress>Российская Федерация, 692510, Приморский край, Уссурийск г, Раковская ул, ЗД. 95</factAddress>
+            <INN>2511002241</INN>
+            <KPP>251101001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 692526, Приморский край, Уссурийск г, УЛИЦА РАКОВСКАЯ, ДОМ 95</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 692510, Приморский край, Уссурийск г, Раковская ул, ЗД. 95</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Шуткин</ns3:lastName>
+                <ns3:firstName>Эдуард</ns3:firstName>
+                <ns3:middleName>Сергеевич</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>omis41@mail.ru</contactEMail>
+            <contactPhone>7-4234-319464-204</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0320100025726000106</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17BF87CB67D00B8C1D569CECECE29</ns3:publishedContentId>
+            <ns3:fileName>НМКЦ на ПО 450 (3).xlsx</ns3:fileName>
+            <ns3:fileSize>25795</ns3:fileSize>
+            <ns3:docDescription>НМКЦ на ПО 450 (3)</ns3:docDescription>
+            <ns3:docDate>2026-10-27T09:07:24+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17BF87CB67D00B8C1D569CECECE29</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17C1017F87201AC4F0D236110531E</ns3:publishedContentId>
+            <ns3:fileName>контракт ПО 1 (1).docx</ns3:fileName>
+            <ns3:fileSize>40105</ns3:fileSize>
+            <ns3:docDescription>контракт ПО 1 (1)</ns3:docDescription>
+            <ns3:docDate>2026-10-27T09:33:11+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17C1017F87201AC4F0D236110531E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17C1041FD70238ED67B27379C3352</ns3:publishedContentId>
+            <ns3:fileName>Описание Линия (3).docx</ns3:fileName>
+            <ns3:fileSize>16617</ns3:fileSize>
+            <ns3:docDescription>Описание Линия (3)</ns3:docDescription>
+            <ns3:docDate>2026-10-27T09:33:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17C1041FD70238ED67B27379C3352</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17C114857795BB58BF3F37E2CE745</ns3:publishedContentId>
+            <ns3:fileName>Инструкция по заполнению заявки.docx</ns3:fileName>
+            <ns3:fileSize>24381</ns3:fileSize>
+            <ns3:docDescription>Инструкция по заполнению заявки</ns3:docDescription>
+            <ns3:docDate>2026-10-27T09:34:29+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17C114857795BB58BF3F37E2CE745</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17C10801F795C886965F4831A8A06</ns3:publishedContentId>
+            <ns3:fileName>Извещение Линия (2).docx</ns3:fileName>
+            <ns3:fileSize>26817</ns3:fileSize>
+            <ns3:docDescription>Извещение Линия (2)</ns3:docDescription>
+            <ns3:docDate>2026-10-27T09:33:38+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17C10801F795C886965F4831A8A06</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-27T17:05:07+10:00</startDT>
+                <endDT>2026-11-05T10:00:00+10:00</endDT>
+            </collectingInfo>
+            <summarizingDate>2026-11-06+10:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>348666.66</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03201000257</ns2:regNum>
+                    <ns2:consRegistryNum>00144387</ns2:consRegistryNum>
+                    <ns2:fullName>ФЕДЕРАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "ИСПРАВИТЕЛЬНАЯ КОЛОНИЯ № 41 ГЛАВНОГО УПРАВЛЕНИЯ ФЕДЕРАЛЬНОЙ СЛУЖБЫ ИСПОЛНЕНИЯ НАКАЗАНИЙ ПО ПРИМОРСКОМУ КРАЮ"</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>010507002</ns3:bik>
+                        <ns3:settlementAccount>03212643000000012000</ns3:settlementAccount>
+                        <ns3:personalAccount>05201443870</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ДГУ Банка России//УФК по Приморскому краю, г Владивосток</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000012</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Обеспечение исполнения контракта предоставляется в виде независимой гарантии, соответствующей требованиям ст. ст. 45, 96 Федерального закона от 05.04.2013 N 44-ФЗ, или внесением денежных средств на указанный заказчиком счет. Способ обеспечения исполнения контракта определяется участником закупки самостоятельно. Контракт заключается после предоставления участником закупки обеспечения исполнения контракта.&#13;
+Обеспечение исполнения настоящего Контракта и информация, подтверждающая добросовестность Исполнителя, предоставляется при направлении Заказчику подписанного проекта Контракта.&#13;
+Участник закупки, с которым заключается контракт по результатам определения поставщика (подрядчика, исполнителя) в соответствии с пунктом 1 части 1 статьи 30 настоящего Федерального закона, освобождается от предоставления обеспечения исполнения контракта, в случае предоставления таким участником закупки информации, содержащейся в реестре контрактов, заключенных заказчиками, и подтверждающей исполнение таким участником (без учета правопреемства) в течение трех лет до даты подачи заявки на участие в закупке трех контрактов, исполненных без применения к такому участнику неустоек (штрафов, пеней).&#13;
+</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>348666.66</maxPrice>
+                    </maxPriceInfo>
+                    <IKZInfo>
+                        <purchaseCode>261251100224125110100101121075829242</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>58.29</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по изданию прочего программного обеспечения</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>242</ns2:code>
+                                <ns2:name>Закупка товаров, работ и услуг в сфере информационно-коммуникационных технологий</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>12511002241251101001</customerCode>
+                        <purchaseNumber>0112</purchaseNumber>
+                        <purchaseOrderNumber>107</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603201000257001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603201000257001000143</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-21+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>99010001</ns2:code>
+                                    <ns2:name>Федеральный бюджет</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>10</ns2:code>
+                                    <ns2:name>федеральный бюджет</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>00000001</ns2:code>
+                                    <ns2:name>Раздел 1. Муниципальные образования субъектов Российской Федерации / Федеральный бюджет</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>348666.66</total>
+                                <currentYear>348666.66</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22441163</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-21+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>32003054240690048242</KBK>
+                                        <paymentYearInfo>
+                                            <total>348666.66</total>
+                                            <currentYear>348666.66</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62365044</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>b60724d2-4286-42f2-b548-bd1b9aab93b5</ns3:GARGuid>
+                                <ns3:GARAddress>край Приморский, г.о. Уссурийский, г. Уссурийск, ул. Раковская, зд. 95</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225818391</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>58.29.50.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по предоставлению лицензий на право использовать компьютерное программное обеспечение</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Услуги по предоставлению лицензий на право использовать компьютерное программное обеспечение</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>348666.66</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>348666.66</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>true</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>false</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:totalSum>348666.66</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TOVNPIVR</ns2:shortName>
+                    <ns2:name>Требование об отсутствии в реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации, включенной в такой реестр в связи отказом поставщика (подрядчика, исполнителя) от исполнения контракта по причине введения в отношении заказчика санкций и (или) мер ограничительного характера</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+    </notificationInfo>
+    <printFormFieldsInfo>
+        <is449Features>false</is449Features>
+    </printFormFieldsInfo>
+</ns8:epNotificationEZK2020>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEZK2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44433410</id>
+    <externalId>4667334</externalId>
+    <versionNumber>2</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0348500004026000324</purchaseNumber>
+        <docNumber>№ИИ1</docNumber>
+        <plannedPublishDate>2026-10-30+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T11:10:39.830+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/zk20/view/common-info.html?regNumber=0348500004026000324</href>
+        <placingWay>
+            <ns2:code>ZKP20</ns2:code>
+            <ns2:name>Запрос котировок в электронной форме</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_MMVB</ns2:code>
+            <ns2:name>Электронная торговая площадка «Фабрикант»</ns2:name>
+            <ns2:url>https://www.fabrikant.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по техническому обслуживанию медицинского оборудования</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03485000040</regNum>
+            <consRegistryNum>462Ю6872</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ МОСКОВСКОЙ ОБЛАСТИ "РАМЕНСКАЯ БОЛЬНИЦА"</fullName>
+            <shortName>ГБУЗ МОСКОВСКОЙ ОБЛАСТИ "РАМЕНСКАЯ БОЛЬНИЦА"</shortName>
+            <postAddress>Российская Федерация, 140105, Московская обл, УЛ МАХОВА, Д. 14</postAddress>
+            <factAddress>Российская Федерация, 140105, Московская обл, УЛ МАХОВА, Д. 14</factAddress>
+            <INN>5040175486</INN>
+            <KPP>504001001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 140105, Московская обл, УЛ МАХОВА, Д. 14</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 140105, Московская обл, УЛ МАХОВА, Д. 14</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Адамов</ns3:lastName>
+                <ns3:firstName>Владимир</ns3:firstName>
+                <ns3:middleName>  Николаевич</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>crb_z@mail.ru</contactEMail>
+            <contactPhone>7-496-4652895</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0348500004026000324</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B84D9D2792F88CBCB865512715E</ns3:publishedContentId>
+            <ns3:fileName>Обоснование НМЦК.zip</ns3:fileName>
+            <ns3:fileSize>129987</ns3:fileSize>
+            <ns3:docDescription>Обоснование НМЦК</ns3:docDescription>
+            <ns3:docDate>2026-10-30T11:06:25+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B84D9D2792F88CBCB865512715E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B85DFBF7321A3F08E2FCA96257A</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта, сост. 29.10.2026.zip</ns3:fileName>
+            <ns3:fileSize>33056</ns3:fileSize>
+            <ns3:docDescription>Проект контракта, сост. 29.10.2026</ns3:docDescription>
+            <ns3:docDate>2026-10-30T11:06:25+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B85DFBF7321A3F08E2FCA96257A</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BAE09427CFB903F046BB2E56210</ns3:publishedContentId>
+            <ns3:fileName>ТЗ Общ обслуживание ранее  на публ.docx</ns3:fileName>
+            <ns3:fileSize>736957</ns3:fileSize>
+            <ns3:docDescription>ТЗ Общ обслуживание ранее  на публ</ns3:docDescription>
+            <ns3:docDate>2026-10-30T11:06:25+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BAE09427CFB903F046BB2E56210</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B85DE187BD4B8EE413070327967</ns3:publishedContentId>
+            <ns3:fileName>Требования к содержанию, составу заявки на участие в закупке .docx</ns3:fileName>
+            <ns3:fileSize>53344</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию, составу заявки на участие в закупке </ns3:docDescription>
+            <ns3:docDate>2026-10-30T11:06:25+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B85DE187BD4B8EE413070327967</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B85D8E17E10B724CF15D6BB0108</ns3:publishedContentId>
+            <ns3:fileName>Приложение к проекту контракта, сост. 29.10.2026.zip</ns3:fileName>
+            <ns3:fileSize>510702</ns3:fileSize>
+            <ns3:docDescription>Приложение к проекту контракта, сост. 29.10.2026</ns3:docDescription>
+            <ns3:docDate>2026-10-30T11:06:25+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B85D8E17E10B724CF15D6BB0108</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B85DB4C700AA612EE4B9122B513</ns3:publishedContentId>
+            <ns3:fileName>Дополнительные требования к независимой гарантии закупка №067875-26.docx</ns3:fileName>
+            <ns3:fileSize>17125</ns3:fileSize>
+            <ns3:docDescription>Дополнительные требования к независимой гарантии закупка №067875-26</ns3:docDescription>
+            <ns3:docDate>2026-10-30T11:06:25+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B85DB4C700AA612EE4B9122B513</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-30T10:45:14+03:00</startDT>
+                <endDT>2026-11-10T10:00:00+03:00</endDT>
+            </collectingInfo>
+            <summarizingDate>2026-11-12+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>561000.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03485000040</ns2:regNum>
+                    <ns2:consRegistryNum>462Ю6872</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ МОСКОВСКОЙ ОБЛАСТИ "РАМЕНСКАЯ БОЛЬНИЦА"</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <amount>56100.00</amount>
+                    <account>
+                        <ns3:bik>004525987</ns3:bik>
+                        <ns3:settlementAccount>03224643460000004800</ns3:settlementAccount>
+                        <ns3:personalAccount>20825Ю68720</ns3:personalAccount>
+                        <ns3:creditOrgName>ГУ БАНКА РОССИИ ПО ЦФО//УФК ПО МОСКОВСКОЙ ОБЛАСТИ г. МОСКВА</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000004</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ и приложения к Извещению (прилагается отдельным файлом), или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Федерального закона № 44-ФЗ.Независимая гарантия должна содержать в том числе указание на то, что споры, возникающие в связи с исполнением обязательств по независимой гарантии, подлежат рассмотрению в Арбитражном суде Московской области.Требования к предоставлению обеспечения исполнения контракта, в том числе с учетом положений статьи 37 Федерального закона № 44-ФЗ, не применяются в случаях: 1) заключения контракта с участником закупки, который является казенным учреждением; 2) осуществления закупки услуги по предоставлению кредита; 3) заключения бюджетным учреждением, государственным, муниципальным унитарными предприятиями контракта, предметом которого является выдача независимой гарантии.</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>561000.00</maxPrice>
+                    </maxPriceInfo>
+                    <IKZInfo>
+                        <purchaseCode>262504017548650400100104700013313244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.13</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту электронного и оптического оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>25040175486504001001</customerCode>
+                        <purchaseNumber>0470</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603485000040001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603485000040001000426</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-02-28+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>561000.00</total>
+                                <currentYear>561000.00</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22525966</sid>
+                                <externalSid>8447db88-1eb1-48aa-83e8-765810427e26</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-02-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>561000.00</total>
+                                        <currentYear>561000.00</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>561000.00</ns3:total>
+                                                <ns3:currentYear>561000.00</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>561000.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62458526</ns3:sid>
+                            <ns3:externalSid>e3f80a45-9160-4006-9e38-9be1392136ef</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>d77fcba7-6fd9-4e15-a70f-dba0e96a116e</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, м.о. Раменский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>Российская Федерация, обл Московская, м.о.. Раменский ( в соответствии с Описанием объекта закупки (Техническое задание) (Приложение № 5 к Контракту)</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyServiceRequirement>Гарантийные сроки на работы по ТО: на работы по периодическому ТО – 3 месяца; на установленные запасные части – не менее срока, установленного заводом-изготовителем (но не может быть менее 3 месяцев). Используемые запасные части должны быть оригинальными, не восстановленными, новыми, с не истекшим сроком годности, рекомендованными заводом-изготовителем. Гарантийный срок исчисляется с даты завершения работ, указанной в  Акт (ДОП), формат УПД, утвержденный приказом ФНС России.</warrantyServiceRequirement>
+                    <manufacturersWarrantyRequirement>-</manufacturersWarrantyRequirement>
+                    <warrantyTerm>Гарантийные сроки на работы по ТО: на работы по периодическому ТО – 3 месяца; на установленные запасные части – не менее срока, установленного заводом-изготовителем (но не может быть менее 3 месяцев). Используемые запасные части должны быть оригинальными, не восстановленными, новыми, с не истекшим сроком годности, рекомендованными заводом-изготовителем. Гарантийный срок исчисляется с даты завершения работ, указанной в  Акт (ДОП), формат УПД, утвержденный приказом ФНС России.</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226218728</ns3:sid>
+                    <ns3:externalSid>eaa07c55-ab07-4b0e-8495-91b38563a384</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>33.13.10.000-00000003</ns2:code>
+                        <ns2:name>Услуги по ремонту и техническому обслуживанию электронного и оптического оборудования</ns2:name>
+                        <ns2:versionId>278898</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>33.13.12.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию облучающего, электрического диагностического и электрического терапевтического оборудования, применяемого в медицинских целях</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по ремонту и техническому обслуживанию электронного и оптического оборудования</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>561000.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>561000.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>561000.00</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>Исполнитель предоставляет лицензию на осуществление деятельности по техническому обслуживанию медицинских изделий (за исключением случая, если техническое обслуживание осуществляется для обеспечения собственных нужд юридического лица или индивидуального предпринимателя, а также случая технического обслуживания медицинских изделий с низкой степенью потенциального риска их применения) (Основание: Федеральный закон от 04.05.2011г. №99-ФЗ «О лицензировании отдельных видов деятельности», пункт 17 части 1 статьи 12; Постановление Правительства РФ от 30.11.2021г. №2129). Техническое обслуживание групп МТ (кроме программного обеспечения, являющего МТ класса 2а потенциального риска применения: 1) ортопедические медицинские изделия; 2) гастроэнтерологические медицинские изделия; 3) реабилитационные и адаптированные для инвалидов медицинские изделия; 4) медицинские изделия для пластической хирургии, дерматологии и косметологии; 5) вспомогательные и общебольничные медицинские изделия; 6) стоматологические медицинские изделия; 7) анестезиологические и респираторные медицинские изделия; 8) нейрологические медицинские изделия; 9) сердечно-сосудистые медицинские изделия; 10) офтальмологические медицинские изделия; 11) медицинские изделия для оториноларингологии; 12) физиотерапевтические медицинские изделия; 13) медицинские изделия для in vitro диагностики ; 14) медицинские изделия для акушерства и гинекологии; 15) урологические медицинские изделия; 16) радиологические медицинские изделия (в части оборудования для ультразвукового исследования); Техническое обслуживание групп медицинских изделий (кроме программного обеспечения, являющего медицинским изделием) класса 2б потенциального риска применения: 1) медицинские изделия для пластической хирургии, дерматологии и косметологии; 2) хирургические инструменты, системы и сопутствующие медицинские изделия; 3) сердечно-сосудистые медицинские изделия; 4) медицинские изделия для манипуляций, восстановления тканей, органов человека; 5) 
+офтальмологические медицинские изделия; 6) физиотерапевтические медицинские изделия; 7) медицинские изделия для акушерства и гинекологии; 8) анестезиологические и респираторные медицинские изделия; 9) радиологические медицинские изделия (в части оборудования для ультразвукового исследования); 10) урологические медицинские изделия; 11) медицинские изделия, предназначенные для афереза; 12) Вспомогательные и общебольничные медицинские изделия; 13) Нейрологические медицинские изделия; 14) Медицинские изделия для оториноларингологии Техническое обслуживание групп медицинских изделий (кроме программного обеспечения, являющего медицинским изделием) класса 3 потенциального риска применения: 1) урологические медицинские изделия; 2) медицинские изделия, предназначенные для афереза. Участник закупки предоставляет: Копия лицензии (в случае, если лицензия выдана до 01.01.2021) и/или выписка из реестра лицензий в форме электронного документа, подписанного усиленной квалифицированной электронной подписью лицензирующего органа и составленного по форме, утвержденной постановлением Правительства РФ от 29 декабря 2020 года № 2343 «Об утверждении Правил формирования и ведения реестра лицензий и типовой формы выписки из реестра лицензий». В том числе ее статуса (действующая, не приостановлена, не приостановлена частично, не прекращена).</ns3:content>
+            </requirementInfo>
+        </requirementsInfo>
+    </notificationInfo>
+    <modificationInfo>
+        <info>По решению заказчика (организации, осуществляющей определение поставщика для заказчика)</info>
+        <reasonInfo>
+            <responsibleDecisionInfo>
+                <decisionDate>2026-10-30+03:00</decisionDate>
+            </responsibleDecisionInfo>
+        </reasonInfo>
+    </modificationInfo>
+    <printFormFieldsInfo>
+        <is449Features>false</is449Features>
+    </printFormFieldsInfo>
+</ns8:epNotificationEZK2020>

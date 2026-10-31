@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44380390</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0111200002426000793</purchaseNumber>
+        <docNumber>№0111200002426000793</docNumber>
+        <plannedPublishDate>2026-10-26+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-26T16:57:33.820+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0111200002426000793</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_AVK</ns2:code>
+            <ns2:name>АГЗ РТ</ns2:name>
+            <ns2:url>http://etp.zakazrf.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>поставка, ввод в эксплуатацию медицинских изделий (Кресло-коляска механическая), обучение правилам эксплуатации специалистов, эксплуатирующих медицинские изделия, и специалистов, осуществляющих техническое обслуживание медицинских изделий</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>01112000024</regNum>
+            <consRegistryNum>92200104</consRegistryNum>
+            <fullName>МИНИСТЕРСТВО ЗДРАВООХРАНЕНИЯ РЕСПУБЛИКИ ТАТАРСТАН</fullName>
+            <shortName>МИНЗДРАВ РЕСПУБЛИКИ ТАТАРСТАН</shortName>
+            <postAddress>420012, Респ Татарстан, г Казань, ул Бутлерова, д. 40/11</postAddress>
+            <factAddress>420012, Респ Татарстан, г Казань, ул Бутлерова, д. 40/11</factAddress>
+            <INN>1654017170</INN>
+            <KPP>165501001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>420012, Респ Татарстан, г Казань, ул Бутлерова, д. 40/11</orgPostAddress>
+            <orgFactAddress>420012, Респ Татарстан, г Казань, ул Бутлерова, д. 40/11</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Насырова</ns3:lastName>
+                <ns3:firstName>Венера</ns3:firstName>
+                <ns3:middleName>Фаритовна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>nasyrova.venera@tatar.ru</contactEMail>
+            <contactPhone>8-843-2333408</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0111200002426000793</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1785959077FB39231C746729C2BF8</ns3:publishedContentId>
+            <ns3:fileName>n857619_Приложение_3_-_ОНМЦК.xlsx</ns3:fileName>
+            <ns3:fileSize>15499</ns3:fileSize>
+            <ns3:docDescription>Приложение 3 - ОНМЦК</ns3:docDescription>
+            <ns3:docDate>2026-10-26T16:14:49+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1785959077FB39231C746729C2BF8</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A178595E4F70A6B8EF063CF14105DE</ns3:publishedContentId>
+            <ns3:fileName>n857619_Приложение_2_-_проект_ГК_СМП.docx</ns3:fileName>
+            <ns3:fileSize>76372</ns3:fileSize>
+            <ns3:docDescription>Приложение 2 - проект ГК СМП</ns3:docDescription>
+            <ns3:docDate>2026-10-26T16:14:49+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A178595E4F70A6B8EF063CF14105DE</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A178595EF875C2985FD03C68A8597A</ns3:publishedContentId>
+            <ns3:fileName>n857619_Приложение_1_-_ООЗ.docx</ns3:fileName>
+            <ns3:fileSize>37815</ns3:fileSize>
+            <ns3:docDescription>Приложение 1 - ООЗ</ns3:docDescription>
+            <ns3:docDate>2026-10-26T16:14:49+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A178595EF875C2985FD03C68A8597A</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A178595FC374E3900AF27B83F4E61C</ns3:publishedContentId>
+            <ns3:fileName>n857619_Извещение_ЭА_МСП.docx</ns3:fileName>
+            <ns3:fileSize>44282</ns3:fileSize>
+            <ns3:docDescription>Извещение ЭА МСП</ns3:docDescription>
+            <ns3:docDate>2026-10-26T16:14:49+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A178595FC374E3900AF27B83F4E61C</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-26T16:57:33+03:00</startDT>
+                <endDT>2026-11-05T07:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-05+03:00</biddingDate>
+            <summarizingDate>2026-11-09+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>1845000.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+            <standardContractNumber>1573000000116002</standardContractNumber>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>01112000024</ns2:regNum>
+                    <ns2:consRegistryNum>92200104</ns2:consRegistryNum>
+                    <ns2:fullName>МИНИСТЕРСТВО ЗДРАВООХРАНЕНИЯ РЕСПУБЛИКИ ТАТАРСТАН</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>18450.00</amount>
+                    <account>
+                        <ns3:bik>019205400</ns3:bik>
+                        <ns3:settlementAccount>03222643920000001100</ns3:settlementAccount>
+                        <ns3:personalAccount>ЛР007040003-МЗРТ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 6 ВВГУ Банка России//УФК по Республике Татарстан, г Казань</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810445370000079</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>1654017170</INN>
+                            <KPP>165501001</KPP>
+                            <KBK>70411610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>92701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Республики Татарстан (Татарстана) / Городские округа Республики Татарстан (Татарстана)/ / город Казань / г Казань</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810445370000079</bankAccount>
+                            <ksNumber>03100643000000011100</ksNumber>
+                            <bik>019205400</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО РЕСПУБЛИКЕ ТАТАРСТАН (МИНЗДРАВ РЕСПУБЛИКИ ТАТАРСТАН)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, предусмотренной ст. 45 Федерального закона от 05.04.2013 г. № 44-ФЗ "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд". Выбор способа обеспечения осуществляется участником закупки самостоятельно. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок. Денежные средства, предназначенные для обеспечения заявок, вносят на банковский счет, открытый в банке, включенном в перечень, который Правительство утвердило в распоряжении от 13.07.2018 № 1451-р. Независимая гарантия, выданная участнику закупки для целей обеспечения заявки на участие в закупке, должна соответствовать типовой форме независимой гарантии, предоставляемой в качестве обеспечения заявки на участие в закупке товара, работы, услуги для обеспечения государственных и муниципальных нужд, утверждённой постановлением Правительства РФ от 8 ноября 2013 г. № 1005. </procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>019205400</ns3:bik>
+                        <ns3:settlementAccount>03222643920000001100</ns3:settlementAccount>
+                        <ns3:personalAccount>ЛР007040003-МЗРТ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 6 ВВГУ Банка России//УФК по Республике Татарстан, г Казань</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810445370000079</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>В соответствии со ст.96 Федерального закона от 05.04.2013 г. № 44-ФЗ "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд" (далее – 44-ФЗ) обеспечение исполнения Контракта может предоставляться участником закупки в виде денежных средств или независимой гарантии, предусмотренной ст. 45 44-ФЗ. Выбор способа обеспечения осуществляется участником закупки самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный Контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со ст. 95 44-ФЗ</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>1845000.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262165401717016550100100550400000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>21654017170165501001</customerCode>
+                        <purchaseNumber>0055</purchaseNumber>
+                        <purchaseOrderNumber>040</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202601112000024002</ns3:plan2020Number>
+                        <ns3:position2020Number>202601112000024002000061</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>11021430</ns2:code>
+                                    <ns2:name>бюджет Республики Татарстан</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>20</ns2:code>
+                                    <ns2:name>бюджет субъекта Российской Федерации</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>92000000</ns2:code>
+                                    <ns2:name>Муниципальные образования Республики Татарстан (Татарстана)</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>1845000.00</total>
+                                <currentYear>1845000.00</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22435869</sid>
+                                <externalSid>388762</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>70409090140297050244</KBK>
+                                        <paymentYearInfo>
+                                            <total>1845000.00</total>
+                                            <currentYear>1845000.00</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62359514</ns3:sid>
+                            <ns3:externalSid>9eea77db-0f6b-4736-9c9d-8435a9900bb6</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c089b04-099e-4e0e-955a-6bf1ce525f1a</ns3:GARGuid>
+                                <ns3:GARAddress>респ. Татарстан</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>ГАУЗ "Межрегиональный клинико-диагностический центр", 420101, г. Казань, ул. Карбышева, 12 А – 50 шт.</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyServiceRequirement>Указана в контракте</warrantyServiceRequirement>
+                    <manufacturersWarrantyRequirement>Гарантия производителя на Оборудование, оформленная в виде отдельного документа</manufacturersWarrantyRequirement>
+                    <warrantyTerm>Гарантия Поставщика на поставленное Оборудование обеспечивает гарантийный срок на Товар, заявленный заводом-изготовителем, но в любом случае, не менее 12 месяцев со дня подписания соответствующего Акта ввода Оборудования в эксплуатацию, оказания Услуг по обучению правилам эксплуатации и инструктажу специалистов</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225751265</ns3:sid>
+                    <ns3:externalSid>3843333</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>30.92.20.000-00000041</ns2:code>
+                        <ns2:name>Кресло-коляска механическая</ns2:name>
+                        <ns2:versionId>402802</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336707950</ns3:sid>
+                                <ns3:externalSid>2807091</ns3:externalSid>
+                                <ns3:code>a706c6ae-6</ns3:code>
+                                <ns3:name>Рычажный привод</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434904499</ns3:sid>
+                                        <ns3:externalSid>7483135</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336707951</ns3:sid>
+                                <ns3:externalSid>2807092</ns3:externalSid>
+                                <ns3:code>8548fa6c-5</ns3:code>
+                                <ns3:name>Тип управления</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434904500</ns3:sid>
+                                        <ns3:externalSid>7483138</ns3:externalSid>
+                                        <ns3:qualityDescription>Пациентом</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336707952</ns3:sid>
+                                <ns3:externalSid>2807090</ns3:externalSid>
+                                <ns3:code>45e20a6d-e</ns3:code>
+                                <ns3:name>Конструкция</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434904501</ns3:sid>
+                                        <ns3:externalSid>7483133</ns3:externalSid>
+                                        <ns3:qualityDescription>Складная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336707953</ns3:sid>
+                                <ns3:externalSid>2807088</ns3:externalSid>
+                                <ns3:code>6a06333c-b</ns3:code>
+                                <ns3:name>Откидная спинка</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434904502</ns3:sid>
+                                        <ns3:externalSid>7483129</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336707954</ns3:sid>
+                                <ns3:externalSid>2807089</ns3:externalSid>
+                                <ns3:code>4b23b15d-b</ns3:code>
+                                <ns3:name>Регулировка угла наклона подножки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434904503</ns3:sid>
+                                        <ns3:externalSid>7483131</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336707955</ns3:sid>
+                                <ns3:externalSid>2807087</ns3:externalSid>
+                                <ns3:code>3bf58780-8</ns3:code>
+                                <ns3:name>Фиксация туловища</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434904504</ns3:sid>
+                                        <ns3:externalSid>7483127</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336707956</ns3:sid>
+                                <ns3:externalSid>2807083</ns3:externalSid>
+                                <ns3:code>f8f9d9ec-c</ns3:code>
+                                <ns3:name>Наличие подголовника</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434904505</ns3:sid>
+                                        <ns3:externalSid>7483122</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336707957</ns3:sid>
+                                <ns3:externalSid>2807086</ns3:externalSid>
+                                <ns3:code>fb7e58cb-3</ns3:code>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434904506</ns3:sid>
+                                        <ns3:externalSid>7483125</ns3:externalSid>
+                                        <ns3:qualityDescription>Комнатная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336707958</ns3:sid>
+                                <ns3:externalSid>2807084</ns3:externalSid>
+                                <ns3:code>6369798e-f</ns3:code>
+                                <ns3:name>Максимальный вес пациента</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434904507</ns3:sid>
+                                        <ns3:externalSid>7483123</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>166</ns2:code>
+                                            <ns2:nationalCode>кг</ns2:nationalCode>
+                                            <ns2:name>Килограмм</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>100</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>220</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>336707959</ns3:sid>
+                                <ns3:externalSid>2807085</ns3:externalSid>
+                                <ns3:code>182b752f-7</ns3:code>
+                                <ns3:name>Максимальная ширина сиденья</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>434904508</ns3:sid>
+                                        <ns3:externalSid>7483124</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>004</ns2:code>
+                                            <ns2:nationalCode>см</ns2:nationalCode>
+                                            <ns2:name>Сантиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>39</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>45.5</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>30.92.20.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Коляски инвалидные, кроме частей и принадлежностей</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Кресло-коляска механическая</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>36900.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>50.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1845000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>1845000.00</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>true</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44407652</id>
+    <externalId>527ee27c-40d4-4268-b02d-e187df5536fb</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0248100000326000127</purchaseNumber>
+        <docNumber>№0248100000326000127</docNumber>
+        <plannedPublishDate>2026-10-28+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T14:49:08.281+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0248100000326000127</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Выполнение текущего ремонта кровли Административного здания в ФБУ Реабилитационный и учебный Центр СФР (СМП)</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>02481000003</regNum>
+            <consRegistryNum>004Ф4801</consRegistryNum>
+            <fullName>ФЕДЕРАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ РЕАБИЛИТАЦИОННЫЙ И УЧЕБНЫЙ ЦЕНТР ФОНДА ПЕНСИОННОГО И СОЦИАЛЬНОГО СТРАХОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ</fullName>
+            <shortName>ФБУ РЕАБИЛИТАЦИОННЫЙ И УЧЕБНЫЙ ЦЕНТР СФР</shortName>
+            <postAddress>143057, Московская обл, г. Одинцово, Каринское с</postAddress>
+            <factAddress>143057, Московская обл, г. Одинцово, Каринское с</factAddress>
+            <INN>5032001630</INN>
+            <KPP>503201001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>143057, Московская обл, г. Одинцово, Каринское с</orgPostAddress>
+            <orgFactAddress>143057, Московская обл, г. Одинцово, Каринское с</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Чернышин</ns3:lastName>
+                <ns3:firstName>Андрей</ns3:firstName>
+                <ns3:middleName>Витальевич</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>zakupki@rc12.sfr.gov.ru</contactEMail>
+            <contactPhone>7-495-9920032-6110</contactPhone>
+            <addInfo>Контактное лицо Сапожников Сергей Леонидович</addInfo>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0248100000326000127</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1824990CF74788785940977495D0D</ns3:publishedContentId>
+            <ns3:fileName>Текущий ремонт кровли Адмн зд на 8 021,59.xlsx</ns3:fileName>
+            <ns3:fileSize>50974</ns3:fileSize>
+            <ns3:docDescription>Текущий ремонт кровли Адмн зд на 8 021,59.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:33:47+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1824990CF74788785940977495D0D</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18249902471D1BFBB5A69B1D4CDC6</ns3:publishedContentId>
+            <ns3:fileName>Контракт текущий СМП Кровля Административный корпус.doc</ns3:fileName>
+            <ns3:fileSize>247808</ns3:fileSize>
+            <ns3:docDescription>Контракт текущий СМП Кровля Административный корпус.doc</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:33:47+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18249902471D1BFBB5A69B1D4CDC6</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18249929C704C90E936AE65E6D9D0</ns3:publishedContentId>
+            <ns3:fileName>Техническое задание (Описание объекта закупки).docx</ns3:fileName>
+            <ns3:fileSize>18084</ns3:fileSize>
+            <ns3:docDescription>Техническое задание (Описание объекта закупки).docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:33:47+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18249929C704C90E936AE65E6D9D0</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1824991DD7382A5C8A7145A17A696</ns3:publishedContentId>
+            <ns3:fileName>Требования_к_заявке_2571_текущий_ремонт.docx</ns3:fileName>
+            <ns3:fileSize>29601</ns3:fileSize>
+            <ns3:docDescription>Требования_к_заявке_2571_текущий_ремонт.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:33:47+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1824991DD7382A5C8A7145A17A696</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18249920B750E9166B4D96E1E8492</ns3:publishedContentId>
+            <ns3:fileName>КФО-2,4.pdf</ns3:fileName>
+            <ns3:fileSize>760709</ns3:fileSize>
+            <ns3:docDescription>КФО-2,4.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:33:47+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18249920B750E9166B4D96E1E8492</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T14:49:08+03:00</startDT>
+                <endDT>2026-11-05T09:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-05+03:00</biddingDate>
+            <summarizingDate>2026-11-06+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>8021588.28</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>02481000003</ns2:regNum>
+                    <ns2:consRegistryNum>004Ф4801</ns2:consRegistryNum>
+                    <ns2:fullName>ФЕДЕРАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ РЕАБИЛИТАЦИОННЫЙ И УЧЕБНЫЙ ЦЕНТР ФОНДА ПЕНСИОННОГО И СОЦИАЛЬНОГО СТРАХОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>80215.88</amount>
+                    <account>
+                        <ns3:bik>004525987</ns3:bik>
+                        <ns3:settlementAccount>03244643000000064800</ns3:settlementAccount>
+                        <ns3:personalAccount>20486Ф48010</ns3:personalAccount>
+                        <ns3:creditOrgName>ГУ Банка России по ЦФО//УФК по Московской области г. Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000004</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>5032001630</INN>
+                            <KPP>503201001</KPP>
+                            <OKTMOInfo>
+                                <ns2:code>46755000433</ns2:code>
+                                <ns2:name>Муниципальные образования Московской области / Городские округа Московской области/ / Одинцовский / с Каринское</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810845370000004</bankAccount>
+                            <ksNumber>03100643000000014800</ksNumber>
+                            <bik>004525987</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО МОСКОВСКОЙ ОБЛАСТИ (ФБУ РЕАБИЛИТАЦИОННЫЙ И УЧЕБНЫЙ ЦЕНТР СФР)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в Аукционе предоставляется участником закупки в виде денежных средств или независимой гарантии. Выбор способа обеспечения заявки на участие в Аукционе осуществляется участником закупки.</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>004525987</ns3:bik>
+                        <ns3:settlementAccount>03244643000000064800</ns3:settlementAccount>
+                        <ns3:personalAccount>20486Ф48010</ns3:personalAccount>
+                        <ns3:creditOrgName>ГУ Банка России по ЦФО//УФК по Московской области г. Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000004</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Обеспечение исполнения Контракта предоставляется в форме независимой гарантии либо внесения денежных средств на указанный Заказчиком счет в размере обеспечения исполнения Контракта, либо в виде добросовестности в соответствии с частью 8.1. статьи 96 Федерального закона "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд" от 05.04.2013 N 44-ФЗ.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>8021588.28</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>261503200163050320100101640020000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>15032001630503201001</customerCode>
+                        <purchaseNumber>0164</purchaseNumber>
+                        <purchaseOrderNumber>002</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202602481000003001</ns3:plan2020Number>
+                        <ns3:position2020Number>202602481000003001000165</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-04-01+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>8021588.28</total>
+                                <currentYear>8021588.28</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22480083</sid>
+                                <externalSid>0f008f0a-29e6-49c5-a963-fc5ecb14f6af</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-04-01+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>8021588.28</total>
+                                        <currentYear>8021588.28</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>8021588.28</ns3:total>
+                                                <ns3:currentYear>8021588.28</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>8021588.28</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62406815</ns3:sid>
+                            <ns3:externalSid>e723d2cf-7e64-4d99-a59a-510e5e0e5dd4</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>ce2d3f6f-0bd2-41c7-9e22-1a9238141a02</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Одинцовский, с. Каринское</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>Гарантийный срок на выполненные работы - 24 месяца. Датой начала гарантийного срока является день подписания Сторонами Акта сдачи-приемки выполненных работ.</warrantyTerm>
+                </warrantyInfo>
+                <provisionWarranty>
+                    <ns3:amount>802158.83</ns3:amount>
+                    <ns3:part>10.0</ns3:part>
+                    <ns3:procedureInfo>Обеспечение гарантийных обязательств предоставляется в форме независимой гарантии или внесения денежных средств на указанный Заказчиком счет, либо в виде добросовестности в соответствии с частью 8.1. статьи 96 Федерального закона "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд" от 05.04.2013 N 44-ФЗ</ns3:procedureInfo>
+                    <ns3:account>
+                        <ns3:bik>004525987</ns3:bik>
+                        <ns3:settlementAccount>03244643000000064800</ns3:settlementAccount>
+                        <ns3:personalAccount>20486Ф48010</ns3:personalAccount>
+                        <ns3:creditOrgName>ГУ Банка России по ЦФО//УФК по Московской области г. Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000004</ns3:corrAccountNumber>
+                    </ns3:account>
+                </provisionWarranty>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225994960</ns3:sid>
+                    <ns3:externalSid>89617c18-bdc1-4bd7-baf2-d1e7404187d0</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>43.91.19.110</ns2:OKPDCode>
+                        <ns2:OKPDName>Работы строительные по устройству любых видов кровельных покрытий зданий и сооружений</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Выполнение текущего ремонта кровли Административного здания в ФБУ Реабилитационный и учебный Центр СФР</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>8021588.28</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>8021588.28</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>8021588.28</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU44</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS102BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии с позицией 15 раздела II приложения к ПП РФ от 29.12.2021 № 2571</ns3:name>
+                        <ns3:content>Наличие у участника закупки одного из следующих видов опыта выполнения работ: 1) опыт исполнения договора, предусматривающего выполнение работ по текущему ремонту зданий, сооружений; 2) опыт исполнения договора, предусматривающего выполнение работ по строительству, реконструкции, капитальному ремонту объекта капитального строительства. Цена выполненных работ по договору, предусмотренному пунктом 1 или 2 настоящей графы настоящей позиции, должна составлять не менее 20 процентов от начальной (максимальной) цены контракта, заключаемого по результатам определения поставщика (подрядчика, исполнителя). Информация и документы, подтверждающие соответствие участников закупки дополнительным требованиям: 1) исполненный договор; 2) акт выполненных работ, подтверждающий цену выполненных работ</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

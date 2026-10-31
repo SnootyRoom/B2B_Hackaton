@@ -6,12 +6,14 @@
 
 import re
 from dataclasses import dataclass
+from decimal import Decimal
 
 from app.parsers.errors import missing_fields, not_a_notice
 from app.parsers.normalize import (
     clean_text,
     delivery_days,
     digits,
+    local_tz,
     money,
     normalize_inn,
     normalize_method,
@@ -47,6 +49,7 @@ class Spec:
     delivery_place: Paths = ()
     published_at: Paths = ()
     application_deadline: Paths = ()
+    tz_offset: Paths = ()  # сдвиг от МСК в часах для дат без смещения; нет → МСК
     delivery_term: Paths = ()
     bid_security: Paths = ()
     bid_security_pct: Paths = ()
@@ -105,8 +108,10 @@ def build_lot(
     parsed_by: str,
     law: Law | None = None,
     lot_number: int | None = None,
+    nmck: Decimal | None = None,
 ) -> ProcurementData:
-    """Один лот → ProcurementData. `lot_number` задаётся только у многолотовых извещений."""
+    """Один лот → ProcurementData. `lot_number` задаётся только у многолотовых извещений,
+    `nmck` — если адаптер посчитал её сам (сумма цен заказчиков лота)."""
 
     def get(paths: Paths) -> str | None:
         value = first(lot, paths)
@@ -116,15 +121,19 @@ def build_lot(
 
     reg = digits(get(spec.reg_number))
     subject = clean_text(get(spec.subject))
-    nmck = money(get(spec.nmck))
-    missing = [k for k, v in (("reg_number", reg), ("subject", subject), ("nmck", nmck)) if not v]
+    if nmck is None:
+        nmck = money(get(spec.nmck))
+    # НМЦК 0 — значение из документа (запрос цен для формирования НМЦК), а не пропуск
+    fields = (("reg_number", reg), ("subject", subject), ("nmck", nmck))
+    missing = [k for k, v in fields if v is None]
     if len(missing) == 3:
         raise not_a_notice()
     if missing:
         raise missing_fields(missing)
     assert reg and subject and nmck is not None
 
-    published_at = parse_datetime(get(spec.published_at))
+    tz = local_tz(get(spec.tz_offset))
+    published_at = parse_datetime(get(spec.published_at), tz)
     delivery_place = clean_text(get(spec.delivery_place))
     term = clean_text(get(spec.delivery_term))
     method_raw = clean_text(get(spec.method_raw))
@@ -147,10 +156,15 @@ def build_lot(
         if norm and norm not in okpd2:
             okpd2.append(norm)
 
+    # адрес заказчика: юридический бывает без субъекта («453256, г. Салават, …») —
+    # тогда регион берётся из следующего адреса, где он есть
+    addresses = all_texts(lot, spec.customer_address)
+    if lot is not doc:
+        addresses += all_texts(doc, spec.customer_address)
     region = (
         normalize_region(get(spec.region))
         or normalize_region(delivery_place)
-        or normalize_region(get(spec.customer_address))
+        or next((r for a in addresses if (r := normalize_region(a))), None)
     )
 
     return ProcurementData(
@@ -167,7 +181,7 @@ def build_lot(
         region=region,
         delivery_place=delivery_place,
         published_at=published_at,
-        application_deadline=parse_datetime(get(spec.application_deadline)),
+        application_deadline=parse_datetime(get(spec.application_deadline), tz),
         delivery_term_text=term,
         delivery_days=delivery_days(term, published_at),
         okpd2_codes=okpd2,

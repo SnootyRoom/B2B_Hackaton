@@ -1,0 +1,2679 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEZK2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44427740</id>
+    <externalId>fb59e7ec-f0b4-4d52-af19-b550c0d4097e27</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0322300003326000238</purchaseNumber>
+        <docNumber>№0322300003326000238</docNumber>
+        <plannedPublishDate>2026-10-30+10:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T12:16:07.366+10:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/zk20/view/common-info.html?regNumber=0322300003326000238</href>
+        <placingWay>
+            <ns2:code>ZKP20</ns2:code>
+            <ns2:name>Запрос котировок в электронной форме</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка средств дезинфицирующих</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03223000033</regNum>
+            <consRegistryNum>082Ш7480</consRegistryNum>
+            <fullName>КРАЕВОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "РОДИЛЬНЫЙ ДОМ" ИМЕНИ ДОКТОРОВ ФЕДОРА И ЗИНАИДЫ ВЕНЦОВЫХ МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ ХАБАРОВСКОГО КРАЯ</fullName>
+            <shortName>КГБУЗ "РОДИЛЬНЫЙ ДОМ" ИМЕНИ ВЕНЦОВЫХ</shortName>
+            <postAddress>680017, Хабаровский край, Хабаровск г, УЛ ЛЕНИНА, Д. 67</postAddress>
+            <factAddress>680017, Хабаровский край, Хабаровск г, УЛ ЛЕНИНА, Д. 67</factAddress>
+            <INN>2722007376</INN>
+            <KPP>272201001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>680017, Хабаровский край, Хабаровск г, УЛ ЛЕНИНА, Д. 67</orgPostAddress>
+            <orgFactAddress>680017, Хабаровский край, Хабаровск г, УЛ ЛЕНИНА, Д. 67</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Карташова</ns3:lastName>
+                <ns3:firstName>Ксения</ns3:firstName>
+                <ns3:middleName>Вячеславовна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>rd.zakupki@yandex.ru</contactEMail>
+            <contactPhone>7-4212-975990</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0322300003326000238</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18A96B2817018A6D3E97CBC0C64AB</ns3:publishedContentId>
+            <ns3:fileName>IV. ОБОСНОВАНИЕ НМЦК.docx</ns3:fileName>
+            <ns3:fileSize>84411</ns3:fileSize>
+            <ns3:docDescription>IV. ОБОСНОВАНИЕ НМЦК</ns3:docDescription>
+            <ns3:docDate>2026-10-30T05:15:05+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18A96B2817018A6D3E97CBC0C64AB</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18A96C292792785BE5FB7467CE4FB</ns3:publishedContentId>
+            <ns3:fileName>V. ПРОЕКТ КОНТРАКТА.docx</ns3:fileName>
+            <ns3:fileSize>49149</ns3:fileSize>
+            <ns3:docDescription>V. ПРОЕКТ КОНТРАКТА</ns3:docDescription>
+            <ns3:docDate>2026-10-30T05:15:05+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18A96C292792785BE5FB7467CE4FB</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18A96BD5877A6BF430DA6D8D682B3</ns3:publishedContentId>
+            <ns3:fileName>III. ТЕХНИЧЕСКАЯ ЧАСТЬ.docx</ns3:fileName>
+            <ns3:fileSize>31691</ns3:fileSize>
+            <ns3:docDescription>III. ТЕХНИЧЕСКАЯ ЧАСТЬ</ns3:docDescription>
+            <ns3:docDate>2026-10-30T05:15:05+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18A96BD5877A6BF430DA6D8D682B3</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18A96B80D76A880BB4DDC66645C67</ns3:publishedContentId>
+            <ns3:fileName>I. ИНСТРУКЦИЯ УЧАСТНИКАМ.docx</ns3:fileName>
+            <ns3:fileSize>65518</ns3:fileSize>
+            <ns3:docDescription>I. ИНСТРУКЦИЯ УЧАСТНИКАМ</ns3:docDescription>
+            <ns3:docDate>2026-10-30T05:15:05+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18A96B80D76A880BB4DDC66645C67</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18A96B98573E0A648E618EB3507F6</ns3:publishedContentId>
+            <ns3:fileName>II. ИНФОРМАЦИОННАЯ КАРТА.docx</ns3:fileName>
+            <ns3:fileSize>33737</ns3:fileSize>
+            <ns3:docDescription>II. ИНФОРМАЦИОННАЯ КАРТА</ns3:docDescription>
+            <ns3:docDate>2026-10-30T05:15:05+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18A96B98573E0A648E618EB3507F6</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-30T12:16:07+10:00</startDT>
+                <endDT>2026-11-09T10:00:00+10:00</endDT>
+            </collectingInfo>
+            <summarizingDate>2026-11-11+10:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>490517.18</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03223000033</ns2:regNum>
+                    <ns2:consRegistryNum>082Ш7480</ns2:consRegistryNum>
+                    <ns2:fullName>КРАЕВОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "РОДИЛЬНЫЙ ДОМ" ИМЕНИ ДОКТОРОВ ФЕДОРА И ЗИНАИДЫ ВЕНЦОВЫХ МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ ХАБАРОВСКОГО КРАЯ</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>010507002</ns3:bik>
+                        <ns3:settlementAccount>03224643080000002000</ns3:settlementAccount>
+                        <ns3:personalAccount>802Ш7480000</ns3:personalAccount>
+                        <ns3:receiptCode>
+                            <ns2:code>ОБ</ns2:code>
+                            <ns2:name>Средства, поступившие в рамках обеспечения заявок, исполнения контракта (договора), гарантийных обязательства</ns2:name>
+                        </ns3:receiptCode>
+                        <ns3:creditOrgName>ОКЦ № 1 ДГУ Банка России//УФК по Приморскому краю, г Владивосток</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000012</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Порядок предоставления обеспечения исполнения контракта (договора), требования к обеспечению в соответствии с частью 3, частью 4 статьи 96 Федерального закона от 05.04.2013 № 44-ФЗ "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд" и разделами 7 и 8 части I "Инструкция участникам"</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>490517.18</maxPrice>
+                    </maxPriceInfo>
+                    <IKZInfo>
+                        <purchaseCode>262272200737627220100101770022020244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>20.20</ns2:OKPDCode>
+                                <ns2:OKPDName>Пестициды и агрохимические продукты прочие</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>22722007376272201001</customerCode>
+                        <purchaseNumber>0177</purchaseNumber>
+                        <purchaseOrderNumber>002</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603223000033001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603223000033001000218</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-01-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>490517.18</total>
+                                <currentYear>490517.18</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22515937</sid>
+                                <externalSid>2e0568df-cfa2-44d0-a060-62fe467c89ed</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-01-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>490517.18</total>
+                                        <currentYear>490517.18</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:receiptCode>
+                                                <ns2:code>МС</ns2:code>
+                                                <ns2:name>Средства обязательного медицинского страхования</ns2:name>
+                                            </ns3:receiptCode>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>392413.74</ns3:total>
+                                                <ns3:currentYear>392413.74</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:receiptCode>
+                                                <ns2:code>ПД</ns2:code>
+                                                <ns2:name>Средства бюджетного (автономного) учреждения от приносящей доход деятельности и иные средства</ns2:name>
+                                            </ns3:receiptCode>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>98103.44</ns3:total>
+                                                <ns3:currentYear>98103.44</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>490517.18</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62450459</ns3:sid>
+                            <ns3:externalSid>166fea57-06e5-4262-be8e-04715ee41fcb</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>7d468b39-1afa-41ec-8c4f-97a8603cb3d4</ns3:GARGuid>
+                                <ns3:GARAddress>край Хабаровский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г. Хабаровск, ул. Ленина,67 (аптека)</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <addInfo>Требования к остаточному сроку годности товара 
+Остаточный срок годности Товара на момент поставки должен составлять не менее 12 месяцев.
+Товар по п. 4 приобретается для совместного использования с устройствами, дозирующими локтевыми настенными модели MDS-1000P (производитель ''Saraya Co., Ltd.'', Япония) год изготовления 2013, имеющимися и используемыми Заказчиком.</addInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226180550</ns3:sid>
+                    <ns3:externalSid>cb9e8456-50b8-45af-94a6-1abef4681710</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.20.14.000-00000005</ns2:code>
+                        <ns2:name>Средство дезинфицирующее</ns2:name>
+                        <ns2:versionId>353721</ns2:versionId>
+                        <ns2:versionNumber>9</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848150</ns3:sid>
+                                <ns3:externalSid>1b2e1dee-2bc9-4c4c-ab0a-926d28963811</ns3:externalSid>
+                                <ns3:code>b71ce433-5</ns3:code>
+                                <ns3:name>Форма выпуска</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481636</ns3:sid>
+                                        <ns3:externalSid>ceadc331-14fb-4f4c-869d-781a209a039a</ns3:externalSid>
+                                        <ns3:qualityDescription>Жидкость</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848151</ns3:sid>
+                                <ns3:externalSid>e1a7e8ce-04e1-4e62-bd15-0692cd3ba959</ns3:externalSid>
+                                <ns3:code>605375da-5</ns3:code>
+                                <ns3:name>Назначение средства дезинфицирующего</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481639</ns3:sid>
+                                        <ns3:externalSid>3755c4bd-e7cc-49e2-b26e-687b20d263f2</ns3:externalSid>
+                                        <ns3:qualityDescription>Для стерилизации</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436481640</ns3:sid>
+                                        <ns3:externalSid>314e7779-2257-4a51-8550-8838c66c7a19</ns3:externalSid>
+                                        <ns3:qualityDescription>Для дезинфекции медицинских отходов класса Б</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436481641</ns3:sid>
+                                        <ns3:externalSid>c9b7092e-9491-4488-a395-821738fb57ce</ns3:externalSid>
+                                        <ns3:qualityDescription>Для дезинфекции инструментов</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436481637</ns3:sid>
+                                        <ns3:externalSid>94757708-591a-47e5-a5a8-465b60d79a4a</ns3:externalSid>
+                                        <ns3:qualityDescription>Для дезинфекции кувезов</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436481638</ns3:sid>
+                                        <ns3:externalSid>08742a3e-8eca-4ac8-bf19-c7db8941ff86</ns3:externalSid>
+                                        <ns3:qualityDescription>Для дезинфекции поверхностей из различных материалов</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848131</ns3:sid>
+                                <ns3:externalSid>5937c5ee-d3da-456e-80e3-1e72326b74e5</ns3:externalSid>
+                                <ns3:name>Антимикробная активность</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481617</ns3:sid>
+                                        <ns3:externalSid>85f599f7-076c-4b56-a08e-25a33e78c5ed</ns3:externalSid>
+                                        <ns3:qualityDescription>Бактерицидная, туберкулоцидная (тестировано на Mycobacterium terrae), вирулицидная (включая полиомиелит и аденовирус), фунгицидная (включая кандидозы и дерматофиты), спороцидная, овоцидная в отношении возбудителей паразитарных инфекций (цистов и ооцистов простейших, яиц и личинок гельминтов)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848132</ns3:sid>
+                                <ns3:externalSid>71c1e587-c56a-459b-832f-80244e979d3d</ns3:externalSid>
+                                <ns3:name>Концентрированный раствор</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481618</ns3:sid>
+                                        <ns3:externalSid>3e52cefa-4f86-4999-af7b-9652fc0519d6</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848133</ns3:sid>
+                                <ns3:externalSid>518fcd87-8925-4de1-9668-bd9c8347a656</ns3:externalSid>
+                                <ns3:name>Действующее(ие) вещество(а)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481619</ns3:sid>
+                                        <ns3:externalSid>a3819ef9-675f-40f7-81e1-9a04c9006aee</ns3:externalSid>
+                                        <ns3:qualityDescription>Пероксид водорода</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848134</ns3:sid>
+                                <ns3:externalSid>417df66b-395b-4d63-b6e6-baabcb431f49</ns3:externalSid>
+                                <ns3:name>Без содержания производных гуанидина, хлорактивных соединений, альдегидов, фенола и его производных</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481620</ns3:sid>
+                                        <ns3:externalSid>e41d30a8-a435-4b15-ac02-abfe056af438</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848135</ns3:sid>
+                                <ns3:externalSid>69a1c5bb-72ed-4193-9458-5656b6bee407</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 1</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481621</ns3:sid>
+                                        <ns3:externalSid>09c04704-150b-491e-9a93-5b9a39151be0</ns3:externalSid>
+                                        <ns3:qualityDescription>Дезинфекция кувезов при бактериальных (включая туберкулез), вирусных и грибковых (включая кандидозы) инфекциях</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848136</ns3:sid>
+                                <ns3:externalSid>16d774df-1055-4e83-932c-dfaceb30c84a</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора (по препарату) для режима 1</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481622</ns3:sid>
+                                        <ns3:externalSid>125864c7-92af-41de-9a23-094b589b8923</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>3</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848137</ns3:sid>
+                                <ns3:externalSid>e5062d3a-e3cd-4fc5-ba60-6d1eaeaadc95</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 1</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481623</ns3:sid>
+                                        <ns3:externalSid>a5a54c85-afaa-4388-be8d-3e2a2535ca91</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>30</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848138</ns3:sid>
+                                <ns3:externalSid>d0952d34-55dd-45f0-a738-c1698eb93295</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 2</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481624</ns3:sid>
+                                        <ns3:externalSid>10b35adf-e5a2-4a4b-a0e4-98e0bef629c2</ns3:externalSid>
+                                        <ns3:qualityDescription>Дезинфекция медицинских отходов (вакцины БЦЖ с истекшим сроком годности и нарушенной целостностью упаковки), при бактериальных (включая туберкулез) инфекциях</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848139</ns3:sid>
+                                <ns3:externalSid>e9083cc6-e74d-420c-a128-c420e77a1aa7</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора (по препарату) для режима 2</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481625</ns3:sid>
+                                        <ns3:externalSid>ec26e1b6-562b-47aa-b638-18c85228bd79</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>6</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848140</ns3:sid>
+                                <ns3:externalSid>e5302939-86be-4164-bd2b-e05d13b9af52</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 2</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481626</ns3:sid>
+                                        <ns3:externalSid>ed602e2b-2343-4f20-bf7a-fb26cab52d5c</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>120</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848141</ns3:sid>
+                                <ns3:externalSid>d689e4f6-7f38-4df9-806b-e2d73b9e6e75</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 3</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481627</ns3:sid>
+                                        <ns3:externalSid>55663c32-e82c-4ce3-9940-51aa2c12e8fe</ns3:externalSid>
+                                        <ns3:qualityDescription>Текущая очаговая дезинфекция поверхностей в помещениях при анаэробных инфекциях</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848142</ns3:sid>
+                                <ns3:externalSid>01ae716d-ca34-4b35-9b48-f29f4f725a85</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора (по препарату) для режима 3</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481628</ns3:sid>
+                                        <ns3:externalSid>35bc01c8-a41f-4c86-871e-9f7e7ebae630</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>3</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848143</ns3:sid>
+                                <ns3:externalSid>86bf2688-09e7-4484-94e9-fe2dd1363e81</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 3</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481629</ns3:sid>
+                                        <ns3:externalSid>7c12a8bc-96f9-447c-ad9e-7d90189a7d2e</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>30</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848144</ns3:sid>
+                                <ns3:externalSid>42f94827-f80e-4aff-84d9-05b779466802</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 4</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481630</ns3:sid>
+                                        <ns3:externalSid>2d10edd0-1032-4a9c-931a-abc12976ec6c</ns3:externalSid>
+                                        <ns3:qualityDescription>Дезинфекция изделий медицинского назначения (далее – ИМН) (в т.ч. хирургических инструментов) при анаэробных инфекциях</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848145</ns3:sid>
+                                <ns3:externalSid>74b1acbc-b92c-4aee-a118-89d47fd01d83</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора (по препарату) для режима 4</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481631</ns3:sid>
+                                        <ns3:externalSid>bba0fa9a-0b8c-4ca1-8104-f1ad637167df</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>3</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848146</ns3:sid>
+                                <ns3:externalSid>0f29b31b-b39d-470c-841c-7569886bc477</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 4</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481632</ns3:sid>
+                                        <ns3:externalSid>5aa97104-dcbb-4b86-87c7-daf7809c770a</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>30</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848147</ns3:sid>
+                                <ns3:externalSid>83e3c54e-afb8-4919-ab86-b1ca5cfa1612</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 5</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481633</ns3:sid>
+                                        <ns3:externalSid>2d73709a-5c14-4185-a2c8-f7dabeea2a01</ns3:externalSid>
+                                        <ns3:qualityDescription>Стерилизация ИМН многократного применения (из термолабильных материалов - стекла, резин, пластика)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848148</ns3:sid>
+                                <ns3:externalSid>b981017e-53ee-4f91-9161-e8ec1ddb6caa</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора (по перекиси водорода) для режима 5</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481634</ns3:sid>
+                                        <ns3:externalSid>9436ada4-0434-4461-aef6-c29326b1a08c</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>6</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848149</ns3:sid>
+                                <ns3:externalSid>28757879-61a0-491f-90bf-9f5fddbc80d6</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 5</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481635</ns3:sid>
+                                        <ns3:externalSid>ee6314af-b65e-43ab-9a1a-765a3bc6f0a9</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>30</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительное требование к Товару установлено для обеспечения качества Товара в период его использования по назначению.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>20.20.14.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Средства дезинфекционные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Средство дезинфицирующее</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>112</ns2:code>
+                        <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                        <ns2:name>Литр; кубический дециметр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>693.20</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>200.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>138640.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226180551</ns3:sid>
+                    <ns3:externalSid>3a7dab83-19ca-4adc-92e9-ad55dcc56b8d</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.20.14.000-00000005</ns2:code>
+                        <ns2:name>Средство дезинфицирующее</ns2:name>
+                        <ns2:versionId>353721</ns2:versionId>
+                        <ns2:versionNumber>9</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848170</ns3:sid>
+                                <ns3:externalSid>df6569d8-ca21-4609-9271-051acebd6cea</ns3:externalSid>
+                                <ns3:code>b71ce433-5</ns3:code>
+                                <ns3:name>Форма выпуска</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481660</ns3:sid>
+                                        <ns3:externalSid>a39337eb-af9c-43c5-803e-f2c9c74524b6</ns3:externalSid>
+                                        <ns3:qualityDescription>Жидкость</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848171</ns3:sid>
+                                <ns3:externalSid>8d01481d-ef34-4a66-8b09-df1f70a3c11e</ns3:externalSid>
+                                <ns3:code>605375da-5</ns3:code>
+                                <ns3:name>Назначение средства дезинфицирующего</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481662</ns3:sid>
+                                        <ns3:externalSid>4bb4b9d6-c93b-43d6-b389-d594632ddca1</ns3:externalSid>
+                                        <ns3:qualityDescription>Для дезинфекции поверхностей из различных материалов</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436481663</ns3:sid>
+                                        <ns3:externalSid>a64fc82f-165b-46da-9d25-671d34147e70</ns3:externalSid>
+                                        <ns3:qualityDescription>Для дезинфекции, совмещенной с предстерилизационной очисткой</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436481661</ns3:sid>
+                                        <ns3:externalSid>aa777eef-f079-4023-9d5a-a2040095595c</ns3:externalSid>
+                                        <ns3:qualityDescription>Для проведения дезинфекции (профилактической, текущей, заключительной)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848152</ns3:sid>
+                                <ns3:externalSid>0d205a0b-128e-4930-88f7-2788f268f5ce</ns3:externalSid>
+                                <ns3:name>Антимикробная активность</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481642</ns3:sid>
+                                        <ns3:externalSid>a4043537-f261-4d87-8f17-08d9d8b47f9e</ns3:externalSid>
+                                        <ns3:qualityDescription>Бактерицидная, туберкулоцидная (тестировано на Mycobacteriumterrae), вирулицидная (включая полиомиелит и аденовирус), фунгицидная (включая кандидозы и дерматофиты)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848153</ns3:sid>
+                                <ns3:externalSid>4ea8b250-17c7-4f68-a4bd-077b43e43b3b</ns3:externalSid>
+                                <ns3:name>Концентрированный раствор</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481643</ns3:sid>
+                                        <ns3:externalSid>5c4f019b-994b-4a33-9568-d95286f0be5c</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848154</ns3:sid>
+                                <ns3:externalSid>da26ea1b-62b8-4b7d-9f7c-63e62617d325</ns3:externalSid>
+                                <ns3:name>Действующее(ие) вещества(а)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481644</ns3:sid>
+                                        <ns3:externalSid>a807eb1e-9c16-4c1b-8113-b69562937491</ns3:externalSid>
+                                        <ns3:qualityDescription>Алкиламин(ы)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848155</ns3:sid>
+                                <ns3:externalSid>44b194f6-231a-4666-bc2e-7d918f182d61</ns3:externalSid>
+                                <ns3:name>Без содержания альдегидов</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481645</ns3:sid>
+                                        <ns3:externalSid>2f10b727-c782-46ff-8f6a-0ce357309332</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848156</ns3:sid>
+                                <ns3:externalSid>57ff8155-50e6-4594-bfa0-0e91e27e7ac1</ns3:externalSid>
+                                <ns3:name>Ферменты (протеаза, липаза, амилаза)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481646</ns3:sid>
+                                        <ns3:externalSid>efa6a2ce-5cca-4e26-a98f-9c928051e5c9</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848157</ns3:sid>
+                                <ns3:externalSid>479864c2-c9c4-4847-a562-3a3f932be2cc</ns3:externalSid>
+                                <ns3:name>Моющие свойства</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481647</ns3:sid>
+                                        <ns3:externalSid>11bedeae-dd34-44fe-9e6a-537055a6153a</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848158</ns3:sid>
+                                <ns3:externalSid>3e22a9d0-818b-4792-afc9-3514c33da70b</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 1</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481648</ns3:sid>
+                                        <ns3:externalSid>23b5670e-8e1c-4be7-9a86-d68233dd4f49</ns3:externalSid>
+                                        <ns3:qualityDescription>Профилактическая дезинфекция поверхностей в помещениях (в т.ч. проводимая в присутствии пациентов), при бактериальных инфекциях</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848159</ns3:sid>
+                                <ns3:externalSid>c45f2df2-325f-4678-9690-bcb2636cf3c3</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора для режима 1</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481649</ns3:sid>
+                                        <ns3:externalSid>abde123f-6ab8-4f42-898c-e90bcfd9f940</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>0.08</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848160</ns3:sid>
+                                <ns3:externalSid>862dfcb3-2d49-411a-ab7b-84413799afe5</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 1</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481650</ns3:sid>
+                                        <ns3:externalSid>92a92e45-f293-4dfb-a733-a44ed71bd751</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>5</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848161</ns3:sid>
+                                <ns3:externalSid>7402df35-015e-4883-821a-a3a989b0c916</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 2</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481651</ns3:sid>
+                                        <ns3:externalSid>2bd6ee3d-c999-47c5-ad18-1d6ee062692a</ns3:externalSid>
+                                        <ns3:qualityDescription>Текущая дезинфекция поверхностей в помещениях (в т.ч. проводимая в присутствии пациентов), при бактериальных (включая туберкулез), вирусных и грибковых (кандидозы) инфекциях</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848162</ns3:sid>
+                                <ns3:externalSid>6d81907d-bce9-4eb4-b199-01efa31ce1d1</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора для режима 2</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481652</ns3:sid>
+                                        <ns3:externalSid>8df7ae7c-f3ba-4e24-9e1c-bef4ff248eaa</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>0.7</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848163</ns3:sid>
+                                <ns3:externalSid>7ad1eac6-f302-4882-b233-0a31906a9096</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 2</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481653</ns3:sid>
+                                        <ns3:externalSid>4b358ed2-39d1-46ad-a4b8-baf28d8431bc</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>5</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848164</ns3:sid>
+                                <ns3:externalSid>e647042d-a29f-4d36-9182-e55ffdcbe12f</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 3</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481654</ns3:sid>
+                                        <ns3:externalSid>8223a57e-cf43-44a8-94be-060281430855</ns3:externalSid>
+                                        <ns3:qualityDescription>Текущая дезинфекция поверхностей в помещениях с асептическим режимом, при вирусных инфекциях</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848165</ns3:sid>
+                                <ns3:externalSid>52c18a38-54c3-4793-943a-70a58292d3a2</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора для режима 3</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481655</ns3:sid>
+                                        <ns3:externalSid>3505b1ec-f39b-40e6-a2c6-931b82a41d51</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>0.2</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848166</ns3:sid>
+                                <ns3:externalSid>06654579-ca75-425e-9076-8281726fb569</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 3</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481656</ns3:sid>
+                                        <ns3:externalSid>357c88be-99bd-4843-9cf0-8c1618528486</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>5</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848167</ns3:sid>
+                                <ns3:externalSid>0060e37c-a635-43b7-933a-dcb39d3bc0e4</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 4</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481657</ns3:sid>
+                                        <ns3:externalSid>315529af-3036-4df0-9b3f-83237aa5fe7a</ns3:externalSid>
+                                        <ns3:qualityDescription>Дезинфекция, совмещенная с предстерилизационной очисткой ИМН, на этапе замачивания, механизированным способом в ультразвуковых установках, при бактериальных (включая туберкулез), вирусных и грибковых (кандидозы и дерматофиты) инфекциях</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848168</ns3:sid>
+                                <ns3:externalSid>430f61cd-8175-4d99-839e-9650afda3209</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора для режима 4</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481658</ns3:sid>
+                                        <ns3:externalSid>c56db95e-fea4-4021-b25f-b71995e0f569</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>0.4</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848169</ns3:sid>
+                                <ns3:externalSid>f054a663-ed31-4474-8310-acab77180fed</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 4</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481659</ns3:sid>
+                                        <ns3:externalSid>414900ca-d891-402d-83cb-d42b24e846a2</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>5</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительное требование к Товару установлено для обеспечения качества Товара в период его использования по назначению.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>20.20.14.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Средства дезинфекционные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Средство дезинфицирующее</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>112</ns2:code>
+                        <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                        <ns2:name>Литр; кубический дециметр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>983.64</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>150.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>147546.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226180552</ns3:sid>
+                    <ns3:externalSid>07a0b46b-0783-4a74-a3d2-16fa20853705</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.20.14.000-00000009</ns2:code>
+                        <ns2:name>Средство дезинфицирующее</ns2:name>
+                        <ns2:versionId>353781</ns2:versionId>
+                        <ns2:versionNumber>9</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848190</ns3:sid>
+                                <ns3:externalSid>0d33bd83-f633-476b-8c33-e0120b354636</ns3:externalSid>
+                                <ns3:code>b71ce433-5</ns3:code>
+                                <ns3:name>Форма выпуска</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481682</ns3:sid>
+                                        <ns3:externalSid>bd516a22-8f00-47f2-b200-869d53bfb86a</ns3:externalSid>
+                                        <ns3:qualityDescription>Таблетка</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848191</ns3:sid>
+                                <ns3:externalSid>1e4f8a41-c2b3-4717-b589-337b64797e5e</ns3:externalSid>
+                                <ns3:code>605375da-5</ns3:code>
+                                <ns3:name>Назначение средства дезинфицирующего</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481683</ns3:sid>
+                                        <ns3:externalSid>c7a44dcb-533c-48b0-b036-3051677b7052</ns3:externalSid>
+                                        <ns3:qualityDescription>Для дезинфекции поверхностей из различных материалов</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848172</ns3:sid>
+                                <ns3:externalSid>2194ed85-605a-446e-ac8b-e08b257d7a87</ns3:externalSid>
+                                <ns3:name>Антимикробная активность</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481664</ns3:sid>
+                                        <ns3:externalSid>93c26423-c244-4b6d-87a5-347928909037</ns3:externalSid>
+                                        <ns3:qualityDescription>Бактерицидная, туберкулоцидная (тестировано на Mycobacterium terrae), вирулицидная (включая полиомиелит и аденовирус), фунгицидная (включая кандидозы, дерматофиты и плесневые грибы рода Aspergillus), спороцидная в отношении возбудителей анаэробных инфекций (спорообразующих бактерий Clostridium difficile)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848173</ns3:sid>
+                                <ns3:externalSid>38f6f322-73fc-4d64-8f69-a367b9a59ba0</ns3:externalSid>
+                                <ns3:name>Действующее(ие) вещество(а)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481665</ns3:sid>
+                                        <ns3:externalSid>3915b47f-4303-4d9d-8277-7e31b8fb357b</ns3:externalSid>
+                                        <ns3:qualityDescription>Хлорактивное соединение</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848174</ns3:sid>
+                                <ns3:externalSid>278d9666-058d-4354-b294-47baf3ee8e8f</ns3:externalSid>
+                                <ns3:name>Моющие свойства</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481666</ns3:sid>
+                                        <ns3:externalSid>4609ad0c-6d9c-491f-a228-ec8f1b3c93e0</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848175</ns3:sid>
+                                <ns3:externalSid>b13f20ed-a3d0-4f15-b5de-8edc5f5d3ee3</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 1</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481667</ns3:sid>
+                                        <ns3:externalSid>226b3b6c-afd8-453e-9b01-eaa576ff556f</ns3:externalSid>
+                                        <ns3:qualityDescription>Заключительная очаговая дезинфекция поверхностей в помещениях, при бактериальных и вирусных инфекциях</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848176</ns3:sid>
+                                <ns3:externalSid>181a9ff4-d0f3-46c7-9807-0800e08ac7cc</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора для режима 1</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481668</ns3:sid>
+                                        <ns3:externalSid>598f1b34-f6d2-4da6-9495-8eea6e290f42</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>0.019</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848177</ns3:sid>
+                                <ns3:externalSid>22016393-1eff-4188-bcd0-2cfc7bf8fbf0</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 1</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481669</ns3:sid>
+                                        <ns3:externalSid>50d6f2a5-3ad9-4eee-855c-8db8c9e9aac6</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>30</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848178</ns3:sid>
+                                <ns3:externalSid>eb725133-9f07-408b-817b-5545e7f8da58</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 2</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481670</ns3:sid>
+                                        <ns3:externalSid>bda2f5f1-b483-40ea-a8e3-b0f0d705121a</ns3:externalSid>
+                                        <ns3:qualityDescription>Заключительная очаговая дезинфекция поверхностей в помещениях, при анаэробных инфекциях (спорообразующих бактериях Clostridium difficile)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848179</ns3:sid>
+                                <ns3:externalSid>8397a563-f2e8-4110-a917-4f636d9e8a93</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора для режима 2</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481671</ns3:sid>
+                                        <ns3:externalSid>e7daf500-5467-40d6-b844-7f2139f250cd</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>0.074</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848180</ns3:sid>
+                                <ns3:externalSid>e914ef5a-7e8a-4e79-ba74-2f36557dae43</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 2</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481672</ns3:sid>
+                                        <ns3:externalSid>8c64334a-fde9-4c17-942d-430a174b2645</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>20</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848181</ns3:sid>
+                                <ns3:externalSid>4b998125-d84c-4470-940a-ecbb183ffcc3</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 3</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481673</ns3:sid>
+                                        <ns3:externalSid>572e3073-ee99-4694-afbf-1d930331a0b4</ns3:externalSid>
+                                        <ns3:qualityDescription>Заключительная очаговая дезинфекция поверхностей в помещениях, при туберкулезе</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848182</ns3:sid>
+                                <ns3:externalSid>aad87f11-33b6-434e-9520-15c4709a3cdb</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора для режима 3</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481674</ns3:sid>
+                                        <ns3:externalSid>c0882665-4630-4716-a092-cbee880a8924</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>0.05</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848183</ns3:sid>
+                                <ns3:externalSid>2d77a271-0177-4c64-b8cd-09beaec6763c</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 3</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481675</ns3:sid>
+                                        <ns3:externalSid>97eb8a46-fb77-400a-a932-8988ddd4bc29</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>45</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848184</ns3:sid>
+                                <ns3:externalSid>46a17fbb-6ae5-4534-a047-1ae95a567aa3</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 4</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481676</ns3:sid>
+                                        <ns3:externalSid>cdd839d4-9731-4da5-9471-e576fe46f3ab</ns3:externalSid>
+                                        <ns3:qualityDescription>Заключительная очаговая дезинфекция поверхностей в помещениях при грибковых (включая кандидозы и дерматофиты) инфекциях</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848185</ns3:sid>
+                                <ns3:externalSid>2505c046-6130-404b-9d5d-a4332b1952e0</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора для режима 4</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481677</ns3:sid>
+                                        <ns3:externalSid>a6769e03-014c-4aaf-84f8-c3192790eba3</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>0.05</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848186</ns3:sid>
+                                <ns3:externalSid>ae50a5d6-13ca-40b0-991c-305b24926bd1</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 4</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481678</ns3:sid>
+                                        <ns3:externalSid>32ee1cd8-ec88-45bb-8450-221832bbf500</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>15</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848187</ns3:sid>
+                                <ns3:externalSid>128757a1-2d92-4d5a-9fd2-508aed61341b</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 5</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481679</ns3:sid>
+                                        <ns3:externalSid>3fb595eb-cf72-4966-9754-537f0a1396a1</ns3:externalSid>
+                                        <ns3:qualityDescription>Дезинфекция поверхностей пораженных плесневыми грибами</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848188</ns3:sid>
+                                <ns3:externalSid>a52d09e5-3102-4b77-a09c-66d84766d00c</ns3:externalSid>
+                                <ns3:name>Концентрация рабочего раствора для режима 5</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481680</ns3:sid>
+                                        <ns3:externalSid>47b937da-012e-42e0-9030-7fa1f90d2c07</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>0.05</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848189</ns3:sid>
+                                <ns3:externalSid>aa34dd3f-0778-4ffa-b609-c3202e514468</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 5</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481681</ns3:sid>
+                                        <ns3:externalSid>b2f42e35-7a46-4c3f-9946-2a62ff22dadb</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>15</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительное требование к Товару установлено для обеспечения качества Товара в период его использования по назначению.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>20.20.14.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Средства дезинфекционные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Средство дезинфицирующее</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>166</ns2:code>
+                        <ns2:nationalCode>кг</ns2:nationalCode>
+                        <ns2:name>Килограмм</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1188.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>30.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>35649.90</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226180553</ns3:sid>
+                    <ns3:externalSid>4250f2f8-718d-4df3-8aec-f8d0187e70cb</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.20.14.000-00000005</ns2:code>
+                        <ns2:name>Средство дезинфицирующее</ns2:name>
+                        <ns2:versionId>353721</ns2:versionId>
+                        <ns2:versionNumber>9</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848197</ns3:sid>
+                                <ns3:externalSid>151a40cf-c203-458b-99fa-5e63d103120c</ns3:externalSid>
+                                <ns3:code>b71ce433-5</ns3:code>
+                                <ns3:name>Форма выпуска</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481689</ns3:sid>
+                                        <ns3:externalSid>ab6035d4-58b1-4472-a134-ee18ffa3b02f</ns3:externalSid>
+                                        <ns3:qualityDescription>Жидкость</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848198</ns3:sid>
+                                <ns3:externalSid>88e843fd-4ced-4800-a982-11380ecd1381</ns3:externalSid>
+                                <ns3:code>605375da-5</ns3:code>
+                                <ns3:name>Назначение средства дезинфицирующего</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481690</ns3:sid>
+                                        <ns3:externalSid>530eb058-2c5f-494c-88f3-df01c5af283d</ns3:externalSid>
+                                        <ns3:qualityDescription>Для дезинфекции поверхностей из различных материалов</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848199</ns3:sid>
+                                <ns3:externalSid>21559129-69df-40c7-8c0c-e454591e11f9</ns3:externalSid>
+                                <ns3:code>a797aaf0-0</ns3:code>
+                                <ns3:name>Вид флакона</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481691</ns3:sid>
+                                        <ns3:externalSid>16074db2-d81a-431e-baad-b8a175974965</ns3:externalSid>
+                                        <ns3:qualityDescription>C курковым распылителем</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848192</ns3:sid>
+                                <ns3:externalSid>8cb4a9dc-e970-4fc7-857b-8f8bb07845b7</ns3:externalSid>
+                                <ns3:name>Антимикробная активность</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481684</ns3:sid>
+                                        <ns3:externalSid>ce31c018-3905-42e5-a660-87d9b7cd3dce</ns3:externalSid>
+                                        <ns3:qualityDescription>Бактерицидная, туберкулоцидная (тестировано на Mycobacterium terrae), вирулицидная (включая полиомиелит и аденовирус), фунгицидная (включая кандидозы и дерматофиты)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848193</ns3:sid>
+                                <ns3:externalSid>22687a89-2c13-4bba-8163-c1ae06037021</ns3:externalSid>
+                                <ns3:name>Готовый к применению раствор</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481685</ns3:sid>
+                                        <ns3:externalSid>db41aec1-28a4-4bd6-9487-e2fc1e00acbd</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848194</ns3:sid>
+                                <ns3:externalSid>41e94e41-ceee-415c-a0af-8852cbd8e4fa</ns3:externalSid>
+                                <ns3:name>Действующее(ие) вещество(а)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481686</ns3:sid>
+                                        <ns3:externalSid>b10ece03-2d22-49a8-95ce-8a0820822323</ns3:externalSid>
+                                        <ns3:qualityDescription>Спирт (или спирты)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848195</ns3:sid>
+                                <ns3:externalSid>32680718-362f-49de-822b-b6d6214851ce</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481687</ns3:sid>
+                                        <ns3:externalSid>4066ace8-a655-4d30-b03a-1efb8e514bb7</ns3:externalSid>
+                                        <ns3:qualityDescription>Дезинфекция поверхностей из различных материалов (в т.ч. экстренная дезинфекция труднодоступных поверхностей), при бактериальных (включая туберкулез), вирусных и грибковых (кандидозы и дерматофиты) инфекциях</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848196</ns3:sid>
+                                <ns3:externalSid>0049b0df-ff73-4127-90ba-010a4876906c</ns3:externalSid>
+                                <ns3:name>Время экспозиции для указанного режима</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481688</ns3:sid>
+                                        <ns3:externalSid>44521bc7-f2d6-4183-b13d-2df79369d11c</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>1</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительное требование к Товару установлено для обеспечения качества Товара в период его использования по назначению.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>20.20.14.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Средства дезинфекционные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Средство дезинфицирующее</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>112</ns2:code>
+                        <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                        <ns2:name>Литр; кубический дециметр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>774.55</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>37.50000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>29045.63</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226180554</ns3:sid>
+                    <ns3:externalSid>5c658012-4924-4eef-9d6d-b014174a9f93</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.20.14.000-00000005</ns2:code>
+                        <ns2:name>Средство дезинфицирующее</ns2:name>
+                        <ns2:versionId>353721</ns2:versionId>
+                        <ns2:versionNumber>9</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848205</ns3:sid>
+                                <ns3:externalSid>6db13ead-1686-4951-b9d0-f75019ef0b80</ns3:externalSid>
+                                <ns3:code>b71ce433-5</ns3:code>
+                                <ns3:name>Форма выпуска</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481697</ns3:sid>
+                                        <ns3:externalSid>efd34103-7f43-4770-a8eb-cb849f123dc6</ns3:externalSid>
+                                        <ns3:qualityDescription>Жидкость</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848206</ns3:sid>
+                                <ns3:externalSid>c2ba87f9-cbae-4ab9-88e2-ef31e13fac3d</ns3:externalSid>
+                                <ns3:code>605375da-5</ns3:code>
+                                <ns3:name>Назначение средства дезинфицирующего</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481698</ns3:sid>
+                                        <ns3:externalSid>0a78da3b-d003-4028-b9d5-785bbdfeef8d</ns3:externalSid>
+                                        <ns3:qualityDescription>Для обработки кожных покровов</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848207</ns3:sid>
+                                <ns3:externalSid>5501aea3-9791-4d3b-a6bd-b5e8920cef71</ns3:externalSid>
+                                <ns3:code>11c79357-d</ns3:code>
+                                <ns3:name>Объем тары</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481699</ns3:sid>
+                                        <ns3:externalSid>47659bd8-befe-46b8-90b9-8a09b003b350</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                                <ns3:maxMathNotation>less</ns3:maxMathNotation>
+                                                <ns3:max>1.25</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848200</ns3:sid>
+                                <ns3:externalSid>f8adb43f-c028-4f6b-8489-b1cd65522a58</ns3:externalSid>
+                                <ns3:name>Антимикробная активность</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481692</ns3:sid>
+                                        <ns3:externalSid>450080a0-4b8b-40cc-81cd-5f434f683ecd</ns3:externalSid>
+                                        <ns3:qualityDescription>Бактерицидная, туберкулоцидная (тестировано на Mycobacteriumterrae), вирулицидная (включая полиомиелит и аденовирус), фунгицидная (включая кандидозы и дерматофиты); в отношении возбудителей паразитарных болезней (гельминтов)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848201</ns3:sid>
+                                <ns3:externalSid>b598d132-8ae6-4fb6-a553-60747f1ae516</ns3:externalSid>
+                                <ns3:name>Готовый к применению раствор</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481693</ns3:sid>
+                                        <ns3:externalSid>8a290055-d18e-4b31-8178-576a64a8bfa4</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848202</ns3:sid>
+                                <ns3:externalSid>89028ebe-1d5d-48ee-99ee-49c7a23f26b0</ns3:externalSid>
+                                <ns3:name>Без содержания спирта</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481694</ns3:sid>
+                                        <ns3:externalSid>11b3255b-66ba-4210-b25d-ecb29ce5e854</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848203</ns3:sid>
+                                <ns3:externalSid>6f6ef5f2-d453-414f-b91a-2fa99d88e744</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481695</ns3:sid>
+                                        <ns3:externalSid>796b9b98-d417-4238-abf8-22cfb80f5e5e</ns3:externalSid>
+                                        <ns3:qualityDescription>Гигиеническая обработка рук медицинского персонала</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848204</ns3:sid>
+                                <ns3:externalSid>3982fc6a-70d6-4a54-bf75-b2b648dda6c0</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481696</ns3:sid>
+                                        <ns3:externalSid>363528e1-5034-452f-a6a8-3c53d46798a3</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>354</ns2:code>
+                                            <ns2:nationalCode>с</ns2:nationalCode>
+                                            <ns2:name>Секунда</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>10</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительное требование к Товару установлено для обеспечения качества Товара в период его использования по назначению.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>20.20.14.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Средства дезинфекционные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Средство дезинфицирующее</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>112</ns2:code>
+                        <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                        <ns2:name>Литр; кубический дециметр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>502.55</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>100.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>50255.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226180555</ns3:sid>
+                    <ns3:externalSid>485b39e9-4917-48b3-a37c-2add02617298</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.20.14.000-00000005</ns2:code>
+                        <ns2:name>Средство дезинфицирующее</ns2:name>
+                        <ns2:versionId>353721</ns2:versionId>
+                        <ns2:versionNumber>9</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848216</ns3:sid>
+                                <ns3:externalSid>5ed0576e-08eb-4b3c-ac88-223b612d0bc8</ns3:externalSid>
+                                <ns3:code>b71ce433-5</ns3:code>
+                                <ns3:name>Форма выпуска</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481708</ns3:sid>
+                                        <ns3:externalSid>07993ce2-97d9-4914-9489-e0e916640578</ns3:externalSid>
+                                        <ns3:qualityDescription>Жидкость</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848217</ns3:sid>
+                                <ns3:externalSid>85bf5240-bf22-41f3-8cd7-e4b45b6bcf12</ns3:externalSid>
+                                <ns3:code>605375da-5</ns3:code>
+                                <ns3:name>Назначение средства дезинфицирующего</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481709</ns3:sid>
+                                        <ns3:externalSid>2f8c7cfc-0a52-43b7-9984-4d7d40a7bb55</ns3:externalSid>
+                                        <ns3:qualityDescription>Для обработки кожных покровов</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848218</ns3:sid>
+                                <ns3:externalSid>4090ba5f-b23b-4dc4-a5c1-cd14065a1ee5</ns3:externalSid>
+                                <ns3:code>11c79357-d</ns3:code>
+                                <ns3:name>Объем тары</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481710</ns3:sid>
+                                        <ns3:externalSid>6bd095bc-478c-441b-aa26-c9dbbbe3adee</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1</ns3:min>
+                                                <ns3:maxMathNotation>less</ns3:maxMathNotation>
+                                                <ns3:max>1.25</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848208</ns3:sid>
+                                <ns3:externalSid>b85d6679-83cd-49de-a02e-6751c48a09eb</ns3:externalSid>
+                                <ns3:name>Антимикробная активность</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481700</ns3:sid>
+                                        <ns3:externalSid>e5059ff6-52de-4863-b1ed-6ac81dcd6e55</ns3:externalSid>
+                                        <ns3:qualityDescription>Бактерицидная, туберкулоцидная (тестировано на Mycobacteriumterrae), вирулицидная (включая полиомиелит и аденовирус), фунгицидная (включая кандидозы и дерматофиты), в отношении возбудителей паразитарных болезней (гельминтов)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848209</ns3:sid>
+                                <ns3:externalSid>b86624f6-47cc-4f14-844e-3aae260686c5</ns3:externalSid>
+                                <ns3:name>Готовый к применению раствор</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481701</ns3:sid>
+                                        <ns3:externalSid>cefd1d27-92a2-4d67-992b-0917f41e1298</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848210</ns3:sid>
+                                <ns3:externalSid>0f7a8734-ffc6-4b3b-a613-78090537aa62</ns3:externalSid>
+                                <ns3:name>Действующее(ие) вещество(а)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481702</ns3:sid>
+                                        <ns3:externalSid>23126a81-a958-48dc-a7ce-544d5a6e69e1</ns3:externalSid>
+                                        <ns3:qualityDescription>Изопропиловый спирт 
+(2-пропанол)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848211</ns3:sid>
+                                <ns3:externalSid>ae3a71b9-bf74-4b75-863a-d5c303e4c838</ns3:externalSid>
+                                <ns3:name>Концентрация действующего вещества</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481703</ns3:sid>
+                                        <ns3:externalSid>501ca752-d5d6-4608-a715-c81c62fb5bbf</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>60</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848212</ns3:sid>
+                                <ns3:externalSid>729fcc84-7252-446d-bc47-44151e0848ed</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 1</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481704</ns3:sid>
+                                        <ns3:externalSid>2aac41ac-8410-47dd-983a-0edc1ef4ccb6</ns3:externalSid>
+                                        <ns3:qualityDescription>Гигиеническая обработка рук медицинского персонала, пациентов и посетителей</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848213</ns3:sid>
+                                <ns3:externalSid>9d4930ec-3d78-4d15-a230-7d5790e4c193</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 1</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481705</ns3:sid>
+                                        <ns3:externalSid>f1df7643-24cb-47b8-a669-a02cffb540b9</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>354</ns2:code>
+                                            <ns2:nationalCode>с</ns2:nationalCode>
+                                            <ns2:name>Секунда</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>15</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848214</ns3:sid>
+                                <ns3:externalSid>81810308-aa9a-4cc1-b998-9209ce851d86</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 2</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481706</ns3:sid>
+                                        <ns3:externalSid>21179e75-329c-40da-8202-6afaca612c53</ns3:externalSid>
+                                        <ns3:qualityDescription>Обработка рук хирургов и оперирующего медицинского персонала</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848215</ns3:sid>
+                                <ns3:externalSid>bf91a5b8-a9f5-4c66-8dcb-7ea3b03dd7f7</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 2</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481707</ns3:sid>
+                                        <ns3:externalSid>b9cb66e4-4962-4423-bc7a-e81faea44613</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>355</ns2:code>
+                                            <ns2:nationalCode>мин</ns2:nationalCode>
+                                            <ns2:name>Минута</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>2</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительное требование к Товару установлено для обеспечения качества Товара в период его использования по назначению.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>20.20.14.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Средства дезинфекционные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Средство дезинфицирующее</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>112</ns2:code>
+                        <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                        <ns2:name>Литр; кубический дециметр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>551.01</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>150.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>82651.50</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226180556</ns3:sid>
+                    <ns3:externalSid>6cd7801b-fd32-4f1e-a41c-2e2640bc3f9f</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.20.14.000-00000005</ns2:code>
+                        <ns2:name>Средство дезинфицирующее</ns2:name>
+                        <ns2:versionId>353721</ns2:versionId>
+                        <ns2:versionNumber>9</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848226</ns3:sid>
+                                <ns3:externalSid>ea768e5b-d3bf-4eeb-a2b0-4710bae75f03</ns3:externalSid>
+                                <ns3:code>b71ce433-5</ns3:code>
+                                <ns3:name>Форма выпуска</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481718</ns3:sid>
+                                        <ns3:externalSid>b4b769bd-8c2c-443b-ab9b-1151952d690b</ns3:externalSid>
+                                        <ns3:qualityDescription>Жидкость</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848227</ns3:sid>
+                                <ns3:externalSid>ee3d35e1-fb53-42b5-9ff4-f1b75e0e09d5</ns3:externalSid>
+                                <ns3:code>605375da-5</ns3:code>
+                                <ns3:name>Назначение средства дезинфицирующего</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481719</ns3:sid>
+                                        <ns3:externalSid>a535aa0c-f149-4b5e-8b23-498c4021cde9</ns3:externalSid>
+                                        <ns3:qualityDescription>Для обработки кожных покровов</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337848228</ns3:sid>
+                                <ns3:externalSid>66c87a25-a28a-469c-a7cd-1d61d2946976</ns3:externalSid>
+                                <ns3:code>11c79357-d</ns3:code>
+                                <ns3:name>Объем тары</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481720</ns3:sid>
+                                        <ns3:externalSid>5d9352ff-5ee9-4323-99c7-4199f4524240</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>0.1</ns3:min>
+                                                <ns3:maxMathNotation>less</ns3:maxMathNotation>
+                                                <ns3:max>0.15</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848219</ns3:sid>
+                                <ns3:externalSid>93084e4a-169b-402d-b9eb-2bd8a37fc381</ns3:externalSid>
+                                <ns3:name>Антимикробная активность</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481711</ns3:sid>
+                                        <ns3:externalSid>b35fa56a-f668-4f4d-ba53-bd068f928ee3</ns3:externalSid>
+                                        <ns3:qualityDescription>Бактерицидная, вирулицидная (включая полиомиелит и аденовирус), фунгицидная (включая кандидозы и дерматофиты), в отношении возбудителей паразитарных болезней (гельминтов)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848220</ns3:sid>
+                                <ns3:externalSid>31b650e1-c075-42c6-9bf8-4516666dd425</ns3:externalSid>
+                                <ns3:name>Готовый к применению раствор</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481712</ns3:sid>
+                                        <ns3:externalSid>8fc32342-5000-4b61-8e3e-ceb5fbff64d8</ns3:externalSid>
+                                        <ns3:qualityDescription>Да</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848221</ns3:sid>
+                                <ns3:externalSid>cd9e79fb-52fa-499d-bd0d-5069e275e4c5</ns3:externalSid>
+                                <ns3:name>Действующее(ие) вещество(а)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481713</ns3:sid>
+                                        <ns3:externalSid>323e9523-5166-4f37-95e8-84dc87e7acd7</ns3:externalSid>
+                                        <ns3:qualityDescription>Изопропиловый спирт 
+(2-пропанол)</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848222</ns3:sid>
+                                <ns3:externalSid>f2115a7a-bcc6-4970-ab2b-5a270c185823</ns3:externalSid>
+                                <ns3:name>Концентрация действующего вещества</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481714</ns3:sid>
+                                        <ns3:externalSid>decb92c6-e6f7-4e1d-92ba-eaed1933f75c</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>744</ns2:code>
+                                            <ns2:nationalCode>ПРОЦ</ns2:nationalCode>
+                                            <ns2:name>Процент</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>60</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848223</ns3:sid>
+                                <ns3:externalSid>92f73958-f5fc-46fd-9a31-595101ac42d4</ns3:externalSid>
+                                <ns3:name>Режим дезинфекции 1</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481715</ns3:sid>
+                                        <ns3:externalSid>0d5fceac-9fc8-4910-8777-a422c24ea45f</ns3:externalSid>
+                                        <ns3:qualityDescription>Гигиеническая обработка рук медицинского персонала</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848224</ns3:sid>
+                                <ns3:externalSid>7858d21b-c4d5-4a17-add4-b5fcded603f5</ns3:externalSid>
+                                <ns3:name>Время экспозиции для режима 1</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481716</ns3:sid>
+                                        <ns3:externalSid>d7ea7b1a-66e3-4437-b2a5-133b0c0fe0eb</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>354</ns2:code>
+                                            <ns2:nationalCode>с</ns2:nationalCode>
+                                            <ns2:name>Секунда</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>15</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337848225</ns3:sid>
+                                <ns3:externalSid>a1181025-6dc4-4c79-83b8-856a752638e0</ns3:externalSid>
+                                <ns3:name>Вид флакона</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436481717</ns3:sid>
+                                        <ns3:externalSid>dd554548-1086-46be-a78f-a3c46f9b21f9</ns3:externalSid>
+                                        <ns3:qualityDescription>С распылителем</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительное требование к Товару установлено для обеспечения качества Товара в период его использования по назначению.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>20.20.14.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Средства дезинфекционные</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Средство дезинфицирующее</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>112</ns2:code>
+                        <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                        <ns2:name>Литр; кубический дециметр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1345.83</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>5.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>6729.15</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>490517.18</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+    </notificationInfo>
+    <printFormFieldsInfo>
+        <is449Features>false</is449Features>
+    </printFormFieldsInfo>
+</ns8:epNotificationEZK2020>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44429453</id>
+    <versionNumber>2</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0121600018726000075</purchaseNumber>
+        <docNumber>№ИИ1</docNumber>
+        <directDT>2026-10-29T08:37:10.205+03:00</directDT>
+        <plannedPublishDate>2026-10-30+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T08:22:26.387+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0121600018726000075</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_EETP</ns2:code>
+            <ns2:name>РОСЭЛТОРГ (АО«ЕЭТП»)</ns2:name>
+            <ns2:url>http://roseltorg.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Выполнение работ по ремонту автомобильных дорог общего пользования местного значения Труновского муниципального округа Ставропольского края</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>01216000187</regNum>
+            <consRegistryNum>073D1530</consRegistryNum>
+            <fullName>АДМИНИСТРАЦИЯ ТРУНОВСКОГО МУНИЦИПАЛЬНОГО ОКРУГА СТАВРОПОЛЬСКОГО КРАЯ</fullName>
+            <shortName>АДМИНИСТРАЦИЯ ТМО СК</shortName>
+            <postAddress>Российская Федерация, 356170, Ставропольский край, Труновский р-н, Донское с., Ленина ул, Д. 5</postAddress>
+            <factAddress>Российская Федерация, 356170, Ставропольский край, Труновский р-н, Донское с., Ленина ул, Д. 5</factAddress>
+            <INN>2621017000</INN>
+            <KPP>262101001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 356170, Ставропольский край, Труновский р-н, Донское с., Ленина ул, Д. 5</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 356170, Ставропольский край, Труновский р-н, Донское с., Ленина ул, Д. 5</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Говоров</ns3:lastName>
+                <ns3:firstName>А</ns3:firstName>
+                <ns3:middleName>В</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>skorik.s2015@yandex.ru</contactEMail>
+            <contactPhone>8-86546-33368</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0121600018726000075</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1862515EF7B70B5F6933939A8FAE3</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 2 к извещению_НМЦК.docx</ns3:fileName>
+            <ns3:fileSize>18345</ns3:fileSize>
+            <ns3:docDescription>Приложение № 2 к извещению_НМЦК</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:32:19+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1862515EF7B70B5F6933939A8FAE3</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18625347873078F449E6C22368F6B</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 3 к извещению_МК проект.doc</ns3:fileName>
+            <ns3:fileSize>225792</ns3:fileSize>
+            <ns3:docDescription>Приложение № 3 к извещению_МК проект</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:32:27+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18625347873078F449E6C22368F6B</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1862549877503B9CF3B9BAE44190E</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 1 к извещению _ООЗ.docx</ns3:fileName>
+            <ns3:fileSize>25965</ns3:fileSize>
+            <ns3:docDescription>Приложение № 1 к извещению _ООЗ</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:32:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1862549877503B9CF3B9BAE44190E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1862619AF7D44A90785C58F30AD55</ns3:publishedContentId>
+            <ns3:fileName>Приложение ТССЗ.docx</ns3:fileName>
+            <ns3:fileSize>32559</ns3:fileSize>
+            <ns3:docDescription>Приложение ТССЗ</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:33:26+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1862619AF7D44A90785C58F30AD55</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186263AFF727F8A2E5A19D418D356</ns3:publishedContentId>
+            <ns3:fileName>ПРиложение №1.1_ССР.xlsx</ns3:fileName>
+            <ns3:fileSize>14674</ns3:fileSize>
+            <ns3:docDescription>ПРиложение №1.1_ССР</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:33:34+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186263AFF727F8A2E5A19D418D356</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186266F437BE19601510B07692AEC</ns3:publishedContentId>
+            <ns3:fileName>Приложение №1.4_ЛСР пер. Дружбы.xlsx</ns3:fileName>
+            <ns3:fileSize>195961</ns3:fileSize>
+            <ns3:docDescription>Приложение №1.4_ЛСР пер. Дружбы</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:33:48+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186266F437BE19601510B07692AEC</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186264DBD7345AF82C45A8DFD6F54</ns3:publishedContentId>
+            <ns3:fileName>Приложение №1.2_ЛСР ул. Западная.xlsx</ns3:fileName>
+            <ns3:fileSize>82732</ns3:fileSize>
+            <ns3:docDescription>Приложение №1.2_ЛСР ул. Западная</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:33:39+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186264DBD7345AF82C45A8DFD6F54</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186265DA1727B95EC9B6141DA8279</ns3:publishedContentId>
+            <ns3:fileName>Приложение №1.3_ЛСР ул. Лермонтова.xlsx</ns3:fileName>
+            <ns3:fileSize>131042</ns3:fileSize>
+            <ns3:docDescription>Приложение №1.3_ЛСР ул. Лермонтова</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:33:43+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186265DA1727B95EC9B6141DA8279</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T11:50:05+03:00</startDT>
+                <endDT>2026-11-09T08:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+03:00</biddingDate>
+            <summarizingDate>2026-11-10+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>33594639.66</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+                <interbudgetaryTransfer>false</interbudgetaryTransfer>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>01216000187</ns2:regNum>
+                    <ns2:consRegistryNum>073D1530</ns2:consRegistryNum>
+                    <ns2:fullName>АДМИНИСТРАЦИЯ ТРУНОВСКОГО МУНИЦИПАЛЬНОГО ОКРУГА СТАВРОПОЛЬСКОГО КРАЯ</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>335946.40</amount>
+                    <account>
+                        <ns3:bik>012202102</ns3:bik>
+                        <ns3:settlementAccount>03232643075540003200</ns3:settlementAccount>
+                        <ns3:personalAccount>053D1530000</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ВВГУ Банка России//УФК по Нижегородской области, г Нижний Новгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000024</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>2621017000</INN>
+                            <KPP>262101001</KPP>
+                            <OKTMOInfo>
+                                <ns2:code>07554000101</ns2:code>
+                                <ns2:name>Муниципальные образования Ставропольского края / Муниципальные округа Ставропольского края / Труновский муниципальный округ / с Донское</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810345370000013</bankAccount>
+                            <ksNumber>03100643000000012100</ksNumber>
+                            <bik>010702101</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО СТАВРОПОЛЬСКОМУ КРАЮ (АДМИНИСТРАЦИЯ ТМО СК)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Порядок внесения денежных средств в качестве обеспечения заявки на участие в закупке установлен в соответствии с частью 5 статьи 44 Федерального закона №44-ФЗ</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>3359463.97</amount>
+                    <account>
+                        <ns3:bik>012202102</ns3:bik>
+                        <ns3:settlementAccount>03232643075540003200</ns3:settlementAccount>
+                        <ns3:personalAccount>053D1530000</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ВВГУ Банка России//УФК по Нижегородской области, г Нижний Новгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000024</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Порядок предоставления обеспечения исполнения контракта, требования к такому обеспечению установлены в соответствии со статьей 96 Федерального закона № 44-ФЗ и проектом контракта.</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>33594639.66</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263262101700026210100100510014211244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>42.11</ns2:OKPDCode>
+                                <ns2:OKPDName>Дороги автомобильные и автомагистрали; строительные работы по строительству автомобильных дорог и автомагистралей</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>32621017000262101001</customerCode>
+                        <purchaseNumber>0051</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202601216000187002</ns3:plan2020Number>
+                        <ns3:position2020Number>202601216000187002000053</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-07-08+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>21030358</ns2:code>
+                                    <ns2:name>Бюджет Труновского муниципального округа Ставропольского края</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>30</ns2:code>
+                                    <ns2:name>местный бюджет</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>07554000</ns2:code>
+                                    <ns2:name>Муниципальные образования Ставропольского края / Муниципальные округа Ставропольского края / Труновский муниципальный округ</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>33594639.66</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>33594639.66</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22492234</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-07-08+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>701040903201SД005244</KBK>
+                                        <paymentYearInfo>
+                                            <total>33594639.66</total>
+                                            <currentYear>0.00</currentYear>
+                                            <firstYear>33594639.66</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <BOInfo>
+                        <BONumber>073D153026210000639</BONumber>
+                        <BODate>2026-10-29T00:00:00+03:00</BODate>
+                        <inputBOFlag>auto</inputBOFlag>
+                    </BOInfo>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62422524</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>f89e5911-1421-4059-a069-179479c1e952</ns3:GARGuid>
+                                <ns3:GARAddress>край Ставропольский, м.о. Труновский, с. Донское, ул. Западная</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>«Ремонт автомобильной дороги общего пользования местного значения по ул. Западная (от ул. Зелёная) в селе Донское Труновского муниципального округа Ставропольского края», протяженность участка, требующего ремонта 0,545 км;</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62422927</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>357675ff-dd16-44b4-a54f-0b4b5825a7d3</ns3:GARGuid>
+                                <ns3:GARAddress>край Ставропольский, м.о. Труновский, с. Труновское, ул. Лермонтова</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>«Ремонт участка автомобильной дороги общего пользования местного значения по ул. Лермонтова в селе Труновское Труновского муниципального округа Ставропольского края» протяженность участка, требующего ремонта 0,630 км;</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62422928</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>581cb4d1-d8a3-49b4-bdec-87311b73fff2</ns3:GARGuid>
+                                <ns3:GARAddress>край Ставропольский, м.о. Труновский, с. Донское, пер. Дружбы</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>«Ремонт автомобильной дороги общего пользования местного значения по пер. Дружбы в селе Донское Труновского муниципального округа Ставропольского края» протяженность участка, требующего ремонта 0,424 км.</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>В соответствии с п. 8 проекта контракта</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226058428</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>42.11.20.200</ns2:OKPDCode>
+                        <ns2:OKPDName>Работы по ремонту автомобильных дорог</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>выполнение работ по текущему ремонту автомобильных дорог</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>33594639.66</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>33594639.66</ns3:sum>
+                    <ns3:type>WORK</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>33594639.66</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU44</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS33BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии с позицией 18 раздела III приложения к ПП РФ от 29.12.2021 № 2571</ns3:name>
+                        <ns3:content>Наличие у участника закупки одного из следующих видов опыта выполнения работ:
+1) опыт исполнения договора, предусматривающего выполнение работ по ремонту, содержанию автомобильной дороги;
+2) опыт исполнения договора, предусматривающего выполнение работ по капитальному ремонту автомобильной дороги;
+3) опыт исполнения договора строительного подряда, предусматривающего выполнение работ по строительству, реконструкции автомобильной дороги;
+4) опыт выполнения участником закупки, являющимся застройщиком, работ по строительству, реконструкции автомобильной дороги.
+Цена выполненных работ по договорам, предусмотренным пунктами 1, 2 или 3 настоящей графы настоящей позиции, цена выполненных работ, предусмотренных пунктом 4 настоящей графы настоящей позиции, должна составлять
+не менее 20 процентов начальной (максимальной) цены контракта, заключаемого по результатам определения поставщика (подрядчика, исполнителя).Информация и документы, подтверждающие соответствие участников закупки дополнительным требованиям:
+в случае наличия опыта, предусмотренного пунктами 1 или 2 графы "Дополнительные требования к участникам закупки" настоящей позиции:
+1) исполненный договор;
+2) акт выполненных работ, подтверждающий цену выполненных работ.
+В случае наличия опыта, предусмотренного пунктом 3 графы "Дополнительные требования к участникам закупки" настоящей позиции:
+1) исполненный договор;
+2) акт приемки объекта капитального строительства, а также акт выполненных работ, подтверждающий цену выполненных работ, если акт приемки объекта капитального строительства не содержит цену выполненных работ;
+3) разрешение на ввод объекта капитального строительства в эксплуатацию (за исключением случая, если работы, являющиеся объектом закупки, не требуют в соответствии с законодательством о градостроительной деятельности выдачи разрешения на ввод объекта капитального строительства в эксплуатацию и при этом договор, предусмотренный абзацем пятым настоящей графы, предусматривает выполнение работ, не требующих в соответствии с указанным законодательством выдачи такого разрешения) или решение о технической готовности линейного объекта инфраструктуры к временной эксплуатации.
+В случае наличия опыта, предусмотренного пунктом 4 графы "Дополнительные требования к участникам закупки" настоящей позиции:
+1) раздел  "Смета на строительство, реконструкцию, капитальный ремонт, снос объекта капитального строительства" проектной документации;
+2) разрешение на ввод объекта капитального строительства в эксплуатацию</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TPS44530</ns2:shortName>
+                    <ns2:name>Требование к поставщику (подрядчику, исполнителю), не являющемуся субъектом малого предпринимательства или социально ориентированной некоммерческой организацией, о привлечении к исполнению контракта субподрядчиков, соисполнителей из числа субъектов малого предпринимательства, социально ориентированных некоммерческих организаций в соответствии с ч. 5 ст. 30 Закона № 44 ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:reqValue>25.0</ns3:reqValue>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+    <modificationInfo>
+        <info>-</info>
+        <reasonInfo>
+            <responsibleDecisionInfo>
+                <decisionDate>2026-10-30+03:00</decisionDate>
+            </responsibleDecisionInfo>
+        </reasonInfo>
+    </modificationInfo>
+</ns8:epNotificationEF2020>
