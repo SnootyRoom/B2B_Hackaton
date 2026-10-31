@@ -1,0 +1,1793 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44419025</id>
+    <externalId>ad29712a-c66d-4757-93b7-4e85eaa1c60b</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0369300197026000002</purchaseNumber>
+        <docNumber>№0369300197026000002</docNumber>
+        <plannedPublishDate>2026-10-30+05:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T13:40:17.829+05:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0369300197026000002</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по ремонту и техническому обслуживанию аудиодомофонной системы</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03693001970</regNum>
+            <consRegistryNum>753Р5173</consRegistryNum>
+            <fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 77" ГОРОДА МАГНИТОГОРСКА</fullName>
+            <shortName>МДОУ "Д/С № 77" Г.МАГНИТОГОРСКА</shortName>
+            <postAddress>okc_rtc_yo@mail.ru</postAddress>
+            <factAddress>г.Магнитогорск,ул.Суворова д.123</factAddress>
+            <INN>7445036830</INN>
+            <KPP>745501001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>OCU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>okc_rtc_yo@mail.ru</orgPostAddress>
+            <orgFactAddress>г.Магнитогорск,ул.Суворова д.123</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Мирошина</ns3:lastName>
+                <ns3:firstName>Вера</ns3:firstName>
+                <ns3:middleName>Алексеевна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>mir.vera2003@mail.ru</contactEMail>
+            <contactPhone>7-3519-500314</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0369300197026000002</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CD6F307179A1A42F82D45D81E3</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 2 к извещению -  Обоснование НМЦК .xls</ns3:fileName>
+            <ns3:fileSize>214016</ns3:fileSize>
+            <ns3:docDescription>Приложение № 2 к извещению -  Обоснование НМЦК .xls</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:36:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CD6F307179A1A42F82D45D81E3</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CD6FFF7733AE1689758CDDEDFD</ns3:publishedContentId>
+            <ns3:fileName>Приложение №3 к извещению - Проект контракта.rar</ns3:fileName>
+            <ns3:fileSize>76266</ns3:fileSize>
+            <ns3:docDescription>Приложение №3 к извещению - Проект контракта.rar</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:36:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CD6FFF7733AE1689758CDDEDFD</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CD6E3F7E369AB9DC2F5DE6F5D4</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 1 к извещению - Техническое задание .docx</ns3:fileName>
+            <ns3:fileSize>19625</ns3:fileSize>
+            <ns3:docDescription>Приложение № 1 к извещению - Техническое задание .docx</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:36:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CD6E3F7E369AB9DC2F5DE6F5D4</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CD73297373B68776866164B41E</ns3:publishedContentId>
+            <ns3:fileName>Приложение №6 к извещению - Перечень технических средств .doc</ns3:fileName>
+            <ns3:fileSize>69120</ns3:fileSize>
+            <ns3:docDescription>Приложение №6 к извещению - Перечень технических средств .doc</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:36:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CD73297373B68776866164B41E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CD718874EFAA11B32AA1963FDF</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 5 к извещению - Сведения о заказчиках.xlsx</ns3:fileName>
+            <ns3:fileSize>22706</ns3:fileSize>
+            <ns3:docDescription>Приложение № 5 к извещению - Сведения о заказчиках.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:36:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CD718874EFAA11B32AA1963FDF</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CD72467619A74BBF94A3EB9E78</ns3:publishedContentId>
+            <ns3:fileName>Приложение №7 к извещению - Требования к содержанию составу заявки инструкция.docx</ns3:fileName>
+            <ns3:fileSize>32123</ns3:fileSize>
+            <ns3:docDescription>Приложение №7 к извещению - Требования к содержанию составу заявки инструкция.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:36:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CD72467619A74BBF94A3EB9E78</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CD728A75B9BD2C3BB11B5D9A2E</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 4  к извещению - Сведения о финансовом обеспечении исполнения .xlsx</ns3:fileName>
+            <ns3:fileSize>46893</ns3:fileSize>
+            <ns3:docDescription>Приложение № 4  к извещению - Сведения о финансовом обеспечении исполнения .xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:36:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CD728A75B9BD2C3BB11B5D9A2E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186CD73D97088BAFDEA14008BCADC</ns3:publishedContentId>
+            <ns3:fileName>Приложение №8 к извещению  - Обеспечение заявки контракта гарантийных обязательств.docx</ns3:fileName>
+            <ns3:fileSize>29989</ns3:fileSize>
+            <ns3:docDescription>Приложение №8 к извещению  - Обеспечение заявки контракта гарантийных обязательств.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:36:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186CD73D97088BAFDEA14008BCADC</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T13:40:17+05:00</startDT>
+                <endDT>2026-11-09T08:00:00+05:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+05:00</biddingDate>
+            <summarizingDate>2026-11-11+05:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>59057.04</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+                <interbudgetaryTransfer>false</interbudgetaryTransfer>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03693001137</ns2:regNum>
+                    <ns2:consRegistryNum>753Р5199</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 44 КОМБИНИРОВАННОГО ВИДА" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>017501500</ns3:bik>
+                        <ns3:settlementAccount>03234643757380006901</ns3:settlementAccount>
+                        <ns3:personalAccount>300059БУ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 5 УГУ Банка России//УФК по Челябинской области, г Челябинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810645370000062</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона №44-ФЗ от 05.04.2013 г. или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона №44-ФЗ от 05.04.2013 г. участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены независимой гарантией, не менее чем на один месяц. Размер обеспечения исполнения контракта устанавливается от цены контракта, по которой заключается контракт. Участник закупки, с которым заключается контракт по результатам определения поставщика (подрядчика, исполнителя) в соответствии с пунктом 1 части 1 статьи 30 Федерального закона №44-ФЗ от 05.04.2013 г., освобождается от обеспечения исполнения контракта в случае предоставления таким участником закупки информации, содержащейся в реестре контрактов, заключенных заказчиками, и подтверждающей исполнение таким участником (без учета правопреемства) в течение трех лет до даты подачи заявки на участие в закупке трех контрактов, исполненных без применения к такому участнику неустоек (штрафов, пеней). При этом сумма цен таких контрактов должна составлять не менее начальной (максимальной) цены контракта, указанной в извещении об осуществлении закупки и документации о закупке. Порядок предоставления обеспечения исполнения контракта, требования к такому обеспечению установлены в соответствии со статьей 96 Федерального закона №44-ФЗ от 05.04.2013 г.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>4218.36</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263744402671974560100100400013312244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.12</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>37444026719745601001</customerCode>
+                        <purchaseNumber>0040</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603693001137001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603693001137001000039</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>4218.36</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>4218.36</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22500723</sid>
+                                <externalSid>0e21c41b-e2aa-4957-8829-7a2c13fae21c</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>4218.36</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>4218.36</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>4218.36</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>4218.36</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>4218.36</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62432494</ns3:sid>
+                            <ns3:externalSid>62ed64fa-02c0-42b3-9541-33bf5cb55ac2</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>b5be01a9-26a1-47ad-b916-3fbd72d2372b</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Челябинская, г.о. Магнитогорский, г. Магнитогорск, ул. Тимирязева, д. 26</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03693001289</ns2:regNum>
+                    <ns2:consRegistryNum>753Р5124</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 13 ИМЕНИ Ю. А. ГАГАРИНА" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>017501500</ns3:bik>
+                        <ns3:settlementAccount>03234643757380006901</ns3:settlementAccount>
+                        <ns3:personalAccount>300171БУ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 5 УГУ Банка России//УФК по Челябинской области, г Челябинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810645370000062</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение Контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный Заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими Заказчику. Способ обеспечения исполнения Контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ, участником закупки, с которым заключается контракт, самостоятельно.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>4218.36</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263744402726174560100101360013312244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.12</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>37444027261745601001</customerCode>
+                        <purchaseNumber>0136</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603693001289001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603693001289001000108</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>4218.36</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>4218.36</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22500722</sid>
+                                <externalSid>a3647d87-88ec-45aa-8f60-a708546af518</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>4218.36</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>4218.36</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>4218.36</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>4218.36</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>4218.36</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62432493</ns3:sid>
+                            <ns3:externalSid>4d600e4e-c1d7-4b9e-8591-8ddcc7cf86de</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>097d4578-3986-4699-be2d-230edbe512b8</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Челябинская, г.о. Магнитогорский, г. Магнитогорск, ул. Войкова, д. 60</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03693001297</ns2:regNum>
+                    <ns2:consRegistryNum>753Р5275</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ЦЕНТР РАЗВИТИЯ РЕБЕНКА - ДЕТСКИЙ САД № 142" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>017501500</ns3:bik>
+                        <ns3:settlementAccount>03234643757380006901</ns3:settlementAccount>
+                        <ns3:personalAccount>300128БУ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 5 УГУ Банка России//УФК по Челябинской области, г Челябинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810645370000062</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение Контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный Заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими Заказчику.&#13;
+Способ обеспечения исполнения Контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ, участником закупки, с которым заключается контракт, самостоятельно.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>4218.36</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263744501664074550100100490013312244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.12</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>37445016640745501001</customerCode>
+                        <purchaseNumber>0049</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603693001297001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603693001297001000045</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>4218.36</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>4218.36</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22500719</sid>
+                                <externalSid>f0be1937-834a-4b8d-af7e-e6296c16ed67</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>4218.36</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>4218.36</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>4218.36</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>4218.36</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>4218.36</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62432490</ns3:sid>
+                            <ns3:externalSid>38e1bd2f-73dd-4a68-909d-ed7556fb017a</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>1199d291-e29c-4910-8901-666a17537b84</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Челябинская, г.о. Магнитогорский, г. Магнитогорск, ул. Завенягина, д. 9 к. 1</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03693001457</ns2:regNum>
+                    <ns2:consRegistryNum>753Г7795</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 56 С УГЛУБЛЕННЫМ ИЗУЧЕНИЕМ МАТЕМАТИКИ" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>017501500</ns3:bik>
+                        <ns3:settlementAccount>03234643757380006901</ns3:settlementAccount>
+                        <ns3:personalAccount>300202БУ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 5 УГУ Банка России//УФК по Челябинской области, г Челябинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810645370000062</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение Контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный Заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими Заказчику. Способ обеспечения исполнения Контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ, участником закупки, с которым заключается контракт, самостоятельно.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>8436.72</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263744402729374560100100860013312244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.12</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>37444027293745601001</customerCode>
+                        <purchaseNumber>0086</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603693001457001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603693001457001000084</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>8436.72</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>8436.72</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22500718</sid>
+                                <externalSid>96319044-6270-4fcc-b9d6-d6ceb3797b53</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>8436.72</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>8436.72</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>8436.72</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>8436.72</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>8436.72</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62432489</ns3:sid>
+                            <ns3:externalSid>35e94f85-2fec-4264-b3d7-8de0301ce66a</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>3aa9dab1-6d29-4573-833c-3f0ddf3ad4a0</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Челябинская, г.о. Магнитогорский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace> город Магнитогорск, улица Гагарина, дом 12, проспект Ленина, дом 58/3</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03693001563</ns2:regNum>
+                    <ns2:consRegistryNum>753Р5264</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ  УЧРЕЖДЕНИЕ "ЦЕНТР РАЗВИТИЯ РЕБЕНКА-ДЕТСКИЙ САД №122" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>017501500</ns3:bik>
+                        <ns3:settlementAccount>03234643757380006901</ns3:settlementAccount>
+                        <ns3:personalAccount>300112БУ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 5 УГУ Банка России//УФК по Челябинской области, г Челябинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810645370000062</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение Контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный Заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими Заказчику.&#13;
+Способ обеспечения исполнения Контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ, участником закупки, с которым заключается контракт, самостоятельно.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>4218.36</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263744602866274560100100760013312244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.12</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>37446028662745601001</customerCode>
+                        <purchaseNumber>0076</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603693001563001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603693001563001000059</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>4218.36</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>4218.36</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22500721</sid>
+                                <externalSid>7e6e140b-8000-4650-a0e4-b456f1d33d6e</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>4218.36</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>4218.36</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>4218.36</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>4218.36</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>4218.36</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62432492</ns3:sid>
+                            <ns3:externalSid>8db8a257-0e7c-4061-9d71-d2fe15d994da</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>58de95c9-9308-4bed-8cb0-0c46141b4bca</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Челябинская, г.о. Магнитогорский, г. Магнитогорск, ул. Суворова, д. 116 к. 1</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03693001565</ns2:regNum>
+                    <ns2:consRegistryNum>753Р5273</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 140 ОБЩЕРАЗВИВАЮЩЕГО ВИДА" Г. МАГНИТОГОРСКА</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>017501500</ns3:bik>
+                        <ns3:settlementAccount>03234643757380006901</ns3:settlementAccount>
+                        <ns3:personalAccount>300126БУ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 5 УГУ Банка России//УФК по Челябинской области, г Челябинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810645370000062</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение Контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный Заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими Заказчику.&#13;
+Способ обеспечения исполнения Контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ, участником закупки, с которым заключается контракт, самостоятельно.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>4218.36</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263744603145774560100100670013312244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.12</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>37446031457745601001</customerCode>
+                        <purchaseNumber>0067</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603693001565001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603693001565001000057</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>4218.36</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>4218.36</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22500720</sid>
+                                <externalSid>2ab92463-eba0-47c4-91a1-0e0ea1970ca2</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>4218.36</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>4218.36</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>4218.36</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>4218.36</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>4218.36</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62432491</ns3:sid>
+                            <ns3:externalSid>99dc4ddc-7c1f-4df8-9ce7-d20155a8c8ae</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>14b2343f-0327-493b-947d-57ef439f3c09</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Челябинская, г.о. Магнитогорский, г. Магнитогорск, ул. Суворова, д. 116 к. 2</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03693001350</ns2:regNum>
+                    <ns2:consRegistryNum>753Р5197</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ  ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 28 ОБЩЕРАЗВИВАЮЩЕГО ВИДА" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>017501500</ns3:bik>
+                        <ns3:settlementAccount>03234643757380006901</ns3:settlementAccount>
+                        <ns3:personalAccount>300054БУ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 5 УГУ Банка России//УФК по Челябинской области, г Челябинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810645370000062</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение Контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный Заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими Заказчику.&#13;
+Способ обеспечения исполнения Контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ, участником закупки, с которым заключается контракт, самостоятельно.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>4218.36</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263744420165774560100100690013312244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.12</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>37444201657745601001</customerCode>
+                        <purchaseNumber>0069</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603693001350001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603693001350001000066</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>4218.36</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>4218.36</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22500715</sid>
+                                <externalSid>de04f628-e17a-4607-b0fc-38c4ff1a195b</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>4218.36</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>4218.36</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>4218.36</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>4218.36</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>4218.36</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62432486</ns3:sid>
+                            <ns3:externalSid>40786fe1-4c90-4c88-b391-e13e1ab9d28b</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>c38dcacb-d880-4746-86c4-8140c5bb0edf</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Челябинская, г.о. Магнитогорский, г. Магнитогорск, ул. Ленинградская, д. 90/1</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03693001184</ns2:regNum>
+                    <ns2:consRegistryNum>753Р5257</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ЦЕНТР РАЗВИТИЯ РЕБЕНКА - ДЕТСКИЙ САД № 104" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>017501500</ns3:bik>
+                        <ns3:settlementAccount>03234643757380006901</ns3:settlementAccount>
+                        <ns3:personalAccount>300097БУ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 5 УГУ Банка России//УФК по Челябинской области, г Челябинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810645370000062</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение Контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный Заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими Заказчику.&#13;
+Способ обеспечения исполнения Контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ, участником закупки, с которым заключается контракт, самостоятельно.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>8436.72</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263744501586174550100100540013312244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.12</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>37445015861745501001</customerCode>
+                        <purchaseNumber>0054</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603693001184001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603693001184001000054</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>8436.72</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>8436.72</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22500714</sid>
+                                <externalSid>b75e2d46-5554-4617-9a80-8cf74971421e</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>8436.72</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>8436.72</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>8436.72</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>8436.72</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>8436.72</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62432485</ns3:sid>
+                            <ns3:externalSid>38fbd748-82aa-4bf3-84c9-58432f177294</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>3aa9dab1-6d29-4573-833c-3f0ddf3ad4a0</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Челябинская, г.о. Магнитогорский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>город Магнитогорск, улица 50-летия Магнитки, дом 46, корпус 1,  улица Жукова, дом 14,корпус 1</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03693002076</ns2:regNum>
+                    <ns2:consRegistryNum>753Р5229</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 168 ОБЩЕРАЗВИВАЮЩЕГО ВИДА" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>017501500</ns3:bik>
+                        <ns3:settlementAccount>03234643757380006901</ns3:settlementAccount>
+                        <ns3:personalAccount>300151БУ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 5 УГУ Банка России//УФК по Челябинской области, г Челябинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810645370000062</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение Контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный Заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими Заказчику.&#13;
+Способ обеспечения исполнения Контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ, участником закупки, с которым заключается контракт, самостоятельно.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>4218.36</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263744402652574560100100510013312244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.12</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>37444026525745601001</customerCode>
+                        <purchaseNumber>0051</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603693002076001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603693002076001000053</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>4218.36</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>4218.36</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22500717</sid>
+                                <externalSid>c4a10a92-1aa8-4c8d-bb74-b569b2471be1</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>4218.36</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>4218.36</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>4218.36</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>4218.36</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>4218.36</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62432488</ns3:sid>
+                            <ns3:externalSid>bb840db6-8db2-4034-a4f0-b4bf22f2bd20</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>3aa9dab1-6d29-4573-833c-3f0ddf3ad4a0</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Челябинская, г.о. Магнитогорский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>улица Менделеева, дом 7</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03693001406</ns2:regNum>
+                    <ns2:consRegistryNum>753Р5220</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 106 ОБЩЕРАЗВИВАЮЩЕГО ВИДА" Г. МАГНИТОГОРСКА</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>017501500</ns3:bik>
+                        <ns3:settlementAccount>03234643757380006901</ns3:settlementAccount>
+                        <ns3:personalAccount>300099БУ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 5 УГУ Банка России//УФК по Челябинской области, г Челябинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810645370000062</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение Контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный Заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими Заказчику.&#13;
+Способ обеспечения исполнения Контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ, участником закупки, с которым заключается контракт, самостоятельно.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>8436.72</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263744402667774560100100690013312244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.12</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>37444026677745601001</customerCode>
+                        <purchaseNumber>0069</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603693001406001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603693001406001000065</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>8436.72</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>8436.72</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22500716</sid>
+                                <externalSid>c923c2e9-5e20-4cb8-a1e1-ae1f5420c8ee</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>8436.72</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>8436.72</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>8436.72</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>8436.72</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>8436.72</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62432487</ns3:sid>
+                            <ns3:externalSid>7203358d-2b52-44d4-8123-1ad64f1606d0</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>3aa9dab1-6d29-4573-833c-3f0ddf3ad4a0</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Челябинская, г.о. Магнитогорский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>город Магнитогорск, улица Вокзальная, дом 132, корпус 2; улица Чекалина, дом 6</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03693001970</ns2:regNum>
+                    <ns2:consRegistryNum>753Р5173</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 77" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>017501500</ns3:bik>
+                        <ns3:settlementAccount>03234643757380006901</ns3:settlementAccount>
+                        <ns3:personalAccount>300081БУ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 5 УГУ Банка России//УФК по Челябинской области, г Челябинск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810645370000062</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение Контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный Заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими Заказчику.&#13;
+Способ обеспечения исполнения Контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ, участником закупки, с которым заключается контракт, самостоятельно.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>4218.36</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263744503683074550100100540013312244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>33.12</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по ремонту оборудования</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>37445036830745501001</customerCode>
+                        <purchaseNumber>0054</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603693001970001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603693001970001000054</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>4218.36</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>4218.36</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22500713</sid>
+                                <externalSid>08c9e4c7-af0f-4aa5-9ab2-c52b59e27faf</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>4218.36</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>4218.36</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>4218.36</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>4218.36</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>4218.36</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62432484</ns3:sid>
+                            <ns3:externalSid>cb9e3ea0-4ba3-436c-b334-ebcc473b86c4</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>900fecc3-ae14-41be-a982-d8a1276e841f</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Челябинская, г.о. Магнитогорский, г. Магнитогорск, ул. Жукова, д. 19 к. 1</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226105078</ns3:sid>
+                    <ns3:externalSid>2f1a2063-98e8-47bf-a9fb-f871b3d24924</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>33.12.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по ремонту и техническому обслуживанию прочего оборудования общего назначения, не включенного в другие группировки</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337624419</ns3:sid>
+                                <ns3:externalSid>8332f390-ae1d-4202-99a1-773b8a927188</ns3:externalSid>
+                                <ns3:name>1. Цели и задачи:</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436175313</ns3:sid>
+                                        <ns3:externalSid>00177acb-447f-4a61-9a85-11da3b2275f5</ns3:externalSid>
+                                        <ns3:qualityDescription>1.1. Обеспечение совокупности организационно-технических мероприятий, необходимых для поддержания работоспособности эксплуатируемой аудиодомофонной системы.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337624420</ns3:sid>
+                                <ns3:externalSid>852604ae-4f2e-4663-a028-2dd11d9a45c1</ns3:externalSid>
+                                <ns3:name>2. Порядок оказания услуг:</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436175314</ns3:sid>
+                                        <ns3:externalSid>4471b1a1-a7b9-4840-ac55-bfa3c8826905</ns3:externalSid>
+                                        <ns3:qualityDescription>2.1. Услуги оказываются в соответствии с пунктом 5 настоящего технического задания:
+2.1.1. Планово, один раз в месяц (дата оказания услуг, при необходимости, может согласовываться дополнительно).
+2.1.2. Внепланово (на основании заявки Заказчика). Исполнитель в технически возможные сроки, в пределах рабочего времени, установленного в организации Исполнителя (8.00 ч. - 12.00 ч.; 13.00 ч. - 17.00 ч.), но не позднее 2 (двух) рабочих дней, со дня получения заявки от Заказчика, прибыть на объект определить причину неисправности, а в случае, если для устранения неисправности не требуются расходные, комплектующие материалы, ремонт/замена оборудования (приборов), Исполнитель устраняет неисправность в технически возможный срок, но не позднее 3 (Трех) рабочих дней с момента определения причины неисправности. Направление заявки Заказчиком Исполнителю осуществляется посредством информационно-телекоммуникационной сети (по адресу электронной почты, в социальных сетях, мессенджерах), телефонной связи, с последующим предоставлением оригинала документа.
+</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337624421</ns3:sid>
+                                <ns3:externalSid>f704469a-338a-4d02-89ff-1c501d15f934</ns3:externalSid>
+                                <ns3:name>3. Требования к обеспечению качества услуг:</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436175315</ns3:sid>
+                                        <ns3:externalSid>cd2a3739-2fe6-48e0-87d9-c3355e0b8fbd</ns3:externalSid>
+                                        <ns3:qualityDescription>3.1. Услуги должны быть проведены в срок с обеспечением работоспособности аудиодомофонной системы</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337624422</ns3:sid>
+                                <ns3:externalSid>200564e8-8fd5-4534-9c38-356a4a00c431</ns3:externalSid>
+                                <ns3:name>4. Требования к результатам услуг:</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436175316</ns3:sid>
+                                        <ns3:externalSid>2ca2f471-025a-49ce-b46f-41fd5a45fe11</ns3:externalSid>
+                                        <ns3:qualityDescription>4.1. В полном объеме оказанные услуги согласно техническому заданию, с соблюдением качества услуг.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337624423</ns3:sid>
+                                <ns3:externalSid>b8e48579-0863-4d7c-9a2e-8932037ad156</ns3:externalSid>
+                                <ns3:name>5. Состав и периодичность оказываемых услуг:</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436175317</ns3:sid>
+                                        <ns3:externalSid>26abe4e0-a674-49d3-aab7-7934d580cd4d</ns3:externalSid>
+                                        <ns3:qualityDescription>5.1. Профилактические мероприятия (Планово (1 раз в месяц)):
+5.1.1.Подтяжка всех болтовых соединений (доводчик, электромагнитный замок)
+5.1.2.Смазка петлей и движущихся частей
+5.1.3.Регулировка доводчика (при необходимости)
+5.1.4.Чистка, наладка, смазка, регулировка оборудования, используемого для запирания входных дверей
+5.1.5.Осмотр кабельных соединений
+
+5.2. Мероприятия, проводимые по заявке Заказчика (Внепланово (по заявке Заказчика)):
+5.2.1.Замена вышедших из строя деталей, механизмов, технических средств аудиодомофонной системы
+5.2.2.Ремонт вышедших из строя деталей, механизмов, технических средств аудиодомофонной системы
+5.2.3.Установка переговорных устройств и программирование ключей
+5.2.4.Консультация по системам безопасности, техническое сопровождение
+5.2.5.Дополнительная настройка деталей, механизмов, технических средств аудиодомофонной системы
+5.2.6.Дополнительная регулировка деталей, механизмов, технических средств аудиодомофонной системы
+</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337624424</ns3:sid>
+                                <ns3:externalSid>5eea7308-27c1-41a1-8ecd-1e54c5e91f8e</ns3:externalSid>
+                                <ns3:name>6. Перечень технических средств аудиодомофонной системы на объекте(ах) Заказчика:</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436175318</ns3:sid>
+                                        <ns3:externalSid>fdc998f6-3e60-45a2-8d86-d8f9653f2341</ns3:externalSid>
+                                        <ns3:qualityDescription>Определяется в соответствии с установленным оборудованием на объекте Заказчика</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуг по ремонту и техническому обслуживанию аудиодомофонной системы</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03693001350</ns2:regNum>
+                                <ns2:consRegistryNum>753Р5197</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ  ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 28 ОБЩЕРАЗВИВАЮЩЕГО ВИДА" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>12</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03693001184</ns2:regNum>
+                                <ns2:consRegistryNum>753Р5257</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ЦЕНТР РАЗВИТИЯ РЕБЕНКА - ДЕТСКИЙ САД № 104" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>24</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03693001297</ns2:regNum>
+                                <ns2:consRegistryNum>753Р5275</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ЦЕНТР РАЗВИТИЯ РЕБЕНКА - ДЕТСКИЙ САД № 142" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>12</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03693001565</ns2:regNum>
+                                <ns2:consRegistryNum>753Р5273</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 140 ОБЩЕРАЗВИВАЮЩЕГО ВИДА" Г. МАГНИТОГОРСКА</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>12</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03693001457</ns2:regNum>
+                                <ns2:consRegistryNum>753Г7795</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 56 С УГЛУБЛЕННЫМ ИЗУЧЕНИЕМ МАТЕМАТИКИ" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>24</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03693001289</ns2:regNum>
+                                <ns2:consRegistryNum>753Р5124</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 13 ИМЕНИ Ю. А. ГАГАРИНА" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>12</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03693001970</ns2:regNum>
+                                <ns2:consRegistryNum>753Р5173</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 77" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>12</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03693001563</ns2:regNum>
+                                <ns2:consRegistryNum>753Р5264</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ  УЧРЕЖДЕНИЕ "ЦЕНТР РАЗВИТИЯ РЕБЕНКА-ДЕТСКИЙ САД №122" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>12</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03693001137</ns2:regNum>
+                                <ns2:consRegistryNum>753Р5199</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 44 КОМБИНИРОВАННОГО ВИДА" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>12</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03693002076</ns2:regNum>
+                                <ns2:consRegistryNum>753Р5229</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 168 ОБЩЕРАЗВИВАЮЩЕГО ВИДА" ГОРОДА МАГНИТОГОРСКА</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>12</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03693001406</ns2:regNum>
+                                <ns2:consRegistryNum>753Р5220</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ДЕТСКИЙ САД № 106 ОБЩЕРАЗВИВАЮЩЕГО ВИДА" Г. МАГНИТОГОРСКА</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>24</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>351.53</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>168.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>59057.04</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>59057.04</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

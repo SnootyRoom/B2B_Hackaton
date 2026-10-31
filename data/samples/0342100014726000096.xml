@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44378887</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0342100014726000096</purchaseNumber>
+        <docNumber>№0342100014726000096</docNumber>
+        <plannedPublishDate>2026-10-28+04:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T14:43:41.058+04:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0342100014726000096</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_SBAST</ns2:code>
+            <ns2:name>АО «Сбербанк-АСТ»</ns2:name>
+            <ns2:url>http://www.sberbank-ast.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по поверке, калибровке средств медицинского оборудования, средств измерений, метрологический контроль технического состояния изделий медицинской техники, аттестация поверяемого оборудования</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03421000147</regNum>
+            <consRegistryNum>001X7378</consRegistryNum>
+            <fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ САНАТОРИЙ "ЛЕСНОЕ" МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ</fullName>
+            <shortName>ФГБУ САНАТОРИЙ "ЛЕСНОЕ" МИНЗДРАВА РОССИИ</shortName>
+            <postAddress>Российская Федерация, 445003, Самарская обл, Тольятти г, Лесопарковое ш, ЗД. 2</postAddress>
+            <factAddress>Российская Федерация, 445003, Самарская обл, Тольятти г, Лесопарковое ш, ЗД. 2</factAddress>
+            <INN>6323000016</INN>
+            <KPP>632401001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 445003, Самарская обл, Тольятти г, Лесопарковое ш, ЗД. 2</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 445003, Самарская обл, Тольятти г, Лесопарковое ш, ЗД. 2</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Юмагулова</ns3:lastName>
+                <ns3:firstName>Ольга</ns3:firstName>
+                <ns3:middleName>Ринатовна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>zakupki1@sanlesnoe.ru</contactEMail>
+            <contactPhone>8-8482-290109-156</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0342100014726000096</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1821880D373EDA5391477B056F149</ns3:publishedContentId>
+            <ns3:fileName>Расчет НМЦК (1).xlsx</ns3:fileName>
+            <ns3:fileSize>22543</ns3:fileSize>
+            <ns3:docDescription>Расчет НМЦК (1)</ns3:docDescription>
+            <ns3:docDate>2026-10-28T13:40:06+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1821880D373EDA5391477B056F149</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18218C18573D0975C250918F9ED90</ns3:publishedContentId>
+            <ns3:fileName>Проект Контракта.docx</ns3:fileName>
+            <ns3:fileSize>52967</ns3:fileSize>
+            <ns3:docDescription>Проект Контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-28T13:40:22+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18218C18573D0975C250918F9ED90</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18218D6C271BA9451854664775E3A</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки 2026.docx</ns3:fileName>
+            <ns3:fileSize>16410</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки 2026</ns3:docDescription>
+            <ns3:docDate>2026-10-28T13:40:28+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18218D6C271BA9451854664775E3A</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18218F1E47D77821D65DF8CDF096E</ns3:publishedContentId>
+            <ns3:fileName>ТРЕБОВАНИЯ К СОДЕРЖАНИЮ, СОСТАВУ ЗАЯВКИ НА УЧАСТИЕ В ЗАКУПКЕ И ИНСТРУКЦИЯ ПО ЕЕ ЗАПОЛНЕНИЮ (1).docx</ns3:fileName>
+            <ns3:fileSize>18565</ns3:fileSize>
+            <ns3:docDescription>ТРЕБОВАНИЯ К СОДЕРЖАНИЮ, СОСТАВУ ЗАЯВКИ НА УЧАСТИЕ В ЗАКУПКЕ И ИНСТРУКЦИЯ ПО ЕЕ ЗАПОЛНЕНИЮ (1)</ns3:docDescription>
+            <ns3:docDate>2026-10-28T13:40:35+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18218F1E47D77821D65DF8CDF096E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T14:43:41+04:00</startDT>
+                <endDT>2026-11-05T11:30:00+04:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-05+04:00</biddingDate>
+            <summarizingDate>2026-11-06+04:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>313246.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03421000147</ns2:regNum>
+                    <ns2:consRegistryNum>001X7378</ns2:consRegistryNum>
+                    <ns2:fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ САНАТОРИЙ "ЛЕСНОЕ" МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <amount>93973.80</amount>
+                    <account>
+                        <ns3:bik>000000000</ns3:bik>
+                        <ns3:settlementAccount>00000000000000000000</ns3:settlementAccount>
+                        <ns3:personalAccount>См. прилагаемые документы</ns3:personalAccount>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться: предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, гарантийных обязательств, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Федерального закона № 44-ФЗ.</procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>313246.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>261632300001663240100100440027120244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>71.20</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги в области технических испытаний, исследований, анализа и сертификации</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>16323000016632401001</customerCode>
+                        <purchaseNumber>0044</purchaseNumber>
+                        <purchaseOrderNumber>002</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603421000147001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603421000147001000006</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>313246.00</total>
+                                <currentYear>313246.00</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22433555</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>313246.00</total>
+                                        <currentYear>313246.00</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>313246.00</ns3:total>
+                                                <ns3:currentYear>313246.00</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>313246.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62354334</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>df3d7359-afa9-4aaa-8ff9-197e73906b1c</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Самарская</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225859245</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Электрокардиограф SCHILLER с принадлежностями CARDIOVIT AT-10 Plus</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4623.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>4623.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225859246</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Электрокардиограф SCHILLER с принадлежностями CARDIOVIT AT-101</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4623.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>4623.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225859247</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Дефибриллятор-монитор ДКИ-10 "АКСИОН" с зарядным устройством</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>5663.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5663.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225860380</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Система ультразвуковая диагностическая медицинская VOLUSON 730 EXP</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7139.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>7139.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225860381</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Система ультразвуковая диагностическая медицинская VOLUSON N8</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7139.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>7139.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225860382</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат лазерный "Мустанг"</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>5159.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5159.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225862966</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат лазерный "Мулат"</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>5159.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5159.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225862968</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат магнито терапии "АТОС"</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3757.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>3757.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225862969</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат НЧ-амплипульс-7</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3234.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>6468.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225862970</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат УЗТ-1,07Ф (комплект)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>2757.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5514.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225869477</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат для лечения электросном ЭС-10-5</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1563.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>3126.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225869478</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат УВЧ-терапии Стрела+</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>2777.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>2777.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225869479</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат "Поток-1"</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>462.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1848.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225869480</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат д/местной дарсонвализации "ИСКРА-1" 0801009</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1664.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1664.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225869481</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат для лечения диадинамическими токами ДТ-50-3 "Тонус-1"</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>2214.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>2214.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225874725</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат для терапии интерфереционными токами "АИТ" 0801027</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3234.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>3234.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225874726</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат физиотерапевтический BTL-5000 (модификация BTL-5110 Laser) с принадлежностями</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>2757.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>2757.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225875009</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат высоко тоновой терапии Hi Top 191</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3234.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>3234.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225875010</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Электро стимулятор "Миоритм"</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3234.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>3234.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225875011</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Физиотерапевтический прибор для низкочастотной магнитной терапии "Полюс-2М"</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3757.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>7514.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225876165</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Центрифуга лаб. Sigma-3-16PK</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4643.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>9286.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225876166</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Облучатель ОВК-3</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1576.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1576.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225876167</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Облучатель УГН-1</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1576.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1576.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225877342</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Аппарат магнито терапии "МАГ-30"</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3757.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>7514.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225877343</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Тонометр механический</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>369.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>3690.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225879948</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Стерилизатор ГП-20 МО</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>8709.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>3.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>26127.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225879949</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Термостат ТВЛ-К-170</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>8709.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>8709.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225880269</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Стерилизатор ГП-40 М</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>8709.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>3.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>26127.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225880270</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Термостат суховоздушный лабораторный ТСвЛ-80</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>8709.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>8709.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225881495</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Анализатор гемотологический</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7112.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>7112.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225881496</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Анализатор "Сапфир-400"</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7112.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>7112.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225881781</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Анализатор мочи Клинитек Статус 6758574</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7112.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>7112.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225881782</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Автоматический СОЭметр Vacuette SRS-100</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>6944.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>6944.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225881783</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Автоматический иммуноферментный анализатор Lasurite Dynex</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>5710.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5710.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225887369</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Анализатор концентрации паров спирта АКПЭ-01.01М-01</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3596.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>3596.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225887370</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Иммуноферментный микро планшетный анализатор SUNRISE TS 1001745</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>5710.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5710.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225887791</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Термогигрометр ИВА-6</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4884.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>15.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>73260.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225887792</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Весы электронные SW-05</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1060.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>4240.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225887793</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Весы электронные (32 кг) </ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1060.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>2120.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225889613</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Весы (200кг) ТВ-S-200</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1788.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1788.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225889614</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Весы электронные (150кг) ВТ-150</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1509.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1509.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225889615</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Весы электронные (150кг) ФОРТ-П</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1509.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1509.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225889616</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Весы электронные (500кг) СКЕ-500</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1788.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1788.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225889617</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>71.20.19.190</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по техническим испытаниям и анализу прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Весы электронные (200кг) ВЭМ-150-А1</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1788.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>3576.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:totalSum>313246.00</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>наличие действующей аккредитации в национальной системе аккредитации с соответствующей областью аккредитации (п. 1 ч. 1 ст. 31 Закона № 44-ФЗ, ч. 2 ст. 13 Закона № 102-ФЗ)</ns3:content>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TOVNPIVR</ns2:shortName>
+                    <ns2:name>Требование об отсутствии в реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации, включенной в такой реестр в связи отказом поставщика (подрядчика, исполнителя) от исполнения контракта по причине введения в отношении заказчика санкций и (или) мер ограничительного характера</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEZK2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44401846</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0158300054726000005</purchaseNumber>
+        <docNumber>№0158300054726000005</docNumber>
+        <plannedPublishDate>2026-10-28+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T16:32:34.710+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/zk20/view/common-info.html?regNumber=0158300054726000005</href>
+        <placingWay>
+            <ns2:code>ZKP20</ns2:code>
+            <ns2:name>Запрос котировок в электронной форме</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка детского игрового оборудования</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>01583000547</regNum>
+            <consRegistryNum>60312123</consRegistryNum>
+            <fullName>АДМИНИСТРАЦИЯ ДУБОВСКОГО СЕЛЬСКОГО ПОСЕЛЕНИЯ</fullName>
+            <postAddress>347410, Ростовская обл, Дубовский р-н, с Дубовское, Ростовская обл, Дубовский р-н, с Дубовское, пер Восстания, дом 19</postAddress>
+            <factAddress>Российская Федерация, 347410, Ростовская обл, Дубовский р-н, Дубовское с., Восстания пер, Д.19</factAddress>
+            <INN>6108006802</INN>
+            <KPP>610801001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>347410, Ростовская обл, Дубовский р-н, с Дубовское, Ростовская обл, Дубовский р-н, с Дубовское, пер Восстания, дом 19</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 347410, Ростовская обл, Дубовский р-н, Дубовское с., Восстания пер, Д.19</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Лавренова</ns3:lastName>
+                <ns3:firstName>Надежда</ns3:firstName>
+                <ns3:middleName>Сергеевна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>sp09097donpac@yandex.ru</contactEMail>
+            <contactPhone>7-86377-20493</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0158300054726000005</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18174BDF371DA9FB58283CC89D8CD</ns3:publishedContentId>
+            <ns3:fileName>2_НМЦК.docx</ns3:fileName>
+            <ns3:fileSize>15155</ns3:fileSize>
+            <ns3:docDescription>2_НМЦК</ns3:docDescription>
+            <ns3:docDate>2026-10-28T10:41:14+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18174BDF371DA9FB58283CC89D8CD</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18174DB2B7F87B2691471604D41AB</ns3:publishedContentId>
+            <ns3:fileName>4_Проект_контракта.docx</ns3:fileName>
+            <ns3:fileSize>82258</ns3:fileSize>
+            <ns3:docDescription>4_Проект_контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-28T10:41:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18174DB2B7F87B2691471604D41AB</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18174FB7A75949D9786C5786F054B</ns3:publishedContentId>
+            <ns3:fileName>1_ООЗ.docx</ns3:fileName>
+            <ns3:fileSize>53274</ns3:fileSize>
+            <ns3:docDescription>1_ООЗ</ns3:docDescription>
+            <ns3:docDate>2026-10-28T10:41:29+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18174FB7A75949D9786C5786F054B</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1817513CF764FA960158A0A521A7E</ns3:publishedContentId>
+            <ns3:fileName>3_ТребованиеКСоставу.docx</ns3:fileName>
+            <ns3:fileSize>16777</ns3:fileSize>
+            <ns3:docDescription>3_ТребованиеКСоставу</ns3:docDescription>
+            <ns3:docDate>2026-10-28T10:41:36+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1817513CF764FA960158A0A521A7E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181752B557C2691D28EBD95585561</ns3:publishedContentId>
+            <ns3:fileName>0_Извещение .docx</ns3:fileName>
+            <ns3:fileSize>36134</ns3:fileSize>
+            <ns3:docDescription>0_Извещение </ns3:docDescription>
+            <ns3:docDate>2026-10-28T10:41:42+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181752B557C2691D28EBD95585561</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T16:32:34+03:00</startDT>
+                <endDT>2026-11-05T10:00:00+03:00</endDT>
+            </collectingInfo>
+            <summarizingDate>2026-11-09+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>327533.33</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+                <interbudgetaryTransfer>false</interbudgetaryTransfer>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>01583000547</ns2:regNum>
+                    <ns2:consRegistryNum>60312123</ns2:consRegistryNum>
+                    <ns2:fullName>АДМИНИСТРАЦИЯ ДУБОВСКОГО СЕЛЬСКОГО ПОСЕЛЕНИЯ</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>3275.33</amount>
+                    <account>
+                        <ns3:bik>016015102</ns3:bik>
+                        <ns3:settlementAccount>03232643606134255800</ns3:settlementAccount>
+                        <ns3:personalAccount>05583121230</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 9 ЮГУ Банка России//УФК по Ростовской области, г Ростов-на-Дону</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000050</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>6108006802</INN>
+                            <KPP>610801001</KPP>
+                            <OKTMOInfo>
+                                <ns2:code>60613425101</ns2:code>
+                                <ns2:name>Муниципальные образования Ростовской области / Муниципальные районы Ростовской области / Дубовский муниципальный район / Сельские поселения Дубовского муниципального района/ / Дубовское / с Дубовское</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810845370000050</bankAccount>
+                            <ksNumber>03100643000000015800</ksNumber>
+                            <bik>016015102</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО РОСТОВСКОЙ ОБЛАСТИ</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Денежные средства, предназначенные для обеспечения заявок, вносятся на банковский счет, открытый в банке, включенном в перечень, который утвержден распоряжением Правительства РФ от 13.07.2018 № 1451-р. Требования к банкам, договору специального счета, к порядку использования имеющегося у участника закупки банковского счета в качестве специального счета установлено постановлением Правительства РФ от 30.05.2018 № 626. Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии. Выбор способа обеспечения осуществляется участником закупки самостоятельно. Участник закупки для подачи заявки на участие в закупке выбирает с использованием электронной площадки способ обеспечения такой заявки путем указания реквизитов специального счета или указания номера реестровой записи из реестра независимых гарантий, размещенного в единой информационной системе. Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена Евразийского экономического союза, за исключением Российской Федерации, или физическими лицами, являющимися гражданами государства - члена Евразийского экономического союза, за исключением Российской Федерации, вправе предоставить обеспечение заявок в виде денежных средств с учетом особенностей, предусмотренных Постановлением Правительства РФ от 10 апреля 2023 г. N 579</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>016015102</ns3:bik>
+                        <ns3:settlementAccount>03232643606134255800</ns3:settlementAccount>
+                        <ns3:personalAccount>05583121230</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 9 ЮГУ Банка России//УФК по Ростовской области, г Ростов-на-Дону</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000050</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Участник закупки, с которым заключается контракт, может предоставить обеспечение исполнения контракта любым из двух способов:&#13;
+1) внесением денежных средств на счет заказчика, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику:&#13;
+p/c 03232643606134255800, л/c 05583121230, БИК 016015102, ОКЦ № 9 ЮГУ Банка России//УФК по Ростовской области, г Ростов-на-Дону, к/c 40102810845370000050&#13;
+В назначении платежа указывается: Обеспечение исполнения контракта «Поставка детского игрового оборудования».&#13;
+2) предоставлением независимой гарантии, соответствующей требованиям статьи 45 Закона о контрактной системе.&#13;
+Способ обеспечения исполнения контракта срок действия независимой гарантии определяются участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Закона о контрактной системе.&#13;
+</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>327533.33</maxPrice>
+                    </maxPriceInfo>
+                    <IKZInfo>
+                        <purchaseCode>263610800680261080100100150012899244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>28.99</ns2:OKPDCode>
+                                <ns2:OKPDName>Оборудование специального назначения прочее, не включенное в другие группировки</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>36108006802610801001</customerCode>
+                        <purchaseNumber>0015</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202601583000547002</ns3:plan2020Number>
+                        <ns3:position2020Number>202601583000547002000042</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>58030085</ns2:code>
+                                    <ns2:name>Бюджет Дубовского сельского поселения Дубовского района</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>30</ns2:code>
+                                    <ns2:name>местный бюджет</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>60613425</ns2:code>
+                                    <ns2:name>Муниципальные образования Ростовской области / Муниципальные районы Ростовской области / Дубовский муниципальный район / Сельские поселения Дубовского муниципального района/ / Дубовское</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>327533.33</total>
+                                <currentYear>327533.33</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22470435</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>95105031540129730244</KBK>
+                                        <paymentYearInfo>
+                                            <total>327533.33</total>
+                                            <currentYear>327533.33</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62395217</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>b153ec51-d03a-4533-87f7-55c7f7d01349</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Ростовская, м.р-н Дубовский, с.п. Дубовское, с. Дубовское, пер. Восстания, д. 19</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>36 месяцев. Срок гарантии исчисляется с момента подписания Заказчиком документа о приемке.</warrantyTerm>
+                </warrantyInfo>
+                <provisionWarranty>
+                    <ns3:amount>3275.33</ns3:amount>
+                    <ns3:part>1.0</ns3:part>
+                    <ns3:procedureInfo>Гарантийные обязательства могут обеспечиваться предоставлением независимой гарантии, соответствующей требованиям статьи 45 Закона о контрактной системе, или внесением денежных средств на счет заказчика, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику по следующим реквизитам:&#13;
+p/c 03232643606134255800, л/c 05583121230, БИК 016015102, ОКЦ № 9 ЮГУ Банка России//УФК по Ростовской области, г Ростов-на-Дону, к/c 40102810845370000050&#13;
+В назначении платежа указывается: Обеспечение гарантийных обязательств по контракту «Поставка детского игрового оборудования».&#13;
+Способ обеспечения гарантийных обязательств, срок действия независимой гарантии определяются в соответствии с требованиями Закона о контрактной системе участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Закона о контрактной системе.&#13;
+</ns3:procedureInfo>
+                    <ns3:account>
+                        <ns3:bik>016015102</ns3:bik>
+                        <ns3:settlementAccount>03232643606134255800</ns3:settlementAccount>
+                        <ns3:personalAccount>05583121230</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 9 ЮГУ Банка России//УФК по Ростовской области, г Ростов-на-Дону</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000050</ns3:corrAccountNumber>
+                    </ns3:account>
+                </provisionWarranty>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225950051</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>28.99.32.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Качели</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236283</ns3:sid>
+                                <ns3:name>Длина(мм)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784580</ns3:sid>
+                                        <ns3:qualityDescription>Не менее 6200</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236284</ns3:sid>
+                                <ns3:name>Ширина (мм)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784581</ns3:sid>
+                                        <ns3:qualityDescription>Не менее 1970</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236285</ns3:sid>
+                                <ns3:name>Высота (мм)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784582</ns3:sid>
+                                        <ns3:qualityDescription>Не менее 2280</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236286</ns3:sid>
+                                <ns3:name>Материал стоек	</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784583</ns3:sid>
+                                        <ns3:qualityDescription>Стальной профиль, дерево</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236287</ns3:sid>
+                                <ns3:name>Размер профиля  для стоек (мм)	</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784584</ns3:sid>
+                                        <ns3:qualityDescription>Не менее 60х60</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236288</ns3:sid>
+                                <ns3:name>Размер профиля  для перекладины (мм)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784585</ns3:sid>
+                                        <ns3:qualityDescription>Не менее 60х80</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236289</ns3:sid>
+                                <ns3:name>Толщина металла (мм)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784586</ns3:sid>
+                                        <ns3:qualityDescription>Не менее 3</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236290</ns3:sid>
+                                <ns3:name>Материал подвесов	</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784587</ns3:sid>
+                                        <ns3:qualityDescription>Стальные цепи </ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236291</ns3:sid>
+                                <ns3:name>Сиденья «Гнездо» (шт)</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784588</ns3:sid>
+                                        <ns3:qualityDescription>2</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236292</ns3:sid>
+                                <ns3:name>Диаметр сидений (мм)	</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784589</ns3:sid>
+                                        <ns3:qualityDescription>Не менее 1000 </ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236293</ns3:sid>
+                                <ns3:name>Материал сидений	</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784590</ns3:sid>
+                                        <ns3:qualityDescription>Металлическая труба  с утяжелением, армированный полипропиленовый канат</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236294</ns3:sid>
+                                <ns3:name>Выступающие гайки и болтовое соединение закрываются антивандальными пластиковыми заглушками, предотвращающими получение во время игры травм и царапин	</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784591</ns3:sid>
+                                        <ns3:qualityDescription>В наличии </ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236295</ns3:sid>
+                                <ns3:name>Покрытие металлических элементов	</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784592</ns3:sid>
+                                        <ns3:qualityDescription>Порошковая покраска</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337236296</ns3:sid>
+                                <ns3:name>Способ монтажа	</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435784593</ns3:sid>
+                                        <ns3:qualityDescription>Бетонирование </ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Качели гнездо (двойная)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>327533.33</ns3:price>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>327533.33</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>327533.33</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+    </notificationInfo>
+    <printFormFieldsInfo>
+        <is449Features>false</is449Features>
+    </printFormFieldsInfo>
+</ns8:epNotificationEZK2020>

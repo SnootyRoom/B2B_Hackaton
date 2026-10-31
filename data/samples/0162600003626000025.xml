@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44414133</id>
+    <externalId>3ffc4d84-6b3b-4a39-8f54-853b8a6b8b8901</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0162600003626000025</purchaseNumber>
+        <docNumber>№0162600003626000025</docNumber>
+        <plannedPublishDate>2026-10-29+05:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T10:15:26.447+05:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0162600003626000025</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_SBAST</ns2:code>
+            <ns2:name>АО «Сбербанк-АСТ»</ns2:name>
+            <ns2:url>http://www.sberbank-ast.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>На оказание услуг по организации мероприятий при осуществлении деятельности по обращению с животными без владельцев на территории Шалинского муниципального округа</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>01626000036</regNum>
+            <consRegistryNum>653D1867</consRegistryNum>
+            <fullName>АДМИНИСТРАЦИЯ ШАЛИНСКОГО МУНИЦИПАЛЬНОГО ОКРУГА</fullName>
+            <shortName>АДМИНИСТРАЦИЯ ШАЛИНСКОГО МО</shortName>
+            <postAddress>623030, СВЕРДЛОВСКАЯ ОБЛАСТЬ, м.о. ШАЛИНСКИЙ, ПГТ ШАЛЯ, УЛ ОРДЖОНИКИДЗЕ, СТР. 5</postAddress>
+            <factAddress>623030, СВЕРДЛОВСКАЯ ОБЛАСТЬ, м.о. ШАЛИНСКИЙ, ПГТ ШАЛЯ, УЛ ОРДЖОНИКИДЗЕ, СТР. 5</factAddress>
+            <INN>6657001957</INN>
+            <KPP>668401001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>623030, СВЕРДЛОВСКАЯ ОБЛАСТЬ, м.о. ШАЛИНСКИЙ, ПГТ ШАЛЯ, УЛ ОРДЖОНИКИДЗЕ, СТР. 5</orgPostAddress>
+            <orgFactAddress>623030, СВЕРДЛОВСКАЯ ОБЛАСТЬ, м.о. ШАЛИНСКИЙ, ПГТ ШАЛЯ, УЛ ОРДЖОНИКИДЗЕ, СТР. 5</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Ковина</ns3:lastName>
+                <ns3:firstName>Ирина</ns3:firstName>
+                <ns3:middleName>Михайловна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>admin_shgo@mail.ru</contactEMail>
+            <contactPhone>7-34358-22484</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0162600003626000025</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1861347127C8089A9660F13925E78</ns3:publishedContentId>
+            <ns3:fileName>Обоснование начальной (максимальной) цены контракта.docx</ns3:fileName>
+            <ns3:fileSize>21775</ns3:fileSize>
+            <ns3:docDescription>Обоснование начальной (максимальной) цены контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:12:58+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1861347127C8089A9660F13925E78</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18613448470F3BE2CFC51A2CA6D39</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта.docx</ns3:fileName>
+            <ns3:fileSize>83797</ns3:fileSize>
+            <ns3:docDescription>Проект муниципального контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:12:58+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18613448470F3BE2CFC51A2CA6D39</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1861346847D9C94C97A69624F2F82</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки.odt</ns3:fileName>
+            <ns3:fileSize>90107</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:12:58+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1861346847D9C94C97A69624F2F82</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18613489A7E3885468CFD89923BA2</ns3:publishedContentId>
+            <ns3:fileName>Требования к содержанию и составу заявки на участие в Электронном аукционе.docx</ns3:fileName>
+            <ns3:fileSize>27760</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию и составу заявки на участие</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:12:58+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18613489A7E3885468CFD89923BA2</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1861349ED7130A066F6A97C519101</ns3:publishedContentId>
+            <ns3:fileName>Приложение к извещению (ЗЗ)8976306.docx</ns3:fileName>
+            <ns3:fileSize>32103</ns3:fileSize>
+            <ns3:docDescription>Приложение к извещению</ns3:docDescription>
+            <ns3:docDate>2026-10-29T08:12:58+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1861349ED7130A066F6A97C519101</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T10:15:26+05:00</startDT>
+                <endDT>2026-11-09T09:00:00+05:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+05:00</biddingDate>
+            <summarizingDate>2026-11-10+05:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>320800.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>01626000036</ns2:regNum>
+                    <ns2:consRegistryNum>653D1867</ns2:consRegistryNum>
+                    <ns2:fullName>АДМИНИСТРАЦИЯ ШАЛИНСКОГО МУНИЦИПАЛЬНОГО ОКРУГА</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>016577551</ns3:bik>
+                        <ns3:settlementAccount>03232643655570006200</ns3:settlementAccount>
+                        <ns3:personalAccount>05901531000</ns3:personalAccount>
+                        <ns3:creditOrgName>Уральское  ГУ Банка России//УФК по Свердловской области г. Екатеринбург  </ns3:creditOrgName>
+                    </account>
+                    <procedureInfo>В соответствии с действующим законодательством о контрактной системе и приложением к извещению</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>320800.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263665700195766840100100040050000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>36657001957668401001</customerCode>
+                        <purchaseNumber>0004</purchaseNumber>
+                        <purchaseOrderNumber>005</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202601626000036002</ns3:plan2020Number>
+                        <ns3:position2020Number>202601626000036002000008</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-30+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>62020095</ns2:code>
+                                    <ns2:name>Бюджет Свердловской области</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>20</ns2:code>
+                                    <ns2:name>бюджет субъекта Российской Федерации</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>65000000</ns2:code>
+                                    <ns2:name>Муниципальные образования Свердловской области</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>320800.00</total>
+                                <currentYear>320800.00</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22492368</sid>
+                                <externalSid>fd6b7a5e-5b06-45df-85bb-2249fb6c4870</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-30+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>90104057000042П00244</KBK>
+                                        <paymentYearInfo>
+                                            <total>320800.00</total>
+                                            <currentYear>320800.00</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62422634</ns3:sid>
+                            <ns3:externalSid>c1b8c31f-aad7-4991-86d3-86167227d330</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>48c71247-2b8f-46a7-bff8-b79407608a7c</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Свердловская, м.о. Шалинский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>территория Шалинского МО</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226057206</ns3:sid>
+                    <ns3:externalSid>54a31a29-7d9d-4d72-83f9-e1f1cad747da</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337507641</ns3:sid>
+                                <ns3:externalSid>5e6a98b8-93b8-499d-bec1-fca18dd1e6c8</ns3:externalSid>
+                                <ns3:name>Характеристики объекта закупки, предусмотренные п.1 ч.1 Ст. 33 Федерального закона 44-ФЗ</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435966534</ns3:sid>
+                                        <ns3:externalSid>87645b40-27eb-4ad8-9e38-1a9e8bb1dbdf</ns3:externalSid>
+                                        <ns3:qualityDescription>в соответствии с электронным документом Описание объекта закупки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Отлов животных без владельцев в расчете на 1 животное</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>483.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>483.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226057207</ns3:sid>
+                    <ns3:externalSid>614b6217-8543-42bd-9edc-10dcfb2caff7</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>49.41.16.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по перевозке автомобильным транспортом живых животных</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337507642</ns3:sid>
+                                <ns3:externalSid>8a68e036-a193-4c60-9431-9667b202b61c</ns3:externalSid>
+                                <ns3:name>Характеристики объекта закупки, предусмотренные п.1 ч.1 ст.33 Федерального закона от 05.04.2013 № 44-ФЗ «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд»</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435966535</ns3:sid>
+                                        <ns3:externalSid>348be169-106c-4199-9cb4-6eb7b4453f8f</ns3:externalSid>
+                                        <ns3:qualityDescription>в соответствии с электронным документом Описание объекта закупки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Транспортировка животных без владельцев в расчете на 1 животное без владельца при расстоянии транспортировки отловленных животных от места отлова до приюта для животных за 1 выезд до 150 км</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>543.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>543.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226057208</ns3:sid>
+                    <ns3:externalSid>779968aa-65b3-4a51-897c-412ad62bec5a</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>49.41.16.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по перевозке автомобильным транспортом живых животных</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337507643</ns3:sid>
+                                <ns3:externalSid>62cc9f81-01fc-4ef5-b553-1d16c87dd51d</ns3:externalSid>
+                                <ns3:name>Характеристики объекта закупки, предусмотренные п.1 ч.1 ст.33 Федерального закона от 05.04.2013 № 44-ФЗ «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд»</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435966536</ns3:sid>
+                                        <ns3:externalSid>4a1f677a-1921-4655-b2f4-d66c856c5b3f</ns3:externalSid>
+                                        <ns3:qualityDescription>в соответствии с электронным документом Описание объекта закупки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Транспортировка животных без владельцев в расчете на 1 животное без владельца при расстоянии транспортировки отловленных животных от места отлова до приюта для животных за 1 выезд от 151 км до 250 км</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>800.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>800.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226057209</ns3:sid>
+                    <ns3:externalSid>d5507473-798f-43b4-befb-7f21eb6457db</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>49.41.16.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по перевозке автомобильным транспортом живых животных</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337507644</ns3:sid>
+                                <ns3:externalSid>0d0f1b25-352b-411d-bd79-77baf42a853d</ns3:externalSid>
+                                <ns3:name>Характеристики объекта закупки, предусмотренные п.1 ч.1 ст.33 Федерального закона от 05.04.2013 № 44-ФЗ «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд»</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435966537</ns3:sid>
+                                        <ns3:externalSid>9b64df83-335e-44be-a1be-9e341ee3793a</ns3:externalSid>
+                                        <ns3:qualityDescription>в соответствии с электронным документом Описание объекта закупки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Транспортировка животных без владельцев в расчете на 1 животное без владельца при расстоянии транспортировки отловленных животных от места отлова до приюта для животных за 1 выезд от 251 км и выше</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1709.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1709.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226057210</ns3:sid>
+                    <ns3:externalSid>5152dddb-d5f9-468c-93bb-d2f0b01ecd2c</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337507645</ns3:sid>
+                                <ns3:externalSid>28898e29-d717-4918-936f-fdf2676d2b08</ns3:externalSid>
+                                <ns3:name>Характеристики объекта закупки, предусмотренные п.1 ч.1 Ст. 33 Федерального закона 44-ФЗ</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435966538</ns3:sid>
+                                        <ns3:externalSid>119b93a8-7b46-4425-8e97-116032c1b341</ns3:externalSid>
+                                        <ns3:qualityDescription>в соответствии с электронным документом Описание объекта закупки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Содержание животных без владельцев (лечение, маркирование) в расчете на 1 животное без владельца однократно</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>586.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>586.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226057211</ns3:sid>
+                    <ns3:externalSid>31ec3a97-d59f-4ea8-a82f-fcf963d1268b</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337507646</ns3:sid>
+                                <ns3:externalSid>e6683a35-6aa7-442a-9eda-c7594a862b02</ns3:externalSid>
+                                <ns3:name>Характеристики объекта закупки, предусмотренные п.1 ч.1 Ст. 33 Федерального закона 44-ФЗ</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435966539</ns3:sid>
+                                        <ns3:externalSid>d2dbfb03-92ed-4b15-a681-5c710b391c86</ns3:externalSid>
+                                        <ns3:qualityDescription>в соответствии с электронным документом Описание объекта закупки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Стерилизация животных без владельцев в расчете на 1 животное без владельца</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3285.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>3285.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226057212</ns3:sid>
+                    <ns3:externalSid>25885d7f-5aed-431c-9c9e-7e2fa10298fa</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>96.09.19.139</ns2:OKPDCode>
+                        <ns2:OKPDName>Прочие персональные услуги, не включенные в другие группировки</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337507647</ns3:sid>
+                                <ns3:externalSid>02f1ad19-ab25-489b-907d-9e499001faa5</ns3:externalSid>
+                                <ns3:name>Характеристики объекта закупки, предусмотренные п.1 ч.1 Ст. 33 Федерального закона 44-ФЗ</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435966540</ns3:sid>
+                                        <ns3:externalSid>2ff4ce12-7cb6-49af-a709-ee039474b45b</ns3:externalSid>
+                                        <ns3:qualityDescription>в соответствии с электронным документом Описание объекта закупки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Прочие расходы на содержание животных без владельцев в расчете на 1 животное без владельца (собаку) в сутки</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>359</ns2:code>
+                        <ns2:nationalCode>сут; дн</ns2:nationalCode>
+                        <ns2:name>Сутки</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>143.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>143.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226057213</ns3:sid>
+                    <ns3:externalSid>bba1a91e-55e8-41b4-97cf-59658eb468af</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>96.09.19.139</ns2:OKPDCode>
+                        <ns2:OKPDName>Прочие персональные услуги, не включенные в другие группировки</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337507648</ns3:sid>
+                                <ns3:externalSid>2849ff55-14cb-43c3-9b63-e3397699f5fc</ns3:externalSid>
+                                <ns3:name>Характеристики объекта закупки, предусмотренные п.1 ч.1 Ст. 33 Федерального закона 44-ФЗ</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435966541</ns3:sid>
+                                        <ns3:externalSid>697da47a-d48c-49d7-9685-e0f189887fff</ns3:externalSid>
+                                        <ns3:qualityDescription>в соответствии с электронным документом Описание объекта закупки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Прочие расходы на содержание животных без владельцев в расчете на 1 животное без владельца (кошку) в сутки</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>359</ns2:code>
+                        <ns2:nationalCode>сут; дн</ns2:nationalCode>
+                        <ns2:name>Сутки</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>123.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>123.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226057214</ns3:sid>
+                    <ns3:externalSid>b74e3c01-1670-4dac-904a-d7ad046ceccc</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>49.41.16.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по перевозке автомобильным транспортом живых животных</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337507649</ns3:sid>
+                                <ns3:externalSid>3a4c7720-2020-44ac-9bcf-4c1b4a647bd8</ns3:externalSid>
+                                <ns3:name>Характеристики объекта закупки, предусмотренные п.1 ч.1 ст.33 Федерального закона от 05.04.2013 № 44-ФЗ «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд»</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435966542</ns3:sid>
+                                        <ns3:externalSid>a684172a-9be4-4f7a-af13-71770cc25e30</ns3:externalSid>
+                                        <ns3:qualityDescription>в соответствии с электронным документом Описание объекта закупки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Возврат животных без владельцев, не проявляющих немотивированной агрессивности, на прежние места их обитания в расчете на 1животное при расстоянии транспортировки отловленных животных от места отлова до приюта для животных за 1 выезд до 150 км</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>543.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>543.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226057215</ns3:sid>
+                    <ns3:externalSid>c84a375a-ecc5-4cec-8432-956e45ee0bce</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>49.41.16.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по перевозке автомобильным транспортом живых животных</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337507650</ns3:sid>
+                                <ns3:externalSid>6fe45554-dc30-43a9-9540-992e8ab71606</ns3:externalSid>
+                                <ns3:name>Характеристики объекта закупки, предусмотренные п.1 ч.1 ст.33 Федерального закона от 05.04.2013 № 44-ФЗ «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд»</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435966543</ns3:sid>
+                                        <ns3:externalSid>817b3075-faef-4e6e-b95c-4ad034dd551c</ns3:externalSid>
+                                        <ns3:qualityDescription>в соответствии с электронным документом Описание объекта закупки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Возврат животных без владельцев, не проявляющих немотивированной агрессивности, на прежние места их обитания в расчете на 1животное при расстоянии транспортировки отловленных животных от места отлова до приюта для животных за 1 выезд от 151 км до 250 км</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>800.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>800.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226057216</ns3:sid>
+                    <ns3:externalSid>02f840ec-22a6-46e6-b067-af77dd85d426</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>49.41.16.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по перевозке автомобильным транспортом живых животных</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337507651</ns3:sid>
+                                <ns3:externalSid>151e2d51-b32e-4b9f-b94a-3b6c1981499d</ns3:externalSid>
+                                <ns3:name>Характеристики объекта закупки, предусмотренные п.1 ч.1 ст.33 Федерального закона от 05.04.2013 № 44-ФЗ «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд»</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435966544</ns3:sid>
+                                        <ns3:externalSid>c7134be6-c7d8-40b4-b952-c73a5016f6b4</ns3:externalSid>
+                                        <ns3:qualityDescription>в соответствии с электронным документом Описание объекта закупки</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Возврат животных без владельцев, не проявляющих немотивированной агрессивности, на прежние места их обитания в расчете на 1животное при расстоянии транспортировки отловленных животных от места отлова до приюта для животных за 1 выезд от 251 км и выше</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>836</ns2:code>
+                        <ns2:nationalCode>ГОЛ</ns2:nationalCode>
+                        <ns2:name>Голова</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1709.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1709.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>10724</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

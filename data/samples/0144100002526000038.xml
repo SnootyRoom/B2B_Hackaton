@@ -1,0 +1,2383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44336964</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0144100002526000038</purchaseNumber>
+        <docNumber>№0144100002526000038</docNumber>
+        <plannedPublishDate>2026-10-26+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-26T15:54:34.690+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0144100002526000038</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_SBAST</ns2:code>
+            <ns2:name>АО «Сбербанк-АСТ»</ns2:name>
+            <ns2:url>http://www.sberbank-ast.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по обеспечению проездными документами (авиабилетами и билетами на пассажирские автоперевозки) для иностранных граждан&#13;
+(лиц без гражданства), подлежащих административному выдворению</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>01441000025</regNum>
+            <consRegistryNum>00178540</consRegistryNum>
+            <fullName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОЙ СЛУЖБЫ СУДЕБНЫХ ПРИСТАВОВ ПО КУРСКОЙ ОБЛАСТИ</fullName>
+            <shortName>УФССП РОССИИ ПО КУРСКОЙ ОБЛАСТИ</shortName>
+            <postAddress>Российская Федерация, 305018, Курская обл, Курск г, Черняховского ул, Д. 4</postAddress>
+            <factAddress>Российская Федерация, 305018, Курская обл, Курск г, Черняховского ул, Д. 4</factAddress>
+            <INN>4632048460</INN>
+            <KPP>463201001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 305018, Курская обл, Курск г, Черняховского ул, Д. 4</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 305018, Курская обл, Курск г, Черняховского ул, Д. 4</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Лазарева</ns3:lastName>
+                <ns3:firstName>Елена</ns3:firstName>
+                <ns3:middleName>Викторовна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>zakupki@r46.fssp.gov.ru</contactEMail>
+            <contactPhone>7-4712-360778</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0144100002526000038</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A177062E11797380C37FC6A81C43BE</ns3:publishedContentId>
+            <ns3:fileName>Приложение 2.1 Расчет к обоснованию МЗЦК  +.xlsx</ns3:fileName>
+            <ns3:fileSize>33178</ns3:fileSize>
+            <ns3:docDescription>Приложение 2.1 Расчет к обоснованию МЗЦК  +</ns3:docDescription>
+            <ns3:docDate>2026-10-26T10:04:16+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A177062E11797380C37FC6A81C43BE</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1770614177956866C030774DE357C</ns3:publishedContentId>
+            <ns3:fileName>Обоснование НСЦЕ МЗЦК  +.docx</ns3:fileName>
+            <ns3:fileSize>9746</ns3:fileSize>
+            <ns3:docDescription>Обоснование НСЦЕ МЗЦК  +</ns3:docDescription>
+            <ns3:docDate>2026-10-26T10:04:09+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1770614177956866C030774DE357C</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A177068C7A76C5B7E4D558674D82C7</ns3:publishedContentId>
+            <ns3:fileName>Проект Контракт.docx</ns3:fileName>
+            <ns3:fileSize>45848</ns3:fileSize>
+            <ns3:docDescription>Проект Контракт</ns3:docDescription>
+            <ns3:docDate>2026-10-26T10:04:40+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A177068C7A76C5B7E4D558674D82C7</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17706BB697CD4AAC7C7418ED90ADD</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки-2026 +.doc</ns3:fileName>
+            <ns3:fileSize>67072</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки-2026 +</ns3:docDescription>
+            <ns3:docDate>2026-10-26T10:04:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17706BB697CD4AAC7C7418ED90ADD</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17706E260722089C91DA202EDDE33</ns3:publishedContentId>
+            <ns3:fileName>Требования к содержанию, составу заявки и инструкция по ее заполнения-2025.docx</ns3:fileName>
+            <ns3:fileSize>21666</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию, составу заявки и инструкция по ее заполнения-2025</ns3:docDescription>
+            <ns3:docDate>2026-10-26T10:05:02+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17706E260722089C91DA202EDDE33</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A177071BFA79A19BF313405C30CFDC</ns3:publishedContentId>
+            <ns3:fileName>Реквизиты для обеспечения + (1).docx</ns3:fileName>
+            <ns3:fileSize>8128</ns3:fileSize>
+            <ns3:docDescription>Реквизиты для обеспечения + (1)</ns3:docDescription>
+            <ns3:docDate>2026-10-26T10:05:17+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A177071BFA79A19BF313405C30CFDC</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-26T15:54:34+03:00</startDT>
+                <endDT>2026-11-05T10:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-05+03:00</biddingDate>
+            <summarizingDate>2026-11-06+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>3182300.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+                <isContractPriceFormula>true</isContractPriceFormula>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>01441000025</ns2:regNum>
+                    <ns2:consRegistryNum>00178540</ns2:consRegistryNum>
+                    <ns2:fullName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОЙ СЛУЖБЫ СУДЕБНЫХ ПРИСТАВОВ ПО КУРСКОЙ ОБЛАСТИ</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>31823.00</amount>
+                    <account>
+                        <ns3:bik>000000000</ns3:bik>
+                        <ns3:settlementAccount>00000000000000000000</ns3:settlementAccount>
+                        <ns3:personalAccount>См. прилагаемые документы</ns3:personalAccount>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>4632048460</INN>
+                            <KPP>463201001</KPP>
+                            <KBK>32211610051019000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>38701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Курской области / Городские округа Курской области/ / город Курск / г Курск</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810545370000038</bankAccount>
+                            <ksNumber>03100643000000014400</ksNumber>
+                            <bik>013807906</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО КУРСКОЙ ОБЛАСТИ (УФССП РОССИИ ПО КУРСКОЙ ОБЛАСТИ)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в аукционе предоставляется участником закупки в виде денежных средств или независимой гарантии. Выбор способа обеспечения заявки на участие в закрытом электронном аукционе осуществляется участником закупки. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок. Денежные средства, предназначенные для обеспечения заявок, вносятся участниками закупок на специальные счета, открытые ими в банках, перечень которых устанавливается Правительством Российской Федерации</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>000000000</ns3:bik>
+                        <ns3:settlementAccount>00000000000000000000</ns3:settlementAccount>
+                        <ns3:personalAccount>См. прилагаемые документы</ns3:personalAccount>
+                    </account>
+                    <procedureInfo>Порядок предоставления обеспечения исполнения контракта, требования к обеспечению, установлены в соответствии с ст. 96 Федерального закона № 44-ФЗ.Исполнение контракта может обеспечиваться: - предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, - внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона от 05.04.2013 № 44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Федерального закона от 05.04.2013 № 44-ФЗ</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>3182300.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>261463204846046320100100460015110244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>51.10</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по пассажирским перевозкам воздушным транспортом</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>14632048460463201001</customerCode>
+                        <purchaseNumber>0046</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202601441000025001</ns3:plan2020Number>
+                        <ns3:position2020Number>202601441000025001000130</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-30+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>99010001</ns2:code>
+                                    <ns2:name>Федеральный бюджет</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>10</ns2:code>
+                                    <ns2:name>федеральный бюджет</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>00000001</ns2:code>
+                                    <ns2:name>Раздел 1. Муниципальные образования субъектов Российской Федерации / Федеральный бюджет</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>3182300.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>3182300.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22367839</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-30+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>32203044240790049244</KBK>
+                                        <paymentYearInfo>
+                                            <total>3182300.00</total>
+                                            <currentYear>0.00</currentYear>
+                                            <firstYear>3182300.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62276532</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>ee594d5e-30a9-40dc-b9f2-0add1be44ba1</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Курская</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г. Курск, ул. Черняховского,4, отделение специального назначения (г. Курск ул. К. Маркса, д. 65)</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <contractPriceFormula>Максимальное значение цены контракта складывается из стоимости услуг (стоимости единицы услуги) и фактического объема оказываемых услуг, и иных расходов Исполнителя, связанных с исполнением Контракта, но в размере, не превышающем максимального значения цены контракта.Оплата оказания услуг осуществляется по цене единицы услуги исходя из объема фактически оказанных услуг по цене каждого проездного документа, но в размере, не превышающем максимального значения цены контракта</contractPriceFormula>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425571</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва – Таджикистан»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>64652.23</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>64652.23</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425572</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва – Узбекистан»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>65073.47</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>65073.47</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425573</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва –  Молдова»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>90448.86</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>90448.86</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425574</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва –  Грузия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>62355.68</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>62355.68</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425575</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва – Армения»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>84456.15</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>84456.15</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425576</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению:  «Москва – Киргизия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>79688.14</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>79688.14</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425577</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва –  Сирия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>227683.13</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>227683.13</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425578</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва – Конго»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>331957.63</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>331957.63</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425579</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва – Казахстан»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>95834.10</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>95834.10</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425580</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва – Азербайджан»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>65053.81</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>65053.81</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425581</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва – Иордания»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>210277.53</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>210277.53</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425582</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва – Нигерия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>196997.55</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>196997.55</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425583</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва – Китай»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>105552.24</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>105552.24</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425584</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва – Вьетнам»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>168491.97</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>168491.97</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425585</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва – Туркменистан»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>92599.75</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>92599.75</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425586</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва – Турция»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>65469.24</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>65469.24</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425587</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Босния и Герцеговина»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>133882.95</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>133882.95</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425588</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Эстония»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>234167.28</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>234167.28</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425589</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Экваториальная Гвинея»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>215305.40</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>215305.40</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425590</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Латвия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>209792.73</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>209792.73</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425591</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Афганистан»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>140312.35</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>140312.35</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425592</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Индия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>120299.28</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>120299.28</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425593</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Непал»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>159662.25</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>159662.25</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425594</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Буркина—Фасо»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>214072.80</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>214072.80</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425595</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Гвинея»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>273577.08</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>273577.08</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425596</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Джибути»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>283407.16</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>283407.16</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425597</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Зимбабве»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>291014.14</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>291014.14</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425598</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Камерун»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>292917.97</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>292917.97</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425599</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Кот—дВуар»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>293463.97</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>293463.97</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425600</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Намибия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>316284.80</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>316284.80</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425601</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Нигер»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>329734.27</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>329734.27</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425602</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Руанда»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>344950.75</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>344950.75</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425603</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Уганда»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>341200.08</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>341200.08</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425604</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Эфиопия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>263530.50</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>263530.50</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425605</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Пакистан»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>211155.16</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>211155.16</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425606</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Румыния»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>179830.40</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>179830.40</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425607</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Словакия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>182884.57</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>182884.57</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425608</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Словения»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>202818.83</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>202818.83</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425609</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Чехия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>159304.54</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>159304.54</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425610</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Германия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>195846.68</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>195846.68</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425611</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Замбия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>351824.79</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>351824.79</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425612</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — США»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>617066.16</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>617066.16</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425613</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Израиль»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>129557.60</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>129557.60</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425614</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Кипр»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>140549.50</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>140549.50</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425615</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Тунис»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>231441.01</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>231441.01</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425616</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Венгрия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>168520.34</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>168520.34</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425617</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Хорватия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>245801.88</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>245801.88</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425618</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — ЮАР»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>580625.38</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>580625.38</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425619</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Польша»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>588574.85</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>588574.85</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425620</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Мьянма»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>464891.99</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>464891.99</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425621</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Мексика»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>351591.98</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>351591.98</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425622</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Эквадор»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>468836.35</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>468836.35</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425623</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Кения»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>589904.28</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>589904.28</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425624</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Южная Корея»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>291530.97</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>291530.97</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425625</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Коста—Рика»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>583950.60</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>583950.60</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425626</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Куба»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>291980.98</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>291980.98</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425627</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Лаос»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>403820.37</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>403820.37</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425628</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Ливан»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>178074.22</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>178074.22</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425629</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Македония»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>373231.91</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>373231.91</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425630</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Марокко»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>329662.94</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>329662.94</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425631</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Монголия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>213268.34</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>213268.34</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425632</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — КНДР»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>331396.57</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>331396.57</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425633</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Палестина»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>176136.72</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>176136.72</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425634</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Аргентина»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>431047.87</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>431047.87</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425635</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Болгария»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>233727.53</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>233727.53</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425636</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Бразилия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>463794.74</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>463794.74</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425637</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Йемен»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>231182.78</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>231182.78</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425638</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Камбоджа»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>175616.19</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>175616.19</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425639</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Египет»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>181419.52</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>181419.52</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425640</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Индонезия»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>234212.94</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>234212.94</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425641</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Ирак»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>231429.30</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>231429.30</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425642</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Иран»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>200061.86</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>200061.86</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425643</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Алжир»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>233779.57</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>233779.57</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425644</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Ангола»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>414120.09</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>414120.09</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425645</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Греция»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>151761.09</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>151761.09</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425646</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: « Москва — Минск»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>72239.49</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>72239.49</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425647</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Бангладеш»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>235066.17</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>235066.17</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425648</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва — Шри—Ланка»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>139362.15</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>139362.15</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425649</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Москва —  Чад»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>349743.26</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>349743.26</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425650</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению: «Казань-Куба»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>331872.77</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>331872.77</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425651</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области: «Курск —  МАП «Лудонка»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425652</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области: «МАП Лудонка — Курск»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425653</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Курск — Домодедово»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425654</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Домодедово — Курск»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425655</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Курск — Внуково»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425656</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Внуково — Курск»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425657</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Курск — Шереметьево»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425658</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Шереметьево—Курск»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425659</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Курск — МАП «Рудня»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425660</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«МАП «Рудня — Курск»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425661</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Курск — Жуковский»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425662</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Жуковский— Курск»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425663</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Курск — КППП «Псоу»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>36733.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>36733.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425664</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«КППП «Псоу» —Курск"</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>36733.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>36733.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425665</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области: «Курск — Верхний Ларс»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>36733.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>36733.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425666</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Верхний Ларс—Курск»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>36733.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>36733.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425667</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Курск-Казань»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225425668</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>51.10.13.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по регулярным пассажирским перевозкам воздушным транспортом на международных линиях</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуги по обеспечению проездными документами (авиабилетами) для иностранных граждан (лиц без гражданства), подлежащих административному выдворению и для личного состава УФССП России по Курской области:«Казань-Курск»</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>22433.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>22433.33</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>20469684.41</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

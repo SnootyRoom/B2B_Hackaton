@@ -1,0 +1,1441 @@
+# КОНТРОЛЬНАЯ ВЫБОРКА №4 — 15 НОВЫХ ОТРАСЛЕЙ (роль 2): 120 сценариев, 40 / 40 / 40.
+# Собрана 31.10.2026. На ней скоринг НЕ настраивался.
+#
+# Дата оценки 2026-11-03 (as_of, 00:00 МСК): оценивать на эту дату, не на текущую.
+# 15 новых профилей поставщиков, ни одна отрасль не встречалась в прошлых выборках: уголь и дрова,
+# видеонаблюдение и СКУД, учебное оборудование, игрушки, отлов животных, организация мероприятий,
+# юридические услуги, оценка имущества, кадастровые работы, поверка средств измерений, деловые поездки,
+# СМИ и видеопроизводство, оборудование пищеблоков, приборы учёта, музыкальные инструменты.
+# Сценариев на профиль: от 4 до 12 (юридических закупок в ЕИС сейчас почти нет).
+# Закупки — реальные извещения ЕИС 2026 года (45 классов и 88 групп ОКПД2), разобраны исправленным
+# парсером; не пересекаются с data/samples и прошлыми наборами; почти одинаковых предметов — не больше двух.
+#
+# Разметка — рубрика по тексту профиля, зафиксирована до сбора закупок и до запуска системы:
+#   participate — предмет в специализации, регион свой (у удалённых услуг — юристы, оценка, поездки,
+#                 учебное оборудование «по всей России» — регион не важен), сумма в диапазоне, способ и
+#                 закон подходят;
+#   consider    — предмет в специализации, но одно-два мягких отклонения: чужой регион, сумма за
+#                 границей не больше чем в 2 раза, другой способ;
+#   skip        — предмет вне специализации, в т. ч. смежный и прямо исключённый в профиле («ремонтом и
+#                 обслуживанием не занимаемся», «поверкой не занимаемся», «сами приборы не продаём»,
+#                 «монтажом площадок не занимаемся»), сумма за границей больше чем в 2 раза, нарушено
+#                 жёсткое условие («только 44-ФЗ», «работаем только в Свердловской области»), три мягких
+#                 отклонения, срок подачи истёк.
+# Новое по сравнению с прошлыми выборками: жёсткое условие по региону и прямые исключения в тексте профиля.
+# Предмет определялся ключевыми словами; до запуска системы уточнены слова у учебного оборудования,
+# музыкальных инструментов и деловых поездок; при просмотре отбора явные промахи помечены «решение по
+# предмету вручную» (3), сомнительные закупки исключены — в том числе со сроком подачи ближе 3 ч к
+# дате оценки и с НМЦК 0.
+# Открытых профильных закупок в своём регионе в ЕИС не нашлось у профилей «уголь», «игрушки», «СМИ»,
+# «приборы учёта» — у них «участвовать» нет, класс добран за счёт других
+# профилей (свой регион искали и по коду региона в номере извещения 44-ФЗ).
+
+as_of: '2026-11-03'
+profiles:
+  q01_coal:
+    text: 'ООО «КузбассУгольСбыт» из Кемеровской области. Поставляем каменный и бурый уголь, дрова и топливные брикеты
+      для котельных школ, больниц и ЖКХ. Интересны аукционы и запросы котировок от 200 тыс. до 30 млн руб.
+
+      '
+  q02_video:
+    text: 'ООО «БашВидеоСервис» из Республики Башкортостан. Монтируем и обслуживаем системы видеонаблюдения, контроля
+      и управления доступом (СКУД), домофоны. Интересны аукционы и запросы котировок от 100 тыс. до 15 млн руб.
+
+      '
+  q03_school:
+    text: 'Компания «Школьный мир» из Москвы. Поставляем (без ремонта и обслуживания) учебное оборудование для школ
+      и детских садов: учебно-наглядные пособия, оборудование кабинетов физики, химии и биологии, цифровые лаборатории,
+      наборы по робототехнике, оснащение центров «Точка роста». Работаем по всей России, регион не важен. Интересны
+      аукционы от 300 тыс. до 30 млн руб.
+
+      '
+  q04_toys:
+    text: 'ООО «Игрушкин» из Нижегородской области. Поставляем игрушки, развивающие и настольные игры, конструкторы,
+      игровое оборудование и наборы для детских садов (монтажом площадок не занимаемся). Участвуем только в закупках
+      по 44-ФЗ, интересны аукционы и запросы котировок от 50 тыс. до 5 млн руб.
+
+      '
+  q05_animals:
+    text: 'ООО «ДругЗверь» из Свердловской области. Отлавливаем, содержим в приюте, вакцинируем и стерилизуем животных
+      без владельцев по заказам муниципалитетов. Работаем только в Свердловской области. Интересны закупки от 50
+      тыс. до 5 млн руб.
+
+      '
+  q06_events:
+    text: 'Event-агентство «Праздник на Неве» из Санкт-Петербурга. Организуем и проводим под ключ праздники, концерты,
+      фестивали, конференции, форумы, выставки и городские мероприятия. Интересны конкурсы, аукционы и запросы предложений
+      от 200 тыс. до 20 млн руб.
+
+      '
+  q07_legal:
+    text: 'Юридическая фирма «Право и Порядок». Оказываем юридические услуги: представительство в судах и арбитраже,
+      претензионно-исковая работа, правовая экспертиза документов, сопровождение банкротства. Работаем дистанционно
+      по всей России. Интересны закупки от 50 тыс. до 5 млн руб.
+
+      '
+  q08_appraisal:
+    text: 'Оценочная компания «ЭкспертОценка». Определяем рыночную стоимость недвижимости, земельных участков, транспорта,
+      права аренды и бизнеса, оцениваем ущерб. Работаем по всей России. Интересны закупки от 20 тыс. до 3 млн руб.
+
+      '
+  q09_cadastral:
+    text: 'Кадастровый центр «ТатГеоПлан» из Республики Татарстан. Выполняем кадастровые работы: межевание земельных
+      участков, технические планы зданий и сооружений, комплексные кадастровые работы, топографическую съёмку. Работаем
+      только по 44-ФЗ; интересны закупки от 50 тыс. до 10 млн руб.
+
+      '
+  q10_metrology:
+    text: 'ООО «ПермьМетрология» из Пермского края. Поверяем и калибруем средства измерений: весы, манометры, счётчики,
+      медицинские и лабораторные приборы; аттестуем испытательное оборудование. Сами приборы не продаём. Интересны
+      запросы котировок и аукционы от 30 тыс. до 3 млн руб.
+
+      '
+  q11_travel:
+    text: 'Агентство деловых поездок «ТрэвелСервис» из Москвы. Организуем служебные командировки: бронируем и оформляем
+      авиа- и железнодорожные билеты, гостиницы, трансферы. Работаем по всей России. Интересны закупки от 100 тыс.
+      до 20 млн руб.
+
+      '
+  q12_media:
+    text: 'Медиахолдинг «Южный Урал Медиа» из Челябинской области — телеканал, радио и студия видеопроизводства.
+      Освещаем деятельность органов власти в СМИ, изготавливаем и размещаем видеоролики и телесюжеты, ведём социальные
+      сети учреждений. Интересны закупки от 100 тыс. до 10 млн руб.
+
+      '
+  q13_kitchen:
+    text: 'ООО «ПодмосковьеПищеМаш» из Московской области. Поставляем и монтируем технологическое оборудование для
+      пищеблоков и столовых: плиты, пароконвектоматы, холодильные шкафы, посудомоечные машины, а также кухонную
+      посуду и инвентарь. Ремонтом и обслуживанием оборудования не занимаемся. Интересны аукционы от 100 тыс. до
+      15 млн руб.
+
+      '
+  q14_meters:
+    text: 'ООО «ДонУчёт» из Ростовской области. Поставляем и устанавливаем приборы учёта воды, тепла, газа и электроэнергии,
+      монтируем узлы учёта тепловой энергии и автоматизированные системы учёта (АСКУЭ). Поверкой и обслуживанием
+      не занимаемся. Интересны аукционы и запросы котировок от 50 тыс. до 10 млн руб.
+
+      '
+  q15_music:
+    text: 'Магазин «Камертон» из Москвы. Поставляем музыкальные инструменты (фортепиано, баяны, народные, духовые
+      и ударные), звуковое и световое сценическое оборудование для школ искусств и домов культуры. Интересны аукционы
+      от 100 тыс. до 10 млн руб.
+
+      '
+scenarios:
+- id: w001
+  file: data/samples/0201200000126000132.xml
+  lot: null
+  profile: q02_video
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Выполнение работ по техническому обслуживанию системы видеонаблюдения, СКУД, шлагбаумов дл; Республика
+    Башкортостан, 200 тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w002
+  file: data/samples/32616527074.xml
+  lot: null
+  profile: q02_video
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по техническому обслуживанию и ремонту систем видеонаблюдения, контроля и у; Республика
+    Башкортостан, 312 тыс. ₽, аукцион, 223-ФЗ — все условия профиля выполнены
+- id: w003
+  file: data/samples/0340200003326013108.xml
+  lot: null
+  profile: q03_school
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Учебный комплект оборудования для обучения трудовым процессам; Кировская область, 16,37 млн ₽, аукцион,
+    44-ФЗ — все условия профиля выполнены
+- id: w004
+  file: data/samples/0818500000826007521.xml
+  lot: null
+  profile: q03_school
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка учебного оборудования для лаборатории генетики и наук о жизни; Краснодарский край, 832 тыс.
+    ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w005
+  file: data/samples/32616475275.xml
+  lot: null
+  profile: q03_school
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка учебного оборудования; Чувашская Республика, 2,00 млн ₽, аукцион, 223-ФЗ — все условия профиля
+    выполнены
+- id: w006
+  file: data/samples/32616508347.xml
+  lot: null
+  profile: q03_school
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка учебного оборудования; Пензенская область, 8,34 млн ₽, аукцион, 223-ФЗ — все условия профиля
+    выполнены
+- id: w007
+  file: data/samples/32616514592.xml
+  lot: null
+  profile: q03_school
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка учебного оборудования в рамках реализации проекта "Агропрофи"; Рязанская область, 3,45 млн
+    ₽, аукцион, 223-ФЗ — все условия профиля выполнены
+- id: w008
+  file: data/samples/32616524136.xml
+  lot: null
+  profile: q03_school
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Приобретение учебного оборудования для МАОУ СОШ № 35; Челябинская область, 4,95 млн ₽, аукцион, 223-ФЗ
+    — все условия профиля выполнены
+- id: w009
+  file: data/samples/0162300005726000147.xml
+  lot: null
+  profile: q05_animals
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по осуществлению деятельности по обращению с животными без владельцев; Свердловская
+    область, 996 тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w010
+  file: data/samples/0162300017926000058.xml
+  lot: null
+  profile: q05_animals
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг в сфере организации мероприятий при осуществлении деятельности по обращению; Свердловская
+    область, 196 тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w011
+  file: data/samples/0162600003626000025.xml
+  lot: null
+  profile: q05_animals
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: На оказание услуг по организации мероприятий при осуществлении деятельности по обращению с; Свердловская
+    область, 321 тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w012
+  file: data/samples/0362300381626000054.xml
+  lot: null
+  profile: q05_animals
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Улучшение санитарного состояния территории (содержание безнадзорных животных); Свердловская область,
+    221 тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w013
+  file: data/samples/0862300027026000117.xml
+  lot: null
+  profile: q05_animals
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Услуги по организации мероприятий по обращению с животными без владельцев на территории Се; Свердловская
+    область, 600 тыс. ₽, запрос котировок, 44-ФЗ — все условия профиля выполнены
+- id: w014
+  file: data/samples/0145300021226000035.xml
+  lot: null
+  profile: q06_events
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по организации и проведении межнационального концерт-фестиваля «Новый год в; Ленинградская
+    область, 2,88 млн ₽, конкурс, 44-ФЗ — все условия профиля выполнены
+- id: w015
+  file: data/samples/0372200092626000039.xml
+  lot: null
+  profile: q06_events
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по техническому обеспечению организации и проведения цикла новогодних предс; Санкт-Петербург,
+    1,50 млн ₽, конкурс, 44-ФЗ — все условия профиля выполнены
+- id: w016
+  file: data/samples/0372200199926000106.xml
+  lot: null
+  profile: q07_legal
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание юридических услуг в 2027 году; Санкт-Петербург, 1,08 млн ₽, конкурс, 44-ФЗ — все условия профиля
+    выполнены
+- id: w017
+  file: data/samples/0119100009226000010.xml
+  lot: null
+  profile: q08_appraisal
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по оценке (установлению рыночной стоимости) конфискованного, движимого, бес; Республика
+    Хакасия, 280 тыс. ₽, запрос котировок, 44-ФЗ — все условия профиля выполнены
+- id: w018
+  file: data/samples/0134300013826000063.xml
+  lot: null
+  profile: q08_appraisal
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по оценке рыночной стоимости объектов недвижимого имущества, расположенных ; Иркутская
+    область, 56 тыс. ₽, запрос котировок, 44-ФЗ — все условия профиля выполнены
+- id: w019
+  file: data/samples/0134300095626000301.xml
+  lot: null
+  profile: q08_appraisal
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Услуги по проведению независимой оценки стоимости объектов, находящихся в муниципальной со; Иркутская
+    область, 40 тыс. ₽, запрос котировок, 44-ФЗ — все условия профиля выполнены
+- id: w020
+  file: data/samples/0153300051926000088.xml
+  lot: null
+  profile: q08_appraisal
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Проведение оценки рыночной стоимости или размера арендной платы муниципального имущества; Оренбургская
+    область, 80 тыс. ₽, запрос котировок, 44-ФЗ — все условия профиля выполнены
+- id: w021
+  file: data/samples/0325300006426000899.xml
+  lot: null
+  profile: q08_appraisal
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание оценочных услуг; Астраханская область, 65 тыс. ₽, запрос котировок, 44-ФЗ — все условия профиля
+    выполнены
+- id: w022
+  file: data/samples/0813500000126020685.xml
+  lot: null
+  profile: q08_appraisal
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: зз-0016-48087 - 2026 Оказание услуг по определению рыночной стоимости объекта недвижимости; Удмуртская
+    Республика, 75 тыс. ₽, запрос котировок, 44-ФЗ — все условия профиля выполнены
+- id: w023
+  file: data/samples/0111300016126000022.xml
+  lot: null
+  profile: q09_cadastral
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Выполнение работ по межеванию и постановке на кадастровый учет земельных участков, располо; Республика
+    Татарстан, 1,15 млн ₽, конкурс, 44-ФЗ — все условия профиля выполнены
+- id: w024
+  file: data/samples/0356100001826000065.xml
+  lot: null
+  profile: q10_metrology
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по поверке геодезических приборов и иных средств измерений, используемых пр; Пермский
+    край, 110 тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w025
+  file: data/samples/0356100001826000066.xml
+  lot: null
+  profile: q10_metrology
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по поверке геодезических приборов и иных средств измерений, используемых пр; Пермский
+    край, 211 тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w026
+  file: data/samples/32616488237.xml
+  lot: null
+  profile: q10_metrology
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг в области метрологии (Поверка, калибровка средств измерений, аттестация исп; Пермский
+    край, 549 тыс. ₽, запрос котировок, 223-ФЗ — все условия профиля выполнены
+- id: w027
+  file: data/samples/32616491150.xml
+  lot: null
+  profile: q10_metrology
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по поверке и калибровке средств измерений, аттестации испытательного оборуд; Пермский
+    край, 549 тыс. ₽, запрос котировок, 223-ФЗ — все условия профиля выполнены
+- id: w028
+  file: data/samples/32616492390.xml
+  lot: null
+  profile: q10_metrology
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг в области метрологии (поверка, калибровка средств измерений, аттестация исп; Пермский
+    край, 549 тыс. ₽, запрос котировок, 223-ФЗ — все условия профиля выполнены
+- id: w029
+  file: data/samples/0144100002526000038.xml
+  lot: null
+  profile: q11_travel
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по обеспечению проездными документами (авиабилетами и билетами на пассажирс; Курская
+    область, 3,18 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w030
+  file: data/samples/0149200002326005776.xml
+  lot: null
+  profile: q11_travel
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по бронированию и доставке авиабилетов, железнодорожных билетов, организаци; Мурманская
+    область, 4,00 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w031
+  file: data/samples/0321100015126000122.xml
+  lot: null
+  profile: q11_travel
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Приобретение проездных документов для иностранного гражданина (лица без гражданства), подл; Ставропольский
+    край, 2,00 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w032
+  file: data/samples/0338200013926000294.xml
+  lot: null
+  profile: q11_travel
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по бронированию и оформлению билетов в пользу граждан, направляемых воздушн; Камчатский
+    край, 4,11 млн ₽, запрос котировок, 44-ФЗ — все условия профиля выполнены
+- id: w033
+  file: data/samples/0348100004626000035.xml
+  lot: null
+  profile: q11_travel
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Комплекс услуг по бронированию и оформлению проездных документов (билетов) для организован; Московская
+    область, 4,43 млн ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w034
+  file: data/samples/32616504660.xml
+  lot: null
+  profile: q11_travel
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Оказание услуг по корпоративному обслуживанию в сфере продажи пассажирских авиаперевозок, ; Красноярский
+    край, 3,66 млн ₽, запрос котировок, 223-ФЗ — все условия профиля выполнены
+- id: w035
+  file: data/samples/0373100056626001510.xml
+  lot: null
+  profile: q13_kitchen
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка товара (Холодильник бытовой, тип 5); Москва, 113 тыс. ₽, аукцион, 44-ФЗ — все условия профиля
+    выполнены
+- id: w036
+  file: data/samples/0373200026426000267.xml
+  lot: null
+  profile: q13_kitchen
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Закупка фарфоровой посуды.; Москва, 282 тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w037
+  file: data/samples/0373200026426000268.xml
+  lot: null
+  profile: q13_kitchen
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Закупка посуды из нержавеющей стали.; Москва, 474 тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w038
+  file: data/samples/0373200188026000408.xml
+  lot: null
+  profile: q13_kitchen
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Закупка пароконвектомата для ГБУЗ «ДГКБ № 9 им. Г.Н. Сперанского ДЗМ»; Москва, 1,53 млн ₽, аукцион,
+    44-ФЗ — все условия профиля выполнены
+- id: w039
+  file: data/samples/0848200001126000511.xml
+  lot: null
+  profile: q13_kitchen
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: Поставка холодильного оборудования для нужд ГБУСО МО «КЦСОР «Воскресенский».; Московская область, 159
+    тыс. ₽, аукцион, 44-ФЗ — все условия профиля выполнены
+- id: w040
+  file: data/samples/0848300041226000337.xml
+  lot: null
+  profile: q15_music
+  expected_recommendation: participate
+  expected_score:
+  - 70
+  - 100
+  expected_stop_factor: null
+  rationale: 'Поставка музыкальных инструментов : цифровые пианино; Московская область, 1,20 млн ₽, аукцион, 44-ФЗ
+    — все условия профиля выполнены'
+- id: w041
+  file: data/samples/0139200000126013525.xml
+  lot: null
+  profile: q01_coal
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка угля марки ДР; Кемеровская область, 130 тыс. ₽, запрос котировок, 44-ФЗ — профильно, но сумма
+    немного вне диапазона 200 тыс.–30,00 млн
+- id: w042
+  file: data/samples/0356500001426009554.xml
+  lot: null
+  profile: q01_coal
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка пиленных дров смешанных пород; Пермский край, 308 тыс. ₽, аукцион, 44-ФЗ — профильно, но чужой
+    регион
+- id: w043
+  file: data/samples/0358200036226000758.xml
+  lot: null
+  profile: q01_coal
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка угля для нужд Красносулинского филиала ГБУ РО "ПБ" в 2027 году; Ростовская область, 2,18 млн
+    ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: w044
+  file: data/samples/32616532886.xml
+  lot: null
+  profile: q01_coal
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка дров-долготья; Архангельская область, 5,88 млн ₽, запрос предложений, 223-ФЗ — профильно,
+    но чужой регион, способ вне профиля
+- id: w045
+  file: data/samples/0369300197026000002.xml
+  lot: null
+  profile: q02_video
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по ремонту и техническому обслуживанию аудиодомофонной системы; Челябинская область,
+    59 тыс. ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 100 тыс.–15,00 млн, чужой регион
+- id: w046
+  file: data/samples/32616522773.xml
+  lot: null
+  profile: q02_video
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Выполнение работ по дооснащению системы контроля и управления доступом в здании поликлиник; Брянская
+    область, 322 тыс. ₽, аукцион, 223-ФЗ — профильно, но чужой регион
+- id: w047
+  file: data/samples/32616528648.xml
+  lot: null
+  profile: q02_video
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Право заключения договора поставки элементов защиты периметра и системы контроля и управле; Краснодарский
+    край, 1,30 млн ₽, запрос котировок, 223-ФЗ — профильно, но чужой регион
+- id: w048
+  file: data/samples/32616528869.xml
+  lot: null
+  profile: q02_video
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка и монтаж системы видеонаблюдения; Ярославская область, 586 тыс. ₽, иной способ, 223-ФЗ — профильно,
+    но чужой регион, способ вне профиля
+- id: w049
+  file: data/samples/0162300012626000127.xml
+  lot: null
+  profile: q03_school
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка многофункционального учебно-демонстрационного комплекта с интерактивной панелью; Свердловская
+    область, 398 тыс. ₽, запрос котировок, 44-ФЗ — профильно, но способ вне профиля
+- id: w050
+  file: data/samples/0372200005926000023.xml
+  lot: null
+  profile: q03_school
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка оборудования для оснащения предметных кабинетов (цифровые лаборатории) для ГБОУ ш; Санкт-Петербург,
+    1,35 млн ₽, запрос котировок, 44-ФЗ — профильно, но способ вне профиля
+- id: w051
+  file: data/samples/0372500007626000022.xml
+  lot: null
+  profile: q03_school
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка учебного оборудования для изучения предметов естественно-научного цикла для нужд ; Санкт-Петербург,
+    2,86 млн ₽, запрос котировок, 44-ФЗ — профильно, но способ вне профиля
+- id: w052
+  file: data/samples/0137200001226008619.xml
+  lot: null
+  profile: q04_toys
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка развивающего игрового оборудования.; Калужская область, 244 тыс. ₽, запрос котировок, 44-ФЗ
+    — профильно, но чужой регион
+- id: w053
+  file: data/samples/0158300054726000005.xml
+  lot: null
+  profile: q04_toys
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка детского игрового оборудования; Ростовская область, 328 тыс. ₽, запрос котировок, 44-ФЗ —
+    профильно, но чужой регион
+- id: w054
+  file: data/samples/0190200000326012145.xml
+  lot: null
+  profile: q04_toys
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка развивающих игр для отделения патологии речи; Ямало-Ненецкий автономный округ, 79 тыс. ₽,
+    аукцион, 44-ФЗ — профильно, но чужой регион
+- id: w055
+  file: data/samples/0862300041826000133.xml
+  lot: null
+  profile: q04_toys
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка детского игрового оборудования; Свердловская область, 916 тыс. ₽, запрос котировок, 44-ФЗ
+    — профильно, но чужой регион
+- id: w056
+  file: data/samples/0351100016326000022.xml
+  lot: null
+  profile: q06_events
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Услуги по организации и проведению культурно-массового мероприятия; Новосибирская область, 900 тыс.
+    ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: w057
+  file: data/samples/0356500001426009498.xml
+  lot: null
+  profile: q06_events
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Организация и проведение торжественного мероприятия в рамках празднования дня работника се; Пермский
+    край, 406 тыс. ₽, запрос котировок, 44-ФЗ — профильно, но чужой регион, способ вне профиля
+- id: w058
+  file: data/samples/32616521798.xml
+  lot: null
+  profile: q06_events
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: '406_Оказание услуг по организации и проведению спортивных мероприятий: XVIII турнир по дзю; Республика
+    Татарстан, 397 тыс. ₽, аукцион, 223-ФЗ — профильно, но чужой регион'
+- id: w059
+  file: data/samples/0128300005326000192.xml
+  lot: null
+  profile: q08_appraisal
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Услуги по оценке рыночной стоимости объектов недвижимости муниципального образования город; Владимирская
+    область, 11 тыс. ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 20 тыс.–3,00 млн
+- id: w060
+  file: data/samples/0817200000326016656.xml
+  lot: null
+  profile: q08_appraisal
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по оценке рыночной стоимости с определением рыночной величины арендной плат; Алтайский
+    край, 14 тыс. ₽, запрос котировок, 44-ФЗ — профильно, но сумма немного вне диапазона 20 тыс.–3,00 млн
+- id: w061
+  file: data/samples/0184300000526000024.xml
+  lot: null
+  profile: q09_cadastral
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по выполнению комплекса кадастровых работ в отношении объектов недвижимости; Ненецкий
+    автономный округ, 340 тыс. ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: w062
+  file: data/samples/0356500001426009581.xml
+  lot: null
+  profile: q09_cadastral
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: ВЫПОЛНЕНИЕ РАБОТ ПО ИЗГОТОВЛЕНИЮ ТЕХНИЧЕСКОЙ ДОКУМЕНТАЦИИ (ИСПОЛНИТЕЛЬНЫЕ СХЕМЫ, ТЕХНИЧЕСК; Пермский
+    край, 162 тыс. ₽, запрос котировок, 44-ФЗ — профильно, но чужой регион
+- id: w063
+  file: data/samples/0362300231026000138.xml
+  lot: null
+  profile: q09_cadastral
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Выполнение кадастровых работ по подготовке актов обследования в целях снятия с государстве; Свердловская
+    область, 142 тыс. ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: w064
+  file: data/samples/0342100014726000096.xml
+  lot: null
+  profile: q10_metrology
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по поверке, калибровке средств медицинского оборудования, средств измерений; Самарская
+    область, 313 тыс. ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: w065
+  file: data/samples/0352100023726000024.xml
+  lot: null
+  profile: q10_metrology
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуги по поверке (калибровке) средств измерений; Омская область, 92 тыс. ₽, запрос котировок,
+    44-ФЗ — профильно, но чужой регион
+- id: w066
+  file: data/samples/32616527252.xml
+  lot: null
+  profile: q10_metrology
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Услуги по подготовке к поверке и поверке весоизмерительных средств измерений на 2027 год.; Самарская
+    область, 470 тыс. ₽, конкурс, 223-ФЗ — профильно, но чужой регион, способ вне профиля
+- id: w067
+  file: data/samples/0127200000226005787.xml
+  lot: null
+  profile: q11_travel
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг, связанных с обеспечением участия представителя молодежи Брянской области в; Брянская
+    область, 59 тыс. ₽, запрос котировок, 44-ФЗ — профильно, но сумма немного вне диапазона 100 тыс.–20,00 млн
+- id: w068
+  file: data/samples/32616529591.xml
+  lot: null
+  profile: q11_travel
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по бронированию, оформлению и приобретению проездных документов, бронирован; Приморский
+    край, 35,00 млн ₽, аукцион, 223-ФЗ — профильно, но сумма немного вне диапазона 100 тыс.–20,00 млн
+- id: w069
+  file: data/samples/0167300008326000162.xml
+  lot: null
+  profile: q12_media
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по производству и телевизионному вещанию (трансляции) видеоматериалов в 202; Тюменская
+    область, 470 тыс. ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: w070
+  file: data/samples/0361200015026004619.xml
+  lot: null
+  profile: q12_media
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Оказание услуг по производству и размещению телевизионной программы "Планета Сахалин"; Сахалинская
+    область, 1,43 млн ₽, запрос котировок, 44-ФЗ — профильно, но чужой регион
+- id: w071
+  file: data/samples/32616504322.xml
+  lot: null
+  profile: q12_media
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Право заключения договора на выполнение работ по изготовлению имиджевых видеороликов и реп; Республика
+    Татарстан, 218 тыс. ₽, конкурс, 223-ФЗ — профильно, но чужой регион
+- id: w072
+  file: data/samples/0372200081726000039.xml
+  lot: null
+  profile: q13_kitchen
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка оборудования для пищеблока (стеллаж кухонный, стол производственный, тележка для ; Санкт-Петербург,
+    99 тыс. ₽, аукцион, 44-ФЗ — профильно, но сумма немного вне диапазона 100 тыс.–15,00 млн, чужой регион
+- id: w073
+  file: data/samples/32616532181.xml
+  lot: null
+  profile: q13_kitchen
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка холодильного оборудования (Ростов); Ростовская область, 2,76 млн ₽, иной способ, 223-ФЗ —
+    профильно, но чужой регион, способ вне профиля
+- id: w074
+  file: data/samples/32616534506.xml
+  lot: null
+  profile: q13_kitchen
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка посуды и кухонного инвентаря; Московская область, 262 тыс. ₽, запрос котировок, 223-ФЗ — профильно,
+    но способ вне профиля
+- id: w075
+  file: data/samples/0306100010726000070.xml
+  lot: null
+  profile: q14_meters
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Приборы учета воды; Республика Карелия, 177 тыс. ₽, аукцион, 44-ФЗ — профильно, но чужой регион
+- id: w076
+  file: data/samples/32616499526.xml
+  lot: null
+  profile: q14_meters
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: 'Выполнение работ по установке прибора учета тепловой энергии, теплоносителя на объекте: ДА; Москва,
+    800 тыс. ₽, запрос котировок, 223-ФЗ — профильно, но чужой регион'
+- id: w077
+  file: data/samples/32616521047.xml
+  lot: null
+  profile: q14_meters
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Техническое перевооружение узла учета тепловой энергии (разработка проектной документации,; Республика
+    Башкортостан, 443 тыс. ₽, запрос котировок, 223-ФЗ — профильно, но чужой регион
+- id: w078
+  file: data/samples/0350300004626000003.xml
+  lot: null
+  profile: q15_music
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка звукового сценического оборудования; Новгородская область, 800 тыс. ₽, запрос котировок, 44-ФЗ
+    — профильно, но чужой регион, способ вне профиля
+- id: w079
+  file: data/samples/0873500002326000932.xml
+  lot: null
+  profile: q15_music
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: Поставка расходных материалов и комплектующих для звукового оборудования; Москва, 2,56 млн ₽, запрос
+    котировок, 44-ФЗ — профильно, но способ вне профиля
+- id: w080
+  file: data/samples/32616513246.xml
+  lot: null
+  profile: q15_music
+  expected_recommendation: consider
+  expected_score:
+  - 40
+  - 69
+  expected_stop_factor: null
+  rationale: № 160 поставка комплекта звукового оборудования для нужд АУК "УГФ"; Удмуртская Республика, 1,78 млн
+    ₽, запрос котировок, 223-ФЗ — профильно, но чужой регион, способ вне профиля
+- id: w081
+  file: data/samples/0134200016726000010.xml
+  lot: null
+  profile: q01_coal
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 0
+  expected_stop_factor: deadline_passed
+  rationale: Оказание услуг по учету эфирного времени, затраченного региональным телеканалом на освещен; Иркутская
+    область, 247 тыс. ₽, аукцион, 44-ФЗ — приём заявок завершён до 2026-11-03
+- id: w082
+  file: data/samples/32616485486.xml
+  lot: null
+  profile: q01_coal
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка мазута; Воронежская область, 14,78 млн ₽, аукцион, 223-ФЗ — предмет вне специализации
+- id: w083
+  file: data/samples/32616511518.xml
+  lot: null
+  profile: q01_coal
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: поставка угля для нужд ООО «Регион» Сретенский район; Забайкальский край, 81,50 млн ₽, запрос котировок,
+    223-ФЗ — сумма далеко за границами 200 тыс.–30,00 млн
+- id: w084
+  file: data/samples/0301300280726000423.xml
+  lot: null
+  profile: q02_video
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по техническому обслуживанию систем пожарной сигнализации и систем оповещен; Республика
+    Башкортостан, 1,45 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: w085
+  file: data/samples/0318100015726000030.xml
+  lot: null
+  profile: q02_video
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Выполнение работ по капитальному ремонту системы видеонаблюдения Филиала ФГАУ «Санаторий Ф; Московская
+    область, 84,91 млн ₽, аукцион, 44-ФЗ — сумма далеко за границами 100 тыс.–15,00 млн
+- id: w086
+  file: data/samples/0818300019926000258.xml
+  lot: null
+  profile: q02_video
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 0
+  expected_stop_factor: deadline_passed
+  rationale: 'Устройство узла учета тепловой энергии МБДОУ ДС № 32 по адресу: 352722, Краснодарский край; Краснодарский
+    край, 738 тыс. ₽, запрос котировок, 44-ФЗ — приём заявок завершён до 2026-11-03'
+- id: w087
+  file: data/samples/0151500000226000080.xml
+  lot: null
+  profile: q03_school
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 0
+  expected_stop_factor: deadline_passed
+  rationale: Оказание услуг по оздоровлению и отдыху детей в организации отдыха детей и их оздоровления; Новосибирская
+    область, 1,99 млн ₽, запрос котировок, 44-ФЗ — приём заявок завершён до 2026-11-03
+- id: w088
+  file: data/samples/0327100004526000067.xml
+  lot: null
+  profile: q03_school
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Приобретение учебного оборудования (лот № 37) в целях реализации проекта развития образова; Брянская
+    область, 1,44 млн ₽, запрос котировок, 44-ФЗ — сельхозтехника для колледжа, а не учебное оборудование для школ
+    (решение по предмету вручную)
+- id: w089
+  file: data/samples/0373200183626000007.xml
+  lot: null
+  profile: q03_school
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка средств для посудомоечных машин; Москва, 11,66 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: w090
+  file: data/samples/0321300001126000541.xml
+  lot: null
+  profile: q04_toys
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Работы по благоустройству детской игровой площадки, расположенной в районе дома № 1 по про; Ставропольский
+    край, 2,00 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: w091
+  file: data/samples/0373100051326000086.xml
+  lot: null
+  profile: q04_toys
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 0
+  expected_stop_factor: deadline_passed
+  rationale: Поставка комплектующих для оснащения (видеонаблюдение) ФГБУ "РЦСМЭ" Минздрава России; Москва, 2,40
+    млн ₽, аукцион, 44-ФЗ — приём заявок завершён до 2026-11-03
+- id: w092
+  file: data/samples/32616517456.xml
+  lot: null
+  profile: q04_toys
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: на поставку игрушек; Ханты-Мансийский автономный округ — Югра, 675 тыс. ₽, запрос котировок, 223-ФЗ
+    — компания работает только по 44-ФЗ
+- id: w093
+  file: data/samples/0813500000126020190.xml
+  lot: null
+  profile: q05_animals
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 0
+  expected_stop_factor: deadline_passed
+  rationale: зз-0015-46701 - 2026 Приобретение учебников; Удмуртская Республика, 1,40 млн ₽, запрос котировок, 44-ФЗ
+    — приём заявок завершён до 2026-11-03
+- id: w094
+  file: data/samples/0815500000526013436.xml
+  lot: null
+  profile: q05_animals
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по содержанию животных без владельцев в городе Чебоксары; Чувашская Республика, 1,72
+    млн ₽, запрос котировок, 44-ФЗ — компания работает только в своём регионе
+- id: w095
+  file: data/samples/32616521939.xml
+  lot: null
+  profile: q05_animals
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка ветеринарных препаратов для КРС (лекарственные средства и препараты); Тюменская область, 1,50
+    млн ₽, запрос котировок, 223-ФЗ — предмет вне специализации
+- id: w096
+  file: data/samples/0133300012626000092.xml
+  lot: null
+  profile: q06_events
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по информационному сопровождению справочно-правовой системы "Гарант"; Ивановская область,
+    149 тыс. ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: w097
+  file: data/samples/0187300006526001677.xml
+  lot: null
+  profile: q06_events
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по организации питания при проведении официальных мероприятий, организации ; Ханты-Мансийский
+    автономный округ — питание на мероприятиях — общепит, а не организация мероприятий (решение по предмету вручную)
+- id: w098
+  file: data/samples/0333300011326000411.xml
+  lot: null
+  profile: q06_events
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Приобретение медицинского оборудования - Система ультразвуковой визуализации универсальная; Ивановская
+    область, 9,09 млн ₽, запрос котировок, 44-ФЗ — предмет вне специализации
+- id: w099
+  file: data/samples/0372100027326000663.xml
+  lot: null
+  profile: q07_legal
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка электрооборудования и электрических материалов для ГТС; Ленинградская область, 396 тыс. ₽,
+    аукцион, 44-ФЗ — предмет вне специализации
+- id: w100
+  file: data/samples/0373200136826000016.xml
+  lot: null
+  profile: q07_legal
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по юридическому обслуживанию для нужд образовательных организаций, подведом; Москва,
+    19,95 млн ₽, конкурс, 44-ФЗ — сумма далеко за границами 50 тыс.–5,00 млн
+- id: w101
+  file: data/samples/0855200000526003554.xml
+  lot: null
+  profile: q07_legal
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Услуги по коллективному доступу к информационно-коммуникационной сети Интернет; Пензенская область,
+    1,84 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: w102
+  file: data/samples/0174500001126006542.xml
+  lot: null
+  profile: q08_appraisal
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: на оказание услуг по передаче неисключительных прав на программное обеспечение и по устано; Севастополь,
+    809 тыс. ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: w103
+  file: data/samples/0332300330626000030.xml
+  lot: null
+  profile: q08_appraisal
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по оценке рыночной стоимости объекта; Нижегородская область, 8 тыс. ₽, запрос котировок,
+    44-ФЗ — сумма далеко за границами 20 тыс.–3,00 млн
+- id: w104
+  file: data/samples/32616523676.xml
+  lot: null
+  profile: q08_appraisal
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание комплекса услуг по очистке угля; Приморский край, 89,25 млн ₽, конкурс, 223-ФЗ — предмет вне
+    специализации
+- id: w105
+  file: data/samples/0356500001426009519.xml
+  lot: null
+  profile: q09_cadastral
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по организации обслуживания предприятиями общественного питания в рамках пр; Пермский
+    край, 4,50 млн ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: w106
+  file: data/samples/32616512075.xml
+  lot: null
+  profile: q09_cadastral
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по изготовлению топографической съемки земельных участков с построенными об; Свердловская
+    область, 6,01 млн ₽, запрос предложений, 223-ФЗ — компания работает только по 44-ФЗ
+- id: w107
+  file: data/samples/32616533954.xml
+  lot: null
+  profile: q09_cadastral
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Выполнение работ по замене оконных и дверных блоков в нежилом здании обособленного подразд; Чувашская
+    Республика, 1,28 млн ₽, запрос предложений, 223-ФЗ — предмет вне специализации
+- id: w108
+  file: data/samples/0230200000126000019.xml
+  lot: null
+  profile: q10_metrology
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по текущему ремонту и техническому обслуживанию офисного оборудования; Вологодская область,
+    472 тыс. ₽, запрос котировок, 44-ФЗ — предмет вне специализации
+- id: w109
+  file: data/samples/0356500003226000309.xml
+  lot: null
+  profile: q10_metrology
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Медицинские изделия (абсорбент диоксида углерода); Пермский край, 87 тыс. ₽, аукцион, 44-ФЗ — предмет
+    вне специализации
+- id: w110
+  file: data/samples/32616522197.xml
+  lot: null
+  profile: q10_metrology
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по поверке и ремонту общедомовых узлов учета тепловой энергии, установленны; Московская
+    область, 9,30 млн ₽, конкурс, 223-ФЗ — сумма далеко за границами 30 тыс.–3,00 млн
+- id: w111
+  file: data/samples/32616505064.xml
+  lot: null
+  profile: q11_travel
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по бронированию, оформлению и приобретению авиа-, железнодорожных и автобус; Санкт-Петербург,
+    50,33 млн ₽, иной способ, 223-ФЗ — сумма далеко за границами 100 тыс.–20,00 млн
+- id: w112
+  file: data/samples/32616526732.xml
+  lot: null
+  profile: q11_travel
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по организации горячего питания лиц, определенных Заказчиком в муниципально; Воронежская
+    область, 5,22 млн ₽, конкурс, 223-ФЗ — предмет вне специализации
+- id: w113
+  file: data/samples/0173200001626000047.xml
+  lot: null
+  profile: q12_media
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Изготовление сувенирной продукции с нанесением логотипа Управления ЗАГС Москвы в 2026 году; Москва,
+    768 тыс. ₽, аукцион, 44-ФЗ — предмет вне специализации
+- id: w114
+  file: data/samples/32616508335.xml
+  lot: null
+  profile: q12_media
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Оказание услуг по проведению информационной кампании, направленной на информирование насел; Московская
+    область, 24,99 млн ₽, аукцион, 223-ФЗ — сумма далеко за границами 100 тыс.–10,00 млн
+- id: w115
+  file: data/samples/0859200001126012848.xml
+  lot: null
+  profile: q13_kitchen
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Поставка посуды кухонной; Рязанская область, 38 тыс. ₽, аукцион, 44-ФЗ — сумма далеко за границами
+    100 тыс.–15,00 млн
+- id: w116
+  file: data/samples/0873100007226000083.xml
+  lot: null
+  profile: q13_kitchen
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Спецодежда для столовой для нужд ФГКУ "Санаторий "Ясная поляна" ФТС России"; Республика Крым, 894 тыс.
+    ₽, запрос котировок, 44-ФЗ — предмет вне специализации
+- id: w117
+  file: data/samples/32616510786.xml
+  lot: null
+  profile: q14_meters
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: ПИР, СМР «Строительство ЛЭП-0,4 кВ, установка прибора учета и распределительной коробки по; Тульская
+    область, 9,70 млн ₽, запрос предложений, 223-ФЗ — строительство ЛЭП, установка счётчика — малая часть работ
+    (решение по предмету вручную)
+- id: w118
+  file: data/samples/32616514450.xml
+  lot: null
+  profile: q14_meters
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Установка приборов учета в соответствии с Федеральным законом от 27.12.2018 № 522-ФЗ при и; Ленинградская
+    область, 1117,16 млн ₽, конкурс, 223-ФЗ — сумма далеко за границами 50 тыс.–10,00 млн
+- id: w119
+  file: data/samples/0134300007926000014.xml
+  lot: null
+  profile: q15_music
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: работы по реализации мероприятий, направленных на снижение негативного воздействия отходов; Иркутская
+    область, 17,44 млн ₽, конкурс, 44-ФЗ — предмет вне специализации
+- id: w120
+  file: data/samples/0351300017826000044.xml
+  lot: null
+  profile: q15_music
+  expected_recommendation: skip
+  expected_score:
+  - 0
+  - 39
+  expected_stop_factor: null
+  rationale: Акустическая система (колонка+микрофон); Новосибирская область, 30 тыс. ₽, аукцион, 44-ФЗ — сумма далеко
+    за границами 100 тыс.–10,00 млн

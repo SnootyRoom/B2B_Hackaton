@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44420217</id>
+    <externalId>c7a13b72-bba3-4bd6-b44b-631592e6c7cb01</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0362300381626000054</purchaseNumber>
+        <docNumber>№0362300381626000054</docNumber>
+        <plannedPublishDate>2026-10-29+05:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T14:27:55.491+05:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0362300381626000054</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_SBAST</ns2:code>
+            <ns2:name>АО «Сбербанк-АСТ»</ns2:name>
+            <ns2:url>http://www.sberbank-ast.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Улучшение санитарного состояния территории (содержание безнадзорных животных)</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03623003816</regNum>
+            <consRegistryNum>653D2439</consRegistryNum>
+            <fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "СЛУЖБА МУНИЦИПАЛЬНОГО ЗАКАЗА МУНИЦИПАЛЬНОГО ОКРУГА НИЖНЯЯ САЛДА СВЕРДЛОВСКОЙ ОБЛАСТИ"</fullName>
+            <shortName>МКУ "СМЗ"</shortName>
+            <postAddress>Российская Федерация, 624740, Свердловская обл, Нижняя Салда г, УЛИЦА ФРУНЗЕ, ДОМ 2</postAddress>
+            <factAddress>Российская Федерация, 624740, Свердловская обл, Нижняя Салда г, УЛ. ФРУНЗЕ, Д. 2</factAddress>
+            <INN>6623100734</INN>
+            <KPP>662301001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>RA</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 624740, Свердловская обл, Нижняя Салда г, УЛИЦА ФРУНЗЕ, ДОМ 2</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 624740, Свердловская обл, Нижняя Салда г, УЛ. ФРУНЗЕ, Д. 2</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Семкова</ns3:lastName>
+                <ns3:firstName>Лариса</ns3:firstName>
+                <ns3:middleName>Сергеевна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>nsalda_zakaz@mail.ru</contactEMail>
+            <contactPhone>8-3434-530650</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0362300381626000054</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186FB6904708193968D7AA3E87AD7</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 2 обоснование НМЦК.docx</ns3:fileName>
+            <ns3:fileSize>22322</ns3:fileSize>
+            <ns3:docDescription>Обоснование начальной (максимальной) цены контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-29T12:26:31+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186FB6904708193968D7AA3E87AD7</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186FB5DAD74CEB429A2EC807F9574</ns3:publishedContentId>
+            <ns3:fileName>Проект МК.docx</ns3:fileName>
+            <ns3:fileSize>48199</ns3:fileSize>
+            <ns3:docDescription>Проект муниципального контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-29T12:26:31+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186FB5DAD74CEB429A2EC807F9574</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186FB65257EA797F3B53B2F5367F0</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 1 к Контракту Описание объекта закупки (содержание безнадзорных животных).docx</ns3:fileName>
+            <ns3:fileSize>46117</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-29T12:26:31+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186FB65257EA797F3B53B2F5367F0</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186FB60AF7FFB8C3A33D6A9BD8582</ns3:publishedContentId>
+            <ns3:fileName>Требования к содержанию и составу заявки на участие в Электронном аукционе.pdf</ns3:fileName>
+            <ns3:fileSize>59775</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию и составу заявки на участие</ns3:docDescription>
+            <ns3:docDate>2026-10-29T12:26:31+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186FB60AF7FFB8C3A33D6A9BD8582</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186FB67087297911EBB9392AD7DED</ns3:publishedContentId>
+            <ns3:fileName>Приложение к извещению (ЗЗ)8976733.pdf</ns3:fileName>
+            <ns3:fileSize>88254</ns3:fileSize>
+            <ns3:docDescription>Приложение к извещению</ns3:docDescription>
+            <ns3:docDate>2026-10-29T12:26:31+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186FB67087297911EBB9392AD7DED</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186FB5ABB7E97B429BE51D72A4454</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 2 к Контракту Расчет стоимости.docx</ns3:fileName>
+            <ns3:fileSize>13947</ns3:fileSize>
+            <ns3:docDescription>Приложение к контракту</ns3:docDescription>
+            <ns3:docDate>2026-10-29T12:26:31+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186FB5ABB7E97B429BE51D72A4454</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T14:27:55+05:00</startDT>
+                <endDT>2026-11-09T09:00:00+05:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+05:00</biddingDate>
+            <summarizingDate>2026-11-10+05:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>221100.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>01623000209</ns2:regNum>
+                    <ns2:consRegistryNum>653D2360</ns2:consRegistryNum>
+                    <ns2:fullName>АДМИНИСТРАЦИЯ МУНИЦИПАЛЬНОГО ОКРУГА НИЖНЯЯ САЛДА СВЕРДЛОВСКОЙ ОБЛАСТИ</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>016577551</ns3:bik>
+                        <ns3:settlementAccount>03232643657500006200</ns3:settlementAccount>
+                        <ns3:personalAccount>05901000020</ns3:personalAccount>
+                        <ns3:creditOrgName>Финуправление Нижняя Салда (Администрация городского округа Нижняя Салда)</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810645370000054</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>В соответствии с действующим законодательством о контрактной системе</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>221100.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263662200236466230100100340067500244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>75.00</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги ветеринарные</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>36622002364662301001</customerCode>
+                        <purchaseNumber>0034</purchaseNumber>
+                        <purchaseOrderNumber>006</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202601623000209001</ns3:plan2020Number>
+                        <ns3:position2020Number>202601623000209001000056</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>62030137</ns2:code>
+                                    <ns2:name>Бюджет муниципального округа Нижняя Салда Свердловской области</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>30</ns2:code>
+                                    <ns2:name>местный бюджет</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>65522000</ns2:code>
+                                    <ns2:name>Муниципальные образования Свердловской области / Муниципальные округа Свердловской области/ / Нижняя Салда</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>221100.00</total>
+                                <currentYear>221100.00</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22502826</sid>
+                                <externalSid>43c60d97-6208-4f88-b759-95d43c318494</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>90104058000042П00244</KBK>
+                                        <paymentYearInfo>
+                                            <total>221100.00</total>
+                                            <currentYear>221100.00</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62434439</ns3:sid>
+                            <ns3:externalSid>e5202298-7cb6-4aaf-829f-0c84a11a9da8</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>b4326e03-bab5-4188-a8c1-97d69858c514</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Свердловская, м.о. Нижняя Салда, г. Нижняя Салда</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226114971</ns3:sid>
+                    <ns3:externalSid>111cfe77-7df2-4022-b932-07ca3152673d</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Улучшение санитарного состояния территории (содержание безнадзорных животных)  (Содержание животных без владельцев (лечение, маркирование) в расчете на 1 животное без владельца однократно)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>8361</ns2:code>
+                        <ns2:nationalCode>ОСОБЬ</ns2:nationalCode>
+                        <ns2:name>Особь</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>01623000209</ns2:regNum>
+                                <ns2:consRegistryNum>653D2360</ns2:consRegistryNum>
+                                <ns2:fullName>АДМИНИСТРАЦИЯ МУНИЦИПАЛЬНОГО ОКРУГА НИЖНЯЯ САЛДА СВЕРДЛОВСКОЙ ОБЛАСТИ</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>586.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>586.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226114972</ns3:sid>
+                    <ns3:externalSid>0a961b26-81c3-4f98-bc73-2375e1892b11</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Улучшение санитарного состояния территории (содержание безнадзорных животных)  (Стерилизация животных без владельцев в расчете на 1 животное без владельца)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>8361</ns2:code>
+                        <ns2:nationalCode>ОСОБЬ</ns2:nationalCode>
+                        <ns2:name>Особь</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>01623000209</ns2:regNum>
+                                <ns2:consRegistryNum>653D2360</ns2:consRegistryNum>
+                                <ns2:fullName>АДМИНИСТРАЦИЯ МУНИЦИПАЛЬНОГО ОКРУГА НИЖНЯЯ САЛДА СВЕРДЛОВСКОЙ ОБЛАСТИ</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>3285.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>3285.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226114973</ns3:sid>
+                    <ns3:externalSid>480f33ab-6fa4-4cc5-8937-0e8b8e5c679d</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Улучшение санитарного состояния территории (содержание безнадзорных животных)  (Прочие расходы на содержание животных без владельцев в расчете на 1 животное без владельца (собаку) в сутки)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>8361</ns2:code>
+                        <ns2:nationalCode>ОСОБЬ</ns2:nationalCode>
+                        <ns2:name>Особь</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>01623000209</ns2:regNum>
+                                <ns2:consRegistryNum>653D2360</ns2:consRegistryNum>
+                                <ns2:fullName>АДМИНИСТРАЦИЯ МУНИЦИПАЛЬНОГО ОКРУГА НИЖНЯЯ САЛДА СВЕРДЛОВСКОЙ ОБЛАСТИ</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>143.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>143.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226114974</ns3:sid>
+                    <ns3:externalSid>c3a80d19-0f90-4186-b9a7-14b1056b4c3b</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>75.00.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги ветеринарные прочие</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Улучшение санитарного состояния территории (содержание безнадзорных животных)  (Прочие расходы на содержание животных без владельцев в расчете на 1 животное без владельца (кошку) в сутки)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>8361</ns2:code>
+                        <ns2:nationalCode>ОСОБЬ</ns2:nationalCode>
+                        <ns2:name>Особь</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>01623000209</ns2:regNum>
+                                <ns2:consRegistryNum>653D2360</ns2:consRegistryNum>
+                                <ns2:fullName>АДМИНИСТРАЦИЯ МУНИЦИПАЛЬНОГО ОКРУГА НИЖНЯЯ САЛДА СВЕРДЛОВСКОЙ ОБЛАСТИ</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>123.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>123.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>4137</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TOVNPIVR</ns2:shortName>
+                    <ns2:name>Требование об отсутствии в реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации, включенной в такой реестр в связи отказом поставщика (подрядчика, исполнителя) от исполнения контракта по причине введения в отношении заказчика санкций и (или) мер ограничительного характера</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>
