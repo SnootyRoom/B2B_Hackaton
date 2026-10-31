@@ -15,6 +15,8 @@ import uuid
 from functools import lru_cache
 from typing import TYPE_CHECKING
 
+import numpy as np
+from numpy.typing import NDArray
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -57,6 +59,20 @@ def _encode(text: str) -> list[float] | None:
 def embed_passage(text: str) -> list[float] | None:
     text = " ".join(text.split())
     return _encode(f"passage: {text}") if text else None
+
+
+def embed_passages(texts: list[str]) -> "NDArray[np.float32] | None":
+    """Векторы многих текстов за раз (справочники), строка на текст, нормированы."""
+    model = _model()
+    if model is None:
+        return None
+    vecs = model.encode(
+        [f"passage: {' '.join(t.split())}" for t in texts],
+        normalize_embeddings=True,
+        convert_to_numpy=True,
+        batch_size=64,
+    )
+    return np.asarray(vecs, dtype=np.float32)
 
 
 @lru_cache(maxsize=MAX_QUERY_CACHE)

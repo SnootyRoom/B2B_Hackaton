@@ -1,3 +1,4 @@
+# ruff: noqa: E402  — импорты app идут после настройки окружения (см. ниже)
 """Калибровка скоринга: прогон tests/dataset/scenarios.yaml через парсер, движок и эмбеддинги.
 
 Без базы и очереди: близость по смыслу считается в Python тем же способом, что и в pgvector.
@@ -10,6 +11,7 @@
 """
 
 import argparse
+import hashlib
 import json
 import logging
 import os
@@ -21,30 +23,35 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+# корень репозитория: CALIBRATE_REPO (например, копия чужой ветки), рядом со скриптом
+# локально или /repo в контейнере (монтирует docker-compose)
+REPO = next(
+    p
+    for p in (
+        Path(os.environ.get("CALIBRATE_REPO", "")),
+        Path(__file__).resolve().parents[2],
+        Path("/repo"),
+    )
+    if os.fspath(p) != "." and (p / "tests" / "dataset").is_dir()
+)
+# до импорта app: настройки читаются при импорте и кэшируются
+os.environ.setdefault("CUSTOMERS_DIR", str(REPO / "data" / "customers"))
+# полный справочник ОКПД2 — из проекта: в папке с чужими сценариями (CALIBRATE_REPO) его нет
+os.environ.setdefault("OKPD2_CSV", str(Path(__file__).resolve().parents[2] / "data" / "okpd2.csv"))
 
+from app.egrul import offline
 from app.embeddings import service as embeddings
-from app.llm.client import LLMClient
-from app.llm.parse_profile import parse_text
+from app.llm.client import LLMClient, LLMError, load_prompt
+from app.llm.parse_profile import RULES_VERSION, parse_text
 from app.parsers.registry import ParseError, parse_file
-from app.schemas.customer import CustomerData, CustomerStatus
+from app.schemas.customer import CustomerData
+from app.schemas.procurement import ProcurementData
 from app.schemas.scoring import ScoringProfileData
 from app.scoring import extract_fields, score
 from app.scoring.engine import semantic_thresholds
 from app.scoring.operators import SemanticThresholds
 
-REPO = Path(__file__).resolve().parents[2]
 DATASET = REPO / "tests" / "dataset"
-
-# формат офлайн-файлов роли 5: {"egrul_status": "БАНКРОТ", "unreliable_flags": false, ...}
-_RU_STATUS = {
-    "ДЕЙСТВУЮЩАЯ": CustomerStatus.active,
-    "АКТИВНАЯ": CustomerStatus.active,
-    "БАНКРОТ": CustomerStatus.bankrupt,
-    "БАНКРОТСТВО": CustomerStatus.bankrupt,
-    "ЛИКВИДИРУЕТСЯ": CustomerStatus.liquidating,
-    "ЛИКВИДИРОВАНА": CustomerStatus.liquidated,
-    "РЕОРГАНИЗАЦИЯ": CustomerStatus.reorganizing,
-}
 
 
 def load_env(path: Path) -> None:
@@ -58,36 +65,58 @@ def load_env(path: Path) -> None:
 
 
 def load_customer(inn: str | None) -> CustomerData | None:
-    if not inn:
-        return None
-    path = DATASET / "customers" / f"{inn}.json"
-    if not path.is_file():
-        return None
-    raw = json.loads(path.read_text(encoding="utf-8"))
-    status = _RU_STATUS.get(str(raw.get("egrul_status", "")).upper(), CustomerStatus.unknown)
-    flags = raw.get("unreliable_flags")
-    return CustomerData(
-        inn=inn,
-        name=raw.get("name") or inn,
-        status=status,
-        unreliable_flags=["есть отметка"] if flags is True else list(flags or []),
-    )
+    """Офлайн-профиль заказчика из CUSTOMERS_DIR (по умолчанию data/customers)."""
+    found = offline.load(inn) if inn else None
+    return found[0] if found else None
+
+
+def moment(lot: ProcurementData, fixed: datetime | None) -> datetime:
+    """Когда «смотрит» пользователь: заданная дата или день публикации извещения."""
+    if fixed is not None:
+        return fixed.astimezone(UTC)
+    if lot.published_at is not None:
+        return lot.published_at.astimezone(UTC)
+    return datetime.now(UTC)
+
+
+def notice_path(file: str, samples: Path | None) -> Path:
+    """Настоящее извещение ЕИС с тем же номером, если оно есть в samples, иначе файл сценария."""
+    path = REPO / file
+    if samples is not None:
+        real = samples / f"{path.stem.split('_')[0]}.xml"
+        if real.is_file():
+            return real
+    return path
 
 
 def profile_rules(profiles: dict[str, str], cache_path: Path) -> dict[str, ScoringProfileData]:
+    """Правила профилей. Профиль, который LLM не смог разобрать, в ответ не попадает:
+    его сценарии засчитываются как ошибки (в продукте пользователь задал бы правила вручную)."""
     cached: dict[str, dict[str, object]] = (
         json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {}
     )
     client = LLMClient.from_env()
+    version = load_prompt("parse_profile").version
+    pick_version = load_prompt("okpd2_pick").version
     out: dict[str, ScoringProfileData] = {}
     for name, text in profiles.items():
-        if name not in cached or cached[name].get("text") != text:
+        # ключ — профиль + версии промптов и проверок в коде + текст: разные файлы сценариев
+        # не мешают друг другу, новая версия разбирается заново
+        digest = hashlib.sha256(" ".join(text.split()).encode()).hexdigest()[:10]
+        key = f"{name}|v{version}.{RULES_VERSION}|okpd2-v{pick_version}|{digest}"
+        if key not in cached:
             if not client.enabled:
                 raise SystemExit(f"Нет правил для {name} в {cache_path} и не настроен LLM")
-            parsed = parse_text(text, client)
-            cached[name] = {"text": text, "rules": parsed.model_dump(mode="json")["rules"]}
-        out[name] = ScoringProfileData.model_validate({"rules": cached[name]["rules"]})
-    cache_path.write_text(json.dumps(cached, ensure_ascii=False, indent=2), encoding="utf-8")
+            try:
+                parsed = parse_text(text, client)
+            except LLMError:
+                continue
+            cached[key] = {"text": text, "rules": parsed.model_dump(mode="json")["rules"]}
+            # сразу на диск: сбой на следующем профиле не теряет уже разобранные
+            cache_path.write_text(
+                json.dumps(cached, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+        out[name] = ScoringProfileData.model_validate({"rules": cached[key]["rules"]})
     return out
 
 
@@ -104,7 +133,17 @@ def main() -> int:
     logging.basicConfig(level=logging.WARNING)
     ap = argparse.ArgumentParser()
     ap.add_argument("--rules", type=Path, default=Path(__file__).with_name("calibrate_rules.json"))
-    ap.add_argument("--now", default="2026-10-31T00:00:00+00:00", help="момент расчёта")
+    ap.add_argument(
+        "--scenarios",
+        default="scenarios.yaml",
+        help="файл сценариев в tests/dataset (например scenarios_holdout.yaml)",
+    )
+    ap.add_argument(
+        "--now",
+        help="момент расчёта: дата ISO или published — дата публикации извещения. По умолчанию "
+        "as_of из файла сценариев, иначе published (закупки в наборе уже закрыты, иначе "
+        "срабатывает стоп «приём заявок завершён»)",
+    )
     ap.add_argument("-v", "--verbose", action="store_true", help="правила по каждой закупке")
     ap.add_argument(
         "--c0", type=float, help="порог semantic_match: 0 баллов (по умолчанию из настроек)"
@@ -114,12 +153,22 @@ def main() -> int:
     ap.add_argument(
         "--weights", help="веса групп закупка,соответствие,заказчик, например 0.3,0.5,0.2"
     )
+    ap.add_argument(
+        "--samples",
+        type=Path,
+        nargs="?",
+        const=REPO / "data" / "samples",
+        help="брать настоящие XML ЕИС из этой папки вместо самодельных (по умолчанию data/samples)",
+    )
     args = ap.parse_args()
-    load_env(REPO / ".env")
+    load_env(Path(__file__).resolve().parents[2] / ".env")  # ключи — из .env проекта
 
-    spec = yaml.safe_load((DATASET / "scenarios.yaml").read_text(encoding="utf-8"))
+    spec = yaml.safe_load((DATASET / args.scenarios).read_text(encoding="utf-8"))
     profiles = profile_rules({k: v["text"] for k, v in spec["profiles"].items()}, args.rules)
-    now = datetime.fromisoformat(args.now).astimezone(UTC)
+    unparsed = len(spec["profiles"]) - len(profiles)
+    now = args.now or str(spec.get("as_of") or "published")
+    fixed_now = None if now == "published" else datetime.fromisoformat(now).replace(tzinfo=UTC)
+    print(f"Сценарии: {args.scenarios}, момент оценки: {now}")
     if args.weights:
         w = dict(
             zip(
@@ -133,11 +182,14 @@ def main() -> int:
     semantic = SemanticThresholds(args.c0 or base.c0, args.c1 or base.c1)
     print(f"Пороги semantic_match: c0={semantic.c0}, c1={semantic.c1}")
 
+    # модель эмбеддингов загружается при первом вызове; в сервисе она уже загружена в воркере,
+    # поэтому в замер времени оценки загрузка не входит
+    similarity("прогрев", "прогрев")
     rec_ok = range_ok = total = 0
     times: list[float] = []
     for sc in spec["scenarios"]:
         exp_rec, (lo, hi) = sc["expected_recommendation"], sc["expected_score"]
-        path = REPO / sc["file"]
+        path = notice_path(sc["file"], args.samples)
         try:
             lots = parse_file(path.read_bytes(), path.name)
         except ParseError as e:
@@ -145,10 +197,15 @@ def main() -> int:
                 print(f"{sc['id']:5} {path.stem[:22]:22} пропуск: {e.code}")
             continue
         lot = lots[0] if sc.get("lot") is None else lots[int(sc["lot"]) - 1]
+        if sc["profile"] not in profiles:
+            total += 1  # профиль не разобран — сценарий засчитан как ошибка
+            if not args.quiet:
+                print(f"{sc['id']:5} {path.stem[:22]:22} профиль не разобран LLM ✗")
+            continue
         t0 = time.perf_counter()
         r = score(
             profiles[sc["profile"]],
-            extract_fields(lot, load_customer(lot.customer_inn), now),
+            extract_fields(lot, load_customer(lot.customer_inn), moment(lot, fixed_now)),
             similarity,
             semantic,
         )
@@ -161,8 +218,9 @@ def main() -> int:
         mark = "✓" if hit_rec else "✗"
         if args.quiet:
             continue
+        real = "*" if path.parent != (REPO / sc["file"]).parent else " "
         print(
-            f"{sc['id']:5} {path.stem[:22]:22} {sc['profile'][8:22]:14} "
+            f"{sc['id']:5} {path.stem[:22]:22}{real}{sc['profile'][8:22]:14} "
             f"{r.total:3}% {r.recommendation.value:11} ожид. {exp_rec:11} [{lo:>2}–{hi:>3}] {mark}"
         )
         if args.verbose or not hit_rec:
@@ -179,8 +237,12 @@ def main() -> int:
         f"\nСценариев оценено: {total} из {len(spec['scenarios'])}\n"
         f"Точность рекомендации: {rec_ok}/{total} = {rec_ok / total:.0%} (цель ≥ 80%)\n"
         f"Попадание в диапазон:  {range_ok}/{total} = {range_ok / total:.0%} (цель ≥ 70%)\n"
-        f"Время оценки: макс {max(times) * 1000:.0f} мс"
+        f"Время оценки: макс {max(times, default=0) * 1000:.0f} мс\n"
+        f"Профилей не разобрано LLM: {unparsed} из {len(spec['profiles'])} "
+        "(их сценарии засчитаны как ошибки)"
     )
+    if args.samples:
+        print("* — настоящее извещение ЕИС из --samples")
     return 0
 
 

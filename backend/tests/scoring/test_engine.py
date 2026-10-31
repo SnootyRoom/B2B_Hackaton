@@ -12,6 +12,7 @@ from app.schemas.scoring import (
     RuleKind,
     ScoringProfileData,
     ScoringRule,
+    Thresholds,
 )
 from app.schemas.scoring import RuleGroup as Group
 from app.scoring import default_profile, extract_fields, score, with_defaults
@@ -110,8 +111,10 @@ def test_analytics_example_78() -> None:
     )
     r = score(prof, fields)
     assert [g.score for g in r.groups] == [80, 60, 100]
-    assert r.total == 78
-    assert r.recommendation == Recommendation.participate
+    # формула даёт 78, но регион (p3) не выполнен → не выше «Рассмотреть»
+    assert r.total == 69
+    assert r.recommendation == Recommendation.consider
+    assert "не выполнено условие профиля: p3 [p3]" in r.justification.lower()
     assert sum(x.contribution or 0 for x in r.rules) == pytest.approx(78, abs=0.01)
 
 
@@ -275,3 +278,165 @@ def test_invalid_rule(field: str, op: Operator, value: object) -> None:
 def test_zero_group_weights_invalid() -> None:
     with pytest.raises(ValidationError):
         GroupWeights(procurement=0, fit=0, customer=0)
+
+
+# --- ограничитель «предмет совсем не тот» ----------------------------------
+
+SUBJECT_PROFILE = ScoringProfileData(
+    rules=[
+        rule("subj", "subject", Operator.semantic_match, "канцтовары"),
+        rule("price", "nmck", Operator.lte, 2_000_000),
+    ]
+)
+
+
+def test_subject_mismatch_caps_total_below_consider() -> None:
+    # цена подходит (100), предмет нет (0): без ограничителя было бы 53% «Рассмотреть»
+    r = score(SUBJECT_PROFILE, {"subject": "масло и сыр", "nmck": 820_000.0}, lambda a, b: 0.5)
+    assert r.total == 39
+    assert r.recommendation == Recommendation.skip
+    assert "не соответствует деятельности компании [subj]" in r.justification
+
+
+def test_partial_subject_match_is_not_capped() -> None:
+    r = score(
+        SUBJECT_PROFILE,
+        {"subject": "картриджи", "nmck": 820_000.0},
+        lambda a, b: 0.88,  # между порогами 0,86 и 0,90 → частичный балл
+        SemanticThresholds(0.86, 0.90),
+    )
+    assert r.total > 39
+    assert "ограничена" not in r.justification
+
+
+def test_no_subject_rule_or_no_data_is_not_capped() -> None:
+    price_only = ScoringProfileData(rules=[rule("price", "nmck", Operator.lte, 2_000_000)])
+    assert score(price_only, {"nmck": 820_000.0}).total == 100
+    # модели эмбеддингов нет → «нет данных», а не «не похож»
+    assert score(SUBJECT_PROFILE, {"subject": "масло", "nmck": 820_000.0}).total == 100
+
+
+def test_cap_follows_profile_threshold() -> None:
+    prof = SUBJECT_PROFILE.model_copy(
+        update={"thresholds": Thresholds(participate=80, consider=50)}
+    )
+    r = score(prof, {"subject": "масло", "nmck": 820_000.0}, lambda a, b: 0.5)
+    assert r.total == 49
+
+
+def test_matching_okpd2_lifts_subject_cap() -> None:
+    prof = ScoringProfileData(
+        rules=[
+            *SUBJECT_PROFILE.rules,
+            rule("okpd", "okpd2_codes", Operator.prefix_in, ["62"]),
+        ]
+    )
+    fields = {"subject": "сопровождение СЭД", "nmck": 820_000.0, "okpd2_codes": ["62.02.30.000"]}
+    r = score(prof, fields, lambda a, b: 0.5)  # смысл не совпал, но код ОКПД2 — да
+    assert r.total > 39
+    assert "ограничена" not in r.justification
+
+
+def test_all_conditions_met_gives_participate() -> None:
+    prof = ScoringProfileData(
+        rules=[
+            rule("subj", "subject", Operator.semantic_match, "канцтовары"),
+            rule("price", "nmck", Operator.lte, 2_000_000),
+            rule("reg", "region", Operator.in_, ["Тверская область"], weight=2),
+        ]
+    )
+    fields = {"subject": "бумага", "nmck": 150_000.0, "region": "Тверская область"}
+    assert score(prof, fields, lambda a, b: 0.95).recommendation == Recommendation.participate
+    # всё подходит, кроме региона → «Рассмотреть»
+    other = {**fields, "region": "Курская область"}
+    r = score(prof, other, lambda a, b: 0.95)
+    assert r.recommendation == Recommendation.consider and r.total == 69
+
+
+def test_low_fit_score_counts_as_mismatch() -> None:
+    prof = ScoringProfileData(
+        rules=[
+            rule("subj", "subject", Operator.semantic_match, "медизделия"),
+            rule("okpd", "okpd2_codes", Operator.prefix_in, ["32.50"]),
+            rule("price", "nmck", Operator.lte, 30_000_000),
+        ]
+    )
+    # смысл частично (0,5), код ОКПД2 не совпал → соответствие 25 из 100 < 50 → «Пропустить»
+    fields = {"subject": "клининг", "okpd2_codes": ["81.21.10"], "nmck": 5_600_000.0}
+    r = score(prof, fields, lambda a, b: 0.84, SemanticThresholds(0.82, 0.86))
+    assert r.recommendation == Recommendation.skip
+
+
+PRICE_PROFILE = ScoringProfileData(
+    rules=[
+        rule("subj", "subject", Operator.semantic_match, "канцтовары"),
+        rule("price", "nmck", Operator.between, [1_000_000, 10_000_000], soft_margin=0.2),
+    ]
+)
+
+
+@pytest.mark.parametrize(
+    ("nmck", "expected"),
+    [
+        (12_000_000.0, Recommendation.consider),  # за границей, но меньше чем вдвое
+        (25_000_000.0, Recommendation.skip),  # больше верхней границы в 2,5 раза
+        (400_000.0, Recommendation.skip),  # меньше нижней границы в 2,5 раза
+    ],
+)
+def test_money_far_outside_range_is_skip(nmck: float, expected: Recommendation) -> None:
+    r = score(PRICE_PROFILE, {"subject": "бумага", "nmck": nmck}, lambda a, b: 0.95)
+    assert r.recommendation == expected
+    if expected == Recommendation.skip:
+        assert "далеко за пределами условия профиля: price [price]" in r.justification
+
+
+def test_money_far_factor_from_settings_can_be_changed() -> None:
+    fields = {"subject": "бумага", "nmck": 25_000_000.0}
+    r = score(PRICE_PROFILE, fields, lambda a, b: 0.95, far_factor=3.0)
+    assert r.recommendation == Recommendation.consider
+
+
+WRONG_CODE_PROFILE = ScoringProfileData(
+    rules=[
+        rule("subj", "subject", Operator.semantic_match, "стирка белья", weight=2),
+        rule("okpd", "okpd2_codes", Operator.prefix_in, ["81.2"]),
+        rule("price", "nmck", Operator.lte, 2_000_000),
+    ]
+)
+
+
+def test_very_close_meaning_lifts_subject_cap() -> None:
+    # кода деятельности нет в справочнике, код не совпал, но смысл очень близок (≥ 0,88)
+    fields = {"subject": "услуги прачечной", "okpd2_codes": ["96.01.12"], "nmck": 500_000.0}
+    r = score(WRONG_CODE_PROFILE, fields, lambda a, b: 0.95, SemanticThresholds(0.82, 0.86))
+    assert r.recommendation == Recommendation.participate
+    assert "не соответствует" not in r.justification
+
+
+def test_close_but_not_very_close_meaning_keeps_cap() -> None:
+    # смежный предмет: смысл похож лишь частично, код не совпал — ограничение остаётся
+    fields = {"subject": "уборка помещений", "okpd2_codes": ["96.01.12"], "nmck": 500_000.0}
+    r = score(WRONG_CODE_PROFILE, fields, lambda a, b: 0.85, SemanticThresholds(0.82, 0.86))
+    assert r.recommendation == Recommendation.skip
+
+
+def test_code_miss_is_softened_when_meaning_matches() -> None:
+    # смысл совпал (0,87 — полный балл, но ниже 0,88), код не совпал: штраф кода смягчён до 2,
+    # балл соответствия 50 — не «предмет не тот»
+    fields = {"subject": "услуги прачечной", "okpd2_codes": ["96.01.12"], "nmck": 500_000.0}
+    r = score(WRONG_CODE_PROFILE, fields, lambda a, b: 0.87, SemanticThresholds(0.82, 0.86))
+    assert r.recommendation != Recommendation.skip
+    fit = next(g for g in r.groups if g.group == Group.fit)
+    assert fit.score == 50
+
+
+def test_code_miss_without_semantic_rule_counts_fully() -> None:
+    prof = ScoringProfileData(
+        rules=[
+            rule("okpd", "okpd2_codes", Operator.prefix_in, ["81.2"]),
+            rule("price", "nmck", Operator.lte, 2_000_000),
+        ]
+    )
+    r = score(prof, {"okpd2_codes": ["96.01.12"], "nmck": 500_000.0})
+    fit = next(g for g in r.groups if g.group == Group.fit)
+    assert fit.score == 0 and r.total == 53

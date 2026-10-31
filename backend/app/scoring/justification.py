@@ -27,8 +27,17 @@ def _lc(s: str) -> str:
     return s[:1].lower() + s[1:]
 
 
-def build_justification(r: ScoreResultData, no_data: bool = False) -> str:
-    """no_data — не удалось применить ни одного взвешенного правила."""
+def build_justification(
+    r: ScoreResultData,
+    no_data: bool = False,
+    mismatch: list[str] | None = None,
+    failed: list[str] | None = None,
+    far: list[str] | None = None,
+) -> str:
+    """no_data — не удалось применить ни одного взвешенного правила;
+    mismatch — правила о предмете, по которым закупка не подходит (итог не выше «Пропустить»);
+    far — правила о суммах, от которых сумма закупки далеко (итог не выше «Пропустить»);
+    failed — невыполненные условия профиля (итог не выше «Рассмотреть»)."""
     rules = {x.rule_id: x for x in r.rules}
     missing = [
         x for x in r.rules if x.kind == RuleKind.weighted and x.status == RuleStatus.no_data
@@ -54,6 +63,22 @@ def build_justification(r: ScoreResultData, no_data: bool = False) -> str:
         stops = "; ".join(f"{_lc(rules[i].text)} [{i}]" for i in r.stop_factors)
         parts.append(f"Стоп-фактор: {stops}.")
         return " ".join(parts)
+
+    if mismatch:
+        refs = ", ".join(f"[{i}]" for i in mismatch)
+        parts.append(
+            f"Предмет закупки не соответствует деятельности компании {refs}, "
+            "поэтому оценка ограничена, даже если остальные условия подходят."
+        )
+    elif far:
+        labels = "; ".join(f"{_lc(rules[i].label)} [{i}]" for i in far)
+        parts.append(
+            f"Сумма закупки далеко за пределами условия профиля: {labels} — "
+            "поэтому оценка ограничена, даже если остальные условия подходят."
+        )
+    elif failed and r.recommendation == Recommendation.consider:
+        labels = "; ".join(f"{_lc(rules[i].label)} [{i}]" for i in failed)
+        parts.append(f"Не выполнено условие профиля: {labels} — поэтому «Рассмотреть».")
 
     weighted = [
         x for x in r.rules if x.kind == RuleKind.weighted and x.status == RuleStatus.applied
