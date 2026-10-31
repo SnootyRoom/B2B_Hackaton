@@ -78,6 +78,24 @@ def invented_money(value: object, numbers: set[float]) -> list[float]:
     return bad
 
 
+# «Работаем по всей России» — регион компании не важен
+_NATIONWIDE = re.compile(r"по всей (росси|стран)|в любом регионе|в любых регионах|во всех регионах")
+
+
+def without_needless_regions(rules: list[ScoringRule], text: str) -> list[ScoringRule]:
+    """Убирает правила о регионе, которые ничего не проверяют: список из всех регионов и,
+    если компания работает по всей России, правило «Свой регион». Явное «интересны закупки в …»
+    (важность 3) остаётся. Так ответ не зависит от того, как модель поняла «по всей России»."""
+    nationwide = bool(_NATIONWIDE.search(text.casefold()))
+
+    def needless(r: ScoringRule) -> bool:
+        if r.field != "region" or r.kind != "weighted" or not isinstance(r.value, list):
+            return False
+        return len(set(r.value)) >= len(REGIONS) or (nationwide and (r.weight or 0) < 3)
+
+    return [r for r in rules if not needless(r)]
+
+
 PARSE_ERROR_MESSAGE = "Не удалось разобрать текст, задайте правила вручную"
 UNAVAILABLE_MESSAGE = "Разбор текста временно недоступен, задайте правила вручную"
 
@@ -224,6 +242,7 @@ def _to_result(data: JsonObject, text: str) -> tuple[ParseProfileResult | None, 
             msgs = "; ".join(str(err["msg"]) for err in e.errors())
             errors.append(f"Правило {i} ({raw.get('label', '')}): {msgs}")
 
+    rules = without_needless_regions(rules, text)
     with_paired_regions(rules)
     categories = data.get("okpd2_categories")
     okpd_rule = okpd2_rule(categories if isinstance(categories, list) else [], rules)

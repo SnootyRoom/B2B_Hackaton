@@ -5,6 +5,7 @@ import pytest
 
 from app.llm.client import LLMClient, LLMError, LLMUnavailable, load_prompt
 from app.llm.parse_profile import invented_money, parse_text, text_numbers
+from app.parsers.regions import REGIONS
 from app.schemas.common import ErrorCode
 from app.scoring.defaults import DEFAULT_RULE_IDS
 
@@ -133,7 +134,7 @@ def test_no_key_means_disabled() -> None:
 
 
 def test_prompt_has_version() -> None:
-    assert load_prompt("parse_profile").version == "7"
+    assert load_prompt("parse_profile").version == "8"
 
 
 def test_yandex_folder_builds_model_uri_and_header() -> None:
@@ -271,3 +272,41 @@ def test_invented_sum_is_retried_then_unparsed() -> None:
     assert "нет в тексте пользователя" in reqs[1]["messages"][-1]["content"]  # type: ignore[index]
     assert not any(r.field == "nmck" for r in p.rules)
     assert any("5000000" in u for u in p.unparsed)
+
+
+def _region_rule(values: list[str], weight: int) -> dict[str, object]:
+    return {
+        "kind": "weighted",
+        "field": "region",
+        "operator": "in",
+        "value": values,
+        "weight": weight,
+        "soft_margin": 0,
+        "label": "Регион",
+    }
+
+
+NATIONWIDE_TEXT = TEXT + " Работаем с заказчиками по всей России."
+
+
+@pytest.mark.parametrize(
+    "region",
+    [
+        _region_rule(["Новосибирская область"], 2),  # «Свой регион» при работе по всей России
+        _region_rule(list(REGIONS), 1),  # перечислены все регионы
+    ],
+)
+def test_nationwide_company_gets_no_region_rule(region: dict[str, object]) -> None:
+    client, _ = fake_llm([{**GOOD_ANSWER, "rules": [region]}])
+    assert not any(r.field == "region" for r in parse_text(NATIONWIDE_TEXT, client).rules)
+
+
+def test_explicit_regions_kept_for_nationwide_company() -> None:
+    region = _region_rule(["Новосибирская область"], 3)  # «интересны закупки в …»
+    client, _ = fake_llm([{**GOOD_ANSWER, "rules": [region]}])
+    assert any(r.field == "region" for r in parse_text(NATIONWIDE_TEXT, client).rules)
+
+
+def test_home_region_kept_without_nationwide() -> None:
+    client, _ = fake_llm([{**GOOD_ANSWER, "rules": [_region_rule(["Томская область"], 2)]}])
+    assert any(r.field == "region" for r in parse_text(TEXT, client).rules)
