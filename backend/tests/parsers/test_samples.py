@@ -4,6 +4,7 @@
 в /repo/data/samples; если их нет, тесты пропускаются.
 """
 
+import re
 from datetime import UTC, datetime
 from decimal import Decimal
 from pathlib import Path
@@ -32,15 +33,22 @@ def _all_samples() -> list[str]:
 def test_every_sample_parses(name: str) -> None:
     """Полнота по ключевым полям ТЗ: НМЦК, способ, регион, сроки, заказчик."""
     assert SAMPLES is not None
-    lots = parse_file((SAMPLES / name).read_bytes(), name)
+    content = (SAMPLES / name).read_bytes()
+    lots = parse_file(content, name)
     assert lots
+    # До 2016 г. ИКЗ не было: если закупку размещал уполномоченный орган (напр.
+    # 0194200000514002239), ИНН заказчика в извещении нет вовсе
+    no_ikz = b"customerCode>" not in content
+    by_agency = re.search(rb"responsibleRole>(?!CU)", content) is not None
+    inn_expected = not (no_ikz and by_agency)
     for p in lots:
         assert p.reg_number.split("-")[0] == name.removesuffix(".xml")
         assert p.nmck > 0
         assert p.method is not None
         assert p.region is not None
         assert p.application_deadline is not None
-        assert p.customer_inn is not None and inn_is_valid(p.customer_inn)
+        if inn_expected:
+            assert p.customer_inn is not None and inn_is_valid(p.customer_inn)
         assert p.parsed_by != "universal" or p.law == "615"
 
 

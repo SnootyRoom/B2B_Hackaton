@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEZK2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44430863</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0372100004226000023</purchaseNumber>
+        <docNumber>№0372100004226000023</docNumber>
+        <plannedPublishDate>2026-10-30+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T10:14:00.337+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/zk20/view/common-info.html?regNumber=0372100004226000023</href>
+        <placingWay>
+            <ns2:code>ZKP20</ns2:code>
+            <ns2:name>Запрос котировок в электронной форме</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по уборке помещений  СПбГУТ</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03721000042</regNum>
+            <consRegistryNum>001X3063</consRegistryNum>
+            <fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ "САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ТЕЛЕКОММУНИКАЦИЙ ИМ. ПРОФ. М.А. БОНЧ-БРУЕВИЧА"</fullName>
+            <shortName>СПБГУТ</shortName>
+            <postAddress>193232, Санкт-Петербург, Санкт-Петербург город, проспект Большевиков улица, дом 22, корпус 1</postAddress>
+            <factAddress>Российская Федерация, 191186, Санкт-Петербург г, Реки Мойки наб, Д. 61 ЛИТЕР А</factAddress>
+            <INN>7808004760</INN>
+            <KPP>784001001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>193232, Санкт-Петербург, Санкт-Петербург город, проспект Большевиков улица, дом 22, корпус 1</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 191186, Санкт-Петербург г, Реки Мойки наб, Д. 61 ЛИТЕР А</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Ивашкин</ns3:lastName>
+                <ns3:firstName>Сергей</ns3:firstName>
+                <ns3:middleName>Владимирович</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>zakupki@sut.ru</contactEMail>
+            <contactPhone>8-812-3263163</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0372100004226000023</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B9FD9E47B49AD4D6E4248D66219</ns3:publishedContentId>
+            <ns3:fileName>Обоснование начальной максимальной цены (Приложение № 2).xlsx</ns3:fileName>
+            <ns3:fileSize>19366</ns3:fileSize>
+            <ns3:docDescription>Обоснование начальной максимальной цены (Приложение № 2)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T10:04:31+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B9FD9E47B49AD4D6E4248D66219</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BA0067A713EB75DF10AE7ADBCD7</ns3:publishedContentId>
+            <ns3:fileName>Проект Контракта (Приложение № 4).docx</ns3:fileName>
+            <ns3:fileSize>68225</ns3:fileSize>
+            <ns3:docDescription>Проект Контракта (Приложение № 4)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T10:04:42+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BA0067A713EB75DF10AE7ADBCD7</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BA026E178C5BB0E681816D92359</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки (Приложение № 1).docx</ns3:fileName>
+            <ns3:fileSize>117102</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки (Приложение № 1)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T10:04:51+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BA026E178C5BB0E681816D92359</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BA056197942837F47CF31168391</ns3:publishedContentId>
+            <ns3:fileName>Требования к содержанию, составу_заявки (Приложение 3).docx</ns3:fileName>
+            <ns3:fileSize>23267</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию, составу_заявки (Приложение 3)</ns3:docDescription>
+            <ns3:docDate>2026-10-30T10:05:03+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BA056197942837F47CF31168391</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-30T10:14:00+03:00</startDT>
+                <endDT>2026-11-09T11:00:00+03:00</endDT>
+            </collectingInfo>
+            <summarizingDate>2026-11-10+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>4970000.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03721000042</ns2:regNum>
+                    <ns2:consRegistryNum>001X3063</ns2:consRegistryNum>
+                    <ns2:fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ "САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ТЕЛЕКОММУНИКАЦИЙ ИМ. ПРОФ. М.А. БОНЧ-БРУЕВИЧА"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>49700.00</amount>
+                    <account>
+                        <ns3:bik>012202102</ns3:bik>
+                        <ns3:settlementAccount>03214643000000013225</ns3:settlementAccount>
+                        <ns3:personalAccount>20726X30630</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ВВГУ Банка России//УФК по Нижегородской области, г Нижний Новгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000024</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>В соответствии с п. 1 ч. 5. ст. 44 Закона №44-ФЗ обеспечение заявки на участие в закупке может обеспечиваться независимой гарантией или внесением денежных средств на специальный счёт. Участник самостоятельно выбирает с использованием электронной площадки способ обеспечения заявки путем указания реквизитов специального счета или указания номера реестровой записи из реестра независимых гарантий, размещенного в единой информационной системе.</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>012202102</ns3:bik>
+                        <ns3:settlementAccount>03214643000000013225</ns3:settlementAccount>
+                        <ns3:personalAccount>20726X30630</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ВВГУ Банка России//УФК по Нижегородской области, г Нижний Новгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000024</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение Контракта может обеспечиваться независимой гарантией или внесением денежных средств на счет Заказчика, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими Заказчику. Способ обеспечения исполнения Контракта определяется участником закупки, с которым заключается Контракт, самостоятельно.</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>4970000.00</maxPrice>
+                    </maxPriceInfo>
+                    <IKZInfo>
+                        <purchaseCode>261780800476078400100100430318121244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>81.21</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по общей уборке зданий</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>17808004760784001001</customerCode>
+                        <purchaseNumber>0043</purchaseNumber>
+                        <purchaseOrderNumber>031</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603721000042001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603721000042001000048</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-07-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>4970000.00</total>
+                                <currentYear>1570000.00</currentYear>
+                                <firstYear>3400000.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22521532</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-07-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>4970000.00</total>
+                                        <currentYear>1570000.00</currentYear>
+                                        <firstYear>3400000.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>4970000.00</ns3:total>
+                                                <ns3:currentYear>1570000.00</ns3:currentYear>
+                                                <ns3:firstYear>3400000.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>4970000.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62456009</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>172a2fae-ddae-4690-bd90-82405c310bb6</ns3:GARGuid>
+                                <ns3:GARAddress>г. Санкт-Петербург, вн.тер.г. муниципальный округ № 78, наб. Реки Мойки, д. 61 литера А</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62456520</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>cee97529-1e53-4497-98d8-0b678b1e739b</ns3:GARGuid>
+                                <ns3:GARAddress>г. Санкт-Петербург, вн.тер.г. муниципальный округ № 78, ул. Большая Морская, д. 20 литера А</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>Исполнитель гарантирует Заказчику соответствие качества оказываемых услуг условиям настоящего Контракта.																																																												</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226207556</ns3:sid>
+                    <ns3:KTRU>
+                        <ns2:code>81.21.10.000-00000007</ns2:code>
+                        <ns2:name>Услуги по уборке</ns2:name>
+                        <ns2:versionId>356901</ns2:versionId>
+                        <ns2:versionNumber>6</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337915891</ns3:sid>
+                                <ns3:code>8b440baf-3</ns3:code>
+                                <ns3:name>Вид поверхности</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436565576</ns3:sid>
+                                        <ns3:qualityDescription>Из природного и искусственного камня</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436565577</ns3:sid>
+                                        <ns3:qualityDescription>Из древесных материалов</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436565578</ns3:sid>
+                                        <ns3:qualityDescription>Из искусственных и синтетических материалов</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436565579</ns3:sid>
+                                        <ns3:qualityDescription>Стеклянные и из минеральных расплавов</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436565580</ns3:sid>
+                                        <ns3:qualityDescription>Металлические</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436565581</ns3:sid>
+                                        <ns3:qualityDescription>Отделочные материалы</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436565582</ns3:sid>
+                                        <ns3:qualityDescription>Поверхности корпусной мебели</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337915892</ns3:sid>
+                                <ns3:code>fddbd5a9-8</ns3:code>
+                                <ns3:name>Способ уборки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436565583</ns3:sid>
+                                        <ns3:qualityDescription>Ручная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337915893</ns3:sid>
+                                <ns3:code>e5e037cd-4</ns3:code>
+                                <ns3:name>Сфера оказания услуг</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436565584</ns3:sid>
+                                        <ns3:qualityDescription>Общественная</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337915894</ns3:sid>
+                                <ns3:code>6ad5cae7-c</ns3:code>
+                                <ns3:name>Тип объекта</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436565585</ns3:sid>
+                                        <ns3:qualityDescription>Помещение</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337915895</ns3:sid>
+                                <ns3:code>63447393-e</ns3:code>
+                                <ns3:name>Тип уборки помещения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>3</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436565587</ns3:sid>
+                                        <ns3:qualityDescription>Ежедневная основная</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436565588</ns3:sid>
+                                        <ns3:qualityDescription>Ежедневная поддерживающая</ns3:qualityDescription>
+                                    </ns3:value>
+                                    <ns3:value>
+                                        <ns3:sid>436565586</ns3:sid>
+                                        <ns3:qualityDescription>Разовая</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>81.21.10.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по общей уборке зданий</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по уборке</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>055</ns2:code>
+                        <ns2:nationalCode>м[2*]</ns2:nationalCode>
+                        <ns2:name>Квадратный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>3.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:totalSum>3</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU44</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS56BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии с позицией 36 раздела VI приложения к ПП РФ от 29.12.2021 № 2571</ns3:name>
+                        <ns3:content>Наличие опыта исполнения участником закупки договора, предусматривающего оказание услуг по уборке зданий, сооружений, прилегающих к ним территорий. Цена оказанных услуг по договору должна составлять не менее 20 процентов от начальной (максимальной) цены контракта, заключаемого по результатам определения поставщика (подрядчика, исполнителя). Информация и документы, подтверждающие соответствие участников закупки дополнительным требованиям: 1) исполненный договор; 2) акт приемки оказанных услуг, подтверждающий цену оказанных услуг</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+    </notificationInfo>
+    <printFormFieldsInfo>
+        <is449Features>false</is449Features>
+    </printFormFieldsInfo>
+</ns8:epNotificationEZK2020>

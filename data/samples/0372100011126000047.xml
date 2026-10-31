@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44407304</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0372100011126000047</purchaseNumber>
+        <docNumber>№0372100011126000047</docNumber>
+        <plannedPublishDate>2026-10-29+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T14:20:14.716+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0372100011126000047</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_EETP</ns2:code>
+            <ns2:name>РОСЭЛТОРГ (АО«ЕЭТП»)</ns2:name>
+            <ns2:url>http://roseltorg.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по очистке от снежного и ледяного покрова, мусора кровли зданий и территорий внутренних дворов, вывоз снежных масс</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03721000111</regNum>
+            <consRegistryNum>001U9287</consRegistryNum>
+            <fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ "АКАДЕМИЯ РУССКОГО БАЛЕТА ИМЕНИ А.Я. ВАГАНОВОЙ"</fullName>
+            <shortName>АКАДЕМИЯ РУССКОГО БАЛЕТА ИМЕНИ А.Я. ВАГАНОВОЙ</shortName>
+            <postAddress>191023, г.Санкт-Петербург, ул.Зодчего Росси, д.2</postAddress>
+            <factAddress>191023, г.Санкт-Петербург, ул.Зодчего Росси, д.2</factAddress>
+            <INN>7830002092</INN>
+            <KPP>784001001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>191023, г.Санкт-Петербург, ул.Зодчего Росси, д.2</orgPostAddress>
+            <orgFactAddress>191023, г.Санкт-Петербург, ул.Зодчего Росси, д.2</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Пузанов</ns3:lastName>
+                <ns3:firstName>Александр</ns3:firstName>
+                <ns3:middleName>Олегович</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>prorectorahr@vaganovaacademy.ru</contactEMail>
+            <contactPhone>7-812-4560765</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0372100011126000047</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1823BF2827D30931DB90B73C8F4C0</ns3:publishedContentId>
+            <ns3:fileName>НМЦК_Снег2027.docx</ns3:fileName>
+            <ns3:fileSize>32439</ns3:fileSize>
+            <ns3:docDescription>НМЦК_Снег2027.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:18:53+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1823BF2827D30931DB90B73C8F4C0</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1823BF32E76FA9728ADF83CF0A430</ns3:publishedContentId>
+            <ns3:fileName>Проект Контракта Снег 2027.docx</ns3:fileName>
+            <ns3:fileSize>66713</ns3:fileSize>
+            <ns3:docDescription>Проект Контракта Снег 2027.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:18:53+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1823BF32E76FA9728ADF83CF0A430</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1823BF0A67D7EAD24181FC3316E3B</ns3:publishedContentId>
+            <ns3:fileName>ТЗ очистка кровель и территории от снега (на 27г).docx</ns3:fileName>
+            <ns3:fileSize>23130</ns3:fileSize>
+            <ns3:docDescription>ТЗ очистка кровель и территории от снега (на 27г).docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:18:53+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1823BF0A67D7EAD24181FC3316E3B</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1823BF3C87727B3EF0ECD0515C0FE</ns3:publishedContentId>
+            <ns3:fileName>Инструкция по заполнению заявки1.pdf</ns3:fileName>
+            <ns3:fileSize>217587</ns3:fileSize>
+            <ns3:docDescription>Инструкция по заполнению заявки1.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:18:53+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1823BF3C87727B3EF0ECD0515C0FE</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1823BF3FD700E8088264720EBFC14</ns3:publishedContentId>
+            <ns3:fileName>Реквизиты для перечисления денежных средств (обеспечение контракта).docx</ns3:fileName>
+            <ns3:fileSize>12984</ns3:fileSize>
+            <ns3:docDescription>Реквизиты для перечисления денежных средств (обеспечение контракта).docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:18:53+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1823BF3FD700E8088264720EBFC14</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T14:20:14+03:00</startDT>
+                <endDT>2026-11-06T09:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-06+03:00</biddingDate>
+            <summarizingDate>2026-11-10+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>1308692.88</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03721000111</ns2:regNum>
+                    <ns2:consRegistryNum>001U9287</ns2:consRegistryNum>
+                    <ns2:fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ "АКАДЕМИЯ РУССКОГО БАЛЕТА ИМЕНИ А.Я. ВАГАНОВОЙ"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>13086.93</amount>
+                    <account>
+                        <ns3:bik>000000000</ns3:bik>
+                        <ns3:settlementAccount>00000000000000000000</ns3:settlementAccount>
+                        <ns3:personalAccount>См. прилагаемые документы</ns3:personalAccount>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>7705851331</INN>
+                            <KPP>770301001</KPP>
+                            <KBK>05411610051019000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>45382000</ns2:code>
+                                <ns2:name>Муниципальные образования города Москвы (столицы Российской Федерации города федерального значения) / Внутригородские муниципальные образования в городе Москве (см. также 45 900 000)/ / муниципальный округ Тверской</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810045370000002</bankAccount>
+                            <ksNumber>03100643000000019500</ksNumber>
+                            <bik>024501901</bik>
+                            <counterpartyName>МЕЖРЕГИОНАЛЬНОЕ ОПЕРАЦИОННОЕ УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА (МИНКУЛЬТУРЫ РОССИИ)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>В соответствии с ФЗ №44-ФЗ</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>012202102</ns3:bik>
+                        <ns3:settlementAccount>03214643000000013225</ns3:settlementAccount>
+                        <ns3:personalAccount>20726U92870</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ВВГУ Банка России//УФК по Нижегородской области, г Нижний Новгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000024</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Размер обеспечения исполнения контракта: 30% от цены Контракта. Обеспечение исполнения Контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям статьи 45  Федерального закона №44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта,  срок действия независимой гарантии определяются  участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц. Участник закупки, с которым заключается контракт по результатам определения поставщика (подрядчика, исполнителя) в соответствии с пунктом 1 части 1 статьи 30 Федерального закона №44-ФЗ, освобождается от предоставления обеспечения исполнения контракта, в том числе с учетом положений статьи 37 Федерального закона №44-ФЗ, в случае предоставления таким участником закупки информации, содержащейся в реестре контрактов, заключенных заказчиками, и подтверждающей исполнение таким участником (без учета правопреемства) в течение трех лет до даты подачи заявки на участие в закупке трех контрактов, исполненных без применения к такому участнику неустоек (штрафов, пеней). Такая информация представляется участником закупки до заключения контракта в случаях. При этом сумма цен таких контрактов должна составлять не менее начальной (максимальной) цены контракта. </procedureInfo>
+                    <part>30.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>1308692.88</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>261783000209278400100100150018129244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>81.29</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по чистке и уборке прочие</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>17830002092784001001</customerCode>
+                        <purchaseNumber>0015</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603721000111001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603721000111001000024</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>1308692.88</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>1308692.88</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22479600</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>1308692.88</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>1308692.88</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>1308692.88</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>1308692.88</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>1308692.88</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62406105</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>57529831-ba82-4ef3-ae9e-d5458acd9ef7</ns3:GARGuid>
+                                <ns3:GARAddress>г. Санкт-Петербург, вн.тер.г. муниципальный округ № 78, ул. Зодчего Росси, д. 2 литера А</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>191023, г.Санкт-Петербург, ул.Зодчего Росси, д.2, литера А </ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62406106</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>57529831-ba82-4ef3-ae9e-d5458acd9ef7</ns3:GARGuid>
+                                <ns3:GARAddress>г. Санкт-Петербург, вн.тер.г. муниципальный округ № 78, ул. Зодчего Росси, д. 2 литера А</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>191002, г. Санкт-Петербург, ул. Правды, д. 3, литера А</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991151</ns3:sid>
+                    <ns3:externalSid>p-wfiv-mued-wtpp</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Очистка от снега на скатной кровле с выставлением ограждений (адрес объекта: г. Санкт-Петербург, ул. Зодчего Росси, д.2)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>055</ns2:code>
+                        <ns2:nationalCode>м[2*]</ns2:nationalCode>
+                        <ns2:name>Квадратный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>30.38</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>8500.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>258230.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991152</ns3:sid>
+                    <ns3:externalSid>p-r4hp-zlqa-mywr</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Очистка от снега на плоской  кровле с выставлением ограждений (адрес объекта: г. Санкт-Петербург, ул. Зодчего Росси, д.2)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>055</ns2:code>
+                        <ns2:nationalCode>м[2*]</ns2:nationalCode>
+                        <ns2:name>Квадратный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>33.61</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>393.70000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>13232.26</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991153</ns3:sid>
+                    <ns3:externalSid>p-ha0e-1pdl-zgnf</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Очистка сложных и выступающих участков кровли (желобов, стыков кровли, сливов, водосточных воронок) (адрес объекта: г. Санкт-Петербург, ул. Зодчего Росси, д.2)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>055</ns2:code>
+                        <ns2:nationalCode>м[2*]</ns2:nationalCode>
+                        <ns2:name>Квадратный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>98.53</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>120.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>11823.60</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991154</ns3:sid>
+                    <ns3:externalSid>p-lfdm-c3vs-ldqq</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Очистка снега и наледи со свесов и разжелобков (1 метр от края кровли) (адрес объекта: г. Санкт-Петербург, ул. Зодчего Росси, д.2)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>018</ns2:code>
+                        <ns2:nationalCode>пог. м</ns2:nationalCode>
+                        <ns2:name>Погонный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>84.73</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1452.60000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>123078.80</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991155</ns3:sid>
+                    <ns3:externalSid>p-fvbt-tnlq-lk0l</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Просыпка реагента (адрес объекта: г.  Санкт-Петербург, ул.  Зодчего Росси, д.2)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>018</ns2:code>
+                        <ns2:nationalCode>пог. м</ns2:nationalCode>
+                        <ns2:name>Погонный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>16.24</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1452.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>23580.48</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991156</ns3:sid>
+                    <ns3:externalSid>p-jhls-iiqf-1fcn</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Удаление и отбивание отдельных сосулек на водостоках и трубах в труднодоступных местах (адрес объекта: г. Санкт-Петербург, ул. Зодчего Росси, д.2)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>018</ns2:code>
+                        <ns2:nationalCode>пог. м</ns2:nationalCode>
+                        <ns2:name>Погонный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>151.09</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>60.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>9065.40</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991157</ns3:sid>
+                    <ns3:externalSid>p-sxss-cpdb-h3au</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Уборка крыши от мусора (подготовка под уборку снега) (адрес объекта: г. Санкт-Петербург, ул. Зодчего Росси, д.2)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>055</ns2:code>
+                        <ns2:nationalCode>м[2*]</ns2:nationalCode>
+                        <ns2:name>Квадратный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>19.05</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2460.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>46863.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991158</ns3:sid>
+                    <ns3:externalSid>p-jcll-jpye-irlj</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Герметизация и выравнивание водоскатов, разжелобков (адрес объекта: г. Санкт-Петербург, ул. Зодчего Росси, д.2)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>018</ns2:code>
+                        <ns2:nationalCode>пог. м</ns2:nationalCode>
+                        <ns2:name>Погонный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>195.03</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>484.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>94394.52</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991159</ns3:sid>
+                    <ns3:externalSid>p-td1r-nx2x-wxis</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Подвес воронок на хомуты (адрес объекта: г. Санкт-Петербург, ул. Зодчего Росси, д.2)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>194.28</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1942.80</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991160</ns3:sid>
+                    <ns3:externalSid>p-nubq-nk4y-mnya</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Монтаж водосливных систем (установка верхних колен водослива с воронкой) (адрес объекта: г. Санкт-Петербург, ул. Зодчего Росси, д.2)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>560.17</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5601.70</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991161</ns3:sid>
+                    <ns3:externalSid>p-r22s-xl15-3hzj</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Организация сигнальных постов на тротуарах в местах сброса снега и наледи (адрес объекта: г. Санкт-Петербург, ул. Зодчего Росси, д.2)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>917</ns2:code>
+                        <ns2:nationalCode>СМЕН</ns2:nationalCode>
+                        <ns2:name>Смена</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1486.05</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>30.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>44581.50</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991162</ns3:sid>
+                    <ns3:externalSid>p-pckp-g5r4-25ve</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Очистка от снега на плоской  кровле,  с выставлением ограждений  (адрес объекта: г. Санкт-Петербург, ул. Правды, д.3, лит. А)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>055</ns2:code>
+                        <ns2:nationalCode>м[2*]</ns2:nationalCode>
+                        <ns2:name>Квадратный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>19.09</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1944.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>37110.96</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991163</ns3:sid>
+                    <ns3:externalSid>p-mf4f-onxv-jktq</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Удаление и отбивание отдельных сосулек на водостоках и трубах в труднодоступных местах  (адрес объекта: г. Санкт-Петербург, ул. Правды, д.3, лит.А)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>018</ns2:code>
+                        <ns2:nationalCode>пог. м</ns2:nationalCode>
+                        <ns2:name>Погонный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>151.10</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>15.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>2266.50</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991164</ns3:sid>
+                    <ns3:externalSid>p-r2fz-xufz-0dqe</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Уборка крыши от мусора (подготовка под уборку снега)  (адрес объекта: г. Санкт-Петербург, ул. Правды, д.3, лит. А)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>055</ns2:code>
+                        <ns2:nationalCode>м[2*]</ns2:nationalCode>
+                        <ns2:name>Квадратный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>24.10</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>972.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>23425.20</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991165</ns3:sid>
+                    <ns3:externalSid>p-waug-0ozh-vb1m</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Подвес воронок на хомуты  (адрес объекта: г. Санкт-Петербург, ул. Правды, д.3, лит.А)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>193.11</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>772.44</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991166</ns3:sid>
+                    <ns3:externalSid>p-vgiy-bxex-u0nj</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Монтаж водосливных систем (установка верхних колен водослива с воронкой)  (адрес объекта: г. Санкт-Петербург, ул. Правды, д.3, лит.А)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>560.17</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>2240.68</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991167</ns3:sid>
+                    <ns3:externalSid>p-qdis-ajvp-2go4</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.19.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по чистке и уборке прочие, не включенные в другие группировки</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Организация сигнальных постов на тротуарах в местах сброса снега и наледи  (адрес объекта: г. Санкт-Петербург, ул. Правды, д.3, лит.А)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>917</ns2:code>
+                        <ns2:nationalCode>СМЕН</ns2:nationalCode>
+                        <ns2:name>Смена</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1476.71</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5906.84</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991168</ns3:sid>
+                    <ns3:externalSid>p-5awn-40jv-rk2y</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.12.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по подметанию и уборке снега</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Уборка от снега внутренних дворовых территорий</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>9501</ns2:code>
+                        <ns2:nationalCode>ВАГ (МАШ) Ч</ns2:nationalCode>
+                        <ns2:name>Вагоно (машино)-час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3743.97</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>140.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>524155.80</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>225991169</ns3:sid>
+                    <ns3:externalSid>p-kyn5-u5mu-2fhm</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>81.29.12.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по подметанию и уборке снега</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Вывоз снежных масс</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>113</ns2:code>
+                        <ns2:nationalCode>м[3*]</ns2:nationalCode>
+                        <ns2:name>Кубический метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>893.56</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>90.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>80420.40</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>1308692.88</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU44</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS56BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии с позицией 36 раздела VI приложения к ПП РФ от 29.12.2021 № 2571</ns3:name>
+                        <ns3:content>Наличие опыта исполнения участником закупки договора, предусматривающего оказание услуг по уборке зданий, сооружений, прилегающих к ним территорий. Цена оказанных услуг по договору должна составлять не менее 20 процентов от начальной (максимальной) цены контракта, заключаемого по результатам определения поставщика (подрядчика, исполнителя). Информация и документы, подтверждающие соответствие участников закупки дополнительным требованиям: 1) исполненный договор; 2) акт приемки оказанных услуг, подтверждающий цену оказанных услуг</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>
