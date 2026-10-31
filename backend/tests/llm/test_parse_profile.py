@@ -134,7 +134,7 @@ def test_no_key_means_disabled() -> None:
 
 
 def test_prompt_has_version() -> None:
-    assert load_prompt("parse_profile").version == "9"
+    assert load_prompt("parse_profile").version == "10"
 
 
 def test_yandex_folder_builds_model_uri_and_header() -> None:

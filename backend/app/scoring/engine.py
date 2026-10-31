@@ -57,8 +57,9 @@ def _partial(
     x: FieldValue,
     similarity: Similarity | None,
     semantic: SemanticThresholds,
+    closeness: dict[str, float],
 ) -> float | None:
-    """s ∈ [0; 1] или None, если данных нет."""
+    """s ∈ [0; 1] или None, если данных нет. Близость по смыслу запоминается в closeness."""
     if x is None:
         return None
     op = rule.operator
@@ -66,7 +67,10 @@ def _partial(
         if similarity is None or not isinstance(x, str):
             return None
         c = similarity(x, str(rule.value))
-        return None if c is None else semantic_score(c, semantic)
+        if c is None:
+            return None
+        closeness[rule.id] = c
+        return semantic_score(c, semantic)
     if op in NUMERIC_OPERATORS:
         if not isinstance(x, int | float) or isinstance(x, bool):
             return None
@@ -84,15 +88,22 @@ def _applied(results: list[RuleOutcome], *groups: RuleGroup) -> list[RuleOutcome
 
 
 def subject_mismatch(
-    results: list[RuleOutcome], groups: list[GroupScore], fit_min: float
+    results: list[RuleOutcome],
+    groups: list[GroupScore],
+    fit_min: float,
+    closeness: dict[str, float],
+    lift: float,
 ) -> list[str]:
     """Предмет не тот: проверено сравнение по смыслу, а балл группы «Соответствие» ниже fit_min.
-    Совпавший код ОКПД2 поднимает балл группы и снимает ограничение.
+    Совпавший код ОКПД2 поднимает балл группы и снимает ограничение. Очень близкий смысл
+    (близость ≥ lift) тоже снимает: кода деятельности компании может не быть в справочнике.
     Возвращает rule_id правил группы для ссылки в обосновании."""
     fit = _applied(results, RuleGroup.fit)
     fit_score = next((g.score for g in groups if g.group == RuleGroup.fit), None)
-    has_semantic = any(r.operator == Operator.semantic_match for r in fit)
-    if has_semantic and fit_score is not None and fit_score < fit_min:
+    semantic = [r for r in fit if r.operator == Operator.semantic_match]
+    if any(closeness.get(r.rule_id, 0.0) >= lift for r in semantic):
+        return []
+    if semantic and fit_score is not None and fit_score < fit_min:
         return [r.rule_id for r in fit]
     return []
 
@@ -162,6 +173,7 @@ def score(
     far_factor = get_settings().money_far_factor if far_factor is None else far_factor
     results: list[RuleOutcome] = []
     stop_ids: list[str] = []
+    closeness: dict[str, float] = {}
 
     for rule in profile.rules:
         x = fields.get(rule.field)
@@ -177,7 +189,7 @@ def score(
             text="",
         )
         if rule.enabled:
-            s = _partial(rule, x, similarity, semantic)
+            s = _partial(rule, x, similarity, semantic, closeness)
             if s is None:
                 res.status = RuleStatus.no_data
             else:
@@ -244,7 +256,8 @@ def score(
 
     # Предмет совсем не похож на деятельность компании или сумма далеко за диапазоном —
     # остальные условия не вытягивают закупку в «Рассмотреть»: итог не выше порога «Пропустить».
-    mismatch = subject_mismatch(results, groups, fit_min)
+    lift = get_settings().semantic_lift
+    mismatch = subject_mismatch(results, groups, fit_min, closeness, lift)
     far = [] if mismatch else money_far_outside(profile, fields, far_factor)
     failed = [] if mismatch or far else failed_conditions(results)
     if (mismatch or far) and not stopped:

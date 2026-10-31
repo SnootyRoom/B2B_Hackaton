@@ -394,3 +394,27 @@ def test_money_far_factor_from_settings_can_be_changed() -> None:
     fields = {"subject": "бумага", "nmck": 25_000_000.0}
     r = score(PRICE_PROFILE, fields, lambda a, b: 0.95, far_factor=3.0)
     assert r.recommendation == Recommendation.consider
+
+
+WRONG_CODE_PROFILE = ScoringProfileData(
+    rules=[
+        rule("subj", "subject", Operator.semantic_match, "стирка белья", weight=2),
+        rule("okpd", "okpd2_codes", Operator.prefix_in, ["81.2"]),
+        rule("price", "nmck", Operator.lte, 2_000_000),
+    ]
+)
+
+
+def test_very_close_meaning_lifts_subject_cap() -> None:
+    # кода деятельности нет в справочнике, код не совпал, но смысл очень близок (≥ 0,88)
+    fields = {"subject": "услуги прачечной", "okpd2_codes": ["96.01.12"], "nmck": 500_000.0}
+    r = score(WRONG_CODE_PROFILE, fields, lambda a, b: 0.95, SemanticThresholds(0.82, 0.86))
+    assert r.recommendation == Recommendation.participate
+    assert "не соответствует" not in r.justification
+
+
+def test_close_but_not_very_close_meaning_keeps_cap() -> None:
+    # смежный предмет: смысл похож (полный балл при 0,86), но не очень близок — ограничение остаётся
+    fields = {"subject": "уборка помещений", "okpd2_codes": ["96.01.12"], "nmck": 500_000.0}
+    r = score(WRONG_CODE_PROFILE, fields, lambda a, b: 0.87, SemanticThresholds(0.82, 0.86))
+    assert r.recommendation == Recommendation.skip
