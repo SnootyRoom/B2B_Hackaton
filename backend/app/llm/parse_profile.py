@@ -5,6 +5,7 @@ LLM только предлагает правила; каждое провер�
 """
 
 import json
+import re
 
 from pydantic import ValidationError
 
@@ -20,7 +21,7 @@ from app.llm.client import (
 from app.llm.okpd2 import OKPD2_CATEGORIES, codes_for
 from app.parsers.regions import REGIONS
 from app.schemas.common import ErrorCode
-from app.schemas.scoring import FIELD_CATALOG, ParseProfileResult, ScoringRule
+from app.schemas.scoring import FIELD_CATALOG, FieldType, ParseProfileResult, ScoringRule
 from app.scoring.defaults import with_defaults
 from app.scoring.templates import ENUM_LABELS
 
@@ -42,6 +43,39 @@ def with_paired_regions(rules: list[ScoringRule]) -> None:
             values = [str(v) for v in rule.value]
             extra = [PAIRED_REGIONS[v] for v in values if v in PAIRED_REGIONS]
             rule.value = list(dict.fromkeys([*values, *extra]))
+
+
+# Число в тексте: «30», «1,5», «1 000 000» (группы разрядов через пробел)
+_NUMBER = re.compile(r"\d+(?:\s\d{3})*(?:[.,]\d+)?")
+# Сумма в рублях может быть записана в рублях, тысячах или миллионах: «1 до 30 млн» → 1 000 000
+_MONEY_SCALES = (1, 1_000, 1_000_000, 1_000_000_000)
+
+
+def text_numbers(text: str) -> set[float]:
+    found = set()
+    for m in _NUMBER.finditer(text):
+        raw = re.sub(r"\s", "", m.group()).replace(",", ".")
+        found.add(float(raw))
+    # суммы словами: «от миллиона», «до полмиллиона»
+    low = text.casefold()
+    if re.search(r"(?<!пол)(миллион|тысяч)", low):
+        found.add(1.0)
+    if "полмиллион" in low:
+        found.add(0.5)
+    return found
+
+
+def invented_money(value: object, numbers: set[float]) -> list[float]:
+    """Суммы правила, которых нет в тексте пользователя ни в рублях, ни в тысячах, ни в миллионах:
+    модель их придумала или ошиблась в разрядах (написала 10 млн вместо 1 млн)."""
+    values = value if isinstance(value, list) else [value]
+    bad = []
+    for v in values:
+        if not isinstance(v, int | float) or isinstance(v, bool):
+            continue
+        if not any(abs(v / k - n) < 1e-6 for k in _MONEY_SCALES for n in numbers):
+            bad.append(float(v))
+    return bad
 
 
 PARSE_ERROR_MESSAGE = "Не удалось разобрать текст, задайте правила вручную"
@@ -141,7 +175,7 @@ def okpd2_rule(categories: list[object], rules: list[ScoringRule]) -> ScoringRul
     )
 
 
-def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
+def _to_result(data: JsonObject, text: str) -> tuple[ParseProfileResult | None, list[str]]:
     """Ответ модели → правила. Возвращает результат (или None) и список ошибок."""
     raw_rules = data.get("rules")
     if not isinstance(raw_rules, list):
@@ -149,11 +183,21 @@ def _to_result(data: JsonObject) -> tuple[ParseProfileResult | None, list[str]]:
 
     rules: list[ScoringRule] = []
     errors: list[str] = []
+    numbers = text_numbers(text)
     for i, raw in enumerate(raw_rules, start=1):
         if not isinstance(raw, dict):
             errors.append(f"Правило {i}: не объект")
             continue
         spec = FIELD_CATALOG.get(str(raw.get("field")))
+        if spec and spec.type == FieldType.money:
+            bad_sums = invented_money(raw.get("value"), numbers)
+            if bad_sums:
+                sums = ", ".join(f"{v:.0f}" for v in bad_sums)
+                errors.append(
+                    f"Правило {i}: суммы {sums} нет в тексте пользователя — "
+                    "перепроверь разряды (тысячи, миллионы)"
+                )
+                continue
         if spec and spec.field in ("region", "customer.region"):
             value = raw.get("value")
             bad = [r for r in value if r not in REGIONS] if isinstance(value, list) else []
@@ -199,13 +243,14 @@ def _ask(
     client: LLMClient,
     prompt: Prompt,
     user_message: str,
+    text: str,
     retry: list[dict[str, str]] | None = None,
 ) -> tuple[ParseProfileResult | None, list[str], JsonObject | None]:
     try:
         data = client.complete_json(prompt, user_message, RESPONSE_SCHEMA, extra_messages=retry)
     except LLMBadAnswer:
         return None, ["Ответ должен быть JSON-объектом по схеме"], None
-    result, errors = _to_result(data)
+    result, errors = _to_result(data, text)
     return result, errors, data
 
 
@@ -216,7 +261,7 @@ def parse_text(text: str, client: LLMClient) -> ParseProfileResult:
     user_message = f"{catalog_description()}\n\nТекст пользователя:\n{text.strip()}"
 
     try:
-        result, errors, data = _ask(client, prompt, user_message)
+        result, errors, data = _ask(client, prompt, user_message, text)
         if errors or result is None:
             retry = [
                 {"role": "assistant", "content": json.dumps(data, ensure_ascii=False)},
@@ -225,7 +270,7 @@ def parse_text(text: str, client: LLMClient) -> ParseProfileResult:
                     "content": "Исправь ошибки и верни JSON целиком заново:\n" + "\n".join(errors),
                 },
             ]
-            result, errors, _ = _ask(client, prompt, user_message, retry)
+            result, errors, _ = _ask(client, prompt, user_message, text, retry)
     except LLMUnavailable as e:
         raise LLMError(ErrorCode.LLM_UNAVAILABLE, UNAVAILABLE_MESSAGE) from e
 

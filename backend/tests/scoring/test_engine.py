@@ -365,3 +365,32 @@ def test_low_fit_score_counts_as_mismatch() -> None:
     fields = {"subject": "клининг", "okpd2_codes": ["81.21.10"], "nmck": 5_600_000.0}
     r = score(prof, fields, lambda a, b: 0.84, SemanticThresholds(0.82, 0.86))
     assert r.recommendation == Recommendation.skip
+
+
+PRICE_PROFILE = ScoringProfileData(
+    rules=[
+        rule("subj", "subject", Operator.semantic_match, "канцтовары"),
+        rule("price", "nmck", Operator.between, [1_000_000, 10_000_000], soft_margin=0.2),
+    ]
+)
+
+
+@pytest.mark.parametrize(
+    ("nmck", "expected"),
+    [
+        (12_000_000.0, Recommendation.consider),  # за границей, но меньше чем вдвое
+        (25_000_000.0, Recommendation.skip),  # больше верхней границы в 2,5 раза
+        (400_000.0, Recommendation.skip),  # меньше нижней границы в 2,5 раза
+    ],
+)
+def test_money_far_outside_range_is_skip(nmck: float, expected: Recommendation) -> None:
+    r = score(PRICE_PROFILE, {"subject": "бумага", "nmck": nmck}, lambda a, b: 0.95)
+    assert r.recommendation == expected
+    if expected == Recommendation.skip:
+        assert "далеко за пределами условия профиля: price [price]" in r.justification
+
+
+def test_money_far_factor_from_settings_can_be_changed() -> None:
+    fields = {"subject": "бумага", "nmck": 25_000_000.0}
+    r = score(PRICE_PROFILE, fields, lambda a, b: 0.95, far_factor=3.0)
+    assert r.recommendation == Recommendation.consider

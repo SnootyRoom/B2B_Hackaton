@@ -32,9 +32,11 @@ def build_justification(
     no_data: bool = False,
     mismatch: list[str] | None = None,
     failed: list[str] | None = None,
+    far: list[str] | None = None,
 ) -> str:
     """no_data — не удалось применить ни одного взвешенного правила;
     mismatch — правила о предмете, по которым закупка не подходит (итог не выше «Пропустить»);
+    far — правила о суммах, от которых сумма закупки далеко (итог не выше «Пропустить»);
     failed — невыполненные условия профиля (итог не выше «Рассмотреть»)."""
     rules = {x.rule_id: x for x in r.rules}
     missing = [
@@ -66,6 +68,12 @@ def build_justification(
         refs = ", ".join(f"[{i}]" for i in mismatch)
         parts.append(
             f"Предмет закупки не соответствует деятельности компании {refs}, "
+            "поэтому оценка ограничена, даже если остальные условия подходят."
+        )
+    elif far:
+        labels = "; ".join(f"{_lc(rules[i].label)} [{i}]" for i in far)
+        parts.append(
+            f"Сумма закупки далеко за пределами условия профиля: {labels} — "
             "поэтому оценка ограничена, даже если остальные условия подходят."
         )
     elif failed and r.recommendation == Recommendation.consider:

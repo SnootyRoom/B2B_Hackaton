@@ -15,12 +15,22 @@ from app.schemas.score import (
     RuleStatus,
     ScoreResultData,
 )
-from app.schemas.scoring import Operator, RuleGroup, RuleKind, ScoringProfileData, ScoringRule
+from app.schemas.scoring import (
+    FIELD_CATALOG,
+    FieldType,
+    Operator,
+    RuleGroup,
+    RuleKind,
+    ScoringProfileData,
+    ScoringRule,
+)
 from app.scoring.fields import FieldValue
 from app.scoring.justification import build_justification
 from app.scoring.operators import (
     NUMERIC_OPERATORS,
     SemanticThresholds,
+    as_number,
+    as_pair,
     boolean_holds,
     numeric_score,
     semantic_score,
@@ -94,6 +104,36 @@ def failed_conditions(results: list[RuleOutcome]) -> list[str]:
     return [r.rule_id for r in applied if (r.partial_score or 0.0) == 0.0]
 
 
+def money_far_outside(
+    profile: ScoringProfileData, fields: dict[str, FieldValue], factor: float
+) -> list[str]:
+    """Сумма закупки за границей диапазона профиля больше чем в factor раз:
+    компании такая закупка не по силам или не интересна. Возвращает rule_id правил о суммах."""
+    far: list[str] = []
+    for rule in profile.rules:
+        spec = FIELD_CATALOG.get(rule.field)
+        x = fields.get(rule.field)
+        if (
+            not rule.enabled
+            or rule.kind != RuleKind.weighted
+            or spec is None
+            or spec.type != FieldType.money
+            or rule.operator not in NUMERIC_OPERATORS
+            or not isinstance(x, int | float)
+            or isinstance(x, bool)
+        ):
+            continue
+        if rule.operator == Operator.between:
+            lo, hi = as_pair(rule.value)
+        elif rule.operator == Operator.gte:
+            lo, hi = as_number(rule.value), math.inf
+        else:
+            lo, hi = 0.0, as_number(rule.value)
+        if x > hi * factor or x * factor < lo:
+            far.append(rule.id)
+    return far
+
+
 def recommend(
     total: int, stopped: bool, no_data: bool, profile: ScoringProfileData
 ) -> Recommendation:
@@ -115,9 +155,11 @@ def score(
     similarity: Similarity | None = None,
     semantic: SemanticThresholds | None = None,
     fit_min: float | None = None,
+    far_factor: float | None = None,
 ) -> ScoreResultData:
     semantic = semantic or semantic_thresholds()
     fit_min = get_settings().fit_min if fit_min is None else fit_min
+    far_factor = get_settings().money_far_factor if far_factor is None else far_factor
     results: list[RuleOutcome] = []
     stop_ids: list[str] = []
 
@@ -200,11 +242,12 @@ def score(
     no_data = included_w == 0
     total = 0 if stopped or no_data else _round(total_f)
 
-    # Предмет совсем не похож на деятельность компании — хорошая цена не вытягивает
-    # закупку в «Рассмотреть»: итог не выше порога «Пропустить».
+    # Предмет совсем не похож на деятельность компании или сумма далеко за диапазоном —
+    # остальные условия не вытягивают закупку в «Рассмотреть»: итог не выше порога «Пропустить».
     mismatch = subject_mismatch(results, groups, fit_min)
-    failed = [] if mismatch else failed_conditions(results)
-    if mismatch and not stopped:
+    far = [] if mismatch else money_far_outside(profile, fields, far_factor)
+    failed = [] if mismatch or far else failed_conditions(results)
+    if (mismatch or far) and not stopped:
         total = min(total, max(profile.thresholds.consider - 1, 0))
     # «Участвовать» — только если выполнены все явные условия профиля
     elif failed and not stopped and not no_data:
@@ -220,6 +263,6 @@ def score(
         justification="",
     )
     result.justification = build_justification(
-        result, no_data=no_data, mismatch=mismatch, failed=failed
+        result, no_data=no_data, mismatch=mismatch, far=far, failed=failed
     )
     return result
