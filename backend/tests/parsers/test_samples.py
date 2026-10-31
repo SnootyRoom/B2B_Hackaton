@@ -28,18 +28,26 @@ def _all_samples() -> list[str]:
     return sorted(p.name for p in SAMPLES.glob("*.xml")) if SAMPLES else []
 
 
+# Чего нет в самом извещении (сверено с карточкой на сайте ЕИС)
+_ABSENT = {
+    "0319200064426000189.xml": {"application_deadline"},  # электронный магазин
+    "32616510892.xml": {"nmck"},  # запрос цен для формирования НМЦК: цена 0,00 ₽
+}
+
+
 @pytest.mark.parametrize("name", _all_samples())
 def test_every_sample_parses(name: str) -> None:
     """Полнота по ключевым полям ТЗ: НМЦК, способ, регион, сроки, заказчик."""
     assert SAMPLES is not None
     lots = parse_file((SAMPLES / name).read_bytes(), name)
     assert lots
+    absent = _ABSENT.get(name, set())
     for p in lots:
         assert p.reg_number.split("-")[0] == name.removesuffix(".xml")
-        assert p.nmck > 0
+        assert p.nmck > 0 or "nmck" in absent
         assert p.method is not None
         assert p.region is not None
-        assert p.application_deadline is not None
+        assert p.application_deadline is not None or "application_deadline" in absent
         assert p.customer_inn is not None and inn_is_valid(p.customer_inn)
         assert p.parsed_by != "universal" or p.law == "615"
 
@@ -104,6 +112,22 @@ def test_44_old_fcs_format() -> None:
     assert p.okpd2_codes == ["43.21.10.140"]
 
 
+def test_44_electronic_store() -> None:
+    """Электронный магазин (ч. 12 ст. 93): нет purchaseObjectInfo — предмет из позиции;
+    срока подачи заявок в извещении нет."""
+    [p] = _parse("0319200064426000189")
+    assert p.parsed_by == "adapter:eis44"
+    assert p.subject == "Шина пневматическая для легкового автомобиля"
+    assert p.nmck == Decimal("146535.62")
+    assert p.method == "other"
+    assert p.customer_inn == "2450010010"
+    assert p.region == "Красноярский край"
+    assert p.application_deadline is None
+    assert p.delivery_term_text == "по 30.12.2026"
+    assert p.okpd2_codes == ["22.11.11.000"]
+    assert p.contract_security == Decimal("7326.78")
+
+
 def test_223_multilot() -> None:
     lots = _parse("32211747866")
     assert [p.reg_number for p in lots] == [f"32211747866-{i}" for i in range(1, 5)]
@@ -124,6 +148,7 @@ def test_223_smp_with_contract_security_text() -> None:
     assert p.method == "auction"
     assert p.restrictions == ["smp_only"]
     assert p.region == "Приморский край"  # lotData/deliveryPlace/region
+    assert p.application_deadline == datetime(2026, 11, 8, 23, 0, tzinfo=UTC)  # 09:00 МСК+7
     assert p.contract_security_pct == Decimal("5")  # «5% от начальной (максимальной) цены»
     assert p.contract_security == Decimal("116666.50")
 
@@ -137,6 +162,35 @@ def test_223_max_contract_price() -> None:
     assert p.method == "proposals"
     assert p.customer_inn == "1435028701"
     assert p.region == "Республика Саха (Якутия)"
+    assert p.application_deadline == datetime(2026, 10, 29, 9, 0, tzinfo=UTC)  # 18:00 МСК+6
+
+
+def test_223_centralized_lot_price_from_customer() -> None:
+    """Централизованная закупка: у лота initialSum = 0 (на сайте ЕИС «0,00 ₽»), цена — у
+    заказчика в jointLotData/lotCustomers."""
+    [p] = _parse("32616514797")
+    assert p.parsed_by == "adapter:eis223"
+    assert p.nmck == Decimal("273049.92")
+    assert p.subject.startswith("Оказание услуг аудита бухгалтерской (финансовой) отчетности")
+    assert p.method == "other" and p.method_raw == "Тендер"
+    assert p.customer_inn == "9701142641"
+    assert p.region == "Москва"
+    assert p.okpd2_codes == ["69.20.10.000"]
+    assert p.application_deadline == datetime(2026, 11, 5, 13, 0, tzinfo=UTC)  # 16:00 МСК
+
+
+def test_223_price_request_without_nmck() -> None:
+    """Запрос цен для формирования НМЦК: начальной цены нет, в документе 0 — это значение."""
+    [p] = _parse("32616510892")
+    assert p.parsed_by == "adapter:eis223"
+    assert p.nmck == 0
+    assert p.subject == "Страхование имущества (КАС)"
+    assert p.method == "proposals"
+    assert p.customer_inn == "2466189073"
+    assert p.region == "Красноярский край"
+    # время в 223-ФЗ — местное время заказчика: на сайте ЕИС «02.11.2026 10:00 (МСК+4)»
+    assert p.application_deadline == datetime(2026, 11, 2, 3, 0, tzinfo=UTC)
+    assert p.published_at == datetime(2026, 10, 27, 7, 30, 49, tzinfo=UTC)
 
 
 def test_615_universal() -> None:

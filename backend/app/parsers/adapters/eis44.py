@@ -22,7 +22,13 @@ NAME = "eis44"
 
 SPEC = Spec(
     reg_number=("commoninfo/purchasenumber", ".//purchasenumber"),
-    subject=("commoninfo/purchaseobjectinfo", ".//purchaseobjectinfo"),
+    # электронный магазин (ч. 12 ст. 93, epNotificationEZT2020) без purchaseObjectInfo:
+    # предмет — первая позиция
+    subject=(
+        "commoninfo/purchaseobjectinfo",
+        ".//purchaseobjectinfo",
+        ".//purchaseobjectsinfo//purchaseobject/name",
+    ),
     nmck=(".//maxpriceinfo/maxprice", "maxprice", ".//lot/maxprice", ".//maxprice"),
     currency=(".//maxpriceinfo/currency/code", "currency/code", ".//currency/code"),
     method_raw=("commoninfo/placingway/name", ".//placingway/name"),
@@ -145,7 +151,7 @@ def parse(doc: Element) -> list[ProcurementData]:
         if p.delivery_term_text is None and (term := _execution_term(doc)):
             update["delivery_term_text"] = term
             update["delivery_days"] = delivery_days(term, p.published_at)
-        if joint:
+        if joint and p.nmck:
             for field, tag in (
                 ("bid_security", "applicationguarantee"),
                 ("contract_security", "contractguarantee"),
