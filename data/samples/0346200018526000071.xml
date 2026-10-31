@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44422444</id>
+    <externalId>85890dff-b2c6-4a49-95d6-2c64faacc88e01</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0346200018526000071</purchaseNumber>
+        <docNumber>№0346200018526000071</docNumber>
+        <plannedPublishDate>2026-10-29+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T14:23:19.173+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0346200018526000071</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_SBAST</ns2:code>
+            <ns2:name>АО «Сбербанк-АСТ»</ns2:name>
+            <ns2:url>http://www.sberbank-ast.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>№ 26-ЭА-71 Работы по разработке, модернизации и технической поддержке информационных систем ОБУ «УМФЦ Липецкой области»</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03462000185</regNum>
+            <consRegistryNum>422К0257</consRegistryNum>
+            <fullName>ОБЛАСТНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "УПОЛНОМОЧЕННЫЙ МНОГОФУНКЦИОНАЛЬНЫЙ ЦЕНТР ПРЕДОСТАВЛЕНИЯ ГОСУДАРСТВЕННЫХ И МУНИЦИПАЛЬНЫХ УСЛУГ ЛИПЕЦКОЙ ОБЛАСТИ"</fullName>
+            <shortName>ОБУ "УМФЦ ЛИПЕЦКОЙ ОБЛАСТИ"</shortName>
+            <postAddress>Российская Федерация, 398036, Липецкая обл, Липецк г, УЛИЦА ИМ. ГЕНЕРАЛА МЕРКУЛОВА, ДОМ 45А</postAddress>
+            <factAddress>Российская Федерация, Липецкая обл, Липецк г, УЛИЦА ИМ. ГЕНЕРАЛА МЕРКУЛОВА, ДОМ 45А</factAddress>
+            <INN>4823057137</INN>
+            <KPP>482401001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 398036, Липецкая обл, Липецк г, УЛИЦА ИМ. ГЕНЕРАЛА МЕРКУЛОВА, ДОМ 45А</orgPostAddress>
+            <orgFactAddress>Российская Федерация, Липецкая обл, Липецк г, УЛИЦА ИМ. ГЕНЕРАЛА МЕРКУЛОВА, ДОМ 45А</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Найденышев</ns3:lastName>
+                <ns3:firstName>Михаил</ns3:firstName>
+                <ns3:middleName>Викторович</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>zakupki.umfc48@yandex.ru</contactEMail>
+            <contactPhone>8-4742-388417</contactPhone>
+            <contactFax>7-4742-388414</contactFax>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0346200018526000071</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1875E956479AF91FC559D23CC7507</ns3:publishedContentId>
+            <ns3:fileName>Обоснование НМЦК  № 26-ЭА-71.docx</ns3:fileName>
+            <ns3:fileSize>17323</ns3:fileSize>
+            <ns3:docDescription>Обоснование начальной (максимальной) цены контракта № 26-ЭА-71</ns3:docDescription>
+            <ns3:docDate>2026-10-29T14:14:50+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1875E956479AF91FC559D23CC7507</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1875E90E67576AE109F75AFB7F27B</ns3:publishedContentId>
+            <ns3:fileName>Проект конракта № 26-ЭА-71.docx</ns3:fileName>
+            <ns3:fileSize>140549</ns3:fileSize>
+            <ns3:docDescription>Проект контракта № 26-ЭА-71</ns3:docDescription>
+            <ns3:docDate>2026-10-29T14:14:50+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1875E90E67576AE109F75AFB7F27B</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1875E92E273199B6A58B7CAF0B6DA</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки № 26-ЭА-71.docx</ns3:fileName>
+            <ns3:fileSize>112277</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки № 26-ЭА-71</ns3:docDescription>
+            <ns3:docDate>2026-10-29T14:14:50+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1875E92E273199B6A58B7CAF0B6DA</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1875E8BDD75FFB18FCADA3D57A81E</ns3:publishedContentId>
+            <ns3:fileName>Требования к содержанию, составу заявки на участие в закупке и инструкция по ее заполнению 26-ЭА-71.docx</ns3:fileName>
+            <ns3:fileSize>20566</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию, составу заявки на участие в закупке № 26-ЭА-71</ns3:docDescription>
+            <ns3:docDate>2026-10-29T14:14:50+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1875E8BDD75FFB18FCADA3D57A81E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T14:23:19+03:00</startDT>
+                <endDT>2026-11-06T08:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-06+03:00</biddingDate>
+            <summarizingDate>2026-11-10+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>1523188.61</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03462000185</ns2:regNum>
+                    <ns2:consRegistryNum>422К0257</ns2:consRegistryNum>
+                    <ns2:fullName>ОБЛАСТНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "УПОЛНОМОЧЕННЫЙ МНОГОФУНКЦИОНАЛЬНЫЙ ЦЕНТР ПРЕДОСТАВЛЕНИЯ ГОСУДАРСТВЕННЫХ И МУНИЦИПАЛЬНЫХ УСЛУГ ЛИПЕЦКОЙ ОБЛАСТИ"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>15231.89</amount>
+                    <account>
+                        <ns3:bik>042202112</ns3:bik>
+                        <ns3:settlementAccount>03224643420000004600</ns3:settlementAccount>
+                        <ns3:personalAccount>20006000260</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ВВГУ Банка России//УФК по Липецкой области, г Липецк</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810945370000112</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>4823057137</INN>
+                            <KPP>482401001</KPP>
+                            <OKTMOInfo>
+                                <ns2:code>42701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Липецкой области / Городские округа Липецкой области/ / город Липецк / г Липецк</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810945370000112</bankAccount>
+                            <ksNumber>03100643000000014600</ksNumber>
+                            <bik>042202112</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО ЛИПЕЦКОЙ ОБЛАСТИ (ОБУ "УМФЦ ЛИПЕЦКОЙ ОБЛАСТИ")</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>В соответствии со ст. 44 Федерального закона от 5 апреля 2013 г. N 44-ФЗ "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд"</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>042202112</ns3:bik>
+                        <ns3:settlementAccount>03224643420000004600</ns3:settlementAccount>
+                        <ns3:personalAccount>20006000260</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ВВГУ Банка России//УФК по Липецкой области, г Липецк</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810945370000112</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>В соответствии со ст. 96 Федерального закона от 5 апреля 2013 г. N 44-ФЗ "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд".
+Дополнительная информация содержится в проекте контракта</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>1523188.61</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262482305713748240100100910010000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>24823057137482401001</customerCode>
+                        <purchaseNumber>0091</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603462000185001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603462000185001000104</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-01-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>1523188.61</total>
+                                <currentYear>1523188.61</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22506692</sid>
+                                <externalSid>0172e94f-60da-454f-bb5e-455484b274ed</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-01-30+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>609275.44</total>
+                                        <currentYear>609275.44</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>609275.44</ns3:total>
+                                                <ns3:currentYear>609275.44</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>609275.44</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                                <financeInfo>
+                                    <total>609275.44</total>
+                                    <currentYear>609275.44</currentYear>
+                                    <firstYear>0.00</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22506693</sid>
+                                <externalSid>875b83d0-a8fc-4510-ad23-b8cabf5d7d73</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-01-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>913913.17</total>
+                                        <currentYear>913913.17</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>913913.17</ns3:total>
+                                                <ns3:currentYear>913913.17</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>913913.17</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                                <financeInfo>
+                                    <total>913913.17</total>
+                                    <currentYear>913913.17</currentYear>
+                                    <firstYear>0.00</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62439433</ns3:sid>
+                            <ns3:externalSid>b58ffab1-8eee-4731-abd7-bc467a3dd76a</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>eacb5f15-1a2e-432e-904a-ca56bd635f1b</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Липецкая, г.о. город Липецк, г. Липецк</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>г. Липецк, ул. Им. Генерала Меркулова, д.45а</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>Гарантийная поддержка осуществляется в соответствии с требованиями пункта 8 задания.</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226126254</ns3:sid>
+                    <ns3:externalSid>a59b91bf-2d8b-4071-ae9f-c886919a6e63</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>62.01.11.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по проектированию и разработке информационных технологий для прикладных задач и тестированию программного обеспечения</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Работы по разработке, модернизации и технической поддержке информационных систем ОБУ «УМФЦ Липецкой области» (Модернизация модулей «Юристы» и «Услуги МФЦ» ИС «Андромеда»)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>609275.44</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>609275.44</ns3:sum>
+                    <ns3:type>WORK</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>true</ns3:isProhibitionForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226126255</ns3:sid>
+                    <ns3:externalSid>fa67985f-3c67-4053-b793-c9b1a11e13f2</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>62.01.11.000</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги по проектированию и разработке информационных технологий для прикладных задач и тестированию программного обеспечения</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Работы по разработке, модернизации и технической поддержке информационных систем ОБУ «УМФЦ Липецкой области» (Модернизация модулей «Ситуационный центр», «Отчёты» ИС «Андромеда» Модернизация Портала)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>913913.17</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>913913.17</ns3:sum>
+                    <ns3:type>WORK</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>true</ns3:isProhibitionForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>1523188.61</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

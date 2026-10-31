@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44432900</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0358200000226001173</purchaseNumber>
+        <docNumber>№0358200000226001173</docNumber>
+        <plannedPublishDate>2026-10-30+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T10:50:11.680+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0358200000226001173</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_TEKTORG</ns2:code>
+            <ns2:name>ЭТП ТЭК-Торг</ns2:name>
+            <ns2:url>http://www.tektorg.ru/</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка лекарственных препаратов для медицинского применения</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03582000002</regNum>
+            <consRegistryNum>602U8552</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ РОСТОВСКОЙ ОБЛАСТИ "ОБЛАСТНАЯ ДЕТСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА"</fullName>
+            <shortName>ГБУ РО "ОДКБ"</shortName>
+            <postAddress>Российская Федерация, 344015, Ростовская обл, Ростов-на-Дону г, 339-й Стрелковой Дивизии ул, ЗД. 14</postAddress>
+            <factAddress>Российская Федерация, 344015, Ростовская обл, Ростов-на-Дону г, 339-й Стрелковой Дивизии ул, ЗД. 14</factAddress>
+            <INN>6168001069</INN>
+            <KPP>616801001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 344015, Ростовская обл, Ростов-на-Дону г, 339-й Стрелковой Дивизии ул, ЗД. 14</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 344015, Ростовская обл, Ростов-на-Дону г, 339-й Стрелковой Дивизии ул, ЗД. 14</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Каубрак</ns3:lastName>
+                <ns3:firstName>Наталья</ns3:firstName>
+                <ns3:middleName>Сергеевна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>zakupkiodkb@yandex.ru</contactEMail>
+            <contactPhone>7-863-3066083</contactPhone>
+            <addInfo>Контрактная служба действует в соответствии с положением, утвержденным приказом от 10.01.2022 г. № 20-Б. Руководитель контрактной службы: Головина Наталья Викторовна. Контактный телефон руководителя контрактной службы: 8 (863) 306-60-82. Ответственное должностное лицо заказчика за заключение Контракта: Головина Наталья Викторовна</addInfo>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0358200000226001173</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BC809707DAB9AF7A53259B3C08E</ns3:publishedContentId>
+            <ns3:fileName>НМЦК_ЦЕФОПЕРАЗОН-СУЛЬБАКТАМ.xlsx</ns3:fileName>
+            <ns3:fileSize>55151</ns3:fileSize>
+            <ns3:docDescription>НМЦК_ЦЕФОПЕРАЗОН-СУЛЬБАКТАМ</ns3:docDescription>
+            <ns3:docDate>2026-10-30T10:48:25+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BC809707DAB9AF7A53259B3C08E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BC81CA671AF9F9C7141118B016C</ns3:publishedContentId>
+            <ns3:fileName>Проект Контракта.doc</ns3:fileName>
+            <ns3:fileSize>213504</ns3:fileSize>
+            <ns3:docDescription>Проект Контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-30T10:48:29+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BC81CA671AF9F9C7141118B016C</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BC8995A7018AC9278E535F0F7D9</ns3:publishedContentId>
+            <ns3:fileName>Уведомление.pdf</ns3:fileName>
+            <ns3:fileSize>72060</ns3:fileSize>
+            <ns3:docDescription>Уведомление</ns3:docDescription>
+            <ns3:docDate>2026-10-30T10:49:01+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BC8995A7018AC9278E535F0F7D9</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BC87E3D783A910D5B404A7A4777</ns3:publishedContentId>
+            <ns3:fileName>Описание объектра закупки.docx</ns3:fileName>
+            <ns3:fileSize>13897</ns3:fileSize>
+            <ns3:docDescription>Описание объектра закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-30T10:48:54+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BC87E3D783A910D5B404A7A4777</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BC88C8B7A1D853096D3B2912256</ns3:publishedContentId>
+            <ns3:fileName>Декларация отсутствие РРПП.docx</ns3:fileName>
+            <ns3:fileSize>20971</ns3:fileSize>
+            <ns3:docDescription>Декларация отсутствие РРПП</ns3:docDescription>
+            <ns3:docDate>2026-10-30T10:48:58+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BC88C8B7A1D853096D3B2912256</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BC8ABA87D77BEB376F3D87543F3</ns3:publishedContentId>
+            <ns3:fileName>Требования к составу заявки и инструкция по ее заполнению.doc</ns3:fileName>
+            <ns3:fileSize>85504</ns3:fileSize>
+            <ns3:docDescription>Требования к составу заявки и инструкция по ее заполнению</ns3:docDescription>
+            <ns3:docDate>2026-10-30T10:49:06+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BC8ABA87D77BEB376F3D87543F3</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BC8C01F7EA890CF087B52F44C21</ns3:publishedContentId>
+            <ns3:fileName>Реквизиты для перечисления обеспечения.doc</ns3:fileName>
+            <ns3:fileSize>34304</ns3:fileSize>
+            <ns3:docDescription>Реквизиты для перечисления обеспечения</ns3:docDescription>
+            <ns3:docDate>2026-10-30T10:49:11+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BC8C01F7EA890CF087B52F44C21</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-30T10:50:11+03:00</startDT>
+                <endDT>2026-11-09T08:30:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+03:00</biddingDate>
+            <summarizingDate>2026-11-11+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>1120000.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03582000002</ns2:regNum>
+                    <ns2:consRegistryNum>602U8552</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ РОСТОВСКОЙ ОБЛАСТИ "ОБЛАСТНАЯ ДЕТСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>11200.00</amount>
+                    <account>
+                        <ns3:bik>016015102</ns3:bik>
+                        <ns3:settlementAccount>03224643600000005800</ns3:settlementAccount>
+                        <ns3:personalAccount>20806002100</ns3:personalAccount>
+                        <ns3:creditOrgName>ОТДЕЛЕНИЕ РОСТОВ-НА-ДОНУ БАНКА РОССИИ/УФК по Ростовкой области г.Ростов-на-Дону</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000050</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>6163049814</INN>
+                            <KPP>616601001</KPP>
+                            <KBK>80611610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>60701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Ростовской области / Городские округа Ростовской области/ / город Ростов-на-Дону / г Ростов-на-Дону</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810845370000050</bankAccount>
+                            <ksNumber>03100643000000015800</ksNumber>
+                            <bik>016015102</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО РОСТОВСКОЙ ОБЛАСТИ (МИНЗДРАВ РО)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, соответствующей требованиям ст.45 Федерального закона № 44-ФЗ. Выбор способа обеспечения заявки на участие в закупке осуществляется участником закупки самостоятельно. Обеспечение заявки на участие в закупке предоставляется участником закупки в соответствии с требованиями, установленными ст.44 Федерального закона № 44-ФЗ. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок. Независимая гарантия должна содержать условие о рассмотрении споров, вытекающих из независимой гарантии, Арбитражным судом Ростовской области. Государственные, муниципальные учреждения не предоставляют обеспечение подаваемых ими заявок на участие в закупке. Реквизиты счета для перечисления денежных средств в случае, предусмотренном ч. 13 ст. 44 Федерального закона № 44-ФЗ указаны в Приложении к Извещению. Если участник закупки, является юридическим лицом, зарегистрированным на территории государства - члена Евразийского экономического союза, за исключением Российской Федерации, или физическим лицом, являющимся гражданином государства - члена Евразийского экономического союза, за исключением Российской Федерации, то обеспечение заявки на участие в закупке предоставляется участником в соответствии с требованиями Постановления Правительства РФ от 10 апреля 2023 г. N 579 «Об особенностях порядка предоставления обеспечения заявок на участие в закупках товаров, работ, услуг для обеспечения государственных или муниципальных нужд участниками таких закупок, являющимися иностранными лицами»</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>016015102</ns3:bik>
+                        <ns3:settlementAccount>03224643600000005800</ns3:settlementAccount>
+                        <ns3:personalAccount>20806002100</ns3:personalAccount>
+                        <ns3:creditOrgName>ОТДЕЛЕНИЕ РОСТОВ-НА-ДОНУ БАНКА РОССИИ/УФК по Ростовкой области г.Ростов-на-Дону</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000050</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение Контракта может обеспечиваться: - предоставлением независимой гарантии, соответствующей требованиям ст. 45 Федерального закона № 44-ФЗ; - внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения Контракта определяется участником закупки, с которым заключается Контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный Контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией не менее чем на один месяц, в том числе в случае его изменения в соответствии со ст. 95 Федерального закона № 44-ФЗ. В случае, если участником закупки, с которым заключается контракт, является казенное учреждение, положения Федерального закона №44-ФЗ об обеспечении исполнения контракта к такому участнику не применяются</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>1120000.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262616800106961680100100775070000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>26168001069616801001</customerCode>
+                        <purchaseNumber>0077</purchaseNumber>
+                        <purchaseOrderNumber>507</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603582000002001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603582000002001000078</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2028-01-01+03:00</ns3:startDate>
+                                <ns3:endDate>2029-02-05+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>1120000.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>1120000.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22525180</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2028-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2029-02-05+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>1120000.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>1120000.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>1120000.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>1120000.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>1120000.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>61780970</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>2972d11f-f843-402c-a5d2-187e8f2c29d6</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Ростовская, г.о. город Ростов-на-Дону, г. Ростов-на-Дону, ул. 339-й Стрелковой Дивизии, зд. 14</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <drugPurchaseObjectsInfo>
+                <ns3:drugPurchaseObjectInfo>
+                    <ns3:sid>12938987</ns3:sid>
+                    <ns3:objectInfoUsingReferenceInfo>
+                        <ns3:drugsInfo>
+                            <ns3:drugInterchangeInfo>
+                                <ns3:drugInterchangeReferenceInfo>
+                                    <ns3:isInterchange>true</ns3:isInterchange>
+                                    <ns3:interchangeGroupInfo>
+                                        <ns3:groupCode>5207</ns3:groupCode>
+                                        <ns3:groupName>ЦЕФОПЕРАЗОН+СУЛЬБАКТАМ; Порошок для приготовления раствора для внутривенного и внутримышечного введения; 1000 мг+1000 мг</ns3:groupName>
+                                        <ns3:groupOKEI>
+                                            <ns3:name>Миллиграмм</ns3:name>
+                                            <ns3:OKEI>
+                                                <ns2:code>161</ns2:code>
+                                                <ns2:nationalCode>МГ</ns2:nationalCode>
+                                                <ns2:name>Миллиграмм</ns2:name>
+                                            </ns3:OKEI>
+                                        </ns3:groupOKEI>
+                                    </ns3:interchangeGroupInfo>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17026530</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>1ee211a6-bf5b-11e9-bd5d-1fee09584ad0</ns3:MNNExternalCode>
+                                                <ns3:MNNName>ЦЕФОПЕРАЗОН+СУЛЬБАКТАМ</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.10.191</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты антибактериальные для системного использования</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.10.191-00037</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>ПОРОШОК ДЛЯ ПРИГОТОВЛЕНИЯ РАСТВОРА ДЛЯ ВНУТРИВЕННОГО И ВНУТРИМЫШЕЧНОГО ВВЕДЕНИЯ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>1000 мг+1000 мг</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>161</ns2:code>
+                                                    <ns2:name>Миллиграмм</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>мг действующего вещества</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>161</ns2:code>
+                                                <ns2:name>Миллиграмм</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                            <ns3:basicUnit>true</ns3:basicUnit>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:drugQuantity>14000000</ns3:drugQuantity>
+                                        <ns3:quantityMultiplier>1.00000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>0.08</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17026529</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>1edff894-bf5b-11e9-bd5d-ff451021901a</ns3:MNNExternalCode>
+                                                <ns3:MNNName>ЦЕФОПЕРАЗОН+СУЛЬБАКТАМ</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.10.191</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты антибактериальные для системного использования</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.10.191-00037</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>ПОРОШОК ДЛЯ ПРИГОТОВЛЕНИЯ РАСТВОРА ДЛЯ ВНУТРИВЕННОГО И ВНУТРИМЫШЕЧНОГО ВВЕДЕНИЯ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>500 мг+500 мг</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>161</ns2:code>
+                                                    <ns2:name>Миллиграмм</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>мг действующего вещества</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>161</ns2:code>
+                                                <ns2:name>Миллиграмм</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:drugQuantity>14000000</ns3:drugQuantity>
+                                        <ns3:quantityMultiplier>1.00000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>0.08</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                </ns3:drugInterchangeReferenceInfo>
+                            </ns3:drugInterchangeInfo>
+                        </ns3:drugsInfo>
+                    </ns3:objectInfoUsingReferenceInfo>
+                    <ns3:name>ЦЕФОПЕРАЗОН+СУЛЬБАКТАМ; Порошок для приготовления раствора для внутривенного и внутримышечного введения; 1000 мг+1000 мг, для применения в педиатрическом стационаре</ns3:name>
+                    <ns3:isZNVLP>true</ns3:isZNVLP>
+                    <ns3:isNarcotic>false</ns3:isNarcotic>
+                    <ns3:drugQuantityCustomersInfo>
+                        <ns3:drugQuantityCustomerInfo>
+                            <ns3:customer>
+                                <ns2:regNum>03582000002</ns2:regNum>
+                                <ns2:consRegistryNum>602U8552</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ РОСТОВСКОЙ ОБЛАСТИ "ОБЛАСТНАЯ ДЕТСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>14000000</ns3:quantity>
+                        </ns3:drugQuantityCustomerInfo>
+                        <ns3:total>14000000</ns3:total>
+                    </ns3:drugQuantityCustomersInfo>
+                    <ns3:pricePerUnit>0.08</ns3:pricePerUnit>
+                    <ns3:positionPrice>1120000.00</ns3:positionPrice>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:drugPurchaseObjectInfo>
+                <ns3:total>1120000.00</ns3:total>
+                <quantityUndefined>false</quantityUndefined>
+            </drugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>Наличие у участника закупки действующей лицензии на осуществление фармацевтической деятельности, включающая в себя следующий вид работ (услуг): оптовая торговля лекарственными средствами для медицинского применения или на производство лекарственных средств в соответствии с требованиями Федерального закона от 12.04.2010 № 61-ФЗ «Об обращении лекарственных средств», в соответствии с п. 47 ч. 1 ст. 12 Федерального закона от 04.05.2011 № 99-ФЗ «О лицензировании отдельных видов деятельности».</ns3:content>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TOVNPIVR</ns2:shortName>
+                    <ns2:name>Требование об отсутствии в реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации, включенной в такой реестр в связи отказом поставщика (подрядчика, исполнителя) от исполнения контракта по причине введения в отношении заказчика санкций и (или) мер ограничительного характера</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

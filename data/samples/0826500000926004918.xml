@@ -1,0 +1,1590 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44440956</id>
+    <externalId>28080911</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0826500000926004918</purchaseNumber>
+        <docNumber>№0826500000926004918</docNumber>
+        <plannedPublishDate>2026-10-30+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T17:30:27.101+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0826500000926004918</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка медицинских изделий Иглодержатель хирургический, многоразового использования на 2027г.</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>08265000009</regNum>
+            <consRegistryNum>14220936</consRegistryNum>
+            <fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ БЕЛГОРОДСКОЙ ОБЛАСТИ "ЦЕНТР ЗАКУПОК"</fullName>
+            <shortName>ОГКУ "ЦЕНТР ЗАКУПОК"</shortName>
+            <postAddress>308009, Белгородская область, Белгородская обл., г. Белгород, пр-кт Белгородский, д. 85А</postAddress>
+            <factAddress>308009, Белгородская обл., г. Белгород, пр-кт Белгородский, д. 85А</factAddress>
+            <INN>3123484942</INN>
+            <KPP>312301001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>OAI</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>308009, Белгородская область, Белгородская обл., г. Белгород, пр-кт Белгородский, д. 85А</orgPostAddress>
+            <orgFactAddress>308009, Белгородская обл., г. Белгород, пр-кт Белгородский, д. 85А</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Полянская</ns3:lastName>
+                <ns3:firstName>Мария</ns3:firstName>
+                <ns3:middleName>Сергеевна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>zakupki1@belgov.ru</contactEMail>
+            <contactPhone>7-4722-336675</contactPhone>
+            <addInfo>Сведения о заказчиках:
+В соответствии с приложением "Сведения о заказчиках"</addInfo>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0826500000926004918</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E095573B6901CF4171D566D2E</ns3:publishedContentId>
+            <ns3:fileName>Приложение 3 ОНМЦК Прохоровская ЦРБ.xlsx</ns3:fileName>
+            <ns3:fileSize>17741</ns3:fileSize>
+            <ns3:docDescription>Приложение 3 ОНМЦК Прохоровская ЦРБ.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E095573B6901CF4171D566D2E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E0AD4753891B455B22D376379</ns3:publishedContentId>
+            <ns3:fileName>Приложение 3 ОНМЦК СОБ СВЛК.xlsx</ns3:fileName>
+            <ns3:fileSize>17411</ns3:fileSize>
+            <ns3:docDescription>Приложение 3 ОНМЦК СОБ СВЛК.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E0AD4753891B455B22D376379</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E02CF72E69226F3B4124EDC87</ns3:publishedContentId>
+            <ns3:fileName>коэффициент вариации.xlsx</ns3:fileName>
+            <ns3:fileSize>14542</ns3:fileSize>
+            <ns3:docDescription>коэффициент вариации.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E02CF72E69226F3B4124EDC87</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E037A76898BFCD9ABFFECBB41</ns3:publishedContentId>
+            <ns3:fileName>Приложение 3 ОНМЦК Борисовская ЦРБ.xlsx</ns3:fileName>
+            <ns3:fileSize>17497</ns3:fileSize>
+            <ns3:docDescription>Приложение 3 ОНМЦК Борисовская ЦРБ.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E037A76898BFCD9ABFFECBB41</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E08437055A219182DA25864FB</ns3:publishedContentId>
+            <ns3:fileName>Приложение 3 ОНМЦК БОКБ.xlsx</ns3:fileName>
+            <ns3:fileSize>17878</ns3:fileSize>
+            <ns3:docDescription>Приложение 3 ОНМЦК БОКБ.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E08437055A219182DA25864FB</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E09D9728C8E1C76F4A81B6BD2</ns3:publishedContentId>
+            <ns3:fileName>Приложение 3 ОНМЦК Онко.xlsx</ns3:fileName>
+            <ns3:fileSize>14631</ns3:fileSize>
+            <ns3:docDescription>Приложение 3 ОНМЦК Онко.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E09D9728C8E1C76F4A81B6BD2</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E0A587E768028C0764A15F6FC</ns3:publishedContentId>
+            <ns3:fileName>Приложение 3 ОНМЦК Алексеевкая ЦРБ.xlsx</ns3:fileName>
+            <ns3:fileSize>17841</ns3:fileSize>
+            <ns3:docDescription>Приложение 3 ОНМЦК Алексеевкая ЦРБ.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E0A587E768028C0764A15F6FC</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E05297936A6ABF48BFBBEA8CF</ns3:publishedContentId>
+            <ns3:fileName>Приложение 124..xlsx</ns3:fileName>
+            <ns3:fileSize>65887</ns3:fileSize>
+            <ns3:docDescription>Приложение 124..xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E05297936A6ABF48BFBBEA8CF</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E029C79819FD674E5E1CAF974</ns3:publishedContentId>
+            <ns3:fileName>Приложение №5 Требования к участникам закупки.docx</ns3:fileName>
+            <ns3:fileSize>26758</ns3:fileSize>
+            <ns3:docDescription>Приложение №5 Требования к участникам закупки.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E029C79819FD674E5E1CAF974</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E03487A829969E13924128138</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 7 Образец декларации.docx</ns3:fileName>
+            <ns3:fileSize>29477</ns3:fileSize>
+            <ns3:docDescription>Приложение № 7 Образец декларации.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E03487A829969E13924128138</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E04CA76B8BDA3D7832F806DEA</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 6 Требования к содержанию и составу заявки.docx</ns3:fileName>
+            <ns3:fileSize>35534</ns3:fileSize>
+            <ns3:docDescription>Приложение № 6 Требования к содержанию и составу заявки.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E04CA76B8BDA3D7832F806DEA</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E08BA7C41849BB2F0BEB648B3</ns3:publishedContentId>
+            <ns3:fileName>Приложение Общие сведения.docx</ns3:fileName>
+            <ns3:fileSize>25434</ns3:fileSize>
+            <ns3:docDescription>Приложение Общие сведения.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E08BA7C41849BB2F0BEB648B3</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E071E76C78603331F4C58C682</ns3:publishedContentId>
+            <ns3:fileName>Приложение Сведения о заказчиках.xlsx</ns3:fileName>
+            <ns3:fileSize>9271</ns3:fileSize>
+            <ns3:docDescription>Приложение Сведения о заказчиках.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E071E76C78603331F4C58C682</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D2E060C71B78792BEBF646AE872</ns3:publishedContentId>
+            <ns3:fileName>Приложение Общее обоснование НмЦК.docx</ns3:fileName>
+            <ns3:fileSize>16796</ns3:fileSize>
+            <ns3:docDescription>Приложение Общее обоснование НмЦК.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:19:33+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D2E060C71B78792BEBF646AE872</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-30T17:30:27+03:00</startDT>
+                <endDT>2026-11-09T09:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+03:00</biddingDate>
+            <summarizingDate>2026-11-11+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>1428513.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03262000002</ns2:regNum>
+                    <ns2:consRegistryNum>14202257</ns2:consRegistryNum>
+                    <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "БЕЛГОРОДСКАЯ ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА СВЯТИТЕЛЯ ИОАСАФА"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>2268.40</amount>
+                    <account>
+                        <ns3:bik>011403102</ns3:bik>
+                        <ns3:settlementAccount>03224643140000002600</ns3:settlementAccount>
+                        <ns3:personalAccount>20266022573</ns3:personalAccount>
+                        <ns3:creditOrgName>Отделение Белгород // УФК по Белгородской области,  г. Белгород</ns3:creditOrgName>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>3123162110</INN>
+                            <KPP>312301001</KPP>
+                            <KBK>80911610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>14701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Белгородской области / Городские округа Белгородской области/ / город Белгород / г Белгород</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810745370000018</bankAccount>
+                            <ksNumber>03100643000000012600</ksNumber>
+                            <bik>011403102</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО БЕЛГОРОДСКОЙ ОБЛАСТИ</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, предусмотренной ст. 45 Федерального закона № 44-ФЗ. Порядок внесения денежных средств в качестве обеспечения заявок на участие в электронном аукционе изложен в ст. 44 Федерального закона № 44-ФЗ. Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена ЕАЭС, за исключением Российской Федерации, или физическими лицами, являющимися гражданами государства - члена ЕАЭС, за исключением Российской Федерации, вправе предоставить обеспечение заявок в виде денежных средств с учетом постановления Правительства Российской Федерации от 10.04.2023 г. № 579. Условия независимой гарантии, применяемой в качестве обеспечения заявки на участие в закупке, изложены в ст. 45 Федерального закона № 44-ФЗ. В качестве бенефициара в независимой гарантии указывается организатор совместной закупки - ОГКУ «Центр закупок»</procedureInfo>
+                    <part>0.5</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>22684.00</amount>
+                    <account>
+                        <ns3:bik>011403102</ns3:bik>
+                        <ns3:settlementAccount>03224643140000002600</ns3:settlementAccount>
+                        <ns3:personalAccount>20266022573</ns3:personalAccount>
+                        <ns3:creditOrgName>Отделение Белгород // УФК по Белгородской области,  г. Белгород</ns3:creditOrgName>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям ст. 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику (реквизиты для внесения денежных средств в качестве обеспечения исполнения контракта указаны в извещении об осуществлении закупки). Порядок предоставления обеспечения исполнения контракта, требования к обеспечению исполнения контракта изложены в ст. 96 Федерального закона № 44-ФЗ.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>453680.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262312402097531230100148580013250244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>32.50</ns2:OKPDCode>
+                                <ns2:OKPDName>Инструменты и оборудование медицинские</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>23124020975312301001</customerCode>
+                        <purchaseNumber>4858</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603262000002001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603262000002001001577</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>453680.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>453680.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22539423</sid>
+                                <externalSid>34bda3c9-f1c3-489b-b7a2-c02ad72cc9a8</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>453680.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>453680.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>453680.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>453680.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>453680.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62477300</ns3:sid>
+                            <ns3:externalSid>714d7b3f-b180-4bab-83d0-9c7d912e2c7a</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>639efe9d-3fc8-4438-8e70-ec4f2321f2a7</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Белгородская</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>В соответствии с приложением № 4 «План распределения»</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03262000057</ns2:regNum>
+                    <ns2:consRegistryNum>14202263</ns2:consRegistryNum>
+                    <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "БЕЛГОРОДСКИЙ ОБЛАСТНОЙ ОНКОЛОГИЧЕСКИЙ ДИСПАНСЕР"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>679.02</amount>
+                    <account>
+                        <ns3:bik>011403102</ns3:bik>
+                        <ns3:settlementAccount>03224643140000002600</ns3:settlementAccount>
+                        <ns3:personalAccount>20266022633</ns3:personalAccount>
+                        <ns3:creditOrgName>Отделение Белгород//УФК по Белгородской области г. Белгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000018</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>3123162110</INN>
+                            <KPP>312301001</KPP>
+                            <KBK>80911610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>14701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Белгородской области / Городские округа Белгородской области/ / город Белгород / г Белгород</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810745370000018</bankAccount>
+                            <ksNumber>03100643000000012600</ksNumber>
+                            <bik>011403102</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО БЕЛГОРОДСКОЙ ОБЛАСТИ</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, предусмотренной ст. 45 Федерального закона № 44-ФЗ. Порядок внесения денежных средств в качестве обеспечения заявок на участие в электронном аукционе изложен в ст. 44 Федерального закона № 44-ФЗ. Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена ЕАЭС, за исключением Российской Федерации, или физическими лицами, являющимися гражданами государства - члена ЕАЭС, за исключением Российской Федерации, вправе предоставить обеспечение заявок в виде денежных средств с учетом постановления Правительства Российской Федерации от 10.04.2023 г. № 579. Условия независимой гарантии, применяемой в качестве обеспечения заявки на участие в закупке, изложены в ст. 45 Федерального закона № 44-ФЗ. В качестве бенефициара в независимой гарантии указывается организатор совместной закупки - ОГКУ «Центр закупок»</procedureInfo>
+                    <part>0.5</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>6790.15</amount>
+                    <account>
+                        <ns3:bik>011403102</ns3:bik>
+                        <ns3:settlementAccount>03224643140000002600</ns3:settlementAccount>
+                        <ns3:personalAccount>20266022633</ns3:personalAccount>
+                        <ns3:creditOrgName>Отделение Белгород//УФК по Белгородской области г. Белгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000018</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям ст. 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику (реквизиты для внесения денежных средств в качестве обеспечения исполнения контракта указаны в извещении об осуществлении закупки). Порядок предоставления обеспечения исполнения контракта, требования к обеспечению исполнения контракта изложены в ст. 96 Федерального закона № 44-ФЗ.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>135803.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262312402065431230100107990013250244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>32.50</ns2:OKPDCode>
+                                <ns2:OKPDName>Инструменты и оборудование медицинские</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>23124020654312301001</customerCode>
+                        <purchaseNumber>0799</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603262000057001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603262000057001000789</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>135803.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>135803.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22539424</sid>
+                                <externalSid>7f1bfe85-44bd-45a7-8c4e-79664728b3b3</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>135803.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>135803.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>135803.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>135803.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>135803.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62477301</ns3:sid>
+                            <ns3:externalSid>45e242d9-340c-4e75-b054-12d65a5f6000</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>639efe9d-3fc8-4438-8e70-ec4f2321f2a7</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Белгородская</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>В соответствии с приложением № 4 «План распределения»</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03263000038</ns2:regNum>
+                    <ns2:consRegistryNum>14202267</ns2:consRegistryNum>
+                    <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "БОРИСОВСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>98.98</amount>
+                    <account>
+                        <ns3:bik>011403102</ns3:bik>
+                        <ns3:settlementAccount>03224643140000002600</ns3:settlementAccount>
+                        <ns3:personalAccount>20266022673</ns3:personalAccount>
+                        <ns3:creditOrgName>Отделение Белгород Банка России//УФК по Белгородской области Белгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000018</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>3123162110</INN>
+                            <KPP>312301001</KPP>
+                            <KBK>80911610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>14701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Белгородской области / Городские округа Белгородской области/ / город Белгород / г Белгород</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810745370000018</bankAccount>
+                            <ksNumber>03100643000000012600</ksNumber>
+                            <bik>011403102</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО БЕЛГОРОДСКОЙ ОБЛАСТИ</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, предусмотренной ст. 45 Федерального закона № 44-ФЗ. Порядок внесения денежных средств в качестве обеспечения заявок на участие в электронном аукционе изложен в ст. 44 Федерального закона № 44-ФЗ. Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена ЕАЭС, за исключением Российской Федерации, или физическими лицами, являющимися гражданами государства - члена ЕАЭС, за исключением Российской Федерации, вправе предоставить обеспечение заявок в виде денежных средств с учетом постановления Правительства Российской Федерации от 10.04.2023 г. № 579. Условия независимой гарантии, применяемой в качестве обеспечения заявки на участие в закупке, изложены в ст. 45 Федерального закона № 44-ФЗ. В качестве бенефициара в независимой гарантии указывается организатор совместной закупки - ОГКУ «Центр закупок»</procedureInfo>
+                    <part>0.5</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>989.75</amount>
+                    <account>
+                        <ns3:bik>011403102</ns3:bik>
+                        <ns3:settlementAccount>03224643140000002600</ns3:settlementAccount>
+                        <ns3:personalAccount>20266022673</ns3:personalAccount>
+                        <ns3:creditOrgName>Отделение Белгород Банка России//УФК по Белгородской области Белгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000018</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям ст. 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику (реквизиты для внесения денежных средств в качестве обеспечения исполнения контракта указаны в извещении об осуществлении закупки). Порядок предоставления обеспечения исполнения контракта, требования к обеспечению исполнения контракта изложены в ст. 96 Федерального закона № 44-ФЗ.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>19795.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262310301007731030100105030013250000</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>32.50</ns2:OKPDCode>
+                                <ns2:OKPDName>Инструменты и оборудование медицинские</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:undefined>000</ns3:undefined>
+                        </KVRInfo>
+                        <customerCode>23103010077310301001</customerCode>
+                        <purchaseNumber>0503</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603263000038001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603263000038001000491</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>19795.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>19795.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22539422</sid>
+                                <externalSid>10d2d68c-6cfe-4924-9869-84150ae89ae0</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>19795.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>19795.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>19795.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>19795.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>19795.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62477299</ns3:sid>
+                            <ns3:externalSid>8080a5e8-1c41-454a-b1aa-28e03023295a</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>639efe9d-3fc8-4438-8e70-ec4f2321f2a7</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Белгородская</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>В соответствии с приложением № 4 «План распределения»</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03265000005</ns2:regNum>
+                    <ns2:consRegistryNum>142В5813</ns2:consRegistryNum>
+                    <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "СТАРООСКОЛЬСКАЯ ОКРУЖНАЯ БОЛЬНИЦА СВЯТИТЕЛЯ ЛУКИ КРЫМСКОГО"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>3395.08</amount>
+                    <account>
+                        <ns3:bik>011403102</ns3:bik>
+                        <ns3:settlementAccount>03224643140000002600</ns3:settlementAccount>
+                        <ns3:personalAccount>20266В58133</ns3:personalAccount>
+                        <ns3:creditOrgName>ОТДЕЛЕНИЕ БЕЛГОРОД БАНКА РОССИИ//УФК по Белгородской области г Белгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000018</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>3123162110</INN>
+                            <KPP>312301001</KPP>
+                            <KBK>80911610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>14701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Белгородской области / Городские округа Белгородской области/ / город Белгород / г Белгород</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810745370000018</bankAccount>
+                            <ksNumber>03100643000000012600</ksNumber>
+                            <bik>011403102</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО БЕЛГОРОДСКОЙ ОБЛАСТИ</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, предусмотренной ст. 45 Федерального закона № 44-ФЗ. Порядок внесения денежных средств в качестве обеспечения заявок на участие в электронном аукционе изложен в ст. 44 Федерального закона № 44-ФЗ. Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена ЕАЭС, за исключением Российской Федерации, или физическими лицами, являющимися гражданами государства - члена ЕАЭС, за исключением Российской Федерации, вправе предоставить обеспечение заявок в виде денежных средств с учетом постановления Правительства Российской Федерации от 10.04.2023 г. № 579. Условия независимой гарантии, применяемой в качестве обеспечения заявки на участие в закупке, изложены в ст. 45 Федерального закона № 44-ФЗ. В качестве бенефициара в независимой гарантии указывается организатор совместной закупки - ОГКУ «Центр закупок»</procedureInfo>
+                    <part>0.5</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>33950.75</amount>
+                    <account>
+                        <ns3:bik>011403102</ns3:bik>
+                        <ns3:settlementAccount>03224643140000002600</ns3:settlementAccount>
+                        <ns3:personalAccount>20266В58133</ns3:personalAccount>
+                        <ns3:creditOrgName>ОТДЕЛЕНИЕ БЕЛГОРОД БАНКА РОССИИ//УФК по Белгородской области г Белгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000018</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям ст. 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику (реквизиты для внесения денежных средств в качестве обеспечения исполнения контракта указаны в извещении об осуществлении закупки). Порядок предоставления обеспечения исполнения контракта, требования к обеспечению исполнения контракта изложены в ст. 96 Федерального закона № 44-ФЗ.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>679015.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262312813818131280100112490013250244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>32.50</ns2:OKPDCode>
+                                <ns2:OKPDName>Инструменты и оборудование медицинские</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>23128138181312801001</customerCode>
+                        <purchaseNumber>1249</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603265000005001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603265000005001001155</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>679015.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>679015.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22539427</sid>
+                                <externalSid>d9e05df6-8a7c-4f5d-a185-0e518c591498</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>679015.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>679015.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>679015.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>679015.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>679015.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62477304</ns3:sid>
+                            <ns3:externalSid>a3c71c4f-aa25-476b-a0c4-01b0b827a41a</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>639efe9d-3fc8-4438-8e70-ec4f2321f2a7</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Белгородская</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>В соответствии с приложением № 4 «План распределения»</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03263000013</ns2:regNum>
+                    <ns2:consRegistryNum>14202265</ns2:consRegistryNum>
+                    <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "АЛЕКСЕЕВСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>503.20</amount>
+                    <account>
+                        <ns3:bik>011403102</ns3:bik>
+                        <ns3:settlementAccount>03224643140000002600</ns3:settlementAccount>
+                        <ns3:personalAccount>20266022653</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 11 ГУ Банка России по ЦФО//УФК по Белгородской области, г Белгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000018</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>3123162110</INN>
+                            <KPP>312301001</KPP>
+                            <KBK>80911610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>14701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Белгородской области / Городские округа Белгородской области/ / город Белгород / г Белгород</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810745370000018</bankAccount>
+                            <ksNumber>03100643000000012600</ksNumber>
+                            <bik>011403102</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО БЕЛГОРОДСКОЙ ОБЛАСТИ</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, предусмотренной ст. 45 Федерального закона № 44-ФЗ. Порядок внесения денежных средств в качестве обеспечения заявок на участие в электронном аукционе изложен в ст. 44 Федерального закона № 44-ФЗ. Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена ЕАЭС, за исключением Российской Федерации, или физическими лицами, являющимися гражданами государства - члена ЕАЭС, за исключением Российской Федерации, вправе предоставить обеспечение заявок в виде денежных средств с учетом постановления Правительства Российской Федерации от 10.04.2023 г. № 579. Условия независимой гарантии, применяемой в качестве обеспечения заявки на участие в закупке, изложены в ст. 45 Федерального закона № 44-ФЗ. В качестве бенефициара в независимой гарантии указывается организатор совместной закупки - ОГКУ «Центр закупок»</procedureInfo>
+                    <part>0.5</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>5032.00</amount>
+                    <account>
+                        <ns3:bik>011403102</ns3:bik>
+                        <ns3:settlementAccount>03224643140000002600</ns3:settlementAccount>
+                        <ns3:personalAccount>20266022653</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 11 ГУ Банка России по ЦФО//УФК по Белгородской области, г Белгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000018</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям ст. 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику (реквизиты для внесения денежных средств в качестве обеспечения исполнения контракта указаны в извещении об осуществлении закупки). Порядок предоставления обеспечения исполнения контракта, требования к обеспечению исполнения контракта изложены в ст. 96 Федерального закона № 44-ФЗ.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>100640.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262312200126131220100105620013250244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>32.50</ns2:OKPDCode>
+                                <ns2:OKPDName>Инструменты и оборудование медицинские</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>23122001261312201001</customerCode>
+                        <purchaseNumber>0562</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603263000013001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603263000013001000552</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>100640.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>100640.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22539425</sid>
+                                <externalSid>7149377b-3ed7-411e-8392-5610d0936c11</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>100640.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>100640.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>100640.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>100640.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>100640.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62477302</ns3:sid>
+                            <ns3:externalSid>2af55edd-f62f-4687-abe0-87d902c16c13</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>639efe9d-3fc8-4438-8e70-ec4f2321f2a7</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Белгородская</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>В соответствии с приложением № 4 «План распределения»</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03263000034</ns2:regNum>
+                    <ns2:consRegistryNum>14202278</ns2:consRegistryNum>
+                    <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ПРОХОРОВСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>197.90</amount>
+                    <account>
+                        <ns3:bik>011403102</ns3:bik>
+                        <ns3:settlementAccount>03224643140000002600</ns3:settlementAccount>
+                        <ns3:personalAccount>20266022783</ns3:personalAccount>
+                        <ns3:creditOrgName>В отделении Белгород//УФК по Белгородской области г. Белгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000018</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>3123162110</INN>
+                            <KPP>312301001</KPP>
+                            <KBK>80911610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>14701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Белгородской области / Городские округа Белгородской области/ / город Белгород / г Белгород</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810745370000018</bankAccount>
+                            <ksNumber>03100643000000012600</ksNumber>
+                            <bik>011403102</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО БЕЛГОРОДСКОЙ ОБЛАСТИ</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, предусмотренной ст. 45 Федерального закона № 44-ФЗ. Порядок внесения денежных средств в качестве обеспечения заявок на участие в электронном аукционе изложен в ст. 44 Федерального закона № 44-ФЗ. Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена ЕАЭС, за исключением Российской Федерации, или физическими лицами, являющимися гражданами государства - члена ЕАЭС, за исключением Российской Федерации, вправе предоставить обеспечение заявок в виде денежных средств с учетом постановления Правительства Российской Федерации от 10.04.2023 г. № 579. Условия независимой гарантии, применяемой в качестве обеспечения заявки на участие в закупке, изложены в ст. 45 Федерального закона № 44-ФЗ. В качестве бенефициара в независимой гарантии указывается организатор совместной закупки - ОГКУ «Центр закупок»</procedureInfo>
+                    <part>0.5</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <amount>1979.00</amount>
+                    <account>
+                        <ns3:bik>011403102</ns3:bik>
+                        <ns3:settlementAccount>03224643140000002600</ns3:settlementAccount>
+                        <ns3:personalAccount>20266022783</ns3:personalAccount>
+                        <ns3:creditOrgName>В отделении Белгород//УФК по Белгородской области г. Белгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000018</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям ст. 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику (реквизиты для внесения денежных средств в качестве обеспечения исполнения контракта указаны в извещении об осуществлении закупки). Порядок предоставления обеспечения исполнения контракта, требования к обеспечению исполнения контракта изложены в ст. 96 Федерального закона № 44-ФЗ.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>39580.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262311500257831150100103860013250000</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>32.50</ns2:OKPDCode>
+                                <ns2:OKPDName>Инструменты и оборудование медицинские</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:undefined>000</ns3:undefined>
+                        </KVRInfo>
+                        <customerCode>23115002578311501001</customerCode>
+                        <purchaseNumber>0386</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603263000034001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603263000034001000371</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>39580.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>39580.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22539426</sid>
+                                <externalSid>2e7c3d7c-bb48-4bfc-8c44-0d53485876f9</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>39580.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>39580.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>39580.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>39580.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>39580.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62477303</ns3:sid>
+                            <ns3:externalSid>91490bcb-3039-4525-85ee-9761cacdc4ef</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>639efe9d-3fc8-4438-8e70-ec4f2321f2a7</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Белгородская</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>В соответствии с приложением № 4 «План распределения»</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226284996</ns3:sid>
+                    <ns3:externalSid>f82d392c-283c-4013-81ee-d83d65279811</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.13.190-00007423</ns2:code>
+                        <ns2:name>Иглодержатель хирургический, многоразового использования&#13;
+</ns2:name>
+                        <ns2:versionId>80275</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338182723</ns3:sid>
+                                <ns3:externalSid>60d9b43b-f8b8-4717-bacf-6aef18ee4594</ns3:externalSid>
+                                <ns3:name>Описание:</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436925843</ns3:sid>
+                                        <ns3:externalSid>fd21f672-995c-4ca9-ae8f-36b14e8bf724</ns3:externalSid>
+                                        <ns3:qualityDescription>Иглодержатель м/х,180 мм, круглая ручка, рабочая часть 0,8 мм, прямой на рабочей части цельная твердосплавная пластина из материала VITCON [Vanadium-lodum-Tungsten Carbide-ON], твердость пластины не менее 86 HRC по шкале Роквела, Ресурс работы не менее 400 операций, титановый сплав</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с п. 5 Правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд, утвержденных постановлением Правительства Российской Федерации от 8 февраля 2017 г.  145 «Об утверждении правил формирования и ведения в единой информационной системе в сфере закупок каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд и правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд» дополнительные потребительские свойства, в том числе функциональные, технические, качественные, эксплуатационные характеристики товара указаны в связи с недостаточностью информации, содержащейся в Каталоге товаров, работ, услуг, а так же с целью наиболее полного удовлетворения потребностей Заказчика. 
+Обоснование включения дополнительной информации в сведениях о товаре, работе, услуге по каждой характеристике изложено в приложении 1 «Описание объекта закупки»</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.13.190</ns2:OKPDCode>
+                            <ns2:OKPDName>Инструменты и приспособления, применяемые в медицинских целях, прочие, не включенные в другие группировки</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Иглодержатель хирургический, многоразового использования&#13;
+</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03263000013</ns2:regNum>
+                                <ns2:consRegistryNum>14202265</ns2:consRegistryNum>
+                                <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "АЛЕКСЕЕВСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>2</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>30525.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>61050.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226284997</ns3:sid>
+                    <ns3:externalSid>60cb993d-6f2f-4a65-a9c1-e39fb38cd17e</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.13.190-00007423</ns2:code>
+                        <ns2:name>Иглодержатель хирургический, многоразового использования&#13;
+</ns2:name>
+                        <ns2:versionId>80275</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338182724</ns3:sid>
+                                <ns3:externalSid>9bf0f326-3cb1-4045-a584-f81e1bd63709</ns3:externalSid>
+                                <ns3:name>Описание:</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436925844</ns3:sid>
+                                        <ns3:externalSid>e9eded19-fdca-42e7-8554-6e7c306685ec</ns3:externalSid>
+                                        <ns3:qualityDescription>Иглодержатель м/х, не менее 180 мм. Ручка круглая. Рабочая часть не более 0.8 мм, Прямой - соответствие. Материал: титановый сплав</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с п. 5 Правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд, утвержденных постановлением Правительства Российской Федерации от 8 февраля 2017 г.  145 «Об утверждении правил формирования и ведения в единой информационной системе в сфере закупок каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд и правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд» дополнительные потребительские свойства, в том числе функциональные, технические, качественные, эксплуатационные характеристики товара указаны в связи с недостаточностью информации, содержащейся в Каталоге товаров, работ, услуг, а так же с целью наиболее полного удовлетворения потребностей Заказчика. 
+Обоснование включения дополнительной информации в сведениях о товаре, работе, услуге по каждой характеристике изложено в приложении 1 «Описание объекта закупки»</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.13.190</ns2:OKPDCode>
+                            <ns2:OKPDName>Инструменты и приспособления, применяемые в медицинских целях, прочие, не включенные в другие группировки</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Иглодержатель хирургический, многоразового использования&#13;
+</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03262000002</ns2:regNum>
+                                <ns2:consRegistryNum>14202257</ns2:consRegistryNum>
+                                <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "БЕЛГОРОДСКАЯ ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА СВЯТИТЕЛЯ ИОАСАФА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>2</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03263000038</ns2:regNum>
+                                <ns2:consRegistryNum>14202267</ns2:consRegistryNum>
+                                <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "БОРИСОВСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>1</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03263000013</ns2:regNum>
+                                <ns2:consRegistryNum>14202265</ns2:consRegistryNum>
+                                <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "АЛЕКСЕЕВСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>2</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>19795.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>5.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>98975.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226284998</ns3:sid>
+                    <ns3:externalSid>f923ffe8-1abb-460e-bfb9-05a499ef7123</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.13.190-00007423</ns2:code>
+                        <ns2:name>Иглодержатель хирургический, многоразового использования&#13;
+</ns2:name>
+                        <ns2:versionId>80275</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338182725</ns3:sid>
+                                <ns3:externalSid>cbde412d-cd4b-4a6e-89a2-5f3fb7ebf57b</ns3:externalSid>
+                                <ns3:name>Описание:</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436925845</ns3:sid>
+                                        <ns3:externalSid>20b63838-542a-4095-bfd8-ad395cadadf2</ns3:externalSid>
+                                        <ns3:qualityDescription> с твердосплавными вставками - наличие.  Бранши прямые.  С одной подвижной браншей, неразборный - наличие. С каналом для промывания. Диаметр  &gt;= 5 мм.  Рабочая длина &gt;= 300 мм и &lt;= 320 мм. Рукоятка прямая с фиксатором, соединение бранш закрытое, без выступающих частей. Материал:  нержавеющая сталь. Метод стерилизации: автоклавирование.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с п. 5 Правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд, утвержденных постановлением Правительства Российской Федерации от 8 февраля 2017 г.  145 «Об утверждении правил формирования и ведения в единой информационной системе в сфере закупок каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд и правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд» дополнительные потребительские свойства, в том числе функциональные, технические, качественные, эксплуатационные характеристики товара указаны в связи с недостаточностью информации, содержащейся в Каталоге товаров, работ, услуг, а так же с целью наиболее полного удовлетворения потребностей Заказчика. 
+Обоснование включения дополнительной информации в сведениях о товаре, работе, услуге по каждой характеристике изложено в приложении 1 «Описание объекта закупки»</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.13.190</ns2:OKPDCode>
+                            <ns2:OKPDName>Инструменты и приспособления, применяемые в медицинских целях, прочие, не включенные в другие группировки</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Иглодержатель хирургический, многоразового использования&#13;
+</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03262000002</ns2:regNum>
+                                <ns2:consRegistryNum>14202257</ns2:consRegistryNum>
+                                <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "БЕЛГОРОДСКАЯ ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА СВЯТИТЕЛЯ ИОАСАФА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>2</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>176525.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>353050.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226284999</ns3:sid>
+                    <ns3:externalSid>feceb75e-3173-4489-b26f-8806badc8011</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.13.190-00007423</ns2:code>
+                        <ns2:name>Иглодержатель хирургический, многоразового использования&#13;
+</ns2:name>
+                        <ns2:versionId>80275</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338182726</ns3:sid>
+                                <ns3:externalSid>c2d8c38a-b22c-4376-b5d7-3a386ce68b40</ns3:externalSid>
+                                <ns3:name>Описание:</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436925846</ns3:sid>
+                                        <ns3:externalSid>c67b8d0a-2d27-45f3-b9e6-7af291a16445</ns3:externalSid>
+                                        <ns3:qualityDescription>Тип: Иглодержатель лапароскопический с прямыми браншами. 
+Длина рабочей части &gt;=325 и &lt;=335 мм. Диаметр рабочей части &gt;=4,9 и &lt;=5,1 мм. Бранши прямые. Твердосплавные накладки на браншах. Рукоятка аксиально-изогнутая пистолетного типа.  Продольно-поперечное рифление наружных поверхностей рукоятки. Пружинный механизм возврата подвижных частей рукоятки в исходное состояние. Отключаемая кремальера. Канал для промывания рабочей части. Материал конструкции: высоколегированная нержавеющая сталь. Допустимые методы стерилизации - в соответствии с инструкцией.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с п. 5 Правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд, утвержденных постановлением Правительства Российской Федерации от 8 февраля 2017 г.  145 «Об утверждении правил формирования и ведения в единой информационной системе в сфере закупок каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд и правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд» дополнительные потребительские свойства, в том числе функциональные, технические, качественные, эксплуатационные характеристики товара указаны в связи с недостаточностью информации, содержащейся в Каталоге товаров, работ, услуг, а так же с целью наиболее полного удовлетворения потребностей Заказчика. 
+Обоснование включения дополнительной информации в сведениях о товаре, работе, услуге по каждой характеристике изложено в приложении 1 «Описание объекта закупки»</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.13.190</ns2:OKPDCode>
+                            <ns2:OKPDName>Инструменты и приспособления, применяемые в медицинских целях, прочие, не включенные в другие группировки</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Иглодержатель хирургический, многоразового использования&#13;
+</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03265000005</ns2:regNum>
+                                <ns2:consRegistryNum>142В5813</ns2:consRegistryNum>
+                                <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "СТАРООСКОЛЬСКАЯ ОКРУЖНАЯ БОЛЬНИЦА СВЯТИТЕЛЯ ЛУКИ КРЫМСКОГО"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>5</ns3:quantity>
+                        </ns3:customerQuantity>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03262000057</ns2:regNum>
+                                <ns2:consRegistryNum>14202263</ns2:consRegistryNum>
+                                <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "БЕЛГОРОДСКИЙ ОБЛАСТНОЙ ОНКОЛОГИЧЕСКИЙ ДИСПАНСЕР"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>1</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>135803.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>814818.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285000</ns3:sid>
+                    <ns3:externalSid>965db788-efd4-458d-9926-59499f69541e</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.13.190-00007423</ns2:code>
+                        <ns2:name>Иглодержатель хирургический, многоразового использования&#13;
+</ns2:name>
+                        <ns2:versionId>80275</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338182727</ns3:sid>
+                                <ns3:externalSid>9f2d3d2b-f2cf-4e61-bc0c-dd5f9d110b52</ns3:externalSid>
+                                <ns3:name>Описание:</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436925847</ns3:sid>
+                                        <ns3:externalSid>290d2bd6-7f44-49c9-8238-805e50e88a8c</ns3:externalSid>
+                                        <ns3:qualityDescription>Иглодержатель м/х,180 мм, круглая ручка, рабочая часть 1.2 мм, изогнутая по радиусу.  на рабочей части цельная твердосплавная пластина из материала VITCON [Vanadium-lodum-Tungsten Carbide-ON], твердость пластины не менее 86 HRC по шкале Роквела, Ресурс работы не менее 400 операций, титановый сплав</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с п. 5 Правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд, утвержденных постановлением Правительства Российской Федерации от 8 февраля 2017 г.  145 «Об утверждении правил формирования и ведения в единой информационной системе в сфере закупок каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд и правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд» дополнительные потребительские свойства, в том числе функциональные, технические, качественные, эксплуатационные характеристики товара указаны в связи с недостаточностью информации, содержащейся в Каталоге товаров, работ, услуг, а так же с целью наиболее полного удовлетворения потребностей Заказчика. 
+Обоснование включения дополнительной информации в сведениях о товаре, работе, услуге по каждой характеристике изложено в приложении 1 «Описание объекта закупки»</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.13.190</ns2:OKPDCode>
+                            <ns2:OKPDName>Инструменты и приспособления, применяемые в медицинских целях, прочие, не включенные в другие группировки</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Иглодержатель хирургический, многоразового использования&#13;
+</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03262000002</ns2:regNum>
+                                <ns2:consRegistryNum>14202257</ns2:consRegistryNum>
+                                <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "БЕЛГОРОДСКАЯ ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА СВЯТИТЕЛЯ ИОАСАФА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>2</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>30520.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>61040.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285001</ns3:sid>
+                    <ns3:externalSid>44f0ab7a-374e-40bd-9fdd-90c6da40994b</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>32.50.13.190-00007423</ns2:code>
+                        <ns2:name>Иглодержатель хирургический, многоразового использования&#13;
+</ns2:name>
+                        <ns2:versionId>80275</ns2:versionId>
+                        <ns2:versionNumber>1</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338182728</ns3:sid>
+                                <ns3:externalSid>e96fc0fb-7993-4d70-91a2-a135a4f28e7c</ns3:externalSid>
+                                <ns3:name>Описание:</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436925848</ns3:sid>
+                                        <ns3:externalSid>c294330a-7d7d-48ff-935b-12df824f1ef9</ns3:externalSid>
+                                        <ns3:qualityDescription>Иглодержатель м/х, не менее 180 мм. Ручка круглая. Рабочая часть не более 1,5 мм. Прямой - соответствие. Материал: титановый сплав</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с п. 5 Правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд, утвержденных постановлением Правительства Российской Федерации от 8 февраля 2017 г.  145 «Об утверждении правил формирования и ведения в единой информационной системе в сфере закупок каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд и правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд» дополнительные потребительские свойства, в том числе функциональные, технические, качественные, эксплуатационные характеристики товара указаны в связи с недостаточностью информации, содержащейся в Каталоге товаров, работ, услуг, а так же с целью наиболее полного удовлетворения потребностей Заказчика. 
+Обоснование включения дополнительной информации в сведениях о товаре, работе, услуге по каждой характеристике изложено в приложении 1 «Описание объекта закупки»</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>32.50.13.190</ns2:OKPDCode>
+                            <ns2:OKPDName>Инструменты и приспособления, применяемые в медицинских целях, прочие, не включенные в другие группировки</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Иглодержатель хирургический, многоразового использования&#13;
+</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03263000034</ns2:regNum>
+                                <ns2:consRegistryNum>14202278</ns2:consRegistryNum>
+                                <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ПРОХОРОВСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>2</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>19790.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>39580.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>1428513.00</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

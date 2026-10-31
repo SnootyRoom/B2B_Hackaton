@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44408299</id>
+    <externalId>81dc78c9-790f-48d3-8dc7-dd4412030fcb01</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0133200001726002911</purchaseNumber>
+        <docNumber>№0133200001726002911</docNumber>
+        <plannedPublishDate>2026-10-28+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T15:07:29.409+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0133200001726002911</href>
+        <placingWay>
+            <ns2:code>EAB20</ns2:code>
+            <ns2:name>Электронный аукцион на проведение работ по строительству, реконструкции, кап. ремонту, сносу объекта кап. строительства в соответствии с п. 8 ч. 1 ст. 33 Закона № 44-ФЗ</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_EETP</ns2:code>
+            <ns2:name>РОСЭЛТОРГ (АО«ЕЭТП»)</ns2:name>
+            <ns2:url>http://roseltorg.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Выполнение работ по капитальному ремонту системы пожарной сигнализации, системы оповещения и управления эвакуацией в здании ОГБПОУ Ивановский технический колледж по адресу г. Иваново, ул.Люлина, дом 2 Б</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>01332000017</regNum>
+            <consRegistryNum>24200264</consRegistryNum>
+            <fullName>ДЕПАРТАМЕНТ КОНКУРСОВ И АУКЦИОНОВ ИВАНОВСКОЙ ОБЛАСТИ</fullName>
+            <postAddress>153000, Ивановская обл, г Иваново, Ивановская обл, г Иваново, пр-кт Ленина, дом 16</postAddress>
+            <factAddress>Российская Федерация, 153000, Ивановская обл, Иваново г, ПР-КТ ЛЕНИНА, Д. 16</factAddress>
+            <INN>3702086910</INN>
+            <KPP>370201001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>RA</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>153000, Ивановская обл, г Иваново, Ивановская обл, г Иваново, пр-кт Ленина, дом 16</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 153000, Ивановская обл, Иваново г, ПР-КТ ЛЕНИНА, Д. 16</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Вотчинникова</ns3:lastName>
+                <ns3:firstName>К</ns3:firstName>
+                <ns3:middleName>Ю</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>votchinnikova_kiu@ivreg.ru</contactEMail>
+            <contactPhone>7-4932-303425</contactPhone>
+            <contactFax>7-4932-482638</contactFax>
+            <addInfo>Номер контактного телефона Заказчика : 7-4932-376608</addInfo>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0133200001726002911</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1826154F174AE9A95270F83E44A8A</ns3:publishedContentId>
+            <ns3:fileName>Прилож.№ 1 к извещ_Обоснование НМЦК(2).docx</ns3:fileName>
+            <ns3:fileSize>35954</ns3:fileSize>
+            <ns3:docDescription>Обоснование начальной (максимальной) цены контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:59:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1826154F174AE9A95270F83E44A8A</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A182614E3D769691185576CF45625A</ns3:publishedContentId>
+            <ns3:fileName>Прилож.№4 к извещ_Проект контракта(капремонт систем пож сигнализации) (2).docx</ns3:fileName>
+            <ns3:fileSize>61688</ns3:fileSize>
+            <ns3:docDescription>Проект государственного контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:59:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A182614E3D769691185576CF45625A</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A182610568716BACC39480061236C3</ns3:publishedContentId>
+            <ns3:fileName>Прилож.№ 2 к извещ_Описание объекта закупки (ТЗ).docx</ns3:fileName>
+            <ns3:fileSize>29487</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:59:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A182610568716BACC39480061236C3</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A182614AD07267AC82B6146B8D6FA4</ns3:publishedContentId>
+            <ns3:fileName>Прилож.№ 3 к извещ. капремонт пожсигнал._Требования к заявке АУКЦИОН  2026 (5).docx</ns3:fileName>
+            <ns3:fileSize>35006</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию и составу заявки на участие в аукционе</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:59:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A182614AD07267AC82B6146B8D6FA4</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18260FCE2703EB881F5C699E59F88</ns3:publishedContentId>
+            <ns3:fileName>Ведомость объемов работ.xlsx</ns3:fileName>
+            <ns3:fileSize>16223</ns3:fileSize>
+            <ns3:docDescription>Ведомость объемов работ</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:59:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18260FCE2703EB881F5C699E59F88</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18260FF837A6DB5542C4BEABCD234</ns3:publishedContentId>
+            <ns3:fileName>Сводный сметный расчет ПС Ивановский технический колледж.xlsx</ns3:fileName>
+            <ns3:fileSize>10132</ns3:fileSize>
+            <ns3:docDescription>Сводный сметный расчет</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:59:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18260FF837A6DB5542C4BEABCD234</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18261021A7E03B409BCC95F1C22E5</ns3:publishedContentId>
+            <ns3:fileName>Коньюктурный анализ.xlsx</ns3:fileName>
+            <ns3:fileSize>31911</ns3:fileSize>
+            <ns3:docDescription>Другое..</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:59:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18261021A7E03B409BCC95F1C22E5</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A182611CC674B5B7E1B745BFAE7667</ns3:publishedContentId>
+            <ns3:fileName>Заключение Ивгосэкспертизы.pdf</ns3:fileName>
+            <ns3:fileSize>3024335</ns3:fileSize>
+            <ns3:docDescription>Иной документ Главгосэкспертизы</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:59:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A182611CC674B5B7E1B745BFAE7667</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1826151BD70F9BE6F2E03498650FF</ns3:publishedContentId>
+            <ns3:fileName>Смета ПС Ивановский технический колледж.xlsx</ns3:fileName>
+            <ns3:fileSize>104125</ns3:fileSize>
+            <ns3:docDescription>Сметная документация</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:59:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1826151BD70F9BE6F2E03498650FF</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1826129417F1C8A20C646E1FB8944</ns3:publishedContentId>
+            <ns3:fileName>Пояснительная записка.xlsx</ns3:fileName>
+            <ns3:fileSize>20492</ns3:fileSize>
+            <ns3:docDescription>Другое..</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:59:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1826129417F1C8A20C646E1FB8944</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18261412C7549A7CC2EB8E2AD5529</ns3:publishedContentId>
+            <ns3:fileName>Рабочая документация.pdf</ns3:fileName>
+            <ns3:fileSize>2311829</ns3:fileSize>
+            <ns3:docDescription>Проектная документация</ns3:docDescription>
+            <ns3:docDate>2026-10-28T14:59:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18261412C7549A7CC2EB8E2AD5529</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>FPD</ns2:code>
+                <ns2:name>Файлы проектной документации</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T15:07:29+03:00</startDT>
+                <endDT>2026-11-13T08:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-13+03:00</biddingDate>
+            <summarizingDate>2026-11-17+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>5458518.99</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03332000224</ns2:regNum>
+                    <ns2:consRegistryNum>242Ц3306</ns2:consRegistryNum>
+                    <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ИВАНОВСКИЙ ТЕХНИЧЕСКИЙ КОЛЛЕДЖ</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>27292.59</amount>
+                    <account>
+                        <ns3:bik>012202102</ns3:bik>
+                        <ns3:settlementAccount>03224643240000003200</ns3:settlementAccount>
+                        <ns3:personalAccount>802Ц3306000</ns3:personalAccount>
+                        <ns3:receiptCode>
+                            <ns2:code>ОБ</ns2:code>
+                            <ns2:name>Средства, поступившие в рамках обеспечения заявок, исполнения контракта (договора), гарантийных обязательства</ns2:name>
+                        </ns3:receiptCode>
+                        <ns3:creditOrgName>ВОЛГО-ВЯТСКОЕ ГУ БАНКА РОССИИ//УФК по Нижегородской области, г Нижний Новгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000024</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>3728012511</INN>
+                            <KPP>370201001</KPP>
+                            <OKTMOInfo>
+                                <ns2:code>24701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Ивановской области / Городские округа Ивановской области/ / Иваново / г Иваново</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810845370000102</bankAccount>
+                            <ksNumber>03100643000000013300</ksNumber>
+                            <bik>042202102</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО ИВАНОВСКОЙ ОБЛАСТИ</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Порядок внесения денежных средств в качестве обеспечения заявки указан в ч.5 ст.44 ФЗ №44-ФЗ. Обеспечение заявки на участие в закупке может предоставляться участником закупки в виде денежных средств или независимой гарантии, предусмотренной ст.45 ФЗ №44-ФЗ. Выбор способа обеспечения осуществляется участником закупки самостоятельно. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок. В случае выбора участником закупки способа обеспечения заявки в виде независимой гарантии, такая гарантия и условия независимой гарантии должны соответствовать ст.45 ФЗ № 44-ФЗ. Денежные средства, предназначенные для обеспечения заявок вносятся на банковский счет, открытый в банке, включенным в перечень, утвержденным РП РФ от 13.07.2018 №1451-р.
+Требования к банкам, договору специального счета, к порядку использования имеющегося у участника закупки банковского счета в качестве специального счета установлены в ПП РФ от 30.05.2018 №626 и ПП РФ от 20.12.2021 №2369. Участники закупки, являющиеся юрлицами, зарегистрированными на территории государства - члена ЕАЭС (за исключением РФ), или гражданами такого государства, в случае проведения электронных процедур вправе предоставить обеспечение заявок в виде денежных средств с учетом особенностей (ч.18 ст.44 №44-ФЗ, п.1 ПП РФ от 10.04.2023 №579, п.12 Требований к заявке</procedureInfo>
+                    <part>0.5</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>012202102</ns3:bik>
+                        <ns3:settlementAccount>03224643240000003200</ns3:settlementAccount>
+                        <ns3:personalAccount>802Ц3306000</ns3:personalAccount>
+                        <ns3:receiptCode>
+                            <ns2:code>ОБ</ns2:code>
+                            <ns2:name>Средства, поступившие в рамках обеспечения заявок, исполнения контракта (договора), гарантийных обязательства</ns2:name>
+                        </ns3:receiptCode>
+                        <ns3:creditOrgName>ВОЛГО-ВЯТСКОЕ ГУ БАНКА РОССИИ//УФК по Нижегородской области, г Нижний Новгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000024</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Контракт заключается после предоставления участником закупки, с которым заключается контракт, обеспечения исполнения контракта в соответствии Федеральным законом № 44-ФЗ. 
+В случае непредоставления участником закупки, с которым заключается контракт, обеспечения исполнения контракта в срок, установленный для заключения контракта, такой участник считается уклонившимся от заключения контракта.
+Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Федерального закона № 44-ФЗ.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>5458518.99</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262372901110137020100100240014321243</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>43.21</ns2:OKPDCode>
+                                <ns2:OKPDName>Работы электромонтажные</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>243</ns2:code>
+                                <ns2:name>Закупка товаров, работ, услуг в целях капитального ремонта государственного (муниципального) имущества</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>23729011101370201001</customerCode>
+                        <purchaseNumber>0024</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603332000224001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603332000224001000024</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-15+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>5458518.99</total>
+                                <currentYear>5458518.99</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22481252</sid>
+                                <externalSid>10a966dc-24a1-4dea-9b9f-a73dbd8141b4</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-15+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>5458518.99</total>
+                                        <currentYear>5458518.99</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>243</ns2:code>
+                                                <ns2:name>Закупка товаров, работ, услуг в целях капитального ремонта государственного (муниципального) имущества</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:receiptCode>
+                                                <ns2:code>ПД</ns2:code>
+                                                <ns2:name>Средства бюджетного (автономного) учреждения от приносящей доход деятельности и иные средства</ns2:name>
+                                            </ns3:receiptCode>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>285688.99</ns3:total>
+                                                <ns3:currentYear>285688.99</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>243</ns2:code>
+                                                <ns2:name>Закупка товаров, работ, услуг в целях капитального ремонта государственного (муниципального) имущества</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:receiptCode>
+                                                <ns2:code>ЦС</ns2:code>
+                                                <ns2:name>Субсидии на иные цели и на осуществление капитальных вложений в объекты капитального строительства государственной (муниципальной) собственности или приобретение объектов недвижимого имущества в государственную (муниципальную) собственность</ns2:name>
+                                            </ns3:receiptCode>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>5172830.00</ns3:total>
+                                                <ns3:currentYear>5172830.00</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>5458518.99</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62408679</ns3:sid>
+                            <ns3:externalSid>71c3e626-a67d-4121-bf3b-7016f280ab97</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>9aa756d8-5da1-4be5-8bda-327b2dd69985</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Ивановская, г.о. Иваново</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>153043 Иваново г., Люлина ул., д. 2 б</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>Гарантийный срок на выполненные Работы составляет – 3 (три) года с даты подписания Заказчиком документа о приемке в ЕИС. Гарантия качества распространяется на весь перечень выполненных Подрядчиком работ и примененных товаров (материалов) согласно документу о приемке.</warrantyTerm>
+                </warrantyInfo>
+                <provisionWarranty>
+                    <ns3:amount>54585.19</ns3:amount>
+                    <ns3:part>1.0</ns3:part>
+                    <ns3:procedureInfo>В случае установления заказчиком требования об обеспечении гарантийных обязательств оформление документа о приемке (за исключением отдельного этапа исполнения контракта) поставленного товара, выполненной работы (ее результатов), оказанной услуги осуществляется после предоставления поставщиком (подрядчиком, исполнителем) такого обеспечения в соответствии с Федеральным законом № 44-ФЗ в порядке и в сроки, которые установлены контрактом.
+Гарантийные обязательства могут обеспечиваться предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения гарантийных обязательств, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Федерального закона № 44-ФЗ.</ns3:procedureInfo>
+                    <ns3:account>
+                        <ns3:bik>012202102</ns3:bik>
+                        <ns3:settlementAccount>03224643240000003200</ns3:settlementAccount>
+                        <ns3:personalAccount>802Ц3306000</ns3:personalAccount>
+                        <ns3:receiptCode>
+                            <ns2:code>ОБ</ns2:code>
+                            <ns2:name>Средства, поступившие в рамках обеспечения заявок, исполнения контракта (договора), гарантийных обязательства</ns2:name>
+                        </ns3:receiptCode>
+                        <ns3:creditOrgName>ВОЛГО-ВЯТСКОЕ ГУ БАНКА РОССИИ//УФК по Нижегородской области, г Нижний Новгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000024</ns3:corrAccountNumber>
+                    </ns3:account>
+                </provisionWarranty>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225999245</ns3:sid>
+                    <ns3:externalSid>0c76bb8c-9edd-4308-a7ec-a77e4a7573a0</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>43.21.10.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Работы по монтажу систем пожарной сигнализации и охранной сигнализации</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337360299</ns3:sid>
+                                <ns3:externalSid>a2d6181c-58f3-4e0b-878f-7a3c13db88a4</ns3:externalSid>
+                                <ns3:name>Капитальный ремонт системы пожарной сигнализации, системы оповещения и управления эвакуацией в здании ОГБПОУ Ивановский технический колледж по адресу г. Иваново, ул.Люлина, дом 2 Б</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>435765449</ns3:sid>
+                                        <ns3:externalSid>a6afdb05-3008-45eb-a065-ef7346f95aed</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>876</ns2:code>
+                                            <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                                            <ns2:name>Условная единица</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>1</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Капитальный ремонт системы пожарной сигнализации, системы оповещения и управления эвакуацией в здании ОГБПОУ Ивановский технический колледж по адресу г. Иваново, ул.Люлина, дом 2 Б</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03332000224</ns2:regNum>
+                                <ns2:consRegistryNum>242Ц3306</ns2:consRegistryNum>
+                                <ns2:fullName>ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ИВАНОВСКИЙ ТЕХНИЧЕСКИЙ КОЛЛЕДЖ</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>1</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>5458518.99</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5458518.99</ns3:sum>
+                    <ns3:type>WORK</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>5458518.99</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU44</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS52BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии с позицией 10 раздела II приложения к ПП РФ от 29.12.2021 № 2571</ns3:name>
+                        <ns3:content>Наличие у участника закупки одного из следующих видов опыта выполнения работ:
+1) опыт исполнения договора, предусматривающего выполнение работ по капитальному ремонту объекта капитального строительства (за исключением линейного объекта);
+2) опыт исполнения договора строительного подряда, предусматривающего выполнение работ по строительству, реконструкции объекта капитального строительства (за исключением линейного объекта);
+3) опыт выполнения участником закупки, являющимся застройщиком, работ по строительству, реконструкции объекта капитального строительства (за исключением линейного объекта).
+Цена выполненных работ по договору, предусмотренному пунктом 1 или 2 настоящей графы настоящей позиции, цена выполненных работ, предусмотренных пунктом 3 настоящей графы настоящей позиции, должна составлять не менее 20 процентов начальной (максимальной) цены контракта, заключаемого по результатам определения поставщика (подрядчика, исполнителя).Информация и документы, подтверждающие соответствие участников закупки дополнительным требованиям:
+в случае наличия опыта, предусмотренного пунктом 1 графы 3 настоящей позиции:
+1) исполненный договор;
+2) акт выполненных работ, подтверждающий цену выполненных работ.
+В случае наличия опыта, предусмотренного пунктом 2 графы "Дополнительные требования к участникам закупки" настоящей позиции:
+1) исполненный договор;
+2) акт приемки объекта капитального строительства, а также акт выполненных работ, подтверждающий цену выполненных работ, если акт приемки объекта капитального строительства не содержит цену выполненных работ;
+3) разрешение на ввод объекта капитального строительства в эксплуатацию (за исключением случая, если работы, являющиеся объектом закупки, не требуют в соответствии с законодательством о градостроительной деятельности выдачи разрешения на ввод объекта капитального строительства в эксплуатацию и при этом договор, предусмотренный абзацем пятым настоящей графы, предусматривает выполнение работ, не требующих в соответствии с указанным законодательством выдачи такого разрешения).
+В случае наличия опыта, предусмотренного пунктом 3 графы "Дополнительные требования к участникам закупки" настоящей позиции:
+1) раздел  "Смета на строительство, реконструкцию, капитальный ремонт, снос объекта капитального строительства" проектной документации;
+2) разрешение на ввод объекта капитального строительства в эксплуатацию</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>Информация и документ, содержащий сведения, обеспечивающие возможность подтверждения наличия у участника закупки специального разрешения на право осуществления деятельности по монтажу, техническому обслуживанию и ремонту средств обеспечения пожарной безопасности зданий и сооружений с разрешенным видом:
+- монтаж, техническое обслуживание и ремонт систем пожарной и охранно-пожарной сигнализации и их элементов, включая диспетчеризацию и проведение пусконаладочных работ;
+- монтаж, техническое обслуживание и ремонт систем оповещения и эвакуации при пожаре и их элементов, включая диспетчеризацию и проведение пусконаладочных работ, в том числе фотолюминесцентных эвакуационных систем и их элементов;
+- монтаж, техническое обслуживание и ремонт автоматических систем (элементов автоматических систем) передачи извещений о пожаре, включая диспетчеризацию и проведение пусконаладочных работ;
+в том числе о статусе (действует, не приостановлен, не приостановлен частично, не прекращен).
+(Требование устанавливается в соответствии с пунктом 15 части 1 статьи 12 Федерального закона от 04.05.2011 г. №99-ФЗ «О лицензировании отдельных видов деятельности» и Постановлением Правительства Российской Федерации от 28 июля 2020 г. № 1128 «Об утверждении Положения о лицензировании деятельности по монтажу, техническому обслуживанию и ремонту средств обеспечения пожарной безопасности зданий и сооружений» (в действующей редакции))</ns3:content>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TOVNPIVR</ns2:shortName>
+                    <ns2:name>Требование об отсутствии в реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации, включенной в такой реестр в связи отказом поставщика (подрядчика, исполнителя) от исполнения контракта по причине введения в отношении заказчика санкций и (или) мер ограничительного характера</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

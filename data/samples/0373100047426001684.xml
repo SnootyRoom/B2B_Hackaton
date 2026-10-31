@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44403850</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0373100047426001684</purchaseNumber>
+        <docNumber>№0373100047426001684</docNumber>
+        <plannedPublishDate>2026-10-28+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T18:36:52.482+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0373100047426001684</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка лекарственного препарата Гемцитабин для медицинского применения для нужд ФГБУ «НМХЦ им. Н.И. Пирогова» Минздрава России</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03731000474</regNum>
+            <consRegistryNum>001X7300</consRegistryNum>
+            <fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "НАЦИОНАЛЬНЫЙ МЕДИКО-ХИРУРГИЧЕСКИЙ ЦЕНТР ИМЕНИ Н.И.ПИРОГОВА" МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ</fullName>
+            <shortName>ФГБУ "НМХЦ ИМ. Н.И. ПИРОГОВА" МИНЗДРАВА РОССИИ</shortName>
+            <postAddress>Российская Федерация, 105203, Москва, УЛ ПЕРВОМАЙСКАЯ НИЖН., 70</postAddress>
+            <factAddress>Российская Федерация, 105203, Москва, УЛИЦА ПЕРВОМАЙСКАЯ НИЖН., 70</factAddress>
+            <INN>7733108569</INN>
+            <KPP>771901001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 105203, Москва, УЛ ПЕРВОМАЙСКАЯ НИЖН., 70</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 105203, Москва, УЛИЦА ПЕРВОМАЙСКАЯ НИЖН., 70</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Косарева</ns3:lastName>
+                <ns3:firstName>Анастасия</ns3:firstName>
+                <ns3:middleName>Алексеевна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>tender@pirogov-center.ru</contactEMail>
+            <contactPhone>7-499-4630000-2072</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0373100047426001684</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181A7261C71EBA9ACC9FF74D3A932</ns3:publishedContentId>
+            <ns3:fileName>Обоснование НМЦК_2003.docx</ns3:fileName>
+            <ns3:fileSize>121745</ns3:fileSize>
+            <ns3:docDescription>Обоснование НМЦК_2003.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T11:36:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181A7261C71EBA9ACC9FF74D3A932</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181A726C275DD9332F58A3CF5F262</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта_2003.docx</ns3:fileName>
+            <ns3:fileSize>121010</ns3:fileSize>
+            <ns3:docDescription>Проект контракта_2003.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T11:36:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181A726C275DD9332F58A3CF5F262</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181A726557D87B44769862B17F87B</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки_2003.docx</ns3:fileName>
+            <ns3:fileSize>33945</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки_2003.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T11:36:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181A726557D87B44769862B17F87B</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181A7268A7ADB98B03AAB60C5284D</ns3:publishedContentId>
+            <ns3:fileName>Уведомление в МПТ_2003.pdf</ns3:fileName>
+            <ns3:fileSize>70368</ns3:fileSize>
+            <ns3:docDescription>Уведомление в МПТ_2003.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-28T11:36:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181A7268A7ADB98B03AAB60C5284D</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A181A726F773F5B8EA09C41CD560A2</ns3:publishedContentId>
+            <ns3:fileName>Требования к составу заявки_20030.docx</ns3:fileName>
+            <ns3:fileSize>37911</ns3:fileSize>
+            <ns3:docDescription>Требования к составу заявки_20030.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T11:36:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A181A726F773F5B8EA09C41CD560A2</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T18:36:52+03:00</startDT>
+                <endDT>2026-11-09T07:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+03:00</biddingDate>
+            <summarizingDate>2026-11-11+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>811200.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+                <isContractPriceFormula>true</isContractPriceFormula>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03731000474</ns2:regNum>
+                    <ns2:consRegistryNum>001X7300</ns2:consRegistryNum>
+                    <ns2:fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "НАЦИОНАЛЬНЫЙ МЕДИКО-ХИРУРГИЧЕСКИЙ ЦЕНТР ИМЕНИ Н.И.ПИРОГОВА" МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>8112.00</amount>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03214643000000017300</ns3:settlementAccount>
+                        <ns3:personalAccount>20736X73000</ns3:personalAccount>
+                        <ns3:creditOrgName>ГУ Банка России по ЦФО//УФК по г. Москве</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>7707778246</INN>
+                            <KPP>770701001</KPP>
+                            <KBK>05611610051019000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>45382000</ns2:code>
+                                <ns2:name>Муниципальные образования города Москвы (столицы Российской Федерации города федерального значения) / Внутригородские муниципальные образования в городе Москве (см. также 45 900 000)/ / муниципальный округ Тверской</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810045370000002</bankAccount>
+                            <ksNumber>03100643000000019500</ksNumber>
+                            <bik>024501901</bik>
+                            <counterpartyName>МЕЖРЕГИОНАЛЬНОЕ ОПЕРАЦИОННОЕ УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА (МИНЗДРАВ РОССИИ)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>Обеспечение заявки на участие в закупке предоставляется одним из следующих способов (выбор способа обеспечения осуществляется участником закупки самостоятельно): 
+1. Блокирование денежных средств, внесенных участником закупки на банковский счет, открытый таким участником в банке, включенном в перечень, утвержденный Правительством РФ (далее – специальный счет). Требования к таким банкам, к договору специального счета, к порядку использования имеющегося у участника закупки банковского счета в качестве специального счета устанавливаются Правительством РФ; 
+1.1. В случаях, если участник закупки является юридическим лицом, зарегистрированным на территории государства - члена ЕАЭС, за исключением РФ, или физическим лицом, являющимся гражданином государства - члена ЕАЭС, за исключением РФ – В соответствии с Постановлением Правительства РФ от 10.04.2023 № 579.
+2. Путем предоставления независимой гарантии, соответствующей требованиям ст. 45 Закона о контрактной системе. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок. В случае предоставления обеспечения заявки на участие независимой гарантией, ее условия должны соответствовать требованиям статьи 45 Закона о контрактной системе. 
+Реквизиты счета, на котором в соответствии с законодательством РФ учитываются операции со средствами, поступающими заказчику, реквизиты счета для перечисления денежных средств в случае, предусмотренном ч. 13 ст. 44 Закона о контрактной системе, а также в иных случаях, предусмотренных законодательством РФ и иными нормативными актами, действующими на территории РФ: л/с 20736Х73000, УФК по г. Москве (ФГБУ «НМХЦ им. Н.И. Пирогова» Минздрава России). ЕКС 4010 2810 5453 7000 0003 ОКЦ № 1 ГУ Банка России по ЦФО // УФК ПО Г. МОСКВЕ, г. Москва КС 0321 4643 0000 0001 7300 ИНН 7733108569 БИК 004525988 КПП 771901001 КБК 00000000000000000510 код ОКТМО 45303000</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>004525988</ns3:bik>
+                        <ns3:settlementAccount>03214643000000017300</ns3:settlementAccount>
+                        <ns3:personalAccount>20736X73000</ns3:personalAccount>
+                        <ns3:creditOrgName>ГУ Банка России по ЦФО//УФК по г. Москве</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810545370000003</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям статьи 45 Закона о контрактной системе, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику.
+Реквизиты Заказчика: л/с 20736Х73000, Управление Федерального казначейства по г. Москве (ФГБУ «НМХЦ им. Н.И. Пирогова» Минздрава России); ЕКС 4010 2810 5453 7000 0003 ОКЦ № 1 ГУ Банка России по ЦФО // УФК ПО Г. МОСКВЕ, г. Москва; КС 0321 4643 0000 0001 7300 ИНН 7733108569; БИК 004525988 КПП 771901001 КБК 00000000000000000510 код ОКТМО 45303000.
+Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Закона о контрактной системе участником закупки, с которым заключается контракт, самостоятельно.
+В случае, если участником закупки, с которым заключается контракт, является казенное учреждение, предоставление обеспечения исполнения контракта не требуется.
+В случае заключения контракта по результатам определения поставщиков (подрядчиков, исполнителей) в соответствии с пунктом 1 части 1 статьи 30 Закона о контрактной системе размер обеспечения исполнения контракта устанавливается от цены контракта.
+Участник закупки, с которым заключается контракт по результатам определения поставщика (подрядчика, исполнителя) в соответствии с пунктом 1 части 1 статьи 30 Закона о контрактной системе, освобождается от предоставления обеспечения исполнения контракта, в том числе с учетом положений статьи 37 Закона о контрактной системе, в случае предоставления таким участником закупки информации, содержащейся в реестре контрактов, заключенных заказчиками, и подтверждающей исполнение таким участником (без учета правопреемства) в течение трех лет до даты подачи заявки на участие в закупке трех контрактов, исполненных без применения к такому участнику неустоек (штрафов, пеней).</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>811200.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>261773310856977190100100188552120244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>21.20</ns2:OKPDCode>
+                                <ns2:OKPDName>Препараты лекарственные и материалы, применяемые в медицинских целях</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>17733108569771901001</customerCode>
+                        <purchaseNumber>0018</purchaseNumber>
+                        <purchaseOrderNumber>855</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603731000474001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603731000474001000018</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2028-06-30+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>811200.00</total>
+                                <currentYear>20280.00</currentYear>
+                                <firstYear>608400.00</firstYear>
+                                <secondYear>182520.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22473840</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2028-06-30+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>811200.00</total>
+                                        <currentYear>20280.00</currentYear>
+                                        <firstYear>608400.00</firstYear>
+                                        <secondYear>182520.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>811200.00</ns3:total>
+                                                <ns3:currentYear>20280.00</ns3:currentYear>
+                                                <ns3:firstYear>608400.00</ns3:firstYear>
+                                                <ns3:secondYear>182520.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>811200.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62398666</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c5b2444-70a0-4932-980c-b4dc0d3f02b5</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>105203, г. Москва, ул. Нижняя Первомайская, д.70. </ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyServiceRequirement>-</warrantyServiceRequirement>
+                    <manufacturersWarrantyRequirement>-</manufacturersWarrantyRequirement>
+                    <warrantyTerm>Остаточный срок годности поставляемого товара должен быть не менее восьми месяцев, указанного изготовителем и предусмотренного сертификатом качества на момент поставки</warrantyTerm>
+                </warrantyInfo>
+                <contractPriceFormula>Максимальное значение цены контракта</contractPriceFormula>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <drugPurchaseObjectsInfo>
+                <ns3:drugPurchaseObjectInfo>
+                    <ns3:sid>12927001</ns3:sid>
+                    <ns3:objectInfoUsingReferenceInfo>
+                        <ns3:drugsInfo>
+                            <ns3:drugInterchangeInfo>
+                                <ns3:drugInterchangeManualInfo>
+                                    <ns3:isInterchange>true</ns3:isInterchange>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17003124</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>0795f638-dd3d-11ea-9331-0bce3c7499d5</ns3:MNNExternalCode>
+                                                <ns3:MNNName>ГЕМЦИТАБИН</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.10.211</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты противоопухолевые</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.10.211-00040</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>ЛИОФИЛИЗАТ ДЛЯ ПРИГОТОВЛЕНИЯ КОНЦЕНТРАТА ДЛЯ ПРИГОТОВЛЕНИЯ РАСТВОРА ДЛЯ ИНФУЗИЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>1000 мг</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>161</ns2:code>
+                                                    <ns2:name>мг</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>мг действующего вещества</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>161</ns2:code>
+                                                <ns2:name>мг</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                            <ns3:basicUnit>true</ns3:basicUnit>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:quantityMultiplier>1.00000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>1.47</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17003123</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>1ee25ff8-bf5b-11e9-bd5d-abee9c8fc61f</ns3:MNNExternalCode>
+                                                <ns3:MNNName>ГЕМЦИТАБИН</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.10.211</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты противоопухолевые</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.10.211-00040</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>КОНЦЕНТРАТ ДЛЯ ПРИГОТОВЛЕНИЯ РАСТВОРА ДЛЯ ИНФУЗИЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>10 мг/мл</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>111</ns2:code>
+                                                    <ns2:name>см[3*];^мл</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>мл</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>111</ns2:code>
+                                                <ns2:name>см[3*];^мл</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:quantityMultiplier>0.10000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>14.7</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17003125</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>3022842e-5960-11ea-bc5f-434c43f724bb</ns3:MNNExternalCode>
+                                                <ns3:MNNName>ГЕМЦИТАБИН</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.10.211</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты противоопухолевые</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.10.211-00040</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>КОНЦЕНТРАТ ДЛЯ ПРИГОТОВЛЕНИЯ РАСТВОРА ДЛЯ ИНФУЗИЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>40 мг/мл</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>111</ns2:code>
+                                                    <ns2:name>см[3*];^мл</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>мл</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>111</ns2:code>
+                                                <ns2:name>см[3*];^мл</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:quantityMultiplier>0.02500</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>58.8</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                </ns3:drugInterchangeManualInfo>
+                            </ns3:drugInterchangeInfo>
+                        </ns3:drugsInfo>
+                    </ns3:objectInfoUsingReferenceInfo>
+                    <ns3:name>ГЕМЦИТАБИН, ЛИОФИЛИЗАТ ДЛЯ ПРИГОТОВЛЕНИЯ КОНЦЕНТРАТА ДЛЯ ПРИГОТОВЛЕНИЯ РАСТВОРА ДЛЯ ИНФУЗИЙ 1000 мг, единица измерения товара: Миллиграмм (МГ)</ns3:name>
+                    <ns3:isZNVLP>true</ns3:isZNVLP>
+                    <ns3:isNarcotic>false</ns3:isNarcotic>
+                    <ns3:quantityUndefined>
+                        <ns3:quantityUndefined>true</ns3:quantityUndefined>
+                        <ns3:price>1.47</ns3:price>
+                    </ns3:quantityUndefined>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:drugPurchaseObjectInfo>
+                <ns3:drugPurchaseObjectInfo>
+                    <ns3:sid>12927002</ns3:sid>
+                    <ns3:objectInfoUsingReferenceInfo>
+                        <ns3:drugsInfo>
+                            <ns3:drugInterchangeInfo>
+                                <ns3:drugInterchangeManualInfo>
+                                    <ns3:isInterchange>true</ns3:isInterchange>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17003127</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>0795f368-dd3d-11ea-9331-eb0146bf4f43</ns3:MNNExternalCode>
+                                                <ns3:MNNName>ГЕМЦИТАБИН</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.10.211</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты противоопухолевые</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.10.211-00040</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>ЛИОФИЛИЗАТ ДЛЯ ПРИГОТОВЛЕНИЯ КОНЦЕНТРАТА ДЛЯ ПРИГОТОВЛЕНИЯ РАСТВОРА ДЛЯ ИНФУЗИЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>200 мг</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>161</ns2:code>
+                                                    <ns2:name>мг</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>мг действующего вещества</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>161</ns2:code>
+                                                <ns2:name>мг</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                            <ns3:basicUnit>true</ns3:basicUnit>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:quantityMultiplier>1.00000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>2.79</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17003126</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>3022842e-5960-11ea-bc5f-434c43f724bb</ns3:MNNExternalCode>
+                                                <ns3:MNNName>ГЕМЦИТАБИН</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.10.211</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты противоопухолевые</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.10.211-00040</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>КОНЦЕНТРАТ ДЛЯ ПРИГОТОВЛЕНИЯ РАСТВОРА ДЛЯ ИНФУЗИЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>40 мг/мл</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>111</ns2:code>
+                                                    <ns2:name>см[3*];^мл</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>мл</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>111</ns2:code>
+                                                <ns2:name>см[3*];^мл</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:quantityMultiplier>0.02500</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>111.6</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                    <ns3:drugInfo>
+                                        <ns3:drugInfoUsingReferenceInfo>
+                                            <ns3:sid>17003128</ns3:sid>
+                                            <ns3:MNNInfo>
+                                                <ns3:MNNExternalCode>1ee25ff8-bf5b-11e9-bd5d-abee9c8fc61f</ns3:MNNExternalCode>
+                                                <ns3:MNNName>ГЕМЦИТАБИН</ns3:MNNName>
+                                            </ns3:MNNInfo>
+                                            <ns3:OKPD2>
+                                                <ns2:OKPDCode>21.20.10.211</ns2:OKPDCode>
+                                                <ns2:OKPDName>Препараты противоопухолевые</ns2:OKPDName>
+                                            </ns3:OKPD2>
+                                            <ns3:KTRU>
+                                                <ns2:code>21.20.10.211-00040</ns2:code>
+                                            </ns3:KTRU>
+                                            <ns3:medicamentalFormInfo>
+                                                <ns3:medicamentalFormName>КОНЦЕНТРАТ ДЛЯ ПРИГОТОВЛЕНИЯ РАСТВОРА ДЛЯ ИНФУЗИЙ</ns3:medicamentalFormName>
+                                            </ns3:medicamentalFormInfo>
+                                            <ns3:dosageInfo>
+                                                <ns3:dosageGRLSValue>10 мг/мл</ns3:dosageGRLSValue>
+                                                <ns3:dosageUserOKEI>
+                                                    <ns2:code>111</ns2:code>
+                                                    <ns2:name>см[3*];^мл</ns2:name>
+                                                </ns3:dosageUserOKEI>
+                                                <ns3:dosageUserName>мл</ns3:dosageUserName>
+                                            </ns3:dosageInfo>
+                                            <ns3:manualUserOKEI>
+                                                <ns2:code>111</ns2:code>
+                                                <ns2:name>см[3*];^мл</ns2:name>
+                                            </ns3:manualUserOKEI>
+                                        </ns3:drugInfoUsingReferenceInfo>
+                                        <ns3:quantityMultiplier>0.10000</ns3:quantityMultiplier>
+                                        <ns3:averagePriceValue>27.9</ns3:averagePriceValue>
+                                    </ns3:drugInfo>
+                                </ns3:drugInterchangeManualInfo>
+                            </ns3:drugInterchangeInfo>
+                        </ns3:drugsInfo>
+                    </ns3:objectInfoUsingReferenceInfo>
+                    <ns3:name>ГЕМЦИТАБИН, ЛИОФИЛИЗАТ ДЛЯ ПРИГОТОВЛЕНИЯ КОНЦЕНТРАТА ДЛЯ ПРИГОТОВЛЕНИЯ РАСТВОРА ДЛЯ ИНФУЗИЙ 200 мг, единица измерения товара: Миллиграмм (МГ)</ns3:name>
+                    <ns3:isZNVLP>true</ns3:isZNVLP>
+                    <ns3:isNarcotic>false</ns3:isNarcotic>
+                    <ns3:quantityUndefined>
+                        <ns3:quantityUndefined>true</ns3:quantityUndefined>
+                        <ns3:price>2.79</ns3:price>
+                    </ns3:quantityUndefined>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:drugPurchaseObjectInfo>
+                <ns3:total>4.26</ns3:total>
+                <quantityUndefined>true</quantityUndefined>
+            </drugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>В случае, если участник закупки является производителем лекарственных препаратов, предложенных к поставке: Участник закупки должен иметь лицензию, выданную участнику закупки, на осуществление производство лекарственных средств. В случае, если участник закупки не является производителем лекарственных препаратов, предложенных к поставке: Участник закупки должен иметь лицензию, выданную участнику закупки, на осуществление фармацевтической деятельности с указанием вид работ "оптовая торговля лекарственными средствами для медицинского применения". Копия лицензии и (или) копия выписки из реестра лицензий и (или) сведения о записи в реестре лицензий предоставляются участником закупки в составе заявки.</ns3:content>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

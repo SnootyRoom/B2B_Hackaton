@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44408593</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0332100006526000186</purchaseNumber>
+        <docNumber>№0332100006526000186</docNumber>
+        <plannedPublishDate>2026-10-30+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T16:19:24.720+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0332100006526000186</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг пультовой охраны при помощи охранно-пожарной сигнализации и кнопки тревожной сигнализации объектов таможенных органов Приволжского региона (Самарская область)</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03321000065</regNum>
+            <consRegistryNum>00151858</consRegistryNum>
+            <fullName>ПРИВОЛЖСКОЕ ТАМОЖЕННОЕ УПРАВЛЕНИЕ</fullName>
+            <shortName>ПРИВОЛЖСКОЕ ТАМОЖЕННОЕ УПРАВЛЕНИЕ</shortName>
+            <postAddress>Российская Федерация, 603022, Нижегородская обл, УЛ. ПУШКИНА, Д. 8, ПОМЕЩ. 1</postAddress>
+            <factAddress>Российская Федерация, 603022, Нижегородская обл, УЛ. ПУШКИНА, Д. 8, ПОМЕЩ. 1</factAddress>
+            <INN>5262036613</INN>
+            <KPP>526201001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 603022, Нижегородская обл, УЛ. ПУШКИНА, Д. 8, ПОМЕЩ. 1</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 603022, Нижегородская обл, УЛ. ПУШКИНА, Д. 8, ПОМЕЩ. 1</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Бритиков</ns3:lastName>
+                <ns3:firstName>Юрий</ns3:firstName>
+                <ns3:middleName>Васильевич</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>ptu-kos@ptu.customs.gov.ru</contactEMail>
+            <contactPhone>7-831-2299653</contactPhone>
+            <addInfo>Ответственное должностное лицо: начальник отдела оперативно-дежурной службы и таможенной охраны Самарской таможни Бритиков Юрий Васильевич.</addInfo>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0332100006526000186</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A187CF97147304B7874AD959CD7296</ns3:publishedContentId>
+            <ns3:fileName>Обоснование цены (4).doc</ns3:fileName>
+            <ns3:fileSize>193024</ns3:fileSize>
+            <ns3:docDescription>Обоснование цены</ns3:docDescription>
+            <ns3:docDate>2026-10-29T16:18:11+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A187CF97147304B7874AD959CD7296</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1875B6FB97959888A5A3F4A388FA9</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта.docx</ns3:fileName>
+            <ns3:fileSize>95552</ns3:fileSize>
+            <ns3:docDescription>Проект контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-29T14:11:18+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1875B6FB97959888A5A3F4A388FA9</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1875B86EB796881E52F85EEC5274F</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки.docx</ns3:fileName>
+            <ns3:fileSize>36046</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-29T14:11:24+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1875B86EB796881E52F85EEC5274F</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A186B42B2677488792C1813F5761D1</ns3:publishedContentId>
+            <ns3:fileName>Требования к содержанию, составу заявки.docx</ns3:fileName>
+            <ns3:fileSize>30214</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию, составу заявки</ns3:docDescription>
+            <ns3:docDate>2026-10-29T11:08:36+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A186B42B2677488792C1813F5761D1</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T16:19:24+03:00</startDT>
+                <endDT>2026-11-09T10:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+03:00</biddingDate>
+            <summarizingDate>2026-11-10+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>539121.45</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+            <standardContractNumber>1400700000520012</standardContractNumber>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03321000065</ns2:regNum>
+                    <ns2:consRegistryNum>00151858</ns2:consRegistryNum>
+                    <ns2:fullName>ПРИВОЛЖСКОЕ ТАМОЖЕННОЕ УПРАВЛЕНИЕ</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <amount>53912.15</amount>
+                    <account>
+                        <ns3:bik>012202102</ns3:bik>
+                        <ns3:settlementAccount>03212643000000013200</ns3:settlementAccount>
+                        <ns3:personalAccount>05321518580</ns3:personalAccount>
+                        <ns3:creditOrgName>в Волго-Вятском ГУ Банка России //УФК по Нижегородской области г. Нижний Новгород</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810745370000024</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Порядок предоставления обеспечения исполнения контракта устанавливается ст. 96 Федерального закона № 44-ФЗ. Контракт заключается после предоставления Участником закупки, с которым заключается контракт, обеспечения исполнения контракта в соответствии с Федеральным законом № 44-ФЗ. В случае непредоставления Участником закупки, с которым заключается контракт, обеспечения исполнения контракта в срок, установленный для заключения контракта, такой участник считается уклонившимся от заключения контракта.</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>539121.45</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>261526203661352620100100590128010244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>80.10</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги охранных служб, в том числе частных</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>15262036613526201001</customerCode>
+                        <purchaseNumber>0059</purchaseNumber>
+                        <purchaseOrderNumber>012</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603321000065001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603321000065001000127</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>99010001</ns2:code>
+                                    <ns2:name>Федеральный бюджет</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>10</ns2:code>
+                                    <ns2:name>федеральный бюджет</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>00000001</ns2:code>
+                                    <ns2:name>Раздел 1. Муниципальные образования субъектов Российской Федерации / Федеральный бюджет</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>539121.45</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>539121.45</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22481868</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>15301063941590049244</KBK>
+                                        <paymentYearInfo>
+                                            <total>539121.45</total>
+                                            <currentYear>0.00</currentYear>
+                                            <firstYear>539121.45</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62374008</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>b4b704a9-27a6-4dc5-bc09-47d2b0ffae04</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Самарская, г.о. Самара, г. Самара, ул. Алма-Атинская, зд. 29Т к. 41</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62406067</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>bb035cc3-1dc2-4627-9d25-a1bf2d4b936b</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Самарская, г.о. Самара, г. Самара</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>ул. Товарная, д. 5</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62406068</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>c88e3437-9c98-4c56-9389-50acc285b7ae</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Самарская, г.о. Тольятти, г. Тольятти, ул. Вокзальная</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>д.2</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62406069</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>f834e212-91ec-4fbe-a307-877e60619b36</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Самарская, г.о. Тольятти, г. Тольятти, ш. Южное, д. 36 стр. 84</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62410995</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>05edd5aa-ab64-4afa-b56c-fd5661a14129</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Самарская, г.о. Отрадный, г. Отрадный</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>Промышленная зона, д. 1</ns3:deliveryPlace>
+                        </byGARInfo>
+                        <byGARInfo>
+                            <ns3:sid>62410996</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>b74b1b8b-f3e0-4948-9cb4-fe2f6bdb4a79</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Самарская, г.о. Новокуйбышевск, г. Новокуйбышевск, ул. Репина, д. 2</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <addInfo>В соответствии с Указом Президента РФ от 03.05.2022 N 252 "О применении ответных специальных экономических мер в связи с недружественными действиями некоторых иностранных государств и международных организаций", постановлением Правительства РФ от 11.05.2022 N 851 "О мерах по реализации Указа Президента Российской Федерации от 3 мая 2022 г. N 252" (вместе с "Перечнем юридических лиц, в отношении которых применяются специальные экономические меры") участниками закупки не могут являться юридические лица, физические лица и находящиеся под их контролем организации, в отношении которых применяются специальные экономические меры; документы, подтверждающие соответствие участника закупки таким требованиям не требуются. В целях идентификации внесенных на расчетный счет Заказчика денежных средств в качестве обеспечения исполнения контракта просьба указывать в платежном поручении идентификационный код закупки, а именно: «внесение денежных средств по обеспечению исполнения контракта/ИКЗ (указать ИКЗ по закупке). За нарушение требований антимонопольного законодательства Российской Федерации о запрете участия в ограничивающих конкуренцию соглашениях, осуществления ограничивающих конкуренцию согласованных действий предусмотрена административная и уголовная ответственность.</addInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226002413</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.10.12.900</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги охранных служб прочих</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуг пультовой охраны при помощи КТС  на ПЦН административного здания Самарской таможни по адресу: г. Самара, ул. Алма-Атинская зд. 29Т, корпус 41, ежедневно (круглосуточно 24 часа)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>356</ns2:code>
+                        <ns2:nationalCode>ч</ns2:nationalCode>
+                        <ns2:name>Час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>10.52</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>8760.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>92155.20</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226002414</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.10.12.900</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги охранных служб прочих</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуг пультовой охраны при помощи ОПС  на ПЦН помещений Самарского таможенного поста Самарской таможни по адресу: г. Самара, ул. Товарная д. 5, ежедневно, с 21:00 до 08:00</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>356</ns2:code>
+                        <ns2:nationalCode>ч</ns2:nationalCode>
+                        <ns2:name>Час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>10.85</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4015.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>43562.75</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226002415</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.10.12.900</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги охранных служб прочих</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуг пультовой охраны при  помощи КТС на ПЦН помещений Самарского таможенного поста Самарской таможни по адресу: г. Самара, ул. Товарная д. 5, ежедневно, с 08:00 до 21:00</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>356</ns2:code>
+                        <ns2:nationalCode>ч</ns2:nationalCode>
+                        <ns2:name>Час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>10.52</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4745.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>49917.40</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226002416</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.10.12.900</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги охранных служб прочих</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуг пультовой охраны при помощи ОПС на ПЦН помещений Тольяттинского таможенного поста Самарской таможни по адресу: г. Самара, г. Тольятти, ул. Вокзальная, д.2, ежедневно,  с 21:00 до 08:00</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>356</ns2:code>
+                        <ns2:nationalCode>ч</ns2:nationalCode>
+                        <ns2:name>Час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>10.85</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4015.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>43562.75</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226002417</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.10.12.900</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги охранных служб прочих</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуг пультовой охраны при  помощи КТС на ПЦН помещений Тольяттинского таможенного поста Самарской таможни по адресу: г. Самара, г. Тольятти, ул. Вокзальная, д.2, ежедневно, с 08:00 до 21:00</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>356</ns2:code>
+                        <ns2:nationalCode>ч</ns2:nationalCode>
+                        <ns2:name>Час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>10.52</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4745.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>49917.40</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226002418</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.10.12.900</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги охранных служб прочих</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуг пультовой охраны при помощи ОПС  на ПЦН помещений таможенного поста АвтоВАЗ Самарской таможни по адресу: г. Тольятти, Южное шоссе, д. 36, строение 84, ежедневно, с 21:00 до 08:00</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>356</ns2:code>
+                        <ns2:nationalCode>ч</ns2:nationalCode>
+                        <ns2:name>Час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>10.85</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4015.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>43562.75</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226002419</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.10.12.900</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги охранных служб прочих</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуг пультовой охраны при помощи КТС на ПЦН помещений таможенного поста АвтоВАЗ Самарской таможни по адресу: г. Тольятти, Южное шоссе, д. 36, строение 84, ежедневно, с 08:00 до 21:00</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>356</ns2:code>
+                        <ns2:nationalCode>ч</ns2:nationalCode>
+                        <ns2:name>Час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>10.52</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4745.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>49917.40</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226002420</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.10.12.900</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги охранных служб прочих</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуг пультовой охраны при помощи ОПС на ПЦН, помещений Отрадненского таможенного поста Самарской таможни по адресу: Самарская область, г. Отрадный, Промышленная зона, д. 1, рабочие дни с 17.00 до 08.00; предвыходные и предпраздничные дни с 16:00 до 08:00, в выходные и праздничные дни круглосуточно (24 часа)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>356</ns2:code>
+                        <ns2:nationalCode>ч</ns2:nationalCode>
+                        <ns2:name>Час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>10.85</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6588.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>71479.80</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226007575</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>80.10.12.900</ns2:OKPDCode>
+                        <ns2:OKPDName>Услуги охранных служб прочих</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Оказание услуг пультовой охраны при помощи ОПС на ПЦН помещений ОТО и ТК №3 Самарского таможенного поста Самарской таможни по адресу: г. Новокуйбышевск, ул. Репина, д.2; ежедневно, круглосуточно (24 часа)</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>356</ns2:code>
+                        <ns2:nationalCode>ч</ns2:nationalCode>
+                        <ns2:name>Час</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>10.85</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>8760.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>95046.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>539121.45</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU44</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS36BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии с позицией 34 раздела VI приложения к ПП РФ от 29.12.2021 № 2571</ns3:name>
+                        <ns3:content>Наличие опыта исполнения участником закупки договора, предусматривающего оказание услуг по обеспечению охраны объектов (территорий). Цена оказанных услуг должна составлять не менее 20 процентов от начальной (максимальной) цены контракта, заключаемого по результатам определения поставщика (подрядчика, исполнителя). Информация и документы, подтверждающие соответствие участников закупки дополнительным требованиям: 1) исполненный договор; 2) акт приемки оказанных услуг, подтверждающий цену оказанных услуг</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>Требуется правомочие Участника закупки осуществлять деятельность по охране объектов государственных органов, на которые частная охранная деятельность не распространяется, за исключением случаев, когда Участник электронного аукциона ограничен такими документами на осуществление охраны исчерпывающего перечня объектов, в составе которых таможенные органы не поименованы (в соответствии с распоряжением Правительства Российской Федерации от 1 августа 2026 г. № 2057-р «Об утверждении перечня объектов, на которых не может осуществляться частная охранная деятельность» подлежащие охране объекты отнесены к объектам, на которые частная охранная деятельность не распространяется).</ns3:content>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>
