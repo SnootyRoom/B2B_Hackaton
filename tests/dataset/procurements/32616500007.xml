@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ns4:Purchase xmlns:ns4="http://zakupki.gov.ru/epz/order/2023" xmlns:ns11="http://zakupki.gov.ru/common/2023">
-    <ns11:regNumber>32616500007</ns11:regNumber>
+<ns4:purchaseNotice xmlns:ns4="http://zakupki.gov.ru/epz/order/2023" xmlns:ns11="http://zakupki.gov.ru/common/2023">
+    <ns11:registrationNumber>32616500007</ns11:registrationNumber>
     <ns11:purchaseNumber>32616500007</ns11:purchaseNumber>
     <ns11:purchaseObjectInfo>Поставка стальных материалов</ns11:purchaseObjectInfo>
     <ns11:initialPrice></ns11:initialPrice>
@@ -15,10 +15,12 @@
         <ns11:lot>
             <ns11:lotNumber>1</ns11:lotNumber>
             <ns11:lotName>Стальные материалы</ns11:lotName>
+            <ns11:initialSum>328966.00</ns11:initialSum>
         </ns11:lot>
         <ns11:lot>
             <ns11:lotNumber>2</ns11:lotNumber>
             <ns11:lotName>Стальные материалы</ns11:lotName>
+            <ns11:initialSum>101686.32</ns11:initialSum>
         </ns11:lot>
     </ns11:lots>
-</ns4:Purchase>
+</ns4:purchaseNotice>
