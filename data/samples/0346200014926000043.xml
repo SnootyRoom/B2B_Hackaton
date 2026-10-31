@@ -1,0 +1,1955 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEZK2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44441105</id>
+    <externalId>d48718d7-5fd8-4d73-baa5-f51e61e851a501</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0346200014926000043</purchaseNumber>
+        <docNumber>№0346200014926000043</docNumber>
+        <plannedPublishDate>2026-10-30+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T18:01:36.788+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/zk20/view/common-info.html?regNumber=0346200014926000043</href>
+        <placingWay>
+            <ns2:code>ZKP20</ns2:code>
+            <ns2:name>Запрос котировок в электронной форме</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_SBAST</ns2:code>
+            <ns2:name>АО «Сбербанк-АСТ»</ns2:name>
+            <ns2:url>http://www.sberbank-ast.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка картриджей для офисной техники</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03462000149</regNum>
+            <consRegistryNum>422Е7450</consRegistryNum>
+            <fullName>ОБЛАСТНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "ЦЕНТР ЭКОЛОГИЧЕСКИХ ПРОЕКТОВ"</fullName>
+            <shortName>ОБУ "ЦЭП"</shortName>
+            <postAddress>398016, Липецкая область, г. Липецк, пер. Попова, д. 5</postAddress>
+            <factAddress>398016, Липецкая область, г. Липецк, пер. Попова, д. 5</factAddress>
+            <INN>4825037270</INN>
+            <KPP>482501001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CC</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>398016, Липецкая область, г. Липецк, пер. Попова, д. 5</orgPostAddress>
+            <orgFactAddress>398016, Липецкая область, г. Липецк, пер. Попова, д. 5</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Беляк</ns3:lastName>
+                <ns3:firstName>Елена</ns3:firstName>
+                <ns3:middleName>Викторовна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>ogugtk48@mail.ru</contactEMail>
+            <contactPhone>7-4742-341191</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0346200014926000043</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D50D2647ADAB46FF5BDAC1E4B5D</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 2 Обоснование НМЦД.docx</ns3:fileName>
+            <ns3:fileSize>22330</ns3:fileSize>
+            <ns3:docDescription>Приложение № 2 Обоснование начальной (максимальной) цены договора</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:57:30+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D50D2647ADAB46FF5BDAC1E4B5D</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D50D10775E8ADE29783A7E93D9E</ns3:publishedContentId>
+            <ns3:fileName>Приложение №  3 Проект договора.docx</ns3:fileName>
+            <ns3:fileSize>99290</ns3:fileSize>
+            <ns3:docDescription>Приложение № 3 Проект договора</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:57:30+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D50D10775E8ADE29783A7E93D9E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D50CFC171AA80C92B2B197E44EC</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 1 Описание объекта закупки.docx</ns3:fileName>
+            <ns3:fileSize>43550</ns3:fileSize>
+            <ns3:docDescription>Приложение № 1 Описание объекта закупки</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:57:30+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D50CFC171AA80C92B2B197E44EC</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D50CC707DFE9E55DFFBD2E262B2</ns3:publishedContentId>
+            <ns3:fileName>Приложение № 4 Требования к содержанию, составу заявки на участие в закупке.docx</ns3:fileName>
+            <ns3:fileSize>26536</ns3:fileSize>
+            <ns3:docDescription>Приложение № 4 Требования к содержанию, составу заявки на участие в закупке</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:57:30+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D50CC707DFE9E55DFFBD2E262B2</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18D50CDB77AA6A335B6E00A2F3BBD</ns3:publishedContentId>
+            <ns3:fileName>ИЗВЕЩЕНИЕ.docx</ns3:fileName>
+            <ns3:fileSize>26418</ns3:fileSize>
+            <ns3:docDescription>Извещение</ns3:docDescription>
+            <ns3:docDate>2026-10-30T17:57:30+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18D50CDB77AA6A335B6E00A2F3BBD</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>false</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-30T18:01:36+03:00</startDT>
+                <endDT>2026-11-09T09:00:00+03:00</endDT>
+            </collectingInfo>
+            <summarizingDate>2026-11-10+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>120192.33</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03462000149</ns2:regNum>
+                    <ns2:consRegistryNum>422Е7450</ns2:consRegistryNum>
+                    <ns2:fullName>ОБЛАСТНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "ЦЕНТР ЭКОЛОГИЧЕСКИХ ПРОЕКТОВ"</ns2:fullName>
+                </customer>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>120192.33</maxPrice>
+                    </maxPriceInfo>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:relativeTermsInfo>
+                                <ns3:start>0</ns3:start>
+                                <ns3:startDayType>calendar</ns3:startDayType>
+                                <ns3:term>10</ns3:term>
+                                <ns3:termDayType>calendar</ns3:termDayType>
+                            </ns3:relativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>120192.33</total>
+                                <currentYear>120192.33</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22539639</sid>
+                                <externalSid>732d1f17-184f-4757-b0ca-011f191963a2</externalSid>
+                                <termsInfo>
+                                    <ns3:relativeTermsInfo>
+                                        <ns3:start>0</ns3:start>
+                                        <ns3:startDayType>calendar</ns3:startDayType>
+                                        <ns3:term>10</ns3:term>
+                                        <ns3:termDayType>calendar</ns3:termDayType>
+                                    </ns3:relativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>120192.33</total>
+                                        <currentYear>120192.33</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62477560</ns3:sid>
+                            <ns3:externalSid>107906ab-4897-4c87-911c-9b73073c483f</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>795253db-260e-4ab7-a908-79493833f35c</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Липецкая, г.о. город Липецк, г. Липецк, пер. Попова, д. 5</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>398016, Липецкая область, г. Липецк, пер. Попова, д. 5</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>false</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyServiceRequirement>В период действия гарантийного срока поставщиком осуществляется гарантийное обслуживание товара без дополнительной оплаты со стороны Заказчика. Все сопутствующие гарантийному обслуживанию мероприятия (доставка, погрузка, разгрузка и т.д.) осуществляются силами и за счет поставщика.</warrantyServiceRequirement>
+                    <warrantyTerm>Срок предоставления гарантии качества поставщика на товар должен составлять не менее срока, установленного производителем товара, но не менее 12 (двенадцати) месяцев со дня подписания Заказчиком соответствующего акта приема-передачи товара. Гарантийные обязательства включают ремонт или замену (при невозможности ремонта) товара, его неисправных деталей, узлов, комплектующих частей, имеющих производственные дефекты. При обнаружении дефектов товара в течение гарантийного периода, возникших по независящим от Заказчика причинам, Поставщик обязан за свой счет устранить дефекты либо заменить товар ненадлежащего качества новым в срок не более 14 (четырнадцати) дней с момента получения письменного уведомления от Заказчика (в том числе посредством электронной связи).</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285956</ns3:sid>
+                    <ns3:externalSid>1ee180d7-923d-44be-8b81-bbbbd76818cb</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187042</ns3:sid>
+                                <ns3:externalSid>1adf2bb4-af04-4d54-bd9e-b13b09836008</ns3:externalSid>
+                                <ns3:name>Картридж для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931672</ns3:sid>
+                                        <ns3:externalSid>28b5d9c8-2c4f-4765-be65-bb602c0bba9f</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187043</ns3:sid>
+                                <ns3:externalSid>31e95ef5-c656-428f-b24e-a8141d5b1b3d</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931673</ns3:sid>
+                                        <ns3:externalSid>5d437966-a746-4c10-9398-b5acbe3df8bc</ns3:externalSid>
+                                        <ns3:qualityDescription>TL-5120H или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187044</ns3:sid>
+                                <ns3:externalSid>b80c96ee-4eef-4788-a874-263f6bcf4299</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931674</ns3:sid>
+                                        <ns3:externalSid>dc49aca1-3550-4939-8622-c4048616b0fe</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187045</ns3:sid>
+                                <ns3:externalSid>d19202f0-0be0-4659-a876-6119dc30255e</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931675</ns3:sid>
+                                        <ns3:externalSid>fd7cc13d-6f37-40ca-a0b3-d10b8293512b</ns3:externalSid>
+                                        <ns3:qualityDescription>PANTUM BP5100DN</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187046</ns3:sid>
+                                <ns3:externalSid>0c85b0bc-f25a-4f24-a26e-c680c00ee3ab</ns3:externalSid>
+                                <ns3:name>Цвет тонера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931676</ns3:sid>
+                                        <ns3:externalSid>f48f94a9-e788-4f7b-98e9-e2a920f6c699</ns3:externalSid>
+                                        <ns3:qualityDescription>Черный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187047</ns3:sid>
+                                <ns3:externalSid>7a19d70f-93f4-4dfb-b6ce-779629a6b798</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931677</ns3:sid>
+                                        <ns3:externalSid>b4f20538-991f-43f9-baae-208f5377a137</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>6000</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>695.08</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>16.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>11121.28</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285957</ns3:sid>
+                    <ns3:externalSid>b1c56e44-453e-483a-86a4-db155e609ac3</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187048</ns3:sid>
+                                <ns3:externalSid>279fa187-db36-4892-bbfc-9958aa67d4c3</ns3:externalSid>
+                                <ns3:name>Картридж для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931678</ns3:sid>
+                                        <ns3:externalSid>4ea80d33-3b62-4e7c-9022-23fb334f16a9</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187049</ns3:sid>
+                                <ns3:externalSid>bb7a571b-ee24-4227-bf9f-f47aee86f023</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931679</ns3:sid>
+                                        <ns3:externalSid>8a7a4343-cba5-41f0-8968-be8989c0a69f</ns3:externalSid>
+                                        <ns3:qualityDescription>TN-2375 или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187050</ns3:sid>
+                                <ns3:externalSid>ee41e653-dd4d-4ea3-b604-f7bbb3f3cb9e</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931680</ns3:sid>
+                                        <ns3:externalSid>47f8956f-6ae0-4a38-9256-526fba864bc5</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187051</ns3:sid>
+                                <ns3:externalSid>b26f9d68-475a-4e9f-b009-57c3118a2cf3</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931681</ns3:sid>
+                                        <ns3:externalSid>b97e15cf-04b7-47c0-9491-0ba1705e8ba7</ns3:externalSid>
+                                        <ns3:qualityDescription>BROTHER HL-L2300</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187052</ns3:sid>
+                                <ns3:externalSid>f9f6fe75-3da8-47f3-ac6e-ac21abe70777</ns3:externalSid>
+                                <ns3:name>Цвет тонера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931682</ns3:sid>
+                                        <ns3:externalSid>63d040cb-8390-4700-9183-a3f1a745e4b6</ns3:externalSid>
+                                        <ns3:qualityDescription>Черный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187053</ns3:sid>
+                                <ns3:externalSid>03d39041-9af2-4aa4-a4b1-c2f65b53b9b1</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931683</ns3:sid>
+                                        <ns3:externalSid>d0c8c8ae-5592-429d-852e-a95be6dbb26d</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2600</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>485.56</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>4855.60</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285958</ns3:sid>
+                    <ns3:externalSid>e8d37f4e-b25b-4eda-b018-a5699d3a58c6</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187054</ns3:sid>
+                                <ns3:externalSid>5a92238c-65dd-42d6-870a-9680fd741a3f</ns3:externalSid>
+                                <ns3:name>Картридж для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931684</ns3:sid>
+                                        <ns3:externalSid>774b36be-c0d3-45d8-8e57-19a53eae3fe2</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187055</ns3:sid>
+                                <ns3:externalSid>911499a5-7a25-4556-af58-ab60cf550afd</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931685</ns3:sid>
+                                        <ns3:externalSid>31379aa3-0334-48ed-9977-55597d3ade61</ns3:externalSid>
+                                        <ns3:qualityDescription>CF283 или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187056</ns3:sid>
+                                <ns3:externalSid>caf74c5e-d9e8-4fd3-b57d-0d00877f673f</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931686</ns3:sid>
+                                        <ns3:externalSid>9cacf495-9421-4b3c-82c2-27b6cf00346a</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187057</ns3:sid>
+                                <ns3:externalSid>6bbf3fd9-ef64-47aa-a808-447ed265a82a</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931687</ns3:sid>
+                                        <ns3:externalSid>05cc2acf-c287-4925-b241-7583a42af766</ns3:externalSid>
+                                        <ns3:qualityDescription>HP LJ Pro M125nw</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187058</ns3:sid>
+                                <ns3:externalSid>86772abd-879b-4c6c-ab47-333cc12bbe56</ns3:externalSid>
+                                <ns3:name>Цвет тонера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931688</ns3:sid>
+                                        <ns3:externalSid>0eb4451e-91c2-4e18-b1a1-707aeb344478</ns3:externalSid>
+                                        <ns3:qualityDescription>Черный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187059</ns3:sid>
+                                <ns3:externalSid>8dc7ec6e-aae8-4364-b15b-80f5d4ea2730</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931689</ns3:sid>
+                                        <ns3:externalSid>c7429b06-9195-4c6b-83e2-c977a0d904e6</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1500</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>460.69</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>4606.90</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285959</ns3:sid>
+                    <ns3:externalSid>e621c0cf-c74d-40d9-86e6-4ce569c071d1</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187060</ns3:sid>
+                                <ns3:externalSid>d6ba4198-78fe-4753-b43b-d516987659c5</ns3:externalSid>
+                                <ns3:name>Картридж для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931690</ns3:sid>
+                                        <ns3:externalSid>f33ed572-7fc6-48d5-991c-07bf91c4d0df</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187061</ns3:sid>
+                                <ns3:externalSid>455d6eca-372f-4896-9481-b54c63c3ea15</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931691</ns3:sid>
+                                        <ns3:externalSid>5bd5351b-187e-442a-8138-8c097f9aae8b</ns3:externalSid>
+                                        <ns3:qualityDescription>cb435a или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187062</ns3:sid>
+                                <ns3:externalSid>af9cc404-82fd-4e99-a7d9-667ce2827f72</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931692</ns3:sid>
+                                        <ns3:externalSid>8a479b27-0c78-41d4-8219-ed2bf1f890d8</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187063</ns3:sid>
+                                <ns3:externalSid>8f043366-ea62-4471-b670-83b1e5984918</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931693</ns3:sid>
+                                        <ns3:externalSid>0a12f6dc-e966-4e9f-90f8-d09c86b73e84</ns3:externalSid>
+                                        <ns3:qualityDescription>HP LaserJet P1005</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187064</ns3:sid>
+                                <ns3:externalSid>f4b04b8a-eed7-46df-b5ec-15f5c5497bcd</ns3:externalSid>
+                                <ns3:name>Цвет тонера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931694</ns3:sid>
+                                        <ns3:externalSid>f31c7549-2180-4c87-a98e-6eae07c7d0a3</ns3:externalSid>
+                                        <ns3:qualityDescription>Черный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187065</ns3:sid>
+                                <ns3:externalSid>82589a4d-3f60-4d19-9772-b7722c69ce52</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931695</ns3:sid>
+                                        <ns3:externalSid>d269644c-1ded-467d-953d-dc5c3bd9c85e</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2000</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>533.23</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5332.30</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285960</ns3:sid>
+                    <ns3:externalSid>11d93886-eef0-4caf-a758-5e56e206ea19</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187066</ns3:sid>
+                                <ns3:externalSid>07c33bed-4c52-44cc-bae3-d2ff698c9d11</ns3:externalSid>
+                                <ns3:name>Картридж для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931696</ns3:sid>
+                                        <ns3:externalSid>64cf0ef1-3490-485e-8ef5-fb924a50b8be</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187067</ns3:sid>
+                                <ns3:externalSid>1fb8434c-3f61-4cbf-9b0a-2dd0e4aa801e</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931697</ns3:sid>
+                                        <ns3:externalSid>f35a1266-54d6-436f-83c9-cc4f7f0083de</ns3:externalSid>
+                                        <ns3:qualityDescription>Sp311he или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187068</ns3:sid>
+                                <ns3:externalSid>fe221197-43e7-4eb3-a8fb-b18fd65c4d86</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931698</ns3:sid>
+                                        <ns3:externalSid>b6caa8a7-c88d-4bdd-aa6d-5aa58ac37438</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187069</ns3:sid>
+                                <ns3:externalSid>769d1d36-1b9c-4a23-a654-3d8735e178cd</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931699</ns3:sid>
+                                        <ns3:externalSid>880e47e6-a7db-432a-af17-1152b697f6b7</ns3:externalSid>
+                                        <ns3:qualityDescription>Ricoh SP311DN</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187070</ns3:sid>
+                                <ns3:externalSid>0b699106-501c-4a18-89a0-71302410a50e</ns3:externalSid>
+                                <ns3:name>Цвет тонера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931700</ns3:sid>
+                                        <ns3:externalSid>938ae059-92ca-4b1f-a9a8-30c1287113af</ns3:externalSid>
+                                        <ns3:qualityDescription>Черный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187071</ns3:sid>
+                                <ns3:externalSid>07979118-ca2b-4439-9ab6-e15764f868df</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931701</ns3:sid>
+                                        <ns3:externalSid>ebbc7c30-829f-43ae-856f-ab15cf34658e</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>3500</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1485.29</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>20.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>29705.80</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285961</ns3:sid>
+                    <ns3:externalSid>b43d59bc-2942-45b2-9bd1-020b27525a22</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187072</ns3:sid>
+                                <ns3:externalSid>0db4229a-fe15-45db-a78e-d490d589dea1</ns3:externalSid>
+                                <ns3:name>Картридж для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931702</ns3:sid>
+                                        <ns3:externalSid>14d198a4-dcaf-4026-b6ae-4cf438a6e964</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187073</ns3:sid>
+                                <ns3:externalSid>cd5b8cb5-b8da-424d-b783-78ed723ca677</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931703</ns3:sid>
+                                        <ns3:externalSid>73989c72-21d3-464e-8e41-d8f71c7e5fbe</ns3:externalSid>
+                                        <ns3:qualityDescription>Q2612a или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187074</ns3:sid>
+                                <ns3:externalSid>77bf9aaa-3ceb-4814-a89d-d170a49ea8b7</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931704</ns3:sid>
+                                        <ns3:externalSid>9806b303-9fa2-4d26-9d34-171d2776e942</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187075</ns3:sid>
+                                <ns3:externalSid>18c59c76-161d-4f18-a891-0f2fcbe1a52e</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931705</ns3:sid>
+                                        <ns3:externalSid>4b9c5c72-0b99-4d4c-a0ed-3ee0c25d47b5</ns3:externalSid>
+                                        <ns3:qualityDescription>HP LJ 1010</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187076</ns3:sid>
+                                <ns3:externalSid>864017d3-2c81-4d5f-98dd-fd180465dcdf</ns3:externalSid>
+                                <ns3:name>Цвет тонера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931706</ns3:sid>
+                                        <ns3:externalSid>ec1f4d8c-2e56-4322-8677-cc948dfd39fb</ns3:externalSid>
+                                        <ns3:qualityDescription>Черный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187077</ns3:sid>
+                                <ns3:externalSid>765aada1-fc3a-447c-a921-4af2be4867d5</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931707</ns3:sid>
+                                        <ns3:externalSid>57ed6fa4-749e-444f-9b23-9afe3f3a1ff7</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2000</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>486.39</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>4863.90</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285962</ns3:sid>
+                    <ns3:externalSid>9145773a-6c3e-4958-8e53-166aeacd0ce0</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187078</ns3:sid>
+                                <ns3:externalSid>b5592848-246e-420e-b6d0-83245504d016</ns3:externalSid>
+                                <ns3:name>Картридж для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931708</ns3:sid>
+                                        <ns3:externalSid>015af8d8-fa49-4302-9f81-9a0124b2d248</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187079</ns3:sid>
+                                <ns3:externalSid>62928ea3-903b-4389-b6ca-1e9c08636360</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931709</ns3:sid>
+                                        <ns3:externalSid>3660e6c5-61ef-4af9-9258-6362abdd8b99</ns3:externalSid>
+                                        <ns3:qualityDescription>Q2613x или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187080</ns3:sid>
+                                <ns3:externalSid>c7421ce8-a177-43df-97e1-3c69628e80a5</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931710</ns3:sid>
+                                        <ns3:externalSid>57f5e015-a177-4648-99d7-38afb4cdf018</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187081</ns3:sid>
+                                <ns3:externalSid>2a72effa-0c4a-4628-8d28-599d98f5fedd</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931711</ns3:sid>
+                                        <ns3:externalSid>1e15356d-f693-490b-923e-cc46ba71eecb</ns3:externalSid>
+                                        <ns3:qualityDescription>HP LJ 1300</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187082</ns3:sid>
+                                <ns3:externalSid>9f502109-ee56-4e66-9d6f-55db202a4642</ns3:externalSid>
+                                <ns3:name>Цвет тонера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931712</ns3:sid>
+                                        <ns3:externalSid>17ac345e-9a40-4385-9719-15f30a30b18a</ns3:externalSid>
+                                        <ns3:qualityDescription>Черный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187083</ns3:sid>
+                                <ns3:externalSid>c6256b0d-df36-4f7c-8396-8168847b4f5d</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931713</ns3:sid>
+                                        <ns3:externalSid>b17d7fff-3fd0-4781-ac75-beb1cfeffe91</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4000</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1132.99</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>5.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5664.95</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285963</ns3:sid>
+                    <ns3:externalSid>0db0768f-8655-4139-bb52-b1e13324905f</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187084</ns3:sid>
+                                <ns3:externalSid>a8af87d7-cfb8-4fa0-aec9-fb7b9b544782</ns3:externalSid>
+                                <ns3:name>Картридж для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931714</ns3:sid>
+                                        <ns3:externalSid>1b9b353c-d709-495c-9673-ee7afdc1954a</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187085</ns3:sid>
+                                <ns3:externalSid>47f436fb-35b2-4a2e-b859-00827f8b171b</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931715</ns3:sid>
+                                        <ns3:externalSid>5dac9b8d-6039-4ed4-bf1a-e697805047b1</ns3:externalSid>
+                                        <ns3:qualityDescription>tn-217m или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187086</ns3:sid>
+                                <ns3:externalSid>5e49ed08-11f4-493f-9518-833507b52e4c</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931716</ns3:sid>
+                                        <ns3:externalSid>1758294c-5e24-4f8a-abc5-d6925ce5f545</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187087</ns3:sid>
+                                <ns3:externalSid>462c4dd8-b03a-476f-ac47-8c33f22d4cea</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931717</ns3:sid>
+                                        <ns3:externalSid>d8fd6132-4bc7-4a54-8788-6f61dede4f87</ns3:externalSid>
+                                        <ns3:qualityDescription>BROTHER HLL3230CDW</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187088</ns3:sid>
+                                <ns3:externalSid>e57c2832-1fbc-4e6d-81ce-133e430a92e5</ns3:externalSid>
+                                <ns3:name>Цвет тонера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931718</ns3:sid>
+                                        <ns3:externalSid>d94ed2b7-22d2-4bc4-bb3c-483d32462290</ns3:externalSid>
+                                        <ns3:qualityDescription>Пурпурный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187089</ns3:sid>
+                                <ns3:externalSid>e9d9d238-ad75-42ce-94ab-7686f9c245c0</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931719</ns3:sid>
+                                        <ns3:externalSid>0a659792-ff54-4785-a89b-8815e1cb16fc</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2300</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1191.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>5.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5955.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285964</ns3:sid>
+                    <ns3:externalSid>cce4778e-a3db-47e4-9eea-3ababb2dcd10</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187090</ns3:sid>
+                                <ns3:externalSid>a48db970-3e64-41dd-b893-d75cee15393b</ns3:externalSid>
+                                <ns3:name>Картридж для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931720</ns3:sid>
+                                        <ns3:externalSid>c0869dc0-b0ca-4586-bb40-18be97e9ae20</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187091</ns3:sid>
+                                <ns3:externalSid>553a3097-ac60-4dc8-8eb6-c3ea426b3911</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931721</ns3:sid>
+                                        <ns3:externalSid>e49a3985-1693-44c2-a90e-f74cd5188479</ns3:externalSid>
+                                        <ns3:qualityDescription>tn-217bk или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187092</ns3:sid>
+                                <ns3:externalSid>b46672c8-9f5a-442c-92aa-9c1d42f2dde9</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931722</ns3:sid>
+                                        <ns3:externalSid>35adff78-2ccf-4a84-8a0a-a67ed0c92be7</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187093</ns3:sid>
+                                <ns3:externalSid>71d68648-c40d-4097-af5d-b2c1e9533904</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931723</ns3:sid>
+                                        <ns3:externalSid>31e7e505-1abf-4c4f-bd91-febcc97a83c1</ns3:externalSid>
+                                        <ns3:qualityDescription>BROTHER HLL3230CDW</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187094</ns3:sid>
+                                <ns3:externalSid>329130b9-d2ad-41b8-882e-5b98ee7f149f</ns3:externalSid>
+                                <ns3:name>Цвет тонера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931724</ns3:sid>
+                                        <ns3:externalSid>081045db-5011-4ae9-a105-86a298b32a46</ns3:externalSid>
+                                        <ns3:qualityDescription>Черный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187095</ns3:sid>
+                                <ns3:externalSid>1cd7afbc-7cfb-445d-a94b-abef22555a9c</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931725</ns3:sid>
+                                        <ns3:externalSid>9b81e3fb-408b-45cc-a9a9-ed1d689977c2</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2300</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1183.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>11833.30</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285965</ns3:sid>
+                    <ns3:externalSid>7832e604-139d-4338-80fa-baab4eed9259</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187096</ns3:sid>
+                                <ns3:externalSid>6c146d90-7f90-44b3-ac7d-343be03d0e68</ns3:externalSid>
+                                <ns3:name>Картридж для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931726</ns3:sid>
+                                        <ns3:externalSid>201d5f57-a3d3-4357-a3b9-b19dd6da838d</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187097</ns3:sid>
+                                <ns3:externalSid>be85122e-78d8-4115-8d2f-a9fec117cd05</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931727</ns3:sid>
+                                        <ns3:externalSid>d3caad29-31e2-4283-9c97-91bde87655a9</ns3:externalSid>
+                                        <ns3:qualityDescription>tn-217y или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187098</ns3:sid>
+                                <ns3:externalSid>9aa992dd-f331-4a31-8353-eff0339cca03</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931728</ns3:sid>
+                                        <ns3:externalSid>d85db832-f224-4e67-8a21-50437dd08abc</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187099</ns3:sid>
+                                <ns3:externalSid>22e566a3-0dcd-4781-98aa-69b3f1edd8d8</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931729</ns3:sid>
+                                        <ns3:externalSid>2404a586-6325-4d2e-bbd1-fdaed388de03</ns3:externalSid>
+                                        <ns3:qualityDescription>BROTHER HLL3230CDW</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187100</ns3:sid>
+                                <ns3:externalSid>5142ef5d-3796-4110-8df5-5bfc30a04539</ns3:externalSid>
+                                <ns3:name>Цвет тонера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931730</ns3:sid>
+                                        <ns3:externalSid>ffdd0063-b694-4da7-acd0-4f093c6cd480</ns3:externalSid>
+                                        <ns3:qualityDescription>Желтый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187101</ns3:sid>
+                                <ns3:externalSid>a60c5c61-f778-4205-9990-8bcf630caf27</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931731</ns3:sid>
+                                        <ns3:externalSid>a662269a-951b-49df-955b-7e1cae96e2bd</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2300</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1191.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>5.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5955.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285966</ns3:sid>
+                    <ns3:externalSid>cfdb801d-cd41-462e-b4d3-7c75c6c907f4</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187102</ns3:sid>
+                                <ns3:externalSid>07d4c3fc-0320-4af0-a548-02c3807abe36</ns3:externalSid>
+                                <ns3:name>Картридж для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931732</ns3:sid>
+                                        <ns3:externalSid>d0558526-04a3-48e7-ae0f-c8e3e317b4cb</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187103</ns3:sid>
+                                <ns3:externalSid>0a8304f4-c613-4fa2-9d05-929d89bcd80e</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931733</ns3:sid>
+                                        <ns3:externalSid>26fd4581-3c79-433b-a10f-6f87e3d90fa3</ns3:externalSid>
+                                        <ns3:qualityDescription>tn-217c или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187104</ns3:sid>
+                                <ns3:externalSid>2ea9fdb8-0fb7-4c6a-bce9-211276cd4415</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931734</ns3:sid>
+                                        <ns3:externalSid>bddcbde5-de71-47e1-b903-c2ad61bcb759</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187105</ns3:sid>
+                                <ns3:externalSid>0c5a3725-0ba3-473a-b101-c25d79a6b793</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931735</ns3:sid>
+                                        <ns3:externalSid>07cb2fd9-c1da-42b0-bbc9-e0c4e8a9749d</ns3:externalSid>
+                                        <ns3:qualityDescription>BROTHER HLL3230CDW</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187106</ns3:sid>
+                                <ns3:externalSid>ebef974b-13d4-4f34-8dee-3a5e912c3572</ns3:externalSid>
+                                <ns3:name>Цвет тонера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931736</ns3:sid>
+                                        <ns3:externalSid>b6e56608-ed7c-4218-a8a7-c7d5cd6dac8d</ns3:externalSid>
+                                        <ns3:qualityDescription>Синий</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187107</ns3:sid>
+                                <ns3:externalSid>bdf4ff4a-31be-45ba-81fb-bcf25451f76a</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931737</ns3:sid>
+                                        <ns3:externalSid>ce38fbd4-afe1-49de-a13c-c54c9ce420f4</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2300</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1191.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>5.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5955.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285967</ns3:sid>
+                    <ns3:externalSid>11453da1-a11b-4c25-bc4c-21607b9641d2</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187108</ns3:sid>
+                                <ns3:externalSid>b32d0e31-9ba9-4cca-bff6-65bbde42c079</ns3:externalSid>
+                                <ns3:name>Фотобарабан для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931738</ns3:sid>
+                                        <ns3:externalSid>2430dce5-7bc6-46c1-afc5-8a51bc7c1075</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187109</ns3:sid>
+                                <ns3:externalSid>069dc5e6-216e-4939-bfee-cb43fd9037c3</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931739</ns3:sid>
+                                        <ns3:externalSid>8495cf34-b9ca-47a9-a2f0-913ad2bf0e64</ns3:externalSid>
+                                        <ns3:qualityDescription>DR-213CL или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187110</ns3:sid>
+                                <ns3:externalSid>099cf6d7-d2b3-45ff-b90b-8d5a256fe186</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931740</ns3:sid>
+                                        <ns3:externalSid>cd2b1d55-58c3-437b-afcd-16b996bdc7ac</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187111</ns3:sid>
+                                <ns3:externalSid>53f9da11-3328-4bed-a15b-574040e8a587</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931741</ns3:sid>
+                                        <ns3:externalSid>996cdd9e-c662-48e7-8384-92a743e8212c</ns3:externalSid>
+                                        <ns3:qualityDescription>Brother DCP-L3550CDW</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187112</ns3:sid>
+                                <ns3:externalSid>584e4637-81b0-443e-b7f0-85ee471e4e96</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931742</ns3:sid>
+                                        <ns3:externalSid>7e05e6e7-ff78-4541-9682-624b86aeb483</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>18000</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>2504.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>5.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>12520.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226285968</ns3:sid>
+                    <ns3:externalSid>85423780-f0b7-4037-810b-61a03c49fe27</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                        <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187113</ns3:sid>
+                                <ns3:externalSid>bea51c48-4f34-4c13-8443-923599402842</ns3:externalSid>
+                                <ns3:name>Фотобарабан для принтера</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931743</ns3:sid>
+                                        <ns3:externalSid>fe42520e-a301-4460-9564-ffedf5e7bf36</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187114</ns3:sid>
+                                <ns3:externalSid>3fc00aaf-ca5a-4ed4-a6bd-41437a712b0d</ns3:externalSid>
+                                <ns3:name>Модель</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931744</ns3:sid>
+                                        <ns3:externalSid>cc072bd8-79d3-480a-91ad-d992bf58682a</ns3:externalSid>
+                                        <ns3:qualityDescription>DR-2335 или эквивалент</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187115</ns3:sid>
+                                <ns3:externalSid>18f72a6e-131a-4460-b273-e15c2a37dcaf</ns3:externalSid>
+                                <ns3:name>Тип</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931745</ns3:sid>
+                                        <ns3:externalSid>f7ad5e97-2356-4122-a7f0-dad61b14ebb0</ns3:externalSid>
+                                        <ns3:qualityDescription>Оригинальный или совместимый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187116</ns3:sid>
+                                <ns3:externalSid>da77758f-af72-4e24-a055-60beeed89bcd</ns3:externalSid>
+                                <ns3:name>Совместимость</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931746</ns3:sid>
+                                        <ns3:externalSid>be996747-2aef-485f-b3d2-02667832a1ba</ns3:externalSid>
+                                        <ns3:qualityDescription>Brother HL-2340</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>338187117</ns3:sid>
+                                <ns3:externalSid>8cd30363-3f99-46e7-8ca7-870d7db57f51</ns3:externalSid>
+                                <ns3:name>Ресурс (при 5% заполнении страницы формата А4), страниц</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436931747</ns3:sid>
+                                        <ns3:externalSid>03c688ad-9181-4ec7-8ebc-e279b79e55ce</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>12000</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Картридж</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1182.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>10.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>11823.30</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>120192.33</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+    </notificationInfo>
+    <printFormFieldsInfo>
+        <is449Features>false</is449Features>
+    </printFormFieldsInfo>
+</ns8:epNotificationEZK2020>

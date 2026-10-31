@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44433438</id>
+    <externalId>krista.54900000.138595388773</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0351300026926000251</purchaseNumber>
+        <docNumber>№0351300026926000251</docNumber>
+        <plannedPublishDate>2026-10-30+07:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T15:07:53.091+07:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0351300026926000251</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Оказание услуг по подключению резервного канала связи с доступом в информационно-телекоммуникационную сеть Интернет</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03513000269</regNum>
+            <consRegistryNum>50220098</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ НОВОСИБИРСКОЙ ОБЛАСТИ "КЛИНИЧЕСКАЯ КОНСУЛЬТАТИВНО-ДИАГНОСТИЧЕСКАЯ ПОЛИКЛИНИКА № 27"</fullName>
+            <shortName>ГБУЗ НСО "ККДП № 27"</shortName>
+            <postAddress>630105, НОВОСИБИРСКАЯ ОБЛАСТЬ, Г. НОВОСИБИРСК, УЛ. РЕЛЬСОВАЯ, Д.4</postAddress>
+            <factAddress>630105, НОВОСИБИРСКАЯ ОБЛАСТЬ, Г. НОВОСИБИРСК, УЛ. РЕЛЬСОВАЯ, Д.4</factAddress>
+            <INN>5402118837</INN>
+            <KPP>540201001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>630105, НОВОСИБИРСКАЯ ОБЛАСТЬ, Г. НОВОСИБИРСК, УЛ. РЕЛЬСОВАЯ, Д.4</orgPostAddress>
+            <orgFactAddress>630105, НОВОСИБИРСКАЯ ОБЛАСТЬ, Г. НОВОСИБИРСК, УЛ. РЕЛЬСОВАЯ, Д.4</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Астапчик</ns3:lastName>
+                <ns3:firstName>Евгений</ns3:firstName>
+                <ns3:middleName>Евгеньевич</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>eeastapchik@mznso.ru</contactEMail>
+            <contactPhone>8-383-3049557</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0351300026926000251</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BD9015B7D68990B6F9866A7CCD6</ns3:publishedContentId>
+            <ns3:fileName>!Приложение № 1 ОНМЦК.docx</ns3:fileName>
+            <ns3:fileSize>30086</ns3:fileSize>
+            <ns3:docDescription>!Приложение № 1 ОНМЦК.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T11:07:10+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BD9015B7D68990B6F9866A7CCD6</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BD906DC7836A8DEE9C2A549ABC0</ns3:publishedContentId>
+            <ns3:fileName>!Приложение № 3 Проект контракта.docx</ns3:fileName>
+            <ns3:fileSize>144084</ns3:fileSize>
+            <ns3:docDescription>!Приложение № 3 Проект контракта.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T11:07:10+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BD906DC7836A8DEE9C2A549ABC0</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BD910F37BC6A447E4177ADBE9FA</ns3:publishedContentId>
+            <ns3:fileName>!Приложение № 2 Описание объекта закупки.docx</ns3:fileName>
+            <ns3:fileSize>37517</ns3:fileSize>
+            <ns3:docDescription>!Приложение № 2 Описание объекта закупки.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T11:07:10+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BD910F37BC6A447E4177ADBE9FA</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18BD90CFE7ED389B8807A35261B1E</ns3:publishedContentId>
+            <ns3:fileName>!Приложение № 4 Требования к составу заявки.docx</ns3:fileName>
+            <ns3:fileSize>30522</ns3:fileSize>
+            <ns3:docDescription>!Приложение № 4 Требования к составу заявки.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-30T11:07:10+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18BD90CFE7ED389B8807A35261B1E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-30T15:07:53+07:00</startDT>
+                <endDT>2026-11-09T08:00:00+07:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+07:00</biddingDate>
+            <summarizingDate>2026-11-11+07:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>358200.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03513000269</ns2:regNum>
+                    <ns2:consRegistryNum>50220098</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ НОВОСИБИРСКОЙ ОБЛАСТИ "КЛИНИЧЕСКАЯ КОНСУЛЬТАТИВНО-ДИАГНОСТИЧЕСКАЯ ПОЛИКЛИНИКА № 27"</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <amount>35820.00</amount>
+                    <account>
+                        <ns3:bik>015004950</ns3:bik>
+                        <ns3:settlementAccount>03224643500000005100</ns3:settlementAccount>
+                        <ns3:personalAccount>030130595</ns3:personalAccount>
+                        <ns3:creditOrgName>Сибирское ГУ Банка России // УФК по Новосибирской области г. Новосибирск</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810445370000043</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Обеспечение исполнения контракта предоставляется участником закупки в соответствии со ст. 96 Федерального закона от 05.04.2013 №44-ФЗ.Антидемпинговые меры применяются в соответствии со ст. 37 Федерального закона о 05.04.2013 №44-ФЗ.Условия независимой гарантии установлены в соответствии со ст. 45 Федерального закона от 05.04.2013 №44-ФЗ.</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>358200.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262540211883754020100102860016110244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>61.10</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги телекоммуникационные проводные</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>25402118837540201001</customerCode>
+                        <purchaseNumber>0286</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603513000269001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603513000269001000284</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-06-30+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>358200.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>358200.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22526020</sid>
+                                <externalSid>138595804657</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2026-12-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-01-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>59700.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>59700.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>59700.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>59700.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>59700.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                                <financeInfo>
+                                    <total>59700.00</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>59700.00</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22526021</sid>
+                                <externalSid>138595804661</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-02-28+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>59700.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>59700.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>59700.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>59700.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>59700.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                                <financeInfo>
+                                    <total>59700.00</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>59700.00</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22526022</sid>
+                                <externalSid>138595804662</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-02-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-03-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>59700.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>59700.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>59700.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>59700.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>59700.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                                <financeInfo>
+                                    <total>59700.00</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>59700.00</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22526023</sid>
+                                <externalSid>138595804663</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-03-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-04-30+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>59700.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>59700.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>59700.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>59700.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>59700.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                                <financeInfo>
+                                    <total>59700.00</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>59700.00</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22526024</sid>
+                                <externalSid>138595804664</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-04-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-05-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>59700.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>59700.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>59700.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>59700.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>59700.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                                <financeInfo>
+                                    <total>59700.00</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>59700.00</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                            <stageInfo>
+                                <sid>22526025</sid>
+                                <externalSid>138595804665</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-05-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-06-30+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>59700.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>59700.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>59700.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>59700.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>59700.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                                <financeInfo>
+                                    <total>59700.00</total>
+                                    <currentYear>0.00</currentYear>
+                                    <firstYear>59700.00</firstYear>
+                                    <secondYear>0.00</secondYear>
+                                    <subsecYears>0.00</subsecYears>
+                                </financeInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62460205</ns3:sid>
+                            <ns3:externalSid>138594872196</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>f335cfaf-fe39-423a-a6be-61087e84d894</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Новосибирская, г.о. город Новосибирск, г. Новосибирск, ул. Рельсовая, д. 4</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>– место нахождение Заказчика. Услуги оказываются по адресам, указанным в таблице №1 к описанию объекта закупки.</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226225520</ns3:sid>
+                    <ns3:externalSid>138595472642</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>61.10.40.000-00000246</ns2:code>
+                        <ns2:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns2:name>
+                        <ns2:versionId>149863</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337959462</ns3:sid>
+                                <ns3:externalSid>138595472595</ns3:externalSid>
+                                <ns3:code>508e141d-b</ns3:code>
+                                <ns3:name>Пропускная способность</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626655</ns3:sid>
+                                        <ns3:externalSid>138595472595</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>2545</ns2:code>
+                                            <ns2:nationalCode>Мбит/с</ns2:nationalCode>
+                                            <ns2:name>Мегабит в секунду</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>60</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337959461</ns3:sid>
+                                <ns3:externalSid>138595472596</ns3:externalSid>
+                                <ns3:name>Адрес подключения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626654</ns3:sid>
+                                        <ns3:externalSid>138595472596</ns3:externalSid>
+                                        <ns3:qualityDescription>630105 г. Новосибирск, ул. Рельсовая, д. 4</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с потребностью адрес подключения необходимо обозначить в структурном виде</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>61.10.43.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по широкополосному доступу к информационно-коммуникационной сети Интернет по проводным сетям</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>362</ns2:code>
+                        <ns2:nationalCode>мес</ns2:nationalCode>
+                        <ns2:name>Месяц</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>12600.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>75600.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226225521</ns3:sid>
+                    <ns3:externalSid>138595472643</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>61.10.40.000-00000246</ns2:code>
+                        <ns2:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns2:name>
+                        <ns2:versionId>149863</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337959464</ns3:sid>
+                                <ns3:externalSid>138595472597</ns3:externalSid>
+                                <ns3:code>508e141d-b</ns3:code>
+                                <ns3:name>Пропускная способность</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626657</ns3:sid>
+                                        <ns3:externalSid>138595472597</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>2545</ns2:code>
+                                            <ns2:nationalCode>Мбит/с</ns2:nationalCode>
+                                            <ns2:name>Мегабит в секунду</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>60</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337959463</ns3:sid>
+                                <ns3:externalSid>138595472598</ns3:externalSid>
+                                <ns3:name>Адрес подключения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626656</ns3:sid>
+                                        <ns3:externalSid>138595472598</ns3:externalSid>
+                                        <ns3:qualityDescription>630105 г. Новосибирск, ул. Ереванская,33</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с потребностью адрес подключения необходимо обозначить в структурном виде</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>61.10.43.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по широкополосному доступу к информационно-коммуникационной сети Интернет по проводным сетям</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>362</ns2:code>
+                        <ns2:nationalCode>мес</ns2:nationalCode>
+                        <ns2:name>Месяц</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>12600.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>75600.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226225522</ns3:sid>
+                    <ns3:externalSid>138595472644</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>61.10.40.000-00000250</ns2:code>
+                        <ns2:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns2:name>
+                        <ns2:versionId>149867</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337959466</ns3:sid>
+                                <ns3:externalSid>138595472599</ns3:externalSid>
+                                <ns3:code>508e141d-b</ns3:code>
+                                <ns3:name>Пропускная способность</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626659</ns3:sid>
+                                        <ns3:externalSid>138595472599</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>2545</ns2:code>
+                                            <ns2:nationalCode>Мбит/с</ns2:nationalCode>
+                                            <ns2:name>Мегабит в секунду</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>20</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337959465</ns3:sid>
+                                <ns3:externalSid>138595472600</ns3:externalSid>
+                                <ns3:name>Адрес подключения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626658</ns3:sid>
+                                        <ns3:externalSid>138595472600</ns3:externalSid>
+                                        <ns3:qualityDescription>630082 г. Новосибирск, ул. Дмитрия Донского, д. 32</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с потребностью адрес подключения необходимо обозначить в структурном виде</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>61.10.43.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по широкополосному доступу к информационно-коммуникационной сети Интернет по проводным сетям</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>362</ns2:code>
+                        <ns2:nationalCode>мес</ns2:nationalCode>
+                        <ns2:name>Месяц</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>6500.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>39000.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226225523</ns3:sid>
+                    <ns3:externalSid>138595472645</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>61.10.40.000-00000251</ns2:code>
+                        <ns2:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns2:name>
+                        <ns2:versionId>149872</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337959468</ns3:sid>
+                                <ns3:externalSid>138595481451</ns3:externalSid>
+                                <ns3:code>508e141d-b</ns3:code>
+                                <ns3:name>Пропускная способность</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626661</ns3:sid>
+                                        <ns3:externalSid>138595481451</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>2545</ns2:code>
+                                            <ns2:nationalCode>Мбит/с</ns2:nationalCode>
+                                            <ns2:name>Мегабит в секунду</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>10</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337959467</ns3:sid>
+                                <ns3:externalSid>138595481452</ns3:externalSid>
+                                <ns3:name>Адрес подключения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626660</ns3:sid>
+                                        <ns3:externalSid>138595481452</ns3:externalSid>
+                                        <ns3:qualityDescription>630001 г. Новосибирск, ул. Холодильная, д. 16</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с потребностью адрес подключения необходимо обозначить в структурном виде</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>61.10.43.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по широкополосному доступу к информационно-коммуникационной сети Интернет по проводным сетям</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>362</ns2:code>
+                        <ns2:nationalCode>мес</ns2:nationalCode>
+                        <ns2:name>Месяц</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4000.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>24000.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226225524</ns3:sid>
+                    <ns3:externalSid>138595472646</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>61.10.40.000-00000251</ns2:code>
+                        <ns2:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns2:name>
+                        <ns2:versionId>149872</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337959470</ns3:sid>
+                                <ns3:externalSid>138595481453</ns3:externalSid>
+                                <ns3:code>508e141d-b</ns3:code>
+                                <ns3:name>Пропускная способность</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626663</ns3:sid>
+                                        <ns3:externalSid>138595481453</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>2545</ns2:code>
+                                            <ns2:nationalCode>Мбит/с</ns2:nationalCode>
+                                            <ns2:name>Мегабит в секунду</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>10</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337959469</ns3:sid>
+                                <ns3:externalSid>138595481454</ns3:externalSid>
+                                <ns3:name>Адрес подключения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626662</ns3:sid>
+                                        <ns3:externalSid>138595481454</ns3:externalSid>
+                                        <ns3:qualityDescription>630075 г. Новосибирск, ул. Дуси Ковальчук, д. 406</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с потребностью адрес подключения необходимо обозначить в структурном виде</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>61.10.43.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по широкополосному доступу к информационно-коммуникационной сети Интернет по проводным сетям</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>362</ns2:code>
+                        <ns2:nationalCode>мес</ns2:nationalCode>
+                        <ns2:name>Месяц</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4000.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>24000.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226225525</ns3:sid>
+                    <ns3:externalSid>138595472647</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>61.10.40.000-00000251</ns2:code>
+                        <ns2:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns2:name>
+                        <ns2:versionId>149872</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337959472</ns3:sid>
+                                <ns3:externalSid>138595481456</ns3:externalSid>
+                                <ns3:code>508e141d-b</ns3:code>
+                                <ns3:name>Пропускная способность</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626665</ns3:sid>
+                                        <ns3:externalSid>138595481456</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>2545</ns2:code>
+                                            <ns2:nationalCode>Мбит/с</ns2:nationalCode>
+                                            <ns2:name>Мегабит в секунду</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>10</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337959471</ns3:sid>
+                                <ns3:externalSid>138595481455</ns3:externalSid>
+                                <ns3:name>Адрес подключения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626664</ns3:sid>
+                                        <ns3:externalSid>138595481455</ns3:externalSid>
+                                        <ns3:qualityDescription>630001 г. Новосибирск, ул. Сухарная, д. 68</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с потребностью адрес подключения необходимо обозначить в структурном виде</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>61.10.43.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по широкополосному доступу к информационно-коммуникационной сети Интернет по проводным сетям</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>362</ns2:code>
+                        <ns2:nationalCode>мес</ns2:nationalCode>
+                        <ns2:name>Месяц</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4000.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>24000.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226225526</ns3:sid>
+                    <ns3:externalSid>138595472648</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>61.10.40.000-00000251</ns2:code>
+                        <ns2:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns2:name>
+                        <ns2:versionId>149872</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337959474</ns3:sid>
+                                <ns3:externalSid>138595481458</ns3:externalSid>
+                                <ns3:code>508e141d-b</ns3:code>
+                                <ns3:name>Пропускная способность</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626667</ns3:sid>
+                                        <ns3:externalSid>138595481458</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>2545</ns2:code>
+                                            <ns2:nationalCode>Мбит/с</ns2:nationalCode>
+                                            <ns2:name>Мегабит в секунду</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>10</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337959473</ns3:sid>
+                                <ns3:externalSid>138595481457</ns3:externalSid>
+                                <ns3:name>Адрес подключения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626666</ns3:sid>
+                                        <ns3:externalSid>138595481457</ns3:externalSid>
+                                        <ns3:qualityDescription>630082 г. Новосибирск, ул. Вавилова, д. 2</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с потребностью адрес подключения необходимо обозначить в структурном виде</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>61.10.43.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по широкополосному доступу к информационно-коммуникационной сети Интернет по проводным сетям</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>362</ns2:code>
+                        <ns2:nationalCode>мес</ns2:nationalCode>
+                        <ns2:name>Месяц</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4000.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>24000.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226225527</ns3:sid>
+                    <ns3:externalSid>138595472649</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>61.10.40.000-00000251</ns2:code>
+                        <ns2:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns2:name>
+                        <ns2:versionId>149872</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337959476</ns3:sid>
+                                <ns3:externalSid>138595481460</ns3:externalSid>
+                                <ns3:code>508e141d-b</ns3:code>
+                                <ns3:name>Пропускная способность</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626669</ns3:sid>
+                                        <ns3:externalSid>138595481460</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>2545</ns2:code>
+                                            <ns2:nationalCode>Мбит/с</ns2:nationalCode>
+                                            <ns2:name>Мегабит в секунду</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>10</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337959475</ns3:sid>
+                                <ns3:externalSid>138595481459</ns3:externalSid>
+                                <ns3:name>Адрес подключения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626668</ns3:sid>
+                                        <ns3:externalSid>138595481459</ns3:externalSid>
+                                        <ns3:qualityDescription>630123 г. Новосибирск, ул. Лебедевского, д. 2/1</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с потребностью адрес подключения необходимо обозначить в структурном виде</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>61.10.43.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по широкополосному доступу к информационно-коммуникационной сети Интернет по проводным сетям</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>362</ns2:code>
+                        <ns2:nationalCode>мес</ns2:nationalCode>
+                        <ns2:name>Месяц</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4000.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>24000.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226225528</ns3:sid>
+                    <ns3:externalSid>138595472650</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>61.10.40.000-00000251</ns2:code>
+                        <ns2:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns2:name>
+                        <ns2:versionId>149872</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337959478</ns3:sid>
+                                <ns3:externalSid>138595481462</ns3:externalSid>
+                                <ns3:code>508e141d-b</ns3:code>
+                                <ns3:name>Пропускная способность</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626671</ns3:sid>
+                                        <ns3:externalSid>138595481462</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>2545</ns2:code>
+                                            <ns2:nationalCode>Мбит/с</ns2:nationalCode>
+                                            <ns2:name>Мегабит в секунду</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>10</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337959477</ns3:sid>
+                                <ns3:externalSid>138595481461</ns3:externalSid>
+                                <ns3:name>Адрес подключения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626670</ns3:sid>
+                                        <ns3:externalSid>138595481461</ns3:externalSid>
+                                        <ns3:qualityDescription>630047 г. Новосибирск, ул. Кузьмы Минина, д. 24</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с потребностью адрес подключения необходимо обозначить в структурном виде</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>61.10.43.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по широкополосному доступу к информационно-коммуникационной сети Интернет по проводным сетям</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>362</ns2:code>
+                        <ns2:nationalCode>мес</ns2:nationalCode>
+                        <ns2:name>Месяц</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4000.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>24000.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226225529</ns3:sid>
+                    <ns3:externalSid>138595481501</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>61.10.40.000-00000251</ns2:code>
+                        <ns2:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns2:name>
+                        <ns2:versionId>149872</ns2:versionId>
+                        <ns2:versionNumber>4</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337959480</ns3:sid>
+                                <ns3:externalSid>138595481464</ns3:externalSid>
+                                <ns3:code>508e141d-b</ns3:code>
+                                <ns3:name>Пропускная способность</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626673</ns3:sid>
+                                        <ns3:externalSid>138595481464</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>2545</ns2:code>
+                                            <ns2:nationalCode>Мбит/с</ns2:nationalCode>
+                                            <ns2:name>Мегабит в секунду</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>10</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337959479</ns3:sid>
+                                <ns3:externalSid>138595481463</ns3:externalSid>
+                                <ns3:name>Адрес подключения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436626672</ns3:sid>
+                                        <ns3:externalSid>138595481463</ns3:externalSid>
+                                        <ns3:qualityDescription>630049 г. Новосибирск, ул. Дуси Ковальчук, д. 189</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В соответствии с потребностью адрес подключения необходимо обозначить в структурном виде</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>61.10.43.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по широкополосному доступу к информационно-коммуникационной сети Интернет по проводным сетям</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по доступу к информационно-коммуникационной сети Интернет</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>362</ns2:code>
+                        <ns2:nationalCode>мес</ns2:nationalCode>
+                        <ns2:name>Месяц</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>4000.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>24000.00</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>358200.00</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

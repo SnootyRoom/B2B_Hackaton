@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44409075</id>
+    <externalId>krista.71900000.26149797969</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0366200035626006904</purchaseNumber>
+        <docNumber>№0366200035626006904</docNumber>
+        <plannedPublishDate>2026-10-28+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-28T15:33:46.315+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0366200035626006904</href>
+        <placingWay>
+            <ns2:code>EAB20</ns2:code>
+            <ns2:name>Электронный аукцион на проведение работ по строительству, реконструкции, кап. ремонту, сносу объекта кап. строительства в соответствии с п. 8 ч. 1 ст. 33 Закона № 44-ФЗ</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Выполнение работ по капитальному ремонту системы отопления здания учебного корпуса ГПОУ ТО "Тульский педагогический колледж, расположенного по адресу: г. Тула, ул.Староникитская, д. 38Б</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03662000356</regNum>
+            <consRegistryNum>70220456</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ ТУЛЬСКОЙ ОБЛАСТИ "ЦЕНТР ОРГАНИЗАЦИИ ЗАКУПОК"</fullName>
+            <shortName>ГКУ ТО "ЦОЗ"</shortName>
+            <postAddress>300041, Тульская область , Г ТУЛА, ПР-КТ ЛЕНИНА, ЗД. 2</postAddress>
+            <factAddress>300041, Тульская область , Г ТУЛА, ПР-КТ ЛЕНИНА, ЗД. 2</factAddress>
+            <INN>7107541446</INN>
+            <KPP>710701001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>AI</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>300041, Тульская область , Г ТУЛА, ПР-КТ ЛЕНИНА, ЗД. 2</orgPostAddress>
+            <orgFactAddress>300041, Тульская область , Г ТУЛА, ПР-КТ ЛЕНИНА, ЗД. 2</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Иванов</ns3:lastName>
+                <ns3:firstName>Александр</ns3:firstName>
+                <ns3:middleName>Павлович</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>aleksandr.ivanov3@tularegion.ru</contactEMail>
+            <contactPhone>8-4872-245157-5147</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0366200035626006904</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1827EB5167CDE8A020BAE1086A802</ns3:publishedContentId>
+            <ns3:fileName>ОНМЦК.xlsx</ns3:fileName>
+            <ns3:fileSize>24823</ns3:fileSize>
+            <ns3:docDescription>ОНМЦК.xlsx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:31:59+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1827EB5167CDE8A020BAE1086A802</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1827EB2747338BC325AFB657471ED</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта.doc</ns3:fileName>
+            <ns3:fileSize>434688</ns3:fileSize>
+            <ns3:docDescription>Проект контракта.doc</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:31:59+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1827EB2747338BC325AFB657471ED</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1827ED607746090C6B379B2640FA6</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки.docx</ns3:fileName>
+            <ns3:fileSize>38610</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:31:59+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1827ED607746090C6B379B2640FA6</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1827EA89E7DFBA3D76F568781497C</ns3:publishedContentId>
+            <ns3:fileName>Аукцион. Требования к заявке 2026.108496.docx</ns3:fileName>
+            <ns3:fileSize>31805</ns3:fileSize>
+            <ns3:docDescription>Аукцион. Требования к заявке 2026.108496.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:31:59+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1827EA89E7DFBA3D76F568781497C</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1827EC6C67AC9A7BB02F823ADA5A5</ns3:publishedContentId>
+            <ns3:fileName>Контактная информация заказчика для закупки.doc</ns3:fileName>
+            <ns3:fileSize>76288</ns3:fileSize>
+            <ns3:docDescription>Контактная информация заказчика для закупки.doc</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:31:59+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1827EC6C67AC9A7BB02F823ADA5A5</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1827EC8E776F5971EF25BEF530D08</ns3:publishedContentId>
+            <ns3:fileName>Экспертиза.pdf</ns3:fileName>
+            <ns3:fileSize>6364531</ns3:fileSize>
+            <ns3:docDescription>Экспертиза.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:31:59+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1827EC8E776F5971EF25BEF530D08</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1827EABE17548AA6FC93661E6A73D</ns3:publishedContentId>
+            <ns3:fileName>Дефектный акт.pdf</ns3:fileName>
+            <ns3:fileSize>2957096</ns3:fileSize>
+            <ns3:docDescription>Дефектный акт.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:31:59+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1827EABE17548AA6FC93661E6A73D</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1827EB75A7BC99B2794B69069AF6B</ns3:publishedContentId>
+            <ns3:fileName>Смета.pdf</ns3:fileName>
+            <ns3:fileSize>8190304</ns3:fileSize>
+            <ns3:docDescription>Смета.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-28T15:31:59+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1827EB75A7BC99B2794B69069AF6B</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>FPD</ns2:code>
+                <ns2:name>Файлы проектной документации</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-28T15:33:46+03:00</startDT>
+                <endDT>2026-11-09T08:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+03:00</biddingDate>
+            <summarizingDate>2026-11-11+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>3863408.98</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03662000260</ns2:regNum>
+                    <ns2:consRegistryNum>70201392</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ТУЛЬСКОЙ ОБЛАСТИ "ТУЛЬСКИЙ ПЕДАГОГИЧЕСКИЙ КОЛЛЕДЖ"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>38634.09</amount>
+                    <account>
+                        <ns3:bik>017003983</ns3:bik>
+                        <ns3:settlementAccount>03224643700000006600</ns3:settlementAccount>
+                        <ns3:personalAccount>103120008</ns3:personalAccount>
+                        <ns3:creditOrgName>ОТДЕЛЕНИЕ ТУЛА БАНКА РОССИИ//УФК ПО ТУЛЬСКОЙ ОБЛАСТИ г Тула</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810445370000059</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Денежные средства, предназначенные для обеспечения заявок, участники закупки вносят на банковский счет, открытый в банке, включенном в Перечень, утвержденный распоряжением Правительством РФ от 13.07.2018 № 1451-р. Участники закупки, зарегистрированные на территории государства — члена ЕАЭС (кроме России) вносят денежные средства, предназначенные для обеспечения заявок, на счет, который указан в  извещении, и на котором в соответствии с законодательством РФ учитываются операции со средствами, поступающими заказчику. Денежные средства, внесенные участниками закупки, зарегистрированными на территории государства—члена ЕАЭС (кроме России) в качестве обеспечения заявки на участие в закупке, заказчик возвращает не позднее 5 рабочих дней со дня, следующего за днем наступления случаев, предусмотренных пунктами 1-6 части 10 статьи 44 Закона № 44-ФЗ. Возврат денежных средств участнику закупки не осуществляется в случае, предусмотренном пунктом 7 части 10 статьи 44 Закона № 44-ФЗ. Независимая гарантия, предоставляемая в качестве обеспечения заявки, должна быть составлена по утвержденной постановлением Правительства РФ от 08.11.2013 № 1005 типовой форме на условиях, определенных гражданским законодательством и статьей 45 ‎Закона № 44-ФЗ. Государственные, муниципальные учреждения не предоставляют обеспечение подаваемых ими заявок на участие в закупках.</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>017003983</ns3:bik>
+                        <ns3:settlementAccount>03224643700000006600</ns3:settlementAccount>
+                        <ns3:personalAccount>103120008</ns3:personalAccount>
+                        <ns3:creditOrgName>ОТДЕЛЕНИЕ ТУЛА БАНКА РОССИИ//УФК ПО ТУЛЬСКОЙ ОБЛАСТИ г Тула</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810445370000059</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Положения об обеспечении исполнения контракта не применяются в случае заключения контракта с участником закупки, который является казенным учреждением. Участник закупки, с которым заключается контракт, предоставляет обеспечение исполнения контракта любым из двух способов: 1) внесение денежных средств на счет заказчика, 2) предоставление независимой гарантии. Независимая гарантия, предоставляемая в качестве обеспечения контракта, должна быть составлена по утвержденной постановлением Правительства РФ от 08.11.2013 № 1005 типовой форме на условиях, определенных гражданским законодательством и статьей 45 ‎Закона № 44-ФЗ. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются участником закупки, с которым заключается контракт, самостоятельно. Срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Закона № 44-ФЗ. В случае, если предложенные в заявке участника закупки цена, сумма цен единиц товара, работы, услуги снижены на двадцать пять и более процентов по отношению к начальной (максимальной) цене контракта, начальной сумме цен единиц товара, работы, услуги, участник закупки, с которым заключается контракт, предоставляет обеспечение исполнения контракта с учетом положений статьи 37 Закона № 44-ФЗ. Участник закупки, с которым заключается контракт по результатам закупки в соответствии с пунктом 1 части 1 статьи 30 Закона №44-ФЗ, освобождается от предоставления обеспечения исполнения контракта, в том числе с учетом положений статьи 37 Закона № 44-ФЗ, согласно части 8.1 статьи 96 Закона № 44-ФЗ</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>3863408.98</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262710703101171070100100310014120243</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>41.20</ns2:OKPDCode>
+                                <ns2:OKPDName>Здания и работы по возведению зданий</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>243</ns2:code>
+                                <ns2:name>Закупка товаров, работ, услуг в целях капитального ремонта государственного (муниципального) имущества</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>27107031011710701001</customerCode>
+                        <purchaseNumber>0031</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603662000260001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603662000260001000036</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-30+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>3863408.98</total>
+                                <currentYear>3863408.98</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22482808</sid>
+                                <externalSid>26154843701</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-30+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>3863408.98</total>
+                                        <currentYear>3863408.98</currentYear>
+                                        <firstYear>0.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>243</ns2:code>
+                                                <ns2:name>Закупка товаров, работ, услуг в целях капитального ремонта государственного (муниципального) имущества</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>3863408.98</ns3:total>
+                                                <ns3:currentYear>3863408.98</ns3:currentYear>
+                                                <ns3:firstYear>0.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>3863408.98</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62410867</ns3:sid>
+                            <ns3:externalSid>26150169715</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>18b88cb8-30ba-4b73-8eb1-af2e4969f4c1</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Тульская, г.о. город Тула, г. Тула, ул. Староникитская, д. 38Б</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyServiceRequirement>-</warrantyServiceRequirement>
+                    <manufacturersWarrantyRequirement>-</manufacturersWarrantyRequirement>
+                    <warrantyTerm>В соответствии с п. 6 Проекта контракта</warrantyTerm>
+                </warrantyInfo>
+                <provisionWarranty>
+                    <ns3:amount>115902.27</ns3:amount>
+                    <ns3:part>3.0</ns3:part>
+                    <ns3:procedureInfo>Положения об обеспечении гарантийных обязательств не применяются в случае заключения контракта с участником закупки, который является казенным учреждением. Участник закупки, с которым заключается контракт, предоставляет обеспечение гарантийных обязательств любым из двух способов: 1) внесение денежных средств на счет заказчика, 2) предоставление независимой гарантии. Независимая гарантия, предоставляемая в качестве обеспечения гарантийных обязательств, должна быть составлена по утвержденной постановлением Правительства РФ от 08.11.2013 № 1005 типовой форме на условиях, определенных гражданским законодательством и статьей 45 ‎Закона № 44-ФЗ. Способ обеспечения гарантийных обязательств, срок действия независимой гарантии определяются участником закупки, с которым заключается контракт, самостоятельно. Срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Закона № 44-ФЗ. Участник закупки, с которым заключается контракт по результатам закупки в соответствии с пунктом 1 части 1 статьи 30 Закона №44-ФЗ, освобождается от предоставления обеспечения гарантийных обязательств, в том числе с учетом положений статьи 37 Закона № 44-ФЗ, согласно части 8.1 статьи 96 Закона № 44-ФЗ</ns3:procedureInfo>
+                    <ns3:account>
+                        <ns3:bik>017003983</ns3:bik>
+                        <ns3:settlementAccount>03224643700000006600</ns3:settlementAccount>
+                        <ns3:personalAccount>103120008</ns3:personalAccount>
+                        <ns3:creditOrgName>ОТДЕЛЕНИЕ ТУЛА БАНКА РОССИИ//УФК ПО ТУЛЬСКОЙ ОБЛАСТИ г Тула</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810445370000059</ns3:corrAccountNumber>
+                    </ns3:account>
+                </provisionWarranty>
+                <addInfo>Сроки выполнения работ: в течение 30 (тридцати) календарных дней с даты заключение контракта.
+Срок действия контракта: с даты его подписания и действует до «30» декабря 2026г.</addInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226004675</ns3:sid>
+                    <ns3:externalSid>26150129842</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>41.20.40.000-00000020</ns2:code>
+                        <ns2:name>Выполнение работ по капитальному ремонту объекта капитального строительства в сфере образования</ns2:name>
+                        <ns2:versionId>147017</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>41.20.40</ns2:OKPDCode>
+                            <ns2:OKPDName>Работы строительные по возведению нежилых зданий и сооружений (работы по строительству новых объектов, возведению пристроек, реконструкции и ремонту зданий)</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Выполнение работ по капитальному ремонту объекта капитального строительства в сфере образования</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03662000260</ns2:regNum>
+                                <ns2:consRegistryNum>70201392</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ТУЛЬСКОЙ ОБЛАСТИ "ТУЛЬСКИЙ ПЕДАГОГИЧЕСКИЙ КОЛЛЕДЖ"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>1</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>3863408.98</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>3863408.98</ns3:sum>
+                    <ns3:type>WORK</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>3863408.98</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

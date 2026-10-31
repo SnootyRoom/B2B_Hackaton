@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44387176</id>
+    <externalId>krista.02800000.56741143140</externalId>
+    <versionNumber>2</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0801200000626000053</purchaseNumber>
+        <docNumber>№ИИ1</docNumber>
+        <plannedPublishDate>2026-10-27+05:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-27T12:16:44.112+05:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0801200000626000053</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_MMVB</ns2:code>
+            <ns2:name>Электронная торговая площадка «Фабрикант»</ns2:name>
+            <ns2:url>https://www.fabrikant.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Установка элементов освещения на пешеходных переходах, автобусных остановках, на пересечениях и примыканиях к автомобильным дорогам общего пользования регионального и межмуниципального значения Республики Башкортостан с последующим содержанием.</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>08012000006</regNum>
+            <consRegistryNum>802У1738</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ УПРАВЛЕНИЕ ДОРОЖНОГО ХОЗЯЙСТВА РЕСПУБЛИКИ БАШКОРТОСТАН</fullName>
+            <shortName>ГКУ УДХ РБ</shortName>
+            <postAddress>450078, Республика Башкортостан , Г. УФА, УЛ. КИРОВА, Д.128, К.А</postAddress>
+            <factAddress>450078, Республика Башкортостан , Г. УФА, УЛ. КИРОВА, Д.128, К.А</factAddress>
+            <INN>0274162934</INN>
+            <KPP>027401001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>450078, Республика Башкортостан , Г. УФА, УЛ. КИРОВА, Д.128, К.А</orgPostAddress>
+            <orgFactAddress>450078, Республика Башкортостан , Г. УФА, УЛ. КИРОВА, Д.128, К.А</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Усанова</ns3:lastName>
+                <ns3:firstName>Наталья</ns3:firstName>
+                <ns3:middleName>Николаевна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>udh@udhrb.ru</contactEMail>
+            <contactPhone>7-347-2247282</contactPhone>
+            <addInfo>КОНТАКТНАЯ ИНФОРМАЦИЯ:&#13;
+Заказчик : ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ УПРАВЛЕНИЕ ДОРОЖНОГО ХОЗЯЙСТВА РЕСПУБЛИКИ БАШКОРТОСТАН;&#13;
+Контактная информация : Местонахождение: 450078, Республика Башкортостан , Г. УФА, УЛ. КИРОВА, Д.128, К.А; Телефон: 7-347-2247250; E-mail: zakupki@udhrb.ru;&#13;
+&#13;
+Контактное лицо заказчика: Назмутдинов Талгат Ришатович;&#13;
+Номер контактного телефона: 7-347-2247280; E-mail: od@udhrb.ru;&#13;
+</addInfo>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0801200000626000053</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17C364A0671BBA983DC5E35DCDE6E</ns3:publishedContentId>
+            <ns3:fileName>Расчет обоснования цены.rar.zip</ns3:fileName>
+            <ns3:fileSize>509185</ns3:fileSize>
+            <ns3:docDescription>Расчет обоснования цены.rar.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-27T10:15:15+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17C364A0671BBA983DC5E35DCDE6E</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17C36518479B9941A2BDF232C8033</ns3:publishedContentId>
+            <ns3:fileName>Проект ГК.rar.zip</ns3:fileName>
+            <ns3:fileSize>132598</ns3:fileSize>
+            <ns3:docDescription>Проект ГК.rar.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-27T10:15:15+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17C36518479B9941A2BDF232C8033</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17C366CA77D5E99F1BEC995E3CD71</ns3:publishedContentId>
+            <ns3:fileName>Описание закупки.rar.zip</ns3:fileName>
+            <ns3:fileSize>30939</ns3:fileSize>
+            <ns3:docDescription>Описание закупки.rar.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-27T10:15:15+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17C366CA77D5E99F1BEC995E3CD71</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A17C3668567B509935B702C9CAD4FF</ns3:publishedContentId>
+            <ns3:fileName>Требование к содержанию и составу заявки.docx.zip</ns3:fileName>
+            <ns3:fileSize>152012</ns3:fileSize>
+            <ns3:docDescription>Требование к содержанию и составу заявки.docx.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-27T10:15:15+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A17C3668567B509935B702C9CAD4FF</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-26T16:50:30+05:00</startDT>
+                <endDT>2026-11-03T09:00:00+05:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-03+05:00</biddingDate>
+            <summarizingDate>2026-11-06+05:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>1545693.31</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>08012000006</ns2:regNum>
+                    <ns2:consRegistryNum>802У1738</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ УПРАВЛЕНИЕ ДОРОЖНОГО ХОЗЯЙСТВА РЕСПУБЛИКИ БАШКОРТОСТАН</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>15456.93</amount>
+                    <account>
+                        <ns3:bik>018073401</ns3:bik>
+                        <ns3:settlementAccount>03222643800000000100</ns3:settlementAccount>
+                        <ns3:personalAccount>05121160010</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 6 УГУ Банка России//УФК по Республике Башкортостан, г Уфа</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810045370000067</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Обеспечение заявки предоставляется в виде независимой гарантии или путем внесения на счет денежных средств. Способ обеспечения определяется участником закупки самостоятельно. Денежные средства, предназначенные для обеспечения заявок, вносятся участниками закупок на специальные счета, открытые ими в банках, перечень которых установлен Распоряжением Правительства РФ от 13.07.2018 № 1451-р. Блокирование денежных средств, внесенных участником закупки в качестве обеспечения заявки, осуществляется в порядке, установленном ст. 44 Закона № 44-ФЗ. Независимая гарантия должна отвечать требованиям ст. 45 Закона № 44-ФЗ. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок. Участник закупки для подачи заявки выбирает с использованием электронной площадки способ обеспечения заявки путем указания реквизитов специального счета или указания номера реестровой записи из реестра независимых гарантий, размещенного в ЕИС. Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена Евразийского экономического союза, за исключением Российской Федерации, или физическими лицами, являющимися гражданами государства - члена Евразийского экономического союза, за исключением Российской Федерации (далее - участники закупки), вправе предоставить обеспечение заявок в виде денежных средств на счет, указанный заказчиком в извещении об осуществлении закупки, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику (Постановление Правительства РФ от 10.04.2023 № 579).</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>018073401</ns3:bik>
+                        <ns3:settlementAccount>03222643800000000100</ns3:settlementAccount>
+                        <ns3:personalAccount>05121160010</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 6 УГУ Банка России//УФК по Республике Башкортостан, г Уфа</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810045370000067</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона 44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Федерального закона 44-ФЗ. Контракт заключается после предоставления участником закупки обеспечения исполнения контракта.</procedureInfo>
+                    <part>10.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>1545693.31</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262027416293402740100101840024211244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>42.11</ns2:OKPDCode>
+                                <ns2:OKPDName>Дороги автомобильные и автомагистрали; строительные работы по строительству автомобильных дорог и автомагистралей</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>20274162934027401001</customerCode>
+                        <purchaseNumber>0184</purchaseNumber>
+                        <purchaseOrderNumber>002</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202608012000006001</ns3:plan2020Number>
+                        <ns3:position2020Number>202608012000006001000175</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>01021251</ns2:code>
+                                    <ns2:name>Бюджет Республики Башкортостан</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>20</ns2:code>
+                                    <ns2:name>бюджет субъекта Российской Федерации</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>80000000</ns2:code>
+                                    <ns2:name>Муниципальные образования Республики Башкортостан</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>1545693.31</total>
+                                <currentYear>1545693.31</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22446359</sid>
+                                <externalSid>56723320549</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>8100409223019Д010244</KBK>
+                                        <paymentYearInfo>
+                                            <total>1545693.31</total>
+                                            <currentYear>1545693.31</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62353501</ns3:sid>
+                            <ns3:externalSid>56724065667</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>7be706e5-b720-4f79-bbca-fc9c27cc0365</ns3:GARGuid>
+                                <ns3:GARAddress>респ. Башкортостан, м.р-н Стерлитамакский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>автомобильная дорога Стерлитамак-Салават  на участке км 29+625 - км 29+865</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyServiceRequirement>Если в период действия гарантийного срока эксплуатации объекта обнаружатся дефекты, препятствующие его эксплуатации, либо существенно снижающие возможность нормальной эксплуатации, то Подрядчик обязан их устранить за свой счет и в согласованные с Государственным заказчиком сроки. Для фиксации обнаружения дефектов, определения видов дефектов, установления порядка и сроков их устранения составляется двусторонний акт, подписываемый уполномоченными представителями Подрядчика и Государственного заказчика. Для составления и подписания указанного акта Подрядчик обязан направить своего представителя в срок, установленный в извещении Государственного заказчика.</warrantyServiceRequirement>
+                    <manufacturersWarrantyRequirement>В случае выявления дефектов отдельных конструктивных элементов сооружений в пределах гарантийного срока, гарантийный срок на этот элемент или часть сооружения устанавливается вновь в соответствии с Государственным контрактом с момента (даты) завершения работ по устранению дефекта, оформляемый соответствующим актом. Продолжительность проведения работ по устранению выявленных дефектов не засчитывается в гарантийный срок.</manufacturersWarrantyRequirement>
+                    <warrantyTerm>Срок гарантии на устанавливаемое оборудование, должен быть не менее срока, установленного производителем, и составлять не менее 2 лет со дня подписания Сторонами акта о приемке.</warrantyTerm>
+                </warrantyInfo>
+                <provisionWarranty>
+                    <ns3:amount>15456.93</ns3:amount>
+                    <ns3:part>1.0</ns3:part>
+                    <ns3:procedureInfo>Обеспечением гарантий качества выполнения работ Подрядчиком является гарантийный паспорт, подписанный Подрядчиком и заверенный его печатью. Указанный гарантийный паспорт должен содержать обязательство Подрядчика на выполнение за свой счет и в согласованные с Государственным заказчиком сроки работ по устранению дефектов в соответствии с настоящим государственным контрактом.</ns3:procedureInfo>
+                    <ns3:account>
+                        <ns3:bik>018073401</ns3:bik>
+                        <ns3:settlementAccount>03222643800000000100</ns3:settlementAccount>
+                        <ns3:personalAccount>05121160010</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 6 УГУ Банка России//УФК по Республике Башкортостан, г Уфа</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810045370000067</ns3:corrAccountNumber>
+                    </ns3:account>
+                </provisionWarranty>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>225738703</ns3:sid>
+                    <ns3:externalSid>56724208148</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>42.11.20.300</ns2:OKPDCode>
+                        <ns2:OKPDName>Работы по содержанию автомобильных дорог</ns2:OKPDName>
+                    </ns3:OKPD2>
+                    <ns3:name>Установка элементов освещения на пешеходных переходах, автобусных остановках, на пересечениях и примыканиях к автомобильным дорогам общего пользования регионального и межмуниципального значения Республики Башкортостан с последующим содержанием.</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1545693.31</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:volumeTextForm>Установка элементов освещения  с последующим содержанием.</ns3:volumeTextForm>
+                    </ns3:quantity>
+                    <ns3:sum>1545693.31</ns3:sum>
+                    <ns3:type>WORK</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>1545693.31</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+    <modificationInfo>
+        <info>уточнение</info>
+        <reasonInfo>
+            <responsibleDecisionInfo>
+                <decisionDate>2026-10-27+03:00</decisionDate>
+            </responsibleDecisionInfo>
+        </reasonInfo>
+    </modificationInfo>
+</ns8:epNotificationEF2020>

@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44423871</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0711200016426000076</purchaseNumber>
+        <docNumber>№0711200016426000076</docNumber>
+        <plannedPublishDate>2026-10-29+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T15:56:09.480+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0711200016426000076</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_AVK</ns2:code>
+            <ns2:name>АГЗ РТ</ns2:name>
+            <ns2:url>http://etp.zakazrf.ru</ns2:url>
+        </ETP>
+        <article15FeaturesInfo>P4</article15FeaturesInfo>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка хлеба для нужд  ГАУЗ «Бавлинская ЦРБ" на 1 полугодие 2027 года</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>07112000164</regNum>
+            <consRegistryNum>922Ш1181</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "БАВЛИНСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</fullName>
+            <shortName>ГАУЗ "БАВЛИНСКАЯ ЦРБ"</shortName>
+            <postAddress>423930, Респ Татарстан (Татарстан), р-н Бавлинский, г Бавлы, ул Энгельса, д. 55</postAddress>
+            <factAddress>423930, Респ Татарстан (Татарстан), р-н Бавлинский, г Бавлы, ул Энгельса, д. 55</factAddress>
+            <INN>1611000750</INN>
+            <KPP>161101001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>423930, Респ Татарстан (Татарстан), р-н Бавлинский, г Бавлы, ул Энгельса, д. 55</orgPostAddress>
+            <orgFactAddress>423930, Респ Татарстан (Татарстан), р-н Бавлинский, г Бавлы, ул Энгельса, д. 55</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Галяува</ns3:lastName>
+                <ns3:firstName>Гузалия</ns3:firstName>
+                <ns3:middleName>Миргасимовна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>zakupok.otdel@tatar.ru</contactEMail>
+            <contactPhone>7-85569-61444-1100</contactPhone>
+            <contactFax>7-85569-61444</contactFax>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0711200016426000076</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1879756627A7CA6E6EFEB98206160</ns3:publishedContentId>
+            <ns3:fileName>n858280_НМЦК_хлеб.xls</ns3:fileName>
+            <ns3:fileSize>58368</ns3:fileSize>
+            <ns3:docDescription>НМЦК хлеб</ns3:docDescription>
+            <ns3:docDate>2026-10-29T15:16:48+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1879756627A7CA6E6EFEB98206160</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18797559F74DA89FDED9DEA2A621A</ns3:publishedContentId>
+            <ns3:fileName>n858280_Продукты_питания_типовой_контракт.doc</ns3:fileName>
+            <ns3:fileSize>183296</ns3:fileSize>
+            <ns3:docDescription>Продукты питания типовой контракт</ns3:docDescription>
+            <ns3:docDate>2026-10-29T15:16:48+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18797559F74DA89FDED9DEA2A621A</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18797572A7DE68221121CC0865C17</ns3:publishedContentId>
+            <ns3:fileName>n858280_Описание_хлеб_1пол.docx</ns3:fileName>
+            <ns3:fileSize>23831</ns3:fileSize>
+            <ns3:docDescription>Описание хлеб 1пол</ns3:docDescription>
+            <ns3:docDate>2026-10-29T15:16:48+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18797572A7DE68221121CC0865C17</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18797591972779BA8999128EAE0F1</ns3:publishedContentId>
+            <ns3:fileName>n858280_Требование_к_сод_заявки_с_Пост2571.docx</ns3:fileName>
+            <ns3:fileSize>29545</ns3:fileSize>
+            <ns3:docDescription>Требование_к_сод_заявки с Пост2571</ns3:docDescription>
+            <ns3:docDate>2026-10-29T15:16:48+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18797591972779BA8999128EAE0F1</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T15:56:09+03:00</startDT>
+                <endDT>2026-11-09T07:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+03:00</biddingDate>
+            <summarizingDate>2026-11-11+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>540630.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+            <standardContractNumber>1400700000520005</standardContractNumber>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>07112000164</ns2:regNum>
+                    <ns2:consRegistryNum>922Ш1181</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "БАВЛИНСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</ns2:fullName>
+                </customer>
+                <contractGuarantee>
+                    <amount>27031.50</amount>
+                    <account>
+                        <ns3:bik>019205400</ns3:bik>
+                        <ns3:settlementAccount>03224643920000001101</ns3:settlementAccount>
+                        <ns3:personalAccount>ЛР117040004-БавлЦРБ</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 6 ВВГУ Банка России//УФК по Республике Татарстан, г Казань</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810445370000079</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Обеспечение исполнения контракта предоставляется в виде независимой гарантии, соответствующей требованиям ст. 45 Закона N 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются участником закупки, с которым заключается контракт, самостоятельно. Срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, не менее чем на один месяц, в том числе в случае его изменения в соответствии со ст. 95 Закона N 44-ФЗ. Участник закупки, с которым заключается контракт по результатам определения поставщика (подрядчика, исполнителя) в соответствии с пунктом 1 части 1 статьи 30 Закона N 44-ФЗ освобождается от предоставления обеспечения исполнения контракта, в том числе с учетом положений статьи 37 Закона N 44-ФЗ, в случае предоставления таким участником закупки информации, содержащейся в реестре контрактов, заключенных заказчиками, и подтверждающей исполнение таким участником (без учета правопреемства) в течение трех лет до даты подачи заявки на участие в закупке трех контрактов, исполненных без применения к такому участнику неустоек (штрафов, пеней). Такая информация представляется участником закупки до заключения контракта в случаях, установленных Законом №44-ФЗ для предоставления обеспечения исполнения контракта. При этом сумма цен таких контрактов должна составлять не менее начальной (максимальной) цены контракта, указанной в извещении об осуществлении закупки и документации о закупке.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>540630.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262161100075016110100101030011071244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>10.71</ns2:OKPDCode>
+                                <ns2:OKPDName>Изделия хлебобулочные; мучные кондитерские изделия, торты и пирожные недлительного хранения</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>21611000750161101001</customerCode>
+                        <purchaseNumber>0103</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202607112000164001</ns3:plan2020Number>
+                        <ns3:position2020Number>202607112000164001000104</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-07-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>540630.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>540630.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22508947</sid>
+                                <externalSid>390026</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-07-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>540630.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>540630.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>540630.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>540630.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>540630.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62442114</ns3:sid>
+                            <ns3:externalSid>4b0a06bd-a670-4bbf-bcff-62a2aebae487</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>0c089b04-099e-4e0e-955a-6bf1ce525f1a</ns3:GARGuid>
+                                <ns3:GARAddress>респ. Татарстан</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>423930, Респ Татарстан (Татарстан), р-н Бавлинский, г Бавлы, ул Энгельса, д. 55</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226135055</ns3:sid>
+                    <ns3:externalSid>3846293</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>10.71.11.110-00000004</ns2:code>
+                        <ns2:name>Хлеб недлительного хранения</ns2:name>
+                        <ns2:versionId>155035</ns2:versionId>
+                        <ns2:versionNumber>3</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337738243</ns3:sid>
+                                <ns3:externalSid>2826539</ns3:externalSid>
+                                <ns3:code>1dca6c22-e</ns3:code>
+                                <ns3:name>Вид хлеба</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328622</ns3:sid>
+                                        <ns3:externalSid>7547458</ns3:externalSid>
+                                        <ns3:qualityDescription>Пшеничный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337738244</ns3:sid>
+                                <ns3:externalSid>2826540</ns3:externalSid>
+                                <ns3:code>857e4c36-2</ns3:code>
+                                <ns3:name>Хлеб по способу производства</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328623</ns3:sid>
+                                        <ns3:externalSid>7547459</ns3:externalSid>
+                                        <ns3:qualityDescription>Формовой</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337738245</ns3:sid>
+                                <ns3:externalSid>2826537</ns3:externalSid>
+                                <ns3:code>64f4027f-a</ns3:code>
+                                <ns3:name>Бездрожжевая технология производства</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328624</ns3:sid>
+                                        <ns3:externalSid>7547455</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337738246</ns3:sid>
+                                <ns3:externalSid>2826538</ns3:externalSid>
+                                <ns3:code>dac92ede-6</ns3:code>
+                                <ns3:name>Хлеб обогащенный витаминами/микроэлементами</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328625</ns3:sid>
+                                        <ns3:externalSid>7547457</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337738247</ns3:sid>
+                                <ns3:externalSid>2826536</ns3:externalSid>
+                                <ns3:code>f44a29f1-4</ns3:code>
+                                <ns3:name>Изделие нарезанное</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328626</ns3:sid>
+                                        <ns3:externalSid>7547453</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337738239</ns3:sid>
+                                <ns3:externalSid>2826541</ns3:externalSid>
+                                <ns3:name>Национальный стандарт</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328618</ns3:sid>
+                                        <ns3:externalSid>7547461</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие требованиям ГОСТ Р 58233-2018 "Национальный стандарт Российской Федерации. Хлеб из пшеничной муки. Технические условия".</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337738240</ns3:sid>
+                                <ns3:externalSid>2826542</ns3:externalSid>
+                                <ns3:name>Вес хлеба</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328619</ns3:sid>
+                                        <ns3:externalSid>7547462</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>166</ns2:code>
+                                            <ns2:nationalCode>кг</ns2:nationalCode>
+                                            <ns2:name>Килограмм</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>0.5</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337738241</ns3:sid>
+                                <ns3:externalSid>2826543</ns3:externalSid>
+                                <ns3:name>Остаточный срок хранения со дня поставки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328620</ns3:sid>
+                                        <ns3:externalSid>7547463</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>359</ns2:code>
+                                            <ns2:nationalCode>сут; дн</ns2:nationalCode>
+                                            <ns2:name>Сутки</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>3</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337738242</ns3:sid>
+                                <ns3:externalSid>2826544</ns3:externalSid>
+                                <ns3:name>Вид и качество товара</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328621</ns3:sid>
+                                        <ns3:externalSid>7547464</ns3:externalSid>
+                                        <ns3:qualityDescription>Изделие из пшеничной муки высшего сорта, поверхность гладкая, чистая, без подгорелостей и трещин, мякиш пропеченный, мелкопористый.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительная информация включена в соответствии с положениями ст.33 Федерального Закона от 05.04.2013г. №44-ФЗ в целях реализации государственной политики в области здорового питания, сохранения и укрепления здоровья населения, профилактики заболеваний, обусловленных неполноценным и несбалансированным питанием, исключения поступления некачественных и опасных пищевых продуктов, в связи с потребностью заказчика.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>10.71.11.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Хлеб недлительного хранения</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Хлеб недлительного хранения</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>166</ns2:code>
+                        <ns2:nationalCode>кг</ns2:nationalCode>
+                        <ns2:name>Килограмм</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>93.32</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>3000.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>279960.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226135056</ns3:sid>
+                    <ns3:externalSid>3846294</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>10.71.11.110-00000002</ns2:code>
+                        <ns2:name>Хлеб недлительного хранения</ns2:name>
+                        <ns2:versionId>155033</ns2:versionId>
+                        <ns2:versionNumber>3</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337738252</ns3:sid>
+                                <ns3:externalSid>2826552</ns3:externalSid>
+                                <ns3:code>1dca6c22-e</ns3:code>
+                                <ns3:name>Вид хлеба</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328631</ns3:sid>
+                                        <ns3:externalSid>7547475</ns3:externalSid>
+                                        <ns3:qualityDescription>Ржано-пшеничный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337738253</ns3:sid>
+                                <ns3:externalSid>2826545</ns3:externalSid>
+                                <ns3:code>857e4c36-2</ns3:code>
+                                <ns3:name>Хлеб по способу производства</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328632</ns3:sid>
+                                        <ns3:externalSid>7547465</ns3:externalSid>
+                                        <ns3:qualityDescription>Формовой</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337738254</ns3:sid>
+                                <ns3:externalSid>2826546</ns3:externalSid>
+                                <ns3:code>64f4027f-a</ns3:code>
+                                <ns3:name>Бездрожжевая технология производства</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328633</ns3:sid>
+                                        <ns3:externalSid>7547468</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337738255</ns3:sid>
+                                <ns3:externalSid>2826547</ns3:externalSid>
+                                <ns3:code>dac92ede-6</ns3:code>
+                                <ns3:name>Хлеб обогащенный витаминами/микроэлементами</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328634</ns3:sid>
+                                        <ns3:externalSid>7547470</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337738256</ns3:sid>
+                                <ns3:externalSid>2826553</ns3:externalSid>
+                                <ns3:code>f44a29f1-4</ns3:code>
+                                <ns3:name>Изделие нарезанное</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328635</ns3:sid>
+                                        <ns3:externalSid>7547477</ns3:externalSid>
+                                        <ns3:qualityDescription>Нет</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337738248</ns3:sid>
+                                <ns3:externalSid>2826548</ns3:externalSid>
+                                <ns3:name>Вес хлеба</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328627</ns3:sid>
+                                        <ns3:externalSid>7547471</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>166</ns2:code>
+                                            <ns2:nationalCode>кг</ns2:nationalCode>
+                                            <ns2:name>Килограмм</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>0.5</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337738249</ns3:sid>
+                                <ns3:externalSid>2826549</ns3:externalSid>
+                                <ns3:name>Остаточный срок хранения</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328628</ns3:sid>
+                                        <ns3:externalSid>7547472</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>359</ns2:code>
+                                            <ns2:nationalCode>сут; дн</ns2:nationalCode>
+                                            <ns2:name>Сутки</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337738250</ns3:sid>
+                                <ns3:externalSid>2826550</ns3:externalSid>
+                                <ns3:name>Вид и качество товара</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328629</ns3:sid>
+                                        <ns3:externalSid>7547473</ns3:externalSid>
+                                        <ns3:qualityDescription>Изделие из смеси муки ржаной обдирной и пшеничной первого сорта. Поверхность шероховатая, без крупных трещин и подрывов. Допускаются наколы, мучнистость верхней и нижней корки подового хлеба и наличие шва от делителя-укладчика у формового хлеба. </ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337738251</ns3:sid>
+                                <ns3:externalSid>2826551</ns3:externalSid>
+                                <ns3:name>Национальный стандарт</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436328630</ns3:sid>
+                                        <ns3:externalSid>7547474</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие требованиям «ГОСТ 26983-2015. Межгосударственный стандарт. Хлеб дарницкий. Технические условия».</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>Дополнительная информация включена в соответствии с положениями ст.33 Федерального Закона от 05.04.2013г. №44-ФЗ в целях реализации государственной политики в области здорового питания, сохранения и укрепления здоровья населения, профилактики заболеваний, обусловленных неполноценным и несбалансированным питанием, исключения поступления некачественных и опасных пищевых продуктов, в связи с потребностью заказчика.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>10.71.11.110</ns2:OKPDCode>
+                            <ns2:OKPDName>Хлеб недлительного хранения</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Хлеб недлительного хранения</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>166</ns2:code>
+                        <ns2:nationalCode>кг</ns2:nationalCode>
+                        <ns2:name>Килограмм</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>86.89</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>3000.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>260670.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>540630.00</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>IN44</ns2:shortName>
+                    <ns2:name>Организациям инвалидов в соответствии со ст. 29 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:prefValue>15.0</ns3:prefValue>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU44</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS26BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии с позицией 33 раздела VI приложения к ПП РФ от 29.12.2021 № 2571</ns3:name>
+                        <ns3:content>1) Наличие опыта исполнения участником закупки договора, предусматривающего оказание услуг общественного питания и (или) поставки пищевых продуктов. Цена оказанных услуг и (или) поставленных товаров по договору должна составлять не менее 20 процентов от начальной (максимальной) цены контракта, заключаемого по результатам определения поставщика (подрядчика, исполнителя);
+2) отсутствие у участника закупки, являющегося физическим лицом, либо у руководителя, членов коллегиального исполнительного органа, лица, исполняющего функции единоличного исполнительного органа, главного бухгалтера участника закупки, являющегося юридическим лицом, судимости за преступления, предусмотренные статьей 236 Уголовного кодекса Российской Федерации (за исключением лиц, у которых такая судимость погашена или снята);
+3) непривлечение участника закупки, являющегося физическим лицом, либо руководителя, членов коллегиального исполнительного органа, лица, исполняющего функции единоличного исполнительного органа, главного бухгалтера участника закупки, являющегося юридическим лицом, к административной ответственности за совершение административных правонарушений, предусмотренных статьями 6.3, 6.5 - 6.7, 14.43, 14.44 - 14.46.2 Кодекса Российской Федерации об административных правонарушениях;
+4) отсутствие в предусмотренном Федеральным законом "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд" реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации об участнике закупки, в том числе о лицах, информация о которых содержится в заявке на участие в закупке в соответствии с подпунктом "в" пункта 1 части 1 статьи 43 указанного Федерального закона.Информация и документы, подтверждающие соответствие участников закупки дополнительным требованиям: 1) исполненный договор; 2) акт приемки оказанных услуг и (или) поставленных товаров, подтверждающий цену оказанных услуг и (или) поставленных товаров; 3) справка об отсутствии у участника закупки, являющегося физическим лицом, либо у руководителя, членов коллегиального исполнительного органа, лица, исполняющего функции единоличного исполнительного органа, главного бухгалтера участника закупки, являющегося юридическим лицом, судимости за преступления, предусмотренные статьей 236 Уголовного кодекса Российской Федерации; 4) декларация участника закупки о непривлечении участника закупки, являющегося физическим лицом, либо руководителя, членов коллегиального исполнительного органа, лица, исполняющего функции единоличного исполнительного органа, главного бухгалтера участника закупки, являющегося юридическим лицом, к административной ответственности за совершение административных правонарушений, предусмотренных статьями 6.3, 6.5 - 6.7, 14.43, 14.44 - 14.46.2 Кодекса Российской Федерации об административных правонарушениях</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TOVNPIVR</ns2:shortName>
+                    <ns2:name>Требование об отсутствии в реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации, включенной в такой реестр в связи отказом поставщика (подрядчика, исполнителя) от исполнения контракта по причине введения в отношении заказчика санкций и (или) мер ограничительного характера</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

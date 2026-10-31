@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44424043</id>
+    <externalId>4667254</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0848300051726000594</purchaseNumber>
+        <docNumber>№0848300051726000594</docNumber>
+        <plannedPublishDate>2026-10-29+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T15:32:38.415+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0848300051726000594</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_MMVB</ns2:code>
+            <ns2:name>Электронная торговая площадка «Фабрикант»</ns2:name>
+            <ns2:url>https://www.fabrikant.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Выполнение работ по содержанию общегородских территорий и объектов благоустройства общего пользования Сергиево-Посадского городского округа, Московской области.</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>08483000517</regNum>
+            <consRegistryNum>463J9738</consRegistryNum>
+            <fullName>МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ "ЦЕНТР МУНИЦИПАЛЬНЫХ ЗАКУПОК СЕРГИЕВО-ПОСАДСКОГО ГОРОДСКОГО ОКРУГА"</fullName>
+            <shortName>МКУ "ЦМЗ СПГО"</shortName>
+            <postAddress>Российская Федерация, 141310, Московская обл, Сергиев Посад г, ПРОСПЕКТ КРАСНОЙ АРМИИ, ДОМ 169</postAddress>
+            <factAddress>Российская Федерация, 141310, Московская обл, Сергиев Посад г, ПРОСПЕКТ КРАСНОЙ АРМИИ, ДОМ 169</factAddress>
+            <INN>5042138345</INN>
+            <KPP>504201001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>AI</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>Российская Федерация, 141310, Московская обл, Сергиев Посад г, ПРОСПЕКТ КРАСНОЙ АРМИИ, ДОМ 169</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 141310, Московская обл, Сергиев Посад г, ПРОСПЕКТ КРАСНОЙ АРМИИ, ДОМ 169</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Соловьёва</ns3:lastName>
+                <ns3:firstName>Галина</ns3:firstName>
+                <ns3:middleName>  Александровна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>spgo_cmz@mosreg.ru</contactEMail>
+            <contactPhone>7-496-5510338</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0848300051726000594</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A187962ADF7FD8BC4E83A0B770E3E4</ns3:publishedContentId>
+            <ns3:fileName>Обоснование НМЦК.zip</ns3:fileName>
+            <ns3:fileSize>327152</ns3:fileSize>
+            <ns3:docDescription>Обоснование НМЦК</ns3:docDescription>
+            <ns3:docDate>2026-10-29T15:24:01+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A187962ADF7FD8BC4E83A0B770E3E4</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A187962EEA723593C4C178D5454718</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта, сост. 29.10.2026.zip</ns3:fileName>
+            <ns3:fileSize>33056</ns3:fileSize>
+            <ns3:docDescription>Проект контракта, сост. 29.10.2026</ns3:docDescription>
+            <ns3:docDate>2026-10-29T15:24:01+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A187962EEA723593C4C178D5454718</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1879632A5797A8063EE5A1F635B0F</ns3:publishedContentId>
+            <ns3:fileName>Приложение_№5_к_Контракту_Описание_объекта_закупки (1).rar</ns3:fileName>
+            <ns3:fileSize>370971</ns3:fileSize>
+            <ns3:docDescription>Приложение_№5_к_Контракту_Описание_объекта_закупки (1)</ns3:docDescription>
+            <ns3:docDate>2026-10-29T15:24:01+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1879632A5797A8063EE5A1F635B0F</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1879634AA771E922934C6896D2CEF</ns3:publishedContentId>
+            <ns3:fileName>Требование к содержанию, составу заявки на участие в закупке закупка №067795-26.docx</ns3:fileName>
+            <ns3:fileSize>25600</ns3:fileSize>
+            <ns3:docDescription>Требование к содержанию, составу заявки на участие в закупке закупка №067795-26</ns3:docDescription>
+            <ns3:docDate>2026-10-29T15:24:01+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1879634AA771E922934C6896D2CEF</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18796262A7611860317C6E37D88FF</ns3:publishedContentId>
+            <ns3:fileName>приложения 6 - 9.rar</ns3:fileName>
+            <ns3:fileSize>1067141</ns3:fileSize>
+            <ns3:docDescription>приложения 6 - 9</ns3:docDescription>
+            <ns3:docDate>2026-10-29T15:24:01+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18796262A7611860317C6E37D88FF</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A187963063777781656FD8F514592F</ns3:publishedContentId>
+            <ns3:fileName>Приложение к проекту контракта, сост. 29.10.2026.zip</ns3:fileName>
+            <ns3:fileSize>511730</ns3:fileSize>
+            <ns3:docDescription>Приложение к проекту контракта, сост. 29.10.2026</ns3:docDescription>
+            <ns3:docDate>2026-10-29T15:24:01+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A187963063777781656FD8F514592F</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T15:32:38+03:00</startDT>
+                <endDT>2026-11-06T10:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-06+03:00</biddingDate>
+            <summarizingDate>2026-11-09+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>13200000.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+                <isContractPriceFormula>true</isContractPriceFormula>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03483006275</ns2:regNum>
+                    <ns2:consRegistryNum>463Е7802</ns2:consRegistryNum>
+                    <ns2:fullName>МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "БЛАГОУСТРОЙСТВО СЕРГИЕВ ПОСАД"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>132000.00</amount>
+                    <account>
+                        <ns3:bik>004525987</ns3:bik>
+                        <ns3:settlementAccount>03234643467280004800</ns3:settlementAccount>
+                        <ns3:personalAccount>20000002740</ns3:personalAccount>
+                        <ns3:creditOrgName>ГУ БАНКА РОССИИ ПО ЦФО//УФК по Московской области г. Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000004</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Обеспечение заявки (далее - ОЗ) может предоставляться в виде денежных средств или независимой гарантии (далее - НГ). Выбор способа ОЗ осуществляется участником закупки. ОЗ в виде денежных средств предоставляется путем блокирования денежных средств на банковском счете, открытого участником закупки в банках, перечень которых установлен Правительством РФ (специальный счет). Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена Евразийского экономического союза, за исключением Российской Федерации, или физическими лицами, являющимися гражданами государства - члена Евразийского экономического союза, за исключением Российской Федерации, вправе предоставить ОЗ в виде денежных средств с учетом особенностей, установленных постановлением Правительства РФ от 10.04.2023 № 579. НГ, выданная участнику закупки банком, для целей ОЗ на участие в закупке должна быть безотзывной и соответствовать требованиям ст. 45 Закона № 44-ФЗ, постановления Правительства РФ от 08.11.2013 № 1005. НГ должна содержать условие об обязанности гаранта уплатить заказчику (бенефициару) денежную сумму по НГ не позднее 10 рабочих дней со дня, следующего за днем получения гарантом требования заказчика (бенефициара), соответствующего условиям такой НГ, при отсутствии предусмотренных Гражданским кодексом РФ оснований для отказа в удовлетворении этого требования. Запрещается включение в условия НГ требования о представлении заказчиком гаранту судебных актов, подтверждающих неисполнение принципалом обязательств, обеспечиваемых НГ. Срок действия НГ должен составлять не менее 1 месяца с даты окончания срока подачи заявок. В НГ в качестве бенефициара указывается заказчик, за исключением случая проведения совместного конкурса или аукциона, при котором в качестве бенефициара указывается организатор совместного конкурса или аукциона (Организация, осуществляющая размещение извещения об осуществлении закупки).</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>004525987</ns3:bik>
+                        <ns3:settlementAccount>03234643467280004800</ns3:settlementAccount>
+                        <ns3:personalAccount>20000002740</ns3:personalAccount>
+                        <ns3:creditOrgName>ГУ БАНКА РОССИИ ПО ЦФО//УФК по Московской области г. Москва</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810845370000004</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>Исполнение контракта обеспечивается предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона № 44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Федерального закона № 44-ФЗ.Независимая гарантия должна содержать в том числе указание на то, что споры, возникающие в связи с исполнением обязательств по независимой гарантии, подлежат рассмотрению в Арбитражном суде Московской области.Требования к предоставлению обеспечения исполнения контракта, в том числе с учетом положений статьи 37 Федерального закона № 44-ФЗ, не применяются в случаях: 1) заключения контракта с участником закупки, который является казенным учреждением; 2) осуществления закупки услуги по предоставлению кредита; 3) заключения бюджетным учреждением, государственным, муниципальным унитарными предприятиями контракта, предметом которого является выдача независимой гарантии.Участник закупки, с которым заключается контракт по результатам определения поставщика (подрядчика, исполнителя) в соответствии с пунктом 1 части 1 статьи 30 Федерального закона № 44-ФЗ, освобождается от предоставления обеспечения исполнения контракта, в том числе с учетом положений статьи 37 Федерального закона № 44-ФЗ, в порядке, предусмотренном частью 8.1 статьи 96 Федерального закона № 44-ФЗ.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>13200000.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263504213451050420100101870018130244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>81.30</ns2:OKPDCode>
+                                <ns2:OKPDName>Услуги по планировке ландшафта</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>35042134510504201001</customerCode>
+                        <purchaseNumber>0187</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603483006275001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603483006275001000185</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2027-05-11+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>13200000.00</total>
+                                <currentYear>200000.00</currentYear>
+                                <firstYear>13000000.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22509141</sid>
+                                <externalSid>66c10b23-29c5-4ea6-811d-622d02bc8b07</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2027-05-11+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>13200000.00</total>
+                                        <currentYear>200000.00</currentYear>
+                                        <firstYear>13000000.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>13200000.00</ns3:total>
+                                                <ns3:currentYear>200000.00</ns3:currentYear>
+                                                <ns3:firstYear>13000000.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>13200000.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62442366</ns3:sid>
+                            <ns3:externalSid>d22343c2-2aec-4b8a-a336-4c919022ce87</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>ed7da874-3df1-4f99-a1f4-302a27be0d95</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Московская, г.о. Сергиево-Посадский</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>по заявкам</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <addInfo>Контакты Заказчика: Колосов Сергей Павлович, тел.: 8 (496) 551-38-37, эл. почта: blago_sp@mail.ru, почтовый адрес: 141302, Московская область, г. Сергиев Посад, улица Карла Либкнехта, д.9 пом.3</addInfo>
+                <contractPriceFormula>В соответствии с ч. 24 ст. 22 Закона № 44-ФЗ оплата выполнения работы осуществляется по цене единицы работы исходя из объема фактически выполненной работы, но в размере, не превышающем максимального значения цены контракта, указанного в извещении об осуществлении закупки.</contractPriceFormula>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226136049</ns3:sid>
+                    <ns3:externalSid>3bf09f1c-ff2b-4f75-887f-9a9f7c23df15</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>81.30.10.000-00000004</ns2:code>
+                        <ns2:name>Услуги по планировке ландшафта</ns2:name>
+                        <ns2:versionId>291377</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>81.30.10.000</ns2:OKPDCode>
+                            <ns2:OKPDName>Услуги по планировке ландшафта</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Услуги по планировке ландшафта</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>876</ns2:code>
+                        <ns2:nationalCode>УСЛ ЕД</ns2:nationalCode>
+                        <ns2:name>Условная единица</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03483006275</ns2:regNum>
+                                <ns2:consRegistryNum>463Е7802</ns2:consRegistryNum>
+                                <ns2:fullName>МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "БЛАГОУСТРОЙСТВО СЕРГИЕВ ПОСАД"</ns2:fullName>
+                            </ns3:customer>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>10514156.26</ns3:price>
+                    <ns3:volumeSpecifyingMethod>VTF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>10514156.26</ns3:sum>
+                    <ns3:type>SERVICE</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>10514156.26</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU44</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 2 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:addRequirements>
+                    <ns3:addRequirement>
+                        <ns3:shortName>TVS42BN</ns3:shortName>
+                        <ns3:name>Требования в соответствии с позицией 9 раздела II приложения к ПП РФ от 29.12.2021 № 2571</ns3:name>
+                        <ns3:content>Наличие у участника закупки одного из следующих видов опыта выполнения работ:
+1) опыт исполнения договора, предусматривающего выполнение работ по строительству некапитального строения, сооружения (строений, сооружений), благоустройству территории;
+2) опыт исполнения договора строительного подряда, предусматривающего выполнение работ по строительству, реконструкции объекта капитального строительства (в том числе линейного объекта);
+3) опыт выполнения участником закупки, являющимся застройщиком, работ по строительству, реконструкции объекта капитального строительства (в том числе линейного объекта).
+Цена выполненных работ по договорам, предусмотренных пунктами 1 или 2 настоящей графы настоящей позиции, цена выполненных работ, предусмотренных пунктом 3 настоящей графы настоящей позиции, должна составлять не менее 20 процентов начальной (максимальной) цены контракта, заключаемого по результатам определения поставщика (подрядчика, исполнителя).Информация и документы, подтверждающие соответствие участников закупки дополнительным требованиям:
+в случае наличия опыта, предусмотренного пунктом 1 графы "Дополнительные требования к участникам закупки" настоящей позиции:
+1) исполненный договор;
+2) акт выполненных работ, подтверждающий цену выполненных работ.
+В случае наличия опыта, предусмотренного пунктом 2 графы "Дополнительные требования к участникам закупки" настоящей позиции:
+1) исполненный договор;
+2) акт приемки объекта капитального строительства, а также акт выполненных работ, подтверждающий цену выполненных работ, если акт приемки объекта капитального строительства не содержит цену выполненных работ;
+3) разрешение на ввод объекта капитального строительства в эксплуатацию (за исключением случая, если работы, являющиеся объектом закупки, не требуют в соответствии с законодательством о градостроительной деятельности выдачи разрешения на ввод объекта капитального строительства в эксплуатацию и при этом договор, предусмотренный абзацем пятым настоящей графы, предусматривает выполнение работ, не требующих в соответствии с указанным законодательством выдачи такого разрешения) или решение о технической готовности линейного объекта инфраструктуры к временной эксплуатации.
+В случае наличия опыта, предусмотренного пунктом 3 графы "Дополнительные требования к участникам закупки" настоящей позиции:
+1) раздел  "Смета на строительство, реконструкцию, капитальный ремонт, снос объекта капитального строительства" проектной документации;
+2) разрешение на ввод объекта капитального строительства в эксплуатацию или решение о технической готовности  линейного объекта инфраструктуры к временной эксплуатации</ns3:content>
+                    </ns3:addRequirement>
+                </ns3:addRequirements>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

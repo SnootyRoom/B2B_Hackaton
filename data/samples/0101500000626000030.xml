@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEZK2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44416251</id>
+    <externalId>krista.02800000.56757988011</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0101500000626000030</purchaseNumber>
+        <docNumber>№0101500000626000030</docNumber>
+        <plannedPublishDate>2026-10-29+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T09:52:39.633+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/zk20/view/common-info.html?regNumber=0101500000626000030</href>
+        <placingWay>
+            <ns2:code>ZKP20</ns2:code>
+            <ns2:name>Запрос котировок в электронной форме</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_MMVB</ns2:code>
+            <ns2:name>Электронная торговая площадка «Фабрикант»</ns2:name>
+            <ns2:url>https://www.fabrikant.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка картриджей для принтеров</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>01015000006</regNum>
+            <consRegistryNum>802J0959</consRegistryNum>
+            <fullName>АППАРАТ ПО ОБЕСПЕЧЕНИЮ ДЕЯТЕЛЬНОСТИ ОРГАНОВ ГОСУДАРСТВЕННОЙ ВЛАСТИ РЕСПУБЛИКИ БАШКОРТОСТАН В Г. МОСКВЕ</fullName>
+            <shortName>АППАРАТ ПО ОБЕСПЕЧЕНИЮ ДЕЯТЕЛЬНОСТИ ОРГАНОВ ВЛАСТИ РБ В Г. МОСКВЕ</shortName>
+            <postAddress>105066, Г.МОСКВА , МУНИЦИПАЛЬНЫЙ ОКРУГ БАСМАННЫЙ внутригородская территория города федерального значения, УЛ ДОБРОСЛОБОДСКАЯ, Д. 6, СТР. 2</postAddress>
+            <factAddress>105066, Г.МОСКВА , МУНИЦИПАЛЬНЫЙ ОКРУГ БАСМАННЫЙ внутригородская территория города федерального значения, УЛ ДОБРОСЛОБОДСКАЯ, Д. 6, СТР. 2</factAddress>
+            <INN>9701186367</INN>
+            <KPP>770101001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>105066, Г.МОСКВА , МУНИЦИПАЛЬНЫЙ ОКРУГ БАСМАННЫЙ внутригородская территория города федерального значения, УЛ ДОБРОСЛОБОДСКАЯ, Д. 6, СТР. 2</orgPostAddress>
+            <orgFactAddress>105066, Г.МОСКВА , МУНИЦИПАЛЬНЫЙ ОКРУГ БАСМАННЫЙ внутригородская территория города федерального значения, УЛ ДОБРОСЛОБОДСКАЯ, Д. 6, СТР. 2</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Шарыгина</ns3:lastName>
+                <ns3:firstName>Елена</ns3:firstName>
+                <ns3:middleName>Борисовна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>Sharygina.eb@bashkortostan.ru</contactEMail>
+            <contactPhone>7-495-6213973</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0101500000626000030</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1866A7D707B38B85DCD152D032363</ns3:publishedContentId>
+            <ns3:fileName>НМЦК (Поставка картриджей для принтеров).xls.zip</ns3:fileName>
+            <ns3:fileSize>131410</ns3:fileSize>
+            <ns3:docDescription>НМЦК (Поставка картриджей для принтеров).xls.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-29T09:48:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1866A7D707B38B85DCD152D032363</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1866A878476C79E0A65FA4DF914D0</ns3:publishedContentId>
+            <ns3:fileName>Проект ГК _поставка картриджей.docx.zip</ns3:fileName>
+            <ns3:fileSize>197202</ns3:fileSize>
+            <ns3:docDescription>Проект ГК _поставка картриджей.docx.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-29T09:48:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1866A878476C79E0A65FA4DF914D0</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">MIIOpwYJKoZIhvcNAQcCoIIOmDCCDpQCAQExDjAMBggqhQMHAQECAgUAMAsGCSqGSIb3DQEHAaCCCiQwggogMIIJzaADAgECAhEAvb4YxNxOg2rXQfIPCFJl1zAKBggqhQMHAQEDAjCCAWsxIDAeBgkqhkiG9w0BCQEWEXVjX2ZrQHJvc2them5hLnJ1MRgwFgYDVQQIDA83NyDQnNC+0YHQutCy0LAxFTATBgUqhQNkBBIKNzcxMDU2ODc2MDEYMBYGBSqFA2QBEg0xMDQ3Nzk3MDE5ODMwMWAwXgYDVQQJDFfQkdC+0LvRjNGI0L7QuSDQl9C70LDRgtC+0YPRgdGC0LjQvdGB0LrQuNC5INC/0LXRgNC10YPQu9C+0LosINC0LiA2LCDRgdGC0YDQvtC10L3QuNC1IDExGTAXBgNVBAcMENCzLiDQnNC+0YHQutCy0LAxCzAJBgNVBAYTAlJVMTgwNgYDVQQKDC/QpNC10LTQtdGA0LDQu9GM0L3QvtC1INC60LDQt9C90LDRh9C10LnRgdGC0LLQvjE4MDYGA1UEAwwv0KTQtdC00LXRgNCw0LvRjNC90L7QtSDQutCw0LfQvdCw0YfQtdC50YHRgtCy0L4wHhcNMjYwNjI2MDg0NDIyWhcNMjcwOTE5MDg0NDIyWjCCAgsxCzAJBgNVBAYTAlJVMRkwFwYDVQQIDBDQsy4g0JzQvtGB0LrQstCwMTUwMwYDVQQMDCzQndCw0YfQsNC70YzQvdC40Log0L7QsdGJ0LXQs9C+INC+0YLQtNC10LvQsDGByzCByAYDVQQKDIHA0JDQn9Cf0JDQoNCQ0KIg0J/QniDQntCR0JXQodCf0JXQp9CV0J3QmNCuINCU0JXQr9Ci0JXQm9Cs0J3QntCh0KLQmCDQntCg0JPQkNCd0J7QkiDQk9Ce0KHQo9CU0JDQoNCh0KLQktCV0J3QndCe0Jkg0JLQm9CQ0KHQotCYINCg0JXQodCf0KPQkdCb0JjQmtCYINCR0JDQqNCa0J7QoNCi0J7QodCi0JDQnSDQkiDQky4g0JzQntCh0JrQktCVMRYwFAYFKoUDZAMSCzA3MTUwMzAxOTE1MRowGAYIKoUDA4EDAQESDDAyNzUwMTAyNDU1MTEsMCoGCSqGSIb3DQEJARYdc2hhcnlnaW5hLmViQGJhc2hrb3J0b3N0YW4ucnUxJjAkBgNVBCoMHdCV0LvQtdC90LAg0JHQvtGA0LjRgdC+0LLQvdCwMRkwFwYDVQQEDBDQqNCw0YDRi9Cz0LjQvdCwMTcwNQYDVQQDDC7QqNCw0YDRi9Cz0LjQvdCwINCV0LvQtdC90LAg0JHQvtGA0LjRgdC+0LLQvdCwMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIkAAYIKoUDBwEBAgIDQwAEQIyYEz7nmElDXbHIxHaAGa9dNQh8dQQtSSVquHO7ruLUvynCBctvmLWXYDm4bgEMLwWKVIspFxUZiq6zgOYsYZajggWfMIIFmzArBgNVHRAEJDAigA8yMDI2MDYyNjEwNDMwMFqBDzIwMjcwOTE5MTA0MzAwWjAOBgNVHQ8BAf8EBAMCA/gwHgYDVR0RBBcwFaATBgNVBAygDBMKMDYyNjEwNTgxMzBHBgNVHSUEQDA+BggrBgEFBQcDAgYIKoUDAgEGCAUGDCqFAwM9ntc2AQYDAgYIKoUDA4F7AQEGByqFAwOBewMGByqFAwOBewYwEwYDVR0gBAwwCjAIBgYqhQNkcQEwDAYFKoUDZHIEAwIBATAtBgUqhQNkbwQkDCLQmtGA0LjQv9GC0L7Qn9GA0L4gQ1NQICg1LjAuMTE0NTUpMIIBoQYFKoUDZHAEggGWMIIBkgyBh9Cf0YDQvtCz0YDQsNC80LzQvdC+LdCw0L/Qv9Cw0YDQsNGC0L3Ri9C5INC60L7QvNC/0LvQtdC60YEgVmlQTmV0IFBLSSBTZXJ2aWNlICjQvdCwINCw0L/Qv9Cw0YDQsNGC0L3QvtC5INC/0LvQsNGC0YTQvtGA0LzQtSBIU00gMjAwMFEyKQxo0J/RgNC+0LPRgNCw0LzQvNC90L4t0LDQv9C/0LDRgNCw0YLQvdGL0Lkg0LrQvtC80L/Qu9C10LrRgSDCq9Cu0L3QuNGB0LXRgNGCLdCT0J7QodCiwrsuINCS0LXRgNGB0LjRjyA0LjAMTUPQtdGA0YLQuNGE0LjQutCw0YIg0YHQvtC+0YLQstC10YLRgdGC0LLQuNGPIOKEltCh0KQvMTI0LTQzMjgg0L7RgiAyOS4wOC4yMDIyDE1D0LXRgNGC0LjRhNC40LrQsNGCINGB0L7QvtGC0LLQtdGC0YHRgtCy0LjRjyDihJbQodCkLzEyOC00NjM5INC+0YIgMDQuMTAuMjAyMzBmBgNVHR8EXzBdMC6gLKAqhihodHRwOi8vY3JsLnJvc2them5hLnJ1L2NybC91Y2ZrXzIwMjUuY3JsMCugKaAnhiVodHRwOi8vY3JsLmZrLmxvY2FsL2NybC91Y2ZrXzIwMjUuY3JsMHcGCCsGAQUFBwEBBGswaTA0BggrBgEFBQcwAoYoaHR0cDovL2NybC5yb3NrYXpuYS5ydS9jcmwvdWNma18yMDI1LmNydDAxBggrBgEFBQcwAoYlaHR0cDovL2NybC5may5sb2NhbC9jcmwvdWNma18yMDI1LmNydDCBgQYHKoUDAgIxAgR2MHQwZBZNaHR0cHM6Ly9yb3NrYXpuYS5nb3YucnUvZ2lzL3Vkb3N0b3ZlcnlheXVzaGhpai1jZW50ci9saXRzZW56aWktaS1zZXJ0aWZpa2F0eS8MD9Cb0Y7QsdCw0Y8g0JjQoQMCBeAEDCbF2z82NsAPhiD4vTAdBgNVHQ4EFgQUDlc4UtT2YoRFbiI+NAQ2Z9XtTWMwggF2BgNVHSMEggFtMIIBaYAUvz+8cqZrQ2drA0DMxq/G+sDNPfyhggFDpIIBPzCCATsxITAfBgkqhkiG9w0BCQEWEmRpdEBkaWdpdGFsLmdvdi5ydTELMAkGA1UEBhMCUlUxGDAWBgNVBAgMDzc3INCc0L7RgdC60LLQsDEZMBcGA1UEBwwQ0LMuINCc0L7RgdC60LLQsDFTMFEGA1UECQxK0J/RgNC10YHQvdC10L3RgdC60LDRjyDQvdCw0LHQtdGA0LXQttC90LDRjywg0LTQvtC8IDEwLCDRgdGC0YDQvtC10L3QuNC1IDIxJjAkBgNVBAoMHdCc0LjQvdGG0LjRhNGA0Ysg0KDQvtGB0YHQuNC4MRgwFgYFKoUDZAESDTEwNDc3MDIwMjY3MDExFTATBgUqhQNkBBIKNzcxMDQ3NDM3NTEmMCQGA1UEAwwd0JzQuNC90YbQuNGE0YDRiyDQoNC+0YHRgdC40LiCCicyIggAAAAAC1QwCgYIKoUDBwEBAwIDQQC/+aIb379ZtNFo6WfmT0KrZFBgH7RqYjlc1wHrV650j0C/u6bhSGAZuBkytnWqekNvBj1em3ud2RC1VsQ8nqknMYIESDCCBEQCAQEwggGCMIIBazEgMB4GCSqGSIb3DQEJARYRdWNfZmtAcm9za2F6bmEucnUxGDAWBgNVBAgMDzc3INCc0L7RgdC60LLQsDEVMBMGBSqFA2QEEgo3NzEwNTY4NzYwMRgwFgYFKoUDZAESDTEwNDc3OTcwMTk4MzAxYDBeBgNVBAkMV9CR0L7Qu9GM0YjQvtC5INCX0LvQsNGC0L7Rg9GB0YLQuNC90YHQutC40Lkg0L/QtdGA0LXRg9C70L7Quiwg0LQuIDYsINGB0YLRgNC+0LXQvdC40LUgMTEZMBcGA1UEBwwQ0LMuINCc0L7RgdC60LLQsDELMAkGA1UEBhMCUlUxODA2BgNVBAoML9Ck0LXQtNC10YDQsNC70YzQvdC+0LUg0LrQsNC30L3QsNGH0LXQudGB0YLQstC+MTgwNgYDVQQDDC/QpNC10LTQtdGA0LDQu9GM0L3QvtC1INC60LDQt9C90LDRh9C10LnRgdGC0LLQvgIRAL2+GMTcToNq10HyDwhSZdcwDAYIKoUDBwEBAgIFAKCCAkYwGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjYxMDI4MTUzOTAxWjAvBgkqhkiG9w0BCQQxIgQgA9Ro3zd5D5uOR0P7bvJTv41SFDd0oMolhVbIIg4vuy8wggHZBgsqhkiG9w0BCRACLzGCAcgwggHEMIIBwDCCAbwwCgYIKoUDBwEBAgIEINHST0LjyH8H/Xjt9IcyIwFwyqMceMNwZz2EGv9bY3DkMIIBijCCAXOkggFvMIIBazEgMB4GCSqGSIb3DQEJARYRdWNfZmtAcm9za2F6bmEucnUxGDAWBgNVBAgMDzc3INCc0L7RgdC60LLQsDEVMBMGBSqFA2QEEgo3NzEwNTY4NzYwMRgwFgYFKoUDZAESDTEwNDc3OTcwMTk4MzAxYDBeBgNVBAkMV9CR0L7Qu9GM0YjQvtC5INCX0LvQsNGC0L7Rg9GB0YLQuNC90YHQutC40Lkg0L/QtdGA0LXRg9C70L7Quiwg0LQuIDYsINGB0YLRgNC+0LXQvdC40LUgMTEZMBcGA1UEBwwQ0LMuINCc0L7RgdC60LLQsDELMAkGA1UEBhMCUlUxODA2BgNVBAoML9Ck0LXQtNC10YDQsNC70YzQvdC+0LUg0LrQsNC30L3QsNGH0LXQudGB0YLQstC+MTgwNgYDVQQDDC/QpNC10LTQtdGA0LDQu9GM0L3QvtC1INC60LDQt9C90LDRh9C10LnRgdGC0LLQvgIRAL2+GMTcToNq10HyDwhSZdcwHwYIKoUDBwEBAQEwEwYHKoUDAgIkAAYIKoUDBwEBAgIEQBbqdsI/YXFu4a9VdzCo4e07QUPkUQkx7tgyt7K2w+71X4DK+elO4AI7W4bam2Micgs/cW3qIi6Ny+IIUc0IQdI=</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1866A71B8776BBEDA25E1FDA8A89A</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки (Поставка картриджей для принтеров).docx.zip</ns3:fileName>
+            <ns3:fileSize>138134</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки (Поставка картриджей для принтеров).docx.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-29T09:48:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1866A71B8776BBEDA25E1FDA8A89A</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1866A96D57E3F944B5FC32934C0FE</ns3:publishedContentId>
+            <ns3:fileName>Требования к составу заявки (картриджи).docx.zip</ns3:fileName>
+            <ns3:fileSize>187246</ns3:fileSize>
+            <ns3:docDescription>Требования к составу заявки (картриджи).docx.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-29T09:48:21+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1866A96D57E3F944B5FC32934C0FE</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T09:52:39+03:00</startDT>
+                <endDT>2026-11-06T09:00:00+03:00</endDT>
+            </collectingInfo>
+            <summarizingDate>2026-11-09+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>52115.99</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>01015000006</ns2:regNum>
+                    <ns2:consRegistryNum>802J0959</ns2:consRegistryNum>
+                    <ns2:fullName>АППАРАТ ПО ОБЕСПЕЧЕНИЮ ДЕЯТЕЛЬНОСТИ ОРГАНОВ ГОСУДАРСТВЕННОЙ ВЛАСТИ РЕСПУБЛИКИ БАШКОРТОСТАН В Г. МОСКВЕ</ns2:fullName>
+                </customer>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>52115.99</maxPrice>
+                    </maxPriceInfo>
+                    <IKZInfo>
+                        <purchaseCode>262970118636777010100100430012620242</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>26.20</ns2:OKPDCode>
+                                <ns2:OKPDName>Компьютеры и периферийное оборудование</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>242</ns2:code>
+                                <ns2:name>Закупка товаров, работ и услуг в сфере информационно-коммуникационных технологий</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>29701186367770101001</customerCode>
+                        <purchaseNumber>0043</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202601015000006001</ns3:plan2020Number>
+                        <ns3:position2020Number>202601015000006001000038</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-30+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>01021251</ns2:code>
+                                    <ns2:name>Бюджет Республики Башкортостан</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>20</ns2:code>
+                                    <ns2:name>бюджет субъекта Российской Федерации</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>80000000</ns2:code>
+                                    <ns2:name>Муниципальные образования Республики Башкортостан</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>52115.99</total>
+                                <currentYear>52115.99</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22496220</sid>
+                                <externalSid>56765724194</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-30+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>80101029900002040242</KBK>
+                                        <paymentYearInfo>
+                                            <total>52115.99</total>
+                                            <currentYear>52115.99</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62427548</ns3:sid>
+                            <ns3:externalSid>56758598959</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>82e97271-ef46-464a-9f2b-754deb045201</ns3:GARGuid>
+                                <ns3:GARAddress>г. Москва, вн.тер.г. муниципальный округ Басманный, ул. Доброслободская</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>дом 6 строение 2</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077974</ns3:sid>
+                    <ns3:externalSid>56760395930</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1508.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>6033.32</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077975</ns3:sid>
+                    <ns3:externalSid>56760395931</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1481.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5926.68</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077976</ns3:sid>
+                    <ns3:externalSid>56760395935</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1481.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5926.68</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077977</ns3:sid>
+                    <ns3:externalSid>56760395936</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1368.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>5472.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077978</ns3:sid>
+                    <ns3:externalSid>56760395937</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1094.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>2188.66</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077979</ns3:sid>
+                    <ns3:externalSid>56760395939</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>565.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1131.34</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077980</ns3:sid>
+                    <ns3:externalSid>56760395940</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>595.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>2382.68</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077981</ns3:sid>
+                    <ns3:externalSid>56760395943</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>566.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>4.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>2265.32</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077982</ns3:sid>
+                    <ns3:externalSid>56761296055</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>545.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>3270.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077983</ns3:sid>
+                    <ns3:externalSid>56763589964</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>2234.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>4468.66</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077984</ns3:sid>
+                    <ns3:externalSid>56763589968</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1249.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>2498.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077985</ns3:sid>
+                    <ns3:externalSid>56763783428</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1375.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>2751.34</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077986</ns3:sid>
+                    <ns3:externalSid>56763783432</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1184.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>2.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>2368.66</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077987</ns3:sid>
+                    <ns3:externalSid>56763783434</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1314.67</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1314.67</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226077988</ns3:sid>
+                    <ns3:externalSid>56763783448</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>20.59.12.120-00000002</ns2:code>
+                        <ns2:name>Картридж для электрографических печатающих устройств</ns2:name>
+                        <ns2:versionId>164061</ns2:versionId>
+                        <ns2:versionNumber>2</ns2:versionNumber>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>26.20.40.120</ns2:OKPDCode>
+                            <ns2:OKPDName>Элементы замены типовые устройств ввода и вывода</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Картридж для электрографических печатающих устройств</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>686.33</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>6.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>4117.98</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isRestrictForeignPurchaseObjects>true</ns3:isRestrictForeignPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>52115.99</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>Установлено</ns3:content>
+            </requirementInfo>
+        </requirementsInfo>
+    </notificationInfo>
+    <printFormFieldsInfo>
+        <is449Features>false</is449Features>
+    </printFormFieldsInfo>
+</ns8:epNotificationEZK2020>

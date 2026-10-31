@@ -1,0 +1,1516 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44236609</id>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0319100004926001473</purchaseNumber>
+        <docNumber>№0319100004926001473</docNumber>
+        <plannedPublishDate>2026-10-22+07:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-22T13:09:13.684+07:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0319100004926001473</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>№ 192/27 на поставку запасных частей и расходных материалов для текущего ремонта к медицинскому оборудованию для нужд ФГБУ ФСНКЦ ФМБА России (для субъектов малого предпринимательства, социально ориентированных некоммерческих организаций)</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>03191000049</regNum>
+            <consRegistryNum>001X6866</consRegistryNum>
+            <fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "ФЕДЕРАЛЬНЫЙ СИБИРСКИЙ НАУЧНО-КЛИНИЧЕСКИЙ ЦЕНТР ФЕДЕРАЛЬНОГО МЕДИКО-БИОЛОГИЧЕСКОГО АГЕНТСТВА"</fullName>
+            <shortName>ФГБУ ФСНКЦ ФМБА РОССИИ</shortName>
+            <postAddress>660037, Красноярский край, г Красноярск, ул Коломенская, дом 26</postAddress>
+            <factAddress>Российская Федерация, 660037, Красноярский край, Красноярск г, Коломенская ул, Д. 26</factAddress>
+            <INN>2462003962</INN>
+            <KPP>246201001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>660037, Красноярский край, г Красноярск, ул Коломенская, дом 26</orgPostAddress>
+            <orgFactAddress>Российская Федерация, 660037, Красноярский край, Красноярск г, Коломенская ул, Д. 26</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Сураева</ns3:lastName>
+                <ns3:firstName>Светлана</ns3:firstName>
+                <ns3:middleName>Сергеевна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>suraeva_ss@skc-fmba.ru</contactEMail>
+            <contactPhone>7-391-2743156</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0319100004926001473</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1623831187C49A3F669085E0EE290</ns3:publishedContentId>
+            <ns3:fileName>Обоснование НМЦК 192.doc</ns3:fileName>
+            <ns3:fileSize>79872</ns3:fileSize>
+            <ns3:docDescription>Обоснование НМЦК 192</ns3:docDescription>
+            <ns3:docDate>2026-10-22T09:06:52+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1623831187C49A3F669085E0EE290</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1623847397D7B915F6364E8D77972</ns3:publishedContentId>
+            <ns3:fileName>Проект Контракта 192-27.docx</ns3:fileName>
+            <ns3:fileSize>72606</ns3:fileSize>
+            <ns3:docDescription>Проект Контракта 192-27</ns3:docDescription>
+            <ns3:docDate>2026-10-22T09:06:57+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1623847397D7B915F6364E8D77972</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A16238597E7DBF8A5D61CA86090EDA</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки 192.docx</ns3:fileName>
+            <ns3:fileSize>37108</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки 192</ns3:docDescription>
+            <ns3:docDate>2026-10-22T09:07:02+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A16238597E7DBF8A5D61CA86090EDA</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A162386A757F459753BAA538E44CAE</ns3:publishedContentId>
+            <ns3:fileName>Требования к составу заявки, инструкция.docx</ns3:fileName>
+            <ns3:fileSize>26760</ns3:fileSize>
+            <ns3:docDescription>Требования к составу заявки, инструкция</ns3:docDescription>
+            <ns3:docDate>2026-10-22T09:07:06+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A162386A757F459753BAA538E44CAE</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A162387DBE7F42B3927F953029AF61</ns3:publishedContentId>
+            <ns3:fileName>Реквизиты счета Заказчика для внесения денежных средств в качестве обеспечения исполнения Контракта.docx</ns3:fileName>
+            <ns3:fileSize>80336</ns3:fileSize>
+            <ns3:docDescription>Реквизиты счета Заказчика для внесения денежных средств в качестве обеспечения исполнения Контракта</ns3:docDescription>
+            <ns3:docDate>2026-10-22T09:07:11+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A162387DBE7F42B3927F953029AF61</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>AD</ns2:code>
+                <ns2:name>Дополнительная информация и документы</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-22T13:09:13+07:00</startDT>
+                <endDT>2026-10-30T12:00:00+07:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-10-30+07:00</biddingDate>
+            <summarizingDate>2026-11-03+07:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>2252994.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03191000049</ns2:regNum>
+                    <ns2:consRegistryNum>001X6866</ns2:consRegistryNum>
+                    <ns2:fullName>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ "ФЕДЕРАЛЬНЫЙ СИБИРСКИЙ НАУЧНО-КЛИНИЧЕСКИЙ ЦЕНТР ФЕДЕРАЛЬНОГО МЕДИКО-БИОЛОГИЧЕСКОГО АГЕНТСТВА"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>22529.94</amount>
+                    <account>
+                        <ns3:bik>000000000</ns3:bik>
+                        <ns3:settlementAccount>00000000000000000000</ns3:settlementAccount>
+                        <ns3:personalAccount>См. прилагаемые документы</ns3:personalAccount>
+                    </account>
+                    <procedureInfo>Обеспечение предоставляется в виде независимой гарантии или путем внесения на счет денежных средств. Способ обеспечения определяется участником закупки самостоятельно. Денежные средства, предназначенные для обеспечения заявок, вносятся участниками закупок на специальные счета, открытые ими в банках, перечень которых установлен Распоряжением Правительства РФ от 13.07.2018 № 1451-р. Блокирование денежных средств, внесенных участником закупки в качестве обеспечения заявки, осуществляется в порядке, установленном статьей 44 Федерального закона № 44-ФЗ. Условия независимой гарантии должны отвечать требованиям статьи 45 Федерального закона № 44-ФЗ и Постановления Правительства РФ от 08.11.2013 № 1005. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок. Участник закупки для подачи заявки выбирает с использованием электронной площадки способ обеспечения заявки путем указания реквизитов специального счета или указания номера реестровой записи из реестра независимых гарантий, размещенного в ЕИС. Предприятия уголовно-исполнительной системы, организации инвалидов, предоставляют обеспечение заявки на участие в закупке в размере одной второй процента начальной (максимальной) цены контракта. Государственные, муниципальные учреждения не предоставляют обеспечение подаваемых ими заявок на участие в закупках.&#13;
+Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена Евразийского экономического союза, за исключением Российской Федерации, или физическими лицами, являющимися гражданами государства - члена Евразийского экономического союза, за исключением Российской Федерации, вправе предоставить обеспечение заявок в виде денежных средств с учетом особенностей, установленных Постановлением Правительства РФ от 10.04.2023 № 579.&#13;
+</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>000000000</ns3:bik>
+                        <ns3:settlementAccount>00000000000000000000</ns3:settlementAccount>
+                        <ns3:personalAccount>См. прилагаемые документы</ns3:personalAccount>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям ст. 45 Федерального закона № 44-ФЗ и Постановлением Правительства РФ от 08.11.2013 № 1005 или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством РФ учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются участником закупки, с которым заключается контракт, самостоятельно. Срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц. Контракт заключается после предоставления участником закупки, с которым заключается контракт, обеспечения исполнения контракта. В случае, если участником снижена цена контракта на двадцать пять и более процентов, участник, с которым заключается контракт, предоставляет обеспечение исполнения контракта с учетом положений ст. 37 Федерального закона № 44-ФЗ. Участник закупки, с которым заключается контракт по результатам определения поставщика (подрядчика, исполнителя) в соответствии с п. 1 ч. 1 ст. 30 Федерального закона № 44-ФЗ, освобождается от предоставления обеспечения исполнения контракта, в том числе с учетом положений ст. 37 Федерального закона № 44-ФЗ, в случае предоставления информации, предусмотренной ч. 8.1 Федерального закона № 44-ФЗ. Положения об обеспечении исполнения контракта не применяются в случаях, предусмотренных ч. 8 ст. 96 Федерального закона № 44-ФЗ</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>2252994.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>261246200396224620100100052130000244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:undefined>0000</ns3:undefined>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>12462003962246201001</customerCode>
+                        <purchaseNumber>0005</purchaseNumber>
+                        <purchaseOrderNumber>213</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603191000049002</ns3:plan2020Number>
+                        <ns3:position2020Number>202603191000049002000005</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>2252994.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>2252994.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22206854</sid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>2252994.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>2252994.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>2252994.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>2252994.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>2252994.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62082789</ns3:sid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>707b822d-61f2-4004-a94c-44cabfbcf4de</ns3:GARGuid>
+                                <ns3:GARAddress>край Красноярский, г.о. город Красноярск, г. Красноярск, ул. Коломенская, зд. 26</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>Поставщик самостоятельно доставляет Товар Заказчику по адресу: г. Красноярск, ул. Коломенская, 26, склад, с разгрузкой с транспортного средства (далее – место доставки).  Поставка Товара производится в течение срока действия Контракта на основании заявок Заказчика, не ранее 01.01.2027 г. В Заявке указываются наименование, количество, ассортимент подлежащего поставке Товара. Заявка передается Заказчиком Поставщику посредством электронной почты, по факсу, с курьером или иным доступным способом связи, позволяющим фиксировать её получение. Не заказанный Заказчиком Товар не поставляется и не оплачивается. Поставка Товара производится в течение 30 дней с момента получения Поставщиком заявки Заказчика, если иная более поздняя дата не указана в Заявке. Максимальное количество подаваемых Заказчиком заявок в течение срока действия Контракта – не более 4 заявок. </ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>true</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyTerm>В случае если производителем установлен гарантийный срок на Товар, гарантийный срок составляет не менее 3 месяцев, и не менее срока гарантии производителя.</warrantyTerm>
+                </warrantyInfo>
+                <addInfo>Товары с характеристиками, соответствующими потребности Заказчика, не производятся на территории Российской Федерации</addInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>224469711</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333112031</ns3:sid>
+                                <ns3:name>Наконечник с крышкой </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430171419</ns3:sid>
+                                        <ns3:qualityDescription>Часть аппарата ультразвукового vector для лечения пародонтита. Наконечник основной vector (vector paro). Наконечник предназначен для использования с аппаратами ультразвуковыми vector для профилактики и лечения пародонтита. Позволяет выполнять профессиональную чистку зубов, удалять отложения при максимально бережном воздействии на ткани пародонта. Совместимость с оборудованием, имеющимся у Заказчика 2008 года выпуска, серийный номер W010112. Инв. Номер 10104175084</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Наконечник с крышкой </ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>62500.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>62500.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224469909</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333112890</ns3:sid>
+                                <ns3:name>Ротор турбинного наконечника. </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430171459</ns3:sid>
+                                        <ns3:qualityDescription>Встроен в наконечник. Необходим для вращения стоматологических боров в турбинном наконечнике в стоматологической установке. Работает за счет преобразования энергии сжатого воздуха в механическую энергию вращения. Поставляется в комплекте с двумя уплотнительными прорезиненными кольцами. Изготовлен из нержавеющей стали. Метод обработки - обработка на фрезерном станке. Остановка ротора до 1 сек, подшипники керамические. Совместимость с оборудованием, имеющимся у Заказчика: Установка Smile Symptic ЕСО; Зав. №: 002199/SY; Год выпуска: 2009; Инв. №: 10104178020</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Ротор турбинного наконечника в комплекте с О-кольцами</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>7500.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>7500.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224470194</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333114750</ns3:sid>
+                                <ns3:name>Смазка </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433691661</ns3:sid>
+                                        <ns3:qualityDescription>смазывающее и очищающее средство для регулярного ухода за стоматологическими инструментами. Предназначено для ухода за подшипниками скольжения и качения и остальных площадей трения и движения стоматологических инструментов. Является маслом высокой степени очистки с добавками без запаха, нетоксичный, безвредный с точки зрения здоровья и гигиены.  Технические характеристики: - Цвет аэрозоля - бесцветный; - Наконечники в комплекте с флаконом 1 шт.; - Высокорафинированное минеральное масло; - Природный газ без фреона; - Объем флакона 500 мл. Совместимость с оборудованием, имеющимся у Заказчика: Установка стоматологическая SIRONA в комплекте с оборудованием и мебелью; Зав. №: 17329; Год выпуска: 2009; Инв. №: 10104174712</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Смазка </ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>2000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>2000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224470195</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333114751</ns3:sid>
+                                <ns3:name>Соединение быстросъемное </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430173930</ns3:sid>
+                                        <ns3:qualityDescription>Материал - сталь, с резьбой. Предназначено для быстрого соединения турбинных наконечников со светом на шланг с четырех канальным соединением. Совместимость с оборудованием, имеющимся у Заказчика: Установка стоматологическая SIRONA в комплекте с оборудованием и мебелью; Зав. №: 17329; Год выпуска: 2009; Инв. №: 10104174712</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Соединение быстросъемное </ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>10000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>10000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224471250</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333115833</ns3:sid>
+                                <ns3:name>Головка в комплекте c О - кольцами</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430174918</ns3:sid>
+                                        <ns3:qualityDescription>Служит для вращения бора в угловом понижающего наконечнике. Встроен в наконечник. Работает за счет передачи крутящего момента от вала микромотора к ротору головки наконечника, который в свою очередь вращает бор. Передаточное отношение 20:1. Изготовлена из нержавеющей стали. Метод обработки - обработка на фрезерном станке. Комплектация: головка СА 20:1 - 1 шт.; пластиковая клипса (зеленая) - 2 шт.; о-кольцо 15х0,6 - 2 шт., о-кольцо 0,9х0,4 - 2 шт. Совместимость с оборудованием, имеющимся у Заказчика: Аппарат стоматологический для имплантологии, варианты исполнения Chiropro 3rd Gen в составе с наконечником угловым СА 20:1 (L Micro-Series) Bien-Air Dental; Зав. №: 23B0032; Год выпуска: 2023; Инв. №: 10104192706 </ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Головка в сборе для наконечника углового понижающего</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>32500.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>32500.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224472067</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333117064</ns3:sid>
+                                <ns3:name>Комплект для ремонта микромотора стоматологического без света</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430176605</ns3:sid>
+                                        <ns3:qualityDescription>Ротор микромотора MC2 в комплекте с О-кольцами - встроен в микромотор. Необходим для вращения механических наконечников, установленных на микромотор. Работает за счет преобразования электрической энергии в энергию электромагнитного поля с последующим преобразованием в механическую энергию вращения. Комплектация: ротор МС2 - 1 шт; подшипник МС2 - 2 шт; О-кольца - 7 шт; щетка для мотора МС2 -  2 шт; уплотнительная шайба силиконовая МС2 - 2 шт; эластичный штифт - 1 шт; уплотнение v-колько - 1 шт. Совместимость с оборудованием, имеющимся у Заказчика: Установками Smile</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Комплект для ремонта микромотора стоматологического без света</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>19250.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>19250.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224472068</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333117572</ns3:sid>
+                                <ns3:name>Шланг универсальный для микромоторов </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433162032</ns3:sid>
+                                        <ns3:qualityDescription>(шланг пластмассовый бесшовный, мягкий к стоматологическим установкам «Smile») Необходим для подключения микромоторов МС2 фирмы Bien-Air к стоматологической установке Chirana к сжатому воздуху, воде и для приведения их в рабочее состояние. Работает по принципу проводника воздуха и воды от стоматологической установки к инструменту. Изготовлен из пластмассы с фитингом из стали. Совместимость с оборудованием, имеющимся у Заказчика: Установками Smile</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Шланг универсальный для электрического микромотора</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>13500.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>13500.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224472293</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333118066</ns3:sid>
+                                <ns3:name>Ротор в комплекте с О-кольцами </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>432246189</ns3:sid>
+                                        <ns3:qualityDescription>Ротор в комплекте с О-кольцами - принадлежность наконечника механического стоматологического. Работает за счет вращения его микромотором электрическим. Изготовлен из нержавеющей стали. Метод обработки: обработка на фрезерном станке. Комплектация: ротор СА 1:1 - 1 шт, пластиковая клипса (синяя) - 2 шт, о-кольцо 15х0,6 - 2 шт, о-кольцо 0,9х0,4 - 4 шт, о-кольцо 7,4х0,25 - 1 шт. Совместимость с оборудованием, имеющимся у Заказчика: Установка стоматологическая SIRONA в комплекте с оборудованием и мебелью; Зав. №: 17329; Год выпуска: 2009; Инв. №: 10104174712 и Установка стоматологическая SIRONA в комплекте с оборудованием и мебелью; Зав. №: 17318; Год выпуска: 2009; Инв. №: 10104174713</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Ротор для наконечника углового в комплекте с О-кольцам</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>17500.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>17500.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224472924</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333118470</ns3:sid>
+                                <ns3:name>Статор для микромотора бесщеточного хирургического в комплекте с О кольцами </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430178357</ns3:sid>
+                                        <ns3:qualityDescription>изделие из стали, с проводом обмоток внутри, метод обработки - обработка на фрезерном станке. Служит статором микромотора МХ-I LED, рабочее напряжение 0-24 вольта переменного тока. Комплектация: статор MX-I LED-1 шт.; шарикоподшипники-2 шт.; эластичный штифт-1 шт.; уплотнительная шайба-1 шт; О-кольцо-7 шт. Совместимость с оборудованием, имеющимся у Заказчика: Аппарат стоматологический для имплантологии, варианты исполнения Chiropro 3rd Gen в составе с наконечником угловым СА 20:1 (L Micro-Series) Bien-Air Dental зав. № микромотора 23В0009; год выпуска 2023; Инв № комплекта: 10104192706</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Статор для микромотора бесщеточного хирургического в комплекте с О кольцами &#13;
+&#13;
+</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>45000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>45000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224473246</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333119114</ns3:sid>
+                                <ns3:name>Кабель для микромотора бесщеточного хирургического </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430178957</ns3:sid>
+                                        <ns3:qualityDescription>необходим для подключения микромоторов MX –i LED фирмы Bien-Air к аппарату для имплантологии Chiropro Plus 3rd Gen передает электрический ток 0-24 вольта постоянного тока от аппарата к микромотору, изготовлен из медного многожильного провода, покрыт мягкой пластмассой, на концах кабеля есть металлические фитинги для подключения к микромотору и аппарату, длина 2 м. Совместимость с оборудованием, имеющимся у Заказчика: Аппарат стоматологический для имплантологии, варианты исполнения Chiropro 3rd Gen в составе с наконечником угловым СА 20:1 (L Micro-Series) Bien-Air Dental зав. № микромотора 23В0009; год выпуска 2023; Инв № комплекта: 10104192706</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Кабель для микромотора бесщеточного хирургического </ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>45000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>45000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224473688</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333120191</ns3:sid>
+                                <ns3:name>Шкаф шумоизоляционный для компрессора </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>432246190</ns3:sid>
+                                        <ns3:qualityDescription>Предназначен для размещения в шкафу стоматологического компрессора dk 50-10z.  Шкаф стальной из эмалированной стали с внутренним шумоизолирующим слоем из поролона. Совместимость с оборудованием, имеющимся у Заказчика: Компрессор ДК-50-10 зав. № 7321; год выпуска 1999; Инв № комплекта: 0001371325</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Шкаф шумоизоляционный для компрессора </ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>43000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>43000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224477170</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333124303</ns3:sid>
+                                <ns3:name>Двигатель 0,55 KW для компрессора </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>432246191</ns3:sid>
+                                        <ns3:qualityDescription>Часть стоматологического компрессора. Представляет собой однофазный синхронный двигатель мощностью 0,55 kw, 230v/50-60hz. Предназначен для использования в стоматологических компрессорах серии dk. Служит для вращения кривошипа поршневой группы для создания давления в ресивере компрессора. Совместимость с оборудованием, имеющимся у Заказчика: Компрессор ДК-50-10 зав. № 7321; год выпуска 1999; Инв № комплекта: 0001371325</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Двигатель 0,55 KW для компрессора </ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>38000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>38000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224477851</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333125275</ns3:sid>
+                                <ns3:name>Поршень с шатуном для компрессора </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433691663</ns3:sid>
+                                        <ns3:qualityDescription>Поршень с шатуном для компрессора (для стоматологических компрессоров серии «дк» объемных, поступательных с кривошипа-шатунным механизмом. Необходим для получения сжатого воздуха. Работает по принципу преобразования возвратно поступательного движения с изменением объема надпоршневого пространства. Совместимость с оборудованием, имеющимся у Заказчика: Компрессор ДК-50-10 зав. № 7321; год выпуска 1999; Инв № комплекта: 0001371325</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Поршень с шатуном для компрессора </ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>39000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>39000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224478134</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333125920</ns3:sid>
+                                <ns3:name>Мобильная автономная вытяжка </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430187123</ns3:sid>
+                                        <ns3:qualityDescription>для рабочих мест индивидуального и общего пользования в зуботехнических лабораториях. Вертикальное исполнение. Требуется внешний регулятор мощности. Электропитание ~220 В 50 Гц 3А, Габариты (Ш×Г×В), не более 300×345×540 мм, Масса, не более 9 кг, Производительность до 120 м³/ч, Уровень шума, не более 70 дБА, Режим работы повторно-кратковременный Мощность 600 Вт, Диаметр подсоединяемого шланга 45 мм,  Объем 7 л (объем фильтр-мешка), Мощность всасывания 160 Вт, Длина шланга, не менее 1,5 м (ШГВ 1.0) Совместимость с оборудованием, имеющимся у Заказчика: Станок металлообрабатывающий Шлифмотор ПОЛИР 6,5 МАСТЕР зав. № 308011; год выпуска 2023; Инв № комплекта: 10104192438</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Мобильная автономная вытяжка для рабочих мест</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>37000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>37000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224478330</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333126574</ns3:sid>
+                                <ns3:name>Сервисный набор для автоклава с принадлежностями</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>432246193</ns3:sid>
+                                        <ns3:qualityDescription>состав набора: фильтр для улавливания частиц из водопроводной воды; прокладки пластмассовые – 4 шт., тюбик с силиконовой смазкой 15 грамм для смазки компонентов набора при монтаже на оборудование, паранитовая прокладка – 2шт, лопатка для нанесения смазки. Совместимость с оборудованием, имеющимся у Заказчика: Автоклав "Vacuklav 24 B+" с принадлежностями; Зав. №1024-BL-1121; Год выпуска: 2009; Инв. №: 10104177975</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Сервисный набор для автоклава с принадлежностями</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>35015.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>35015.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224482295</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333130339</ns3:sid>
+                                <ns3:name>Блок электромагнитных клапанов охлаждающей воды для автоклава</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>432246194</ns3:sid>
+                                        <ns3:qualityDescription>Блок электромагнитных клапанов охлаждающей воды для автоклава. Блок состоит из двух электромагнитных запорных клапанов в едином корпусе из латуни. Предназначен для открытия/закрытия прохода воды в автоклаве melag. Открытие происходит при получении электрического сигнала от платы управления автоклава. Рабочее напряжение – 230в, мощность – 6 вт. Диаметр проходного сечения 5 мм. Совместимость с оборудованием, имеющимся у Заказчика: Автоклав "Vacuklav 24 B+" с принадлежностями; Зав. №1024-BL-1121; Год выпуска: 2009; Инв. №: 10104177975</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Блок электромагнитных клапанов охлаждающей воды для автоклава</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>33500.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>33500.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224482296</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333130340</ns3:sid>
+                                <ns3:name>Проба автоматического температурного контроля </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430192598</ns3:sid>
+                                        <ns3:qualityDescription>состоит из сплава металлов в виде проволоки и керамического покрытия. Набор автоматического температурного контроля ATK 2 служит для точной проверки и калибровки температуры в камере обжига печей Ivoclar Vivadent, оснащенных автоматическими программами калибровки для системы. Совместимость с оборудованием, имеющимся у Заказчика: Печь для обработки стоматологической керамики PROGRAMAT EP3010 200-240V/50-60Hz; Зав. №: 4500008574; Год выпуска: 2019; Инв. №: 10104187572</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Проба автоматического температурного контроля </ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>55000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>55000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224482297</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333130341</ns3:sid>
+                                <ns3:name>Клапан электромагнитный</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>432246195</ns3:sid>
+                                        <ns3:qualityDescription>Клапан соленоид. Представляет собой электромагнитный запорный клапан из латуни для стоматологического оборудования. Необходим для управления потоками воздуха. Принцип работы заключается в преобразовании электрической энергии в магнитное поле, под действием которого происходит смещение сердечника клапана и открытие проходного канала. Диаметр прохода 3 мм. Совместимость с оборудованием, имеющимся у Заказчика: Компрессор ДК-50-10 зав. № 7321; год выпуска 1999; Инв № комплекта: 0001371325</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Клапан электромагнитный</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>13000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>13000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224489562</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333137758</ns3:sid>
+                                <ns3:name>Обивка задней спинки, обивка спинки и подголовник кресла стоматологического</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430200335</ns3:sid>
+                                        <ns3:qualityDescription>Служит для защиты врача, металлическая спинка служит также опорой удержания пациента, для комфорта врача и быстрой обработки. Обивка спинки кресла стоматологического. Металлическая пластина для удержания спины пациента прикрепленная к двигателю для изменения положения спины и удержания его на кресле во время лечения, обтянутый кожзамом внутри которого поролон, приклеенный к металлической сникни. Подголовник кресла стоматологического. Представляет собой анатомический подголовник для удержания головы пациента, обтянутый кожзамом для гигиены. Совместимость с оборудованием, имеющимся у Заказчика: Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е; Зав. №: 2123; Год выпуска: 2006; Инв. №: 1371693 Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е, компрессор ДК 50-S, стул Д 10 Z для зубного врача, шкаф металлический АR модель 33, Зав. №: 2743; Год выпуска: 2007; Инв. №: 1372043 Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е, компрессор ДК 50-S, стул Д 10 Z для зубного врача, шкаф металлический АR модель 33, Зав. №: 2741; Год выпуска: 2007; Инв. №: 1372044 Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е, компрессор ДК 50-S, стул Д 10 Z для зубного врача, шкаф металлический АR модель 33, Зав. №: 2751; Год выпуска: 2007; Инв. №: 1372045 Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е, компрессор ДК 50-S, стул Д 10 Z для зубного врача, шкаф металлический АR модель 33, Зав. №: 2747; Год выпуска: 2007; Инв. №: 1372046</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Обивка задней спинки, обивка спинки и подголовник кресла стоматологического</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>704</ns2:code>
+                        <ns2:nationalCode>НАБОР</ns2:nationalCode>
+                        <ns2:name>Набор</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>36000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>36000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224489698</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333138284</ns3:sid>
+                                <ns3:name>Пистолета вода-воздух</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430201139</ns3:sid>
+                                        <ns3:qualityDescription>Изделие из металла предназначено для получения струи воздуха, воды или смешанной струю на пистолете вода/воздух Chirana. Получено штамповкой, после которой было подвергнуто поверхностной обработке с целью удаления заусенцев и других дефектов штамповки путем грубой очистки или опиловки, устранения окалины путем погружения в кислоту. Совместимость с оборудованием, имеющимся у Заказчика для стоматологических установок Smile</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Пистолета вода-воздух</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>46100.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>46100.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224493076</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333141865</ns3:sid>
+                                <ns3:name>Шланг сливной P20</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430204923</ns3:sid>
+                                        <ns3:qualityDescription>Шланг спирафлекс р 20 для стоматологической установки смайл - изготовлен из полиуретана и предназначен для монтажа на стоматологические установки с целью защиты от механического повреждения более тонких шлангов и проводов. Совместимость с оборудованием, имеющимся у Заказчика: Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е; Зав. №: 2123; Год выпуска: 2006; Инв. №: 1371693 Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е, компрессор ДК 50-S, стул Д 10 Z для зубного врача, шкаф металлический АR модель 33, Зав. №: 2743; Год выпуска: 2007; Инв. №: 1372043 Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е, компрессор ДК 50-S, стул Д 10 Z для зубного врача, шкаф металлический АR модель 33, Зав. №: 2741; Год выпуска: 2007; Инв. №: 1372044</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Шланг сливной P20</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>018</ns2:code>
+                        <ns2:nationalCode>пог. м</ns2:nationalCode>
+                        <ns2:name>Погонный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1241.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1241.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224493278</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333142267</ns3:sid>
+                                <ns3:name>Шланг слюноотсоса P5/9</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430205684</ns3:sid>
+                                        <ns3:qualityDescription>Изготовлен из полиуретана - не армированный, без фитингов, бесшовный. Предназначен для отвода слюны из полости рта пациента в канализацию. Работают по принципу обыкновенного шланга.  Диаметр внутренний - 5 мм, наружный 9 мм. Совместимость с оборудованием, имеющимся у Заказчика: Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е; Зав. №: 2123; Год выпуска: 2006; Инв. №: 1371693 Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е, компрессор ДК 50-S, стул Д 10 Z для зубного врача, шкаф металлический АR модель 33, Зав. №: 2743; Год выпуска: 2007; Инв. №: 1372043 Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е, компрессор ДК 50-S, стул Д 10 Z для зубного врача, шкаф металлический АR модель 33, Зав. №: 2741; Год выпуска: 2007; Инв. №: 1372044</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Шланг слюноотсоса P5/9</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>018</ns2:code>
+                        <ns2:nationalCode>пог. м</ns2:nationalCode>
+                        <ns2:name>Погонный метр</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1540.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>1540.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224495489</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333143364</ns3:sid>
+                                <ns3:name>Фильтр регулятор воздуха (без манометра) </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430207028</ns3:sid>
+                                        <ns3:qualityDescription>Клапан воздуха с отстойником. Клапан запорный из пластмассы. Предназначен для открытия/закрытия прохода воздуха в стоматологическую установку смайл и одновременно улавливает из воздуха посторонние частицы. Проходное сечение 4 мм. Совместимость с оборудованием, имеющимся у Заказчика: Установка Smile Symptic ЕСО; Зав. №: 002199/SY; Год выпуска: 2009; Инв. №: 10104178020</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Фильтр регулятор воздуха (без манометра) </ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>11005.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>11005.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224497012</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333143897</ns3:sid>
+                                <ns3:name>Клапан регулирующий </ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430207868</ns3:sid>
+                                        <ns3:qualityDescription>/P2,5/ KNOB/ V-1511G.2812. Клапан управления потоком воды, игольчатый, механический, для стоматологической установки. Материал - сталь, латунь. Предназначен для ручной регулировки скорости подачи воды на стом. инструменты. Совместимость с оборудованием, имеющимся у Заказчика: Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е; Зав. №: 2123; Год выпуска: 2006; Инв. №: 1371693</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Клапан регулирующий </ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>3548.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>3548.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224497371</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333144667</ns3:sid>
+                                <ns3:name>Клапан электромагнитный</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430208770</ns3:sid>
+                                        <ns3:qualityDescription>Предназначен для монтажа в стоматологические установки "smile", управляет работой пневматического блока. При подаче напряжения 24 вольта постоянного тока в катушке клапана создается электромагнитное поле, под действием которого происходит смещение сердечника клапана и сердечник открывает проход для воды, при прекращении подачи напряжения сердечник возвращается в исходное положение под действием возвратной пружины и закрывает проход воды\воздуха. Диаметр прохода 1,3 мм. Совместимость с оборудованием, имеющимся у Заказчика: Установка Smile Symptic ЕСО; Зав. №: 002199/SY; Год выпуска: 2009; Инв. №: 10104178020</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Клапан электромагнитный</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>21950.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>21950.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224497532</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333145090</ns3:sid>
+                                <ns3:name>Держатель верхней подачи</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>430209304</ns3:sid>
+                                        <ns3:qualityDescription>"Смайл"/верхняя часть - изделие из пластика, монтируется на держатель верхней подачи смайла, удерживает шланг инструмента. Совместимость с оборудованием, имеющимся у Заказчика: Установка Smile Symptic ЕСО; Зав. №: 002199/SY; Год выпуска: 2009; Инв. №: 10104178020</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Держатель верхней подачи</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>8218.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>8218.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                    <ns3:isSoftware>false</ns3:isSoftware>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>224497622</ns3:sid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>26.60.12.140</ns2:OKPDCode>
+                        <ns2:OKPDName>Части и принадлежности электродиагностической аппаратуры и аппаратуры, основанной на использовании ультрафиолетового или инфракрасного излучения, предназначенной для применения в медицинских целях</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>333146228</ns3:sid>
+                                <ns3:name>Клапан электромагнитный со штуцерами и головкой бутылки охлаждения</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>433691662</ns3:sid>
+                                        <ns3:qualityDescription>Клапан электромагнитный Дипломат (запорный из латуни для стоматологического оборудования). Необходим для управления потоками воздуха. Принцип работы заключается в преобразовании электрической энергии в магнитное поле, под действием которого происходит смещение сердечника клапана и открытие проходного канала. Изготовлен из латуни, имеет медную катушку, установленную в пластиковом корпусе. Рабочее напряжение 24 вольта постоянного тока. Работает только на открытие и закрытие проходного канала. Диаметр проходного сечения 1,5 мм. Совместимость с оборудованием, имеющимся у Заказчика: Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е; Зав. №: 2123; Год выпуска: 2006; Инв. №: 1371693 Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е, компрессор ДК 50-S, стул Д 10 Z для зубного врача, шкаф металлический АR модель 33, Зав. №: 2743; Год выпуска: 2007; Инв. №: 1372043 Стоматологическая установка "Дипломат Адепт ДА 111", кресло ДМ 10Е, компрессор ДК 50-S, стул Д 10 Z для зубного врача, шкаф металлический АR модель 33, Зав. №: 2741; Год выпуска: 2007; Инв. №: 1372044</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Клапан электромагнитный со штуцерами и головкой бутылки охлаждения</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>29000.00</ns3:price>
+                    <ns3:quantity>
+                        <ns3:undefined>true</ns3:undefined>
+                    </ns3:quantity>
+                    <ns3:sum>29000.00</ns3:sum>
+                    <ns3:isMedicalProduct>true</ns3:isMedicalProduct>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isProhibitionForeignPurchaseObjects>false</ns3:isProhibitionForeignPurchaseObjects>
+                        <ns3:isRestrictForeignPurchaseObjects>false</ns3:isRestrictForeignPurchaseObjects>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                        <ns3:isImposibilityProhibition>false</ns3:isImposibilityProhibition>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>706867</ns3:totalSum>
+                <quantityUndefined>true</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TU1131</ns2:shortName>
+                    <ns2:name>Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+                <ns3:content>Не установлено.</ns3:content>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TOVNPIVR</ns2:shortName>
+                    <ns2:name>Требование об отсутствии в реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации, включенной в такой реестр в связи отказом поставщика (подрядчика, исполнителя) от исполнения контракта по причине введения в отношении заказчика санкций и (или) мер ограничительного характера</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>

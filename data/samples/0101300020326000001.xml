@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44429943</id>
+    <externalId>krista.02333313.56774970163</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0101300020326000001</purchaseNumber>
+        <docNumber>№0101300020326000001</docNumber>
+        <plannedPublishDate>2026-10-30+05:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-30T10:51:03.626+05:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0101300020326000001</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_MMVB</ns2:code>
+            <ns2:name>Электронная торговая площадка «Фабрикант»</ns2:name>
+            <ns2:url>https://www.fabrikant.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка легкового автомобиля для нужд Новоянзигитовского сельского поселения МР Краснокамский район Республики Башкортостан</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>01013000203</regNum>
+            <consRegistryNum>80312508</consRegistryNum>
+            <fullName>АДМИНИСТРАЦИЯ СЕЛЬСКОГО ПОСЕЛЕНИЯ НОВОЯНЗИГИТОВСКИЙ СЕЛЬСОВЕТ МУНИЦИПАЛЬНОГО РАЙОНА КРАСНОКАМСКИЙ РАЙОН РЕСПУБЛИКИ БАШКОРТОСТАН</fullName>
+            <shortName>НОВОЯНЗИГИТОВСКИЙ СЕЛЬСОВЕТ КРАСНОКАМСКОГО РАЙОНА РЕСПУБЛИКИ БАШКОРТОСТАН</shortName>
+            <postAddress>452942, Республика Башкортостан , КРАСНОКАМСКИЙ Р-Н, Д. НОВЫЙ ЯНЗИГИТ, УЛ. ДОРОЖНАЯ, Д.20</postAddress>
+            <factAddress>452942, Республика Башкортостан , КРАСНОКАМСКИЙ Р-Н, Д. НОВЫЙ ЯНЗИГИТ, УЛ. ДОРОЖНАЯ, Д.20</factAddress>
+            <INN>0231007772</INN>
+            <KPP>023101001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>CU</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>452942, Республика Башкортостан , КРАСНОКАМСКИЙ Р-Н, Д. НОВЫЙ ЯНЗИГИТ, УЛ. ДОРОЖНАЯ, Д.20</orgPostAddress>
+            <orgFactAddress>452942, Республика Башкортостан , КРАСНОКАМСКИЙ Р-Н, Д. НОВЫЙ ЯНЗИГИТ, УЛ. ДОРОЖНАЯ, Д.20</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Нигматова</ns3:lastName>
+                <ns3:firstName>Ирина</ns3:firstName>
+                <ns3:middleName>Александровна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>yanzigit1@yandex.ru</contactEMail>
+            <contactPhone>7-347-5973345</contactPhone>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0101300020326000001</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B5A9F9D7D8B923A36221C287864</ns3:publishedContentId>
+            <ns3:fileName>НМЦК.xls.zip</ns3:fileName>
+            <ns3:fileSize>103544</ns3:fileSize>
+            <ns3:docDescription>НМЦК.xls.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-30T08:49:02+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B5A9F9D7D8B923A36221C287864</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B5A92177289AAE681EEA2DD68A7</ns3:publishedContentId>
+            <ns3:fileName>Проект МК.docx.zip</ns3:fileName>
+            <ns3:fileSize>308544</ns3:fileSize>
+            <ns3:docDescription>Проект МК.docx.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-30T08:49:02+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B5A92177289AAE681EEA2DD68A7</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B5A9962723ABFB2C826271E7F41</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки.docx.zip</ns3:fileName>
+            <ns3:fileSize>139501</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки.docx.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-30T08:49:02+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B5A9962723ABFB2C826271E7F41</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A18B5AA5F873429D9DDEB57A7B8FE7</ns3:publishedContentId>
+            <ns3:fileName>Требования к содержанию, составу заявки.docx.zip</ns3:fileName>
+            <ns3:fileSize>138448</ns3:fileSize>
+            <ns3:docDescription>Требования к содержанию, составу заявки.docx.zip</ns3:docDescription>
+            <ns3:docDate>2026-10-30T08:49:02+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A18B5AA5F873429D9DDEB57A7B8FE7</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+            <ns3:cryptoSigns>
+                <ns3:signature type="CAdES-BES">MIIQHgYJKoZIhvcNAQcCoIIQDzCCEAsCAQExDjAMBggqhQMHAQECAgUAMAsGCSqGSIb3DQEHAaCCC5swgguXMIILRKADAgECAhEAzXPfLFr8RZSb9zkA02fHtTAKBggqhQMHAQEDAjCCAWsxIDAeBgkqhkiG9w0BCQEWEXVjX2ZrQHJvc2them5hLnJ1MRgwFgYDVQQIDA83NyDQnNC+0YHQutCy0LAxFTATBgUqhQNkBBIKNzcxMDU2ODc2MDEYMBYGBSqFA2QBEg0xMDQ3Nzk3MDE5ODMwMWAwXgYDVQQJDFfQkdC+0LvRjNGI0L7QuSDQl9C70LDRgtC+0YPRgdGC0LjQvdGB0LrQuNC5INC/0LXRgNC10YPQu9C+0LosINC0LiA2LCDRgdGC0YDQvtC10L3QuNC1IDExGTAXBgNVBAcMENCzLiDQnNC+0YHQutCy0LAxCzAJBgNVBAYTAlJVMTgwNgYDVQQKDC/QpNC10LTQtdGA0LDQu9GM0L3QvtC1INC60LDQt9C90LDRh9C10LnRgdGC0LLQvjE4MDYGA1UEAwwv0KTQtdC00LXRgNCw0LvRjNC90L7QtSDQutCw0LfQvdCw0YfQtdC50YHRgtCy0L4wHhcNMjYwODE4MTAxMjE0WhcNMjcxMTExMTAxMjE0WjCCA8wxCzAJBgNVBAYTAlJVMTYwNAYDVQQIDC3QoNC10YHQv9GD0LHQu9C40LrQsCDQkdCw0YjQutC+0YDRgtC+0YHRgtCw0L0xJzAlBgNVBAkMHtCj0JsuINCU0J7QoNCe0JbQndCQ0K8sINCULiAyMDEmMCQGA1UEBwwd0LQuINCd0L7QstGL0Lkg0K/QvdC30LjQs9C40YIxOTA3BgNVBAwMMNCT0LvQsNCy0LAg0YHQtdC70YzRgdC60L7Qs9C+INC/0L7RgdC10LvQtdC90LjRjzEfMB0GA1UECwwW0KDRg9C60L7QstC+0LTRgdGC0LLQvjGB/zCB/AYDVQQKDIH00JDQlNCc0JjQndCY0KHQotCg0JDQptCY0K8g0KHQldCb0KzQodCa0J7Qk9CeINCf0J7QodCV0JvQldCd0JjQryDQndCe0JLQntCv0J3Ql9CY0JPQmNCi0J7QktCh0JrQmNCZINCh0JXQm9Cs0KHQntCS0JXQoiDQnNCj0J3QmNCm0JjQn9CQ0JvQrNCd0J7Qk9CeINCg0JDQmdCe0J3QkCDQmtCg0JDQodCd0J7QmtCQ0JzQodCa0JjQmSDQoNCQ0JnQntCdINCg0JXQodCf0KPQkdCb0JjQmtCYINCR0JDQqNCa0J7QoNCi0J7QodCi0JDQnTEYMBYGBSqFA2QBEg0xMDkwMjY0MDAwNzA1MRYwFAYFKoUDZAMSCzA0ODg3NjE4NzE5MRUwEwYFKoUDZAQSCjAyMzEwMDc3NzIxGjAYBggqhQMDgQMBARIMMDIzMTAwNTAzNjU1MSIwIAYJKoZIhvcNAQkBFhNrcmFzbl9yZnVAdWZhbXRzLnJ1MS4wLAYDVQQqDCXQmNGA0LjQvdCwINCQ0LvQtdC60YHQsNC90LTRgNC+0LLQvdCwMRswGQYDVQQEDBLQndC40LPQvNCw0YLQvtCy0LAxgf8wgfwGA1UEAwyB9NCQ0JTQnNCY0J3QmNCh0KLQoNCQ0KbQmNCvINCh0JXQm9Cs0KHQmtCe0JPQniDQn9Ce0KHQldCb0JXQndCY0K8g0J3QntCS0J7Qr9Cd0JfQmNCT0JjQotCe0JLQodCa0JjQmSDQodCV0JvQrNCh0J7QktCV0KIg0JzQo9Cd0JjQptCY0J/QkNCb0KzQndCe0JPQniDQoNCQ0JnQntCd0JAg0JrQoNCQ0KHQndCe0JrQkNCc0KHQmtCY0Jkg0KDQkNCZ0J7QnSDQoNCV0KHQn9Cj0JHQm9CY0JrQmCDQkdCQ0KjQmtCe0KDQotCe0KHQotCQ0J0wZjAfBggqhQMHAQEBATATBgcqhQMCAiQABggqhQMHAQECAgNDAARA/5lL/B6IPIAyOratZR8WdA99rG790YRP7HyH+gCHFNfgVOznFrA4g6TkM2Hp2idaQ+vzBaIC0CRpDVEWYsTDgKOCBVUwggVRMCsGA1UdEAQkMCKADzIwMjYwODE5MTExNjAwWoEPMjAyNzExMTIxMTE2MDBaMA4GA1UdDwEB/wQEAwID+DATBgNVHSUEDDAKBggrBgEFBQcDAjAdBgNVHSAEFjAUMAgGBiqFA2RxATAIBgYqhQNkcQIwDAYFKoUDZHIEAwIBATAtBgUqhQNkbwQkDCLQmtGA0LjQv9GC0L7Qn9GA0L4gQ1NQICg1LjAuMTIwMDApMIIBoQYFKoUDZHAEggGWMIIBkgyBh9Cf0YDQvtCz0YDQsNC80LzQvdC+LdCw0L/Qv9Cw0YDQsNGC0L3Ri9C5INC60L7QvNC/0LvQtdC60YEgVmlQTmV0IFBLSSBTZXJ2aWNlICjQvdCwINCw0L/Qv9Cw0YDQsNGC0L3QvtC5INC/0LvQsNGC0YTQvtGA0LzQtSBIU00gMjAwMFEyKQxo0J/RgNC+0LPRgNCw0LzQvNC90L4t0LDQv9C/0LDRgNCw0YLQvdGL0Lkg0LrQvtC80L/Qu9C10LrRgSDCq9Cu0L3QuNGB0LXRgNGCLdCT0J7QodCiwrsuINCS0LXRgNGB0LjRjyA0LjAMTUPQtdGA0YLQuNGE0LjQutCw0YIg0YHQvtC+0YLQstC10YLRgdGC0LLQuNGPIOKEltCh0KQvMTI0LTQzMjgg0L7RgiAyOS4wOC4yMDIyDE1D0LXRgNGC0LjRhNC40LrQsNGCINGB0L7QvtGC0LLQtdGC0YHRgtCy0LjRjyDihJbQodCkLzEyOC00NjM5INC+0YIgMDQuMTAuMjAyMzBmBgNVHR8EXzBdMC6gLKAqhihodHRwOi8vY3JsLnJvc2them5hLnJ1L2NybC91Y2ZrXzIwMjUuY3JsMCugKaAnhiVodHRwOi8vY3JsLmZrLmxvY2FsL2NybC91Y2ZrXzIwMjUuY3JsMHcGCCsGAQUFBwEBBGswaTA0BggrBgEFBQcwAoYoaHR0cDovL2NybC5yb3NrYXpuYS5ydS9jcmwvdWNma18yMDI1LmNydDAxBggrBgEFBQcwAoYlaHR0cDovL2NybC5may5sb2NhbC9jcmwvdWNma18yMDI1LmNydDCBgQYHKoUDAgIxAgR2MHQwZBZNaHR0cHM6Ly9yb3NrYXpuYS5nb3YucnUvZ2lzL3Vkb3N0b3ZlcnlheXVzaGhpai1jZW50ci9saXRzZW56aWktaS1zZXJ0aWZpa2F0eS8MD9Cb0Y7QsdCw0Y8g0JjQoQMCBeAEDCbF2z82NsAPhiD4vTAdBgNVHQ4EFgQU6Z0vb/JQSmyFoMVKy9I4YVfG4xAwggF2BgNVHSMEggFtMIIBaYAUvz+8cqZrQ2drA0DMxq/G+sDNPfyhggFDpIIBPzCCATsxITAfBgkqhkiG9w0BCQEWEmRpdEBkaWdpdGFsLmdvdi5ydTELMAkGA1UEBhMCUlUxGDAWBgNVBAgMDzc3INCc0L7RgdC60LLQsDEZMBcGA1UEBwwQ0LMuINCc0L7RgdC60LLQsDFTMFEGA1UECQxK0J/RgNC10YHQvdC10L3RgdC60LDRjyDQvdCw0LHQtdGA0LXQttC90LDRjywg0LTQvtC8IDEwLCDRgdGC0YDQvtC10L3QuNC1IDIxJjAkBgNVBAoMHdCc0LjQvdGG0LjRhNGA0Ysg0KDQvtGB0YHQuNC4MRgwFgYFKoUDZAESDTEwNDc3MDIwMjY3MDExFTATBgUqhQNkBBIKNzcxMDQ3NDM3NTEmMCQGA1UEAwwd0JzQuNC90YbQuNGE0YDRiyDQoNC+0YHRgdC40LiCCicyIggAAAAAC1QwCgYIKoUDBwEBAwIDQQC6oUBtXX/AxUWYpHB8iYux9ZtHvgugdJFQFUkY0KcdN4yK+7B04hg+dS6avsVvi9wRSl9HbUmpmQ5hA26pcfYXMYIESDCCBEQCAQEwggGCMIIBazEgMB4GCSqGSIb3DQEJARYRdWNfZmtAcm9za2F6bmEucnUxGDAWBgNVBAgMDzc3INCc0L7RgdC60LLQsDEVMBMGBSqFA2QEEgo3NzEwNTY4NzYwMRgwFgYFKoUDZAESDTEwNDc3OTcwMTk4MzAxYDBeBgNVBAkMV9CR0L7Qu9GM0YjQvtC5INCX0LvQsNGC0L7Rg9GB0YLQuNC90YHQutC40Lkg0L/QtdGA0LXRg9C70L7Quiwg0LQuIDYsINGB0YLRgNC+0LXQvdC40LUgMTEZMBcGA1UEBwwQ0LMuINCc0L7RgdC60LLQsDELMAkGA1UEBhMCUlUxODA2BgNVBAoML9Ck0LXQtNC10YDQsNC70YzQvdC+0LUg0LrQsNC30L3QsNGH0LXQudGB0YLQstC+MTgwNgYDVQQDDC/QpNC10LTQtdGA0LDQu9GM0L3QvtC1INC60LDQt9C90LDRh9C10LnRgdGC0LLQvgIRAM1z3yxa/EWUm/c5ANNnx7UwDAYIKoUDBwEBAgIFAKCCAkYwGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjYxMDMwMDU0MTQ0WjAvBgkqhkiG9w0BCQQxIgQgKmxD1vXpp2bfNy+TaK8J4DYe2RzxrxM4C3327MJBuKowggHZBgsqhkiG9w0BCRACLzGCAcgwggHEMIIBwDCCAbwwCgYIKoUDBwEBAgIEIJc4z3uoazVyHdQUXYupq3dCDyYjUwJAgubSpuC5Q6aNMIIBijCCAXOkggFvMIIBazEgMB4GCSqGSIb3DQEJARYRdWNfZmtAcm9za2F6bmEucnUxGDAWBgNVBAgMDzc3INCc0L7RgdC60LLQsDEVMBMGBSqFA2QEEgo3NzEwNTY4NzYwMRgwFgYFKoUDZAESDTEwNDc3OTcwMTk4MzAxYDBeBgNVBAkMV9CR0L7Qu9GM0YjQvtC5INCX0LvQsNGC0L7Rg9GB0YLQuNC90YHQutC40Lkg0L/QtdGA0LXRg9C70L7Quiwg0LQuIDYsINGB0YLRgNC+0LXQvdC40LUgMTEZMBcGA1UEBwwQ0LMuINCc0L7RgdC60LLQsDELMAkGA1UEBhMCUlUxODA2BgNVBAoML9Ck0LXQtNC10YDQsNC70YzQvdC+0LUg0LrQsNC30L3QsNGH0LXQudGB0YLQstC+MTgwNgYDVQQDDC/QpNC10LTQtdGA0LDQu9GM0L3QvtC1INC60LDQt9C90LDRh9C10LnRgdGC0LLQvgIRAM1z3yxa/EWUm/c5ANNnx7UwHwYIKoUDBwEBAQEwEwYHKoUDAgIkAAYIKoUDBwEBAgIEQJc3EzETKKGfS3F0fbnpHcN9jHmEeJgj7s/1Q3WAuIb8xshfa7UqUqH2kTusxQ+VXkfOuK7FTXerFX/KunnWrj0=</ns3:signature>
+            </ns3:cryptoSigns>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-30T10:51:03+05:00</startDT>
+                <endDT>2026-11-09T09:00:00+05:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-09+05:00</biddingDate>
+            <summarizingDate>2026-11-11+05:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>1146000.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>01013000203</ns2:regNum>
+                    <ns2:consRegistryNum>80312508</ns2:consRegistryNum>
+                    <ns2:fullName>АДМИНИСТРАЦИЯ СЕЛЬСКОГО ПОСЕЛЕНИЯ НОВОЯНЗИГИТОВСКИЙ СЕЛЬСОВЕТ МУНИЦИПАЛЬНОГО РАЙОНА КРАСНОКАМСКИЙ РАЙОН РЕСПУБЛИКИ БАШКОРТОСТАН</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>11460.00</amount>
+                    <account>
+                        <ns3:bik>018073401</ns3:bik>
+                        <ns3:settlementAccount>03232643806374610100</ns3:settlementAccount>
+                        <ns3:personalAccount>05070625180</ns3:personalAccount>
+                        <ns3:creditOrgName>ОТДЕЛЕНИЕ-НБ РЕСПУБЛИКА БАШКОРТОСТАН БАНКА РОССИИ//УФК по Республике Башкортостан, г Уфа</ns3:creditOrgName>
+                    </account>
+                    <procedureInfo>Обеспечение заявки предоставляется в виде независимой гарантии или путем внесения на счет денежных средств. Способ обеспечения определяется участником закупки самостоятельно. Денежные средства, предназначенные для обеспечения заявок, вносятся участниками закупок на специальные счета, открытые ими в банках, перечень которых установлен Распоряжением Правительства РФ от 13.07.2018 N 1451-р. Блокирование денежных средств, внесенных участником закупки в качестве обеспечения заявки, осуществляется в порядке, установленном ст. 44 Закона N 44-ФЗ. Независимая гарантия должна отвечать требованиям ст. 45 Закона N 44-ФЗ. Срок действия независимой гарантии должен составлять не менее месяца с даты окончания срока подачи заявок. Участник закупки для подачи заявки выбирает с использованием электронной площадки способ обеспечения заявки путем указания реквизитов специального счета или указания номера реестровой записи из реестра независимых гарантий, размещенного в ЕИС. Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена Евразийского экономического союза, за исключением Российской Федерации, или физическими лицами, являющимися гражданами государства - члена Евразийского экономического союза, за исключением Российской Федерации (далее - участники закупки), вправе предоставить обеспечение заявок в виде денежных средств на счет, указанный заказчиком в извещении об осуществлении закупки, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику (Постановление Правительства РФ от 10.04.2023 № 579).</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>018073401</ns3:bik>
+                        <ns3:settlementAccount>03232643806374610100</ns3:settlementAccount>
+                        <ns3:personalAccount>05070625180</ns3:personalAccount>
+                        <ns3:creditOrgName>ОТДЕЛЕНИЕ-НБ РЕСПУБЛИКА БАШКОРТОСТАН БАНКА РОССИИ//УФК по Республике Башкортостан, г Уфа</ns3:creditOrgName>
+                    </account>
+                    <procedureInfo>Исполнение контракта может обеспечиваться предоставлением независимой гарантии, соответствующей требованиям статьи 45 Федерального закона 44-ФЗ, или внесением денежных средств на указанный заказчиком счет, на котором в соответствии с законодательством Российской Федерации учитываются операции со средствами, поступающими заказчику. Способ обеспечения исполнения контракта, срок действия независимой гарантии определяются в соответствии с требованиями Федерального закона 44-ФЗ участником закупки, с которым заключается контракт, самостоятельно. При этом срок действия независимой гарантии должен превышать предусмотренный контрактом срок исполнения обязательств, которые должны быть обеспечены такой независимой гарантией, не менее чем на один месяц, в том числе в случае его изменения в соответствии со статьей 95 Федерального закона 44-ФЗ. Контракт заключается после предоставления участником закупки обеспечения исполнения контракта.</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>1146000.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>263023100777202310100100040012910244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>29.10</ns2:OKPDCode>
+                                <ns2:OKPDName>Средства автотранспортные</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>30231007772023101001</customerCode>
+                        <purchaseNumber>0004</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202601013000203001</ns3:plan2020Number>
+                        <ns3:position2020Number>202601013000203001000005</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <budgetFinancingsInfo>
+                                <budgetInfo>
+                                    <ns2:code>01030997</ns2:code>
+                                    <ns2:name>Бюджет сельского поселения Новоянзигитовский сельсовет муниципального района Краснокамский район Республики Башкортостан</ns2:name>
+                                </budgetInfo>
+                                <budgetLevelInfo>
+                                    <ns2:code>30</ns2:code>
+                                    <ns2:name>местный бюджет</ns2:name>
+                                </budgetLevelInfo>
+                                <OKTMOInfo>
+                                    <ns2:code>80637461</ns2:code>
+                                    <ns2:name>Муниципальные образования Республики Башкортостан / Муниципальные районы Республики Башкортостан / Краснокамский муниципальный район / Сельские поселения Краснокамского муниципального района/ / Новоянзигитовский сельсовет</ns2:name>
+                                </OKTMOInfo>
+                            </budgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>1146000.00</total>
+                                <currentYear>1146000.00</currentYear>
+                                <firstYear>0.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22519863</sid>
+                                <externalSid>56775005526</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:isFromConclusionDate>true</ns3:isFromConclusionDate>
+                                        <ns3:endDate>2026-12-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <budgetFinancingsInfo>
+                                    <budgetFinancingInfo>
+                                        <KBK>79101041000802040244</KBK>
+                                        <paymentYearInfo>
+                                            <total>1146000.00</total>
+                                            <currentYear>1146000.00</currentYear>
+                                            <firstYear>0.00</firstYear>
+                                            <secondYear>0.00</secondYear>
+                                            <subsecYears>0.00</subsecYears>
+                                        </paymentYearInfo>
+                                    </budgetFinancingInfo>
+                                </budgetFinancingsInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62454276</ns3:sid>
+                            <ns3:externalSid>56775006132</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>58e72ade-3361-498c-b29b-d469c93ab89a</ns3:GARGuid>
+                                <ns3:GARAddress>респ. Башкортостан, м.р-н Краснокамский, с.п. Новоянзигитовский сельсовет, д. Новый Янзигит, ул. Дорожная, д. 20</ns3:GARAddress>
+                            </ns3:GARInfo>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+                <warrantyInfo>
+                    <warrantyServiceRequirement>Выполнение гарантийных обязательств (ремонт) и ТО должно осуществляться в любых авторизированных сервисных центрах или в официальных дилерских центрах производителя товара, указанных на официальном сайте завода-изготовителя, либо в сервисной книжке. На весь период гарантийного срока все необходимые работы по транспортировке ТС (эвакуатором, если ТС не на ходу) до официального дилерского центра, либо до авторизованного сервисного центра производителя поставляемого товара для устранения неисправности, признанной гарантийной (производственный недостаток), осуществляется силами и за счет Поставщика.</warrantyServiceRequirement>
+                    <manufacturersWarrantyRequirement>В течение гарантийного срока Поставщик обязан безвозмездно выполнять работы по устранению всех обнаруженных Заказчиком недостатков и (или) дефектов товара, возникших не по вине Заказчика</manufacturersWarrantyRequirement>
+                    <warrantyTerm>36 (тридцать шесть) месяцев или 100 000 километров пробега (в зависимости от того, что наступит раньше) со дня подписания строноами документа о приемке</warrantyTerm>
+                </warrantyInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226199493</ns3:sid>
+                    <ns3:externalSid>56780966509</ns3:externalSid>
+                    <ns3:KTRU>
+                        <ns2:code>29.10.20.000-00000012</ns2:code>
+                        <ns2:name>Автомобиль легковой</ns2:name>
+                        <ns2:versionId>258997</ns2:versionId>
+                        <ns2:versionNumber>10</ns2:versionNumber>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337887551</ns3:sid>
+                                <ns3:externalSid>56781273454</ns3:externalSid>
+                                <ns3:code>6f771553-2</ns3:code>
+                                <ns3:name>Рабочий объем двигателя</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529099</ns3:sid>
+                                        <ns3:externalSid>56781273454</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greater</ns3:minMathNotation>
+                                                <ns3:min>1500</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>2000</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337887552</ns3:sid>
+                                <ns3:externalSid>56781273455</ns3:externalSid>
+                                <ns3:code>f5fffd06-a</ns3:code>
+                                <ns3:name>Тип привода</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529100</ns3:sid>
+                                        <ns3:externalSid>56781273455</ns3:externalSid>
+                                        <ns3:qualityDescription>Моноприводный</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337887553</ns3:sid>
+                                <ns3:externalSid>56781273458</ns3:externalSid>
+                                <ns3:code>d71048bf-2</ns3:code>
+                                <ns3:name>Тип коробки передач</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529101</ns3:sid>
+                                        <ns3:externalSid>56781273458</ns3:externalSid>
+                                        <ns3:qualityDescription>Механика</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337887554</ns3:sid>
+                                <ns3:externalSid>56781273495</ns3:externalSid>
+                                <ns3:code>cdbf5ced-e</ns3:code>
+                                <ns3:name>Тип двигателя</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:kind>1</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529102</ns3:sid>
+                                        <ns3:externalSid>56781273495</ns3:externalSid>
+                                        <ns3:qualityDescription>Бензиновый</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337887555</ns3:sid>
+                                <ns3:externalSid>56781481671</ns3:externalSid>
+                                <ns3:code>5f261976-5</ns3:code>
+                                <ns3:name>Мощность двигателя</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529103</ns3:sid>
+                                        <ns3:externalSid>56781481671</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>251</ns2:code>
+                                            <ns2:nationalCode>л. с</ns2:nationalCode>
+                                            <ns2:name>Лошадиная сила</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>100</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>150</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337887556</ns3:sid>
+                                <ns3:externalSid>56781969731</ns3:externalSid>
+                                <ns3:code>0abf271f-6</ns3:code>
+                                <ns3:name>Количество посадочных мест</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529104</ns3:sid>
+                                        <ns3:externalSid>56781969731</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>5</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingReferenceInfo>
+                                <ns3:sid>337887557</ns3:sid>
+                                <ns3:externalSid>56782310213</ns3:externalSid>
+                                <ns3:code>e99824ed-8</ns3:code>
+                                <ns3:name>Размер колесных дисков</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:kind>2</ns3:kind>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529105</ns3:sid>
+                                        <ns3:externalSid>56782310213</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>039</ns2:code>
+                                            <ns2:nationalCode>дюйм</ns2:nationalCode>
+                                            <ns2:name>Дюйм (25,4 мм)</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueFormat>N</ns3:valueFormat>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>15</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                            </ns3:characteristicsUsingReferenceInfo>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887521</ns3:sid>
+                                <ns3:externalSid>56781481679</ns3:externalSid>
+                                <ns3:name>Ведущая ось: передняя</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529069</ns3:sid>
+                                        <ns3:externalSid>56781481679</ns3:externalSid>
+                                        <ns3:qualityDescription>Обеспечивает безопасность управления транспортным средством и пониженный расход топлива</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887522</ns3:sid>
+                                <ns3:externalSid>56781548906</ns3:externalSid>
+                                <ns3:name>Расход топлива - смешанный цикл, л/100км</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529070</ns3:sid>
+                                        <ns3:externalSid>56781548906</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>6.5</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887523</ns3:sid>
+                                <ns3:externalSid>56781969718</ns3:externalSid>
+                                <ns3:name>Объем топливного бака, л</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529071</ns3:sid>
+                                        <ns3:externalSid>56781969718</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:outValueRange>
+                                                <ns3:minMathNotation>greater</ns3:minMathNotation>
+                                                <ns3:min>50</ns3:min>
+                                            </ns3:outValueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887524</ns3:sid>
+                                <ns3:externalSid>56781969723</ns3:externalSid>
+                                <ns3:name>Количество дверей</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529072</ns3:sid>
+                                        <ns3:externalSid>56781969723</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887525</ns3:sid>
+                                <ns3:externalSid>56782199314</ns3:externalSid>
+                                <ns3:name>Габаритная длина</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529073</ns3:sid>
+                                        <ns3:externalSid>56782199314</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>4250</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887526</ns3:sid>
+                                <ns3:externalSid>56782300762</ns3:externalSid>
+                                <ns3:name>Габаритная высота</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529074</ns3:sid>
+                                        <ns3:externalSid>56782300762</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1500</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887527</ns3:sid>
+                                <ns3:externalSid>56782310205</ns3:externalSid>
+                                <ns3:name>Колесная база</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529075</ns3:sid>
+                                        <ns3:externalSid>56782310205</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>2476</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887528</ns3:sid>
+                                <ns3:externalSid>56782310206</ns3:externalSid>
+                                <ns3:name>Масса в снаряженном состоянии</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529076</ns3:sid>
+                                        <ns3:externalSid>56782310206</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>166</ns2:code>
+                                            <ns2:nationalCode>кг</ns2:nationalCode>
+                                            <ns2:name>Килограмм</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greater</ns3:minMathNotation>
+                                                <ns3:min>1075</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>1160</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887529</ns3:sid>
+                                <ns3:externalSid>56782310207</ns3:externalSid>
+                                <ns3:name>Технически допустимая максимальная масса</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529077</ns3:sid>
+                                        <ns3:externalSid>56782310207</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>166</ns2:code>
+                                            <ns2:nationalCode>кг</ns2:nationalCode>
+                                            <ns2:name>Килограмм</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:outValueRange>
+                                                <ns3:minMathNotation>greater</ns3:minMathNotation>
+                                                <ns3:min>1560</ns3:min>
+                                            </ns3:outValueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887530</ns3:sid>
+                                <ns3:externalSid>56782310210</ns3:externalSid>
+                                <ns3:name>Клиренс</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529078</ns3:sid>
+                                        <ns3:externalSid>56782310210</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>004</ns2:code>
+                                            <ns2:nationalCode>см</ns2:nationalCode>
+                                            <ns2:name>Сантиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>18</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887531</ns3:sid>
+                                <ns3:externalSid>56782310234</ns3:externalSid>
+                                <ns3:name>Подушка безопасности водителя</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529079</ns3:sid>
+                                        <ns3:externalSid>56782310234</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает безопасность водителя и пассажиров при движении автомобиля</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887532</ns3:sid>
+                                <ns3:externalSid>56782563307</ns3:externalSid>
+                                <ns3:name>Подголовники задних сидений</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529080</ns3:sid>
+                                        <ns3:externalSid>56782563307</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:valueSet>
+                                            <ns3:concreteValue>2</ns3:concreteValue>
+                                        </ns3:valueSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887533</ns3:sid>
+                                <ns3:externalSid>56782607274</ns3:externalSid>
+                                <ns3:name>Блокировка задних дверей от открывания детьми</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529081</ns3:sid>
+                                        <ns3:externalSid>56782607274</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает безопасность водителя и пассажиров при движении автомобиля</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887534</ns3:sid>
+                                <ns3:externalSid>56782648481</ns3:externalSid>
+                                <ns3:name>Дневные ходовые огни</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529082</ns3:sid>
+                                        <ns3:externalSid>56782648481</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель улучшает видимость движущегося транспортного средства спереди в светлое время суток</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887535</ns3:sid>
+                                <ns3:externalSid>56782648498</ns3:externalSid>
+                                <ns3:name>Запасное полноразмерное стальное колесо 14'</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529083</ns3:sid>
+                                        <ns3:externalSid>56782648498</ns3:externalSid>
+                                        <ns3:qualityDescription>Для возможности продолжить движение при аварийной ситуации, связанной с повреждением колес</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887536</ns3:sid>
+                                <ns3:externalSid>56782896414</ns3:externalSid>
+                                <ns3:name>Электроусилитель рулевого управления</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529084</ns3:sid>
+                                        <ns3:externalSid>56782896414</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает безопасность движения автомобиля</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887537</ns3:sid>
+                                <ns3:externalSid>56782896417</ns3:externalSid>
+                                <ns3:name>Регулируемая по высоте рулевая колонка</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529085</ns3:sid>
+                                        <ns3:externalSid>56782896417</ns3:externalSid>
+                                        <ns3:qualityDescription>Для возможности продолжить движение при аварийной ситуации, связанной с повреждением колес</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887538</ns3:sid>
+                                <ns3:externalSid>56782994825</ns3:externalSid>
+                                <ns3:name>Воздушный фильтр салона</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529086</ns3:sid>
+                                        <ns3:externalSid>56782994825</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает комфортные условия для водителя и пассажиров</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887539</ns3:sid>
+                                <ns3:externalSid>56782994837</ns3:externalSid>
+                                <ns3:name>Центральный замок</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529087</ns3:sid>
+                                        <ns3:externalSid>56782994837</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает комфортные условия для водителя</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887540</ns3:sid>
+                                <ns3:externalSid>56783088202</ns3:externalSid>
+                                <ns3:name>Электростеклоподъемники передних дверей</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529088</ns3:sid>
+                                        <ns3:externalSid>56783088202</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает комфортные условия для водителя и пассажиров</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887541</ns3:sid>
+                                <ns3:externalSid>56783088205</ns3:externalSid>
+                                <ns3:name>Подогрев передних сидений</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529089</ns3:sid>
+                                        <ns3:externalSid>56783088205</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает комфортные условия для водителя</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887542</ns3:sid>
+                                <ns3:externalSid>56783088209</ns3:externalSid>
+                                <ns3:name>Электропривод и обогрев наружных зеркал</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529090</ns3:sid>
+                                        <ns3:externalSid>56783088209</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает безопасность движения автомобиля</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887543</ns3:sid>
+                                <ns3:externalSid>56783088225</ns3:externalSid>
+                                <ns3:name>Аудиосистема, 4 динамика</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529091</ns3:sid>
+                                        <ns3:externalSid>56783088225</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает комфортные условия для водителя и пассажиров</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887544</ns3:sid>
+                                <ns3:externalSid>56783088230</ns3:externalSid>
+                                <ns3:name>Бортовой компьютер</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529092</ns3:sid>
+                                        <ns3:externalSid>56783088230</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает комфортные условия для водителя</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887545</ns3:sid>
+                                <ns3:externalSid>56783088234</ns3:externalSid>
+                                <ns3:name>Противосолнечный козырек пассажира с зеркалом</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529093</ns3:sid>
+                                        <ns3:externalSid>56783088234</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает комфортные условия для пассажира</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887546</ns3:sid>
+                                <ns3:externalSid>56783088246</ns3:externalSid>
+                                <ns3:name>Розетка 12V</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529094</ns3:sid>
+                                        <ns3:externalSid>56783088246</ns3:externalSid>
+                                        <ns3:qualityDescription>Обеспечивает возможность подключения дополнительного оборудования</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887547</ns3:sid>
+                                <ns3:externalSid>56783291658</ns3:externalSid>
+                                <ns3:name>Система экстренного оповещения ЭРА-ГЛОНАСС</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529095</ns3:sid>
+                                        <ns3:externalSid>56783291658</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает безопасность водителя и пассажиров при движении автомобиля</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887548</ns3:sid>
+                                <ns3:externalSid>56783291678</ns3:externalSid>
+                                <ns3:name>Антенна наружная</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529096</ns3:sid>
+                                        <ns3:externalSid>56783291678</ns3:externalSid>
+                                        <ns3:qualityDescription>Показатель обеспечивает комфортные условия для водителя и пассажиров</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887549</ns3:sid>
+                                <ns3:externalSid>56783424682</ns3:externalSid>
+                                <ns3:name>Цвет автомобиля: белый или светлых тонов</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529097</ns3:sid>
+                                        <ns3:externalSid>56783424682</ns3:externalSid>
+                                        <ns3:qualityDescription>Цвет автомобиля: белый или светлых тонов</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337887550</ns3:sid>
+                                <ns3:externalSid>56784692128</ns3:externalSid>
+                                <ns3:name>Габаритная ширина</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436529098</ns3:sid>
+                                        <ns3:externalSid>56784692128</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>003</ns2:code>
+                                            <ns2:nationalCode>мм</ns2:nationalCode>
+                                            <ns2:name>Миллиметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>1700</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:addCharacteristicInfoReason>В связи с недостаточностью необходимых характеристик товара в КТРУ и в соответствии с пунктом 5 Правил использования каталога товаров, работ, услуг для обеспечения государственных и муниципальных нужд, утвержденных постановлением Правительства Российской Федерации от 8 февраля 2017 года № 145 Заказчиком указаны потребительские свойства, в том числе функциональные, технические, качественные, эксплуатационные характеристики товара в соответствии с положениями статьи 33 Федерального закона 44-ФЗ, которые не предусмотрены в позиции каталога. Данная информация необходима с целью получения заказчиком товара, соответствующего его потребностям.</ns3:addCharacteristicInfoReason>
+                        </ns3:characteristics>
+                        <ns3:OKPD2>
+                            <ns2:OKPDCode>29.10.2</ns2:OKPDCode>
+                            <ns2:OKPDName>Автомобили легковые</ns2:OKPDName>
+                        </ns3:OKPD2>
+                    </ns3:KTRU>
+                    <ns3:name>Автомобиль легковой</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:price>1146000.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>1.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>1146000.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                </ns3:purchaseObject>
+                <ns3:totalSum>1146000.00</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>
