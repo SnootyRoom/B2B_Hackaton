@@ -36,6 +36,8 @@ REPO = next(
 )
 # до импорта app: настройки читаются при импорте и кэшируются
 os.environ.setdefault("CUSTOMERS_DIR", str(REPO / "data" / "customers"))
+# полный справочник ОКПД2 — из проекта: в папке с чужими сценариями (CALIBRATE_REPO) его нет
+os.environ.setdefault("OKPD2_CSV", str(Path(__file__).resolve().parents[2] / "data" / "okpd2.csv"))
 
 from app.egrul import offline
 from app.embeddings import service as embeddings
@@ -95,12 +97,13 @@ def profile_rules(profiles: dict[str, str], cache_path: Path) -> dict[str, Scori
     )
     client = LLMClient.from_env()
     version = load_prompt("parse_profile").version
+    pick_version = load_prompt("okpd2_pick").version
     out: dict[str, ScoringProfileData] = {}
     for name, text in profiles.items():
-        # ключ — профиль + версия промпта + текст: разные файлы сценариев не мешают друг другу,
-        # новая версия промпта или проверок в коде разбирается заново
+        # ключ — профиль + версии промптов и проверок в коде + текст: разные файлы сценариев
+        # не мешают друг другу, новая версия разбирается заново
         digest = hashlib.sha256(" ".join(text.split()).encode()).hexdigest()[:10]
-        key = f"{name}|v{version}.{RULES_VERSION}|{digest}"
+        key = f"{name}|v{version}.{RULES_VERSION}|okpd2-v{pick_version}|{digest}"
         if key not in cached:
             if not client.enabled:
                 raise SystemExit(f"Нет правил для {name} в {cache_path} и не настроен LLM")

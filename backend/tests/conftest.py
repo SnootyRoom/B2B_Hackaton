@@ -10,6 +10,8 @@ os.environ["CELERY_EAGER"] = "true"
 os.environ["UPLOAD_DIR"] = tempfile.mkdtemp(prefix="uploads-")
 os.environ["LLM_API_KEY"] = ""
 os.environ["DADATA_API_KEY"] = ""
+# Подбор ОКПД2 по полному справочнику включают только его тесты: остальным хватает категорий
+os.environ["OKPD2_CSV"] = "/nonexistent/okpd2.csv"
 
 import psycopg  # noqa: E402
 import pytest  # noqa: E402

@@ -34,6 +34,13 @@ class Settings(BaseSettings):
     # Каталоги данных из репозитория (монтируются в контейнер)
     customers_dir: Path = Path("/repo/data/customers")
     demo_dir: Path = Path("/repo/data/demo")
+    # Полный справочник ОКПД2 (code;name) и индекс векторов рядом (okpd2.npy)
+    okpd2_csv: Path = Path("/repo/data/okpd2.csv")
+    # Кандидатов ОКПД2 на одно описание деятельности: шаг 1 подбора кодов профиля
+    okpd2_candidates_k: int = 15
+    # Подобранные коды дополняются кодами категорий ручного справочника (если модель их выбрала):
+    # подбор по справочнику уже категорий, категории дают проверенные наборы кодов
+    okpd2_with_categories: bool = True
 
     # Пороги semantic_match: калибруются ролью 3, в коде не хардкодятся
     # e5 сжимает близость в 0,78–0,89; пороги подобраны scripts/calibrate.py

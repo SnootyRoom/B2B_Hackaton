@@ -22,6 +22,7 @@ from app.llm.client import (
     load_prompt,
 )
 from app.llm.okpd2 import OKPD2_CATEGORIES, codes_for
+from app.llm.okpd2_search import group_code, okpd2_candidates, okpd2_name
 from app.parsers.regions import REGIONS
 from app.schemas.common import ErrorCode
 from app.schemas.scoring import (
@@ -32,7 +33,7 @@ from app.schemas.scoring import (
     ParseProfileResult,
     ScoringRule,
 )
-from app.scoring.defaults import with_defaults
+from app.scoring.defaults import DEFAULT_RULE_IDS, with_defaults
 from app.scoring.templates import ENUM_LABELS
 
 STOP_FIELDS = frozenset({"law", "method", "region"})
@@ -215,19 +216,9 @@ def fitting_categories(names: list[str], activities: list[str]) -> list[str]:
     return kept
 
 
-def okpd2_rule(
-    categories: list[object], rules: list[ScoringRule], description: str = ""
-) -> ScoringRule | None:
-    """Правило «коды ОКПД2 профиля» по выбранным категориям; коды, названные пользователем,
-    уже стоят в его правиле — добавляем к нему. Код точнее смысла, поэтому важность 3."""
-    names = [str(c) for c in categories if c in OKPD2_CATEGORIES]
-    activities = [
-        str(r.value)
-        for r in rules
-        if r.field == "subject" and r.operator == Operator.semantic_match and r.value
-    ] or ([description] if description.strip() else [])
-    names = fitting_categories(names, activities)
-    codes = codes_for(names)
+def okpd2_rule(codes: list[str], names: list[str], rules: list[ScoringRule]) -> ScoringRule | None:
+    """Правило «коды ОКПД2 профиля»; коды, названные пользователем, уже стоят в его правиле —
+    добавляем к нему. Код точнее смысла, поэтому важность 3."""
     if not codes:
         return None
     own = next((r for r in rules if r.field == "okpd2_codes"), None)
@@ -302,11 +293,6 @@ def _to_result(data: JsonObject, text: str) -> tuple[ParseProfileResult | None, 
 
     rules = without_needless_regions(rules, text)
     with_paired_regions(rules)
-    categories = data.get("okpd2_categories")
-    description = str(data.get("company_description") or "")
-    okpd_rule = okpd2_rule(categories if isinstance(categories, list) else [], rules, description)
-    if okpd_rule is not None:
-        rules.append(okpd_rule)
 
     unparsed = data.get("unparsed")
     result = ParseProfileResult(
@@ -356,6 +342,96 @@ def salvage(content: str) -> JsonObject | None:
     return data
 
 
+def activities(result: ParseProfileResult) -> list[str]:
+    """Описания деятельности для поиска кодов: значения правил «предмет по смыслу», иначе
+    описание компании."""
+    found = [
+        r.value.strip()
+        for r in result.rules
+        if r.field == "subject"
+        and r.operator == Operator.semantic_match
+        and isinstance(r.value, str)
+        and r.value.strip()
+    ]
+    if found:
+        return list(dict.fromkeys(found))
+    return [result.company_description.strip()] if result.company_description.strip() else []
+
+
+def without_nested(codes: list[str]) -> list[str]:
+    """Убирает коды, у которых выбран и родитель: «28.9» покрывает «28.93» и «28.93.15» — так же,
+    по началу кода, сравнивает и prefix_in."""
+    return [c for c in codes if not any(c != p and c.startswith(p) for p in codes)]
+
+
+def pick_okpd2(
+    client: LLMClient, texts: list[str], candidates: list[tuple[str, str]]
+) -> list[str] | None:
+    """Шаг 2: LLM выбирает подходящие коды из кандидатов (можно ни одного). Код не из списка
+    модель вернуть не может — схема перечисляет кандидатов. Сбой — один повтор, затем None."""
+    allowed = [code for code, _ in candidates]
+    schema: JsonObject = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["codes"],
+        "properties": {"codes": {"type": "array", "items": {"type": "string", "enum": allowed}}},
+    }
+    message = (
+        "Деятельность компании:\n"
+        + "\n".join(f"- {t}" for t in texts)
+        + "\n\nКоды-кандидаты:\n"
+        + "\n".join(f"{code} — {name}" for code, name in candidates)
+    )
+    prompt = load_prompt("okpd2_pick")
+    for _ in range(2):
+        try:
+            data = client.complete_json(prompt, message, schema)
+        except (LLMBadAnswer, LLMUnavailable):
+            continue
+        raw = data.get("codes")
+        if isinstance(raw, list):
+            picked = [c for c in dict.fromkeys(str(x) for x in raw) if c in allowed]
+            return without_nested(picked)
+    return None
+
+
+def hybrid_okpd2(client: LLMClient, texts: list[str]) -> tuple[list[str], list[str]] | None:
+    """Коды ОКПД2 по полному справочнику: кандидаты по смыслу (шаг 1) → выбор LLM (шаг 2).
+    None — справочника или модели эмбеддингов нет, работает запасной путь по категориям.
+    Сбой шага 2 даёт пустой список: профиль без кода лучше, чем с неверным кодом."""
+    if not texts:
+        return None
+    candidates = okpd2_candidates(texts, get_settings().okpd2_candidates_k)
+    if not candidates:
+        return None
+    picked = pick_okpd2(client, texts, candidates) or []
+    # выбранная подгруппа или вид → группа: точный код пропускает свои закупки соседних видов
+    codes = without_nested(list(dict.fromkeys(group_code(c) for c in picked)))
+    names = dict(candidates)
+    return codes, [okpd2_name(c) or names.get(c, c) for c in codes]
+
+
+def add_okpd2_rule(result: ParseProfileResult, client: LLMClient, categories: list[str]) -> None:
+    """Правило r_okpd: по полному справочнику, а без него — по категориям ручного справочника."""
+    texts = activities(result)
+    picked = hybrid_okpd2(client, texts)
+    known = fitting_categories([c for c in categories if c in OKPD2_CATEGORIES], texts)
+    if picked is None:
+        codes, names = codes_for(known), known
+    else:
+        codes, names = picked
+        if get_settings().okpd2_with_categories and known:
+            codes = without_nested(list(dict.fromkeys([*codes_for(known), *codes])))
+            names = [*known, *names]
+    rule = okpd2_rule(codes, names, result.rules)
+    if rule is None:
+        return
+    # перед правилами по умолчанию — там, где оно стояло раньше
+    defaults_at = (i for i, r in enumerate(result.rules) if r.id in DEFAULT_RULE_IDS)
+    at = next(defaults_at, len(result.rules))
+    result.rules.insert(at, rule)
+
+
 def _ask(
     client: LLMClient,
     prompt: Prompt,
@@ -380,15 +456,17 @@ def parse_text(text: str, client: LLMClient) -> ParseProfileResult:
 
     try:
         result, errors, data, broken = _ask(client, prompt, user_message, text)
+        answer = data
         if result is None and data is None:
             # ответ оборвался или не JSON: показывать его модели бесполезно — при temperature 0
             # она повторит то же самое; просим заново с напоминанием отвечать коротко
-            result, errors, _, broken_again = _ask(
+            result, errors, answer, broken_again = _ask(
                 client, prompt, user_message + BROKEN_ANSWER_HINT, text
             )
             if result is None:
                 salvaged = salvage(broken_again) or salvage(broken)
                 if salvaged is not None:
+                    answer = salvaged
                     result, errors = _to_result(salvaged, text)
                     errors.append(SALVAGED_NOTE)
         elif errors or result is None:
@@ -399,12 +477,15 @@ def parse_text(text: str, client: LLMClient) -> ParseProfileResult:
                     "content": "Исправь ошибки и верни JSON целиком заново:\n" + "\n".join(errors),
                 },
             ]
-            result, errors, _, _ = _ask(client, prompt, user_message, text, retry)
+            result, errors, answer, _ = _ask(client, prompt, user_message, text, retry)
     except LLMUnavailable as e:
         raise LLMError(ErrorCode.LLM_UNAVAILABLE, UNAVAILABLE_MESSAGE) from e
 
     if result is None:
         raise LLMError(ErrorCode.LLM_PARSE_FAILED, PARSE_ERROR_MESSAGE)
+    categories = (answer or {}).get("okpd2_categories")
+    names = [str(c) for c in categories] if isinstance(categories, list) else []
+    add_okpd2_rule(result, client, names)
     # правила, которые и после повтора не прошли проверку, отдаём пользователю как неразобранные
     result.unparsed.extend(errors)
     return result
