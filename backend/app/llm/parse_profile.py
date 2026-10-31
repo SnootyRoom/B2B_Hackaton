@@ -21,7 +21,14 @@ from app.llm.client import (
 from app.llm.okpd2 import OKPD2_CATEGORIES, codes_for
 from app.parsers.regions import REGIONS
 from app.schemas.common import ErrorCode
-from app.schemas.scoring import FIELD_CATALOG, FieldType, ParseProfileResult, ScoringRule
+from app.schemas.scoring import (
+    FIELD_CATALOG,
+    FieldSpec,
+    FieldType,
+    Operator,
+    ParseProfileResult,
+    ScoringRule,
+)
 from app.scoring.defaults import with_defaults
 from app.scoring.templates import ENUM_LABELS
 
@@ -96,6 +103,17 @@ def without_needless_regions(rules: list[ScoringRule], text: str) -> list[Scorin
     return [r for r in rules if not needless(r)]
 
 
+def only_to_stop(raw: JsonObject, spec: FieldSpec) -> JsonObject:
+    """«Только 44-ФЗ»: модель называет допустимые значения, программа строит стоп-фактор на все
+    остальные. Перечислять «все кроме» модель не просим: на длинных списках она зацикливается."""
+    value = raw.get("value")
+    allowed = [str(v) for v in value] if isinstance(value, list) else [str(value)]
+    if Operator.not_in in spec.operators:
+        return {**raw, "operator": Operator.not_in, "value": allowed}
+    others = [o for o in spec.options or [] if o not in allowed]
+    return {**raw, "operator": Operator.in_, "value": others}
+
+
 PARSE_ERROR_MESSAGE = "Не удалось разобрать текст, задайте правила вручную"
 UNAVAILABLE_MESSAGE = "Разбор текста временно недоступен, задайте правила вручную"
 
@@ -129,7 +147,7 @@ RESPONSE_SCHEMA: JsonObject = {
                     "label",
                 ],
                 "properties": {
-                    "kind": {"type": "string", "enum": ["weighted", "stop"]},
+                    "kind": {"type": "string", "enum": ["weighted", "only"]},
                     "field": {"type": "string", "enum": sorted(FIELD_CATALOG)},
                     "operator": {"type": "string"},
                     "value": _VALUE_SCHEMA,
@@ -226,7 +244,11 @@ def _to_result(data: JsonObject, text: str) -> tuple[ParseProfileResult | None, 
                 continue
         # стоп-фактор — только жёсткое условие «только …» по закону, способу или региону
         field = spec.field if spec else ""
-        kind = "stop" if raw.get("kind") == "stop" and field in STOP_FIELDS else "weighted"
+        kind = "weighted"
+        if raw.get("kind") in ("only", "stop") and spec and field in STOP_FIELDS:
+            kind = "stop"
+            if raw.get("kind") == "only":
+                raw = only_to_stop(raw, spec)
         try:
             rules.append(
                 ScoringRule.model_validate(

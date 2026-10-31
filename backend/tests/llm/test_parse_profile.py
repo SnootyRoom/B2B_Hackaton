@@ -134,7 +134,7 @@ def test_no_key_means_disabled() -> None:
 
 
 def test_prompt_has_version() -> None:
-    assert load_prompt("parse_profile").version == "8"
+    assert load_prompt("parse_profile").version == "9"
 
 
 def test_yandex_folder_builds_model_uri_and_header() -> None:
@@ -310,3 +310,39 @@ def test_explicit_regions_kept_for_nationwide_company() -> None:
 def test_home_region_kept_without_nationwide() -> None:
     client, _ = fake_llm([{**GOOD_ANSWER, "rules": [_region_rule(["Томская область"], 2)]}])
     assert any(r.field == "region" for r in parse_text(TEXT, client).rules)
+
+
+def _only(field: str, values: list[str]) -> dict[str, object]:
+    return {
+        "kind": "only",
+        "field": field,
+        "operator": "in",
+        "value": values,
+        "weight": 3,
+        "soft_margin": 0,
+        "label": "Только",
+    }
+
+
+def test_only_law_becomes_stop_on_other_laws() -> None:
+    # модель называет только разрешённое — «все кроме» достраивает программа
+    client, _ = fake_llm([{**GOOD_ANSWER, "rules": [_only("law", ["44"])]}])
+    rule = parse_text("Работаем только по 44-ФЗ", client).rules[0]
+    assert rule.kind == "stop" and rule.operator == "in"
+    assert rule.value == ["223", "615", "94", "other"]
+
+
+def test_only_method_and_region_use_not_in() -> None:
+    answer = {**GOOD_ANSWER, "rules": [_only("method", ["auction"]), _only("region", ["Москва"])]}
+    client, _ = fake_llm([answer])
+    rules = parse_text(TEXT, client).rules
+    assert [(r.kind, r.operator, r.value) for r in rules[:2]] == [
+        ("stop", "not_in", ["auction"]),
+        ("stop", "not_in", ["Москва"]),
+    ]
+
+
+def test_only_on_other_field_is_ordinary_rule() -> None:
+    rule = {**GOOD_ANSWER["rules"][0], "kind": "only"}  # type: ignore[dict-item]
+    client, _ = fake_llm([{**GOOD_ANSWER, "rules": [rule]}])
+    assert parse_text(TEXT, client).rules[0].kind == "weighted"
