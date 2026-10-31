@@ -1,328 +1,3 @@
-# #!/usr/bin/env python3
-# """Проверка тестовых данных для скоринга закупок (Роль 5)."""
-
-# import json
-# import xml.etree.ElementTree as ET
-# from decimal import Decimal, InvalidOperation
-# from pathlib import Path
-
-# DATASET_DIR = Path(__file__).resolve().parent
-# XML_DIR = DATASET_DIR / "procurements"
-# SCENARIOS_PATH = DATASET_DIR / "scenarios.yaml"
-# EXPECTED_PATH = DATASET_DIR / "expected_fields.json"
-
-# REQUIRED_SCENARIO_FIELDS = [
-#     "id", "file", "profile", "expected_recommendation", "rationale"
-# ]
-
-
-# SCORE_THRESHOLD = 70
-# CONSIDER_THRESHOLD = 40
-# VALID_RECOMMENDATIONS = {"participate", "consider", "skip"}
-
-
-
-# def validate_score_threshold(scenario):
-#     """Проверяет соответствие ожидаемой рекомендации диапазону баллов
-#     и наличию стоп-факторов.
-#     """
-#     errors = []
-
-#     recommendation = scenario.get("expected_recommendation")
-#     expected_score = scenario.get("expected_score")
-#     raw_stop_factors = scenario.get("expected_stop_factor")
-
-#     # Приводим стоп-факторы к единому формату: список строк
-#     if raw_stop_factors is None or raw_stop_factors == "":
-#         stop_factors = []
-#     elif isinstance(raw_stop_factors, str):
-#         stop_factors = [
-#             factor.strip()
-#             for factor in raw_stop_factors.split(",")
-#             if factor.strip()
-#         ]
-#     elif isinstance(raw_stop_factors, list):
-#         stop_factors = [
-#             str(factor).strip()
-#             for factor in raw_stop_factors
-#             if str(factor).strip()
-#         ]
-#     else:
-#         errors.append(
-#             f"Некорректный формат expected_stop_factor: "
-#             f"{raw_stop_factors!r}"
-#         )
-#         stop_factors = []
-
-#     # Проверяем наличие и формат диапазона баллов
-#     if (
-#         not isinstance(expected_score, list)
-#         or len(expected_score) != 2
-#     ):
-#         errors.append(
-#             f"Некорректный expected_score: {expected_score!r}. "
-#             "Ожидается список из двух чисел."
-#         )
-#         return errors
-
-#     low, high = expected_score
-
-#     if (
-#         not isinstance(low, (int, float))
-#         or isinstance(low, bool)
-#         or not isinstance(high, (int, float))
-#         or isinstance(high, bool)
-#     ):
-#         errors.append("Границы expected_score должны быть числами.")
-#         return errors
-
-#     if not (0 <= low <= high <= 100):
-#         errors.append(
-#             f"Некорректный диапазон баллов: {expected_score}"
-#         )
-#         return errors
-
-#     # Проверяем рекомендацию
-#     if recommendation not in {"participate", "consider", "skip"}:
-#         errors.append(
-#             f"Неизвестная рекомендация: {recommendation!r}"
-#         )
-#         return errors
-
-#     # Если есть стоп-факторы, рекомендация должна быть skip
-#     if stop_factors:
-#         if recommendation != "skip":
-#             errors.append(
-#                 "При наличии стоп-факторов рекомендация должна быть skip."
-#             )
-
-#         if [low, high] != [0, 0]:
-#             errors.append(
-#                 "При наличии стоп-факторов ожидаемый балл должен быть [0, 0]."
-#             )
-
-#     else:
-#         if recommendation == "participate" and low < 70:
-#             errors.append(
-#                 "Для participate нижняя граница балла должна быть >= 70."
-#             )
-
-#         elif recommendation == "consider":
-#             if low < 40 or high >= 70:
-#                 errors.append(
-#                     "Для consider диапазон должен находиться "
-#                     "в пределах 40–69."
-#                 )
-
-#         elif recommendation == "skip" and high >= 40:
-#             errors.append(
-#                 "Для skip без стоп-факторов верхняя граница "
-#                 "балла должна быть < 40."
-#             )
-
-#     return errors
-
-
-
-# def load_json(path):
-#     try:
-#         with path.open(encoding="utf-8") as f:
-#             return json.load(f)
-#     except (OSError, json.JSONDecodeError) as exc:
-#         print(f"[FAIL] Не удалось прочитать {path.name}: {exc}")
-#         return None
-
-
-# def load_yaml(path):
-#     try:
-#         import yaml
-#         with path.open(encoding="utf-8") as f:
-#             return yaml.safe_load(f)
-#     except ImportError:
-#         print("[FAIL] Не установлен PyYAML. Установи: py -m pip install pyyaml")
-#     except (OSError, ValueError) as exc:
-#         print(f"[FAIL] Не удалось прочитать {path.name}: {exc}")
-#     return None
-
-
-# def local_name(tag):
-#     return tag.rsplit("}", 1)[-1]
-
-
-# def read_xml(path):
-#     root = ET.parse(path).getroot()
-#     fields = {}
-
-#     for element in root.iter():
-#         name = local_name(element.tag)
-#         value = (element.text or "").strip()
-#         if value and name not in fields:
-#             fields[name] = value
-
-#     return fields
-
-
-# def find_expected(file_name, expected):
-#     stem = Path(file_name).stem
-
-#     if stem in expected:
-#         return expected[stem]
-
-#     # Для специальных XML-файлов имя файла содержит ИНН заказчика.
-#     inn = stem.split("_")[0]
-#     matches = [
-#         item for item in expected.values()
-#         if str(item.get("customer_inn", "")) == inn
-#     ]
-
-#     return matches[0] if len(matches) == 1 else None
-
-
-# def compare_value(field, expected_value, actual_value):
-#     if field == "nmcc":
-#         expected_missing = expected_value is None or expected_value == ""
-#         actual_missing = actual_value is None or actual_value == ""
-
-#         # Если цена отсутствует и в эталоне, и в XML,
-#         # отсутствие данных считается совпадением.
-#         if expected_missing and actual_missing:
-#             return True
-
-#         # Если цена есть только с одной стороны,
-#         # данные не совпадают.
-#         if expected_missing or actual_missing:
-#             return False
-
-#         try:
-#             return Decimal(str(expected_value)) == Decimal(str(actual_value))
-#         except (InvalidOperation, ValueError):
-#             return False
-
-#     if expected_value is None or actual_value is None:
-#         return False
-
-#     return str(expected_value) == str(actual_value)
-
-
-
-# def main():
-#     print("=== ПРОВЕРКА ТЕСТОВЫХ ДАННЫХ: РОЛЬ 5 ===\n")
-
-#     scenarios_data = load_yaml(SCENARIOS_PATH)
-#     expected = load_json(EXPECTED_PATH)
-
-#     if scenarios_data is None or expected is None:
-#         print("\nИТОГ: не удалось загрузить тестовые данные.")
-#         return 1
-
-#     scenarios = scenarios_data.get("scenarios", [])
-#     failures = 0
-#     checks = 0
-
-#     print(f"[OK] Сценариев загружено: {len(scenarios)}")
-#     print(f"[OK] Эталонов загружено: {len(expected)}")
-
-#     if len(scenarios) < 20:
-#         print(
-#             f"[FAIL] Ожидалось не менее 20 сценариев, "
-#             f"найдено {len(scenarios)}"
-#         )
-#         failures += 1
-#     else:
-#         print(
-#             f"[PASS] Количество сценариев ({len(scenarios)}) "
-#             "соответствует плану (≥20)"
-#         )
-
-#     seen_ids = set()
-#     print("\n--- Проверка сценариев и XML ---")
-
-#     for scenario in scenarios:
-#         threshold_error = validate_score_threshold(scenario)
-#         if threshold_error:
-#             print(f"[FAIL] {threshold_error}")
-#             failures += 1
-#         scenario_id = scenario.get("id", "UNKNOWN")
-#         missing = [
-#             field for field in REQUIRED_SCENARIO_FIELDS
-#             if field not in scenario
-#         ]
-
-#         if missing:
-#             print(f"[FAIL] {scenario_id}: нет полей {missing}")
-#             failures += 1
-#             continue
-
-#         if scenario_id in seen_ids:
-#             print(f"[FAIL] Повторяется ID сценария: {scenario_id}")
-#             failures += 1
-#         seen_ids.add(scenario_id)
-
-#         file_name = scenario["file"]
-#         xml_path = XML_DIR / Path(file_name).name
-
-#         if not xml_path.is_file():
-#             print(f"[FAIL] {scenario_id}: XML не найден: {file_name}")
-#             failures += 1
-#             continue
-
-#         record = find_expected(file_name, expected)
-
-#         if record is None:
-#             print(f"[FAIL] {scenario_id}: эталон не найден для {file_name}")
-#             failures += 1
-#             continue
-
-#         try:
-#             actual = read_xml(xml_path)
-#         except (ET.ParseError, OSError) as exc:
-#             print(f"[FAIL] {scenario_id}: XML не читается: {exc}")
-#             failures += 1
-#             continue
-
-#         fields_to_check = [
-#             ("regNumber", record.get("regNumber"), actual.get("regNumber")),
-#             ("nmcc", record.get("nmcc"), actual.get("initialPrice")),
-#             ("customer_inn", record.get("customer_inn"), actual.get("inn")),
-#             ("law", record.get("law"), actual.get("law")),
-#         ]
-
-#         scenario_failed = False
-
-#         for field, expected_value, actual_value in fields_to_check:
-#             checks += 1
-#             if compare_value(field, expected_value, actual_value):
-#                 continue
-
-#             print(
-#                 f"[FAIL] {scenario_id} / {field}: "
-#                 f"XML={actual_value!r}, эталон={expected_value!r}"
-#             )
-#             failures += 1
-#             scenario_failed = True
-
-#         if not scenario_failed:
-#             print(f"[PASS] {scenario_id}: XML и эталон совпадают")
-
-#     print("\n--- Итог ---")
-#     print(f"Проверок полей: {checks}")
-#     print(f"Ошибок: {failures}")
-
-#     if failures:
-#         print("РЕЗУЛЬТАТ: найдены проблемы в тестовых данных.")
-#         return 1
-
-#     print("РЕЗУЛЬТАТ: тестовые данные прошли проверки.")
-#     print("Примечание: качество реальных рекомендаций скоринга здесь не оценивается.")
-#     return 0
-
-
-# if __name__ == "__main__":
-#     raise SystemExit(main())
-
-
-
-
 #!/usr/bin/env python3
 """Проверка тестовых данных для скоринга закупок (Роль 5)."""
 
@@ -812,3 +487,556 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+
+# # # для реальной модели
+# # import json
+# # from pathlib import Path
+# # from decimal import Decimal, InvalidOperation
+
+# # try:
+# #     import yaml
+# # except ImportError:
+# #     print("[ERROR] Не установлена библиотека PyYAML.")
+# #     print("Выполни: pip install pyyaml")
+# #     raise SystemExit(1)
+
+
+# # # --------------------------------------------------
+# # # PATHS AND SETTINGS
+# # # --------------------------------------------------
+
+# # BASE_DIR = Path(__file__).resolve().parent
+
+# # SCENARIOS_FILE = BASE_DIR / "scenarios.yaml"
+# # EXPECTED_FILE = BASE_DIR / "expected_fields.json"
+# # ACTUAL_FILE = BASE_DIR / "actual_results.json"
+
+# # REQUIRED_RECOMMENDATIONS = {
+# #     "participate",
+# #     "consider",
+# #     "skip",
+# # }
+
+# # EXPECTED_FIELD_NAMES = [
+# #     "regNumber",
+# #     "nmcc",
+# #     "object",
+# #     "customer_name",
+# #     "customer_inn",
+# #     "region_code",
+# #     "region_name",
+# #     "lots_count",
+# #     "law",
+# # ]
+
+
+# # # --------------------------------------------------
+# # # LOAD DATA
+# # # --------------------------------------------------
+
+# # def load_json(path):
+# #     with open(path, "r", encoding="utf-8") as file:
+# #         return json.load(file)
+
+
+# # def load_yaml(path):
+# #     with open(path, "r", encoding="utf-8") as file:
+# #         return yaml.safe_load(file)
+
+
+# # def normalize_decimal(value):
+# #     try:
+# #         return Decimal(str(value))
+# #     except (InvalidOperation, TypeError, ValueError):
+# #         return None
+
+
+# # def normalize_value(value):
+# #     if value is None:
+# #         return None
+
+# #     return str(value).strip()
+
+
+# # def load_actual_results(data):
+# #     """
+# #     Поддерживает два формата:
+# #     1. {"results": [...]}
+# #     2. [...]
+# #     """
+
+# #     if isinstance(data, dict):
+# #         results = data.get("results", [])
+# #     elif isinstance(data, list):
+# #         results = data
+# #     else:
+# #         raise ValueError(
+# #             "actual_results.json должен содержать список "
+# #             "или объект с полем results."
+# #         )
+
+# #     if not isinstance(results, list):
+# #         raise ValueError("Поле results должно быть списком.")
+
+# #     return results
+
+
+# # def load_runs(result):
+# #     """
+# #     Если есть runs — используем все запуски.
+# #     Если runs нет — считаем сам объект одним запуском.
+# #     """
+
+# #     runs = result.get("runs")
+
+# #     if isinstance(runs, list):
+# #         return [
+# #             run for run in runs
+# #             if isinstance(run, dict)
+# #         ]
+
+# #     return [result]
+
+
+# # # --------------------------------------------------
+# # # EXPECTED DATA
+# # # --------------------------------------------------
+
+# # def find_expected(expected_data, file_name):
+# #     stem = Path(file_name).stem
+
+# #     if isinstance(expected_data, dict):
+# #         if stem in expected_data:
+# #             return expected_data[stem]
+
+# #         for value in expected_data.values():
+# #             if isinstance(value, dict):
+# #                 if value.get("file") == file_name:
+# #                     return value
+
+# #     return None
+
+
+# # def expected_fields_for_record(expected):
+# #     """
+# #     Сравниваем только поля, для которых есть
+# #     непустое эталонное значение.
+# #     """
+
+# #     return {
+# #         field: value
+# #         for field, value in expected.items()
+# #         if field in EXPECTED_FIELD_NAMES and value is not None
+# #     }
+
+
+# # # --------------------------------------------------
+# # # METRIC 1: RECOMMENDATION ACCURACY
+# # # --------------------------------------------------
+
+# # def evaluate_recommendation(expected, actual):
+# #     expected_value = expected.get("expected_recommendation")
+# #     actual_value = actual.get("recommendation")
+
+# #     if actual_value not in REQUIRED_RECOMMENDATIONS:
+# #         return False
+
+# #     return actual_value == expected_value
+
+
+# # # --------------------------------------------------
+# # # METRIC 2: SCORE RANGE HIT
+# # # --------------------------------------------------
+
+# # def evaluate_score_range(expected, actual):
+# #     expected_range = expected.get("expected_score")
+# #     actual_score = normalize_decimal(actual.get("score"))
+
+# #     if not isinstance(expected_range, (list, tuple)):
+# #         return None
+
+# #     if len(expected_range) != 2 or actual_score is None:
+# #         return False
+
+# #     low = normalize_decimal(expected_range[0])
+# #     high = normalize_decimal(expected_range[1])
+
+# #     if low is None or high is None:
+# #         return None
+
+# #     return low <= actual_score <= high
+
+
+# # # --------------------------------------------------
+# # # METRIC 3: PARSING COMPLETENESS AND FIELD ACCURACY
+# # # --------------------------------------------------
+
+# # def evaluate_parsing(expected, actual):
+# #     expected_fields = expected_fields_for_record(expected)
+# #     extracted_fields = actual.get("extracted_fields", {})
+
+# #     if not isinstance(extracted_fields, dict):
+# #         extracted_fields = {}
+
+# #     if not expected_fields:
+# #         return None, None, 0, 0
+
+# #     extracted_count = 0
+# #     correct_count = 0
+
+# #     for field, expected_value in expected_fields.items():
+# #         actual_value = extracted_fields.get(field)
+
+# #         if actual_value is not None and str(actual_value).strip() != "":
+# #             extracted_count += 1
+
+# #             if normalize_value(actual_value) == normalize_value(expected_value):
+# #                 correct_count += 1
+
+# #     total = len(expected_fields)
+
+# #     completeness = extracted_count / total
+# #     accuracy = correct_count / total
+
+# #     return completeness, accuracy, extracted_count, total
+
+
+# # # --------------------------------------------------
+# # # METRIC 4: EXECUTION TIME
+# # # --------------------------------------------------
+
+# # def get_execution_time(actual):
+# #     value = normalize_decimal(actual.get("execution_time_ms"))
+
+# #     if value is None or value < 0:
+# #         return None
+
+# #     return float(value)
+
+
+# # # --------------------------------------------------
+# # # METRIC 5: REPRODUCIBILITY
+# # # --------------------------------------------------
+
+# # def result_signature(run):
+# #     """
+# #     Сравниваем ключевые результаты повторных запусков.
+# #     Время выполнения не учитываем.
+# #     """
+
+# #     return {
+# #         "recommendation": run.get("recommendation"),
+# #         "score": normalize_value(run.get("score")),
+# #         "extracted_fields": run.get("extracted_fields", {}),
+# #         "stop_factors": sorted(
+# #             run.get("stop_factors", [])
+# #             if isinstance(run.get("stop_factors", []), list)
+# #             else []
+# #         ),
+# #     }
+
+
+# # def evaluate_reproducibility(runs):
+# #     if len(runs) < 2:
+# #         return None
+
+# #     first_signature = result_signature(runs[0])
+
+# #     return all(
+# #         result_signature(run) == first_signature
+# #         for run in runs[1:]
+# #     )
+
+
+# # # --------------------------------------------------
+# # # MAIN EVALUATION
+# # # --------------------------------------------------
+
+# # def main():
+# #     print("================================================")
+# #     print(" AI PROCUREMENT COPILOT — EVALUATION")
+# #     print("================================================")
+
+# #     for path in [SCENARIOS_FILE, EXPECTED_FILE]:
+# #         if not path.exists():
+# #             print(f"[ERROR] Не найден файл: {path}")
+# #             return
+
+# #     try:
+# #         scenarios_data = load_yaml(SCENARIOS_FILE)
+# #         expected_data = load_json(EXPECTED_FILE)
+# #     except Exception as error:
+# #         print(f"[ERROR] Ошибка загрузки эталонных данных: {error}")
+# #         return
+
+# #     scenarios = scenarios_data.get("scenarios", [])
+
+# #     if not isinstance(scenarios, list):
+# #         print("[ERROR] В scenarios.yaml поле scenarios должно быть списком.")
+# #         return
+
+# #     print(f"\nСценариев в датасете: {len(scenarios)}")
+
+# #     # Без фактических результатов нельзя оценить Copilot.
+# #     if not ACTUAL_FILE.exists():
+# #         print("\n[WAITING] Файл actual_results.json пока отсутствует.")
+# #         print("Проверка датасета возможна, но оценка AI не запускалась.")
+# #         print("Добавь фактические результаты Copilot и запусти файл снова.")
+# #         return
+
+# #     try:
+# #         actual_data = load_json(ACTUAL_FILE)
+# #         actual_results = load_actual_results(actual_data)
+# #     except Exception as error:
+# #         print(f"[ERROR] Ошибка загрузки фактических результатов: {error}")
+# #         return
+
+# #     actual_by_id = {}
+
+# #     for result in actual_results:
+# #         if not isinstance(result, dict):
+# #             continue
+
+# #         scenario_id = result.get("scenario_id")
+
+# #         if not scenario_id:
+# #             print("[WARN] Найден результат без scenario_id.")
+# #             continue
+
+# #         if scenario_id in actual_by_id:
+# #             print(f"[WARN] Повторная запись scenario_id: {scenario_id}")
+
+# #         actual_by_id[scenario_id] = result
+
+# #     # Counters
+# #     total_scenarios = 0
+# #     total_runs = 0
+
+# #     recommendation_pass = 0
+# #     recommendation_total = 0
+
+# #     score_pass = 0
+# #     score_total = 0
+
+# #     parsing_completeness_sum = 0.0
+# #     parsing_accuracy_sum = 0.0
+# #     parsing_total = 0
+
+# #     execution_times = []
+
+# #     reproducibility_pass = 0
+# #     reproducibility_total = 0
+
+# #     missing_results = 0
+
+# #     print("\n---------------- SCENARIO RESULTS ----------------")
+
+# #     for scenario in scenarios:
+# #         scenario_id = scenario.get("id")
+# #         file_name = scenario.get("file")
+
+# #         if not scenario_id:
+# #             continue
+
+# #         total_scenarios += 1
+
+# #         actual_record = actual_by_id.get(scenario_id)
+
+# #         if actual_record is None:
+# #             print(f"\n[NO RESULT] {scenario_id}: нет фактического результата.")
+# #             missing_results += 1
+# #             continue
+
+# #         expected = find_expected(expected_data, file_name)
+
+# #         if expected is None:
+# #             print(f"\n[NO GOLD DATA] {scenario_id}: эталон не найден.")
+# #             continue
+
+# #         runs = load_runs(actual_record)
+
+# #         if not runs:
+# #             print(f"\n[NO RUNS] {scenario_id}: нет запусков.")
+# #             continue
+
+# #         print(f"\nСценарий: {scenario_id}")
+# #         print(f"Количество запусков: {len(runs)}")
+
+# #         for run_number, run in enumerate(runs, start=1):
+# #             total_runs += 1
+
+# #             # Recommendation accuracy
+# #             recommendation_total += 1
+# #             recommendation_ok = evaluate_recommendation(
+# #                 scenario,
+# #                 run
+# #             )
+
+# #             if recommendation_ok:
+# #                 recommendation_pass += 1
+
+# #             print(
+# #                 f"  Запуск {run_number} — рекомендация: "
+# #                 f"{'PASS' if recommendation_ok else 'FAIL'}"
+# #             )
+
+# #             # Score range hit
+# #             score_result = evaluate_score_range(scenario, run)
+
+# #             if score_result is not None:
+# #                 score_total += 1
+
+# #                 if score_result:
+# #                     score_pass += 1
+
+# #             print(
+# #                 f"  Запуск {run_number} — диапазон баллов: "
+# #                 f"{'PASS' if score_result else 'FAIL'}"
+# #             )
+
+# #             # Parsing completeness and accuracy
+# #             completeness, accuracy, extracted, fields_total = (
+# #                 evaluate_parsing(expected, run)
+# #             )
+
+# #             if completeness is not None:
+# #                 parsing_completeness_sum += completeness
+# #                 parsing_accuracy_sum += accuracy
+# #                 parsing_total += 1
+
+# #                 print(
+# #                     f"  Запуск {run_number} — парсинг: "
+# #                     f"{extracted}/{fields_total} полей, "
+# #                     f"полнота {completeness * 100:.1f}%, "
+# #                     f"точность {accuracy * 100:.1f}%"
+# #                 )
+# #             else:
+# #                 print(
+# #                     f"  Запуск {run_number} — парсинг: "
+# #                     "нет доступных эталонных полей"
+# #                 )
+
+# #             # Execution time
+# #             execution_time = get_execution_time(run)
+
+# #             if execution_time is not None:
+# #                 execution_times.append(execution_time)
+
+# #                 print(
+# #                     f"  Запуск {run_number} — время: "
+# #                     f"{execution_time:.2f} ms"
+# #                 )
+# #             else:
+# #                 print(
+# #                     f"  Запуск {run_number} — время: "
+# #                     "не указано"
+# #                 )
+
+# #         # Reproducibility
+# #         reproducibility = evaluate_reproducibility(runs)
+
+# #         if reproducibility is not None:
+# #             reproducibility_total += 1
+
+# #             if reproducibility:
+# #                 reproducibility_pass += 1
+
+# #             print(
+# #                 "  Воспроизводимость: "
+# #                 f"{'PASS' if reproducibility else 'FAIL'}"
+# #             )
+# #         else:
+# #             print(
+# #                 "  Воспроизводимость: недостаточно запусков "
+# #                 "(нужно минимум 2)"
+# #             )
+
+# #     # --------------------------------------------------
+# #     # FINAL REPORT
+# #     # --------------------------------------------------
+
+# #     print("\n================================================")
+# #     print(" FINAL EVALUATION REPORT")
+# #     print("================================================")
+
+# #     print(f"Сценариев в датасете: {total_scenarios}")
+# #     print(f"Фактических запусков: {total_runs}")
+# #     print(f"Сценариев без результатов: {missing_results}")
+
+# #     print("\n1. RECOMMENDATION ACCURACY")
+
+# #     if recommendation_total:
+# #         value = recommendation_pass / recommendation_total * 100
+# #         print(
+# #             f"{recommendation_pass}/{recommendation_total} "
+# #             f"({value:.2f}%)"
+# #         )
+# #     else:
+# #         print("Нет данных.")
+
+# #     print("\n2. SCORE RANGE HIT")
+
+# #     if score_total:
+# #         value = score_pass / score_total * 100
+# #         print(f"{score_pass}/{score_total} ({value:.2f}%)")
+# #     else:
+# #         print("Нет данных.")
+
+# #     print("\n3. PARSING COMPLETENESS")
+
+# #     if parsing_total:
+# #         completeness = (
+# #             parsing_completeness_sum / parsing_total * 100
+# #         )
+# #         accuracy = (
+# #             parsing_accuracy_sum / parsing_total * 100
+# #         )
+
+# #         print(f"Средняя полнота: {completeness:.2f}%")
+# #         print(f"Средняя точность полей: {accuracy:.2f}%")
+# #     else:
+# #         print("Нет данных.")
+
+# #     print("\n4. EXECUTION TIME")
+
+# #     if execution_times:
+# #         average_time = sum(execution_times) / len(execution_times)
+
+# #         print(f"Среднее время: {average_time:.2f} ms")
+# #         print(f"Минимальное время: {min(execution_times):.2f} ms")
+# #         print(f"Максимальное время: {max(execution_times):.2f} ms")
+# #         print(f"Измерений: {len(execution_times)}")
+# #     else:
+# #         print("Нет данных.")
+
+# #     print("\n5. REPRODUCIBILITY")
+
+# #     if reproducibility_total:
+# #         value = (
+# #             reproducibility_pass /
+# #             reproducibility_total * 100
+# #         )
+
+# #         print(
+# #             f"{reproducibility_pass}/{reproducibility_total} "
+# #             f"({value:.2f}%)"
+# #         )
+# #     else:
+# #         print("Недостаточно повторных запусков.")
+
+# #     print("\n================================================")
+# #     print(" EVALUATION FINISHED")
+# #     print("================================================")
+
+# #     if missing_results:
+# #         print(
+# #             "[INFO] Часть сценариев не имеет фактических результатов. "
+# #             "Общая оценка пока неполная."
+# #         )
+# #     else:
+# #         print("[INFO] Все сценарии имеют фактические результаты.")
+
+
+# # if __name__ == "__main__":
+# #     main()
