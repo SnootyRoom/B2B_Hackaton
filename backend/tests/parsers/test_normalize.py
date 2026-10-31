@@ -6,6 +6,7 @@ import pytest
 from app.parsers.normalize import (
     delivery_days,
     inn_is_valid,
+    local_tz,
     money,
     normalize_method,
     normalize_okpd2,
@@ -60,6 +61,22 @@ def test_datetime() -> None:
     assert parse_datetime("2026-11-05+03:00") == datetime(2026, 11, 4, 21, tzinfo=UTC)
     assert parse_datetime("05.11.2026 12:00") == datetime(2026, 11, 5, 9, tzinfo=UTC)
     assert parse_datetime("не дата") is None
+
+
+def test_datetime_in_customer_timezone() -> None:
+    """223-ФЗ: время без смещения — местное время заказчика, сдвиг от МСК в часах."""
+    krasnoyarsk = local_tz("4")
+    assert parse_datetime("2026-11-02T10:00:00", krasnoyarsk) == datetime(
+        2026, 11, 2, 3, tzinfo=UTC
+    )
+    # явное смещение в значении главнее пояса заказчика
+    assert parse_datetime("2026-11-02T10:00:00+03:00", krasnoyarsk) == datetime(
+        2026, 11, 2, 7, tzinfo=UTC
+    )
+    assert local_tz(None) == local_tz("0") == local_tz("мусор") == local_tz("15")
+    assert parse_datetime("2026-11-02T10:00:00", local_tz(None)) == datetime(
+        2026, 11, 2, 7, tzinfo=UTC
+    )
 
 
 def test_method() -> None:
