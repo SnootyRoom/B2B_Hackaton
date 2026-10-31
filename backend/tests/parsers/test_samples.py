@@ -201,6 +201,15 @@ def test_223_price_request_without_nmck() -> None:
     assert p.published_at == datetime(2026, 10, 27, 7, 30, 49, tzinfo=UTC)
 
 
+def test_223_region_from_postal_address() -> None:
+    """Юридический адрес заказчика без субъекта («453256, Г.. САЛАВАТ, …»), место поставки —
+    «в соответствии с документацией»: регион берётся из почтового адреса."""
+    [p] = _parse("32616532658")
+    assert p.parsed_by == "adapter:eis223"
+    assert p.customer_inn == "0266017771"
+    assert p.region == "Республика Башкортостан"
+
+
 def test_615_universal() -> None:
     [p] = _parse("203950000012401084")
     assert p.parsed_by == "universal"

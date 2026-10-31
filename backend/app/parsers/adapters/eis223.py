@@ -34,6 +34,7 @@ SPEC = Spec(
     customer_address=(
         "customer/maininfo/legaladdress",
         "customer/maininfo/postaladdress",
+        "customer/maininfo/region",
         ".//customer//legaladdress",
     ),
     region=("lotdata/deliveryplace/region", ".//deliveryplace/region"),

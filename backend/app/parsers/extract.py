@@ -156,10 +156,15 @@ def build_lot(
         if norm and norm not in okpd2:
             okpd2.append(norm)
 
+    # адрес заказчика: юридический бывает без субъекта («453256, г. Салават, …») —
+    # тогда регион берётся из следующего адреса, где он есть
+    addresses = all_texts(lot, spec.customer_address)
+    if lot is not doc:
+        addresses += all_texts(doc, spec.customer_address)
     region = (
         normalize_region(get(spec.region))
         or normalize_region(delivery_place)
-        or normalize_region(get(spec.customer_address))
+        or next((r for a in addresses if (r := normalize_region(a))), None)
     )
 
     return ProcurementData(
