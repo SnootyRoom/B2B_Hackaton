@@ -717,7 +717,7 @@
           "scoring-profiles"
         ],
         "summary": "Create Profile",
-        "description": "Пустой (правила по умолчанию), из шаблона или с готовыми правилами. Не активный.",
+        "description": "Пустой (правила по умолчанию), с готовыми правилами или из шаблона. Шаблон —\nвариация активного профиля: «Осторожный» / «Агрессивный» вариант своей стратегии.\nНе активный.",
         "operationId": "create_profile_api_scoring_profiles_post",
         "parameters": [
           {
@@ -1490,7 +1490,7 @@
           "results"
         ],
         "summary": "Compare",
-        "description": "Сравнение рекомендаций двух своих профилей. Только чтение: недостающие оценки\nдосчитывает POST /score {profile_id, only_stale: true}.",
+        "description": "Сравнение рекомендаций двух своих профилей (A → B). Только чтение: недостающие\nи устаревшие оценки досчитывает POST /score {profile_id, only_stale: true}.",
         "operationId": "compare_api_results_compare_get",
         "parameters": [
           {
@@ -1550,16 +1550,6 @@
               }
             },
             "description": "Not Found"
-          },
-          "501": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            },
-            "description": "Not Implemented"
           },
           "422": {
             "description": "Validation Error",

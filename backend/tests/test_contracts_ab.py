@@ -64,7 +64,6 @@ def test_score_accepts_profile_and_only_stale(client: TestClient) -> None:
 @pytest.mark.parametrize(
     ("method", "path", "body"),
     [
-        ("get", "/api/results/compare?a={pid}&b={pid}", None),
         ("post", "/api/procurements/fetch", {"numbers": ["0101300020326000001"]}),
     ],
 )
