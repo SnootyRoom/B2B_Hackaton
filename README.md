@@ -142,12 +142,30 @@ LLM возвращает правила по JSON-схеме, каждое пр�
 ### Как поменять параметры без кода
 
 - Профиль: текстом (разбор LLM) или в редакторе правил; `PUT /api/scoring-profiles/active`
-  с `"rescore": true` пересчитывает загруженные закупки.
+  (или `/{id}`) с `"rescore": true` пересчитывает загруженные закупки.
 - Веса групп и пороги рекомендации — часть профиля.
 - Калибровочные настройки — переменные в `.env` (затем перезапуск `backend` и `worker`):
   `SEMANTIC_C0`, `SEMANTIC_C1` (пороги смысла), `FIT_MIN`, `SEMANTIC_LIFT`,
   `OKPD2_MISS_WEIGHT`, `OKPD2_CATEGORY_MIN`, `MONEY_FAR_FACTOR`, `OKPD2_CANDIDATES_K`.
   Значения по умолчанию и смысл — в `backend/app/core/config.py`.
+
+### Несколько профилей и сравнение
+
+Поставщик держит несколько стратегий — например, «Осторожную» и «Агрессивную» — и
+переключается между ними без потери настроек и без повторной загрузки файлов.
+
+- **Профили:** создать (пустой, из шаблона или с правилами), дублировать, переименовать,
+  изменить, удалить. До 20 профилей, имена не повторяются.
+- **Активный профиль всегда один** — это гарантирует база (частичный уникальный индекс).
+  Последний профиль удалить нельзя; удалили активный — активным становится недавно изменённый.
+- **Шаблоны** — вариации активного профиля. «Осторожный»: стоп на реорганизацию заказчика,
+  суммы и возраст заказчика строго, пороги 75 / 45. «Агрессивный»: диапазон сумм вдвое шире,
+  реорганизация допустима, возраст заказчика от 1 года, пороги 60 / 30.
+- **Переключение** сразу меняет активный профиль и досчитывает только устаревшие оценки.
+  Оценка хранится на пару «закупка + профиль» с версией профиля (хэш правил, весов и порогов)
+  и версией движка; переключение туда и обратно без изменений ничего не пересчитывает.
+- **Сравнение** двух любых своих профилей: что стало лучше, хуже или не изменилось,
+  и почему — до трёх фраз со ссылками на правила, по шаблонам, без LLM.
 
 ### Скорость и точность
 
@@ -218,6 +236,19 @@ curl -b jar -H 'Content-Type: application/json' \
 # пересчёт и заказчик
 curl -b jar -H 'Content-Type: application/json' -d '{}' localhost:8000/api/score
 curl -b jar localhost:8000/api/organizations/7017000019   # 200 из кэша, иначе 202 + task_id
+# несколько профилей и сравнение
+curl -b jar localhost:8000/api/scoring-profiles            # список, активный первым
+curl -b jar -H 'Content-Type: application/json' \
+  -d '{"name":"Агрессивный","template":"aggressive"}' localhost:8000/api/scoring-profiles
+curl -b jar -X POST localhost:8000/api/scoring-profiles/<id>/duplicate
+curl -b jar -X PATCH -H 'Content-Type: application/json' -d '{"name":"Только Томск"}' \
+  localhost:8000/api/scoring-profiles/<id>
+curl -b jar -X POST localhost:8000/api/scoring-profiles/<id>/activate   # → {"task_id": ... | null}
+curl -b jar "localhost:8000/api/results?profile_id=<id>"   # у строк stale: оценка устарела
+curl -b jar -H 'Content-Type: application/json' -d '{"profile_id":"<id>","only_stale":true}' \
+  localhost:8000/api/score                                # досчитать оценки перед сравнением
+curl -b jar "localhost:8000/api/results/compare?a=<id1>&b=<id2>"
+curl -b jar -X DELETE localhost:8000/api/scoring-profiles/<id>
 ```
 
 Формат JSON-файла закупки — схема `ProcurementData` (объект или список лотов):

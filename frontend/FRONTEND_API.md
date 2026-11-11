@@ -39,8 +39,8 @@
 
 Схемы — `backend/app/schemas/scoring.py` (`ProfileSummary`, `CreateProfileRequest`,
 `RenameProfileRequest`, `ProfileTaskResponse`) и `procurement.py` (`CompareOut`).
-Отмеченные «501» пока отвечают `NOT_IMPLEMENTED` — работаем на моках. Шаблоны «Осторожный» /
-«Агрессивный» пока дают правила по умолчанию (наполняет роль 3).
+Задача A на бэкенде готова целиком. Шаблоны «Осторожный» /
+«Агрессивный» — вариации активного профиля (см. `template_profile` в `scoring/defaults.py`).
 
 | Запрос | Ответ | Готово |
 | --- | --- | --- |
@@ -54,7 +54,7 @@
 | `POST /scoring-profiles/{id}/activate` | `{task_id: uuid \| null}` | ✅ |
 | `GET /results?profile_id=` | `ResultRow[]`, у строк `stale` | ✅ |
 | `POST /score` `{profile_id?, only_stale?}` | `202 {task_id}` | ✅ |
-| `GET /results/compare?a=&b=` | `CompareOut` | 501 |
+| `GET /results/compare?a=&b=` | `CompareOut` | ✅ |
 
 - `GET/PUT /scoring-profiles/active` остаются как были.
 - `task_id: null` у activate/DELETE — пересчитывать нечего, ждать не нужно.

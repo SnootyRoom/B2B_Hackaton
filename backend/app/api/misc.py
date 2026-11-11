@@ -2,21 +2,31 @@
 
 import re
 import uuid
+from collections import Counter
 
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
 from sqlalchemy import and_, select
-from sqlalchemy.orm import selectinload
+from sqlalchemy.orm import aliased, selectinload
 
 from app.api.deps import DB, CurrentUser, get_active_profile, get_owned
-from app.core.errors import AppError, not_found, not_implemented
+from app.core.errors import AppError, not_found
 from app.egrul.service import get_cached
 from app.models import Procurement, ScoreResult, ScoringProfile, Task
 from app.schemas.common import ErrorCode, ErrorResponse
 from app.schemas.customer import CustomerProfileOut
-from app.schemas.procurement import CompareOut, ResultRow
-from app.schemas.score import Recommendation, ScoreRequest
+from app.schemas.procurement import (
+    Change,
+    CompareOut,
+    CompareRow,
+    CompareSummary,
+    ResultRow,
+    ScoreBrief,
+)
+from app.schemas.score import Recommendation, ScoreRequest, ScoreResultData
+from app.schemas.scoring import ScoringProfileData
 from app.schemas.task import TaskCreated, TaskKind, TaskOut
+from app.scoring.difference import explain_difference
 from app.tasks import staleness
 from app.tasks.jobs import enqueue
 
@@ -107,17 +117,86 @@ def list_results(db: DB, user: CurrentUser, profile_id: uuid.UUID | None = None)
     ]
 
 
-@results.get(
-    "/compare",
-    response_model=CompareOut,
-    responses={404: {"model": ErrorResponse}, 501: {"model": ErrorResponse}},
-)
+_RANK = {Recommendation.skip: 0, Recommendation.consider: 1, Recommendation.participate: 2}
+_CHANGE_ORDER = {Change.better: 0, Change.worse: 0, Change.same: 1, Change.unknown: 2}
+
+
+def _brief(s: ScoreResult | None, stale: bool) -> ScoreBrief:
+    return ScoreBrief(
+        total=s.total if s else None,
+        recommendation=Recommendation(s.recommendation) if s else None,
+        stale=stale,
+    )
+
+
+@results.get("/compare", response_model=CompareOut, responses={404: {"model": ErrorResponse}})
 def compare(a: uuid.UUID, b: uuid.UUID, db: DB, user: CurrentUser) -> CompareOut:
-    """Сравнение рекомендаций двух своих профилей. Только чтение: недостающие оценки
-    досчитывает POST /score {profile_id, only_stale: true}."""
-    get_owned(db, ScoringProfile, a, user)
-    get_owned(db, ScoringProfile, b, user)
-    raise not_implemented()
+    """Сравнение рекомендаций двух своих профилей (A → B). Только чтение: недостающие
+    и устаревшие оценки досчитывает POST /score {profile_id, only_stale: true}."""
+    pa = get_owned(db, ScoringProfile, a, user)
+    pb = get_owned(db, ScoringProfile, b, user)
+    data_a = ScoringProfileData.model_validate(pa, from_attributes=True)
+    data_b = ScoringProfileData.model_validate(pb, from_attributes=True)
+    va, vb = staleness.versions(pa), staleness.versions(pb)
+    sa, sb = aliased(ScoreResult), aliased(ScoreResult)
+    rows = db.execute(
+        select(Procurement, sa, sb)
+        .outerjoin(sa, and_(sa.procurement_id == Procurement.id, sa.profile_id == pa.id))
+        .outerjoin(sb, and_(sb.procurement_id == Procurement.id, sb.profile_id == pb.id))
+        .where(Procurement.owner_id == user.id)
+    ).all()
+
+    out: list[CompareRow] = []
+    missing = 0
+    for p, ra, rb in rows:
+        stale_a = staleness.is_stale(ra, p.updated_at, *va)
+        stale_b = staleness.is_stale(rb, p.updated_at, *vb)
+        missing += stale_a + stale_b
+        change, delta, explanation = Change.unknown, None, ""
+        if ra is not None and rb is not None and not stale_a and not stale_b:
+            delta = rb.total - ra.total
+            diff = (
+                _RANK[Recommendation(rb.recommendation)] - _RANK[Recommendation(ra.recommendation)]
+            )
+            change = Change.better if diff > 0 else Change.worse if diff < 0 else Change.same
+            explanation = explain_difference(
+                ScoreResultData.model_validate(ra, from_attributes=True),
+                ScoreResultData.model_validate(rb, from_attributes=True),
+                data_a,
+                data_b,
+            )
+        out.append(
+            CompareRow(
+                procurement_id=p.id,
+                reg_number=p.reg_number,
+                subject=p.subject,
+                customer_name=p.customer_name,
+                nmck=p.nmck,
+                currency=p.currency,
+                region=p.region,
+                law=p.law,
+                application_deadline=p.application_deadline,
+                a=_brief(ra, stale_a),
+                b=_brief(rb, stale_b),
+                change=change,
+                delta=delta,
+                explanation=explanation,
+            )
+        )
+    out.sort(key=lambda r: (_CHANGE_ORDER[r.change], -abs(r.delta or 0), r.reg_number))
+    counts = Counter(r.change for r in out)
+    return CompareOut(
+        profile_a=pa.id,
+        profile_b=pb.id,
+        rows=out,
+        summary=CompareSummary(
+            better=counts[Change.better],
+            worse=counts[Change.worse],
+            same=counts[Change.same],
+            unknown=counts[Change.unknown],
+        ),
+        missing=missing,
+    )
 
 
 @tasks.get("", response_model=list[TaskOut])

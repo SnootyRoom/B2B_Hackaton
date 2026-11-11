@@ -178,15 +178,21 @@ def list_profiles(db: DB, user: CurrentUser) -> list[ProfileSummary]:
     responses={400: {"model": ErrorResponse}, 409: {"model": ErrorResponse}},
 )
 def create_profile(body: CreateProfileRequest, db: DB, user: CurrentUser) -> ScoringProfile:
-    """Пустой (правила по умолчанию), из шаблона или с готовыми правилами. Не активный."""
-    get_active_profile(db, user.id)  # первый профиль пользователя всегда активный
+    """Пустой (правила по умолчанию), с готовыми правилами или из шаблона. Шаблон —
+    вариация активного профиля: «Осторожный» / «Агрессивный» вариант своей стратегии.
+    Не активный."""
+    active = get_active_profile(db, user.id)  # первый профиль пользователя всегда активный
     _lock_user(db, user)
     _check_limit(db, user)
     if _name_taken(db, user, body.name):
         raise _name_taken_error(body.name)
-    base = template_profile(body.template) if body.template else default_profile()
+    if body.template:
+        active_data = ScoringProfileData.model_validate(active, from_attributes=True)
+        base = template_profile(body.template, active_data)
+    else:
+        base = default_profile()
     fields = base.model_dump(mode="json", exclude_none=True)
-    fields.update(body.model_dump(mode="json", exclude={"template"}, exclude_none=True))
+    fields.update(body.model_dump(mode="json", exclude={"template"}, exclude_unset=True))
     data = ScoringProfileData.model_validate(fields)
     profile = ScoringProfile(owner_id=user.id, is_active=False, **data.model_dump(mode="json"))
     db.add(profile)
