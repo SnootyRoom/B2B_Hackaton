@@ -1,10 +1,10 @@
 from datetime import datetime
 from decimal import Decimal
 from enum import StrEnum
-from typing import Literal, Self
+from typing import Annotated, Literal, Self
 from uuid import UUID
 
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, Field, StringConstraints, model_validator
 
 from app.schemas.common import Money, ORMModel
 
@@ -296,6 +296,65 @@ class SaveProfileRequest(ScoringProfileData):
 class SaveProfileResponse(BaseModel):
     profile: ScoringProfileOut
     task_id: UUID | None = Field(default=None, description="Задача пересчёта, если rescore=true")
+
+
+# ---------- Несколько профилей (задача A) ----------
+
+MAX_PROFILES = 20
+
+ProfileName = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=100)]
+
+
+class ProfileTemplate(StrEnum):
+    cautious = "cautious"  # «Осторожный»
+    aggressive = "aggressive"  # «Агрессивный»
+
+
+class ProfileSummary(BaseModel):
+    """Строка списка профилей. GET /scoring-profiles — активный первым."""
+
+    id: UUID
+    name: str
+    is_active: bool
+    rules_count: int
+    updated_at: datetime
+
+
+class CreateProfileRequest(BaseModel):
+    """POST /scoring-profiles. Без rules и template — правила по умолчанию.
+
+    template и rules взаимоисключающие. Новый профиль не активный.
+    Ошибки: PROFILE_NAME_TAKEN (409), TOO_MANY_PROFILES (400).
+    """
+
+    name: ProfileName
+    template: ProfileTemplate | None = None
+    company_description: str = ""
+    source_text: str = ""
+    group_weights: GroupWeights | None = None
+    thresholds: Thresholds | None = None
+    rules: list[ScoringRule] | None = None
+
+    @model_validator(mode="after")
+    def _check(self) -> Self:
+        if self.template is not None and self.rules is not None:
+            raise ValueError("Укажите либо шаблон, либо правила")
+        ids = [r.id for r in self.rules or []]
+        if len(ids) != len(set(ids)):
+            raise ValueError("Идентификаторы правил повторяются")
+        return self
+
+
+class RenameProfileRequest(BaseModel):
+    """PATCH /scoring-profiles/{id}: только имя, без пересчёта."""
+
+    name: ProfileName
+
+
+class ProfileTaskResponse(BaseModel):
+    """Ответ activate и DELETE: задача пересчёта или null, если пересчитывать нечего."""
+
+    task_id: UUID | None = None
 
 
 class ParseProfileRequest(BaseModel):

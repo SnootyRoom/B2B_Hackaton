@@ -7,11 +7,16 @@ from sqlalchemy import select
 
 from app.api.deps import DB, CurrentUser, get_active_profile, get_owned
 from app.core.config import get_settings
-from app.core.errors import AppError
+from app.core.errors import AppError, not_implemented
 from app.models import CustomerProfile, Procurement, ScoreResult, Task, TaskFile
 from app.schemas.common import ErrorCode, ErrorResponse
 from app.schemas.customer import CustomerProfileOut
-from app.schemas.procurement import ProcurementData, ProcurementDetail, ProcurementSummary
+from app.schemas.procurement import (
+    FetchRequest,
+    ProcurementData,
+    ProcurementDetail,
+    ProcurementSummary,
+)
 from app.schemas.score import ScoreResultOut
 from app.schemas.task import TaskCreated, TaskKind
 from app.tasks.jobs import enqueue
@@ -25,6 +30,18 @@ _CHUNK = 1024 * 1024
 def _safe_name(name: str) -> str:
     stem = Path(name).name
     return re.sub(r"[^\w.\-]+", "_", stem)[:150] or "file"
+
+
+@router.post(
+    "/fetch",
+    response_model=TaskCreated,
+    status_code=202,
+    responses={400: {"model": ErrorResponse}, 501: {"model": ErrorResponse}},
+)
+def fetch(body: FetchRequest, db: DB, user: CurrentUser) -> TaskCreated:
+    """Реестровые номера → задача kind=fetch; документы скачиваются из ЕИС в фоне
+    и идут тем же путём, что загруженный файл."""
+    raise not_implemented()
 
 
 @router.post(

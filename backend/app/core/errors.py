@@ -30,6 +30,10 @@ def not_found() -> AppError:
     return AppError(ErrorCode.NOT_FOUND, "Запись не найдена", 404)
 
 
+def not_implemented() -> AppError:
+    return AppError(ErrorCode.NOT_IMPLEMENTED, "Функция ещё в разработке", 501)
+
+
 def _body(code: str, message: str, details: dict[str, Any] | None = None) -> dict[str, Any]:
     return {"error": {"code": code, "message": message, "details": details or {}}}
 
