@@ -15,6 +15,7 @@ from sqlalchemy import (
     String,
     Text,
     UniqueConstraint,
+    text,
 )
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
@@ -49,6 +50,16 @@ class User(TimestampMixin, Base):
 
 class ScoringProfile(TimestampMixin, Base):
     __tablename__ = "scoring_profiles"
+    __table_args__ = (
+        UniqueConstraint("owner_id", "name", name="uq_scoring_profiles_owner_name"),
+        # Активный профиль у пользователя ровно один — гарантирует база, а не только код
+        Index(
+            "uq_scoring_profiles_one_active",
+            "owner_id",
+            unique=True,
+            postgresql_where=text("is_active"),
+        ),
+    )
 
     id: Mapped[uuid.UUID] = mapped_column(primary_key=True, default=uuid.uuid4)
     owner_id: Mapped[uuid.UUID] = _owner()
@@ -58,7 +69,7 @@ class ScoringProfile(TimestampMixin, Base):
     group_weights: Mapped[dict[str, Any]] = mapped_column(JSONB)
     thresholds: Mapped[dict[str, Any]] = mapped_column(JSONB)
     rules: Mapped[list[dict[str, Any]]] = mapped_column(JSONB)
-    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=False)
 
 
 class CustomerProfile(Base):
@@ -129,6 +140,10 @@ class ScoreResult(Base):
     rules: Mapped[list[dict[str, Any]]] = mapped_column(JSONB)
     justification: Mapped[str] = mapped_column(Text)
     justification_source: Mapped[str] = mapped_column(String(20))
+    # Чем посчитано: версия профиля (правила, веса, пороги) и движка (код + настройки).
+    # Не совпадает с текущей или закупка менялась после computed_at — оценка устарела.
+    profile_version: Mapped[str | None] = mapped_column(String(32))
+    engine_version: Mapped[str | None] = mapped_column(String(32))
     computed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 

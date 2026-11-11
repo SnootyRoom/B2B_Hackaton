@@ -566,6 +566,16 @@
               }
             }
           },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
           "422": {
             "content": {
               "application/json": {
@@ -768,26 +778,6 @@
             },
             "description": "Conflict"
           },
-          "404": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            },
-            "description": "Not Found"
-          },
-          "501": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            },
-            "description": "Not Implemented"
-          },
           "422": {
             "description": "Validation Error",
             "content": {
@@ -857,16 +847,6 @@
             },
             "description": "Not Found"
           },
-          "501": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            },
-            "description": "Not Implemented"
-          },
           "422": {
             "description": "Validation Error",
             "content": {
@@ -884,7 +864,7 @@
           "scoring-profiles"
         ],
         "summary": "Save Profile",
-        "description": "Правила, веса, пороги. rescore=true имеет смысл только для активного профиля;\nу неактивного оценки просто становятся устаревшими (stale).",
+        "description": "Правила, веса, пороги (и имя). rescore=true — «Сохранить и пересчитать»;\nбез него оценки профиля становятся устаревшими (stale).",
         "operationId": "save_profile_api_scoring_profiles__profile_id__put",
         "parameters": [
           {
@@ -964,16 +944,6 @@
               }
             },
             "description": "Not Found"
-          },
-          "501": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            },
-            "description": "Not Implemented"
           }
         }
       },
@@ -1053,16 +1023,6 @@
             },
             "description": "Not Found"
           },
-          "501": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            },
-            "description": "Not Implemented"
-          },
           "422": {
             "description": "Validation Error",
             "content": {
@@ -1080,7 +1040,7 @@
           "scoring-profiles"
         ],
         "summary": "Delete Profile",
-        "description": "Последний профиль → 400 LAST_PROFILE. Удалили активный → активным становится\nнедавно изменённый, task_id — его пересчёт; иначе task_id = null.",
+        "description": "Последний профиль → 400 LAST_PROFILE. Удалили активный → активным становится\nнедавно изменённый, task_id — досчёт его оценок; иначе task_id = null.\nОценки удалённого профиля удаляются каскадом.",
         "operationId": "delete_profile_api_scoring_profiles__profile_id__delete",
         "parameters": [
           {
@@ -1140,16 +1100,6 @@
               }
             },
             "description": "Not Found"
-          },
-          "501": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            },
-            "description": "Not Implemented"
           },
           "422": {
             "description": "Validation Error",
@@ -1231,16 +1181,6 @@
             },
             "description": "Not Found"
           },
-          "501": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            },
-            "description": "Not Implemented"
-          },
           "422": {
             "description": "Validation Error",
             "content": {
@@ -1310,16 +1250,6 @@
               }
             },
             "description": "Not Found"
-          },
-          "501": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            },
-            "description": "Not Implemented"
           },
           "422": {
             "description": "Validation Error",

@@ -39,18 +39,19 @@
 
 Схемы — `backend/app/schemas/scoring.py` (`ProfileSummary`, `CreateProfileRequest`,
 `RenameProfileRequest`, `ProfileTaskResponse`) и `procurement.py` (`CompareOut`).
-Отмеченные «501» пока отвечают `NOT_IMPLEMENTED` — работаем на моках.
+Отмеченные «501» пока отвечают `NOT_IMPLEMENTED` — работаем на моках. Шаблоны «Осторожный» /
+«Агрессивный» пока дают правила по умолчанию (наполняет роль 3).
 
 | Запрос | Ответ | Готово |
 | --- | --- | --- |
 | `GET /scoring-profiles` | `ProfileSummary[]`, активный первым | ✅ |
 | `GET /scoring-profiles/{id}` | `ScoringProfileOut` | ✅ |
-| `POST /scoring-profiles` `{name, template?, rules?, ...}` | `201 ScoringProfileOut` | 501 |
-| `PUT /scoring-profiles/{id}` (тело как у `/active`) | `SaveProfileResponse` | 501 |
-| `PATCH /scoring-profiles/{id}` `{name}` | `ProfileSummary` | 501 |
-| `POST /scoring-profiles/{id}/duplicate` | `201 ScoringProfileOut` | 501 |
-| `DELETE /scoring-profiles/{id}` | `{task_id: uuid \| null}` | 501 |
-| `POST /scoring-profiles/{id}/activate` | `{task_id: uuid \| null}` | 501 |
+| `POST /scoring-profiles` `{name, template?, rules?, ...}` | `201 ScoringProfileOut` | ✅ |
+| `PUT /scoring-profiles/{id}` (тело как у `/active`) | `SaveProfileResponse` | ✅ |
+| `PATCH /scoring-profiles/{id}` `{name}` | `ProfileSummary` | ✅ |
+| `POST /scoring-profiles/{id}/duplicate` | `201 ScoringProfileOut` | ✅ |
+| `DELETE /scoring-profiles/{id}` | `{task_id: uuid \| null}` | ✅ |
+| `POST /scoring-profiles/{id}/activate` | `{task_id: uuid \| null}` | ✅ |
 | `GET /results?profile_id=` | `ResultRow[]`, у строк `stale` | ✅ |
 | `POST /score` `{profile_id?, only_stale?}` | `202 {task_id}` | ✅ |
 | `GET /results/compare?a=&b=` | `CompareOut` | 501 |

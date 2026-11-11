@@ -25,6 +25,8 @@ from app.schemas.scoring import ScoringProfileData
 from app.schemas.task import FileStatus, TaskStatus
 from app.scoring.engine import Similarity, score
 from app.scoring.fields import extract_fields
+from app.scoring.version import engine_version, profile_version
+from app.tasks import staleness
 
 log = logging.getLogger(__name__)
 
@@ -51,9 +53,9 @@ def _load_profile(db: Session, task: Task) -> tuple[ScoringProfile, ScoringProfi
         profile = db.get(ScoringProfile, uuid.UUID(profile_id))
     else:
         profile = db.scalars(
-            select(ScoringProfile)
-            .where(ScoringProfile.owner_id == task.owner_id, ScoringProfile.is_active.is_(True))
-            .order_by(ScoringProfile.updated_at.desc())
+            select(ScoringProfile).where(
+                ScoringProfile.owner_id == task.owner_id, ScoringProfile.is_active.is_(True)
+            )
         ).first()
     if profile is None or profile.owner_id != task.owner_id:
         raise RuntimeError("Нет профиля скоринга")
@@ -100,6 +102,8 @@ def score_procurement(
         db.add(row)
     for key, value in result.model_dump(mode="json").items():
         setattr(row, key, value)
+    row.profile_version = profile_version(profile_data)
+    row.engine_version = engine_version()
     row.computed_at = utcnow()
 
 
@@ -179,14 +183,37 @@ def process_upload(db: Session, task: Task) -> None:
         db.commit()
         log.info("task %s: %s/%s %s %s", task.id, task.processed, task.total, f.filename, f.status)
     task.status = _final_status(ok, task.total)
+    _rescore_if_switched(db, task.owner_id, profile)
+
+
+def _rescore_if_switched(db: Session, owner_id: uuid.UUID, used: ScoringProfile) -> None:
+    """Активный профиль сменили во время загрузки — новые закупки досчитать по нему."""
+    active = db.scalar(
+        select(ScoringProfile).where(
+            ScoringProfile.owner_id == owner_id, ScoringProfile.is_active.is_(True)
+        )
+    )
+    if active is None or active.id == used.id:
+        return
+    task, new = staleness.stale_rescore_task(db, owner_id, active)
+    db.commit()
+    if task is not None and new:
+        from app.tasks.jobs import enqueue  # jobs импортирует pipeline
+
+        enqueue(task)
 
 
 def process_rescore(db: Session, task: Task) -> None:
     profile, profile_data = _load_profile(db, task)
-    query = select(Procurement).where(Procurement.owner_id == task.owner_id)
+    if task.params.get("only_stale"):
+        procurements = staleness.stale_procurements(db, task.owner_id, profile)
+    else:
+        procurements = list(
+            db.scalars(select(Procurement).where(Procurement.owner_id == task.owner_id))
+        )
     if ids := task.params.get("procurement_ids"):
-        query = query.where(Procurement.id.in_([uuid.UUID(i) for i in ids]))
-    procurements = list(db.scalars(query))
+        wanted = set(ids)
+        procurements = [p for p in procurements if str(p.id) in wanted]
     task.total = len(procurements)
     db.commit()
     ok = 0

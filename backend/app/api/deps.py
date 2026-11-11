@@ -3,6 +3,7 @@ from typing import Annotated
 
 from fastapi import Cookie, Depends
 from sqlalchemy import select
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from app.core.config import get_settings
@@ -40,22 +41,37 @@ def get_owned[M: Base](db: Session, model: type[M], obj_id: uuid.UUID, user: Use
 
 
 def get_active_profile(db: Session, user_id: uuid.UUID) -> ScoringProfile:
-    """Активный профиль; если его нет — создаётся профиль по умолчанию."""
+    """Активный профиль. Нет активного — активным становится недавно изменённый,
+    а если профилей нет совсем — создаётся профиль по умолчанию."""
+    profile = db.scalar(
+        select(ScoringProfile).where(
+            ScoringProfile.owner_id == user_id, ScoringProfile.is_active.is_(True)
+        )
+    )
+    if profile is not None:
+        return profile
     profile = db.scalars(
         select(ScoringProfile)
-        .where(ScoringProfile.owner_id == user_id, ScoringProfile.is_active.is_(True))
+        .where(ScoringProfile.owner_id == user_id)
         .order_by(ScoringProfile.updated_at.desc())
     ).first()
-    if profile is None:
+    if profile is not None:
+        profile.is_active = True
+    else:
         # Профиль по умолчанию от движка → в формат контракта (лишние поля отбрасываются)
         data = ScoringProfileData.model_validate(
             default_profile().model_dump(mode="json", exclude_none=True)
         )
-        profile = ScoringProfile(
-            owner_id=user_id,
-            is_active=True,
-            **data.model_dump(mode="json"),
-        )
+        profile = ScoringProfile(owner_id=user_id, is_active=True, **data.model_dump(mode="json"))
         db.add(profile)
+    try:
         db.commit()
+    except IntegrityError:
+        # Параллельный запрос успел создать или назначить активный — берём его
+        db.rollback()
+        return db.scalars(
+            select(ScoringProfile).where(
+                ScoringProfile.owner_id == user_id, ScoringProfile.is_active.is_(True)
+            )
+        ).one()
     return profile

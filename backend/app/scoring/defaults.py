@@ -72,3 +72,9 @@ def with_defaults(rules: list[ScoringRule]) -> list[ScoringRule]:
 
 def default_profile() -> ScoringProfileData:
     return ScoringProfileData(rules=with_defaults([]))
+
+
+def template_profile(template: str) -> ScoringProfileData:
+    """Шаблоны «Осторожный» (cautious) и «Агрессивный» (aggressive) для задачи A.
+    Пока — правила по умолчанию; содержимое шаблонов наполняет роль 3."""
+    return default_profile()
