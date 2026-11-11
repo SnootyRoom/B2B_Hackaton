@@ -151,6 +151,86 @@
         }
       }
     },
+    "/api/procurements/fetch": {
+      "post": {
+        "tags": [
+          "procurements"
+        ],
+        "summary": "Fetch",
+        "description": "Реестровые номера → задача kind=fetch; документы скачиваются из ЕИС в фоне\nи идут тем же путём, что загруженный файл.",
+        "operationId": "fetch_api_procurements_fetch_post",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskCreated"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "501": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Implemented"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/procurements/upload": {
       "post": {
         "tags": [
@@ -569,6 +649,691 @@
         }
       }
     },
+    "/api/scoring-profiles": {
+      "get": {
+        "tags": [
+          "scoring-profiles"
+        ],
+        "summary": "List Profiles",
+        "description": "Профили пользователя: активный первым, затем недавно изменённые.",
+        "operationId": "list_profiles_api_scoring_profiles_get",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProfileSummary"
+                  },
+                  "title": "Response List Profiles Api Scoring Profiles Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "scoring-profiles"
+        ],
+        "summary": "Create Profile",
+        "description": "Пустой (правила по умолчанию), из шаблона или с готовыми правилами. Не активный.",
+        "operationId": "create_profile_api_scoring_profiles_post",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProfileRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ScoringProfileOut"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "501": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Implemented"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/scoring-profiles/{profile_id}": {
+      "get": {
+        "tags": [
+          "scoring-profiles"
+        ],
+        "summary": "Get Profile",
+        "operationId": "get_profile_api_scoring_profiles__profile_id__get",
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Profile Id"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ScoringProfileOut"
+                }
+              }
+            }
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "501": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Implemented"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "scoring-profiles"
+        ],
+        "summary": "Save Profile",
+        "description": "Правила, веса, пороги. rescore=true имеет смысл только для активного профиля;\nу неактивного оценки просто становятся устаревшими (stale).",
+        "operationId": "save_profile_api_scoring_profiles__profile_id__put",
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Profile Id"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaveProfileRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SaveProfileResponse"
+                }
+              }
+            }
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Unprocessable Entity"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "501": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Implemented"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "scoring-profiles"
+        ],
+        "summary": "Rename Profile",
+        "description": "Только имя, без пересчёта. Занято → 409 PROFILE_NAME_TAKEN.",
+        "operationId": "rename_profile_api_scoring_profiles__profile_id__patch",
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Profile Id"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RenameProfileRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProfileSummary"
+                }
+              }
+            }
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "501": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Implemented"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "scoring-profiles"
+        ],
+        "summary": "Delete Profile",
+        "description": "Последний профиль → 400 LAST_PROFILE. Удалили активный → активным становится\nнедавно изменённый, task_id — его пересчёт; иначе task_id = null.",
+        "operationId": "delete_profile_api_scoring_profiles__profile_id__delete",
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Profile Id"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProfileTaskResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "501": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Implemented"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/scoring-profiles/{profile_id}/duplicate": {
+      "post": {
+        "tags": [
+          "scoring-profiles"
+        ],
+        "summary": "Duplicate Profile",
+        "description": "Копия «<имя> (копия)», при повторе «(копия 2)». Не активная, оценки не копируются.",
+        "operationId": "duplicate_profile_api_scoring_profiles__profile_id__duplicate_post",
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Profile Id"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ScoringProfileOut"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "501": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Implemented"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/scoring-profiles/{profile_id}/activate": {
+      "post": {
+        "tags": [
+          "scoring-profiles"
+        ],
+        "summary": "Activate Profile",
+        "description": "Сделать активным (сразу, в транзакции) и досчитать устаревшие оценки.\ntask_id = null — все оценки актуальны. Повторный вызов во время пересчёта\nвозвращает тот же task_id.",
+        "operationId": "activate_profile_api_scoring_profiles__profile_id__activate_post",
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Profile Id"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProfileTaskResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "501": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Implemented"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/organizations/{inn}": {
       "get": {
         "tags": [
@@ -654,7 +1419,7 @@
           "score"
         ],
         "summary": "Rescore",
-        "description": "Пересчёт по активному профилю без повторного парсинга и запросов в ЕГРЮЛ.",
+        "description": "Пересчёт по профилю (по умолчанию активному) без повторного парсинга и ЕГРЮЛ.",
         "operationId": "rescore_api_score_post",
         "parameters": [
           {
@@ -714,9 +1479,26 @@
           "results"
         ],
         "summary": "List Results",
-        "description": "Все закупки пользователя с оценкой по активному профилю, по убыванию оценки.",
+        "description": "Все закупки пользователя с оценкой по профилю (по умолчанию активному),\nпо убыванию оценки. Чужой профиль → 404.",
         "operationId": "list_results_api_results_get",
         "parameters": [
+          {
+            "name": "profile_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "uuid"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Profile Id"
+            }
+          },
           {
             "name": "access_token",
             "in": "cookie",
@@ -748,6 +1530,106 @@
                 }
               }
             }
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/results/compare": {
+      "get": {
+        "tags": [
+          "results"
+        ],
+        "summary": "Compare",
+        "description": "Сравнение рекомендаций двух своих профилей. Только чтение: недостающие оценки\nдосчитывает POST /score {profile_id, only_stale: true}.",
+        "operationId": "compare_api_results_compare_get",
+        "parameters": [
+          {
+            "name": "a",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "A"
+            }
+          },
+          {
+            "name": "b",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "B"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompareOut"
+                }
+              }
+            }
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "501": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Implemented"
           },
           "422": {
             "description": "Validation Error",
@@ -921,6 +1803,268 @@
         ],
         "title": "Body_upload_api_procurements_upload_post"
       },
+      "Change": {
+        "type": "string",
+        "enum": [
+          "better",
+          "worse",
+          "same",
+          "unknown"
+        ],
+        "title": "Change",
+        "description": "Изменение рекомендации от профиля A к профилю B (participate > consider > skip)."
+      },
+      "CompareOut": {
+        "properties": {
+          "profile_a": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Profile A"
+          },
+          "profile_b": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Profile B"
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/CompareRow"
+            },
+            "type": "array",
+            "title": "Rows",
+            "description": "Сначала изменившиеся, затем по |delta|"
+          },
+          "summary": {
+            "$ref": "#/components/schemas/CompareSummary"
+          },
+          "missing": {
+            "type": "integer",
+            "title": "Missing",
+            "description": "Сколько оценок (по A и B вместе) нет или устарело"
+          }
+        },
+        "type": "object",
+        "required": [
+          "profile_a",
+          "profile_b",
+          "rows",
+          "summary",
+          "missing"
+        ],
+        "title": "CompareOut",
+        "description": "GET /results/compare?a=&b=. Только чтение, задачи не запускает.\n\nmissing > 0 → фронт запускает POST /score {profile_id, only_stale: true} для A и B,\nпоказывает прогресс и перезапрашивает сравнение."
+      },
+      "CompareRow": {
+        "properties": {
+          "procurement_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Procurement Id"
+          },
+          "reg_number": {
+            "type": "string",
+            "title": "Reg Number"
+          },
+          "subject": {
+            "type": "string",
+            "title": "Subject"
+          },
+          "customer_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Customer Name"
+          },
+          "nmck": {
+            "type": "number",
+            "title": "Nmck"
+          },
+          "currency": {
+            "type": "string",
+            "title": "Currency"
+          },
+          "region": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Region"
+          },
+          "law": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Law"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "application_deadline": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Application Deadline"
+          },
+          "a": {
+            "$ref": "#/components/schemas/ScoreBrief"
+          },
+          "b": {
+            "$ref": "#/components/schemas/ScoreBrief"
+          },
+          "change": {
+            "$ref": "#/components/schemas/Change"
+          },
+          "delta": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Delta",
+            "description": "b.total − a.total; None — нет одной из оценок"
+          },
+          "explanation": {
+            "type": "string",
+            "title": "Explanation",
+            "description": "Почему рекомендации разные: до 3 фраз со ссылками [rule_id], по шаблонам. Пусто при change=same и одинаковом итоге"
+          }
+        },
+        "type": "object",
+        "required": [
+          "procurement_id",
+          "reg_number",
+          "subject",
+          "customer_name",
+          "nmck",
+          "currency",
+          "region",
+          "law",
+          "application_deadline",
+          "a",
+          "b",
+          "change",
+          "delta",
+          "explanation"
+        ],
+        "title": "CompareRow"
+      },
+      "CompareSummary": {
+        "properties": {
+          "better": {
+            "type": "integer",
+            "title": "Better"
+          },
+          "worse": {
+            "type": "integer",
+            "title": "Worse"
+          },
+          "same": {
+            "type": "integer",
+            "title": "Same"
+          },
+          "unknown": {
+            "type": "integer",
+            "title": "Unknown"
+          }
+        },
+        "type": "object",
+        "required": [
+          "better",
+          "worse",
+          "same",
+          "unknown"
+        ],
+        "title": "CompareSummary"
+      },
+      "CreateProfileRequest": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Name"
+          },
+          "template": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ProfileTemplate"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "company_description": {
+            "type": "string",
+            "title": "Company Description",
+            "default": ""
+          },
+          "source_text": {
+            "type": "string",
+            "title": "Source Text",
+            "default": ""
+          },
+          "group_weights": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/GroupWeights"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "thresholds": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Thresholds"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "rules": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/ScoringRule-Input"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rules"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "title": "CreateProfileRequest",
+        "description": "POST /scoring-profiles. Без rules и template — правила по умолчанию.\n\ntemplate и rules взаимоисключающие. Новый профиль не активный.\nОшибки: PROFILE_NAME_TAKEN (409), TOO_MANY_PROFILES (400)."
+      },
       "CustomerProfileOut": {
         "properties": {
           "inn": {
@@ -1087,6 +2231,15 @@
           "NO_ACTIVE_PROFILE",
           "INVALID_PROFILE",
           "LLM_PARSE_FAILED",
+          "PROFILE_NAME_TAKEN",
+          "LAST_PROFILE",
+          "TOO_MANY_PROFILES",
+          "INVALID_REG_NUMBER",
+          "TOO_MANY_NUMBERS",
+          "EIS_NOT_FOUND",
+          "EIS_UNAVAILABLE",
+          "EIS_FALLBACK_SAMPLE",
+          "NOT_IMPLEMENTED",
           "EMAIL_TAKEN",
           "INVALID_CREDENTIALS",
           "NOT_AUTHENTICATED",
@@ -1131,6 +2284,25 @@
           "error"
         ],
         "title": "ErrorResponse"
+      },
+      "FetchRequest": {
+        "properties": {
+          "numbers": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 2000,
+            "minItems": 1,
+            "title": "Numbers"
+          }
+        },
+        "type": "object",
+        "required": [
+          "numbers"
+        ],
+        "title": "FetchRequest",
+        "description": "POST /procurements/fetch → 202 TaskCreated (kind=fetch).\n\nЭлементы списка можно передавать как есть из поля ввода: сервер дополнительно делит их\nпо пробелам, переносам, запятым и «;», убирает повторы. Номера неверного формата\nпопадают в задачу строками со статусом error и кодом INVALID_REG_NUMBER.\nВсе номера неверные или их нет → 400 INVALID_REG_NUMBER (details.invalid).\nБольше MAX_FETCH_NUMBERS после удаления повторов → 400 TOO_MANY_NUMBERS.\nПовторный номер обновляет существующую закупку."
       },
       "FieldCatalogOut": {
         "properties": {
@@ -1912,6 +3084,69 @@
         "title": "ProcurementSummary",
         "description": "Строка списка закупок."
       },
+      "ProfileSummary": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "is_active": {
+            "type": "boolean",
+            "title": "Is Active"
+          },
+          "rules_count": {
+            "type": "integer",
+            "title": "Rules Count"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "is_active",
+          "rules_count",
+          "updated_at"
+        ],
+        "title": "ProfileSummary",
+        "description": "Строка списка профилей. GET /scoring-profiles — активный первым."
+      },
+      "ProfileTaskResponse": {
+        "properties": {
+          "task_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Task Id"
+          }
+        },
+        "type": "object",
+        "title": "ProfileTaskResponse",
+        "description": "Ответ activate и DELETE: задача пересчёта или null, если пересчитывать нечего."
+      },
+      "ProfileTemplate": {
+        "type": "string",
+        "enum": [
+          "cautious",
+          "aggressive"
+        ],
+        "title": "ProfileTemplate"
+      },
       "Recommendation": {
         "type": "string",
         "enum": [
@@ -1941,6 +3176,22 @@
           "password"
         ],
         "title": "RegisterRequest"
+      },
+      "RenameProfileRequest": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Name"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "title": "RenameProfileRequest",
+        "description": "PATCH /scoring-profiles/{id}: только имя, без пересчёта."
       },
       "Restriction": {
         "type": "string",
@@ -2048,6 +3299,12 @@
           "has_stop_factor": {
             "type": "boolean",
             "title": "Has Stop Factor"
+          },
+          "stale": {
+            "type": "boolean",
+            "title": "Stale",
+            "description": "Оценки нет или она устарела (профиль или закупка изменились) — на фронте «пересчитывается»",
+            "default": false
           }
         },
         "type": "object",
@@ -2067,7 +3324,7 @@
           "has_stop_factor"
         ],
         "title": "ResultRow",
-        "description": "Строка таблицы «Результаты»."
+        "description": "Строка таблицы «Результаты». GET /results?profile_id= (по умолчанию активный)."
       },
       "RuleGroup": {
         "type": "string",
@@ -2252,6 +3509,43 @@
         ],
         "title": "SaveProfileResponse"
       },
+      "ScoreBrief": {
+        "properties": {
+          "total": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Total",
+            "description": "None — оценки по профилю ещё нет"
+          },
+          "recommendation": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Recommendation"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "stale": {
+            "type": "boolean",
+            "title": "Stale",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "total",
+          "recommendation"
+        ],
+        "title": "ScoreBrief"
+      },
       "ScoreRequest": {
         "properties": {
           "procurement_ids": {
@@ -2269,6 +3563,25 @@
             ],
             "title": "Procurement Ids",
             "description": "None — пересчитать все закупки пользователя"
+          },
+          "profile_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Profile Id",
+            "description": "Профиль для оценки; None — активный. Чужой → 404"
+          },
+          "only_stale": {
+            "type": "boolean",
+            "title": "Only Stale",
+            "description": "Только закупки без оценки по профилю или с устаревшей оценкой (досчёт перед сравнением). Если считать нечего — задача сразу done, total=0",
+            "default": false
           }
         },
         "type": "object",
@@ -2433,13 +3746,10 @@
           "value": {
             "anyOf": [
               {
-                "type": "number"
-              },
-              {
-                "type": "string"
-              },
-              {
-                "type": "boolean"
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
               },
               {
                 "items": {
@@ -2455,10 +3765,13 @@
                 "type": "array"
               },
               {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
+                "type": "string"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
               },
               {
                 "type": "null"
@@ -2541,13 +3854,10 @@
           "value": {
             "anyOf": [
               {
-                "type": "number"
-              },
-              {
-                "type": "boolean"
-              },
-              {
-                "type": "string"
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
               },
               {
                 "items": {
@@ -2556,10 +3866,13 @@
                 "type": "array"
               },
               {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
+                "type": "string"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
               },
               {
                 "type": "null"
@@ -2641,7 +3954,8 @@
           },
           "filename": {
             "type": "string",
-            "title": "Filename"
+            "title": "Filename",
+            "description": "Имя файла или реестровый номер (kind=fetch)"
           },
           "status": {
             "$ref": "#/components/schemas/FileStatus"
@@ -2680,7 +3994,8 @@
           "filename",
           "status"
         ],
-        "title": "TaskFileOut"
+        "title": "TaskFileOut",
+        "description": "Файл пакета (kind=upload) или реестровый номер (kind=fetch).\n\n«Загружаем» на фронте: status=pending и позиция в списке == TaskOut.processed."
       },
       "TaskKind": {
         "type": "string",
@@ -2688,7 +4003,8 @@
           "upload",
           "rescore",
           "parse_profile",
-          "egrul_lookup"
+          "egrul_lookup",
+          "fetch"
         ],
         "title": "TaskKind"
       },
