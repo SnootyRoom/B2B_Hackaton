@@ -16,10 +16,11 @@ export default function LoginPage() {
   const [password, setPassword] = useState('');
 
   const submit = useMutation({
-    mutationFn: () => (mode === 'login' ? api.login(email.trim(), password) : api.register(email.trim(), password)),
+    mutationFn: () =>
+      mode === 'login' ? api.login(email.trim(), password) : api.register(email.trim(), password),
     onSuccess: (user) => {
       qc.setQueryData(qk.me, user);
-      navigate('/', { replace: true }); // дальше Home решит: Параметры или Результаты
+      navigate('/', { replace: true });
     },
   });
 
@@ -100,7 +101,13 @@ export default function LoginPage() {
 
         <p className="mt-5 text-center text-xs text-muted">
           Попробовать без регистрации: <b>demo@example.com</b> / <b>demo12345</b>
-          {USE_MOCK && (<><br />В демо-режиме подойдёт любая почта — сразу с примерами закупок.<br />Пустой аккаунт, чтобы пройти путь с нуля: <b>new@example.com</b></>)}
+          {USE_MOCK && (
+            <>
+              <br />В демо-режиме подойдёт любая почта — сразу с примерами закупок.
+              <br />
+              Пустой аккаунт, чтобы пройти путь с нуля: <b>new@example.com</b>
+            </>
+          )}
         </p>
       </div>
     </div>

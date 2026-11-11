@@ -42,19 +42,19 @@
 Задача A на бэкенде готова целиком. Шаблоны «Осторожный» /
 «Агрессивный» — вариации активного профиля (см. `template_profile` в `scoring/defaults.py`).
 
-| Запрос | Ответ | Готово |
-| --- | --- | --- |
-| `GET /scoring-profiles` | `ProfileSummary[]`, активный первым | ✅ |
-| `GET /scoring-profiles/{id}` | `ScoringProfileOut` | ✅ |
-| `POST /scoring-profiles` `{name, template?, rules?, ...}` | `201 ScoringProfileOut` | ✅ |
-| `PUT /scoring-profiles/{id}` (тело как у `/active`) | `SaveProfileResponse` | ✅ |
-| `PATCH /scoring-profiles/{id}` `{name}` | `ProfileSummary` | ✅ |
-| `POST /scoring-profiles/{id}/duplicate` | `201 ScoringProfileOut` | ✅ |
-| `DELETE /scoring-profiles/{id}` | `{task_id: uuid \| null}` | ✅ |
-| `POST /scoring-profiles/{id}/activate` | `{task_id: uuid \| null}` | ✅ |
-| `GET /results?profile_id=` | `ResultRow[]`, у строк `stale` | ✅ |
-| `POST /score` `{profile_id?, only_stale?}` | `202 {task_id}` | ✅ |
-| `GET /results/compare?a=&b=` | `CompareOut` | ✅ |
+| Запрос                                                    | Ответ                               | Готово |
+| --------------------------------------------------------- | ----------------------------------- | ------ |
+| `GET /scoring-profiles`                                   | `ProfileSummary[]`, активный первым | ✅     |
+| `GET /scoring-profiles/{id}`                              | `ScoringProfileOut`                 | ✅     |
+| `POST /scoring-profiles` `{name, template?, rules?, ...}` | `201 ScoringProfileOut`             | ✅     |
+| `PUT /scoring-profiles/{id}` (тело как у `/active`)       | `SaveProfileResponse`               | ✅     |
+| `PATCH /scoring-profiles/{id}` `{name}`                   | `ProfileSummary`                    | ✅     |
+| `POST /scoring-profiles/{id}/duplicate`                   | `201 ScoringProfileOut`             | ✅     |
+| `DELETE /scoring-profiles/{id}`                           | `{task_id: uuid \| null}`           | ✅     |
+| `POST /scoring-profiles/{id}/activate`                    | `{task_id: uuid \| null}`           | ✅     |
+| `GET /results?profile_id=`                                | `ResultRow[]`, у строк `stale`      | ✅     |
+| `POST /score` `{profile_id?, only_stale?}`                | `202 {task_id}`                     | ✅     |
+| `GET /results/compare?a=&b=`                              | `CompareOut`                        | ✅     |
 
 - `GET/PUT /scoring-profiles/active` остаются как были.
 - `task_id: null` у activate/DELETE — пересчитывать нечего, ждать не нужно.

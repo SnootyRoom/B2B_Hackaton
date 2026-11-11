@@ -172,7 +172,8 @@ function Switch({
       title={label}
       onClick={() => onChange(!checked)}
       className={
-        'relative mt-0.5 h-6 w-10 shrink-0 rounded-full transition-colors ' + (checked ? 'bg-brand' : 'bg-line')
+        'relative mt-0.5 h-6 w-10 shrink-0 rounded-full transition-colors ' +
+        (checked ? 'bg-brand' : 'bg-line')
       }
     >
       <span

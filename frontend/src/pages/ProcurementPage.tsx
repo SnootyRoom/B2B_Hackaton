@@ -34,12 +34,19 @@ export default function ProcurementPage() {
   const { id } = useParams();
   const navigate = useNavigate();
   const pid = id ?? '';
-  const q = useQuery({ queryKey: qk.procurement(pid), queryFn: () => api.getProcurement(pid), enabled: Boolean(id) });
+  const q = useQuery({
+    queryKey: qk.procurement(pid),
+    queryFn: () => api.getProcurement(pid),
+    enabled: Boolean(id),
+  });
   const profile = useProfile();
   const [hovered, setHovered] = useState<string | null>(null);
   // Порядок «как в таблице результатов» (лучшие сверху) — для кнопок «предыдущая / следующая»
   const all = useQuery({ queryKey: qk.results({}), queryFn: () => api.getResults() });
-  const order = useMemo(() => [...(all.data ?? [])].sort((a, b) => b.total - a.total), [all.data]);
+  const order = useMemo(
+    () => [...(all.data ?? [])].sort((a, b) => (b.total ?? -1) - (a.total ?? -1)),
+    [all.data],
+  );
 
   if (q.isPending) return <Loading text="Загружаем закупку…" />;
   if (q.isError) {
@@ -66,7 +73,10 @@ export default function ProcurementPage() {
       <Hero p={p} score={score} thresholds={thresholds} />
 
       {score && score.stop_factors.length > 0 && (
-        <section className="flex items-start gap-4 rounded-2xl bg-bad-soft p-4 sm:p-5" aria-label="Стоп-факторы">
+        <section
+          className="flex items-start gap-4 rounded-2xl bg-bad-soft p-4 sm:p-5"
+          aria-label="Стоп-факторы"
+        >
           <span className="shrink-0 -rotate-[8deg] rounded-md border-2 border-brand px-2 py-0.5 font-display text-xs font-bold tracking-wider text-brand">
             СТОП
           </span>
@@ -86,16 +96,21 @@ export default function ProcurementPage() {
       )}
 
       {!score && (
-        <Alert tone="mid">Закупка ещё не оценена. Задайте параметры на вкладке «Параметры» и сохраните их с пересчётом.</Alert>
+        <Alert tone="mid">
+          Закупка ещё не оценена. Задайте параметры на вкладке «Параметры» и сохраните их с пересчётом.
+        </Alert>
       )}
 
       <div className="flex flex-wrap items-start gap-6">
-        {score && (
-          <Breakdown score={score} hovered={hovered} thresholds={thresholds} />
-        )}
+        {score && <Breakdown score={score} hovered={hovered} thresholds={thresholds} />}
         <aside className="flex min-w-0 flex-[1_1_320px] flex-col gap-4">
           {score && <Short score={score} setHovered={setHovered} />}
-          <CustomerBlock customer={customer} error={customer_error} inn={p.customer_inn} name={p.customer_name} />
+          <CustomerBlock
+            customer={customer}
+            error={customer_error}
+            inn={p.customer_inn}
+            name={p.customer_name}
+          />
         </aside>
       </div>
 
@@ -108,7 +123,15 @@ export default function ProcurementPage() {
 const shorten = (s: string, n = 48) => (s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s);
 
 /** «← Предыдущая · 3 из 11 · Следующая →» — листать закупки, не возвращаясь к таблице */
-function PrevNext({ order, current, onBack }: { order: { procurement_id: string }[]; current: string; onBack: () => void }) {
+function PrevNext({
+  order,
+  current,
+  onBack,
+}: {
+  order: { procurement_id: string }[];
+  current: string;
+  onBack: () => void;
+}) {
   const i = order.findIndex((r) => r.procurement_id === current);
   if (i < 0) return null;
   const prev = order[i - 1];
@@ -125,7 +148,12 @@ function PrevNext({ order, current, onBack }: { order: { procurement_id: string 
           ← <span className="hidden sm:inline">Предыдущая</span>
         </button>
       )}
-      <button type="button" onClick={onBack} className="px-1 text-sm whitespace-nowrap text-muted tabular-nums hover:text-brand" title="Ко всем закупкам">
+      <button
+        type="button"
+        onClick={onBack}
+        className="px-1 text-sm whitespace-nowrap text-muted tabular-nums hover:text-brand"
+        title="Ко всем закупкам"
+      >
         {i + 1} из {order.length}
       </button>
       {next ? (
@@ -141,7 +169,6 @@ function PrevNext({ order, current, onBack }: { order: { procurement_id: string 
   );
 }
 
-/** Крупная оценка, рекомендация, название и главные факты */
 function Hero({
   p,
   score,
@@ -172,7 +199,9 @@ function Hero({
     <section className="flex flex-wrap items-center gap-x-9 gap-y-4">
       {score && tone && (
         <div className="flex items-baseline gap-1.5">
-          <span className={`font-display text-[80px] leading-[0.9] font-bold sm:text-[104px] ${tone.text}`}>{score.total}</span>
+          <span className={`font-display text-[80px] leading-[0.9] font-bold sm:text-[104px] ${tone.text}`}>
+            {score.total}
+          </span>
           <span className={`font-display text-3xl font-bold ${tone.text}`}>%</span>
         </div>
       )}
@@ -182,11 +211,15 @@ function Hero({
             <span className={`rounded-full px-3.5 py-1 font-bold ${tone.bg} ${tone.text}`}>
               {RECOMMENDATION[score.recommendation].label}
             </span>
-            {score.incomplete && <span className="text-sm text-muted">оценка неполная — части данных нет</span>}
+            {score.incomplete && (
+              <span className="text-sm text-muted">оценка неполная — части данных нет</span>
+            )}
             {gap && <span className="text-sm text-muted">{gap}</span>}
           </div>
         )}
-        <h1 className="font-display text-2xl leading-snug font-medium text-balance sm:text-[28px]">{p.subject}</h1>
+        <h1 className="font-display text-2xl leading-snug font-medium text-balance sm:text-[28px]">
+          {p.subject}
+        </h1>
         <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted">
           <span className="font-mono">№ {p.reg_number}</span>
           {p.law && <span>{LAW_LABEL[p.law]}</span>}
@@ -235,7 +268,8 @@ function Breakdown({
         </div>
       </div>
       <p className="-mt-2 text-sm text-muted">
-        Каждое ваше правило может дать свою долю из 100 баллов. Полоски идут друг за другом и складываются в итог.
+        Каждое ваше правило может дать свою долю из 100 баллов. Полоски идут друг за другом и складываются в
+        итог.
       </p>
 
       {GROUPS.map((g) => {
@@ -250,7 +284,9 @@ function Breakdown({
               <span className="text-[13px] font-bold tracking-[0.08em] uppercase">{g.label}</span>
               <span className="flex items-center gap-2 text-[13px] text-muted">
                 {group?.low_data && (
-                  <span className="rounded-full bg-mid-soft px-2 py-0.5 text-xs font-semibold text-mid">мало данных</span>
+                  <span className="rounded-full bg-mid-soft px-2 py-0.5 text-xs font-semibold text-mid">
+                    мало данных
+                  </span>
                 )}
                 {group?.score === null
                   ? 'не учитывается'
@@ -280,12 +316,20 @@ function Breakdown({
                       {isNoData(r) ? 'нет данных — правило не учтено' : r.text}
                     </div>
                   </div>
-                  {/* Шкала: на телефоне уходит на отдельную строку под текстом */}
-                  <div className="relative col-span-3 col-start-1 h-3 rounded-[3px] bg-canvas sm:col-span-1 sm:col-start-auto" aria-hidden>
+                  <div
+                    className="relative col-span-3 col-start-1 h-3 rounded-[3px] bg-canvas sm:col-span-1 sm:col-start-auto"
+                    aria-hidden
+                  >
                     {!isNoData(r) && (
                       <>
-                        <div className="hatch absolute inset-y-0 rounded-[3px]" style={{ left: `${left}%`, width: `${maxW}%` }} />
-                        <div className="absolute inset-y-0 rounded-[3px] bg-ink" style={{ left: `${left}%`, width: `${gotW}%` }} />
+                        <div
+                          className="hatch absolute inset-y-0 rounded-[3px]"
+                          style={{ left: `${left}%`, width: `${maxW}%` }}
+                        />
+                        <div
+                          className="absolute inset-y-0 rounded-[3px] bg-ink"
+                          style={{ left: `${left}%`, width: `${gotW}%` }}
+                        />
                       </>
                     )}
                   </div>
@@ -304,11 +348,25 @@ function Breakdown({
         <div className="text-base font-bold">Итог</div>
         <div className="relative col-span-2 h-9 sm:col-span-1" aria-hidden>
           <div className="absolute inset-x-0 top-[18px] h-3.5 rounded-[3px] bg-canvas" />
-          <div className={`absolute top-[18px] left-0 h-3.5 rounded-[3px] ${tone.bar}`} style={{ width: `${score.total}%` }} />
-          <Threshold at={thresholds.consider} label={String(thresholds.consider)} className="border-mid text-mid" />
-          <Threshold at={thresholds.participate} label={`${thresholds.participate} — участвовать`} className="border-good text-good" />
+          <div
+            className={`absolute top-[18px] left-0 h-3.5 rounded-[3px] ${tone.bar}`}
+            style={{ width: `${score.total}%` }}
+          />
+          <Threshold
+            at={thresholds.consider}
+            label={String(thresholds.consider)}
+            className="border-mid text-mid"
+          />
+          <Threshold
+            at={thresholds.participate}
+            label={`${thresholds.participate} — участвовать`}
+            className="border-good text-good"
+          />
         </div>
-        <div className={`row-start-1 text-right font-display text-[22px] font-bold sm:row-start-auto ${tone.text}`} style={{ gridColumn: '-2' }}>
+        <div
+          className={`row-start-1 text-right font-display text-[22px] font-bold sm:row-start-auto ${tone.text}`}
+          style={{ gridColumn: '-2' }}
+        >
           {score.total}%
         </div>
       </div>
@@ -319,7 +377,10 @@ function Breakdown({
 function Threshold({ at, label, className }: { at: number; label: string; className: string }) {
   return (
     <>
-      <div className={`absolute top-3 bottom-0 border-l-2 border-dashed ${className}`} style={{ left: `${at}%` }} />
+      <div
+        className={`absolute top-3 bottom-0 border-l-2 border-dashed ${className}`}
+        style={{ left: `${at}%` }}
+      />
       <span
         className={`absolute -top-1 -translate-x-1/2 text-[11px] whitespace-nowrap ${className}`}
         style={{ left: `${at}%` }}
@@ -331,7 +392,8 @@ function Threshold({ at, label, className }: { at: number; label: string; classN
 }
 
 function Points({ r }: { r: RuleResult }) {
-  if (isNoData(r) || r.contribution === null) return <span className="text-right text-[13px] text-muted">—</span>;
+  if (isNoData(r) || r.contribution === null)
+    return <span className="text-right text-[13px] text-muted">—</span>;
   const max = maxContribution(r);
   const color = r.contribution <= 0.05 ? 'text-bad' : r.contribution < max - 0.05 ? 'text-mid' : 'text-ink';
   return (
@@ -348,7 +410,9 @@ function useRuleNumbers(score: ScoreResult) {
     const m: Record<string, number> = {};
     let n = 0;
     GROUPS.forEach((g) =>
-      score.rules.filter((r) => r.kind === 'weighted' && r.group === g.key).forEach((r) => (m[r.rule_id] = ++n)),
+      score.rules
+        .filter((r) => r.kind === 'weighted' && r.group === g.key)
+        .forEach((r) => (m[r.rule_id] = ++n)),
     );
     return m;
   }, [score.rules]);
@@ -369,7 +433,9 @@ function splitJustification(text: string) {
   const matches = [...text.matchAll(SECTION_RE)];
   const lead = (matches.length ? text.slice(0, matches[0]!.index) : text).replace(/^Рекомендация:\s*/, '');
   const sections = matches.map((m, i) => {
-    const body = text.slice(m.index + m[0].length, matches[i + 1]?.index ?? text.length).replace(/\.\s*$/, '');
+    const body = text
+      .slice(m.index + m[0].length, matches[i + 1]?.index ?? text.length)
+      .replace(/\.\s*$/, '');
     const items = body.split(/;\s+/).map((s) => s.charAt(0).toUpperCase() + s.slice(1));
     return { key: m[1]!, items };
   });
@@ -396,7 +462,11 @@ function Short({ score, setHovered }: { score: ScoreResult; setHovered: (id: str
             onMouseLeave={() => setHovered(null)}
             onFocus={() => setHovered(ruleId)}
             onBlur={() => setHovered(null)}
-            onClick={() => document.getElementById(`res-${ruleId}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+            onClick={() =>
+              document
+                .getElementById(`res-${ruleId}`)
+                ?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+            }
             className="mx-0.5 inline-grid h-5 min-w-5 place-items-center rounded-full bg-white/25 px-1.5 align-text-top text-xs font-bold text-white hover:bg-white hover:text-brand"
             title="Показать правило"
           >
@@ -418,14 +488,23 @@ function Short({ score, setHovered }: { score: ScoreResult; setHovered: (id: str
         <p className="leading-relaxed">{withRefs(score.justification)}</p>
       ) : (
         <div className="space-y-4">
-          {lead && <p className="font-semibold leading-snug">{withRefs(lead.charAt(0).toUpperCase() + lead.slice(1))}</p>}
+          {lead && (
+            <p className="font-semibold leading-snug">
+              {withRefs(lead.charAt(0).toUpperCase() + lead.slice(1))}
+            </p>
+          )}
           {sections.map(({ key, items }) => (
             <div key={key}>
-              <h3 className="mb-1.5 text-xs font-bold uppercase tracking-wide text-white/75">{SHORT_SECTIONS[key]!.title}</h3>
+              <h3 className="mb-1.5 text-xs font-bold uppercase tracking-wide text-white/75">
+                {SHORT_SECTIONS[key]!.title}
+              </h3>
               <ul className="space-y-1.5">
                 {items.map((item, i) => (
                   <li key={i} className="flex gap-2 leading-snug">
-                    <span aria-hidden className="mt-px grid h-5 w-5 shrink-0 place-items-center rounded-full bg-white/20 text-xs font-bold">
+                    <span
+                      aria-hidden
+                      className="mt-px grid h-5 w-5 shrink-0 place-items-center rounded-full bg-white/20 text-xs font-bold"
+                    >
                       {SHORT_SECTIONS[key]!.mark}
                     </span>
                     <span className="min-w-0">{withRefs(item)}</span>
@@ -437,7 +516,9 @@ function Short({ score, setHovered }: { score: ScoreResult; setHovered: (id: str
         </div>
       )}
       {score.justification_source === 'llm' && (
-        <p className="mt-3 text-xs text-white/80">Текст составлен ИИ по уже посчитанной оценке — сама оценка от него не зависит.</p>
+        <p className="mt-3 text-xs text-white/80">
+          Текст составлен ИИ по уже посчитанной оценке — сама оценка от него не зависит.
+        </p>
       )}
     </section>
   );
@@ -471,7 +552,9 @@ function CustomerBlock({
       <h2 className="mb-3 text-lg font-bold">Заказчик</h2>
       {!c ? (
         <div className="flex flex-col gap-2">
-          <Alert tone="mid">{errorText(error ?? 'EGRUL_UNAVAILABLE')} — группа «Заказчик» не учтена в оценке.</Alert>
+          <Alert tone="mid">
+            {errorText(error ?? 'EGRUL_UNAVAILABLE')} — группа «Заказчик» не учтена в оценке.
+          </Alert>
           <dl className="grid grid-cols-[minmax(7rem,40%)_1fr] gap-x-3 gap-y-2">
             <Row label="Из извещения">{name ?? NO_DATA}</Row>
             <Row label="ИНН">{inn ?? NO_DATA}</Row>
@@ -491,11 +574,17 @@ function CustomerBlock({
             </span>
           </Row>
           <Row label="Возраст">
-            {age === null ? NO_DATA : `${age} ${plural(age, 'год', 'года', 'лет')} (с ${formatDate(c.registration_date)})`}
+            {age === null
+              ? NO_DATA
+              : `${age} ${plural(age, 'год', 'года', 'лет')} (с ${formatDate(c.registration_date)})`}
           </Row>
           {c.liquidation_date && <Row label="Дата ликвидации">{formatDate(c.liquidation_date)}</Row>}
           <Row label="Отметки о недостоверности">
-            {c.unreliable_flags.length ? <span className="text-bad">{c.unreliable_flags.join('; ')}</span> : 'нет'}
+            {c.unreliable_flags.length ? (
+              <span className="text-bad">{c.unreliable_flags.join('; ')}</span>
+            ) : (
+              'нет'
+            )}
           </Row>
           <Row label="Основной вид деятельности">{c.okved_main ?? NO_DATA}</Row>
           <Row label="Адрес">{c.address ?? NO_DATA}</Row>
@@ -512,7 +601,9 @@ function ProcurementBlock({ p }: { p: Procurement }) {
   const pct = (v: Procurement['bid_security']) => {
     const n = Number(v);
     const total = Number(p.nmck);
-    return v === null || !total ? '' : ` (${(Math.round((n / total) * 1000) / 10).toString().replace('.', ',')}%)`;
+    return v === null || !total
+      ? ''
+      : ` (${(Math.round((n / total) * 1000) / 10).toString().replace('.', ',')}%)`;
   };
   return (
     <section className="card">
@@ -536,9 +627,13 @@ function ProcurementBlock({ p }: { p: Procurement }) {
         <Row label="Срок поставки">
           {p.delivery_term_text ?? (p.delivery_days ? `${p.delivery_days} дн.` : NO_DATA)}
         </Row>
-        <Row label="Обеспечение заявки">{p.bid_security === null ? NO_DATA : formatMoney(p.bid_security) + pct(p.bid_security)}</Row>
+        <Row label="Обеспечение заявки">
+          {p.bid_security === null ? NO_DATA : formatMoney(p.bid_security) + pct(p.bid_security)}
+        </Row>
         <Row label="Обеспечение контракта">
-          {p.contract_security === null ? NO_DATA : formatMoney(p.contract_security) + pct(p.contract_security)}
+          {p.contract_security === null
+            ? NO_DATA
+            : formatMoney(p.contract_security) + pct(p.contract_security)}
         </Row>
         <Row label="Ограничения">
           {p.restrictions.length ? p.restrictions.map((r) => RESTRICTION_LABEL[r]).join('; ') : 'нет'}
@@ -547,12 +642,24 @@ function ProcurementBlock({ p }: { p: Procurement }) {
       </dl>
       <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
         {p.source_url && (
-          <a href={p.source_url} target="_blank" rel="noreferrer" className="font-semibold text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand">
+          <a
+            href={p.source_url}
+            target="_blank"
+            rel="noreferrer"
+            className="font-semibold text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
+          >
             Открыть в ЕИС ↗
           </a>
         )}
         <span className="text-xs text-muted" title="Каким способом система прочитала файл">
-          Прочитано: {p.parsed_by.startsWith('adapter') ? 'по известному формату' : p.parsed_by === 'universal' ? 'универсальным способом' : p.parsed_by === 'llm' ? 'с помощью ИИ' : 'из файла JSON'}
+          Прочитано:{' '}
+          {p.parsed_by.startsWith('adapter')
+            ? 'по известному формату'
+            : p.parsed_by === 'universal'
+              ? 'универсальным способом'
+              : p.parsed_by === 'llm'
+                ? 'с помощью ИИ'
+                : 'из файла JSON'}
         </span>
       </div>
     </section>
@@ -579,7 +686,9 @@ function ItemsBlock({ p }: { p: Procurement }) {
                 <td className="py-2 pr-3 text-right whitespace-nowrap tabular-nums">
                   {it.quantity ?? '—'} {it.unit ?? ''}
                 </td>
-                <td className="py-2 text-right whitespace-nowrap tabular-nums">{it.price === null ? '—' : formatMoney(it.price)}</td>
+                <td className="py-2 text-right whitespace-nowrap tabular-nums">
+                  {it.price === null ? '—' : formatMoney(it.price)}
+                </td>
               </tr>
             ))}
           </tbody>

@@ -12,7 +12,7 @@ import ResultsPage from './pages/ResultsPage';
 import ProcurementPage from './pages/ProcurementPage';
 import HistoryPage from './pages/HistoryPage';
 import WelcomePage from './pages/WelcomePage';
-
+import ComparePage from './pages/ComparePage';
 
 export default function App() {
   const qc = useQueryClient();
@@ -39,13 +39,13 @@ export default function App() {
   return (
     <Routes>
       <Route element={<Layout user={me.data} />}>
-        {/* После входа — стартовая страница: что делает сервис, три шага и кнопка «Начать» / «Далее» */}
         <Route index element={<WelcomePage />} />
         <Route path="profile" element={<ProfilePage />} />
         <Route path="upload" element={<UploadPage />} />
         <Route path="results" element={<ResultsPage />} />
         <Route path="procurements/:id" element={<ProcurementPage />} />
         <Route path="history" element={<HistoryPage />} />
+        <Route path="compare" element={<ComparePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

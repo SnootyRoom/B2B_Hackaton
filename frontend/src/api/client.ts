@@ -44,7 +44,8 @@ function readErrorBody(status: number, text: string): ApiErrorBody {
   if (status === 404) return { code: 'NOT_FOUND', message: 'Не найдено' };
   if (status === 401) return { code: 'UNAUTHORIZED', message: 'Войдите, чтобы продолжить' };
   if (status === 413) return { code: 'FILE_TOO_LARGE', message: 'Файлы слишком большие для загрузки' };
-  if (status >= 500) return { code: 'SERVER_ERROR', message: 'Сервер временно не отвечает. Попробуйте через минуту.' };
+  if (status >= 500)
+    return { code: 'SERVER_ERROR', message: 'Сервер временно не отвечает. Попробуйте через минуту.' };
   return { code: 'HTTP_' + status, message: '' };
 }
 
@@ -83,7 +84,10 @@ export async function request<T>(path: string, opts: RequestOptions = {}): Promi
       credentials: 'include',
     });
   } catch {
-    throw new ApiError(0, { code: 'NETWORK', message: 'Нет связи с сервером. Проверьте интернет и попробуйте ещё раз.' });
+    throw new ApiError(0, {
+      code: 'NETWORK',
+      message: 'Нет связи с сервером. Проверьте интернет и попробуйте ещё раз.',
+    });
   }
 
   const text = await res.text();
