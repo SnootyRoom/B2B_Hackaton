@@ -17,6 +17,7 @@ from app.schemas.customer import CustomerProfileOut
 from app.schemas.procurement import CompareOut, ResultRow
 from app.schemas.score import Recommendation, ScoreRequest
 from app.schemas.task import TaskCreated, TaskKind, TaskOut
+from app.tasks import staleness
 from app.tasks.jobs import enqueue
 
 organizations = APIRouter(prefix="/organizations", tags=["organizations"])
@@ -72,6 +73,7 @@ def list_results(db: DB, user: CurrentUser, profile_id: uuid.UUID | None = None)
         profile = get_owned(db, ScoringProfile, profile_id, user)
     else:
         profile = get_active_profile(db, user.id)
+    pv, ev = staleness.versions(profile)
     rows = db.execute(
         select(Procurement, ScoreResult)
         .outerjoin(
@@ -99,7 +101,7 @@ def list_results(db: DB, user: CurrentUser, profile_id: uuid.UUID | None = None)
             recommendation=Recommendation(s.recommendation) if s else None,
             incomplete=s.incomplete if s else False,
             has_stop_factor=bool(s.stop_factors) if s else False,
-            stale=s is None,
+            stale=staleness.is_stale(s, p.updated_at, pv, ev),
         )
         for p, s in rows
     ]

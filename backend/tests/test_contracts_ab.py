@@ -64,11 +64,7 @@ def test_score_accepts_profile_and_only_stale(client: TestClient) -> None:
 @pytest.mark.parametrize(
     ("method", "path", "body"),
     [
-        ("post", "/api/scoring-profiles", {"name": "Агрессивный", "template": "aggressive"}),
-        ("patch", "/api/scoring-profiles/{pid}", {"name": "Новое имя"}),
-        ("post", "/api/scoring-profiles/{pid}/duplicate", None),
-        ("post", "/api/scoring-profiles/{pid}/activate", None),
-        ("delete", "/api/scoring-profiles/{pid}", None),
+        ("get", "/api/results/compare?a={pid}&b={pid}", None),
         ("post", "/api/procurements/fetch", {"numbers": ["0101300020326000001"]}),
     ],
 )
