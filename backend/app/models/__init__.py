@@ -70,6 +70,11 @@ class ScoringProfile(TimestampMixin, Base):
     thresholds: Mapped[dict[str, Any]] = mapped_column(JSONB)
     rules: Mapped[list[dict[str, Any]]] = mapped_column(JSONB)
     is_active: Mapped[bool] = mapped_column(Boolean, default=False)
+    # Профиль из шаблона: от какого профиля построен. Следующий шаблон строится от него же,
+    # а не от «Агрессивного» — иначе диапазоны накручивались бы при каждом создании.
+    template_base_id: Mapped[uuid.UUID | None] = mapped_column(
+        ForeignKey("scoring_profiles.id", ondelete="SET NULL")
+    )
 
 
 class CustomerProfile(Base):
