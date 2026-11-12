@@ -40,7 +40,7 @@
 Схемы — `backend/app/schemas/scoring.py` (`ProfileSummary`, `CreateProfileRequest`,
 `RenameProfileRequest`, `ProfileTaskResponse`) и `procurement.py` (`CompareOut`).
 Задача A на бэкенде готова целиком. Шаблоны «Осторожный» /
-«Агрессивный» — вариации активного профиля (см. `template_profile` в `scoring/defaults.py`).
+«Агрессивный» — вариации базового профиля (активного или того, от которого он построен) (см. `template_profile` в `scoring/defaults.py`).
 
 | Запрос                                                    | Ответ                               | Готово |
 | --------------------------------------------------------- | ----------------------------------- | ------ |

@@ -1,8 +1,9 @@
 """Откуда взять XML извещения по реестровому номеру (задача B).
 
 1. Модуль ЕИС роли 2 (`app.eis.fetch.fetch_notice`), если он есть.
-2. Не нашёлся модуль или ЕИС недоступна — `data/samples/<номер>.xml` (запасной путь для демо
-   без интернета); источник виден пользователю предупреждением EIS_FALLBACK_SAMPLE.
+2. Не нашёлся модуль или ЕИС недоступна (EIS_UNAVAILABLE) — `data/samples/<номер>.xml`
+   (запасной путь для демо без интернета); источник виден пользователю предупреждением
+   EIS_FALLBACK_SAMPLE. Если ЕИС ответила EIS_NOT_FOUND — это ответ, образец не подставляется.
 3. Иначе — понятная ошибка с советом загрузить файл вручную.
 """
 
@@ -71,6 +72,9 @@ def get_notice(number: str) -> Notice:
             return Notice(fetch(number), "eis")
         except EisError as e:
             log.info("ЕИС %s: %s", number, e.code)
+            if e.code != ErrorCode.EIS_UNAVAILABLE:
+                # ЕИС ответила, что номера нет — старый образец вместо ответа не подставляем
+                raise NoticeError(e.code) from e
             error = NoticeError(e.code)
     sample = _sample(number)
     if sample is not None:

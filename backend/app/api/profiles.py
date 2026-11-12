@@ -159,6 +159,16 @@ def parse_text(body: ParseProfileRequest, db: DB, user: CurrentUser) -> TaskCrea
     return TaskCreated(task_id=task.id)
 
 
+def _template_source(db: Session, user: User, active: ScoringProfile) -> ScoringProfile:
+    """От какого профиля строить шаблон: от базы активного, если он сам из шаблона и база
+    ещё есть; иначе от активного."""
+    if active.template_base_id is not None:
+        base = db.get(ScoringProfile, active.template_base_id)
+        if base is not None and base.owner_id == user.id:
+            return base
+    return active
+
+
 @router.get("", response_model=list[ProfileSummary])
 def list_profiles(db: DB, user: CurrentUser) -> list[ProfileSummary]:
     """Профили пользователя: активный первым, затем недавно изменённые."""
@@ -179,22 +189,30 @@ def list_profiles(db: DB, user: CurrentUser) -> list[ProfileSummary]:
 )
 def create_profile(body: CreateProfileRequest, db: DB, user: CurrentUser) -> ScoringProfile:
     """Пустой (правила по умолчанию), с готовыми правилами или из шаблона. Шаблон —
-    вариация активного профиля: «Осторожный» / «Агрессивный» вариант своей стратегии.
-    Не активный."""
+    вариация базовой стратегии пользователя: активного профиля, а если он сам построен
+    из шаблона — того профиля, от которого построен. Не активный."""
     active = get_active_profile(db, user.id)  # первый профиль пользователя всегда активный
     _lock_user(db, user)
     _check_limit(db, user)
     if _name_taken(db, user, body.name):
         raise _name_taken_error(body.name)
+    base_id: uuid.UUID | None = None
     if body.template:
-        active_data = ScoringProfileData.model_validate(active, from_attributes=True)
-        base = template_profile(body.template, active_data)
+        source = _template_source(db, user, active)
+        base_id = source.id
+        source_data = ScoringProfileData.model_validate(source, from_attributes=True)
+        base = template_profile(body.template, source_data)
     else:
         base = default_profile()
     fields = base.model_dump(mode="json", exclude_none=True)
     fields.update(body.model_dump(mode="json", exclude={"template"}, exclude_unset=True))
     data = ScoringProfileData.model_validate(fields)
-    profile = ScoringProfile(owner_id=user.id, is_active=False, **data.model_dump(mode="json"))
+    profile = ScoringProfile(
+        owner_id=user.id,
+        is_active=False,
+        template_base_id=base_id,
+        **data.model_dump(mode="json"),
+    )
     db.add(profile)
     _commit(db, body.name)
     return profile
@@ -262,7 +280,12 @@ def duplicate_profile(profile_id: uuid.UUID, db: DB, user: CurrentUser) -> Scori
     _check_limit(db, user)
     data = ScoringProfileData.model_validate(src, from_attributes=True)
     data.name = _copy_name(db, user, src.name)
-    copy = ScoringProfile(owner_id=user.id, is_active=False, **data.model_dump(mode="json"))
+    copy = ScoringProfile(
+        owner_id=user.id,
+        is_active=False,
+        template_base_id=src.template_base_id,  # копия шаблона ведёт к той же базе
+        **data.model_dump(mode="json"),
+    )
     db.add(copy)
     _commit(db, data.name)
     return copy
