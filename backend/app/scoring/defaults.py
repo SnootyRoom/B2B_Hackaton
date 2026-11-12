@@ -12,6 +12,7 @@ from app.schemas.scoring import (
     ScoringRule,
     Thresholds,
 )
+from app.scoring.templates import fmt_money
 
 DEFAULT_RULES: list[ScoringRule] = [
     ScoringRule(
@@ -88,17 +89,39 @@ STOP_REORGANIZING = ScoringRule(
 )
 
 
+def _money_label(field: str, operator: Operator, value: object) -> str:
+    """Подпись правила о сумме по его значению: «НМЦК от 2,5 млн ₽ до 100 млн ₽»."""
+    name = FIELD_CATALOG[field].label
+    if operator == Operator.between and isinstance(value, list):
+        return f"{name} от {fmt_money(float(value[0]))} до {fmt_money(float(value[1]))}"
+    prep = "до" if operator == Operator.lte else "от"
+    return f"{name} {prep} {fmt_money(float(value))}"  # type: ignore[arg-type]
+
+
 def _scale_money(rule: ScoringRule, low: Decimal, high: Decimal) -> ScoringRule:
-    """Диапазон суммы: нижняя граница × low, верхняя × high."""
+    """Диапазон суммы: нижняя граница × low, верхняя × high. Подпись пересобирается по новому
+    значению — иначе в карточке правила осталась бы старая сумма."""
     v = rule.value
+    value: object
     if rule.operator == Operator.between and isinstance(v, list) and len(v) == 2:
         lo, hi = (Decimal(str(x)) for x in v)
-        return rule.model_copy(update={"value": [lo * low, hi * high]})
-    if rule.operator == Operator.lte and isinstance(v, Decimal):
-        return rule.model_copy(update={"value": v * high})
-    if rule.operator == Operator.gte and isinstance(v, Decimal):
-        return rule.model_copy(update={"value": v * low})
-    return rule
+        value = [lo * low, hi * high]
+    elif rule.operator == Operator.lte and isinstance(v, Decimal):
+        value = v * high
+    elif rule.operator == Operator.gte and isinstance(v, Decimal):
+        value = v * low
+    else:
+        return rule
+    label = _money_label(rule.field, rule.operator, value)
+    return rule.model_copy(update={"value": value, "label": label})
+
+
+def _age_label(years: Decimal) -> str:
+    return (
+        "Заказчик работает не меньше года"
+        if years == 1
+        else f"Заказчик работает не меньше {years.normalize():f} лет"
+    )
 
 
 def _is_money(rule: ScoringRule) -> bool:
@@ -127,9 +150,12 @@ def _aggressive(rules: list[ScoringRule]) -> list[ScoringRule]:
         if _is_money(r):
             r = _scale_money(r, Decimal("0.5"), Decimal(2))
         elif r.id == "customer_active" and isinstance(r.value, list):
-            r = r.model_copy(update={"value": [*r.value, "reorganizing"]})
+            statuses = list(dict.fromkeys([*map(str, r.value), "reorganizing"]))
+            r = r.model_copy(
+                update={"value": statuses, "label": "Заказчик действующий или реорганизуется"}
+            )
         elif r.id == "customer_age":
-            r = r.model_copy(update={"value": Decimal(1)})
+            r = r.model_copy(update={"value": Decimal(1), "label": _age_label(Decimal(1))})
         out.append(r)
     return out
 
