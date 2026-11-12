@@ -31,7 +31,7 @@ export function parseRegNumbers(text: string): ParsedNumbers {
     const token = fromUrl ?? raw.replace(/^№/, '');
     // Слова без цифр («номер», «закупки») молча пропускаем — пользователь мог вставить кусок текста
     if (!/\d/.test(token)) continue;
-    const digits = token.replace(/[\s -]/g, '');
+    const digits = token.replace(/[\s-]/g, '');
     if (!VALID.test(digits)) {
       invalid.push(raw.length > 40 ? raw.slice(0, 40) + '…' : raw);
       continue;
