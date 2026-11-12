@@ -6,16 +6,27 @@
 
 import logging
 import uuid
+from collections.abc import Callable
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
+from app.core.config import get_settings
 from app.egrul import service as egrul
 from app.embeddings import service as embeddings
 from app.llm.client import LLMError, parse_profile_text
-from app.models import CustomerProfile, Procurement, ScoreResult, ScoringProfile, Task, utcnow
+from app.models import (
+    CustomerProfile,
+    Procurement,
+    ScoreResult,
+    ScoringProfile,
+    Task,
+    TaskFile,
+    utcnow,
+)
 from app.parsers.registry import ParseError, parse_file
 from app.schemas.common import ErrorCode, ErrorInfo
 from app.schemas.customer import CustomerData, CustomerProfileOut
@@ -27,6 +38,7 @@ from app.scoring.engine import Similarity, score
 from app.scoring.fields import extract_fields
 from app.scoring.version import engine_version, profile_version
 from app.tasks import staleness
+from app.tasks.notice_source import FALLBACK_MESSAGE, NoticeError, get_notice
 
 log = logging.getLogger(__name__)
 
@@ -137,53 +149,103 @@ def _upsert_procurement(
     return p
 
 
-def process_upload(db: Session, task: Task) -> None:
+@dataclass
+class _Batch:
+    """Общее для пакета: профиль оценки и кэш заказчиков по ИНН."""
+
+    profile: ScoringProfile
+    profile_data: ScoringProfileData
+    customers: dict[str, egrul.CustomerLookup] = field(default_factory=dict)
+
+
+def ingest_document(
+    db: Session, owner_id: uuid.UUID, f: TaskFile, content: bytes, filename: str, batch: _Batch
+) -> None:
+    """Один документ → закупки: парсинг → ЕГРЮЛ → эмбеддинг → оценка.
+
+    Общий путь для загруженного файла и для документа, полученного по реестровому номеру.
+    Пишет в f статус ok, procurement_ids и предупреждения; ошибки — исключениями.
+    """
+    lots = parse_file(content, filename)
+    ids: list[str] = []
+    warnings: list[dict[str, Any]] = []
+    for lot in lots:
+        p = _upsert_procurement(db, owner_id, lot, f.stored_path)
+        p.customer_error = None
+        if lot.customer_inn:
+            if lot.customer_inn not in batch.customers:
+                batch.customers[lot.customer_inn] = egrul.lookup(db, lot.customer_inn)
+            lookup = batch.customers[lot.customer_inn]
+            if lookup.profile is not None and lot.customer_name is None:
+                p.customer_name = lookup.profile.name
+            err_code = lookup.error
+        else:
+            err_code = ErrorCode.CUSTOMER_NOT_FOUND
+        if err_code is not None:
+            p.customer_error = err_code
+            warning = _err(err_code, CUSTOMER_MESSAGES[err_code])
+            if warning not in warnings:
+                warnings.append(warning)
+        db.flush()
+        score_procurement(db, p, batch.profile, batch.profile_data)
+        ids.append(str(p.id))
+    f.status = FileStatus.ok
+    f.procurement_ids = ids
+    f.warnings = warnings
+
+
+def _process_items(
+    db: Session, task: Task, handle: Callable[[TaskFile, _Batch], None], what: str
+) -> None:
+    """Обойти строки задачи: у каждой свой статус, ошибка одной не срывает пакет."""
     profile, profile_data = _load_profile(db, task)
+    batch = _Batch(profile, profile_data)
     task.total = len(task.files)
-    customers: dict[str, egrul.CustomerLookup] = {}
     ok = 0
     for f in task.files:
         try:
-            lots = parse_file(Path(f.stored_path).read_bytes(), f.filename)
-            ids, warnings = [], []
-            for lot in lots:
-                p = _upsert_procurement(db, task.owner_id, lot, f.stored_path)
-                p.customer_error = None
-                if lot.customer_inn:
-                    if lot.customer_inn not in customers:
-                        customers[lot.customer_inn] = egrul.lookup(db, lot.customer_inn)
-                    lookup = customers[lot.customer_inn]
-                    if lookup.profile is not None and lot.customer_name is None:
-                        p.customer_name = lookup.profile.name
-                    err_code = lookup.error
-                else:
-                    err_code = ErrorCode.CUSTOMER_NOT_FOUND
-                if err_code is not None:
-                    p.customer_error = err_code
-                    warning = _err(err_code, CUSTOMER_MESSAGES[err_code])
-                    if warning not in warnings:
-                        warnings.append(warning)
-                db.flush()
-                score_procurement(db, p, profile, profile_data)
-                ids.append(str(p.id))
-            f.status = FileStatus.ok
-            f.procurement_ids = ids
-            f.warnings = warnings
+            handle(f, batch)
             ok += 1
-        except ParseError as e:
+        except (ParseError, NoticeError) as e:
             db.rollback()
             f.status = FileStatus.error
-            f.error = _err(e.code, e.message, e.details)
+            details = e.details if isinstance(e, ParseError) else {}
+            f.error = _err(e.code, e.message, details)
         except Exception:
-            log.exception("task %s: file %s failed", task.id, f.filename)
+            log.exception("task %s: %s %s failed", task.id, what, f.filename)
             db.rollback()
             f.status = FileStatus.error
-            f.error = _err(ErrorCode.INTERNAL_ERROR, "Не удалось обработать файл")
+            f.error = _err(ErrorCode.INTERNAL_ERROR, f"Не удалось обработать {what}")
         task.processed += 1
         db.commit()
         log.info("task %s: %s/%s %s %s", task.id, task.processed, task.total, f.filename, f.status)
     task.status = _final_status(ok, task.total)
     _rescore_if_switched(db, task.owner_id, profile)
+
+
+def process_upload(db: Session, task: Task) -> None:
+    def handle(f: TaskFile, batch: _Batch) -> None:
+        content = Path(f.stored_path).read_bytes()
+        ingest_document(db, task.owner_id, f, content, f.filename, batch)
+
+    _process_items(db, task, handle, "файл")
+
+
+def process_fetch(db: Session, task: Task) -> None:
+    """Реестровые номера: XML из ЕИС (или из образцов) → тот же путь, что у файла."""
+    task_dir = get_settings().upload_dir / str(task.id)
+
+    def handle(f: TaskFile, batch: _Batch) -> None:
+        notice = get_notice(f.filename)
+        task_dir.mkdir(parents=True, exist_ok=True)
+        path = task_dir / f"{f.position:04d}_{f.filename}.xml"
+        path.write_bytes(notice.content)
+        f.stored_path = str(path)
+        ingest_document(db, task.owner_id, f, notice.content, path.name, batch)
+        if notice.source == "sample":
+            f.warnings = [*f.warnings, _err(ErrorCode.EIS_FALLBACK_SAMPLE, FALLBACK_MESSAGE)]
+
+    _process_items(db, task, handle, "номер")
 
 
 def _rescore_if_switched(db: Session, owner_id: uuid.UUID, used: ScoringProfile) -> None:
