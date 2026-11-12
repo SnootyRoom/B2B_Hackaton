@@ -7,7 +7,14 @@ from typing import Any
 from fastapi.testclient import TestClient
 
 from app.schemas.score import Recommendation, RuleOutcome, RuleStatus, ScoreResultData
-from app.schemas.scoring import Operator, RuleGroup, RuleKind, ScoringProfileData, Thresholds
+from app.schemas.scoring import (
+    Operator,
+    RuleGroup,
+    RuleKind,
+    ScoringProfileData,
+    ScoringRule,
+    Thresholds,
+)
 from app.scoring.defaults import STOP_REORGANIZING, default_profile, template_profile
 from app.scoring.difference import explain_difference
 from tests.conftest import make_client
@@ -207,7 +214,7 @@ def test_explain_stop_first() -> None:
     a = _result(0, Recommendation.skip, [stop, rule_a], ["stop_customer_reorganizing"])
     b = _result(75, Recommendation.participate, [rule_b])
     text = explain_difference(a, b, pa, pb)
-    assert text.startswith("В «Осторожный» стоп: заказчик в процессе реорганизации")
+    assert text.startswith("В профиле «Осторожный» стоп: заказчик в процессе реорганизации")
     assert "[stop_customer_reorganizing]" in text
     assert "[r2]" in text
     assert text.count(". ") <= 2  # не больше трёх фраз
@@ -226,7 +233,7 @@ def test_explain_rule_only_in_one_profile() -> None:
     a = _result(40, Recommendation.consider, [region])
     b = _result(70, Recommendation.participate, [])
     text = explain_difference(a, b, pa, pb)
-    assert "В «Агрессивный» нет условия «регион поставки»" in text
+    assert "В профиле «Агрессивный» нет условия «регион поставки»" in text
     assert "[region]" in text
 
 
@@ -264,7 +271,9 @@ def test_explain_same_outcome_only_weight_differs() -> None:
     a = _result(60, Recommendation.consider, [age_a])
     b = _result(50, Recommendation.consider, [age_b])
     text = explain_difference(a, b, pa, pb)
-    assert text == "Условие «заказчик работает не меньше 3 лет» важнее в «А» [customer_age]."
+    assert text == (
+        "Условие «заказчик работает не меньше 3 лет» важнее в профиле «А» [customer_age]."
+    )
 
 
 def test_explain_same_outcome_same_weight_is_silent() -> None:
@@ -274,3 +283,77 @@ def test_explain_same_outcome_same_weight_is_silent() -> None:
     a = _result(60, Recommendation.consider, [x])
     b = _result(61, Recommendation.consider, [y])
     assert explain_difference(a, b, pa, pb) == ""
+
+
+def test_explain_pairs_rules_by_field_not_by_number() -> None:
+    """Профили из текста нумеруют условия по-своему: r1 — регион в A и сумма в B."""
+    pa, pb = _profiles()
+    region_a = _outcome(
+        "r1",
+        field="region",
+        partial_score=0.0,
+        contribution=0.0,
+        lost=20.0,
+        text="Регион: Москва — не входит в выбранные",
+    )
+    sum_a = _outcome("r2", partial_score=0.0, contribution=0.0, lost=30.0, text="НМЦК выше лимита")
+    sum_b = _outcome("r1", partial_score=1.0, contribution=30.0, lost=0.0, text="НМЦК в лимите")
+    region_b = _outcome(
+        "r2",
+        field="region",
+        partial_score=1.0,
+        contribution=20.0,
+        lost=0.0,
+        text="Регион: Москва — входит в выбранные",
+    )
+    a = _result(20, Recommendation.skip, [region_a, sum_a])
+    b = _result(90, Recommendation.participate, [sum_b, region_b])
+    text = explain_difference(a, b, pa, pb)
+    assert "«Осторожный»: НМЦК выше лимита; «Агрессивный»: НМЦК в лимите [r2 / r1]" in text
+    assert (
+        "не входит в выбранные; «Агрессивный»: регион: Москва — входит в выбранные [r1 / r2]"
+    ) in text
+    assert "нет условия" not in text
+
+
+def test_explain_names_engine_limit() -> None:
+    """Итог ниже взвешенной суммы и стоит у порога «Рассмотреть» − 1 — сработал ограничитель."""
+    from app.schemas.score import GroupScore
+
+    pa, pb = _profiles()
+    failed = _outcome(
+        "region",
+        field="region",
+        group=RuleGroup.procurement,
+        partial_score=0.0,
+        contribution=0.0,
+        lost=10.0,
+        text="Регион: Москва — не входит",
+    )
+    groups = [
+        GroupScore(
+            group=RuleGroup.procurement, score=90.0, weight=1, effective_weight=1.0, low_data=False
+        ),
+    ]
+    a = _result(69, Recommendation.consider, [failed]).model_copy(update={"groups": groups})
+    b = _result(90, Recommendation.participate, [])
+    text = explain_difference(a, b, pa, pb)
+    assert text.startswith("В профиле «Осторожный» оценка ограничена: не выполнено условие")
+    assert "[region]: не выше «Рассмотреть»" in text
+
+
+def test_aggressive_template_relabels_changed_rules() -> None:
+    base = default_profile()
+    nmck = ScoringRule.model_validate({**NMCK_RULE, "label": "Старая подпись"})
+    base = base.model_copy(update={"rules": [nmck, *base.rules]})
+    rules = {r.id: r for r in template_profile("aggressive", base).rules}
+    assert rules[nmck.id].label.startswith("НМЦК ")
+    assert "Старая подпись" not in rules[nmck.id].label
+    assert rules["customer_active"].label == "Заказчик действующий или реорганизуется"
+    assert rules["customer_age"].label == "Заказчик работает не меньше года"
+
+
+def test_aggressive_template_twice_does_not_duplicate_status() -> None:
+    twice = template_profile("aggressive", template_profile("aggressive"))
+    active = next(r for r in twice.rules if r.id == "customer_active").value
+    assert isinstance(active, list) and active.count("reorganizing") == 1
