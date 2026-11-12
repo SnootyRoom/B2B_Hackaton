@@ -17,7 +17,9 @@ export function RecommendationBadge({ value, incomplete }: { value: Recommendati
   const t = toneOf(value);
   return (
     <span className="inline-flex flex-wrap items-center gap-1.5">
-      <span className={`rounded-full px-2.5 py-0.5 text-sm font-semibold whitespace-nowrap ${t.bg} ${t.text}`}>
+      <span
+        className={`rounded-full px-2.5 py-0.5 text-sm font-semibold whitespace-nowrap ${t.bg} ${t.text}`}
+      >
         {RECOMMENDATION[value].label}
       </span>
       {incomplete && (
@@ -32,7 +34,6 @@ export function RecommendationBadge({ value, incomplete }: { value: Recommendati
   );
 }
 
-/** Оценка числом + цветная полоска */
 export function ScoreBar({ value, recommendation }: { value: number; recommendation: Recommendation }) {
   const t = toneOf(recommendation);
   return (
@@ -59,7 +60,15 @@ export function Alert({ tone = 'bad', children }: { tone?: 'good' | 'mid' | 'bad
   return <div className={`rounded-xl px-4 py-3 text-sm ${t.bg} ${t.text}`}>{children}</div>;
 }
 
-export function EmptyState({ title, text, children }: { title: string; text?: string; children?: ReactNode }) {
+export function EmptyState({
+  title,
+  text,
+  children,
+}: {
+  title: string;
+  text?: string;
+  children?: ReactNode;
+}) {
   return (
     <div className="card flex flex-col items-center gap-3 py-14 text-center">
       <h2 className="font-display text-xl font-bold">{title}</h2>
@@ -72,8 +81,17 @@ export function EmptyState({ title, text, children }: { title: string; text?: st
 export function ProgressBar({ value, max }: { value: number; max: number }) {
   const pct = max > 0 ? Math.round((value / max) * 100) : 0;
   return (
-    <div className="h-3.5 overflow-hidden rounded-full bg-track" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
-      <div className="h-full rounded-full bg-brand transition-[width] duration-500" style={{ width: `${pct}%` }} />
+    <div
+      className="h-3.5 overflow-hidden rounded-full bg-track"
+      role="progressbar"
+      aria-valuenow={pct}
+      aria-valuemin={0}
+      aria-valuemax={100}
+    >
+      <div
+        className="h-full rounded-full bg-brand transition-[width] duration-500"
+        style={{ width: `${pct}%` }}
+      />
     </div>
   );
 }

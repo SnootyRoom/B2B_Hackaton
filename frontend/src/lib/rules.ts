@@ -140,7 +140,8 @@ export function validateRule(rule: ScoringRule): string | null {
 export function validateProfile(p: ScoringProfileInput): string[] {
   const errors: string[] = [];
   const w = p.group_weights;
-  if (w.procurement + w.fit + w.customer <= 0) errors.push('Хотя бы у одной группы вес должен быть больше нуля');
+  if (w.procurement + w.fit + w.customer <= 0)
+    errors.push('Хотя бы у одной группы вес должен быть больше нуля');
   if (p.thresholds.consider >= p.thresholds.participate)
     errors.push('Порог «Рассмотреть» должен быть ниже порога «Участвовать»');
   p.rules.forEach((r) => {

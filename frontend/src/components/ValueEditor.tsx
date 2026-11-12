@@ -21,15 +21,32 @@ export default function ValueEditor({ field, operator, value, onChange, idPrefix
       Array.isArray(value) && value.length === 2 ? (value as [number, number]) : [0, 0];
     return (
       <div className="flex flex-wrap items-center gap-2">
-        <NumberInput id={`${idPrefix}-from`} field={field} value={a} onChange={(n) => onChange([n, b])} label="от" />
-        <NumberInput id={`${idPrefix}-to`} field={field} value={b} onChange={(n) => onChange([a, n])} label="до" />
+        <NumberInput
+          id={`${idPrefix}-from`}
+          field={field}
+          value={a}
+          onChange={(n) => onChange([n, b])}
+          label="от"
+        />
+        <NumberInput
+          id={`${idPrefix}-to`}
+          field={field}
+          value={b}
+          onChange={(n) => onChange([a, n])}
+          label="до"
+        />
       </div>
     );
   }
 
   if (operator === 'gte' || operator === 'lte') {
     return (
-      <NumberInput id={`${idPrefix}-num`} field={field} value={typeof value === 'number' ? value : 0} onChange={onChange} />
+      <NumberInput
+        id={`${idPrefix}-num`}
+        field={field}
+        value={typeof value === 'number' ? value : 0}
+        onChange={onChange}
+      />
     );
   }
 
@@ -72,7 +89,14 @@ export default function ValueEditor({ field, operator, value, onChange, idPrefix
   }
 
   // Коды ОКПД2 и слова — через запятую
-  return <CommaListInput id={`${idPrefix}-list`} codes={field.valueType === 'codes'} list={list} onChange={onChange} />;
+  return (
+    <CommaListInput
+      id={`${idPrefix}-list`}
+      codes={field.valueType === 'codes'}
+      list={list}
+      onChange={onChange}
+    />
+  );
 }
 
 function NumberInput({
@@ -157,7 +181,9 @@ function SearchMultiSelect({
   const [query, setQuery] = useState('');
   const q = query.trim().toLowerCase();
   const matches = q
-    ? (field.options ?? []).filter((o) => !selected.includes(o.value) && o.label.toLowerCase().includes(q)).slice(0, 8)
+    ? (field.options ?? [])
+        .filter((o) => !selected.includes(o.value) && o.label.toLowerCase().includes(q))
+        .slice(0, 8)
     : [];
 
   return (

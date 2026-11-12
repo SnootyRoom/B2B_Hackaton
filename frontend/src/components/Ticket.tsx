@@ -12,8 +12,16 @@ const DEADLINE_TONE = {
 } as const;
 
 /** notchClass — цвет фона под билетом: «вырезы» перфорации закрашиваются им */
-export default function Ticket({ row, notchClass, index = 0 }: { row: ResultRow; notchClass: string; index?: number }) {
-  const tone = toneOf(row.recommendation);
+export default function Ticket({
+  row,
+  notchClass,
+  index = 0,
+}: {
+  row: ResultRow;
+  notchClass: string;
+  index?: number;
+}) {
+  const tone = row.recommendation ? toneOf(row.recommendation) : null;
   const dl = deadlineInfo(row.application_deadline);
 
   return (
@@ -22,20 +30,37 @@ export default function Ticket({ row, notchClass, index = 0 }: { row: ResultRow;
       className="group animate-rise relative flex rounded-2xl bg-white text-ink shadow-[0_1px_0_rgba(29,31,39,0.04),0_8px_18px_-10px_rgba(29,31,39,0.2)] transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-[0_1px_0_rgba(29,31,39,0.04),0_16px_28px_-14px_rgba(214,32,47,0.3)]"
       style={{ animationDelay: `${Math.min(index, 10) * 50}ms` }}
     >
-      {/* Корешок с оценкой */}
       <div className="flex w-20 shrink-0 flex-col items-center justify-center border-r-2 border-dashed border-line py-3.5 sm:w-[86px]">
-        <span className={`font-display text-2xl leading-none font-bold sm:text-[28px] ${tone.text}`}>
-          {row.total}
-          <span className="text-sm">%</span>
+        {row.total === null || !tone ? (
+          <span
+            className="h-6 w-6 animate-spin rounded-full border-[3px] border-brand/25 border-t-brand"
+            aria-hidden
+          />
+        ) : (
+          <span
+            className={`font-display text-2xl leading-none font-bold sm:text-[28px] ${tone.text} ${row.stale ? 'opacity-50' : ''}`}
+          >
+            {row.total}
+            <span className="text-sm">%</span>
+          </span>
+        )}
+        <span className={`mt-1 text-[11px] ${row.stale ? 'text-brand' : 'text-muted'}`}>
+          {row.stale ? 'пересчёт…' : 'оценка'}
         </span>
-        <span className="mt-1 text-[11px] text-muted">оценка</span>
       </div>
-      {/* Полукруглые вырезы перфорации */}
-      <span aria-hidden className={`absolute -top-2 left-[72px] h-4 w-4 rounded-full sm:left-[78px] ${notchClass}`} />
-      <span aria-hidden className={`absolute -bottom-2 left-[72px] h-4 w-4 rounded-full sm:left-[78px] ${notchClass}`} />
+      <span
+        aria-hidden
+        className={`absolute -top-2 left-[72px] h-4 w-4 rounded-full sm:left-[78px] ${notchClass}`}
+      />
+      <span
+        aria-hidden
+        className={`absolute -bottom-2 left-[72px] h-4 w-4 rounded-full sm:left-[78px] ${notchClass}`}
+      />
 
       <div className="flex min-w-0 flex-1 flex-col gap-1.5 px-4 py-3.5">
-        <div className={`line-clamp-2 font-semibold leading-snug ${row.has_stop_factor ? 'pr-14' : ''}`}>{row.subject}</div>
+        <div className={`line-clamp-2 font-semibold leading-snug ${row.has_stop_factor ? 'pr-14' : ''}`}>
+          {row.subject}
+        </div>
         <div className="flex flex-wrap gap-x-3 gap-y-0.5 text-sm text-muted">
           <span className="font-semibold text-ink tabular-nums">{formatMoneyShort(row.nmck)}</span>
           {row.region && <span>{row.region}</span>}
