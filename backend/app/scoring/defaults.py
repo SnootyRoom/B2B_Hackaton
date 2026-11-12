@@ -3,6 +3,8 @@
 from decimal import Decimal
 
 from app.schemas.scoring import (
+    FIELD_CATALOG,
+    FieldType,
     Operator,
     RuleGroup,
     RuleKind,
@@ -75,67 +77,73 @@ def default_profile() -> ScoringProfileData:
     return ScoringProfileData(rules=with_defaults([]))
 
 
-def _cautious() -> ScoringProfileData:
-    """Только надёжные заказчики: реорганизация — стоп, возраст строже, пороги выше."""
-    rules = [r.model_copy(deep=True) for r in DEFAULT_RULES]
-    by_id = {r.id: r for r in rules}
-    stop = by_id["stop_customer_status"]
-    stop.value = ["reorganizing", "liquidating", "liquidated", "bankrupt"]
-    stop.label = "Заказчик реорганизуется, ликвидируется, ликвидирован или банкрот"
-    age = by_id["customer_age"]
-    age.weight, age.soft_margin = 3, 0.0
-    return ScoringProfileData(
-        name="Осторожный",
-        rules=rules,
-        thresholds=Thresholds(participate=75, consider=50),
-    )
-
-
-def _aggressive() -> ScoringProfileData:
-    """Шире круг закупок: реорганизация допустима, молодые заказчики, пороги ниже."""
-    rules = [r.model_copy(deep=True) for r in DEFAULT_RULES]
-    by_id = {r.id: r for r in rules}
-    by_id["customer_active"].value = ["active", "reorganizing"]
-    by_id["customer_active"].label = "Заказчик действующий или реорганизуется"
-    age = by_id["customer_age"]
-    age.value, age.weight = Decimal(1), 1
-    age.label = "Заказчик работает не меньше года"
-    return ScoringProfileData(
-        name="Агрессивный",
-        rules=rules,
-        thresholds=Thresholds(participate=60, consider=30),
-    )
-
-
-# Шаблоны стратегий: правила о заказчике и пороги. «Новый профиль из шаблона» — template_profile,
-# «применить стратегию к своему профилю» — apply_strategy (условия компании сохраняются).
-TEMPLATES = {"cautious": _cautious, "aggressive": _aggressive}
-
-
-def template_profile(name: str) -> ScoringProfileData:
-    """Профиль по шаблону стратегии; неизвестное имя — KeyError."""
-    return TEMPLATES[name]()
-
-
-# Правила, которые задаёт стратегия; остальные правила профиля — условия самой компании
-STRATEGY_RULE_IDS = frozenset(
-    {"stop_customer_status", "customer_active", "customer_reliable", "customer_age"}
+STOP_REORGANIZING = ScoringRule(
+    id="stop_customer_reorganizing",
+    group=RuleGroup.customer,
+    kind=RuleKind.stop,
+    field="customer.status",
+    operator=Operator.in_,
+    value=["reorganizing"],
+    label="Заказчик в процессе реорганизации",
 )
 
 
-def apply_strategy(profile: ScoringProfileData, name: str) -> ScoringProfileData:
-    """Стратегия поверх своего профиля: правила о заказчике и пороги — из шаблона, условия
-    компании (предмет, сумма, регион, способ, свои правила о заказчике), имя, описание
-    и веса групп — свои. Выключенное пользователем правило стратегии остаётся выключенным.
-    Исходный профиль не меняется; неизвестная стратегия — KeyError."""
-    strategy = {r.id: r for r in template_profile(name).rules if r.id in STRATEGY_RULE_IDS}
-    rules = []
-    for rule in profile.rules:
-        own = strategy.pop(rule.id, None)
-        rules.append(
-            own.model_copy(update={"enabled": rule.enabled}) if own else rule.model_copy(deep=True)
-        )
-    rules.extend(strategy.values())  # правила стратегии, которых в профиле не было
-    return profile.model_copy(
-        update={"rules": rules, "thresholds": template_profile(name).thresholds}, deep=True
-    )
+def _scale_money(rule: ScoringRule, low: Decimal, high: Decimal) -> ScoringRule:
+    """Диапазон суммы: нижняя граница × low, верхняя × high."""
+    v = rule.value
+    if rule.operator == Operator.between and isinstance(v, list) and len(v) == 2:
+        lo, hi = (Decimal(str(x)) for x in v)
+        return rule.model_copy(update={"value": [lo * low, hi * high]})
+    if rule.operator == Operator.lte and isinstance(v, Decimal):
+        return rule.model_copy(update={"value": v * high})
+    if rule.operator == Operator.gte and isinstance(v, Decimal):
+        return rule.model_copy(update={"value": v * low})
+    return rule
+
+
+def _is_money(rule: ScoringRule) -> bool:
+    spec = FIELD_CATALOG.get(rule.field)
+    return spec is not None and spec.type == FieldType.money and rule.kind == RuleKind.weighted
+
+
+def _cautious(rules: list[ScoringRule]) -> list[ScoringRule]:
+    out = []
+    for r in rules:
+        # Суммы и возраст заказчика — строго, без допуска за границами.
+        # Важность правил шаблоны не меняют: иначе сместятся оценки выполненных условий.
+        if _is_money(r) or r.id == "customer_age":
+            r = r.model_copy(update={"soft_margin": None})
+        out.append(r)
+    if all(r.id != STOP_REORGANIZING.id for r in out):
+        out.append(STOP_REORGANIZING.model_copy())
+    return out
+
+
+def _aggressive(rules: list[ScoringRule]) -> list[ScoringRule]:
+    out = []
+    for r in rules:
+        if r.id == STOP_REORGANIZING.id:
+            continue
+        if _is_money(r):
+            r = _scale_money(r, Decimal("0.5"), Decimal(2))
+        elif r.id == "customer_active" and isinstance(r.value, list):
+            r = r.model_copy(update={"value": [*r.value, "reorganizing"]})
+        elif r.id == "customer_age":
+            r = r.model_copy(update={"value": Decimal(1)})
+        out.append(r)
+    return out
+
+
+def template_profile(template: str, base: ScoringProfileData | None = None) -> ScoringProfileData:
+    """Шаблоны для задачи A — вариации профиля base (по умолчанию — профиля по умолчанию):
+    «Осторожный» (cautious) — только действующие заказчики, стоп на реорганизацию,
+    суммы строго в диапазоне, пороги выше; «Агрессивный» (aggressive) — диапазон сумм
+    вдвое шире, реорганизация допустима, молодые заказчики не штрафуются, пороги ниже."""
+    data = (base or default_profile()).model_copy(deep=True)
+    if template == "cautious":
+        data.rules = _cautious(with_defaults(data.rules))
+        data.thresholds = Thresholds(participate=75, consider=45)
+    elif template == "aggressive":
+        data.rules = _aggressive(with_defaults(data.rules))
+        data.thresholds = Thresholds(participate=60, consider=30)
+    return ScoringProfileData.model_validate(data.model_dump(mode="json"))

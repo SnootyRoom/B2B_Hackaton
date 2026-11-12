@@ -3,7 +3,8 @@
 export type Law = '44' | '223' | '615' | '94' | 'other';
 export type Method = 'auction' | 'contest' | 'quotation' | 'proposals' | 'single' | 'other';
 export type Restriction = 'smp_only' | 'national_regime' | 'prefs_uis' | 'prefs_disabled' | 'other';
-export type CustomerStatus = 'active' | 'reorganizing' | 'liquidating' | 'liquidated' | 'bankrupt' | 'unknown';
+export type CustomerStatus =
+  'active' | 'reorganizing' | 'liquidating' | 'liquidated' | 'bankrupt' | 'unknown';
 export type CustomerSource = 'dadata' | 'cache' | 'stale_cache' | 'offline';
 export type Recommendation = 'participate' | 'consider' | 'skip';
 export type Group = 'procurement' | 'fit' | 'customer';
@@ -25,15 +26,11 @@ export type Operator =
 
 /** Деньги в JSON — число (внутри бэкенда Decimal). */
 export type Money = number;
-
-// ---------- Пользователь ----------
 export interface User {
   id: string;
   email: string;
   created_at: string;
 }
-
-// ---------- Закупка ----------
 export interface ProcurementItem {
   name: string;
   quantity: Money | null;
@@ -69,8 +66,6 @@ export interface Procurement {
   source_url: string | null;
   parsed_by: string;
 }
-
-// ---------- Заказчик (ЕГРЮЛ) ----------
 export interface CustomerProfile {
   inn: string;
   ogrn: string | null;
@@ -87,8 +82,6 @@ export interface CustomerProfile {
   fetched_at: string;
   source: CustomerSource;
 }
-
-// ---------- Профиль скоринга ----------
 export type RuleValue = number | string | boolean | string[] | [number, number] | null;
 
 export interface ScoringRule {
@@ -133,7 +126,7 @@ export type ScoringProfileInput = Omit<ScoringProfile, 'id' | 'is_active' | 'upd
 
 export interface SaveProfileResponse {
   profile: ScoringProfile;
-  /** Задача пересчёта, если сохраняли с rescore */
+  /** Задача пересчёта, если сохраняли с rescore или сделали профиль активным */
   task_id: string | null;
 }
 
@@ -148,8 +141,6 @@ export interface ParseResult {
   company_description: string;
   unparsed: string[];
 }
-
-// ---------- Оценка ----------
 export type RuleStatus = 'applied' | 'no_data' | 'disabled';
 
 export interface RuleResult {
@@ -201,8 +192,8 @@ export interface ScoreResult {
   computed_at: string;
 }
 
-/** Строка таблицы результатов (GET /results). Закупки без оценки слой API отбрасывает. */
-export interface ResultRow {
+/** Данные закупки для строк «Результатов» и «Сравнения» */
+export interface ProcurementBrief {
   procurement_id: string;
   reg_number: string;
   subject: string;
@@ -212,10 +203,72 @@ export interface ResultRow {
   region: string | null;
   law: Law | null;
   application_deadline: string | null;
-  total: number;
-  recommendation: Recommendation;
+}
+
+/** Строка «Результатов» (GET /results?profile_id=) */
+export interface ResultRow extends ProcurementBrief {
+  /** null — оценки по профилю ещё нет */
+  total: number | null;
+  recommendation: Recommendation | null;
   incomplete: boolean;
   has_stop_factor: boolean;
+  /** Оценки нет или она устарела — в таблице «пересчитывается» */
+  stale: boolean;
+}
+
+/** Строка списка профилей (GET /scoring-profiles), активный первым */
+export interface ProfileSummary {
+  id: string;
+  name: string;
+  is_active: boolean;
+  rules_count: number;
+  updated_at: string;
+}
+
+export type ProfileTemplate = 'cautious' | 'aggressive';
+
+/** POST /scoring-profiles. Без rules и template — правила по умолчанию; template и rules вместе нельзя */
+export interface CreateProfileInput {
+  name: string;
+  template?: ProfileTemplate;
+  company_description?: string;
+  source_text?: string;
+  group_weights?: GroupWeights;
+  thresholds?: Thresholds;
+  rules?: ScoringRule[];
+}
+
+/** Ответ activate и DELETE: задача пересчёта или null — пересчитывать нечего */
+export interface ProfileTaskResponse {
+  task_id: string | null;
+}
+
+export interface ScoreBrief {
+  total: number | null;
+  recommendation: Recommendation | null;
+  stale: boolean;
+}
+
+/** Изменение рекомендации от A к B; unknown — нет одной из оценок */
+export type Change = 'better' | 'worse' | 'same' | 'unknown';
+
+export interface CompareRow extends ProcurementBrief {
+  a: ScoreBrief;
+  b: ScoreBrief;
+  change: Change;
+  /** b.total − a.total; null — нет одной из оценок */
+  delta: number | null;
+  /** До 3 фраз со ссылками [rule_id]; пусто, если разницы нет */
+  explanation: string;
+}
+
+/** GET /results/compare?a=&b=. missing > 0 — досчитать оценки и перезапросить */
+export interface CompareOut {
+  profile_a: string;
+  profile_b: string;
+  rows: CompareRow[];
+  summary: Record<Change, number>;
+  missing: number;
 }
 
 /** Карточка закупки (GET /procurements/{id}) */
@@ -229,8 +282,6 @@ export interface ProcurementDetail {
   created_at: string;
   updated_at: string;
 }
-
-// ---------- Фоновые задачи ----------
 export type TaskStatus = 'queued' | 'processing' | 'done' | 'partial' | 'failed';
 
 export type ErrorCode =
@@ -260,13 +311,14 @@ export interface TaskFile {
   error: ApiErrorBody | null;
   /** Предупреждения при статусе ok: CUSTOMER_NOT_FOUND, EGRUL_UNAVAILABLE */
   warnings: ApiErrorBody[];
-  /** Закупки (лоты), созданные из файла */
+  /** Закупки (лоты), созданные из файла или номера */
   procurement_ids: string[];
 }
 
 export interface Task {
   id: string;
-  kind: 'upload' | 'rescore' | 'parse_profile' | 'egrul_lookup';
+  /** fetch — загрузка по реестровым номерам: files[].filename — номер */
+  kind: 'upload' | 'fetch' | 'rescore' | 'parse_profile' | 'egrul_lookup';
   status: TaskStatus;
   total: number;
   processed: number;

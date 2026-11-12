@@ -83,7 +83,10 @@ export function deadlineInfo(
   if (ms <= 0) return { text: 'приём завершён', tone: 'closed' };
   const days = Math.floor(ms / 86400000);
   if (days === 0) return { text: 'последний день', tone: 'urgent' };
-  return { text: `осталось ${days} ${plural(days, 'день', 'дня', 'дней')}`, tone: days <= 3 ? 'urgent' : 'normal' };
+  return {
+    text: `осталось ${days} ${plural(days, 'день', 'дня', 'дней')}`,
+    tone: days <= 3 ? 'urgent' : 'normal',
+  };
 }
 
 /** Возраст организации в полных годах */
@@ -91,7 +94,8 @@ export function yearsSince(value: string | null | undefined, now: Date = new Dat
   const d = parseDate(value);
   if (!d) return null;
   let years = now.getFullYear() - d.getFullYear();
-  if (now.getMonth() < d.getMonth() || (now.getMonth() === d.getMonth() && now.getDate() < d.getDate())) years--;
+  if (now.getMonth() < d.getMonth() || (now.getMonth() === d.getMonth() && now.getDate() < d.getDate()))
+    years--;
   return years;
 }
 

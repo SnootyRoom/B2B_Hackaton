@@ -19,9 +19,15 @@ describe('человеческая формулировка правила', () 
     );
   });
   it('единицы склоняются', () => {
-    expect(clean(describeRule({ field: 'days_to_deadline', operator: 'gte', value: 5 }))).toBe('Срок на подачу заявки не меньше 5 дней');
-    expect(clean(describeRule({ field: 'customer.age_years', operator: 'gte', value: 1 }))).toBe('Возраст заказчика не меньше 1 года');
-    expect(clean(describeRule({ field: 'delivery_days', operator: 'between', value: [3, 10] }))).toBe('Срок поставки от 3 до 10 дней');
+    expect(clean(describeRule({ field: 'days_to_deadline', operator: 'gte', value: 5 }))).toBe(
+      'Срок на подачу заявки не меньше 5 дней',
+    );
+    expect(clean(describeRule({ field: 'customer.age_years', operator: 'gte', value: 1 }))).toBe(
+      'Срок работы заказчика не меньше 1 года',
+    );
+    expect(clean(describeRule({ field: 'delivery_days', operator: 'between', value: [3, 10] }))).toBe(
+      'Срок поставки от 3 до 10 дней',
+    );
   });
   it('без технических терминов', () => {
     const text = describeRule({ field: 'customer.has_unreliable_flags', operator: 'is_false', value: null });

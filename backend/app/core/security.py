@@ -14,7 +14,11 @@ def hash_password(password: str) -> str:
 
 
 def verify_password(password: str, password_hash: str) -> bool:
-    return bcrypt.checkpw(password.encode(), password_hash.encode())
+    try:
+        return bcrypt.checkpw(password.encode(), password_hash.encode())
+    except ValueError:
+        # пароль длиннее 72 байт: такой при регистрации не принимается, значит неверный
+        return False
 
 
 def create_access_token(user_id: UUID) -> str:

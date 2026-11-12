@@ -1,82 +1,180 @@
-import { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useEffect, useMemo, useState } from 'react';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { api } from '../api';
-import type { Group, GroupWeights, ScoringProfileInput, ScoringRule } from '../api/types';
+import type { Group, GroupWeights, ScoringProfile, ScoringProfileInput, ScoringRule } from '../api/types';
 import { FIELDS, GROUPS } from '../lib/catalog';
-import { qk, useProfile } from '../lib/hooks';
+import { qk, refreshProfiles, useActivateProfile, useProfileById, useProfiles } from '../lib/hooks';
+import { startRescoreIndicator } from '../lib/rescore';
 import { newRule, validateProfile } from '../lib/rules';
+import ProfileList from '../components/ProfileList';
 import RuleCard from '../components/RuleCard';
 import { Alert, Loading } from '../components/ui';
 
-const EMPTY: ScoringProfileInput = {
-  name: 'Мой профиль',
-  company_description: '',
-  source_text: '',
-  group_weights: { procurement: 0.4, fit: 0.35, customer: 0.25 },
-  thresholds: { participate: 70, consider: 40 },
-  rules: [],
-};
+/** Слепок для сравнения «есть ли несохранённые правки». Название меняют кнопкой «Переименовать» — его не учитываем */
+const snapshot = (p: ScoringProfileInput) => JSON.stringify({ ...p, name: '' });
+
+const toInput = (p: ScoringProfile): ScoringProfileInput => ({
+  name: p.name,
+  company_description: p.company_description,
+  source_text: p.source_text,
+  group_weights: p.group_weights,
+  thresholds: p.thresholds,
+  rules: p.rules,
+});
 
 const EXAMPLE =
   'Мы IT-компания из Томска, разрабатываем и сопровождаем ПО. Интересны аукционы и запросы котировок в Томской и Новосибирской областях от 500 тыс. до 15 млн, обеспечение контракта не больше 10%, не меньше 5 дней на подачу заявки.';
 const PLACEHOLDER = 'Например: ' + EXAMPLE;
 
 export default function ProfilePage() {
-  const profile = useProfile();
+  const profiles = useProfiles();
+  const [params, setParams] = useSearchParams();
+  const [dirty, setDirty] = useState(false);
+  /** Куда хотели перейти, пока в редакторе есть несохранённые правки */
+  const [pendingId, setPendingId] = useState<string | null>(null);
+  const catalog = useQuery({ queryKey: qk.catalog, queryFn: () => api.getCatalog(), staleTime: Infinity });
+
+  const list = profiles.data ?? [];
+  const wanted = params.get('id');
+  const selected = list.find((p) => p.id === wanted) ?? list.find((p) => p.is_active) ?? list[0];
+  const full = useProfileById(selected?.id);
+
+  if (profiles.isPending) return <Loading text="Загружаем параметры…" />;
+  if (profiles.isError) return <Alert>{profiles.error.message}</Alert>;
+  if (!selected) return <Alert>Профилей пока нет. Обновите страницу.</Alert>;
+
+  const go = (id: string) => {
+    setPendingId(null);
+    setDirty(false);
+    setParams({ id });
+  };
+  const select = (id: string) => (dirty ? setPendingId(id) : go(id));
+  const pending = list.find((p) => p.id === pendingId);
+
+  return (
+    <div className="flex flex-col gap-6 pb-28 md:pb-0">
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div className="max-w-[60ch]">
+          <p className="mb-2 text-[13px] font-semibold tracking-[0.08em] text-muted uppercase">
+            Шаг 1 из 3 · Ваш профиль поставщика
+          </p>
+          <h1 className="font-display text-[28px] leading-tight font-bold text-balance sm:text-[36px]">
+            Какие закупки вам подходят
+          </h1>
+          <p className="mt-2 text-muted sm:text-base">
+            Опишите это своими словами — система составит правила. По ним будет оценена каждая загруженная
+            закупка.
+          </p>
+        </div>
+        <Link to="/upload" className="btn-ghost shrink-0">
+          Далее: загрузка →
+        </Link>
+      </div>
+
+      <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
+        <ProfileList
+          profiles={list}
+          selectedId={selected.id}
+          onSelect={select}
+          llmEnabled={catalog.data?.llm_enabled === true}
+        />
+
+        <div className="flex min-w-0 flex-1 flex-col gap-6">
+          {pending && (
+            <div
+              className="animate-rise flex flex-wrap items-center gap-2 rounded-xl bg-mid-soft px-4 py-3"
+              role="alert"
+            >
+              <span className="mr-auto text-sm text-mid">
+                В профиле «{selected.name}» есть несохранённые изменения. Перейти к «{pending.name}» без
+                сохранения?
+              </span>
+              <button type="button" className="btn-ghost btn-sm" onClick={() => go(pending.id)}>
+                Перейти без сохранения
+              </button>
+              <button type="button" className="btn-primary btn-sm" onClick={() => setPendingId(null)}>
+                Остаться
+              </button>
+            </div>
+          )}
+
+          {full.isError ? (
+            <Alert>{full.error.message}</Alert>
+          ) : full.data && full.data.id === selected.id ? (
+            <ProfileEditor key={selected.id} profile={full.data} onDirtyChange={setDirty} />
+          ) : (
+            <Loading text="Открываем профиль…" />
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/** Редактор одного профиля: текст → правила, правила по группам, веса и пороги, сохранение */
+function ProfileEditor({
+  profile,
+  onDirtyChange,
+}: {
+  profile: ScoringProfile;
+  onDirtyChange: (d: boolean) => void;
+}) {
   const qc = useQueryClient();
   const navigate = useNavigate();
   const catalog = useQuery({ queryKey: qk.catalog, queryFn: () => api.getCatalog(), staleTime: Infinity });
   const llmEnabled = catalog.data?.llm_enabled === true;
+  const activate = useActivateProfile();
 
-  const [draft, setDraft] = useState<ScoringProfileInput | null>(null);
+  const [draft, setDraft] = useState<ScoringProfileInput>(() => toInput(profile));
+  /** С чем сравниваем, чтобы понять, есть ли несохранённые правки */
+  const [baseline, setBaseline] = useState(() => snapshot(toInput(profile)));
   const [unparsed, setUnparsed] = useState<string[]>([]);
   const [notice, setNotice] = useState<string | null>(null);
   const [showErrors, setShowErrors] = useState(false);
 
-  // Черновик заполняется один раз, когда профиль загрузился
-  useEffect(() => {
-    if (draft === null && !profile.isPending && !profile.isError) {
-      const p = profile.data;
-      setDraft(
-        p
-          ? {
-              name: p.name,
-              company_description: p.company_description,
-              source_text: p.source_text,
-              group_weights: p.group_weights,
-              thresholds: p.thresholds,
-              rules: p.rules,
-            }
-          : EMPTY,
-      );
-    }
-  }, [draft, profile.isPending, profile.isError, profile.data]);
+  const dirty = useMemo(() => snapshot(draft) !== baseline, [draft, baseline]);
+  useEffect(() => onDirtyChange(dirty), [dirty, onDirtyChange]);
 
   const parse = useMutation({
     mutationFn: (text: string) => api.parseProfileText(text),
     onSuccess: (r) => {
-      setDraft((d) => d && { ...d, rules: r.rules, company_description: r.company_description || d.company_description });
+      setDraft((d) => ({
+        ...d,
+        rules: r.rules,
+        company_description: r.company_description || d.company_description,
+      }));
       setUnparsed(r.unparsed);
-      setNotice('Правила составлены по вашему тексту. Проверьте их ниже, поправьте при необходимости и сохраните.');
+      setNotice(
+        'Правила составлены по вашему тексту. Проверьте их ниже, поправьте при необходимости и сохраните.',
+      );
     },
   });
 
   const save = useMutation({
-    mutationFn: async ({ rescore }: { rescore: boolean }) => {
-      const { profile: saved, task_id } = await api.saveActiveProfile(draft!, rescore);
-      qc.setQueryData(qk.profile, saved);
-      return task_id;
+    mutationFn: async ({ rescore, makeActive }: { rescore: boolean; makeActive?: boolean }) => {
+      // Название берём из профиля: его меняют кнопкой «Переименовать», а не здесь
+      const input = { ...draft, name: profile.name };
+      const { profile: saved, task_id } = await api.saveProfile(profile.id, input, rescore);
+      setBaseline(snapshot(input));
+      await refreshProfiles(qc);
+      if (makeActive) await activate.mutateAsync({ id: profile.id, name: profile.name });
+      return { saved, task_id };
     },
-    onSuccess: (taskId) => {
+    onSuccess: ({ saved, task_id }, { makeActive }) => {
       setNotice(null);
-      if (taskId) navigate(`/results?task=${encodeURIComponent(taskId)}`);
-      else setNotice('Сохранено. Новые загрузки будут оцениваться по этим правилам.');
+      if (task_id) {
+        startRescoreIndicator({ taskId: task_id, profileName: saved.name });
+        navigate('/results');
+      } else if (makeActive) navigate('/results');
+      else
+        setNotice(
+          saved.is_active
+            ? 'Сохранено. Новые загрузки будут оцениваться по этим правилам.'
+            : 'Сохранено. Профиль не активный: его оценки посчитаются, когда вы сделаете его активным или откроете сравнение.',
+        );
     },
   });
-
-  if (profile.isError) return <Alert>{profile.error.message}</Alert>;
-  if (!draft) return <Loading text="Загружаем параметры…" />;
 
   const errors = validateProfile(draft);
   const set = (patch: Partial<ScoringProfileInput>) => setDraft({ ...draft, ...patch });
@@ -86,19 +184,23 @@ export default function ProfilePage() {
     const r = newRule(fieldKey);
     set({ rules: [...draft.rules, r] });
     // Прокрутим к новому правилу, чтобы было видно, что оно добавилось
-    setTimeout(() => document.getElementById(`rule-${r.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 50);
+    setTimeout(
+      () => document.getElementById(`rule-${r.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' }),
+      50,
+    );
   };
 
   const weightSum = draft.group_weights.procurement + draft.group_weights.fit + draft.group_weights.customer;
   const share = (g: Group) => (weightSum > 0 ? Math.round((draft.group_weights[g] / weightSum) * 100) : 0);
 
-  function trySave(rescore: boolean) {
+  function trySave(rescore: boolean, makeActive = false) {
     setShowErrors(true);
-    if (errors.length === 0) save.mutate({ rescore });
+    if (errors.length === 0) save.mutate({ rescore, makeActive });
   }
 
   const saveButtons = (
     <>
+      {dirty && <p className="text-center text-sm text-mid">Есть несохранённые изменения</p>}
       {showErrors && errors.length > 0 && (
         <Alert>
           Исправьте, чтобы сохранить:
@@ -110,34 +212,60 @@ export default function ProfilePage() {
         </Alert>
       )}
       {save.isError && <Alert>{save.error.message}</Alert>}
-      <button type="button" className="btn-primary w-full" disabled={save.isPending} onClick={() => trySave(true)}>
-        {save.isPending ? 'Сохраняем…' : 'Сохранить и пересчитать'}
-      </button>
-      <button type="button" className="btn-ghost w-full" disabled={save.isPending} onClick={() => trySave(false)}>
-        Только сохранить
-      </button>
+      {profile.is_active ? (
+        <>
+          <button
+            type="button"
+            className="btn-primary w-full"
+            disabled={save.isPending}
+            onClick={() => trySave(true)}
+          >
+            {save.isPending ? 'Сохраняем…' : 'Сохранить и пересчитать'}
+          </button>
+          <button
+            type="button"
+            className="btn-ghost w-full"
+            disabled={save.isPending}
+            onClick={() => trySave(false)}
+          >
+            Только сохранить
+          </button>
+        </>
+      ) : (
+        <>
+          <button
+            type="button"
+            className="btn-primary w-full"
+            disabled={save.isPending}
+            onClick={() => trySave(false)}
+          >
+            {save.isPending ? 'Сохраняем…' : 'Сохранить'}
+          </button>
+          <button
+            type="button"
+            className="btn-ghost w-full"
+            disabled={save.isPending}
+            onClick={() => trySave(false, true)}
+          >
+            Сохранить и сделать активным
+          </button>
+        </>
+      )}
     </>
   );
 
   return (
-    <div className="flex flex-col gap-7 pb-28 md:pb-0">
-      <div className="flex flex-wrap items-start justify-between gap-4">
-      <div className="max-w-[60ch]">
-        <p className="mb-2 text-[13px] font-semibold tracking-[0.08em] text-muted uppercase">Шаг 1 из 3 · Ваш профиль поставщика</p>
-        <h1 className="font-display text-[28px] leading-tight font-bold text-balance sm:text-[36px]">
-          Какие закупки вам подходят
-        </h1>
-        <p className="mt-2 text-muted sm:text-base">
-          Опишите это своими словами — система составит правила. По ним будет оценена каждая загруженная закупка.
-        </p>
-      </div>
-        <Link to="/upload" className="btn-ghost shrink-0">
-          Далее: загрузка →
-        </Link>
+    <div className="flex flex-col gap-7">
+      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 px-1">
+        <h2 className="font-display text-xl font-bold">Правила профиля «{profile.name}»</h2>
+        {!profile.is_active && (
+          <span className="text-sm text-muted">
+            не активный — на оценки не влияет, пока вы не сделаете его активным
+          </span>
+        )}
       </div>
 
       <div className="flex flex-wrap items-start gap-6">
-        {/* Левая колонка: текст и правила */}
         <div className="flex min-w-0 flex-[999_1_560px] flex-col gap-6">
           <section className="card flex flex-col gap-3.5 sm:p-6">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -172,7 +300,10 @@ export default function ProfilePage() {
                 >
                   {parse.isPending ? (
                     <>
-                      <span className="h-4 w-4 animate-spin rounded-full border-2 border-white/40 border-t-white" aria-hidden />
+                      <span
+                        className="h-4 w-4 animate-spin rounded-full border-2 border-white/40 border-t-white"
+                        aria-hidden
+                      />
                       Разбираем…
                     </>
                   ) : (
@@ -182,9 +313,13 @@ export default function ProfilePage() {
                 <span className="text-sm text-muted">Текущие правила заменятся составленными по тексту</span>
               </div>
             ) : (
-              <p className="text-sm text-muted">Автоматический разбор текста сейчас недоступен — задайте правила ниже вручную.</p>
+              <p className="text-sm text-muted">
+                Автоматический разбор текста сейчас недоступен — задайте правила ниже вручную.
+              </p>
             )}
-            {parse.isError && <Alert>{parse.error.message || 'Не удалось разобрать текст, задайте правила вручную'}</Alert>}
+            {parse.isError && (
+              <Alert>{parse.error.message || 'Не удалось разобрать текст, задайте правила вручную'}</Alert>
+            )}
 
             <div className="mt-1 border-t border-track pt-4">
               <label className="label" htmlFor="company">
@@ -255,7 +390,10 @@ export default function ProfilePage() {
                       value={Math.round(draft.group_weights[g.key] * 100)}
                       onChange={(e) =>
                         set({
-                          group_weights: { ...draft.group_weights, [g.key]: Number(e.target.value) / 100 } as GroupWeights,
+                          group_weights: {
+                            ...draft.group_weights,
+                            [g.key]: Number(e.target.value) / 100,
+                          } as GroupWeights,
                         })
                       }
                     />
@@ -292,8 +430,6 @@ export default function ProfilePage() {
             );
           })}
         </div>
-
-        {/* Правая колонка: как будет считаться оценка + сохранение */}
         <aside className="flex min-w-0 flex-[1_1_300px] flex-col gap-4 md:sticky md:top-24">
           <section className="card flex flex-col gap-5 sm:p-6">
             <div>
@@ -304,7 +440,11 @@ export default function ProfilePage() {
               <div className="flex h-3 gap-[3px] overflow-hidden rounded-full" aria-hidden>
                 {GROUPS.map((g) =>
                   share(g.key) > 0 ? (
-                    <div key={g.key} className={`${GROUP_COLOR[g.key]} transition-[flex-grow] duration-300`} style={{ flexGrow: share(g.key) }} />
+                    <div
+                      key={g.key}
+                      className={`${GROUP_COLOR[g.key]} transition-[flex-grow] duration-300`}
+                      style={{ flexGrow: share(g.key) }}
+                    />
                   ) : null,
                 )}
               </div>
@@ -321,10 +461,12 @@ export default function ProfilePage() {
 
             <div className="flex flex-col gap-3 border-t border-track pt-5">
               <h3 className="font-bold">Пороги рекомендаций</h3>
-              {/* Шкала 0–100 с тремя зонами — сразу видно, где какая рекомендация */}
               <div className="flex h-3 overflow-hidden rounded-full" aria-hidden>
                 <div className="bg-bad" style={{ width: `${draft.thresholds.consider}%` }} />
-                <div className="bg-mid-bar" style={{ width: `${draft.thresholds.participate - draft.thresholds.consider}%` }} />
+                <div
+                  className="bg-mid-bar"
+                  style={{ width: `${draft.thresholds.participate - draft.thresholds.consider}%` }}
+                />
                 <div className="flex-1 bg-good" />
               </div>
               <div className="flex justify-between text-xs text-muted tabular-nums">
@@ -358,11 +500,11 @@ export default function ProfilePage() {
           </section>
         </aside>
       </div>
-
-      {/* Телефон: кнопки сохранения парят внизу экрана */}
-      <div className="fixed inset-x-3 bottom-3 z-20 flex flex-col gap-2 rounded-2xl bg-white/95 p-3 shadow-[0_12px_40px_-12px_rgba(29,31,39,0.3)] backdrop-blur md:hidden">
-        {saveButtons}
-      </div>
+      {(dirty || save.isPending || save.isError || (showErrors && errors.length > 0)) && (
+        <div className="animate-rise fixed inset-x-3 bottom-3 z-20 flex flex-col gap-2 rounded-2xl bg-white/95 p-3 shadow-[0_12px_40px_-12px_rgba(29,31,39,0.3)] backdrop-blur md:hidden">
+          {saveButtons}
+        </div>
+      )}
     </div>
   );
 }

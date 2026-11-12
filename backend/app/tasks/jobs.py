@@ -12,6 +12,7 @@ log = logging.getLogger(__name__)
 
 _HANDLERS = {
     TaskKind.upload: pipeline.process_upload,
+    TaskKind.fetch: pipeline.process_fetch,
     TaskKind.rescore: pipeline.process_rescore,
     TaskKind.parse_profile: pipeline.process_parse_profile,
     TaskKind.egrul_lookup: pipeline.process_egrul_lookup,

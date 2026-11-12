@@ -12,6 +12,7 @@ class TaskKind(StrEnum):
     rescore = "rescore"
     parse_profile = "parse_profile"
     egrul_lookup = "egrul_lookup"
+    fetch = "fetch"  # загрузка по реестровым номерам; TaskFileOut.filename = номер
 
 
 class TaskStatus(StrEnum):
@@ -29,8 +30,13 @@ class FileStatus(StrEnum):
 
 
 class TaskFileOut(ORMModel):
+    """Файл пакета (kind=upload) или реестровый номер (kind=fetch).
+
+    «Загружаем» на фронте: status=pending и позиция в списке == TaskOut.processed.
+    """
+
     id: UUID
-    filename: str
+    filename: str = Field(description="Имя файла или реестровый номер (kind=fetch)")
     status: FileStatus
     error: ErrorInfo | None = None
     warnings: list[ErrorInfo] = Field(

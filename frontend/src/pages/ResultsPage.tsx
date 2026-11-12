@@ -1,7 +1,7 @@
-// Экран «Результаты»: итог одной фразой, таблица закупок (как требует ТЗ) с сортировкой по любому столбцу.
+// Экран «Результаты»: итог одной фразой, таблица закупок с сортировкой по любому столбцу.
 // На телефоне вместо строк таблицы — «билеты».
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { api } from '../api';
@@ -9,7 +9,9 @@ import { buildExport } from '../lib/export';
 import type { Law, Recommendation, ResultRow, ResultsFilters } from '../api/types';
 import { LAW_LABEL, RECOMMENDATION } from '../lib/catalog';
 import { deadlineInfo, formatDate, formatMoneyShort, isPast, plural, toNumber } from '../lib/format';
-import { qk, taskIsRunning, useTask } from '../lib/hooks';
+import { qk, taskIsRunning, useActivateProfile, useProfiles, useTask } from '../lib/hooks';
+import { startRescoreIndicator, useRescoreJob } from '../lib/rescore';
+import type { ProfileSummary } from '../api/types';
 import { Alert, EmptyState, ProgressBar, ResultsSkeleton, toneOf } from '../components/ui';
 import Ticket from '../components/Ticket';
 
@@ -30,18 +32,26 @@ const SORTS: { value: string; label: string; sort: Sort }[] = [
   { value: 'worst', label: 'Сначала худшие', sort: { key: 'total', dir: 'asc' } },
   { value: 'cheap', label: 'Сначала дешёвые', sort: { key: 'nmck', dir: 'asc' } },
   { value: 'expensive', label: 'Сначала дорогие', sort: { key: 'nmck', dir: 'desc' } },
-  { value: 'deadline', label: 'Сначала скорый срок подачи', sort: { key: 'application_deadline', dir: 'asc' } },
-  { value: 'deadline_late', label: 'Сначала поздний срок подачи', sort: { key: 'application_deadline', dir: 'desc' } },
+  {
+    value: 'deadline',
+    label: 'Сначала скорый срок подачи',
+    sort: { key: 'application_deadline', dir: 'asc' },
+  },
+  {
+    value: 'deadline_late',
+    label: 'Сначала поздний срок подачи',
+    sort: { key: 'application_deadline', dir: 'desc' },
+  },
 ];
 
 /** «2026-11-05» для поля даты */
-const isoDay = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const isoDay = (d: Date) =>
+  `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 const addDays = (n: number) => {
   const d = new Date();
   d.setDate(d.getDate() + n);
   return isoDay(d);
 };
-/** Быстрые варианты срока подачи */
 const DEADLINE_PRESETS: { label: string; days: number }[] = [
   { label: '3 дня', days: 3 },
   { label: 'Неделя', days: 7 },
@@ -51,7 +61,7 @@ const DEADLINE_PRESETS: { label: string; days: number }[] = [
 const time = (s: string | null) => (s ? new Date(s).getTime() : Infinity);
 
 function compare(a: ResultRow, b: ResultRow, key: SortKey): number {
-  if (key === 'total') return a.total - b.total;
+  if (key === 'total') return (a.total ?? -1) - (b.total ?? -1);
   if (key === 'nmck') return (toNumber(a.nmck) ?? 0) - (toNumber(b.nmck) ?? 0);
   if (key === 'application_deadline') return time(a.application_deadline) - time(b.application_deadline);
   return String(a[key] ?? '').localeCompare(String(b[key] ?? ''), 'ru');
@@ -63,6 +73,7 @@ const TICKET_BG: Record<Recommendation, string> = {
   consider: 'bg-mid-soft',
   skip: 'bg-bad-soft',
 };
+const ticketBg = (r: ResultRow) => (r.recommendation ? TICKET_BG[r.recommendation] : 'bg-track');
 
 const DEADLINE_TONE = {
   normal: 'text-muted',
@@ -76,7 +87,11 @@ export default function ResultsPage() {
   const rescoreTask = params.get('task');
   /** Пришли из «Истории»: показываем только закупки одной загрузки */
   const uploadId = params.get('upload');
-  const uploads = useQuery({ queryKey: qk.uploads, queryFn: () => api.listUploads(), enabled: Boolean(uploadId) });
+  const uploads = useQuery({
+    queryKey: qk.uploads,
+    queryFn: () => api.listUploads(),
+    enabled: Boolean(uploadId),
+  });
   const upload = uploads.data?.find((t) => t.id === uploadId);
   const task = useTask(rescoreTask);
 
@@ -90,9 +105,30 @@ export default function ResultsPage() {
   const [deadlineFrom, setDeadlineFrom] = useState('');
   const [deadlineTo, setDeadlineTo] = useState('');
 
-  const all = useQuery({ queryKey: qk.results({}), queryFn: () => api.getResults() });
+  // Какой профиль смотрим: по умолчанию активный
+  const profiles = useProfiles();
+  const active = profiles.data?.find((p) => p.is_active);
+  const viewed = profiles.data?.find((p) => p.id === params.get('profile')) ?? active;
+  const viewedId = viewed && !viewed.is_active ? viewed.id : undefined;
+  const all = useQuery({
+    queryKey: qk.results({ profile: viewedId ?? 'active' }),
+    queryFn: () => api.getResults(viewedId),
+  });
   const results = all;
-  // Закупки одной загрузки берём из её файлов
+  const job = useRescoreJob();
+  const setProfileParam = (id: string) => setParams(id === active?.id ? {} : { profile: id });
+
+  // Строки без актуальной оценки («пересчитывается») — досчитываем их в фоне, один раз на профиль
+  const started = useRef(new Set<string>());
+  const hasStale = (all.data ?? []).some((r) => r.stale);
+  useEffect(() => {
+    if (!viewed || !hasStale || job || started.current.has(viewed.id)) return;
+    started.current.add(viewed.id);
+    api.scoreStale(viewed.id).then(
+      (r) => startRescoreIndicator({ taskId: r.task_id, profileName: viewed.name }),
+      () => {},
+    );
+  }, [viewed, hasStale, job]);
   const uploadIds = useMemo(
     () => (uploadId ? new Set(upload?.files.flatMap((f) => f.procurement_ids) ?? []) : null),
     [uploadId, upload],
@@ -109,7 +145,9 @@ export default function ResultsPage() {
       .filter((r) => filters.nmck_min === undefined || r.nmck >= filters.nmck_min)
       .filter((r) => filters.nmck_max === undefined || r.nmck <= filters.nmck_max)
       .filter((r) => !filters.hide_expired || !isPast(r.application_deadline))
-      .filter((r) => !q || [r.subject, r.customer_name, r.reg_number].some((v) => v?.toLowerCase().includes(q)))
+      .filter(
+        (r) => !q || [r.subject, r.customer_name, r.reg_number].some((v) => v?.toLowerCase().includes(q)),
+      )
       .filter((r) => {
         if (!deadlineFrom && !deadlineTo) return true;
         if (!r.application_deadline) return false;
@@ -120,7 +158,7 @@ export default function ResultsPage() {
 
   const counts = useMemo(() => {
     const c = { all: searched.length, participate: 0, consider: 0, skip: 0 };
-    searched.forEach((r) => c[r.recommendation]++);
+    searched.forEach((r) => r.recommendation && c[r.recommendation]++);
     return c;
   }, [searched]);
 
@@ -137,7 +175,8 @@ export default function ResultsPage() {
     [all.data],
   );
   const activeFilterCount =
-    Object.values(filters).filter((v) => v !== undefined && v !== false).length + (deadlineFrom || deadlineTo ? 1 : 0);
+    Object.values(filters).filter((v) => v !== undefined && v !== false).length +
+    (deadlineFrom || deadlineTo ? 1 : 0);
   const resetFilters = () => {
     setFilters({});
     setDeadlineFrom('');
@@ -189,7 +228,10 @@ export default function ResultsPage() {
     return (
       <div className="flex flex-col gap-4">
         {rescoreBanner}
-        <EmptyState title="Пока нет закупок" text="Загрузите файлы или попробуйте пример — здесь появятся оценки.">
+        <EmptyState
+          title="Пока нет закупок"
+          text="Загрузите файлы или попробуйте пример — здесь появятся оценки."
+        >
           <Link to="/upload" className="btn-primary">
             Загрузить закупки
           </Link>
@@ -201,6 +243,9 @@ export default function ResultsPage() {
   return (
     <div className="flex flex-col gap-6">
       {rescoreBanner}
+      {viewed && active && (
+        <ProfileSwitch viewed={viewed} active={active} list={profiles.data ?? []} onView={setProfileParam} />
+      )}
       <Summary rows={total} />
 
       {uploadId && (
@@ -224,9 +269,11 @@ export default function ResultsPage() {
           </div>
         </div>
       )}
-
-      {/* Счётчики — они же фильтр по рекомендации */}
-      <div role="tablist" aria-label="Рекомендация" className="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
+      <div
+        role="tablist"
+        aria-label="Рекомендация"
+        className="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3"
+      >
         {(
           [
             [null, 'Все закупки', counts.all],
@@ -251,14 +298,16 @@ export default function ResultsPage() {
                   : 'bg-white ring-1 ring-line/70 hover:ring-brand/40')
               }
             >
-              <span className={`font-display text-2xl leading-none font-bold ${tone && !on ? tone.text : ''}`}>{n}</span>
+              <span
+                className={`font-display text-2xl leading-none font-bold ${tone && !on ? tone.text : ''}`}
+              >
+                {n}
+              </span>
               <span className={`text-sm font-semibold ${on ? '' : 'text-muted'}`}>{label}</span>
             </button>
           );
         })}
       </div>
-
-      {/* Поиск, фильтры, выгрузка */}
       <div className="flex flex-col gap-3">
         <div className="flex flex-wrap items-center gap-2.5">
           <label htmlFor="search" className="sr-only">
@@ -332,9 +381,19 @@ export default function ResultsPage() {
             <label className="flex flex-col gap-1 text-sm">
               <span className="text-muted">НМЦК, млн ₽</span>
               <span className="flex items-center gap-1.5">
-                <MillionsInput id="f-min" placeholder="от" value={filters.nmck_min} onChange={(v) => setFilters({ ...filters, nmck_min: v })} />
+                <MillionsInput
+                  id="f-min"
+                  placeholder="от"
+                  value={filters.nmck_min}
+                  onChange={(v) => setFilters({ ...filters, nmck_min: v })}
+                />
                 <span className="text-muted">—</span>
-                <MillionsInput id="f-max" placeholder="до" value={filters.nmck_max} onChange={(v) => setFilters({ ...filters, nmck_max: v })} />
+                <MillionsInput
+                  id="f-max"
+                  placeholder="до"
+                  value={filters.nmck_max}
+                  onChange={(v) => setFilters({ ...filters, nmck_max: v })}
+                />
               </span>
             </label>
             <label className="flex flex-col gap-1 text-sm">
@@ -343,7 +402,9 @@ export default function ResultsPage() {
                 id="f-law"
                 className="input"
                 value={filters.law ?? ''}
-                onChange={(e) => setFilters({ ...filters, law: (e.target.value || undefined) as Law | undefined })}
+                onChange={(e) =>
+                  setFilters({ ...filters, law: (e.target.value || undefined) as Law | undefined })
+                }
               >
                 <option value="">Любой</option>
                 {(Object.keys(LAW_LABEL) as Law[]).map((l) => (
@@ -418,10 +479,12 @@ export default function ResultsPage() {
       </div>
 
       {shown.length === 0 ? (
-        <EmptyState title="Ничего не найдено" text="Под поиск и фильтры не подходит ни одна закупка. Попробуйте их ослабить." />
+        <EmptyState
+          title="Ничего не найдено"
+          text="Под поиск и фильтры не подходит ни одна закупка. Попробуйте их ослабить."
+        />
       ) : (
         <>
-          {/* Таблица — от 768 px */}
           <div className="hidden overflow-x-auto rounded-3xl bg-white shadow-[0_1px_0_rgba(29,31,39,0.04),0_12px_28px_-18px_rgba(29,31,39,0.25)] md:block">
             <table className="w-full border-collapse text-sm">
               <thead>
@@ -438,7 +501,10 @@ export default function ResultsPage() {
                         <button
                           type="button"
                           onClick={() => toggleSort(c.key)}
-                          className={'inline-flex items-center gap-1 uppercase hover:text-brand ' + (active ? 'text-brand' : '')}
+                          className={
+                            'inline-flex items-center gap-1 uppercase hover:text-brand ' +
+                            (active ? 'text-brand' : '')
+                          }
                         >
                           {c.label}
                           <span aria-hidden className={active ? '' : 'opacity-0'}>
@@ -448,14 +514,17 @@ export default function ResultsPage() {
                       </th>
                     );
                   })}
-                  <th scope="col" className="border-b border-track px-3 py-3.5 pr-5 font-semibold tracking-[0.06em] uppercase">
+                  <th
+                    scope="col"
+                    className="border-b border-track px-3 py-3.5 pr-5 font-semibold tracking-[0.06em] uppercase"
+                  >
                     Рекомендация
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {shown.map((r, i) => {
-                  const tone = toneOf(r.recommendation);
+                  const tone = r.recommendation ? toneOf(r.recommendation) : null;
                   const dl = deadlineInfo(r.application_deadline);
                   const open = () => navigate(`/procurements/${r.procurement_id}`);
                   return (
@@ -468,15 +537,25 @@ export default function ResultsPage() {
                       style={{ animationDelay: `${Math.min(i, 12) * 35}ms` }}
                     >
                       <td className="py-3.5 pr-3 pl-5">
-                        <div className="flex items-center gap-2.5">
-                          <span className={`min-w-[72px] shrink-0 font-display text-[22px] leading-none font-bold whitespace-nowrap tabular-nums ${tone.text}`}>
-                            {r.total}
-                            <span className="text-xs font-semibold">%</span>
-                          </span>
-                          <span className="h-1.5 w-12 overflow-hidden rounded-full bg-track" aria-hidden>
-                            <span className={`block h-full rounded-full ${tone.bar}`} style={{ width: `${Math.max(3, r.total)}%` }} />
-                          </span>
-                        </div>
+                        {r.total === null || !tone ? (
+                          <Recalculating />
+                        ) : (
+                          <div className={`flex items-center gap-2.5 ${r.stale ? 'opacity-50' : ''}`}>
+                            <span
+                              className={`min-w-[72px] shrink-0 font-display text-[22px] leading-none font-bold whitespace-nowrap tabular-nums ${tone.text}`}
+                            >
+                              {r.total}
+                              <span className="text-xs font-semibold">%</span>
+                            </span>
+                            <span className="h-1.5 w-12 overflow-hidden rounded-full bg-track" aria-hidden>
+                              <span
+                                className={`block h-full rounded-full ${tone.bar}`}
+                                style={{ width: `${Math.max(3, r.total)}%` }}
+                              />
+                            </span>
+                          </div>
+                        )}
+                        {r.stale && r.total !== null && <Recalculating small />}
                       </td>
                       <td className="max-w-[340px] px-3 py-3.5">
                         <div className="line-clamp-2 font-semibold group-hover:underline group-hover:decoration-line group-hover:underline-offset-4">
@@ -489,7 +568,9 @@ export default function ResultsPage() {
                       <td className="max-w-[240px] px-3 py-3.5">
                         <span className="line-clamp-2">{r.customer_name ?? '—'}</span>
                       </td>
-                      <td className="px-3 py-3.5 text-right font-semibold whitespace-nowrap tabular-nums">{formatMoneyShort(r.nmck)}</td>
+                      <td className="px-3 py-3.5 text-right font-semibold whitespace-nowrap tabular-nums">
+                        {formatMoneyShort(r.nmck)}
+                      </td>
                       <td className="px-3 py-3.5">{r.region ?? '—'}</td>
                       <td className="px-3 py-3.5 whitespace-nowrap">
                         <div>{formatDate(r.application_deadline)}</div>
@@ -497,9 +578,15 @@ export default function ResultsPage() {
                       </td>
                       <td className="px-3 py-3.5 pr-5">
                         <div className="flex flex-wrap items-center gap-1.5">
-                          <span className={`rounded-full px-2.5 py-1 text-[13px] font-bold whitespace-nowrap ${tone.bg} ${tone.text}`}>
-                            {RECOMMENDATION[r.recommendation].label}
-                          </span>
+                          {r.recommendation && tone ? (
+                            <span
+                              className={`rounded-full px-2.5 py-1 text-[13px] font-bold whitespace-nowrap ${tone.bg} ${tone.text}`}
+                            >
+                              {RECOMMENDATION[r.recommendation].label}
+                            </span>
+                          ) : (
+                            <span className="text-muted">—</span>
+                          )}
                           {r.has_stop_factor && (
                             <span
                               className="-rotate-[8deg] rounded border-2 border-brand px-1 font-display text-[10px] font-bold tracking-wider text-brand"
@@ -509,7 +596,10 @@ export default function ResultsPage() {
                             </span>
                           )}
                           {r.incomplete && (
-                            <span className="text-xs text-muted" title="Для части критериев не хватило данных">
+                            <span
+                              className="text-xs text-muted"
+                              title="Для части критериев не хватило данных"
+                            >
                               неполная
                             </span>
                           )}
@@ -521,12 +611,10 @@ export default function ResultsPage() {
               </tbody>
             </table>
           </div>
-
-          {/* Телефон — билеты */}
           <div className="flex flex-col gap-3 md:hidden">
             {shown.map((r, i) => (
-              <div key={r.procurement_id} className={`${TICKET_BG[r.recommendation]} rounded-[22px] p-1.5`}>
-                <Ticket row={r} notchClass={TICKET_BG[r.recommendation]} index={i} />
+              <div key={r.procurement_id} className={`${ticketBg(r)} rounded-[22px] p-1.5`}>
+                <Ticket row={r} notchClass={ticketBg(r)} index={i} />
               </div>
             ))}
           </div>
@@ -536,13 +624,104 @@ export default function ResultsPage() {
   );
 }
 
-/** Итог одной фразой + полоска распределения + ближайший срок */
+function Recalculating({ small = false }: { small?: boolean }) {
+  return (
+    <span
+      className={`inline-flex items-center gap-1.5 whitespace-nowrap text-brand ${small ? 'mt-1 text-xs' : 'text-sm font-semibold'}`}
+    >
+      <span
+        className="h-3 w-3 animate-spin rounded-full border-2 border-brand/30 border-t-brand"
+        aria-hidden
+      />
+      пересчитывается
+    </span>
+  );
+}
+
+/** Переключатель профиля над таблицей: по умолчанию активный, можно посмотреть любой */
+function ProfileSwitch(props: {
+  viewed: ProfileSummary;
+  active: ProfileSummary;
+  list: ProfileSummary[];
+  onView: (id: string) => void;
+}) {
+  const { viewed, active, list } = props;
+  const activate = useActivateProfile();
+  const other = list.find((p) => p.id !== viewed.id);
+
+  return (
+    <div className="flex flex-col gap-2 rounded-2xl bg-white px-4 py-2.5 ring-1 ring-line/70">
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+        <label htmlFor="viewed-profile" className="w-full text-sm text-muted sm:w-auto">
+          Оценки по профилю
+        </label>
+        {list.length > 1 ? (
+          <select
+            id="viewed-profile"
+            className="input min-h-10 w-full min-w-0 py-1.5 font-semibold sm:w-auto sm:max-w-full"
+            value={viewed.id}
+            onChange={(e) => props.onView(e.target.value)}
+          >
+            {list.map((p) => (
+              <option key={p.id} value={p.id}>
+                {p.name}
+                {p.is_active ? ' (активный)' : ''}
+              </option>
+            ))}
+          </select>
+        ) : (
+          <b>«{viewed.name}»</b>
+        )}
+        <span className="flex w-full gap-2 sm:ml-auto sm:w-auto">
+          {other && (
+            <Link
+              to={`/compare?a=${encodeURIComponent(viewed.id)}&b=${encodeURIComponent(other.id)}`}
+              className="btn-ghost btn-sm flex-1 sm:flex-none"
+            >
+              <span className="sm:hidden">Сравнить</span>
+              <span className="hidden sm:inline">Сравнить профили</span>
+            </Link>
+          )}
+          <Link
+            to={`/profile?id=${encodeURIComponent(viewed.id)}`}
+            className="btn-ghost btn-sm flex-1 sm:flex-none"
+          >
+            Настроить
+          </Link>
+        </span>
+      </div>
+      {!viewed.is_active && (
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-track pt-2 text-sm">
+          <span className="text-muted">
+            Это не активный профиль — новые загрузки оцениваются по «{active.name}».
+          </span>
+          <button
+            type="button"
+            className="btn-primary btn-sm w-full sm:w-auto"
+            disabled={activate.isPending}
+            onClick={() => activate.mutate({ id: viewed.id, name: viewed.name })}
+          >
+            {activate.isPending ? 'Переключаем…' : 'Сделать активным'}
+          </button>
+        </div>
+      )}
+      {activate.isError && <span className="text-sm text-bad">{activate.error.message}</span>}
+    </div>
+  );
+}
+
 function Summary({ rows }: { rows: ResultRow[] }) {
   const c = { participate: 0, consider: 0, skip: 0 };
-  rows.forEach((r) => c[r.recommendation]++);
+  rows.forEach((r) => r.recommendation && c[r.recommendation]++);
 
   const nearest = rows
-    .filter((r) => r.recommendation !== 'skip' && deadlineInfo(r.application_deadline).tone !== 'closed' && r.application_deadline)
+    .filter(
+      (r) =>
+        r.recommendation &&
+        r.recommendation !== 'skip' &&
+        deadlineInfo(r.application_deadline).tone !== 'closed' &&
+        r.application_deadline,
+    )
     .sort((a, b) => time(a.application_deadline) - time(b.application_deadline))[0];
 
   const title =
@@ -563,7 +742,9 @@ function Summary({ rows }: { rows: ResultRow[] }) {
         <p className="mb-2.5 text-[13px] font-semibold tracking-[0.08em] text-muted uppercase">
           Оценено {rows.length} {plural(rows.length, 'закупка', 'закупки', 'закупок')}
         </p>
-        <h1 className="font-display text-[28px] leading-tight font-bold text-balance sm:text-[38px]">{title}</h1>
+        <h1 className="font-display text-[28px] leading-tight font-bold text-balance sm:text-[38px]">
+          {title}
+        </h1>
         <p className="mt-2.5 max-w-[60ch] text-muted sm:text-base">
           {c.consider > 0 && `${c.consider} — на ваше усмотрение. `}
           {c.skip > 0 && `${c.skip} не ${plural(c.skip, 'подходит', 'подходят', 'подходят')}. `}
@@ -601,7 +782,12 @@ function Summary({ rows }: { rows: ResultRow[] }) {
 }
 
 /** Ввод суммы в миллионах, наружу отдаём рубли */
-function MillionsInput(props: { id: string; placeholder: string; value?: number; onChange: (v: number | undefined) => void }) {
+function MillionsInput(props: {
+  id: string;
+  placeholder: string;
+  value?: number;
+  onChange: (v: number | undefined) => void;
+}) {
   return (
     <input
       id={props.id}

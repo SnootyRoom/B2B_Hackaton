@@ -117,9 +117,13 @@ export default function RuleCard({ rule, onChange, onRemove }: Props) {
               </select>
             </label>
             {!isStop && (
-              <div className="flex items-center gap-2" role="radiogroup" aria-label="Важность">
-                <span className="text-muted">Важность</span>
-                <div className="flex rounded-xl bg-track p-0.5">
+              <div
+                className="flex w-full flex-wrap items-center gap-x-2 gap-y-1.5 sm:w-auto"
+                role="radiogroup"
+                aria-label="Важность"
+              >
+                <span className="w-full text-muted sm:w-auto">Важность</span>
+                <div className="flex w-full rounded-xl bg-track p-0.5 sm:w-auto">
                   {([1, 2, 3] as Weight[]).map((w) => (
                     <button
                       key={w}
@@ -128,7 +132,7 @@ export default function RuleCard({ rule, onChange, onRemove }: Props) {
                       aria-checked={rule.weight === w}
                       onClick={() => onChange({ ...rule, weight: w })}
                       className={
-                        'rounded-[10px] px-3 py-1.5 font-semibold ' +
+                        'flex-1 rounded-[10px] px-2 py-1.5 font-semibold sm:flex-none sm:px-3 ' +
                         (rule.weight === w ? 'bg-brand text-white' : 'text-muted hover:text-brand')
                       }
                     >
@@ -172,7 +176,8 @@ function Switch({
       title={label}
       onClick={() => onChange(!checked)}
       className={
-        'relative mt-0.5 h-6 w-10 shrink-0 rounded-full transition-colors ' + (checked ? 'bg-brand' : 'bg-line')
+        'relative mt-0.5 h-6 w-10 shrink-0 rounded-full transition-colors ' +
+        (checked ? 'bg-brand' : 'bg-line')
       }
     >
       <span

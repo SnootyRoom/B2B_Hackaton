@@ -109,8 +109,8 @@ class ProcurementDetail(BaseModel):
     updated_at: datetime
 
 
-class ResultRow(BaseModel):
-    """Строка таблицы «Результаты»."""
+class ProcurementBrief(BaseModel):
+    """Данные закупки для строк таблиц «Результаты» и «Сравнение»."""
 
     procurement_id: UUID
     reg_number: str
@@ -121,7 +121,88 @@ class ResultRow(BaseModel):
     region: str | None
     law: Law | None
     application_deadline: datetime | None
+
+
+class ResultRow(ProcurementBrief):
+    """Строка таблицы «Результаты». GET /results?profile_id= (по умолчанию активный)."""
+
     total: int | None
     recommendation: Recommendation | None
     incomplete: bool
     has_stop_factor: bool
+    stale: bool = Field(
+        default=False,
+        description="Оценки нет или она устарела (профиль или закупка изменились) — "
+        "на фронте «пересчитывается»",
+    )
+
+
+# ---------- Сравнение двух профилей (задача A) ----------
+
+
+class ScoreBrief(BaseModel):
+    total: int | None = Field(description="None — оценки по профилю ещё нет")
+    recommendation: Recommendation | None
+    stale: bool = False
+
+
+class Change(StrEnum):
+    """Изменение рекомендации от профиля A к профилю B (participate > consider > skip)."""
+
+    better = "better"
+    worse = "worse"
+    same = "same"
+    unknown = "unknown"  # хотя бы в одном профиле нет актуальной оценки
+
+
+class CompareRow(ProcurementBrief):
+    a: ScoreBrief
+    b: ScoreBrief
+    change: Change
+    delta: int | None = Field(description="b.total − a.total; None — нет одной из оценок")
+    explanation: str = Field(
+        description="Почему рекомендации разные: до 3 фраз со ссылками [rule_id], "
+        "по шаблонам. Пусто при change=same и одинаковом итоге"
+    )
+
+
+class CompareSummary(BaseModel):
+    better: int
+    worse: int
+    same: int
+    unknown: int
+
+
+class CompareOut(BaseModel):
+    """GET /results/compare?a=&b=. Только чтение, задачи не запускает.
+
+    missing > 0 → фронт запускает POST /score {profile_id, only_stale: true} для A и B,
+    показывает прогресс и перезапрашивает сравнение.
+    """
+
+    profile_a: UUID
+    profile_b: UUID
+    rows: list[CompareRow] = Field(description="Сначала изменившиеся, затем по |delta|")
+    summary: CompareSummary
+    missing: int = Field(description="Сколько оценок (по A и B вместе) нет или устарело")
+
+
+# ---------- Загрузка по реестровому номеру (задача B) ----------
+
+MAX_FETCH_NUMBERS = 200
+# 44-ФЗ — 19 цифр, 223-ФЗ — 11 цифр, старые извещения 223-ФЗ — 18 цифр
+REG_NUMBER_PATTERN = r"\d{11}|\d{18}|\d{19}"
+
+
+class FetchRequest(BaseModel):
+    """POST /procurements/fetch → 202 TaskCreated (kind=fetch).
+
+    Элементы списка можно передавать как есть из поля ввода: сервер дополнительно делит их
+    по пробелам, переносам, запятым и «;», убирает повторы. Номера неверного формата
+    попадают в задачу строками со статусом error и кодом INVALID_REG_NUMBER.
+    Все номера неверные или их нет → 400 INVALID_REG_NUMBER (details.invalid).
+    Больше MAX_FETCH_NUMBERS после удаления повторов → 400 TOO_MANY_NUMBERS.
+    Повторный номер обновляет существующую закупку.
+    """
+
+    numbers: list[str] = Field(min_length=1, max_length=2000)

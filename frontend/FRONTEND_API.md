@@ -34,3 +34,59 @@
 
 На бэкенде нет: загрузки `.zip`, `POST /procurements/upload-demo` («Попробовать на примере»),
 `PUT /procurements/{id}/customer-inn` (ручной ИНН). Кнопки показываются при `VITE_USE_MOCK=true`.
+
+## Несколько профилей и сравнение (задача A)
+
+Схемы — `backend/app/schemas/scoring.py` (`ProfileSummary`, `CreateProfileRequest`,
+`RenameProfileRequest`, `ProfileTaskResponse`) и `procurement.py` (`CompareOut`).
+Задача A на бэкенде готова целиком. Шаблоны «Осторожный» /
+«Агрессивный» — вариации активного профиля (см. `template_profile` в `scoring/defaults.py`).
+
+| Запрос                                                    | Ответ                               | Готово |
+| --------------------------------------------------------- | ----------------------------------- | ------ |
+| `GET /scoring-profiles`                                   | `ProfileSummary[]`, активный первым | ✅     |
+| `GET /scoring-profiles/{id}`                              | `ScoringProfileOut`                 | ✅     |
+| `POST /scoring-profiles` `{name, template?, rules?, ...}` | `201 ScoringProfileOut`             | ✅     |
+| `PUT /scoring-profiles/{id}` (тело как у `/active`)       | `SaveProfileResponse`               | ✅     |
+| `PATCH /scoring-profiles/{id}` `{name}`                   | `ProfileSummary`                    | ✅     |
+| `POST /scoring-profiles/{id}/duplicate`                   | `201 ScoringProfileOut`             | ✅     |
+| `DELETE /scoring-profiles/{id}`                           | `{task_id: uuid \| null}`           | ✅     |
+| `POST /scoring-profiles/{id}/activate`                    | `{task_id: uuid \| null}`           | ✅     |
+| `GET /results?profile_id=`                                | `ResultRow[]`, у строк `stale`      | ✅     |
+| `POST /score` `{profile_id?, only_stale?}`                | `202 {task_id}`                     | ✅     |
+| `GET /results/compare?a=&b=`                              | `CompareOut`                        | ✅     |
+
+- `GET/PUT /scoring-profiles/active` остаются как были.
+- `task_id: null` у activate/DELETE — пересчитывать нечего, ждать не нужно.
+  Повторный activate во время пересчёта вернёт тот же `task_id`.
+- `ResultRow.stale: true` — оценки нет или она устарела → в таблице «пересчитывается».
+- Сравнение только читает. `CompareOut.missing > 0` → запустить
+  `POST /score {profile_id: a, only_stale: true}` и то же для `b`, показать прогресс задач,
+  затем перезапросить сравнение.
+- `CompareRow.change`: `better` / `worse` / `same` / `unknown` (нет одной из оценок) —
+  изменение рекомендации от A к B; `delta = b.total − a.total`; `explanation` — готовый текст
+  со ссылками `[rule_id]`.
+- Ошибки: `PROFILE_NAME_TAKEN` (409), `LAST_PROFILE` (400), `TOO_MANY_PROFILES` (400, лимит 20).
+
+## Загрузка по реестровому номеру (задача B)
+
+- `POST /procurements/fetch` `{numbers: string[]}` → `202 {task_id}` ✅.
+  Можно слать строки как есть из поля: сервер сам делит по пробелам, переносам, `,` и `;`
+  и убирает повторы. Формат номера — `REG_NUMBER_PATTERN`: 11, 18 или 19 цифр.
+- Неверные номера не срывают пакет: они попадают в задачу строками со статусом `error`
+  и кодом `INVALID_REG_NUMBER`. Все неверные → `400 INVALID_REG_NUMBER`
+  (`details.invalid`). Больше 200 номеров → `400 TOO_MANY_NUMBERS`.
+- Задача `kind=fetch` — та же `TaskOut`: `files[].filename` — номер, статусы
+  `pending` / `ok` / `error`. «Загружаем» — строка `pending` с позицией `== processed`.
+  `ok` → `procurement_ids` ведут на карточки.
+- Коды ошибок по номеру: `EIS_NOT_FOUND`, `EIS_UNAVAILABLE`, `INVALID_REG_NUMBER`;
+  предупреждение `EIS_FALLBACK_SAMPLE` — документ взят из локальных образцов.
+- История — `GET /tasks?kind=fetch`. Повторный номер обновляет закупку, дублей нет.
+
+## Вход
+
+- `POST /auth/login`: после 5 неудачных попыток для одного e-mail (или 30 с одного адреса)
+  за 15 минут — `429 TOO_MANY_ATTEMPTS`, в `details.retry_after` — сколько секунд ждать.
+  `message` показываем как есть.
+- Регистрация: пароль не длиннее 72 байт (72 латинских символа или 36 русских букв) —
+  иначе `422` с понятным текстом.

@@ -1,7 +1,8 @@
-import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { api } from '../api';
 import { ApiError } from '../api/client';
 import type { Task } from '../api/types';
+import { startRescoreIndicator } from './rescore';
 
 export const qk = {
   me: ['me'] as const,
@@ -11,6 +12,9 @@ export const qk = {
   task: (id: string) => ['task', id] as const,
   uploads: ['uploads'] as const,
   catalog: ['catalog'] as const,
+  profiles: ['profiles'] as const,
+  profileById: (id: string) => ['profile', id] as const,
+  compare: (a: string, b: string) => ['compare', a, b] as const,
 };
 
 /** Текущий пользователь. null — не вошёл. */
@@ -45,6 +49,39 @@ export function useProfile() {
   });
 }
 
+export function useProfiles() {
+  return useQuery({ queryKey: qk.profiles, queryFn: () => api.listProfiles() });
+}
+
+export function useProfileById(id: string | undefined) {
+  return useQuery({
+    queryKey: qk.profileById(id ?? ''),
+    queryFn: () => api.getProfile(id!),
+    enabled: Boolean(id),
+  });
+}
+
+/** После любых изменений профилей: список, активный, результаты и сравнение */
+export async function refreshProfiles(qc: ReturnType<typeof useQueryClient>) {
+  await qc.invalidateQueries({ queryKey: ['profiles'] });
+  await qc.invalidateQueries({ queryKey: ['profile'] });
+  await qc.invalidateQueries({ queryKey: ['results'] });
+  await qc.invalidateQueries({ queryKey: ['compare'] });
+}
+
+/** Сделать профиль активным: сервер пересчитывает оценки, полоска под шапкой показывает прогресс */
+export function useActivateProfile() {
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: (p: { id: string; name: string }) => api.activateProfile(p.id),
+    onSuccess: async (r, p) => {
+      await refreshProfiles(qc);
+      // task_id = null — все оценки уже актуальны, полоска сразу скажет «готово»
+      startRescoreIndicator({ taskId: r.task_id, profileName: p.name });
+    },
+  });
+}
+
 const isRunning = (t: Task | undefined) => !t || t.status === 'queued' || t.status === 'processing';
 
 /** Опрос фоновой задачи раз в 1,5 с, пока она не закончится (аналитика: 1–2 с) */
@@ -55,11 +92,14 @@ export function useTask(id: string | null, onFinish?: (t: Task) => void) {
     enabled: Boolean(id),
     queryFn: async () => {
       const t = await api.getTask(id!);
+      // Пересчёт идёт — строки таблицы обновляются по мере готовности, а не только в конце
+      if (t.kind === 'rescore' && isRunning(t)) await qc.invalidateQueries({ queryKey: ['results'] });
       if (!isRunning(t)) {
         // Оценки поменялись — обновим таблицу и карточки
         await qc.invalidateQueries({ queryKey: ['results'] });
         await qc.invalidateQueries({ queryKey: ['procurement'] });
         await qc.invalidateQueries({ queryKey: ['uploads'] });
+        await qc.invalidateQueries({ queryKey: ['compare'] });
         onFinish?.(t);
       }
       return t;

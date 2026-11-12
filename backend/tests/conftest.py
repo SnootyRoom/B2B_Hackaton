@@ -48,6 +48,9 @@ def _schema() -> Iterator[None]:
 
 @pytest.fixture(autouse=True)
 def _clean() -> Iterator[None]:
+    from app.core import login_limit
+
+    login_limit.reset_all()
     yield
     with engine.begin() as conn:
         tables = ", ".join(t.name for t in Base.metadata.sorted_tables)

@@ -73,3 +73,11 @@ class ScoreRequest(BaseModel):
     procurement_ids: list[UUID] | None = Field(
         default=None, description="None — пересчитать все закупки пользователя"
     )
+    profile_id: UUID | None = Field(
+        default=None, description="Профиль для оценки; None — активный. Чужой → 404"
+    )
+    only_stale: bool = Field(
+        default=False,
+        description="Только закупки без оценки по профилю или с устаревшей оценкой "
+        "(досчёт перед сравнением). Если считать нечего — задача сразу done, total=0",
+    )

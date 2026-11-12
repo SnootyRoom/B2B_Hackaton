@@ -1,13 +1,14 @@
-from fastapi import APIRouter, Response
+from fastapi import APIRouter, Request, Response
 from sqlalchemy import func, select
 
 from app.api.deps import DB, CurrentUser, get_active_profile
+from app.core import login_limit
 from app.core.config import get_settings
 from app.core.errors import AppError
 from app.core.security import create_access_token, hash_password, verify_password
 from app.models import User
 from app.schemas.auth import LoginRequest, RegisterRequest, UserOut
-from app.schemas.common import ErrorCode
+from app.schemas.common import ErrorCode, ErrorResponse
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -38,11 +39,32 @@ def register(body: RegisterRequest, db: DB, response: Response) -> User:
     return user
 
 
-@router.post("/login", response_model=UserOut)
-def login(body: LoginRequest, db: DB, response: Response) -> User:
-    user = db.scalar(select(User).where(func.lower(User.email) == body.email.lower()))
+def _client_ip(request: Request) -> str | None:
+    """Адрес пользователя: nginx фронта передаёт его в X-Real-IP."""
+    return request.headers.get("x-real-ip") or (request.client.host if request.client else None)
+
+
+@router.post(
+    "/login",
+    response_model=UserOut,
+    responses={401: {"model": ErrorResponse}, 429: {"model": ErrorResponse}},
+)
+def login(body: LoginRequest, db: DB, request: Request, response: Response) -> User:
+    email, ip = body.email.lower(), _client_ip(request)
+    wait = login_limit.retry_after(email, ip)
+    if wait is not None:
+        minutes = max(1, -(-wait // 60))
+        raise AppError(
+            ErrorCode.TOO_MANY_ATTEMPTS,
+            f"Слишком много неудачных попыток входа. Попробуйте через {minutes} мин.",
+            429,
+            {"retry_after": wait},
+        )
+    user = db.scalar(select(User).where(func.lower(User.email) == email))
     if user is None or not verify_password(body.password, user.password_hash):
+        login_limit.register_failure(email, ip)
         raise AppError(ErrorCode.INVALID_CREDENTIALS, "Неверный e-mail или пароль", 401)
+    login_limit.reset(email)
     _set_cookie(response, user)
     return user
 
