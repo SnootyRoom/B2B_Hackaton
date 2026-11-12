@@ -305,7 +305,7 @@ export const FIELDS: FieldDef[] = [
   },
   {
     key: 'customer.age_years',
-    label: 'Возраст заказчика',
+    label: 'Срок работы заказчика',
     group: 'customer',
     operators: ['gte', 'between'],
     valueType: 'number',

@@ -21,9 +21,12 @@ export default function Layout({ user }: { user: User }) {
   const logout = useMutation({
     mutationFn: api.logout,
     onSettled: () => {
-      qc.clear();
+      // Сначала «забываем» пользователя — App сразу покажет экран входа.
+      // qc.clear() здесь нельзя: он удаляет запросы, не сообщая о них экранам, и App не узнаёт о выходе.
       qc.setQueryData(qk.me, null);
-      navigate('/');
+      qc.removeQueries({ predicate: (q) => q.queryKey[0] !== 'me' });
+      clearRescoreIndicator();
+      navigate('/', { replace: true });
     },
   });
 

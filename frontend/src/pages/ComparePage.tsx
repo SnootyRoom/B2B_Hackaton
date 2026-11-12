@@ -18,8 +18,8 @@ type SortMode = 'changed' | 'up' | 'down';
 
 const SORTS: [SortMode, string, string, string][] = [
   ['changed', 'Сначала изменившиеся', '', ''],
-  ['up', 'Сильнее выросла оценка', '▲', 'text-good'],
-  ['down', 'Сильнее упала оценка', '▼', 'text-bad'],
+  ['up', 'Разница по убыванию', '▼', 'text-muted'],
+  ['down', 'Разница по возрастанию', '▲', 'text-muted'],
 ];
 
 const CHANGE_VIEW: Record<Change, { label: string; arrow: string; cls: string; row: string }> = {
@@ -234,7 +234,7 @@ function CompareView({ a, b }: { a: ProfileSummary; b: ProfileSummary }) {
           on={current === 'changed'}
           onClick={() => setFilter('changed')}
           n={changedCount}
-          label="Только где отличается"
+          label="Изменилось"
           tone="text-brand"
         />
         <SummaryTab
@@ -298,7 +298,12 @@ function CompareView({ a, b }: { a: ProfileSummary; b: ProfileSummary }) {
             );
           })}
         </div>
-        <button type="button" className="btn-ghost ml-auto" onClick={exportCsv} disabled={shown.length === 0}>
+        <button
+          type="button"
+          className="flex min-h-11 w-full items-center justify-center rounded-2xl bg-white px-4 py-2 text-sm font-semibold ring-1 ring-line transition-all hover:ring-brand/50 disabled:cursor-not-allowed disabled:opacity-40 sm:ml-auto sm:w-auto"
+          onClick={exportCsv}
+          disabled={shown.length === 0}
+        >
           Скачать для Excel
         </button>
       </div>

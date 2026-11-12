@@ -652,13 +652,13 @@ function ProfileSwitch(props: {
   return (
     <div className="flex flex-col gap-2 rounded-2xl bg-white px-4 py-2.5 ring-1 ring-line/70">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-        <label htmlFor="viewed-profile" className="text-sm text-muted">
+        <label htmlFor="viewed-profile" className="w-full text-sm text-muted sm:w-auto">
           Оценки по профилю
         </label>
         {list.length > 1 ? (
           <select
             id="viewed-profile"
-            className="input min-h-10 max-w-full min-w-0 py-1.5 font-semibold"
+            className="input min-h-10 w-full min-w-0 py-1.5 font-semibold sm:w-auto sm:max-w-full"
             value={viewed.id}
             onChange={(e) => props.onView(e.target.value)}
           >
@@ -672,16 +672,20 @@ function ProfileSwitch(props: {
         ) : (
           <b>«{viewed.name}»</b>
         )}
-        <span className="ml-auto flex flex-wrap gap-2">
+        <span className="flex w-full gap-2 sm:ml-auto sm:w-auto">
           {other && (
             <Link
               to={`/compare?a=${encodeURIComponent(viewed.id)}&b=${encodeURIComponent(other.id)}`}
-              className="btn-ghost btn-sm"
+              className="btn-ghost btn-sm flex-1 sm:flex-none"
             >
-              Сравнить профили
+              <span className="sm:hidden">Сравнить</span>
+              <span className="hidden sm:inline">Сравнить профили</span>
             </Link>
           )}
-          <Link to={`/profile?id=${encodeURIComponent(viewed.id)}`} className="btn-ghost btn-sm">
+          <Link
+            to={`/profile?id=${encodeURIComponent(viewed.id)}`}
+            className="btn-ghost btn-sm flex-1 sm:flex-none"
+          >
             Настроить
           </Link>
         </span>
@@ -693,7 +697,7 @@ function ProfileSwitch(props: {
           </span>
           <button
             type="button"
-            className="btn-primary btn-sm"
+            className="btn-primary btn-sm w-full sm:w-auto"
             disabled={activate.isPending}
             onClick={() => activate.mutate({ id: viewed.id, name: viewed.name })}
           >

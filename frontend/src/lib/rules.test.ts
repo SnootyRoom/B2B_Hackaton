@@ -23,7 +23,7 @@ describe('человеческая формулировка правила', () 
       'Срок на подачу заявки не меньше 5 дней',
     );
     expect(clean(describeRule({ field: 'customer.age_years', operator: 'gte', value: 1 }))).toBe(
-      'Возраст заказчика не меньше 1 года',
+      'Срок работы заказчика не меньше 1 года',
     );
     expect(clean(describeRule({ field: 'delivery_days', operator: 'between', value: [3, 10] }))).toBe(
       'Срок поставки от 3 до 10 дней',

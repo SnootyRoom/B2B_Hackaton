@@ -343,7 +343,7 @@ function Breakdown({
         );
       })}
 
-      <div className="grid grid-cols-[minmax(0,1fr)_64px] items-center gap-3 border-t-2 border-ink pt-3.5 sm:grid-cols-[24px_minmax(0,1.3fr)_minmax(120px,1fr)_72px]">
+      <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 border-t-2 border-ink pt-3.5 sm:grid-cols-[24px_minmax(0,1.3fr)_minmax(120px,1fr)_72px]">
         <span className="hidden sm:block" />
         <div className="text-base font-bold">Итог</div>
         <div className="relative col-span-2 h-9 sm:col-span-1" aria-hidden>
@@ -364,10 +364,11 @@ function Breakdown({
           />
         </div>
         <div
-          className={`row-start-1 text-right font-display text-[22px] font-bold sm:row-start-auto ${tone.text}`}
+          className={`row-start-1 text-right font-display text-[22px] font-bold whitespace-nowrap sm:row-start-auto ${tone.text}`}
           style={{ gridColumn: '-2' }}
         >
-          {score.total}%
+          {score.total}
+          <span className="text-sm">%</span>
         </div>
       </div>
     </section>
@@ -573,7 +574,7 @@ function CustomerBlock({
               {CUSTOMER_STATUS_LABEL[c.status]}
             </span>
           </Row>
-          <Row label="Возраст">
+          <Row label="Срок работы">
             {age === null
               ? NO_DATA
               : `${age} ${plural(age, 'год', 'года', 'лет')} (с ${formatDate(c.registration_date)})`}
