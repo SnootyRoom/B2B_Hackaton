@@ -15,6 +15,11 @@ class Settings(BaseSettings):
     cookie_name: str = "access_token"
     cookie_secure: bool = False
 
+    # Неудачных попыток входа за окно: по e-mail и по IP (адрес — из X-Real-IP от nginx)
+    login_max_failures: int = 5
+    login_max_failures_ip: int = 30
+    login_window_s: int = 900
+
     demo_user_email: str = "demo@example.com"
     demo_user_password: str = "demo12345"
 
@@ -34,6 +39,8 @@ class Settings(BaseSettings):
     # Каталоги данных из репозитория (монтируются в контейнер)
     customers_dir: Path = Path("/repo/data/customers")
     demo_dir: Path = Path("/repo/data/demo")
+    # Запасной источник для загрузки по номеру: <номер>.xml (если ЕИС недоступна)
+    samples_dir: Path = Path("/repo/data/samples")
     # Полный справочник ОКПД2 (code;name) и индекс векторов рядом (okpd2.npy)
     okpd2_csv: Path = Path("/repo/data/okpd2.csv")
     # Кандидатов ОКПД2 на одно описание деятельности: шаг 1 подбора кодов профиля

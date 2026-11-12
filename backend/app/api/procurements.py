@@ -7,11 +7,12 @@ from sqlalchemy import select
 
 from app.api.deps import DB, CurrentUser, get_active_profile, get_owned
 from app.core.config import get_settings
-from app.core.errors import AppError, not_implemented
+from app.core.errors import AppError
 from app.models import CustomerProfile, Procurement, ScoreResult, Task, TaskFile
 from app.schemas.common import ErrorCode, ErrorResponse
 from app.schemas.customer import CustomerProfileOut
 from app.schemas.procurement import (
+    MAX_FETCH_NUMBERS,
     FetchRequest,
     ProcurementData,
     ProcurementDetail,
@@ -20,6 +21,7 @@ from app.schemas.procurement import (
 from app.schemas.score import ScoreResultOut
 from app.schemas.task import TaskCreated, TaskKind
 from app.tasks.jobs import enqueue
+from app.tasks.notice_source import is_valid
 
 router = APIRouter(prefix="/procurements", tags=["procurements"])
 
@@ -32,16 +34,65 @@ def _safe_name(name: str) -> str:
     return re.sub(r"[^\w.\-]+", "_", stem)[:150] or "file"
 
 
+_SPLIT = re.compile(r"[\s,;]+")
+_URL_NUMBER = re.compile(r"regNumber=(\d+)", re.IGNORECASE)
+_MAX_INVALID = 50
+
+
+def split_numbers(raw: list[str]) -> tuple[list[str], list[str]]:
+    """Строки из поля ввода → (верные номера, неверные) без повторов, в исходном порядке.
+    Делит по пробелам, переносам, «,» и «;»; из ссылки на карточку берёт regNumber;
+    «№» и пробелы внутри номера убираются."""
+    valid: list[str] = []
+    invalid: list[str] = []
+    seen: set[str] = set()
+    for chunk in raw:
+        for token in _SPLIT.split(chunk.replace(" ", " ")):
+            token = token.strip().lstrip("№")
+            if not token:
+                continue
+            if m := _URL_NUMBER.search(token):
+                token = m.group(1)
+            if token in seen:
+                continue
+            seen.add(token)
+            (valid if is_valid(token) else invalid).append(token[:64])
+    return valid, invalid
+
+
 @router.post(
     "/fetch",
     response_model=TaskCreated,
     status_code=202,
-    responses={400: {"model": ErrorResponse}, 501: {"model": ErrorResponse}},
+    responses={400: {"model": ErrorResponse}},
 )
 def fetch(body: FetchRequest, db: DB, user: CurrentUser) -> TaskCreated:
     """Реестровые номера → задача kind=fetch; документы скачиваются из ЕИС в фоне
-    и идут тем же путём, что загруженный файл."""
-    raise not_implemented()
+    и идут тем же путём, что загруженный файл. Повторный номер обновляет закупку."""
+    valid, invalid = split_numbers(body.numbers)
+    if not valid:
+        raise AppError(
+            ErrorCode.INVALID_REG_NUMBER,
+            "Не нашли ни одного реестрового номера: нужно 11, 18 или 19 цифр",
+            details={"invalid": invalid[:_MAX_INVALID]},
+        )
+    if len(valid) > MAX_FETCH_NUMBERS:
+        raise AppError(
+            ErrorCode.TOO_MANY_NUMBERS,
+            f"За один раз — не больше {MAX_FETCH_NUMBERS} номеров, а в списке {len(valid)}. "
+            "Разбейте список на части",
+            details={"count": len(valid), "limit": MAX_FETCH_NUMBERS},
+        )
+    # Неверные номера — тоже строки задачи: пользователь видит, что пропущено и почему
+    numbers = valid + invalid[:_MAX_INVALID]
+    task = Task(owner_id=user.id, kind=TaskKind.fetch, total=len(numbers))
+    db.add(task)
+    db.flush()
+    for pos, number in enumerate(numbers):
+        db.add(TaskFile(task_id=task.id, position=pos, filename=number, stored_path=""))
+    db.commit()
+    enqueue(task)
+    return TaskCreated(task_id=task.id)
 
 
 @router.post(

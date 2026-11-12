@@ -75,6 +75,26 @@
               }
             }
           },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
           "422": {
             "description": "Validation Error",
             "content": {
@@ -157,7 +177,7 @@
           "procurements"
         ],
         "summary": "Fetch",
-        "description": "Реестровые номера → задача kind=fetch; документы скачиваются из ЕИС в фоне\nи идут тем же путём, что загруженный файл.",
+        "description": "Реестровые номера → задача kind=fetch; документы скачиваются из ЕИС в фоне\nи идут тем же путём, что загруженный файл. Повторный номер обновляет закупку.",
         "operationId": "fetch_api_procurements_fetch_post",
         "parameters": [
           {
@@ -207,16 +227,6 @@
               }
             },
             "description": "Bad Request"
-          },
-          "501": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            },
-            "description": "Not Implemented"
           },
           "422": {
             "description": "Validation Error",
@@ -2162,6 +2172,7 @@
           "NOT_IMPLEMENTED",
           "EMAIL_TAKEN",
           "INVALID_CREDENTIALS",
+          "TOO_MANY_ATTEMPTS",
           "NOT_AUTHENTICATED",
           "NOT_FOUND",
           "VALIDATION_ERROR",

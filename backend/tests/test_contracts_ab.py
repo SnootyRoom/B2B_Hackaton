@@ -5,7 +5,6 @@
 
 import uuid
 
-import pytest
 from fastapi.testclient import TestClient
 
 from app.schemas.procurement import REG_NUMBER_PATTERN
@@ -59,21 +58,6 @@ def test_score_accepts_profile_and_only_stale(client: TestClient) -> None:
     r = client.post("/api/score", json={"profile_id": pid, "only_stale": True})
     assert r.status_code == 202
     assert "task_id" in r.json()
-
-
-@pytest.mark.parametrize(
-    ("method", "path", "body"),
-    [
-        ("post", "/api/procurements/fetch", {"numbers": ["0101300020326000001"]}),
-    ],
-)
-def test_stubs_answer_501(
-    client: TestClient, method: str, path: str, body: dict[str, object] | None
-) -> None:
-    pid = _profiles(client)[0]["id"]
-    r = client.request(method, path.format(pid=pid), json=body)
-    assert r.status_code == 501, r.text
-    assert r.json()["error"]["code"] == "NOT_IMPLEMENTED"
 
 
 def test_create_profile_validation(client: TestClient) -> None:
