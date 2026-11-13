@@ -1,4 +1,5 @@
 import re
+import shutil
 import uuid
 from pathlib import Path
 
@@ -127,23 +128,28 @@ def upload(files: list[UploadFile], db: DB, user: CurrentUser) -> TaskCreated:
     task_dir = s.upload_dir / str(task.id)
     task_dir.mkdir(parents=True, exist_ok=True)
     limit = s.upload_max_file_mb * 1024 * 1024
-    for pos, f in enumerate(files):
-        name = f.filename or f"file{pos}"
-        path = task_dir / f"{pos:04d}_{_safe_name(name)}"
-        size = 0
-        with path.open("wb") as out:
-            while chunk := f.file.read(_CHUNK):
-                size += len(chunk)
-                if size > limit:
-                    raise AppError(
-                        ErrorCode.FILE_TOO_LARGE,
-                        f"Файл {name} больше {s.upload_max_file_mb} МБ",
-                        413,
-                        {"filename": name},
-                    )
-                out.write(chunk)
-        db.add(TaskFile(task_id=task.id, position=pos, filename=name, stored_path=str(path)))
-    db.commit()
+    try:
+        for pos, f in enumerate(files):
+            name = f.filename or f"file{pos}"
+            path = task_dir / f"{pos:04d}_{_safe_name(name)}"
+            size = 0
+            with path.open("wb") as out:
+                while chunk := f.file.read(_CHUNK):
+                    size += len(chunk)
+                    if size > limit:
+                        raise AppError(
+                            ErrorCode.FILE_TOO_LARGE,
+                            f"Файл {name} больше {s.upload_max_file_mb} МБ",
+                            413,
+                            {"filename": name},
+                        )
+                    out.write(chunk)
+            db.add(TaskFile(task_id=task.id, position=pos, filename=name, stored_path=str(path)))
+        db.commit()
+    except Exception:
+        # Загрузка отклонена — задача не сохранилась, файлам на диске тоже не место
+        shutil.rmtree(task_dir, ignore_errors=True)
+        raise
     enqueue(task)
     return TaskCreated(task_id=task.id)
 
