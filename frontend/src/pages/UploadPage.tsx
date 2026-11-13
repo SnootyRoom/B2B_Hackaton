@@ -15,8 +15,12 @@ const MB = 1024 * 1024;
 /** Проверка до отправки — чтобы не ждать ответа сервера на заведомо неподходящий файл */
 function checkFile(f: File): string | null {
   const name = f.name.toLowerCase();
-  if (!ACCEPTED_EXT.some((ext) => name.endsWith(ext))) return 'Подходят только файлы .xml и .json';
-  if (f.size > UPLOAD_LIMITS.fileMb * MB) return `Файл больше ${UPLOAD_LIMITS.fileMb} МБ`;
+  if (!ACCEPTED_EXT.some((ext) => name.endsWith(ext)))
+    return 'Подходят только файлы .xml, .json и архивы .zip';
+  // архив распаковывается на сервере, у него свой лимит
+  const isZip = name.endsWith('.zip');
+  const limitMb = isZip ? UPLOAD_LIMITS.archiveMb : UPLOAD_LIMITS.fileMb;
+  if (f.size > limitMb * MB) return `${isZip ? 'Архив' : 'Файл'} больше ${limitMb} МБ`;
   return null;
 }
 
@@ -188,7 +192,8 @@ export default function UploadPage() {
                 </span>
               ))}
               <span className="px-1 py-0.5">
-                файл до {UPLOAD_LIMITS.fileMb} МБ · до {UPLOAD_LIMITS.maxFiles} файлов
+                файл до {UPLOAD_LIMITS.fileMb} МБ · архив до {UPLOAD_LIMITS.archiveMb} МБ · до{' '}
+                {UPLOAD_LIMITS.maxFiles} файлов
               </span>
             </span>
             <input

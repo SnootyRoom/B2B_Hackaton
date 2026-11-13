@@ -21,12 +21,13 @@ from app.schemas.procurement import (
 )
 from app.schemas.score import ScoreResultOut
 from app.schemas.task import TaskCreated, TaskKind
+from app.tasks.archive import is_archive
 from app.tasks.jobs import enqueue
 from app.tasks.notice_source import is_valid
 
 router = APIRouter(prefix="/procurements", tags=["procurements"])
 
-ALLOWED_EXTENSIONS = {".xml", ".json"}  # .zip — P1
+ALLOWED_EXTENSIONS = {".xml", ".json", ".zip"}
 _CHUNK = 1024 * 1024
 
 
@@ -118,7 +119,7 @@ def upload(files: list[UploadFile], db: DB, user: CurrentUser) -> TaskCreated:
         if ext not in ALLOWED_EXTENSIONS:
             raise AppError(
                 ErrorCode.UNSUPPORTED_FORMAT,
-                f"Файл {f.filename} не похож на выгрузку из ЕИС (нужен .xml или .json)",
+                f"Файл {f.filename} не похож на выгрузку из ЕИС (нужен .xml, .json или .zip)",
                 details={"filename": f.filename},
             )
 
@@ -127,10 +128,12 @@ def upload(files: list[UploadFile], db: DB, user: CurrentUser) -> TaskCreated:
     db.flush()
     task_dir = s.upload_dir / str(task.id)
     task_dir.mkdir(parents=True, exist_ok=True)
-    limit = s.upload_max_file_mb * 1024 * 1024
     try:
         for pos, f in enumerate(files):
             name = f.filename or f"file{pos}"
+            # Архив распаковывается в воркере; здесь только сохраняется с лимитом архива
+            mb = s.upload_max_archive_mb if is_archive(name) else s.upload_max_file_mb
+            limit = mb * 1024 * 1024
             path = task_dir / f"{pos:04d}_{_safe_name(name)}"
             size = 0
             with path.open("wb") as out:
@@ -139,7 +142,7 @@ def upload(files: list[UploadFile], db: DB, user: CurrentUser) -> TaskCreated:
                     if size > limit:
                         raise AppError(
                             ErrorCode.FILE_TOO_LARGE,
-                            f"Файл {name} больше {s.upload_max_file_mb} МБ",
+                            f"Файл {name} больше {mb} МБ",
                             413,
                             {"filename": name},
                         )

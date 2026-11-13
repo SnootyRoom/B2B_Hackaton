@@ -38,7 +38,7 @@ from app.schemas.task import FileStatus, TaskStatus
 from app.scoring.engine import Similarity, score
 from app.scoring.fields import extract_fields
 from app.scoring.version import engine_version, profile_version
-from app.tasks import staleness
+from app.tasks import archive, staleness
 from app.tasks.notice_source import FALLBACK_MESSAGE, NoticeError, get_notice
 
 log = logging.getLogger(__name__)
@@ -229,7 +229,14 @@ def _process_items(
 
 
 def process_upload(db: Session, task: Task) -> None:
+    archive_errors = archive.expand_archives(db, task)
+
     def handle(f: TaskFile, batch: _Batch) -> None:
+        if f.id in archive_errors:
+            raise archive_errors[f.id]
+        if not f.stored_path:
+            # файл из архива оказался больше лимита и не распаковывался
+            raise archive.too_large(f.filename)
         content = Path(f.stored_path).read_bytes()
         ingest_document(db, task.owner_id, f, content, f.filename, batch)
 
