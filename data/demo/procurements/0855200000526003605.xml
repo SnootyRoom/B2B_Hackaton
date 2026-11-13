@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns8:epNotificationEF2020 schemeVersion="16.3" xmlns="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns6="http://zakupki.gov.ru/oos/types/1" xmlns:ns5="http://zakupki.gov.ru/oos/KOTypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns7="http://zakupki.gov.ru/oos/CETypes/1" xmlns:ns2="http://zakupki.gov.ru/oos/base/1" xmlns:ns4="http://zakupki.gov.ru/oos/CPtypes/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1">
+    <id>44420925</id>
+    <externalId>3404484</externalId>
+    <versionNumber>1</versionNumber>
+    <commonInfo>
+        <purchaseNumber>0855200000526003605</purchaseNumber>
+        <docNumber>№0855200000526003605</docNumber>
+        <plannedPublishDate>2026-10-29+03:00</plannedPublishDate>
+        <publishDTInEIS>2026-10-29T15:28:59.998+03:00</publishDTInEIS>
+        <href>https://zakupki.gov.ru/epz/order/notice/ea20/view/common-info.html?regNumber=0855200000526003605</href>
+        <placingWay>
+            <ns2:code>EAP20</ns2:code>
+            <ns2:name>Электронный аукцион</ns2:name>
+        </placingWay>
+        <ETP>
+            <ns2:code>ETP_RTS</ns2:code>
+            <ns2:name>РТС-тендер</ns2:name>
+            <ns2:url>http://www.rts-tender.ru</ns2:url>
+        </ETP>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <purchaseObjectInfo>Поставка средств для ухода за кожей для санитарной обработки кожных покровов и ухода за пациентами реанимационных отделений ГБУЗ "ПОКБ им.Н.Н.Бурденко"</purchaseObjectInfo>
+    </commonInfo>
+    <purchaseResponsibleInfo>
+        <responsibleOrgInfo>
+            <regNum>08552000005</regNum>
+            <consRegistryNum>562ИЛ157</consRegistryNum>
+            <fullName>ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ ПЕНЗЕНСКОЙ ОБЛАСТИ "УПРАВЛЕНИЕ ПО ОСУЩЕСТВЛЕНИЮ ЗАКУПОК ПЕНЗЕНСКОЙ ОБЛАСТИ"</fullName>
+            <shortName>ГКУ УОЗ ПО</shortName>
+            <postAddress>440046, Пензенская область, город Пенза, Российская Федерация, 440046, Пензенская обл, Пенза г, Попова ул, СТР. 34А</postAddress>
+            <factAddress>440046, г. Пенза, ул. Попова, д. 34 А</factAddress>
+            <INN>5836013851</INN>
+            <KPP>583701001</KPP>
+        </responsibleOrgInfo>
+        <responsibleRole>AI</responsibleRole>
+        <responsibleInfo>
+            <orgPostAddress>440046, Пензенская область, город Пенза, Российская Федерация, 440046, Пензенская обл, Пенза г, Попова ул, СТР. 34А</orgPostAddress>
+            <orgFactAddress>440046, г. Пенза, ул. Попова, д. 34 А</orgFactAddress>
+            <contactPersonInfo>
+                <ns3:lastName>Липина</ns3:lastName>
+                <ns3:firstName>Оксана</ns3:firstName>
+                <ns3:middleName>Ивановна</ns3:middleName>
+            </contactPersonInfo>
+            <contactEMail>uozpo@mail.ru</contactEMail>
+            <contactPhone>7-8412-452438</contactPhone>
+            <contactFax>7 (8412) 452433</contactFax>
+            <addInfo>Государственное бюджетное учреждение здравоохранения «Пензенская областная клиническая больница им. Н.Н. Бурденко»
+440026, г. Пенза, ул. Лермонтова, 28 
+Тел. (8412) 54-82-03 
+E-mail: burdenko58@mail.ru  
+Специалист по закупкам контрактной службы – Живова Оксана Николаевна
+ (8412) 59-18-20</addInfo>
+        </responsibleInfo>
+    </purchaseResponsibleInfo>
+    <printFormInfo>
+        <ns3:url>https://zakupki.gov.ru/epz/order/notice/printForm/view.html?regNumber=0855200000526003605</ns3:url>
+    </printFormInfo>
+    <attachmentsInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1871D62C07C25857E3A6EB3DCE10B</ns3:publishedContentId>
+            <ns3:fileName>Обоснование Н(М)ЦК.pdf</ns3:fileName>
+            <ns3:fileSize>332996</ns3:fileSize>
+            <ns3:docDescription>Обоснование Н(М)ЦК.pdf</ns3:docDescription>
+            <ns3:docDate>2026-10-29T13:03:37+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1871D62C07C25857E3A6EB3DCE10B</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>MRJ</ns2:code>
+                <ns2:name>Обоснование начальной (максимальной) цены контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1871D63737F5F8A6F11D8B54EAB28</ns3:publishedContentId>
+            <ns3:fileName>Проект контракта.docx</ns3:fileName>
+            <ns3:fileSize>51576</ns3:fileSize>
+            <ns3:docDescription>Проект контракта.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-29T13:03:37+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1871D63737F5F8A6F11D8B54EAB28</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CP</ns2:code>
+                <ns2:name>Проект контракта</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1871D615A7E6EB0EB2377C406AD0B</ns3:publishedContentId>
+            <ns3:fileName>Описание объекта закупки.docx</ns3:fileName>
+            <ns3:fileSize>19626</ns3:fileSize>
+            <ns3:docDescription>Описание объекта закупки.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-29T13:03:37+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1871D615A7E6EB0EB2377C406AD0B</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>POD</ns2:code>
+                <ns2:name>Описание объекта закупки</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+        <ns3:attachmentInfo>
+            <ns3:publishedContentId>01A1871D64F170D98E6EFADEB54CD43F</ns3:publishedContentId>
+            <ns3:fileName>ТРЕБОВАНИЯ К СОДЕРЖАНИЮ, СОСТАВУ ЗАЯВКИ ДЛЯ УЧАСТИЯ В ЗАКУПКЕ И ИНСТРУКЦИЯ ПО ЕЕ ЗАПОЛНЕНИЮ.docx</ns3:fileName>
+            <ns3:fileSize>56828</ns3:fileSize>
+            <ns3:docDescription>ТРЕБОВАНИЯ К СОДЕРЖАНИЮ, СОСТАВУ ЗАЯВКИ ДЛЯ УЧАСТИЯ В ЗАКУПКЕ И ИНСТРУКЦИЯ ПО ЕЕ ЗАПОЛНЕНИЮ.docx</ns3:docDescription>
+            <ns3:docDate>2026-10-29T13:03:37+03:00</ns3:docDate>
+            <ns3:url>https://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=01A1871D64F170D98E6EFADEB54CD43F</ns3:url>
+            <ns3:docKindInfo>
+                <ns2:code>CAR</ns2:code>
+                <ns2:name>Требование к содержанию, составу заявки на участие в закупке</ns2:name>
+            </ns3:docKindInfo>
+        </ns3:attachmentInfo>
+    </attachmentsInfo>
+    <serviceSigns>
+        <isIncludeKOKS>false</isIncludeKOKS>
+        <isControlP1Ch5St99>true</isControlP1Ch5St99>
+    </serviceSigns>
+    <notificationInfo>
+        <procedureInfo>
+            <collectingInfo>
+                <startDT>2026-10-29T15:28:59+03:00</startDT>
+                <endDT>2026-11-16T08:00:00+03:00</endDT>
+            </collectingInfo>
+            <biddingDate>2026-11-16+03:00</biddingDate>
+            <summarizingDate>2026-11-18+03:00</summarizingDate>
+        </procedureInfo>
+        <contractConditionsInfo>
+            <maxPriceInfo>
+                <maxPrice>254030.00</maxPrice>
+                <currency>
+                    <ns2:code>RUB</ns2:code>
+                    <ns2:name>РОССИЙСКИЙ РУБЛЬ</ns2:name>
+                </currency>
+            </maxPriceInfo>
+        </contractConditionsInfo>
+        <customerRequirementsInfo>
+            <customerRequirementInfo>
+                <customer>
+                    <ns2:regNum>03552000051</ns2:regNum>
+                    <ns2:consRegistryNum>56204129</ns2:consRegistryNum>
+                    <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ПЕНЗЕНСКАЯ ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА ИМ. Н.Н. БУРДЕНКО"</ns2:fullName>
+                </customer>
+                <applicationGuarantee>
+                    <amount>2540.30</amount>
+                    <account>
+                        <ns3:bik>042202113</ns3:bik>
+                        <ns3:settlementAccount>03224643560000005500</ns3:settlementAccount>
+                        <ns3:personalAccount>855010873</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ВВГУ Банка России//УФК по Пензенской области, г Пенза</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810245370000113</ns3:corrAccountNumber>
+                    </account>
+                    <accountBudget>
+                        <accountBudgetAdmin>
+                            <anotherAdmin>true</anotherAdmin>
+                            <INN>5836012921</INN>
+                            <KPP>583601001</KPP>
+                            <KBK>85511610056020000140</KBK>
+                            <OKTMOInfo>
+                                <ns2:code>56701000001</ns2:code>
+                                <ns2:name>Муниципальные образования Пензенской области / Городские округа Пензенской области/ / город Пенза / г Пенза</ns2:name>
+                            </OKTMOInfo>
+                            <bankAccount>40102810245370000113</bankAccount>
+                            <ksNumber>03100643000000015500</ksNumber>
+                            <bik>042202113</bik>
+                            <counterpartyName>УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО КАЗНАЧЕЙСТВА ПО ПЕНЗЕНСКОЙ ОБЛАСТИ (МИНЗДРАВ ПЕНЗЕНСКОЙ ОБЛАСТИ)</counterpartyName>
+                        </accountBudgetAdmin>
+                    </accountBudget>
+                    <procedureInfo>В соответствии со ст. 44, 45 Федерального закона от 05.04.2013 № 44-ФЗ "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд".
+Участники закупки, являющиеся юридическими лицами, зарегистрированными на территории государства - члена ЕврАзЭС, за исключением РФ, или физическими лицами, являющимися гражданами государства - члена ЕврАзЭС, за исключением РФ, вправе предоставить обеспечение заявок в виде денежных средств в соответствии с постановлением Правительства РФ от 10.04.2023 № 579 "Об особенностях порядка предоставления обеспечения заявок на участие в закупках товаров, работ, услуг для обеспечения государственных или муниципальных нужд участниками таких закупок, являющимися иностранными лицами".</procedureInfo>
+                    <part>1.0</part>
+                </applicationGuarantee>
+                <contractGuarantee>
+                    <account>
+                        <ns3:bik>042202113</ns3:bik>
+                        <ns3:settlementAccount>03224643560000005500</ns3:settlementAccount>
+                        <ns3:personalAccount>855010873</ns3:personalAccount>
+                        <ns3:creditOrgName>ОКЦ № 1 ВВГУ Банка России//УФК по Пензенской области, г Пенза</ns3:creditOrgName>
+                        <ns3:corrAccountNumber>40102810245370000113</ns3:corrAccountNumber>
+                    </account>
+                    <procedureInfo>в соответствие с разделом 8 проекта контракта</procedureInfo>
+                    <part>5.0</part>
+                </contractGuarantee>
+                <contractConditionsInfo>
+                    <maxPriceInfo>
+                        <maxPrice>254030.00</maxPrice>
+                    </maxPriceInfo>
+                    <mustPublicDiscussion>false</mustPublicDiscussion>
+                    <IKZInfo>
+                        <purchaseCode>262583700874158370100105900012042244</purchaseCode>
+                        <publishYear>2026</publishYear>
+                        <OKPD2Info>
+                            <ns3:OKPD2>
+                                <ns2:OKPDCode>20.42</ns2:OKPDCode>
+                                <ns2:OKPDName>Средства парфюмерные и косметические</ns2:OKPDName>
+                            </ns3:OKPD2>
+                        </OKPD2Info>
+                        <KVRInfo>
+                            <ns3:KVR>
+                                <ns2:code>244</ns2:code>
+                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                            </ns3:KVR>
+                        </KVRInfo>
+                        <customerCode>25837008741583701001</customerCode>
+                        <purchaseNumber>0590</purchaseNumber>
+                        <purchaseOrderNumber>001</purchaseOrderNumber>
+                    </IKZInfo>
+                    <tenderPlan2020Info>
+                        <ns3:plan2020Number>202603552000051001</ns3:plan2020Number>
+                        <ns3:position2020Number>202603552000051001000614</ns3:position2020Number>
+                    </tenderPlan2020Info>
+                    <contractExecutionPaymentPlan>
+                        <contractExecutionTermsInfo>
+                            <ns3:notRelativeTermsInfo>
+                                <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                <ns3:endDate>2027-03-31+03:00</ns3:endDate>
+                            </ns3:notRelativeTermsInfo>
+                        </contractExecutionTermsInfo>
+                        <financingSourcesInfo>
+                            <nonbudgetFinancingsInfo>
+                                <selfFunds>true</selfFunds>
+                            </nonbudgetFinancingsInfo>
+                            <currentYear>2026</currentYear>
+                            <financeInfo>
+                                <total>254030.00</total>
+                                <currentYear>0.00</currentYear>
+                                <firstYear>254030.00</firstYear>
+                                <secondYear>0.00</secondYear>
+                                <subsecYears>0.00</subsecYears>
+                            </financeInfo>
+                        </financingSourcesInfo>
+                        <stagesInfo>
+                            <stageInfo>
+                                <sid>22504050</sid>
+                                <externalSid>7aeca652-940e-41a3-bbaf-51dd7e48d34d</externalSid>
+                                <termsInfo>
+                                    <ns3:notRelativeTermsInfo>
+                                        <ns3:startDate>2027-01-01+03:00</ns3:startDate>
+                                        <ns3:endDate>2027-03-31+03:00</ns3:endDate>
+                                    </ns3:notRelativeTermsInfo>
+                                </termsInfo>
+                                <nonbudgetFinancingInfo>
+                                    <paymentYearInfo>
+                                        <total>254030.00</total>
+                                        <currentYear>0.00</currentYear>
+                                        <firstYear>254030.00</firstYear>
+                                        <secondYear>0.00</secondYear>
+                                        <subsecYears>0.00</subsecYears>
+                                    </paymentYearInfo>
+                                    <KVRsInfo>
+                                        <ns3:currentYear>2026</ns3:currentYear>
+                                        <ns3:KVRInfo>
+                                            <ns3:KVR>
+                                                <ns2:code>244</ns2:code>
+                                                <ns2:name>Прочая закупка товаров, работ и услуг</ns2:name>
+                                            </ns3:KVR>
+                                            <ns3:KVRYearsInfo>
+                                                <ns3:total>254030.00</ns3:total>
+                                                <ns3:currentYear>0.00</ns3:currentYear>
+                                                <ns3:firstYear>254030.00</ns3:firstYear>
+                                                <ns3:secondYear>0.00</ns3:secondYear>
+                                                <ns3:subsecYears>0.00</ns3:subsecYears>
+                                            </ns3:KVRYearsInfo>
+                                        </ns3:KVRInfo>
+                                        <ns3:totalSum>254030.00</ns3:totalSum>
+                                    </KVRsInfo>
+                                </nonbudgetFinancingInfo>
+                            </stageInfo>
+                        </stagesInfo>
+                    </contractExecutionPaymentPlan>
+                    <deliveryPlacesInfo>
+                        <byGARInfo>
+                            <ns3:sid>62435689</ns3:sid>
+                            <ns3:externalSid>195dc956-8baa-4b6e-bbd1-cbcd1508ab34</ns3:externalSid>
+                            <ns3:countryInfo>
+                                <ns2:countryCode>643</ns2:countryCode>
+                                <ns2:countryFullName>Российская Федерация</ns2:countryFullName>
+                            </ns3:countryInfo>
+                            <ns3:GARInfo>
+                                <ns3:GARGuid>c99e7924-0428-4107-a302-4fd7c0cca3ff</ns3:GARGuid>
+                                <ns3:GARAddress>обл. Пензенская</ns3:GARAddress>
+                            </ns3:GARInfo>
+                            <ns3:deliveryPlace>ГБУЗ «Пензенская областная клиническая больница им. Н.Н. Бурденко» расположенное по адресу: 440026, г. Пенза, ул. Лермонтова, д. 28,                                 тел. (8412) 45-56-97, 45-56-99.</ns3:deliveryPlace>
+                        </byGARInfo>
+                    </deliveryPlacesInfo>
+                    <isOneSideRejectionSt95>true</isOneSideRejectionSt95>
+                    <isExecutionStagesTerms>false</isExecutionStagesTerms>
+                </contractConditionsInfo>
+            </customerRequirementInfo>
+        </customerRequirementsInfo>
+        <purchaseObjectsInfo>
+            <notDrugPurchaseObjectsInfo>
+                <ns3:purchaseObject>
+                    <ns3:sid>226119648</ns3:sid>
+                    <ns3:externalSid>ff0a0db7-f62c-45d3-9dd5-394bb3859874</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>20.42.15.149</ns2:OKPDCode>
+                        <ns2:OKPDName>Средства для ухода за кожей тела прочие</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668299</ns3:sid>
+                                <ns3:externalSid>b428dfff-fd1b-4ee8-84f3-92965b855acb</ns3:externalSid>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231468</ns3:sid>
+                                        <ns3:externalSid>7caa73bf-1b23-42a3-ad83-bc14d68a6b87</ns3:externalSid>
+                                        <ns3:qualityDescription>Применяется для обработки подверженных трению и давлению участков кожи с целью снижения рисков развития пролежней, а также для защиты кожи от раздражения и воздействия неблагоприятных факторов (мочи и кала).</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668300</ns3:sid>
+                                <ns3:externalSid>ce29b804-1124-4c2e-bd11-670c2b60b3f4</ns3:externalSid>
+                                <ns3:name>Состав крема содержит</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231469</ns3:sid>
+                                        <ns3:externalSid>77ed966c-f7bf-45c2-b52c-2ae1e7d7dc94</ns3:externalSid>
+                                        <ns3:qualityDescription>- Оксид цинка;
+- Консерванты, разрешенные для медицинской косметики и предотвращающие развитие грамотрицательных и грамположительных бактерий, дрожжей, плесени.
+</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668301</ns3:sid>
+                                <ns3:externalSid>4a4f7706-3c48-4811-a2ff-fa7ee0cd3ca6</ns3:externalSid>
+                                <ns3:name>Не содержит красителей</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231470</ns3:sid>
+                                        <ns3:externalSid>ce3ecc79-8f89-4fa8-a58b-b36a1d598adf</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668302</ns3:sid>
+                                <ns3:externalSid>80773d96-dbf8-4372-a864-a999a19c4cac</ns3:externalSid>
+                                <ns3:name>Вид упаковки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231471</ns3:sid>
+                                        <ns3:externalSid>d2790536-914e-47ff-b133-16518095471c</ns3:externalSid>
+                                        <ns3:qualityDescription>Туба или флакон с дозатором</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668303</ns3:sid>
+                                <ns3:externalSid>838b0210-756f-4223-b3a4-c86dee96ff1e</ns3:externalSid>
+                                <ns3:name>Объем упаковки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231472</ns3:sid>
+                                        <ns3:externalSid>513ccef8-d277-461c-8844-2dab74dc96da</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>200</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Крем для кожи</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03552000051</ns2:regNum>
+                                <ns2:consRegistryNum>56204129</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ПЕНЗЕНСКАЯ ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА ИМ. Н.Н. БУРДЕНКО"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>150</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>598.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>150.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>89700.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226119649</ns3:sid>
+                    <ns3:externalSid>9ab9df18-8750-4e86-912f-94f3de7e7d49</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>20.42.15.149</ns2:OKPDCode>
+                        <ns2:OKPDName>Средства для ухода за кожей тела прочие</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668304</ns3:sid>
+                                <ns3:externalSid>097125d6-1f7a-45ad-8344-6481149e30be</ns3:externalSid>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231473</ns3:sid>
+                                        <ns3:externalSid>ce698d9e-846d-4188-b75b-9901b9bfcb61</ns3:externalSid>
+                                        <ns3:qualityDescription>Применяется при проведении массажных процедур, для снятия мышечного напряжения, а также в комплексе профилактики пролежней с целью улучшения микроциркуляции и обменных процессов в коже.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668305</ns3:sid>
+                                <ns3:externalSid>9f2738d0-1cde-4461-9fcc-fe8a230f079d</ns3:externalSid>
+                                <ns3:name>Состав средства содержит</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231474</ns3:sid>
+                                        <ns3:externalSid>d6e72352-58f9-495a-84c8-85759e0b51ff</ns3:externalSid>
+                                        <ns3:qualityDescription>Консерванты, разрешенные для медицинской косметики и предотвращающие развитие грамотрицательных и грамположительных бактерий, дрожжей, плесени.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668306</ns3:sid>
+                                <ns3:externalSid>3398007b-931c-4984-a95a-25c5a77267af</ns3:externalSid>
+                                <ns3:name>Не содержит красителей</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231475</ns3:sid>
+                                        <ns3:externalSid>19fa93f7-c2e2-4671-aa99-3fbaaf1e8069</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668307</ns3:sid>
+                                <ns3:externalSid>c98c4c67-7e66-4cf7-b9d6-50037d5d3e3a</ns3:externalSid>
+                                <ns3:name>Вид упаковки</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231476</ns3:sid>
+                                        <ns3:externalSid>bfbfdf30-a087-4b75-b04a-2afb70958b9d</ns3:externalSid>
+                                        <ns3:qualityDescription>Туба или флакон с дозатором</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668308</ns3:sid>
+                                <ns3:externalSid>8e9c3a40-d7d7-4708-9514-49f78761c9c3</ns3:externalSid>
+                                <ns3:name>Объем упаковки</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231477</ns3:sid>
+                                        <ns3:externalSid>6873b0ee-d7a2-4907-982e-d49b75074e2c</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>200</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Тонизирующий гель</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03552000051</ns2:regNum>
+                                <ns2:consRegistryNum>56204129</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ПЕНЗЕНСКАЯ ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА ИМ. Н.Н. БУРДЕНКО"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>50</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>447.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>50.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>22350.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226119650</ns3:sid>
+                    <ns3:externalSid>f182d4e3-5bb7-41b9-a78d-2fbf2fe2e43a</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>20.42.15.145</ns2:OKPDCode>
+                        <ns2:OKPDName>Лосьоны для ухода за кожей тела</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668309</ns3:sid>
+                                <ns3:externalSid>8ce82c0b-c977-41f8-8998-18da3ccb63a3</ns3:externalSid>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231478</ns3:sid>
+                                        <ns3:externalSid>05562bea-77cd-412e-911c-f507a35aee45</ns3:externalSid>
+                                        <ns3:qualityDescription>Применяется для мытья лежачих больных в постели, без дальнейшего смывания водой. Подходит для ежедневного использования.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668310</ns3:sid>
+                                <ns3:externalSid>82cb8d7d-26ce-4e0b-8e30-e121541c7df0</ns3:externalSid>
+                                <ns3:name>рН</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231479</ns3:sid>
+                                        <ns3:externalSid>2df6f887-af76-4970-92b5-773649ff2bdd</ns3:externalSid>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>5.5</ns3:min>
+                                                <ns3:maxMathNotation>lessOrEqual</ns3:maxMathNotation>
+                                                <ns3:max>6</ns3:max>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668311</ns3:sid>
+                                <ns3:externalSid>461e79af-1ca3-4ec7-ba9c-2118468ab52f</ns3:externalSid>
+                                <ns3:name>Не содержит красителей</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231480</ns3:sid>
+                                        <ns3:externalSid>cc3718db-eda9-428e-8ae6-dcbf82ce16c6</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668312</ns3:sid>
+                                <ns3:externalSid>0cbe610e-0738-4a44-9576-e69e0823c477</ns3:externalSid>
+                                <ns3:name>Выход моющего раствора из 1 литра средства при разведении</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231481</ns3:sid>
+                                        <ns3:externalSid>ab12904a-89c8-4e71-890e-56c57e29ee12</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>112</ns2:code>
+                                            <ns2:nationalCode>л; дм[3*]</ns2:nationalCode>
+                                            <ns2:name>Литр; кубический дециметр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>150</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668313</ns3:sid>
+                                <ns3:externalSid>c8dfdd4e-fa44-4744-bce5-05dc07154724</ns3:externalSid>
+                                <ns3:name>Упаковка</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231482</ns3:sid>
+                                        <ns3:externalSid>9c4027f4-7bad-4a84-b705-22841dca3927</ns3:externalSid>
+                                        <ns3:qualityDescription>Флакон</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668314</ns3:sid>
+                                <ns3:externalSid>e78c1568-79d2-4db4-82c5-e15d926d17df</ns3:externalSid>
+                                <ns3:name>Объем флакона</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231483</ns3:sid>
+                                        <ns3:externalSid>1a4c556c-fc62-4ac3-9ee9-48be0fb6bd1c</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>400</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Моющий лосьон</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03552000051</ns2:regNum>
+                                <ns2:consRegistryNum>56204129</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ПЕНЗЕНСКАЯ ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА ИМ. Н.Н. БУРДЕНКО"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>150</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>449.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>150.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>67350.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226119651</ns3:sid>
+                    <ns3:externalSid>34419e59-2834-44a1-9a54-b27a10f9346e</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>20.42.15.149</ns2:OKPDCode>
+                        <ns2:OKPDName>Средства для ухода за кожей тела прочие</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668315</ns3:sid>
+                                <ns3:externalSid>2983cb1f-4af7-4db9-9b9c-ffbcefcd9cd1</ns3:externalSid>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231484</ns3:sid>
+                                        <ns3:externalSid>090a27d9-639a-413a-a0e1-8f81dbde210a</ns3:externalSid>
+                                        <ns3:qualityDescription>Предназначены для тщательного очищения кожи и ухода за тяжелобольным пациентом для профилактики пролежней. Предотвращают повреждение кожи при контакте с биологическими жидкостями и подходят для гигиены всех частей тела, создавая защиту от неблагоприятной среды. Не требует смывания водой.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668316</ns3:sid>
+                                <ns3:externalSid>170e4562-36a4-499b-ab7e-fbc7072ce715</ns3:externalSid>
+                                <ns3:name>Размер рукавицы, Миллиметр</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231485</ns3:sid>
+                                        <ns3:externalSid>d2326a7c-314c-456d-b3c1-bf21cf2e76ae</ns3:externalSid>
+                                        <ns3:qualityDescription>≥ 250 х 160</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668317</ns3:sid>
+                                <ns3:externalSid>e74cf39c-fd17-475f-babe-d3e84c641a12</ns3:externalSid>
+                                <ns3:name>Состав ткани</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231486</ns3:sid>
+                                        <ns3:externalSid>7b9a1235-bc7c-4749-b803-a4819e0b8b1b</ns3:externalSid>
+                                        <ns3:qualityDescription>Трехслойный нетканый материал с водонипроницаемой ламинированной пленкой внутри.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668318</ns3:sid>
+                                <ns3:externalSid>b0fa269f-18de-4272-9983-a59b89c75208</ns3:externalSid>
+                                <ns3:name>Для одноразового использования</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231487</ns3:sid>
+                                        <ns3:externalSid>eea5daea-b673-48f9-8722-01cd00ff5b57</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668319</ns3:sid>
+                                <ns3:externalSid>95f86877-9db6-4cb9-9122-8984f79c85df</ns3:externalSid>
+                                <ns3:name>Количество в упаковке</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231488</ns3:sid>
+                                        <ns3:externalSid>947c4990-d186-496f-994d-15e18e6cf0d7</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>796</ns2:code>
+                                            <ns2:nationalCode>шт</ns2:nationalCode>
+                                            <ns2:name>Штука</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>50</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Салфетки - рукавицы для мытья тела</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>778</ns2:code>
+                        <ns2:nationalCode>УПАК</ns2:nationalCode>
+                        <ns2:name>Упаковка</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03552000051</ns2:regNum>
+                                <ns2:consRegistryNum>56204129</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ПЕНЗЕНСКАЯ ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА ИМ. Н.Н. БУРДЕНКО"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>60</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>878.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>60.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>52680.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:purchaseObject>
+                    <ns3:sid>226119652</ns3:sid>
+                    <ns3:externalSid>477c0a68-be03-4a2e-97d2-f572b3808385</ns3:externalSid>
+                    <ns3:OKPD2>
+                        <ns2:OKPDCode>20.42.15.145</ns2:OKPDCode>
+                        <ns2:OKPDName>Лосьоны для ухода за кожей тела</ns2:OKPDName>
+                        <ns3:characteristics>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668320</ns3:sid>
+                                <ns3:externalSid>6d85e48d-8f29-4485-8f47-e0dd7bd49ee7</ns3:externalSid>
+                                <ns3:name>Назначение</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231489</ns3:sid>
+                                        <ns3:externalSid>50c3221c-9a54-4000-99aa-c49839f87a2d</ns3:externalSid>
+                                        <ns3:qualityDescription>Применяется после очищения кожи с целью восстановления кожного барьера, в том числе у лежачих больных. Оказывает питательное, увлажняющее, смягчающее и успокаивающее действие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668321</ns3:sid>
+                                <ns3:externalSid>8301b796-d164-447e-b2b5-11e95a1678b5</ns3:externalSid>
+                                <ns3:name>Состав средства содержит</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231490</ns3:sid>
+                                        <ns3:externalSid>f9b6510c-8810-4ba2-8362-89e1133fcb8c</ns3:externalSid>
+                                        <ns3:qualityDescription>Консерванты, разрешенные для медицинской косметики и предотвращающие развитие грамотрицательных и грамположительных бактерий, дрожжей, плесени.</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668322</ns3:sid>
+                                <ns3:externalSid>f2ba0d9c-4aa2-43ed-b008-7e3dc54f9efa</ns3:externalSid>
+                                <ns3:name>Не содержит красителей</ns3:name>
+                                <ns3:type>1</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>6</ns2:code>
+                                    <ns2:name>Значение характеристики не может изменяться участником закупки</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231491</ns3:sid>
+                                        <ns3:externalSid>ed4bde22-48d0-4f04-a637-76b97ec78735</ns3:externalSid>
+                                        <ns3:qualityDescription>Соответствие</ns3:qualityDescription>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                            <ns3:characteristicsUsingTextForm>
+                                <ns3:sid>337668323</ns3:sid>
+                                <ns3:externalSid>84da5875-9c43-4f50-ba99-5ad6b582278c</ns3:externalSid>
+                                <ns3:name>Объем флакона</ns3:name>
+                                <ns3:type>2</ns3:type>
+                                <ns3:characteristicsFillingInstruction>
+                                    <ns2:code>2</ns2:code>
+                                    <ns2:name>Участник закупки указывает в заявке конкретное значение характеристики</ns2:name>
+                                </ns3:characteristicsFillingInstruction>
+                                <ns3:values>
+                                    <ns3:value>
+                                        <ns3:sid>436231492</ns3:sid>
+                                        <ns3:externalSid>93bec791-c75d-49e9-b721-d319b395bfd3</ns3:externalSid>
+                                        <ns3:OKEI>
+                                            <ns2:code>111</ns2:code>
+                                            <ns2:nationalCode>см[3*]; мл</ns2:nationalCode>
+                                            <ns2:name>Кубический сантиметр; миллилитр</ns2:name>
+                                        </ns3:OKEI>
+                                        <ns3:rangeSet>
+                                            <ns3:valueRange>
+                                                <ns3:minMathNotation>greaterOrEqual</ns3:minMathNotation>
+                                                <ns3:min>250</ns3:min>
+                                            </ns3:valueRange>
+                                        </ns3:rangeSet>
+                                    </ns3:value>
+                                </ns3:values>
+                            </ns3:characteristicsUsingTextForm>
+                        </ns3:characteristics>
+                    </ns3:OKPD2>
+                    <ns3:name>Лосьон для тела</ns3:name>
+                    <ns3:OKEI>
+                        <ns2:code>796</ns2:code>
+                        <ns2:nationalCode>шт</ns2:nationalCode>
+                        <ns2:name>Штука</ns2:name>
+                    </ns3:OKEI>
+                    <ns3:customerQuantities>
+                        <ns3:customerQuantity>
+                            <ns3:customer>
+                                <ns2:regNum>03552000051</ns2:regNum>
+                                <ns2:consRegistryNum>56204129</ns2:consRegistryNum>
+                                <ns2:fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ПЕНЗЕНСКАЯ ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА ИМ. Н.Н. БУРДЕНКО"</ns2:fullName>
+                            </ns3:customer>
+                            <ns3:quantity>50</ns3:quantity>
+                        </ns3:customerQuantity>
+                    </ns3:customerQuantities>
+                    <ns3:price>439.00</ns3:price>
+                    <ns3:volumeSpecifyingMethod>QF</ns3:volumeSpecifyingMethod>
+                    <ns3:quantity>
+                        <ns3:value>50.00000000000</ns3:value>
+                    </ns3:quantity>
+                    <ns3:sum>21950.00</ns3:sum>
+                    <ns3:type>PRODUCT</ns3:type>
+                    <ns3:hierarchyType>ND</ns3:hierarchyType>
+                    <ns3:restrictionsInfo>
+                        <ns3:isPreferenseRFPurchaseObjects>true</ns3:isPreferenseRFPurchaseObjects>
+                    </ns3:restrictionsInfo>
+                </ns3:purchaseObject>
+                <ns3:totalSum>254030.00</ns3:totalSum>
+                <quantityUndefined>false</quantityUndefined>
+            </notDrugPurchaseObjectsInfo>
+        </purchaseObjectsInfo>
+        <preferensesInfo>
+            <preferenseInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>PVS33044</ns2:shortName>
+                    <ns2:name>Преимущество в соответствии с ч. 3 ст. 30 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </preferenseInfo>
+        </preferensesInfo>
+        <requirementsInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>ET44</ns2:shortName>
+                    <ns2:name>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+            <requirementInfo>
+                <ns3:preferenseRequirementInfo>
+                    <ns2:shortName>TR442</ns2:shortName>
+                    <ns2:name>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</ns2:name>
+                </ns3:preferenseRequirementInfo>
+            </requirementInfo>
+        </requirementsInfo>
+        <flags>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+        </flags>
+    </notificationInfo>
+</ns8:epNotificationEF2020>
