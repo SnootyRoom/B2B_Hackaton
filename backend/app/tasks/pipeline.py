@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Any
 
 from sqlalchemy import select
+from sqlalchemy.dialects.postgresql import insert as pg_insert
 from sqlalchemy.orm import Session
 
 from app.core.config import get_settings
@@ -104,19 +105,23 @@ def score_procurement(
         profile_data,
         lambda _text, query: embeddings.similarity_in_db(db, p.id, query),
     )
-    row = db.scalar(
-        select(ScoreResult).where(
-            ScoreResult.procurement_id == p.id, ScoreResult.profile_id == profile.id
+    values: dict[str, Any] = {
+        **result.model_dump(mode="json"),
+        "profile_version": profile_version(profile_data),
+        "engine_version": engine_version(),
+        "computed_at": utcnow(),
+    }
+    # Одним запросом: две задачи (загрузка и пересчёт по тому же профилю) могут писать
+    # одну пару «закупка + профиль» одновременно — «найти, потом вставить» падало бы
+    # на уникальном ключе.
+    stmt = pg_insert(ScoreResult).values(
+        owner_id=p.owner_id, procurement_id=p.id, profile_id=profile.id, **values
+    )
+    db.execute(
+        stmt.on_conflict_do_update(
+            index_elements=[ScoreResult.procurement_id, ScoreResult.profile_id], set_=values
         )
     )
-    if row is None:
-        row = ScoreResult(owner_id=p.owner_id, procurement_id=p.id, profile_id=profile.id)
-        db.add(row)
-    for key, value in result.model_dump(mode="json").items():
-        setattr(row, key, value)
-    row.profile_version = profile_version(profile_data)
-    row.engine_version = engine_version()
-    row.computed_at = utcnow()
 
 
 def _upsert_procurement(
