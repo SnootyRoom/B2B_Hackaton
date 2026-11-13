@@ -364,7 +364,7 @@ export function errorText(code: ErrorCode, message?: string | null): string {
 
 /** Лимиты загрузки (NFR-4, .env.example) */
 export const UPLOAD_LIMITS = { fileMb: 20, archiveMb: 100, maxFiles: 500 };
-export const ACCEPTED_EXT = ['.xml', '.json'];
+export const ACCEPTED_EXT = ['.xml', '.json', '.zip'];
 
 /** Профилей у одного пользователя — не больше (MAX_PROFILES в backend/app/schemas/scoring.py) */
 export const MAX_PROFILES = 20;

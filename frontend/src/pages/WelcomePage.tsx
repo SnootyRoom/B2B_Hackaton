@@ -44,7 +44,7 @@ export default function WelcomePage() {
     {
       n: 2,
       title: 'Загрузите закупки',
-      text: 'Файлы извещений из ЕИС (.xml или .json) или просто список реестровых номеров.',
+      text: 'Файлы извещений из ЕИС (.xml, .json или zip-архив с ними) или просто список реестровых номеров.',
       to: '/upload',
       done: hasResults,
     },
